@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    color: hsl(50 0% 30%)
+}
+
+.dog {
+    display: flex;
+    height: 100px;
+    padding: 0.3rem;
+    background-color: hsl(50 0% 80%);
+}
+
+.middle {
+    flex-grow: 1;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2rem 1rem;
+    background-color: hsl(50 0% 80%);
+    border-bottom: 2px solid hsl(50 20% 20%);
+    position: sticky;
+    top: 0;
+}
