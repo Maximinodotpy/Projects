@@ -1,0 +1,810 @@
+{
+    "align-content": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/align-content",
+        "description": "Specifies the alignment between the lines inside a flexible container when the items do not use all available space"
+    },
+    "align-items": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/align-items",
+        "description": "Specifies the alignment for items inside a flexible container"
+    },
+    "align-self": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/align-self",
+        "description": "Specifies the alignment for selected items inside a flexible container"
+    },
+    "all": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/all",
+        "description": "Resets all properties (except unicode-bidi and direction)"
+    },
+    "animation-delay": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/animation-delay",
+        "description": "Specifies a delay for the start of an animation"
+    },
+    "animation-direction": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/animation-direction",
+        "description": "Specifies whether an animation should be played forwards, backwards or \n    in alternate cycles"
+    },
+    "animation-duration": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/animation-duration",
+        "description": "Specifies how long an animation should take to complete one cycle"
+    },
+    "animation-fill-mode": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/animation-fill-mode",
+        "description": "Specifies a style for the element when the animation is not playing (before \n    it starts, after it ends, or both)"
+    },
+    "animation-iteration-count": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/animation-iteration-count",
+        "description": "Specifies the number of times an animation should be played"
+    },
+    "animation-name": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/animation-name",
+        "description": "Specifies a name for the @keyframes animation"
+    },
+    "animation-play-state": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/animation-play-state",
+        "description": "Specifies whether the animation is running or paused"
+    },
+    "animation-timing-function": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timing-function",
+        "description": "Specifies the speed curve of an animation"
+    },
+    "backdrop-filter": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter",
+        "description": "Defines a graphical effect to the area behind an element"
+    },
+    "backface-visibility": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/backface-visibility",
+        "description": "Defines whether or not the back face of an element should be visible when facing the user"
+    },
+    "background-attachment": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/background-attachment",
+        "description": "Sets whether a background image scrolls with the rest of the page, or is fixed"
+    },
+    "background-blend-mode": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/background-blend-mode",
+        "description": "Specifies the blending mode of each background layer (color/image)"
+    },
+    "background-clip": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/background-clip",
+        "description": "Defines how far the background (color or image) should extend within an \n    element"
+    },
+    "background-color": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/background-color",
+        "description": "Specifies the background color of an element"
+    },
+    "background-image": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/background-image",
+        "description": "Specifies one or more background images for an element"
+    },
+    "background-origin": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/background-origin",
+        "description": "Specifies the origin position of a background image"
+    },
+    "background-position": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/background-position",
+        "description": "Specifies the position of a background image"
+    },
+    "background-repeat": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/background-repeat",
+        "description": "Sets if/how a background image will be repeated"
+    },
+    "background-size": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/background-size",
+        "description": "Specifies the size of the background images"
+    },
+    "border-bottom-color": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom-color",
+        "description": "Sets the color of the bottom border"
+    },
+    "border-bottom-left-radius": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom-left-radius",
+        "description": "Defines the radius of the border of the bottom-left corner"
+    },
+    "border-bottom-right-radius": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom-right-radius",
+        "description": "Defines the radius of the border of the bottom-right corner"
+    },
+    "border-bottom-style": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom-style",
+        "description": "Sets the style of the bottom border"
+    },
+    "border-bottom-width": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom-width",
+        "description": "Sets the width of the bottom border"
+    },
+    "border-collapse": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-collapse",
+        "description": "Sets whether table borders should collapse into a single border or be separated"
+    },
+    "border-color": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-color",
+        "description": "Sets the color of the four borders"
+    },
+    "border-image-outset": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-image-outset",
+        "description": "Specifies the amount by which the border image area extends beyond the border box"
+    },
+    "border-image-repeat": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-image-repeat",
+        "description": "Specifies whether the border image should be repeated, rounded or stretched"
+    },
+    "border-image-slice": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-image-slice",
+        "description": "Specifies how to slice the border image"
+    },
+    "border-image-source": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-image-source",
+        "description": "Specifies the path to the image to be used as a border"
+    },
+    "border-image-width": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-image-width",
+        "description": "Specifies the width of the border image"
+    },
+    "border-left-color": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-left-color",
+        "description": "Sets the color of the left border"
+    },
+    "border-left-style": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-left-style",
+        "description": "Sets the style of the left border"
+    },
+    "border-left-width": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-left-width",
+        "description": "Sets the width of the left border"
+    },
+    "border-right-color": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-right-color",
+        "description": "Sets the color of the right border"
+    },
+    "border-right-style": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-right-style",
+        "description": "Sets the style of the right border"
+    },
+    "border-right-width": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-right-width",
+        "description": "Sets the width of the right border"
+    },
+    "border-spacing": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-spacing",
+        "description": "Sets the distance between the borders of adjacent cells"
+    },
+    "border-style": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-style",
+        "description": "Sets the style of the four borders"
+    },
+    "border-top-color": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-top-color",
+        "description": "Sets the color of the top border"
+    },
+    "border-top-left-radius": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-top-left-radius",
+        "description": "Defines the radius of the border of the top-left corner"
+    },
+    "border-top-right-radius": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-top-right-radius",
+        "description": "Defines the radius of the border of the top-right corner"
+    },
+    "border-top-style": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-top-style",
+        "description": "Sets the style of the top border"
+    },
+    "border-top-width": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-top-width",
+        "description": "Sets the width of the top border"
+    },
+    "border-width": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-width",
+        "description": "Sets the width of the four borders"
+    },
+    "bottom": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/bottom",
+        "description": "Sets the elements position, from the bottom of its parent element"
+    },
+    "box-decoration-break": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/box-decoration-break",
+        "description": "Sets the behavior of the background and border of an element at page-break, or, for  in-line elements, at line-break."
+    },
+    "box-shadow": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow",
+        "description": "Attaches one or more shadows to an element"
+    },
+    "box-sizing": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing",
+        "description": "Defines how the width and height of an element are calculated: should \n    they include padding and borders, or not"
+    },
+    "break-after": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/break-after",
+        "description": "Specifies whether or not a page-, column-, or region-break should occur \n    after the specified element"
+    },
+    "break-before": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/break-before",
+        "description": "Specifies whether or not a page-, column-, or region-break should occur \n    before the specified element"
+    },
+    "break-inside": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/break-inside",
+        "description": "Specifies whether or not a page-, column-, or region-break should occur \n    inside the specified element"
+    },
+    "caption-side": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/caption-side",
+        "description": "Specifies the placement of a table caption"
+    },
+    "caret-color": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/caret-color",
+        "description": "Specifies the color of the cursor (caret) in inputs, textareas, or any \n    element that is editable"
+    },
+    "@charset": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/@charset",
+        "description": "Specifies the character encoding used in the style sheet"
+    },
+    "clear": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/clear",
+        "description": "Specifies what should happen with the element that is next to a floating \n    element"
+    },
+    "clip": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/clip",
+        "description": "Clips an absolutely positioned element"
+    },
+    "color": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/color",
+        "description": "Sets the color of text"
+    },
+    "column-count": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/column-count",
+        "description": "Specifies the number of columns an element should be divided into"
+    },
+    "column-fill": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/column-fill",
+        "description": "Specifies how to fill columns, balanced or not"
+    },
+    "column-gap": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/column-gap",
+        "description": "Specifies the gap between the columns"
+    },
+    "column-rule-color": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/column-rule-color",
+        "description": "Specifies the color of the rule between columns"
+    },
+    "column-rule-style": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/column-rule-style",
+        "description": "Specifies the style of the rule between columns"
+    },
+    "column-rule-width": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/column-rule-width",
+        "description": "Specifies the width of the rule between columns"
+    },
+    "column-span": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/column-span",
+        "description": "Specifies how many columns an element should span across"
+    },
+    "column-width": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/column-width",
+        "description": "Specifies the column width"
+    },
+    "content": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/content",
+        "description": "Used with the :before and :after pseudo-elements, to insert generated content"
+    },
+    "counter-increment": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/counter-increment",
+        "description": "Increases or decreases the value of one or more CSS counters"
+    },
+    "counter-reset": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/counter-reset",
+        "description": "Creates or resets one or more CSS counters"
+    },
+    "cursor": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/cursor",
+        "description": "Specifies the mouse cursor to be displayed when pointing over an element"
+    },
+    "direction": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/direction",
+        "description": "Specifies the text direction/writing direction"
+    },
+    "display": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/display",
+        "description": "Specifies how a certain HTML element should be displayed"
+    },
+    "empty-cells": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/empty-cells",
+        "description": "Specifies whether or not to display borders and background on empty cells in a table"
+    },
+    "filter": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/filter",
+        "description": "Defines effects (e.g. blurring or color shifting) on an element before the element is displayed"
+    },
+    "flex-basis": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/flex-basis",
+        "description": "Specifies the initial length of a flexible item"
+    },
+    "flex-direction": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction",
+        "description": "Specifies the direction of the flexible items"
+    },
+    "flex-grow": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow",
+        "description": "Specifies how much the item will grow relative to the rest"
+    },
+    "flex-shrink": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/flex-shrink",
+        "description": "Specifies how the item will shrink relative to the rest"
+    },
+    "flex-wrap": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap",
+        "description": "Specifies whether the flexible items should wrap or not"
+    },
+    "float": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/float",
+        "description": "Specifies whether an element should float to the left, right, or not at \n    all"
+    },
+    "@font-face": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face",
+        "description": "A rule that allows websites to download and use fonts other than the \"web-safe\" fonts"
+    },
+    "font-family": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-family",
+        "description": "Specifies the font family for text"
+    },
+    "font-feature-settings": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-feature-settings",
+        "description": "Allows control over advanced typographic features in OpenType fonts"
+    },
+    "font-kerning": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-kerning",
+        "description": "Controls the usage of the kerning information (how letters are spaced)"
+    },
+    "font-size": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-size",
+        "description": "Specifies the font size of text"
+    },
+    "font-size-adjust": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-size-adjust",
+        "description": "Preserves the readability of text when font fallback occurs"
+    },
+    "font-stretch": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-stretch",
+        "description": "Selects a normal, condensed, or expanded face from a font family"
+    },
+    "font-style": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-style",
+        "description": "Specifies the font style for text"
+    },
+    "font-variant": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant",
+        "description": "Specifies whether or not a text should be displayed in a small-caps font"
+    },
+    "font-variant-caps": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-caps",
+        "description": "Controls the usage of alternate glyphs for capital letters"
+    },
+    "font-weight": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight",
+        "description": "Specifies the weight of a font"
+    },
+    "grid-auto-columns": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-columns",
+        "description": "Specifies a default column size"
+    },
+    "grid-auto-flow": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-flow",
+        "description": "Specifies how auto-placed items are inserted in the grid"
+    },
+    "grid-auto-rows": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-rows",
+        "description": "Specifies a default row size"
+    },
+    "grid-column-end": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column-end",
+        "description": "Specifies where to end the grid item"
+    },
+    "grid-column-gap": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column-gap",
+        "description": "Specifies the size of the gap between columns"
+    },
+    "grid-column-start": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column-start",
+        "description": "Specifies where to start the grid item"
+    },
+    "grid-row-end": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row-end",
+        "description": "Specifies where to end the grid item"
+    },
+    "grid-row-gap": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row-gap",
+        "description": "Specifies the size of the gap between rows"
+    },
+    "grid-row-start": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row-start",
+        "description": "Specifies where to start the grid item"
+    },
+    "grid-template-areas": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas",
+        "description": "Specifies how to display columns and rows, using named grid items"
+    },
+    "grid-template-columns": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns",
+        "description": "Specifies the size of the columns, and how many columns in a grid layout"
+    },
+    "grid-template-rows": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows",
+        "description": "Specifies the size of the rows in a grid layout"
+    },
+    "hanging-punctuation": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/hanging-punctuation",
+        "description": "Specifies whether a punctuation character may be placed outside the line box"
+    },
+    "height": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/height",
+        "description": "Sets the height of an element"
+    },
+    "hyphens": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/hyphens",
+        "description": "Sets how to split words to improve the layout of paragraphs"
+    },
+    "image-rendering": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/image-rendering",
+        "description": "Specifies the type of algorithm to use for image scaling"
+    },
+    "@import": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/@import",
+        "description": "Allows you to import a style sheet into another style sheet"
+    },
+    "isolation": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/isolation",
+        "description": "Defines whether an element must create a new stacking content"
+    },
+    "justify-content": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content",
+        "description": "Specifies the alignment between the items inside a flexible container when the items do not use all available space"
+    },
+    "@keyframes": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes",
+        "description": "Specifies the animation code"
+    },
+    "left": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/left",
+        "description": "Specifies the left position of a positioned element"
+    },
+    "letter-spacing": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/letter-spacing",
+        "description": "Increases or decreases the space between characters in a text"
+    },
+    "line-height": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/line-height",
+        "description": "Sets the line height"
+    },
+    "list-style": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/list-style",
+        "description": "Sets all the properties for a list in one declaration"
+    },
+    "list-style-image": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-image",
+        "description": "Specifies an image as the list-item marker"
+    },
+    "list-style-position": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-position",
+        "description": "Specifies the position of the list-item markers (bullet points)"
+    },
+    "list-style-type": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type",
+        "description": "Specifies the type of list-item marker"
+    },
+    "margin": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/margin",
+        "description": "Sets all the margin properties in one declaration"
+    },
+    "margin-bottom": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/margin-bottom",
+        "description": "Sets the bottom margin of an element"
+    },
+    "margin-left": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/margin-left",
+        "description": "Sets the left margin of an element"
+    },
+    "margin-right": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/margin-right",
+        "description": "Sets the right margin of an element"
+    },
+    "margin-top": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/margin-top",
+        "description": "Sets the top margin of an element"
+    },
+    "mask-image": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/mask-image",
+        "description": "Specifies an image to be used as a mask layer for an element"
+    },
+    "mask-mode": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/mask-mode",
+        "description": "Specifies whether the mask layer image is treated as a luminance mask or \n    as an alpha mask"
+    },
+    "mask-origin": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/mask-origin",
+        "description": "Specifies the origin position (the mask \nposition area) of a mask layer image"
+    },
+    "mask-position": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/mask-position",
+        "description": "Sets the starting position of a mask layer image (relative to the \n    mask position area)"
+    },
+    "mask-repeat": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/mask-repeat",
+        "description": "Specifies how the mask layer image is repeated"
+    },
+    "mask-size": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/mask-size",
+        "description": "Specifies the size of a mask layer image"
+    },
+    "max-height": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/max-height",
+        "description": "Sets the maximum height of an element"
+    },
+    "max-width": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/max-width",
+        "description": "Sets the maximum width of an element"
+    },
+    "@media": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media",
+        "description": "Sets the style rules for different media types/devices/sizes"
+    },
+    "min-height": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/min-height",
+        "description": "Sets the minimum height of an element"
+    },
+    "min-width": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/min-width",
+        "description": "Sets the minimum width of an element"
+    },
+    "mix-blend-mode": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/mix-blend-mode",
+        "description": "Specifies how an element's content should blend with its direct parent background"
+    },
+    "object-fit": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit",
+        "description": "Specifies how the contents of a replaced element should be fitted to the box established by its used height and width"
+    },
+    "object-position": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/object-position",
+        "description": "Specifies the alignment of the replaced element inside its box"
+    },
+    "opacity": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/opacity",
+        "description": "Sets the opacity level for an element"
+    },
+    "order": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/order",
+        "description": "Sets the order of the flexible item, relative to the rest"
+    },
+    "orphans": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/orphans",
+        "description": "Sets the minimum number of lines that must be left at the bottom of a \n    page or column"
+    },
+    "outline-color": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/outline-color",
+        "description": "Sets the color of an outline"
+    },
+    "outline-offset": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/outline-offset",
+        "description": "Offsets an outline, and draws it beyond the border edge"
+    },
+    "outline-style": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/outline-style",
+        "description": "Sets the style of an outline"
+    },
+    "outline-width": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/outline-width",
+        "description": "Sets the width of an outline"
+    },
+    "overflow": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/overflow",
+        "description": "Specifies what happens if content overflows an element's box"
+    },
+    "overflow-wrap": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-wrap",
+        "description": "Specifies whether or not the browser can break lines with long words, if \n    they overflow the container"
+    },
+    "overflow-x": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-x",
+        "description": "Specifies whether or not to clip the left/right edges of the content, if it overflows the element's content area"
+    },
+    "overflow-y": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-y",
+        "description": "Specifies whether or not to clip the top/bottom edges of the content, if it overflows the element's content area"
+    },
+    "padding-bottom": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/padding-bottom",
+        "description": "Sets the bottom padding of an element"
+    },
+    "padding-left": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/padding-left",
+        "description": "Sets the left padding of an element"
+    },
+    "padding-right": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/padding-right",
+        "description": "Sets the right padding of an element"
+    },
+    "padding-top": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/padding-top",
+        "description": "Sets the top padding of an element"
+    },
+    "page-break-after": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/page-break-after",
+        "description": "Sets the page-break behavior after an element"
+    },
+    "page-break-before": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/page-break-before",
+        "description": "Sets the page-break behavior before an element"
+    },
+    "page-break-inside": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/page-break-inside",
+        "description": "Sets the page-break behavior inside an element"
+    },
+    "perspective": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/perspective",
+        "description": "Gives a 3D-positioned element some perspective"
+    },
+    "perspective-origin": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/perspective-origin",
+        "description": "Defines at which position the user is looking at the 3D-positioned element"
+    },
+    "pointer-events": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events",
+        "description": "Defines whether or not an element reacts to pointer events"
+    },
+    "position": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/position",
+        "description": "Specifies the type of positioning method used for an element (static, relative, absolute or fixed)"
+    },
+    "quotes": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/quotes",
+        "description": "Sets the type of quotation marks for embedded quotations"
+    },
+    "resize": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/resize",
+        "description": "Defines if (and how) an element is resizable by the user"
+    },
+    "right": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/right",
+        "description": "Specifies the right position of a positioned element"
+    },
+    "row-gap": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/row-gap",
+        "description": "Specifies the gap between the grid rows"
+    },
+    "scroll-behavior": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-behavior",
+        "description": "Specifies whether to smoothly animate the scroll position in a scrollable box, instead of a straight jump"
+    },
+    "tab-size": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/tab-size",
+        "description": "Specifies the width of a tab character"
+    },
+    "table-layout": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/table-layout",
+        "description": "Defines the algorithm used to lay out table cells, rows, and columns"
+    },
+    "text-align": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/text-align",
+        "description": "Specifies the horizontal alignment of text"
+    },
+    "text-align-last": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/text-align-last",
+        "description": "Describes how the last line of a block or a line right before a forced line break is aligned when text-align is \"justify\""
+    },
+    "text-decoration": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration",
+        "description": "Specifies the decoration added to text"
+    },
+    "text-decoration-color": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-color",
+        "description": "Specifies the color of the text-decoration"
+    },
+    "text-decoration-line": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-line",
+        "description": "Specifies the type of line in a text-decoration"
+    },
+    "text-decoration-style": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-style",
+        "description": "Specifies the style of the line in a text decoration"
+    },
+    "\n    text-decoration-thickness": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/\n    text-decoration-thickness",
+        "description": "Specifies the thickness of the decoration line"
+    },
+    "text-emphasis": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/text-emphasis",
+        "description": "Applies emphasis marks to text"
+    },
+    "text-indent": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/text-indent",
+        "description": "Specifies the indentation of the first line in a text-block"
+    },
+    "text-justify": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/text-justify",
+        "description": "Specifies the justification method used when text-align is \"justify\""
+    },
+    "text-overflow": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/text-overflow",
+        "description": "Specifies what should happen when text overflows the containing element"
+    },
+    "text-shadow": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow",
+        "description": "Adds shadow to text "
+    },
+    "text-transform": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform",
+        "description": "Controls the capitalization of text"
+    },
+    "top": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/top",
+        "description": "Specifies the top position of a positioned element"
+    },
+    "transform": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/transform",
+        "description": "Applies a 2D or 3D transformation to an element"
+    },
+    "transform-origin": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin",
+        "description": "Allows you to change the position on transformed elements"
+    },
+    "transform-style": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/transform-style",
+        "description": "Specifies how nested elements are rendered in 3D space"
+    },
+    "transition-delay": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/transition-delay",
+        "description": "Specifies when the transition effect will start"
+    },
+    "transition-duration": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/transition-duration",
+        "description": "Specifies how many seconds or milliseconds a transition effect takes to complete"
+    },
+    "transition-property": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/transition-property",
+        "description": "Specifies the name of the CSS property the transition effect is for"
+    },
+    "transition-timing-function": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function",
+        "description": "Specifies the speed curve of the transition effect"
+    },
+    "user-select": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/user-select",
+        "description": "Specifies whether the text of an element can be selected"
+    },
+    "vertical-align": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align",
+        "description": "Sets the vertical alignment of an element"
+    },
+    "visibility": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/visibility",
+        "description": "Specifies whether or not an element is visible"
+    },
+    "white-space": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/white-space",
+        "description": "Specifies how white-space inside an element is handled"
+    },
+    "widows": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/widows",
+        "description": "Sets the minimum number of lines that must be left at the top of a page \n    or column"
+    },
+    "width": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/width",
+        "description": "Sets the width of an element"
+    },
+    "word-break": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/word-break",
+        "description": "Specifies how words should break when reaching the end of a line"
+    },
+    "word-spacing": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/word-spacing",
+        "description": "Increases or decreases the space between words in a text"
+    },
+    "word-wrap": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/word-wrap",
+        "description": "Allows long, unbreakable words to be broken and wrap to the next line"
+    },
+    "writing-mode": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/writing-mode",
+        "description": "Specifies whether lines of text are laid out horizontally or vertically"
+    },
+    "z-index": {
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/z-index",
+        "description": "Sets the stack order of a positioned element"
+    }
+}

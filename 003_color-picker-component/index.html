@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Picker</title>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        input {
+            font: inherit
+        }
+
+        .row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin-bottom: 2em;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Make Profile (Color Picker JavaScript)</h1>
+
+    <div class="row">
+        <label for="">Name</label>
+        <input type="text">
+    </div>
+    <div class="row">
+        <label for="">Password</label>
+        <input type="password">
+    </div>
+    <div class="row">
+        <label for="">Favourite Color</label>
+        <color-picker value="rgb(248, 78, 78)"></color-picker>
+    </div>
+
+    <template id="template">
+        <style>
+            :host, :host * {
+                color: white;
+                font-family: Consolas, "Courier New", Courier;
+                font-size: 100%;
+                box-sizing: border-box;
+                position: relative;
+            }
+
+            .mainButton {
+                background-color: rgb(50, 50, 50);
+                color: rgb(189, 182, 200);
+                border: none;
+                padding: 0.5em;
+                outline: none;
+                width: 100%;
+            }
+            
+
+            .panel {
+                width: 300px;
+                height: 200px;
+                box-shadow: 0 0 3px hwb(0 0% 100%);
+                background-color: rgb(30, 30, 30);
+                display: none;
+                flex-direction: column;
+                touch-action: none;
+                position: absolute;
+                top: 130%;
+                left: 0;
+            }
+
+            .colorDisplay {
+                flex-grow: 1;
+            }
+
+            .upperBody {
+                padding: 0.5em;
+                flex-grow: 1;
+                display: grid;
+                grid-template-columns: 1fr 30px;
+                gap: 20px;
+            }
+
+            .colorGradient,
+            .huePicker {
+                box-shadow: 0 0 5px rgb(70, 70, 70);
+            }
+
+            .colorGradient canvas,
+            .huePicker canvas {
+                height: 100%;
+                width: 100%;
+            }
+
+            .colorGradient {
+                position: relative;
+                overflow: hidden;
+            }
+
+            .colorGradient .colorGradientSelector {
+                width: 10px;
+                height: 10px;
+                border-radius: 999px;
+                border: 1px solid white;
+                box-shadow: 0 0 3px black;
+                background-color: transparent;
+                position: absolute;
+                top: -5px;
+                left: -5px;
+                z-index: 99;
+            }
+
+            .huePicker {
+                background: linear-gradient(to bottom, #f00 0, #ff0 16%, #0f0 33%, #0ff 50%, #00f 67%, #f0f 84%, #ff0004 100%);
+                position: relative;
+            }
+
+            .huePickerSelector {
+                height: 10px;
+                width: 100%;
+                border: 1px solid white;
+                box-shadow: 0 0 3px black;
+                position: absolute;
+            }
+        </style>
+
+        <input class="mainButton" type="text">
+        <div class="panel">
+            <div class="upperBody">
+                <div class="colorGradient">
+                    <canvas></canvas>
+                    <div class="colorGradientSelector"></div>
+                </div>
+                <div class="huePicker">
+                    <div class="huePickerSelector"></div>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <script src="https://colorjs.io/dist/color.global.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

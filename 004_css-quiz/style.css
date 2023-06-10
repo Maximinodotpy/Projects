@@ -1,0 +1,105 @@
+
+* {
+    box-sizing: border-box;
+    font: inherit;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(20, 20, 20);
+    color: white;
+    font-family: Consolas;
+}
+
+
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 800px;
+    margin: auto;
+    padding: 2em;
+}
+
+
+.description {
+    margin-bottom: 1em;
+    font-size: 3em;
+    font-style: italic;
+    text-align: center;
+}
+.description::after, .description::before {
+    content: "\""
+}
+
+.inputContainer {
+    display: flex;
+    border: 5px solid transparent;
+}
+
+.inputContainer:focus-within {
+    border: 5px solid rgb(50, 50, 50);
+}
+
+input {
+    background-color: rgb(40, 40, 40);
+    flex-grow: 1;
+}
+
+button {
+    background-color: rgb(60, 60, 60);
+}
+button:hover {
+    background-color: rgb(80, 80, 80);
+}
+button:active {
+    background-color: rgb(100, 100, 100);
+}
+
+input, button, .docLink {
+    padding: 0.5em;
+    margin: 0;
+    font-size: 1.5em;
+    outline: none;
+    border: none;
+    color: inherit;
+}
+
+.docLink {
+    display: inline-block;
+    visibility: hidden;
+    background-color: rgb(46, 82, 164);
+    text-decoration: none;
+    margin: 1em 0em;
+    font-size: 1em;
+}
+
+.instructions {
+    margin-top: 3em;
+    color: rgb(100, 100, 100);
+}
+
+
+kbd, .instructions a {
+    color: rgb(130, 130, 130);
+}
+
+
+@media screen and (max-width: 800px) {
+
+
+    .description, input, button, .docLink {
+        font-size: 1em;
+    }
+
+    .description {
+        margin-top: 3em;
+        margin-bottom: 0em
+    }
+
+    .instructions {
+        flex-grow: 1;
+    }
+}
