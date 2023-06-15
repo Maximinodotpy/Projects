@@ -112,69 +112,69 @@
             [ "es", "La camisa", "N", "", [  ] ]
         ],
         [
-            [ "de", "Die Hose", "" ],
-            [ "en", "", "" ],
-            [ "es", "", "" ]
+            [ "de", "Die Hose", "N" ],
+            [ "en", "", "N" ],
+            [ "es", "", "N" ]
         ],
         [
-            [ "de", "Die Schuhe", "" ],
-            [ "en", "", "" ],
-            [ "es", "", "" ]
+            [ "de", "Die Schuhe", "N" ],
+            [ "en", "", "N" ],
+            [ "es", "", "N" ]
         ],
         [
-            [ "de", "Die Uhr", "" ],
-            [ "en", "", "" ],
-            [ "es", "", "" ]
+            [ "de", "Die Uhr", "N" ],
+            [ "en", "", "N" ],
+            [ "es", "", "N" ]
         ],
         [
-            [ "de", "Das Ohr", "" ],
-            [ "en", "", "" ],
-            [ "es", "", "" ]
+            [ "de", "Das Ohr", "N" ],
+            [ "en", "", "N" ],
+            [ "es", "", "N" ]
         ],
         [
-            [ "de", "Das Haar", "" ],
-            [ "en", "", "" ],
-            [ "es", "", "" ]
+            [ "de", "Das Haar", "N" ],
+            [ "en", "", "N" ],
+            [ "es", "", "N" ]
         ],
         [
-            [ "de", "Die Hand", "" ],
-            [ "en", "", "" ],
-            [ "es", "", "" ]
+            [ "de", "Die Hand", "N" ],
+            [ "en", "", "N" ],
+            [ "es", "", "N" ]
         ],
         [
-            [ "de", "Der Fuss", "" ],
-            [ "en", "", "" ],
-            [ "es", "", "" ]
+            [ "de", "Der Fuss", "N" ],
+            [ "en", "", "N" ],
+            [ "es", "", "N" ]
         ],
         [
-            [ "de", "Der Rücken", "" ],
-            [ "en", "", "" ],
-            [ "es", "", "" ]
+            [ "de", "Der Rücken", "N" ],
+            [ "en", "", "N" ],
+            [ "es", "", "N" ]
         ],
         [
-            [ "de", "Das Licht", "" ],
-            [ "en", "", "" ],
-            [ "es", "", "" ]
+            [ "de", "Das Licht", "N" ],
+            [ "en", "The stone", "N" ],
+            [ "es", "", "N" ]
         ],
         [
-            [ "de", "Der Stein", "" ],
-            [ "en", "", "" ],
-            [ "es", "", "" ]
+            [ "de", "Der Stein", "N" ],
+            [ "en", "The stone", "N" ],
+            [ "es", "", "N" ]
         ],
         [
-            [ "de", "Der Berg", "" ],
-            [ "en", "", "" ],
-            [ "es", "", "" ]
+            [ "de", "Der Berg", "N" ],
+            [ "en", "The mountain", "N" ],
+            [ "es", "", "N" ]
         ],
         [
-            [ "de", "Der Stein", "" ],
-            [ "en", "", "" ],
-            [ "es", "", "" ]
+            [ "de", "Das Herz", "N" ],
+            [ "en", "The heart", "N" ],
+            [ "es", "El corazón", "N" ]
         ],
         [
-            [ "de", "Der Stein", "" ],
-            [ "en", "", "" ],
-            [ "es", "", "" ]
-        ],
+            [ "de", "", "N" ],
+            [ "en", "", "N" ],
+            [ "es", "", "N" ]
+        ]
     ]
 }
