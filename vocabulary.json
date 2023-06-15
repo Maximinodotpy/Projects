@@ -1,0 +1,360 @@
+[
+    {
+        "type": "N",
+        "description": "",
+        "tags": [],
+        "translations": {
+            "de": "Hallo",
+            "en": "Hello",
+            "es": "Hola"
+        }
+    },
+    {
+        "type": "N",
+        "description": "",
+        "tags": [],
+        "translations": {
+            "de": "Der Baum",
+            "en": "The tree",
+            "es": "El árbol"
+        }
+    },
+    {
+        "type": "N",
+        "description": "",
+        "tags": [],
+        "translations": {
+            "de": "Das Haus",
+            "en": "The house",
+            "es": "La casa"
+        }
+    },
+    {
+        "type": "N",
+        "description": "",
+        "tags": [],
+        "translations": {
+            "de": "Die Stadt",
+            "en": "The city",
+            "es": "La ciudad"
+        }
+    },
+    {
+        "type": "N",
+        "description": "",
+        "tags": [],
+        "translations": {
+            "de": "Das Dorf",
+            "en": "The village",
+            "es": "El pueblo"
+        }
+    },
+    {
+        "type": "N",
+        "description": "",
+        "tags": [],
+        "translations": {
+            "de": "Die Strasse",
+            "en": "The street",
+            "es": "La carretera"
+        }
+    },
+    {
+        "type": "N",
+        "description": "",
+        "tags": [],
+        "translations": {
+            "de": "Der Weg",
+            "en": "The way",
+            "es": "El camino"
+        }
+    },
+    {
+        "type": "N",
+        "description": "",
+        "tags": [],
+        "translations": {
+            "de": "Die Lampe",
+            "en": "The lamp",
+            "es": "Lámpara"
+        }
+    },
+    {
+        "type": "N",
+        "description": "",
+        "tags": [],
+        "translations": {
+            "de": "Die Brille",
+            "en": "The glasses",
+            "es": "Las gafas"
+        }
+    },
+    {
+        "type": "N",
+        "description": "",
+        "tags": [],
+        "translations": {
+            "de": "Die Pflanze",
+            "en": "The plant",
+            "es": "La planta"
+        }
+    },
+    {
+        "type": "N",
+        "description": "",
+        "tags": [],
+        "translations": {
+            "de": "Das Wasser",
+            "en": "The water",
+            "es": "El agua"
+        }
+    },
+    {
+        "type": "N",
+        "description": "",
+        "tags": [],
+        "translations": {
+            "de": "Das Auto",
+            "en": "The car",
+            "es": "El automovil"
+        }
+    },
+    {
+        "type": "N",
+        "description": "",
+        "tags": [],
+        "translations": {
+            "de": "Der Rucksack",
+            "en": "The backpack",
+            "es": "La mochila"
+        }
+    },
+    {
+        "type": "N",
+        "description": "",
+        "tags": [],
+        "translations": {
+            "de": "Die Freizeit",
+            "en": "The freetime",
+            "es": "El tiempo libre"
+        }
+    },
+    {
+        "type": "N",
+        "description": "",
+        "tags": [],
+        "translations": {
+            "de": "Die Zeit",
+            "en": "The time",
+            "es": "El tiempo"
+        }
+    },
+    {
+        "type": "N",
+        "description": "",
+        "tags": [],
+        "translations": {
+            "de": "Frei",
+            "en": "free",
+            "es": "libre"
+        }
+    },
+    {
+        "type": "N",
+        "description": "",
+        "tags": [],
+        "translations": {
+            "de": "Die Flasche",
+            "en": "The bottle",
+            "es": "La botella"
+        }
+    },
+    {
+        "type": "N",
+        "description": "",
+        "tags": [],
+        "translations": {
+            "de": "Die Wahrheit",
+            "en": "The truth",
+            "es": "La verdad"
+        }
+    },
+    {
+        "type": "N",
+        "description": "",
+        "tags": [],
+        "translations": {
+            "de": "Die Arbeit",
+            "en": "The work",
+            "es": "El trabajo"
+        }
+    },
+    {
+        "type": "N",
+        "description": "",
+        "tags": [],
+        "translations": {
+            "de": "Die Musik",
+            "en": "The music",
+            "es": "La música"
+        }
+    },
+    {
+        "type": "N",
+        "description": "",
+        "tags": [],
+        "translations": {
+            "de": "Das Fenster",
+            "en": "The window",
+            "es": "La ventana"
+        }
+    },
+    {
+        "type": "N",
+        "description": "",
+        "tags": [],
+        "translations": {
+            "de": "Das Hemd",
+            "en": "The shirt",
+            "es": "La camisa"
+        }
+    },
+    {
+        "type": "N",
+        "description": "",
+        "tags": [],
+        "translations": {
+            "de": "Die Hose",
+            "en": "The pants",
+            "es": "Los pantalones"
+        }
+    },
+    {
+        "type": "N",
+        "description": "",
+        "tags": [],
+        "translations": {
+            "de": "Die Schuhe",
+            "en": "The shoes",
+            "es": "Los zapatos"
+        }
+    },
+    {
+        "type": "N",
+        "description": "",
+        "tags": [],
+        "translations": {
+            "de": "Die Uhr",
+            "en": "The clock",
+            "es": "El reloj"
+        }
+    },
+    {
+        "type": "N",
+        "description": "",
+        "tags": [],
+        "translations": {
+            "de": "Das Ohr",
+            "en": "The ear",
+            "es": "El oído"
+        }
+    },
+    {
+        "type": "N",
+        "description": "",
+        "tags": [],
+        "translations": {
+            "de": "Das Haar",
+            "en": "The hair",
+            "es": "El pelo"
+        }
+    },
+    {
+        "type": "N",
+        "description": "",
+        "tags": [],
+        "translations": {
+            "de": "Die Hand",
+            "en": "The hand",
+            "es": "La mano"
+        }
+    },
+    {
+        "type": "N",
+        "description": "",
+        "tags": [],
+        "translations": {
+            "de": "Der Fuss",
+            "en": "The foot",
+            "es": "El pie"
+        }
+    },
+    {
+        "type": "N",
+        "description": "",
+        "tags": [],
+        "translations": {
+            "de": "Der Rücken",
+            "en": "The back",
+            "es": "El reverso"
+        }
+    },
+    {
+        "type": "N",
+        "description": "",
+        "tags": [],
+        "translations": {
+            "de": "Das Licht",
+            "en": "The light",
+            "es": "La luz"
+        }
+    },
+    {
+        "type": "N",
+        "description": "",
+        "tags": [],
+        "translations": {
+            "de": "Der Stein",
+            "en": "The stone",
+            "es": "La piedra"
+        }
+    },
+    {
+        "type": "N",
+        "description": "",
+        "tags": [],
+        "translations": {
+            "de": "Der Berg",
+            "en": "The mountain",
+            "es": "La montaña"
+        }
+    },
+    {
+        "type": "N",
+        "description": "",
+        "tags": [],
+        "translations": {
+            "de": "Das Herz",
+            "en": "The heart",
+            "es": "El corazón"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "translations": {
+            "de": "Der Hund",
+            "en": "The dog",
+            "es": "El perro"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "translations": {
+            "de": "Die Katze",
+            "en": "The cat",
+            "es": "El gato"
+        }
+    }
+]
