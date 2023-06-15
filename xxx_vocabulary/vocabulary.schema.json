@@ -22,6 +22,13 @@
                         {
                             "name": "Description",
                             "type": "string"
+                        },
+                        {
+                            "name": "Example",
+                            "type": "array",
+                            "items": {
+                                "enum": [ "Other", "Food", "Work", "Clothing", "Hobbies", "Family" ]
+                            }
                         }
                     ],
                     "minItems": 3
