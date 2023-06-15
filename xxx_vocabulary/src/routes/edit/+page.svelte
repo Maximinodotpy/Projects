@@ -96,7 +96,11 @@
     <h1 class="p-4">Edit Vocabulary Chart</h1>
 
     <div class="p-4 font-mono">
-        { fileHandle ? fileHandle.name : 'Unsaved File' } { JSON.stringify(words) == JSON.stringify(lastSavedWords) ? '(Up To Date)' : '(Unsaved Changes)' }
+        { fileHandle ? fileHandle.name : 'Unsaved File' }
+        
+        <span class="inline-block">
+            { JSON.stringify(words) == JSON.stringify(lastSavedWords) ? '(Up To Date)' : '(Unsaved Changes)' }
+        </span>
     </div>
 </div>
 
@@ -117,12 +121,13 @@
             {#each languages as language}
                 <th class="p-2">{language}</th>
             {/each}
+            <th>Tags</th>
             <th class="p-0">🧨</th>
         </tr>
     </thead>
     <tbody class="divide-y-2 divide-blue-300">
         {#each words as word, index}
-            <tr>
+            <tr class="group">
                 <td class="text-center p-2">{index + 1}</td>
                 {#each languages as lang}
                     <td>    
@@ -131,6 +136,14 @@
                         {/if}
                     </td>
                 {/each}
+
+                <td class="relative w-32 overflow-hidden group-hover:overflow-visible group-focus-within:overflow-visible">
+                    <select multiple bind:value={word.tags} class="bg-transparent hidden group-focus-within:block focus:outline-none absolute top-0 w-full p-2 group-focus-within:bg-white group-focus-within:shadow-lg">
+                        {#each tags as tag}
+                            <option value={tag}>{tag}</option>
+                        {/each}
+                    </select>
+                </td>
 
                 <td><button on:click={() => { removeWord(index) }}>Remove</button><td>
             </tr>
