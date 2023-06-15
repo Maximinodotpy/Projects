@@ -1,9 +1,13 @@
-<div>
-    <a href="edit">Edit a Vocabulary Chart</a>
-    or
-    <a href="learn">Learn</a>
+<script>
+    import '../app.css';
+</script>
 
-    | <a href="/">Home</a>
+<div class="bg-neutral-300">
+    <a class="p-2 inline-block" href="edit">Edit a Vocabulary Chart</a>
+    or
+    <a class="p-2 inline-block" href="learn">Learn</a>
+
+    | <a class="p-2 inline-block" href="/">Home</a>
 </div>
 
 <slot></slot>

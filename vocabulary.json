@@ -361,5 +361,365 @@
             "en": "The cat",
             "es": "El gato"
         }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "translations": {
+            "de": "Die Tür",
+            "en": "The door",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "translations": {
+            "de": "Der Gang",
+            "en": "The Hallway",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "translations": {
+            "de": "Die Augen",
+            "en": "The eyes",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "translations": {
+            "de": "Eins",
+            "en": "One",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "translations": {
+            "de": "Zwei",
+            "en": "Two",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "translations": {
+            "de": "Drei",
+            "en": "Drei",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "translations": {
+            "de": "Vier",
+            "en": "Four",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "translations": {
+            "de": "Fünf",
+            "en": "Five",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "translations": {
+            "de": "Sechs",
+            "en": "Six",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "translations": {
+            "de": "Sieben",
+            "en": "Seven",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "translations": {
+            "de": "Acht",
+            "en": "Eight",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "translations": {
+            "de": "Neun",
+            "en": "Nine",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "translations": {
+            "de": "Zehn",
+            "en": "Ten",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "translations": {
+            "de": "Elf",
+            "en": "Eleven",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "translations": {
+            "de": "Zwölf",
+            "en": "Twelve",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "translations": {
+            "de": "Dreizehn",
+            "en": "Thirteen",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "translations": {
+            "de": "Vierzehn",
+            "en": "Fourteen",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "translations": {
+            "de": "Fünfzehn",
+            "en": "Fifteen",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "translations": {
+            "de": "Sechszehn",
+            "en": "Sixteen",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "translations": {
+            "de": "Siebzehn",
+            "en": "Seventeen",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "translations": {
+            "de": "Achtzehn",
+            "en": "Eightteen",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "translations": {
+            "de": "Neunzehn",
+            "en": "Nineteen",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "translations": {
+            "de": "Zwanzig",
+            "en": "Twenty",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "translations": {
+            "de": "Einundzwanzig",
+            "en": "Twenty-one",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "translations": {
+            "de": "Zweiundzwanzig",
+            "en": "Twenty-two",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "translations": {
+            "de": "Dreissig",
+            "en": "Thirty",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "translations": {
+            "de": "Vierzig",
+            "en": "Fourty",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "translations": {
+            "de": "Fünfzig",
+            "en": "Fifty",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "translations": {
+            "de": "Sechszig",
+            "en": "Sixty",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "translations": {
+            "de": "Siebzig",
+            "en": "Seventy",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "translations": {
+            "de": "Achtzig",
+            "en": "Eighty",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "translations": {
+            "de": "Neunzig",
+            "en": "Ninety",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "translations": {
+            "de": "Hundert",
+            "en": "Hundret",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "translations": {
+            "de": "Zweihundert",
+            "en": "Two-hundret",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "translations": {
+            "de": "Tausend",
+            "en": "Thousand",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "translations": {
+            "de": "",
+            "en": "",
+            "es": ""
+        }
     }
 ]

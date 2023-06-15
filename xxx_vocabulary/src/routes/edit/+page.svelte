@@ -16,6 +16,8 @@
 
     let languages = [ 'de', 'en', 'es' ];
     let tags = [ "Other", "Food", "Work", "Clothing", "Hobbies", "Family" ]
+    let autoSaveIntervalID = 0;
+
 
     function addWord() {
         // Loop through languages and add empty word to each language
@@ -51,6 +53,14 @@
 
         words = await file.text().then(JSON.parse);
         lastSavedWords = JSON.parse(JSON.stringify(words));
+
+        autoSaveIntervalID = setInterval(() => {
+            if (JSON.stringify(words) != JSON.stringify(lastSavedWords)) {
+                console.log('Autosaving...');
+                
+                saveFile();
+            }
+        }, 1000 * 15);
     }
 
     async function saveFile() {
@@ -78,57 +88,57 @@
 
         lastSavedWords = JSON.parse(JSON.stringify(words));
     }
+
+    addWord();
 </script>
 
-<h1>Edit Vocabulary Chart</h1>
+<div class="flex justify-between bg-neutral-200">
+    <h1 class="p-4">Edit Vocabulary Chart</h1>
 
-<div>
-    Editing { fileHandle ? fileHandle.name : 'no file selected' } { JSON.stringify(words) == JSON.stringify(lastSavedWords) ? '(Up To Date)' : '(Unsaved Changes)' }
+    <div class="p-4 font-mono">
+        { fileHandle ? fileHandle.name : 'Unsaved File' } { JSON.stringify(words) == JSON.stringify(lastSavedWords) ? '(Up To Date)' : '(Unsaved Changes)' }
+    </div>
 </div>
 
-<button on:click={openFile}>Open</button>
-<button on:click={saveFile}>Save</button>
 
-<button on:click={addWord}>Add New</button>
+<div class="p-4">
+    <div class="flex gap-5">
+        <button on:click={openFile}>Open</button>
+        <button on:click={saveFile}>Save</button>
+        
+        <button on:click={addWord}>Add New Word</button>
+    </div>
+</div>
 
-<table>
-    <thead>
-        <tr>
-            <th>#</th>
+<table class="w-full bg-blue-200 text-blue-950">
+    <thead class="sticky top-0 bg-blue-100 shadow-lg">
+        <tr class="text-left">
+            <th class="p-2 text-center">#</th>
             {#each languages as language}
-                <th>{language}</th>
+                <th class="p-2">{language}</th>
             {/each}
+            <th class="p-0">🧨</th>
         </tr>
     </thead>
-    <tbody>
+    <tbody class="divide-y-2 divide-blue-300">
         {#each words as word, index}
             <tr>
-                <td>{index}</td>
+                <td class="text-center p-2">{index + 1}</td>
                 {#each languages as lang}
                     <td>    
                         {#if lang in word.translations}
-                            <input type="text" bind:value={word.translations[lang]}>
+                            <input type="text" bind:value={word.translations[lang]} class="w-full bg-transparent focus:outline-none p-2">
                         {/if}
                     </td>
                 {/each}
 
-                <td>
-                    <select multiple bind:value={word.tags}>
-                        {#each tags as tag}
-                            <option value={tag}>{tag}</option>
-                        {/each}
-                    </select>
-                </td>
-
-                <td>
-                    <button on:click={() => { removeWord(index) }}>Remove</button>
-                <td>
+                <td><button on:click={() => { removeWord(index) }}>Remove</button><td>
             </tr>
         {/each}
 
         <tr>
-            <td colspan={languages.length}>
-                <button on:click={addWord}>Add New</button>
+            <td colspan={languages.length + 2}>
+                <button on:click={addWord} class="p-2">Add New</button>
             </td>
         </tr>
     </tbody>
