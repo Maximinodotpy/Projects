@@ -5,6 +5,7 @@
     interface Word {
         type: string;
         description: string;
+        tags: string[];
         translations: {
             [key: string]: string;
         }
@@ -14,12 +15,14 @@
     let lastSavedWords: Word[] = [];
 
     let languages = [ 'de', 'en', 'es' ];
+    let tags = [ "Other", "Food", "Work", "Clothing", "Hobbies", "Family" ]
 
     function addWord() {
         // Loop through languages and add empty word to each language
         let newWord: Word = {
             type: '',
             description: '',
+            tags: [],
             translations: {},
         }
         for (let i = 0; i < languages.length; i++) {
@@ -66,7 +69,7 @@
 
     async function saveFileAs() {
         // @ts-ignore
-        [fileHandle] = await window.showSaveFilePicker();
+        fileHandle = await window.showSaveFilePicker();
 
         // @ts-ignore
         const writable = await fileHandle.createWritable();
@@ -108,6 +111,14 @@
                         {/if}
                     </td>
                 {/each}
+
+                <td>
+                    <select multiple bind:value={word.tags}>
+                        {#each tags as tag}
+                            <option value={tag}>{tag}</option>
+                        {/each}
+                    </select>
+                </td>
 
                 <td>
                     <button on:click={() => { removeWord(index) }}>Remove</button>
