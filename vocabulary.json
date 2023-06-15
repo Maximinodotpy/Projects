@@ -2,9 +2,7 @@
     {
         "type": "N",
         "description": "",
-        "tags": [
-            "Other"
-        ],
+        "tags": [],
         "translations": {
             "de": "Hallo",
             "en": "Hello",
@@ -14,9 +12,7 @@
     {
         "type": "N",
         "description": "",
-        "tags": [
-            "Other"
-        ],
+        "tags": [],
         "translations": {
             "de": "Der Baum",
             "en": "The tree",
