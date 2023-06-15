@@ -1,34 +1,32 @@
 <script lang="ts">
     /* import rawData from '../lib/vocabulary.json'; */
 
-
     interface Word {
         type: string;
         description: string;
         tags: string[];
         translations: {
             [key: string]: string;
-        }
+        };
     }
 
     let words: Word[] = [];
     let lastSavedWords: Word[] = [];
 
-    let languages = [ 'de', 'en', 'es' ];
-    let tags = [ "Other", "Food", "Work", "Clothing", "Hobbies", "Family" ]
+    let languages = ["de", "en", "es"];
+    let tags = ["Other", "Food", "Work", "Clothing", "Hobbies", "Family"];
     let autoSaveIntervalID = 0;
-
 
     function addWord() {
         // Loop through languages and add empty word to each language
         let newWord: Word = {
-            type: '',
-            description: '',
+            type: "",
+            description: "",
             tags: [],
             translations: {},
-        }
+        };
         for (let i = 0; i < languages.length; i++) {
-            newWord.translations[languages[i]] = '';
+            newWord.translations[languages[i]] = "";
         }
         words.push(newWord);
 
@@ -41,8 +39,7 @@
         words = words;
     }
 
-
-    let fileHandle : FileSystemFileHandle | null = null;
+    let fileHandle: FileSystemFileHandle | null = null;
 
     async function openFile() {
         // @ts-ignore
@@ -56,8 +53,8 @@
 
         autoSaveIntervalID = setInterval(() => {
             if (JSON.stringify(words) != JSON.stringify(lastSavedWords)) {
-                console.log('Autosaving...');
-                
+                console.log("Autosaving...");
+
                 saveFile();
             }
         }, 1000 * 15);
@@ -67,7 +64,7 @@
         if (!fileHandle) {
             saveFileAs();
             return;
-        };
+        }
 
         // @ts-ignore
         const writable = await fileHandle.createWritable();
@@ -96,20 +93,21 @@
     <h1 class="p-4">Edit Vocabulary Chart</h1>
 
     <div class="p-4 font-mono">
-        { fileHandle ? fileHandle.name : 'Unsaved File' }
-        
+        {fileHandle ? fileHandle.name : "Unsaved File"}
+
         <span class="inline-block">
-            { JSON.stringify(words) == JSON.stringify(lastSavedWords) ? '(Up To Date)' : '(Unsaved Changes)' }
+            {JSON.stringify(words) == JSON.stringify(lastSavedWords)
+                ? "(Up To Date)"
+                : "(Unsaved Changes)"}
         </span>
     </div>
 </div>
-
 
 <div class="p-4">
     <div class="flex gap-5">
         <button on:click={openFile}>Open</button>
         <button on:click={saveFile}>Save</button>
-        
+
         <button on:click={addWord}>Add New Word</button>
     </div>
 </div>
@@ -130,23 +128,51 @@
             <tr class="group">
                 <td class="text-center p-2">{index + 1}</td>
                 {#each languages as lang}
-                    <td>    
+                    <td>
                         {#if lang in word.translations}
-                            <input type="text" bind:value={word.translations[lang]} class="w-full bg-transparent focus:outline-none p-2">
+                            <input
+                                type="text"
+                                bind:value={word.translations[lang]}
+                                class="w-full bg-transparent focus:outline-none p-2"
+                            />
                         {/if}
                     </td>
                 {/each}
 
-                <td class="relative w-32 overflow-hidden group-hover:overflow-visible group-focus-within:overflow-visible">
-                    <select multiple bind:value={word.tags} class="bg-transparent hidden group-focus-within:block focus:outline-none absolute top-0 w-full p-2 group-focus-within:bg-white group-focus-within:shadow-lg">
+                <td
+                    class="relative w-32 overflow-hidden group-hover:overflow-visible group-focus-within:overflow-visible"
+                >
+                    <select
+                        multiple
+                        bind:value={word.tags}
+                        class="
+                        bg-transparent hidden top-0 w-full p-2
+                        group-focus-within:block group-focus-within:bg-white group-focus-within:shadow-lg
+                        group-hover:block group-hover:bg-white group-hover:shadow-lg
+                        focus:outline-none absolute "
+                    >
                         {#each tags as tag}
                             <option value={tag}>{tag}</option>
                         {/each}
                     </select>
+
+                    <div class="group-hover:hidden group-focus-within:hidden z-30">
+                        {#each word.tags as tag}
+                            <span class="text-xs">
+                                {tag}
+                            </span>
+                        {/each}
+                    </div>
                 </td>
 
-                <td><button on:click={() => { removeWord(index) }}>Remove</button><td>
-            </tr>
+                <td
+                    ><button
+                        on:click={() => {
+                            removeWord(index);
+                        }}>Remove</button
+                    ></td
+                ><td /></tr
+            >
         {/each}
 
         <tr>
