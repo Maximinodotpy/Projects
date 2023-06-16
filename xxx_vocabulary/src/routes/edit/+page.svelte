@@ -14,7 +14,7 @@
     let lastSavedWords: Word[] = [];
 
     let languages = ["de", "en", "es"];
-    let tags = ["Other", "Food", "Work", "Clothing", "Hobbies", "Family"];
+    let tags = ["Other", "Food", "Work", "Clothing", "Hobbies", "Family", "Numbers", "Body"];
     let autoSaveIntervalID = 0;
 
     function addWord() {
@@ -112,7 +112,7 @@
     </div>
 </div>
 
-<table class="w-full bg-blue-200 text-blue-950">
+<table class="w-full bg-blue-200 text-blue-950 mb-20">
     <thead class="sticky top-0 bg-blue-100 shadow-lg">
         <tr class="text-left">
             <th class="p-2 text-center">#</th>
@@ -146,10 +146,11 @@
                         multiple
                         bind:value={word.tags}
                         class="
-                        bg-transparent hidden top-0 w-full p-2
-                        group-focus-within:block group-focus-within:bg-white group-focus-within:shadow-lg
+                        bg-transparent hidden top-0 w-full p-2 shadow-lg absolute 
+                        group-focus-within:block group-focus-within:bg-white
+                        hover:block
                         group-hover:block group-hover:bg-white group-hover:shadow-lg
-                        focus:outline-none absolute "
+                        focus:outline-none"
                     >
                         {#each tags as tag}
                             <option value={tag}>{tag}</option>
