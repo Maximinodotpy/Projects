@@ -15,7 +15,17 @@
     let lastSavedWords: Word[] = [];
 
     let languages = ["de", "en", "es"];
-    let tags = ["Other", "Food", "Work", "Clothing", "Hobbies", "Family", "Numbers", "Body"];
+    let tags = [
+        "Other",
+        "Food",
+        "Work",
+        "Clothing",
+        "Hobbies",
+        "Family",
+        "Numbers",
+        "Body",
+        "Traveling",
+    ];
     let autoSaveIntervalID = 0;
 
     function addWord() {
@@ -115,7 +125,7 @@
 </div>
 
 <table class="w-full bg-blue-200 text-blue-950 mb-20">
-    <thead class="sticky top-0 bg-blue-100 shadow-lg">
+    <thead class="sticky top-0 bg-blue-100 shadow-lg z-50">
         <tr class="text-left">
             <th class="p-2 text-center">#</th>
             {#each languages as language}

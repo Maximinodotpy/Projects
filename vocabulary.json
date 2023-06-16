@@ -38,7 +38,9 @@
     {
         "type": "N",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Other"
+        ],
         "translations": {
             "de": "Die Stadt",
             "en": "The city",
@@ -48,7 +50,9 @@
     {
         "type": "N",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Other"
+        ],
         "translations": {
             "de": "Das Dorf",
             "en": "The village",
@@ -811,7 +815,7 @@
         ],
         "translations": {
             "de": "Der Vater",
-            "en": "",
+            "en": "The father",
             "es": ""
         }
     },
@@ -823,7 +827,7 @@
         ],
         "translations": {
             "de": "Die Mutter",
-            "en": "",
+            "en": "The mother",
             "es": ""
         }
     },
@@ -835,7 +839,7 @@
         ],
         "translations": {
             "de": "Der Bruder",
-            "en": "",
+            "en": "The brother",
             "es": ""
         }
     },
@@ -847,7 +851,7 @@
         ],
         "translations": {
             "de": "Die Schwester",
-            "en": "",
+            "en": "The sister",
             "es": ""
         }
     },
@@ -859,7 +863,7 @@
         ],
         "translations": {
             "de": "Der Sohn",
-            "en": "",
+            "en": "The son",
             "es": ""
         }
     },
@@ -871,7 +875,7 @@
         ],
         "translations": {
             "de": "Die Tochter",
-            "en": "",
+            "en": "The daughter",
             "es": ""
         }
     },
@@ -883,7 +887,7 @@
         ],
         "translations": {
             "de": "Der Onkel",
-            "en": "",
+            "en": "The uncle",
             "es": ""
         }
     },
@@ -895,7 +899,7 @@
         ],
         "translations": {
             "de": "Die Tante",
-            "en": "",
+            "en": "The aunt",
             "es": ""
         }
     },
@@ -907,7 +911,7 @@
         ],
         "translations": {
             "de": "Der Pate",
-            "en": "",
+            "en": "The godmother",
             "es": ""
         }
     },
@@ -919,7 +923,7 @@
         ],
         "translations": {
             "de": "Die Patin",
-            "en": "",
+            "en": "The godfather",
             "es": ""
         }
     },
@@ -931,7 +935,7 @@
         ],
         "translations": {
             "de": "Der Cousin",
-            "en": "",
+            "en": "The cousin",
             "es": ""
         }
     },
@@ -943,7 +947,7 @@
         ],
         "translations": {
             "de": "Die Cousine",
-            "en": "",
+            "en": "The cousin",
             "es": ""
         }
     }
