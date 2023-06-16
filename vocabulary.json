@@ -1095,7 +1095,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Colors"
+        ],
         "created": 1686905014361,
         "uuid": "5e2590e4-55fc-46cb-9470-80603174bb29",
         "translations": {
@@ -1107,7 +1109,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Colors"
+        ],
         "created": 1686905014532,
         "uuid": "835c1633-9bd2-49e3-81ef-3c58240509a7",
         "translations": {
@@ -1119,7 +1123,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Other"
+        ],
         "created": 1686905014672,
         "uuid": "8fe23e39-a2fa-461f-bccf-d6f0352236f8",
         "translations": {
@@ -1131,7 +1137,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Other"
+        ],
         "created": 1686905014825,
         "uuid": "5aac1af2-88bc-432f-8cee-48ce592f9d43",
         "translations": {
@@ -1184,7 +1192,7 @@
         "uuid": "b2647dbe-7ce3-40e2-af8f-95197d728cd0",
         "translations": {
             "de": "gelb",
-            "en": "",
+            "en": "yellow",
             "es": ""
         }
     },
@@ -1231,8 +1239,8 @@
         "created": 1686905449560,
         "uuid": "9ad18c0c-258d-4fac-a1f0-8a9c7e33e24e",
         "translations": {
-            "de": "",
-            "en": "",
+            "de": "dunkel",
+            "en": "dark",
             "es": ""
         }
     },
@@ -1243,8 +1251,56 @@
         "created": 1686905450404,
         "uuid": "c7a4aba9-4610-4324-b130-ee69215cb537",
         "translations": {
-            "de": "",
-            "en": "",
+            "de": "hell",
+            "en": "bright/light",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1686905855980,
+        "uuid": "9c69e5c8-22f9-47a0-8a06-4ba55e3d1b2f",
+        "translations": {
+            "de": "Der Brief",
+            "en": "The letter",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1686905857706,
+        "uuid": "991a6d8c-403b-4d75-8554-3de9f99f6668",
+        "translations": {
+            "de": "Die Seite",
+            "en": "The page",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1686905856792,
+        "uuid": "f6414155-6f13-43dd-a214-ee4749fe0fc2",
+        "translations": {
+            "de": "Die Meinung",
+            "en": "The opinion",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1686921191642,
+        "uuid": "2cedf724-b8d0-4a6d-994e-5a735e3ca081",
+        "translations": {
+            "de": "Das Land",
+            "en": "The country",
             "es": ""
         }
     }
