@@ -102,6 +102,17 @@
         "description": "",
         "tags": [],
         "translations": {
+            "de": "Das Wasser",
+            "en": "The water",
+            "es": "El agua"
+        },
+        "uuid": "864a04dd-7a1c-461a-bd45-270c08434bbf"
+    },
+    {
+        "type": "N",
+        "description": "",
+        "tags": [],
+        "translations": {
             "de": "Die Brille",
             "en": "The glasses",
             "es": "Las gafas"
@@ -118,17 +129,6 @@
             "es": "La planta"
         },
         "uuid": "c26a37ff-31cf-4e2a-85cc-b305bf42e9b1"
-    },
-    {
-        "type": "N",
-        "description": "",
-        "tags": [],
-        "translations": {
-            "de": "Das Wasser",
-            "en": "The water",
-            "es": "El agua"
-        },
-        "uuid": "864a04dd-7a1c-461a-bd45-270c08434bbf"
     },
     {
         "type": "N",
@@ -889,7 +889,7 @@
         "translations": {
             "de": "Der Vater",
             "en": "The father",
-            "es": ""
+            "es": "El padre"
         },
         "uuid": "e9889ee6-7df9-4b01-b811-0babbc6488da"
     },
@@ -902,7 +902,7 @@
         "translations": {
             "de": "Die Mutter",
             "en": "The mother",
-            "es": ""
+            "es": "La madre"
         },
         "uuid": "fbc35d94-10b6-473a-b0db-0eb330b93f2f"
     },
@@ -915,7 +915,7 @@
         "translations": {
             "de": "Der Bruder",
             "en": "The brother",
-            "es": ""
+            "es": "El hermano"
         },
         "uuid": "5c4e5516-f7ed-4a60-b1be-cfdfee82682d"
     },
@@ -928,7 +928,7 @@
         "translations": {
             "de": "Die Schwester",
             "en": "The sister",
-            "es": ""
+            "es": "La hermana"
         },
         "uuid": "6910e40e-24a3-4c66-9c25-8359a7ab7852"
     },
@@ -941,7 +941,7 @@
         "translations": {
             "de": "Der Sohn",
             "en": "The son",
-            "es": ""
+            "es": "El hijo"
         },
         "uuid": "7af6307f-505f-48b9-a4bb-19bcee3e3699"
     },
@@ -954,7 +954,7 @@
         "translations": {
             "de": "Die Tochter",
             "en": "The daughter",
-            "es": ""
+            "es": "La hija"
         },
         "uuid": "766edffd-1f3a-4973-8b9b-b178f92189cc"
     },
@@ -967,7 +967,7 @@
         "translations": {
             "de": "Der Onkel",
             "en": "The uncle",
-            "es": ""
+            "es": "el tio"
         },
         "uuid": "2d1b66a4-5624-4643-bfa2-672cab41fb75"
     },
@@ -980,7 +980,7 @@
         "translations": {
             "de": "Die Tante",
             "en": "The aunt",
-            "es": ""
+            "es": "La tia"
         },
         "uuid": "4107ff6f-7bc1-4d9f-a0e0-d7c609c3a6e2"
     },
@@ -993,7 +993,7 @@
         "translations": {
             "de": "Der Pate",
             "en": "The godmother",
-            "es": ""
+            "es": "el padrino"
         },
         "uuid": "f88bfa35-202e-463a-acee-ce444927aaab"
     },
@@ -1006,7 +1006,7 @@
         "translations": {
             "de": "Die Patin",
             "en": "The godfather",
-            "es": ""
+            "es": "La madrino"
         },
         "uuid": "bc4d7c3e-6d37-4011-b576-01652146354a"
     },
@@ -1019,7 +1019,7 @@
         "translations": {
             "de": "Der Cousin",
             "en": "The cousin",
-            "es": ""
+            "es": "El primo"
         },
         "uuid": "522370a8-630d-457a-aad1-b5d51979627e"
     },
@@ -1032,8 +1032,128 @@
         "translations": {
             "de": "Die Cousine",
             "en": "The cousin",
-            "es": ""
+            "es": "La prima"
         },
         "uuid": "e5ea08a0-bab3-4283-b339-8c8940f27c70"
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1686905010563,
+        "uuid": "215936f8-f061-42b6-be65-d58869f9b323",
+        "translations": {
+            "de": "",
+            "en": "",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1686905011359,
+        "uuid": "bbf4ebea-fa84-4938-a3c3-f840e2e835d2",
+        "translations": {
+            "de": "",
+            "en": "",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1686905014048,
+        "uuid": "d2b12acf-78e7-4c37-8a4b-3b0a98dda816",
+        "translations": {
+            "de": "",
+            "en": "",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1686905014209,
+        "uuid": "e24b48e6-679b-42ae-869d-def2fb73a0e5",
+        "translations": {
+            "de": "",
+            "en": "",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1686905014361,
+        "uuid": "5e2590e4-55fc-46cb-9470-80603174bb29",
+        "translations": {
+            "de": "",
+            "en": "",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1686905014532,
+        "uuid": "835c1633-9bd2-49e3-81ef-3c58240509a7",
+        "translations": {
+            "de": "",
+            "en": "",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1686905014672,
+        "uuid": "8fe23e39-a2fa-461f-bccf-d6f0352236f8",
+        "translations": {
+            "de": "",
+            "en": "",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1686905014825,
+        "uuid": "5aac1af2-88bc-432f-8cee-48ce592f9d43",
+        "translations": {
+            "de": "",
+            "en": "",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1686905015004,
+        "uuid": "bce03348-3086-433c-a69f-419037cdfa41",
+        "translations": {
+            "de": "",
+            "en": "",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1686905015176,
+        "uuid": "84879d47-a950-4250-b598-7ca43e9ce279",
+        "translations": {
+            "de": "",
+            "en": "",
+            "es": ""
+        }
     }
 ]
