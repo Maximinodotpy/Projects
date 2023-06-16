@@ -478,7 +478,7 @@
         "translations": {
             "de": "Neun",
             "en": "Nine",
-            "es": ""
+            "es": "nueve"
         }
     },
     {
@@ -488,7 +488,7 @@
         "translations": {
             "de": "Zehn",
             "en": "Ten",
-            "es": ""
+            "es": "diez"
         }
     },
     {
@@ -498,7 +498,7 @@
         "translations": {
             "de": "Elf",
             "en": "Eleven",
-            "es": ""
+            "es": "once"
         }
     },
     {
@@ -508,7 +508,7 @@
         "translations": {
             "de": "Zwölf",
             "en": "Twelve",
-            "es": ""
+            "es": "doce"
         }
     },
     {
@@ -518,7 +518,7 @@
         "translations": {
             "de": "Dreizehn",
             "en": "Thirteen",
-            "es": ""
+            "es": "trece"
         }
     },
     {
@@ -528,7 +528,7 @@
         "translations": {
             "de": "Vierzehn",
             "en": "Fourteen",
-            "es": ""
+            "es": "catorce"
         }
     },
     {
@@ -538,7 +538,7 @@
         "translations": {
             "de": "Fünfzehn",
             "en": "Fifteen",
-            "es": ""
+            "es": "quince"
         }
     },
     {
@@ -548,7 +548,7 @@
         "translations": {
             "de": "Sechszehn",
             "en": "Sixteen",
-            "es": ""
+            "es": "dieciséis"
         }
     },
     {
@@ -558,7 +558,7 @@
         "translations": {
             "de": "Siebzehn",
             "en": "Seventeen",
-            "es": ""
+            "es": "diecisiete"
         }
     },
     {
@@ -568,7 +568,7 @@
         "translations": {
             "de": "Achtzehn",
             "en": "Eightteen",
-            "es": ""
+            "es": "Diechiocho"
         }
     },
     {
@@ -578,7 +578,7 @@
         "translations": {
             "de": "Neunzehn",
             "en": "Nineteen",
-            "es": ""
+            "es": "Diechiocho"
         }
     },
     {
@@ -588,7 +588,7 @@
         "translations": {
             "de": "Zwanzig",
             "en": "Twenty",
-            "es": ""
+            "es": "veinte"
         }
     },
     {
@@ -598,7 +598,7 @@
         "translations": {
             "de": "Einundzwanzig",
             "en": "Twenty-one",
-            "es": ""
+            "es": "veintiuno"
         }
     },
     {
@@ -608,7 +608,7 @@
         "translations": {
             "de": "Zweiundzwanzig",
             "en": "Twenty-two",
-            "es": ""
+            "es": "veintidos"
         }
     },
     {
@@ -618,7 +618,7 @@
         "translations": {
             "de": "Dreissig",
             "en": "Thirty",
-            "es": ""
+            "es": "treinta"
         }
     },
     {
@@ -628,7 +628,7 @@
         "translations": {
             "de": "Vierzig",
             "en": "Fourty",
-            "es": ""
+            "es": "cuarenta"
         }
     },
     {
@@ -638,7 +638,7 @@
         "translations": {
             "de": "Fünfzig",
             "en": "Fifty",
-            "es": ""
+            "es": "cincuenta"
         }
     },
     {
@@ -648,7 +648,7 @@
         "translations": {
             "de": "Sechszig",
             "en": "Sixty",
-            "es": ""
+            "es": "sesenta"
         }
     },
     {
@@ -658,7 +658,7 @@
         "translations": {
             "de": "Siebzig",
             "en": "Seventy",
-            "es": ""
+            "es": "setenta"
         }
     },
     {
@@ -668,7 +668,7 @@
         "translations": {
             "de": "Achtzig",
             "en": "Eighty",
-            "es": ""
+            "es": "ochenta"
         }
     },
     {
@@ -678,7 +678,7 @@
         "translations": {
             "de": "Neunzig",
             "en": "Ninety",
-            "es": ""
+            "es": "noventa"
         }
     },
     {
@@ -688,7 +688,7 @@
         "translations": {
             "de": "Hundert",
             "en": "Hundret",
-            "es": ""
+            "es": "cient"
         }
     },
     {
@@ -698,7 +698,7 @@
         "translations": {
             "de": "Zweihundert",
             "en": "Two-hundret",
-            "es": ""
+            "es": "doscientas"
         }
     },
     {
@@ -708,7 +708,7 @@
         "translations": {
             "de": "Tausend",
             "en": "Thousand",
-            "es": ""
+            "es": "mil"
         }
     },
     {
@@ -721,6 +721,18 @@
             "de": "Verrückt",
             "en": "crazy",
             "es": "loco"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [
+            "Food"
+        ],
+        "translations": {
+            "de": "Der Markt",
+            "en": "The market",
+            "es": "El mercado"
         }
     }
 ]
