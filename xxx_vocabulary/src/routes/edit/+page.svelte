@@ -144,7 +144,7 @@
     </div>
 </div>
 
-<table class="w-full bg-blue-200 text-blue-950 mb-20">
+<table class="w-full mb-20">
     <thead class="sticky top-0 bg-blue-100 shadow-lg z-50">
         <tr class="text-left">
             <th class="p-2 text-center"></th>
@@ -157,7 +157,7 @@
             <th class="p-0">🧨</th>
         </tr>
     </thead>
-    <tbody class="divide-y-2 divide-blue-300">
+    <tbody class="divide-y-2 divide-neutral-300">
         {#each words as word, index (word.uuid)}
             <tr class="group" animate:flip={{ duration: 200 }}>
                 <td class="text-center p-2 opacity-25 group-hover:opacity-100 transition-opacity">
@@ -190,18 +190,16 @@
                         multiple
                         bind:value={word.tags}
                         class="
-                        bg-transparent hidden top-0 w-full p-2 shadow-lg absolute 
-                        group-focus-within:block group-focus-within:bg-white
-                        hover:block
-                        group-hover:block group-hover:bg-white group-hover:shadow-lg
-                        focus:outline-none"
+                        bg-transparent invisible top-0 w-full p-2 absolute h-full text-xs bg-white
+                        group-focus-within:visible
+                        focus:outline-none focus:shadow-lg"
                     >
                         {#each tags as tag}
                             <option value={tag}>{tag}</option>
                         {/each}
                     </select>
 
-                    <div class="group-hover:hidden group-focus-within:hidden z-30">
+                    <div class="">
                         {#each word.tags as tag}
                             <span class="text-xs">
                                 {tag}
