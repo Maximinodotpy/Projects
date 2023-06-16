@@ -2,7 +2,9 @@
     {
         "type": "N",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Other"
+        ],
         "translations": {
             "de": "Hallo",
             "en": "Hello",
@@ -342,6 +344,7 @@
     {
         "type": "",
         "description": "",
+        "tags": [],
         "translations": {
             "de": "Der Hund",
             "en": "The dog",
@@ -351,6 +354,7 @@
     {
         "type": "",
         "description": "",
+        "tags": [],
         "translations": {
             "de": "Die Katze",
             "en": "The cat",
@@ -364,7 +368,7 @@
         "translations": {
             "de": "Die Tür",
             "en": "The door",
-            "es": ""
+            "es": "La puerta"
         }
     },
     {
@@ -374,7 +378,7 @@
         "translations": {
             "de": "Der Gang",
             "en": "The Hallway",
-            "es": ""
+            "es": "El pasillo"
         }
     },
     {
@@ -384,7 +388,7 @@
         "translations": {
             "de": "Die Augen",
             "en": "The eyes",
-            "es": ""
+            "es": "Les ojos"
         }
     },
     {
@@ -394,7 +398,7 @@
         "translations": {
             "de": "Eins",
             "en": "One",
-            "es": ""
+            "es": "un"
         }
     },
     {
@@ -404,7 +408,7 @@
         "translations": {
             "de": "Zwei",
             "en": "Two",
-            "es": ""
+            "es": "dos"
         }
     },
     {
@@ -414,7 +418,7 @@
         "translations": {
             "de": "Drei",
             "en": "Drei",
-            "es": ""
+            "es": "tres"
         }
     },
     {
@@ -424,7 +428,7 @@
         "translations": {
             "de": "Vier",
             "en": "Four",
-            "es": ""
+            "es": "quatros"
         }
     },
     {
@@ -434,7 +438,7 @@
         "translations": {
             "de": "Fünf",
             "en": "Five",
-            "es": ""
+            "es": "cinqos"
         }
     },
     {
@@ -444,7 +448,7 @@
         "translations": {
             "de": "Sechs",
             "en": "Six",
-            "es": ""
+            "es": "seis"
         }
     },
     {
@@ -454,7 +458,7 @@
         "translations": {
             "de": "Sieben",
             "en": "Seven",
-            "es": ""
+            "es": "siete"
         }
     },
     {
@@ -464,7 +468,7 @@
         "translations": {
             "de": "Acht",
             "en": "Eight",
-            "es": ""
+            "es": "ocho"
         }
     },
     {
@@ -710,11 +714,13 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Other"
+        ],
         "translations": {
-            "de": "",
-            "en": "",
-            "es": ""
+            "de": "Verrückt",
+            "en": "crazy",
+            "es": "loco"
         }
     }
 ]
