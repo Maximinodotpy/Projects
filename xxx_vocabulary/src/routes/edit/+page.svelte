@@ -1,11 +1,12 @@
 <script lang="ts">
-    /* import rawData from '../lib/vocabulary.json'; */
+    import { flip } from "svelte/animate";
 
     interface Word {
         type: string;
         description: string;
         tags: string[];
         created: number;
+        uuid: string;
         translations: {
             [key: string]: string;
         };
@@ -35,6 +36,7 @@
             description: "",
             tags: [],
             created: Date.now(),
+            uuid: crypto.randomUUID(),
             translations: {},
         };
         for (let i = 0; i < languages.length; i++) {
@@ -51,6 +53,17 @@
         words = words;
     }
 
+    function moveDown(id: number) {
+        const temp = words[id + 1]
+        words[id + 1] = words[id]
+        words[id] = temp
+    }
+    function moveUp(id: number) {
+        const temp = words[id - 1]
+        words[id - 1] = words[id]
+        words[id] = temp
+    }
+
     let fileHandle: FileSystemFileHandle | null = null;
 
     async function openFile() {
@@ -61,6 +74,12 @@
         const file: Blob = await fileHandle.getFile();
 
         words = await file.text().then(JSON.parse);
+        // Loop over words and add a uuid to each word if it does not have one
+        for (let i = 0; i < words.length; i++) {
+            if (!words[i].uuid) {
+                words[i].uuid = crypto.randomUUID();
+            }
+        }
         lastSavedWords = JSON.parse(JSON.stringify(words));
 
         autoSaveIntervalID = setInterval(() => {
@@ -127,6 +146,8 @@
 <table class="w-full bg-blue-200 text-blue-950 mb-20">
     <thead class="sticky top-0 bg-blue-100 shadow-lg z-50">
         <tr class="text-left">
+            <th class="p-2 text-center"></th>
+            <th class="p-2 text-center"></th>
             <th class="p-2 text-center">#</th>
             {#each languages as language}
                 <th class="p-2">{language}</th>
@@ -136,8 +157,18 @@
         </tr>
     </thead>
     <tbody class="divide-y-2 divide-blue-300">
-        {#each words as word, index}
-            <tr class="group">
+        {#each words as word, index (word.uuid)}
+            <tr class="group" animate:flip={{ duration: 200 }}>
+                <td class="text-center p-2 opacity-25 group-hover:opacity-100 transition-opacity">
+                    {#if index != 0}
+                        <button on:click={() => { moveUp(index) }}>⬆</button>
+                    {/if}
+                </td>
+                <td class="text-center p-2 opacity-25 group-hover:opacity-100 transition-opacity">
+                    {#if index < words.length - 1}
+                        <button on:click={() => { moveDown(index) }}>⬇</button>
+                    {/if}
+                </td>
                 <td class="text-center p-2">{index + 1}</td>
                 {#each languages as lang}
                     <td>
@@ -178,11 +209,11 @@
                     </div>
                 </td>
 
-                <td
+                <td class="opacity-25 group-hover:opacity-100 transition-opacity"
                     ><button
                         on:click={() => {
                             removeWord(index);
-                        }}>Remove</button
+                        }}>❌</button
                     ></td
                 ><td /></tr
             >

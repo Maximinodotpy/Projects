@@ -9,19 +9,8 @@
             "de": "Hallo",
             "en": "Hello",
             "es": "Hola"
-        }
-    },
-    {
-        "type": "N",
-        "description": "",
-        "tags": [
-            "Numbers"
-        ],
-        "translations": {
-            "de": "Der Baum",
-            "en": "The tree",
-            "es": "El árbol"
-        }
+        },
+        "uuid": "32c96068-3b37-432d-9285-575e64d135f2"
     },
     {
         "type": "N",
@@ -33,7 +22,21 @@
             "de": "Das Haus",
             "en": "The house",
             "es": "La casa"
-        }
+        },
+        "uuid": "bcc85307-636f-45b6-8276-005f71c9c483"
+    },
+    {
+        "type": "N",
+        "description": "",
+        "tags": [
+            "Numbers"
+        ],
+        "translations": {
+            "de": "Der Baum",
+            "en": "The tree",
+            "es": "El árbol"
+        },
+        "uuid": "65d87341-9bf3-4eb7-8bdf-dc808730ebf0"
     },
     {
         "type": "N",
@@ -45,7 +48,8 @@
             "de": "Die Stadt",
             "en": "The city",
             "es": "La ciudad"
-        }
+        },
+        "uuid": "c8fa0b1d-11a8-4389-b888-58aca5882c0e"
     },
     {
         "type": "N",
@@ -57,7 +61,8 @@
             "de": "Das Dorf",
             "en": "The village",
             "es": "El pueblo"
-        }
+        },
+        "uuid": "bbb62de6-62c3-4eee-99f4-1928c3bd95d3"
     },
     {
         "type": "N",
@@ -67,7 +72,8 @@
             "de": "Die Strasse",
             "en": "The street",
             "es": "La carretera"
-        }
+        },
+        "uuid": "70648b57-0c8b-4551-9825-107c5f0ab631"
     },
     {
         "type": "N",
@@ -77,7 +83,8 @@
             "de": "Der Weg",
             "en": "The way",
             "es": "El camino"
-        }
+        },
+        "uuid": "ceb4c8cf-99ae-4783-8d56-107949b4f608"
     },
     {
         "type": "N",
@@ -87,7 +94,8 @@
             "de": "Die Lampe",
             "en": "The lamp",
             "es": "Lámpara"
-        }
+        },
+        "uuid": "8ee5918e-29e0-464f-a74c-eab90fbc2958"
     },
     {
         "type": "N",
@@ -97,7 +105,8 @@
             "de": "Die Brille",
             "en": "The glasses",
             "es": "Las gafas"
-        }
+        },
+        "uuid": "be2d52d2-e66c-4969-a792-237ca12756e1"
     },
     {
         "type": "N",
@@ -107,7 +116,8 @@
             "de": "Die Pflanze",
             "en": "The plant",
             "es": "La planta"
-        }
+        },
+        "uuid": "c26a37ff-31cf-4e2a-85cc-b305bf42e9b1"
     },
     {
         "type": "N",
@@ -117,7 +127,8 @@
             "de": "Das Wasser",
             "en": "The water",
             "es": "El agua"
-        }
+        },
+        "uuid": "864a04dd-7a1c-461a-bd45-270c08434bbf"
     },
     {
         "type": "N",
@@ -127,7 +138,8 @@
             "de": "Das Auto",
             "en": "The car",
             "es": "El automovil"
-        }
+        },
+        "uuid": "6e3a5540-8b65-40d9-a8ab-d12dd9472a6b"
     },
     {
         "type": "N",
@@ -137,7 +149,8 @@
             "de": "Der Rucksack",
             "en": "The backpack",
             "es": "La mochila"
-        }
+        },
+        "uuid": "07c0064f-38a3-45f8-af4c-a50e9a6a85f5"
     },
     {
         "type": "N",
@@ -147,7 +160,8 @@
             "de": "Die Freizeit",
             "en": "The freetime",
             "es": "El tiempo libre"
-        }
+        },
+        "uuid": "74815db4-fe5d-4076-9ca5-b8898fd6ae80"
     },
     {
         "type": "N",
@@ -157,7 +171,8 @@
             "de": "Die Zeit",
             "en": "The time",
             "es": "El tiempo"
-        }
+        },
+        "uuid": "b4e863a5-6ee8-41da-9336-3778a787f592"
     },
     {
         "type": "N",
@@ -167,7 +182,8 @@
             "de": "Frei",
             "en": "free",
             "es": "libre"
-        }
+        },
+        "uuid": "5df0fdd6-104a-4070-bda6-2016eaebb6f8"
     },
     {
         "type": "N",
@@ -177,7 +193,8 @@
             "de": "Die Flasche",
             "en": "The bottle",
             "es": "La botella"
-        }
+        },
+        "uuid": "fd35cc22-55ee-4c17-9563-7d890df0fd10"
     },
     {
         "type": "N",
@@ -187,7 +204,8 @@
             "de": "Die Wahrheit",
             "en": "The truth",
             "es": "La verdad"
-        }
+        },
+        "uuid": "981b12d2-5b63-45c9-9a20-006ddba18d3f"
     },
     {
         "type": "N",
@@ -197,7 +215,8 @@
             "de": "Die Arbeit",
             "en": "The work",
             "es": "El trabajo"
-        }
+        },
+        "uuid": "cf7b5f00-1617-4809-9cc4-25b01ae0d4f2"
     },
     {
         "type": "N",
@@ -207,7 +226,8 @@
             "de": "Die Musik",
             "en": "The music",
             "es": "La música"
-        }
+        },
+        "uuid": "9bc4869e-70b2-4883-b42a-c03b50552b08"
     },
     {
         "type": "N",
@@ -217,7 +237,8 @@
             "de": "Das Fenster",
             "en": "The window",
             "es": "La ventana"
-        }
+        },
+        "uuid": "36918474-03d2-4896-8817-61a330e4cb7e"
     },
     {
         "type": "N",
@@ -227,7 +248,8 @@
             "de": "Das Hemd",
             "en": "The shirt",
             "es": "La camisa"
-        }
+        },
+        "uuid": "878243cf-94b7-4e2a-9d72-c32475b324f4"
     },
     {
         "type": "N",
@@ -237,7 +259,8 @@
             "de": "Die Hose",
             "en": "The pants",
             "es": "Los pantalones"
-        }
+        },
+        "uuid": "42b23ab3-f15f-43ac-90d0-ffc167c903b0"
     },
     {
         "type": "N",
@@ -247,7 +270,8 @@
             "de": "Die Schuhe",
             "en": "The shoes",
             "es": "Los zapatos"
-        }
+        },
+        "uuid": "edd3c7b9-1c2e-4dbc-baaa-1691fab16d5b"
     },
     {
         "type": "N",
@@ -257,7 +281,8 @@
             "de": "Die Uhr",
             "en": "The clock",
             "es": "El reloj"
-        }
+        },
+        "uuid": "024f1ffb-0e40-4a75-b6da-2f75a2c595eb"
     },
     {
         "type": "N",
@@ -267,7 +292,8 @@
             "de": "Das Ohr",
             "en": "The ear",
             "es": "El oído"
-        }
+        },
+        "uuid": "0b35bb43-2eea-44c2-949d-7f4da8d3b4f6"
     },
     {
         "type": "N",
@@ -277,7 +303,8 @@
             "de": "Das Haar",
             "en": "The hair",
             "es": "El pelo"
-        }
+        },
+        "uuid": "becee60e-c708-46f5-bc5a-233aae989203"
     },
     {
         "type": "N",
@@ -287,17 +314,8 @@
             "de": "Die Hand",
             "en": "The hand",
             "es": "La mano"
-        }
-    },
-    {
-        "type": "N",
-        "description": "",
-        "tags": [],
-        "translations": {
-            "de": "Der Fuss",
-            "en": "The foot",
-            "es": "El pie"
-        }
+        },
+        "uuid": "ba3a96ae-a1f2-449a-8ad5-201f3ef39003"
     },
     {
         "type": "N",
@@ -307,7 +325,19 @@
             "de": "Der Rücken",
             "en": "The back",
             "es": "El reverso"
-        }
+        },
+        "uuid": "79b7240d-ba77-470f-be7c-ded466a35906"
+    },
+    {
+        "type": "N",
+        "description": "",
+        "tags": [],
+        "translations": {
+            "de": "Der Fuss",
+            "en": "The foot",
+            "es": "El pie"
+        },
+        "uuid": "db976fb3-f95a-40c4-8588-22f0bf24027f"
     },
     {
         "type": "N",
@@ -317,7 +347,8 @@
             "de": "Das Licht",
             "en": "The light",
             "es": "La luz"
-        }
+        },
+        "uuid": "aea45476-e936-415c-8442-05984f7dd8f7"
     },
     {
         "type": "N",
@@ -327,7 +358,8 @@
             "de": "Der Stein",
             "en": "The stone",
             "es": "La piedra"
-        }
+        },
+        "uuid": "959176fd-1c7c-4349-81fa-c3bb29ba19b5"
     },
     {
         "type": "N",
@@ -337,7 +369,8 @@
             "de": "Der Berg",
             "en": "The mountain",
             "es": "La montaña"
-        }
+        },
+        "uuid": "8a38a8f4-6813-4fef-94f7-75ca92725bf6"
     },
     {
         "type": "N",
@@ -347,7 +380,8 @@
             "de": "Das Herz",
             "en": "The heart",
             "es": "El corazón"
-        }
+        },
+        "uuid": "d02ee710-14f4-4352-9a43-ab07e6ab61a3"
     },
     {
         "type": "",
@@ -357,7 +391,8 @@
             "de": "Der Hund",
             "en": "The dog",
             "es": "El perro"
-        }
+        },
+        "uuid": "a4e3c7bc-4e0a-4c68-905c-1ac5ce45bd6d"
     },
     {
         "type": "",
@@ -367,7 +402,8 @@
             "de": "Die Katze",
             "en": "The cat",
             "es": "El gato"
-        }
+        },
+        "uuid": "5fb438cd-14fb-4bcc-9f88-038bce3ba06d"
     },
     {
         "type": "",
@@ -377,7 +413,8 @@
             "de": "Die Tür",
             "en": "The door",
             "es": "La puerta"
-        }
+        },
+        "uuid": "28c5143a-507d-421f-a7a7-51585c89c7c0"
     },
     {
         "type": "",
@@ -387,7 +424,8 @@
             "de": "Der Gang",
             "en": "The Hallway",
             "es": "El pasillo"
-        }
+        },
+        "uuid": "5105bbc6-4b34-46df-a8b6-88c94d39a642"
     },
     {
         "type": "",
@@ -397,7 +435,8 @@
             "de": "Die Augen",
             "en": "The eyes",
             "es": "Les ojos"
-        }
+        },
+        "uuid": "c78e1995-87d5-4bb9-8cd1-10f146f699a5"
     },
     {
         "type": "",
@@ -409,7 +448,8 @@
             "de": "Eins",
             "en": "One",
             "es": "un"
-        }
+        },
+        "uuid": "3fac4dff-baa2-4cbe-8c47-9dfee25970a3"
     },
     {
         "type": "",
@@ -421,7 +461,8 @@
             "de": "Zwei",
             "en": "Two",
             "es": "dos"
-        }
+        },
+        "uuid": "a9c2d4a8-eba6-4f32-ae5d-e7367dc55aef"
     },
     {
         "type": "",
@@ -433,7 +474,8 @@
             "de": "Drei",
             "en": "Drei",
             "es": "tres"
-        }
+        },
+        "uuid": "a5ae8dbc-3c04-4fdc-9e27-f2fedfb0ef6c"
     },
     {
         "type": "",
@@ -445,7 +487,8 @@
             "de": "Vier",
             "en": "Four",
             "es": "quatros"
-        }
+        },
+        "uuid": "dad91cc0-bfa5-4440-ac11-61dbb7f4b5ed"
     },
     {
         "type": "",
@@ -457,7 +500,8 @@
             "de": "Fünf",
             "en": "Five",
             "es": "cinqos"
-        }
+        },
+        "uuid": "c5ee6d9e-11c8-494c-af2d-999657c5b025"
     },
     {
         "type": "",
@@ -469,7 +513,8 @@
             "de": "Sechs",
             "en": "Six",
             "es": "seis"
-        }
+        },
+        "uuid": "e8698adc-c703-4917-bd64-328795a1d989"
     },
     {
         "type": "",
@@ -481,7 +526,8 @@
             "de": "Sieben",
             "en": "Seven",
             "es": "siete"
-        }
+        },
+        "uuid": "59c961ff-8e0c-41b9-ac3b-b805ef70fc55"
     },
     {
         "type": "",
@@ -493,7 +539,8 @@
             "de": "Acht",
             "en": "Eight",
             "es": "ocho"
-        }
+        },
+        "uuid": "3890d8db-3ec5-4a35-953e-27009a423151"
     },
     {
         "type": "",
@@ -505,7 +552,8 @@
             "de": "Neun",
             "en": "Nine",
             "es": "nueve"
-        }
+        },
+        "uuid": "19c11160-ee5b-4c52-ac34-21e625963db9"
     },
     {
         "type": "",
@@ -517,7 +565,8 @@
             "de": "Zehn",
             "en": "Ten",
             "es": "diez"
-        }
+        },
+        "uuid": "c53e7a38-d242-4a94-a081-ec9fb93fd4e4"
     },
     {
         "type": "",
@@ -529,7 +578,8 @@
             "de": "Elf",
             "en": "Eleven",
             "es": "once"
-        }
+        },
+        "uuid": "d3cf6619-8cf6-43eb-bb9d-44faefd406f1"
     },
     {
         "type": "",
@@ -541,7 +591,8 @@
             "de": "Zwölf",
             "en": "Twelve",
             "es": "doce"
-        }
+        },
+        "uuid": "b8c9f064-9ebc-4056-b1d7-cc91aa5b1a78"
     },
     {
         "type": "",
@@ -553,7 +604,8 @@
             "de": "Dreizehn",
             "en": "Thirteen",
             "es": "trece"
-        }
+        },
+        "uuid": "07ab513a-be42-45bb-9ddf-ea6214f0815a"
     },
     {
         "type": "",
@@ -565,7 +617,8 @@
             "de": "Vierzehn",
             "en": "Fourteen",
             "es": "catorce"
-        }
+        },
+        "uuid": "12469823-9e73-4781-8036-9b951ca027c4"
     },
     {
         "type": "",
@@ -577,7 +630,8 @@
             "de": "Fünfzehn",
             "en": "Fifteen",
             "es": "quince"
-        }
+        },
+        "uuid": "a89de747-12e3-4514-b617-7476a478737f"
     },
     {
         "type": "",
@@ -589,7 +643,8 @@
             "de": "Sechszehn",
             "en": "Sixteen",
             "es": "dieciséis"
-        }
+        },
+        "uuid": "1b36bc5e-8261-4b31-93c4-f8402d313eb2"
     },
     {
         "type": "",
@@ -601,7 +656,8 @@
             "de": "Siebzehn",
             "en": "Seventeen",
             "es": "diecisiete"
-        }
+        },
+        "uuid": "13a3e10f-a50f-4a2a-8cdb-dce7811fb8e0"
     },
     {
         "type": "",
@@ -613,7 +669,8 @@
             "de": "Achtzehn",
             "en": "Eightteen",
             "es": "Diechiocho"
-        }
+        },
+        "uuid": "9ac069fe-8692-498f-8181-19e3f58bb73f"
     },
     {
         "type": "",
@@ -625,7 +682,8 @@
             "de": "Neunzehn",
             "en": "Nineteen",
             "es": "Diechiocho"
-        }
+        },
+        "uuid": "19a711d1-45b8-4fe8-8400-f85d54b31eee"
     },
     {
         "type": "",
@@ -637,7 +695,8 @@
             "de": "Zwanzig",
             "en": "Twenty",
             "es": "veinte"
-        }
+        },
+        "uuid": "808e9fea-1c1a-4374-9b72-5695dc1a725b"
     },
     {
         "type": "",
@@ -649,7 +708,8 @@
             "de": "Einundzwanzig",
             "en": "Twenty-one",
             "es": "veintiuno"
-        }
+        },
+        "uuid": "eb7a5bba-00cd-4feb-bdde-deb5d897f9ba"
     },
     {
         "type": "",
@@ -661,7 +721,8 @@
             "de": "Zweiundzwanzig",
             "en": "Twenty-two",
             "es": "veintidos"
-        }
+        },
+        "uuid": "d9d7b34b-60fc-4db0-9a71-c91c766022ed"
     },
     {
         "type": "",
@@ -673,7 +734,8 @@
             "de": "Dreissig",
             "en": "Thirty",
             "es": "treinta"
-        }
+        },
+        "uuid": "b2e96984-e972-44d1-96db-6d84b8af6894"
     },
     {
         "type": "",
@@ -685,7 +747,8 @@
             "de": "Vierzig",
             "en": "Fourty",
             "es": "cuarenta"
-        }
+        },
+        "uuid": "04279634-bef8-4adc-82da-7dd6b0cd5ad6"
     },
     {
         "type": "",
@@ -697,7 +760,8 @@
             "de": "Fünfzig",
             "en": "Fifty",
             "es": "cincuenta"
-        }
+        },
+        "uuid": "2344db2d-04f4-430b-98ae-a3881fe20c70"
     },
     {
         "type": "",
@@ -709,7 +773,8 @@
             "de": "Sechszig",
             "en": "Sixty",
             "es": "sesenta"
-        }
+        },
+        "uuid": "31003851-5db2-4691-b390-782458e412d7"
     },
     {
         "type": "",
@@ -721,7 +786,8 @@
             "de": "Siebzig",
             "en": "Seventy",
             "es": "setenta"
-        }
+        },
+        "uuid": "1f5df551-46b6-4837-a77e-8bc12497a5a0"
     },
     {
         "type": "",
@@ -733,7 +799,8 @@
             "de": "Achtzig",
             "en": "Eighty",
             "es": "ochenta"
-        }
+        },
+        "uuid": "f4e41a0a-1b21-45d6-a0af-4f5191df6a75"
     },
     {
         "type": "",
@@ -745,7 +812,8 @@
             "de": "Neunzig",
             "en": "Ninety",
             "es": "noventa"
-        }
+        },
+        "uuid": "a44748db-4df0-4641-8425-c1ae6f3ee0c1"
     },
     {
         "type": "",
@@ -757,7 +825,8 @@
             "de": "Hundert",
             "en": "Hundret",
             "es": "cient"
-        }
+        },
+        "uuid": "24eecc96-769f-4c04-b2ab-dd1439de0efc"
     },
     {
         "type": "",
@@ -769,7 +838,8 @@
             "de": "Zweihundert",
             "en": "Two-hundret",
             "es": "doscientas"
-        }
+        },
+        "uuid": "e4715542-6090-4fa3-85f2-e8cba2ccf566"
     },
     {
         "type": "",
@@ -781,7 +851,8 @@
             "de": "Tausend",
             "en": "Thousand",
             "es": "mil"
-        }
+        },
+        "uuid": "27c37c41-3755-4b21-8871-8e47ee25d607"
     },
     {
         "type": "",
@@ -793,7 +864,8 @@
             "de": "Verrückt",
             "en": "crazy",
             "es": "loco"
-        }
+        },
+        "uuid": "67cc4419-b20d-482e-9ba2-2a901a12c203"
     },
     {
         "type": "",
@@ -805,7 +877,8 @@
             "de": "Der Markt",
             "en": "The market",
             "es": "El mercado"
-        }
+        },
+        "uuid": "129ef336-3888-42d9-8958-9f9f603931a7"
     },
     {
         "type": "",
@@ -817,7 +890,8 @@
             "de": "Der Vater",
             "en": "The father",
             "es": ""
-        }
+        },
+        "uuid": "e9889ee6-7df9-4b01-b811-0babbc6488da"
     },
     {
         "type": "",
@@ -829,7 +903,8 @@
             "de": "Die Mutter",
             "en": "The mother",
             "es": ""
-        }
+        },
+        "uuid": "fbc35d94-10b6-473a-b0db-0eb330b93f2f"
     },
     {
         "type": "",
@@ -841,7 +916,8 @@
             "de": "Der Bruder",
             "en": "The brother",
             "es": ""
-        }
+        },
+        "uuid": "5c4e5516-f7ed-4a60-b1be-cfdfee82682d"
     },
     {
         "type": "",
@@ -853,7 +929,8 @@
             "de": "Die Schwester",
             "en": "The sister",
             "es": ""
-        }
+        },
+        "uuid": "6910e40e-24a3-4c66-9c25-8359a7ab7852"
     },
     {
         "type": "",
@@ -865,7 +942,8 @@
             "de": "Der Sohn",
             "en": "The son",
             "es": ""
-        }
+        },
+        "uuid": "7af6307f-505f-48b9-a4bb-19bcee3e3699"
     },
     {
         "type": "",
@@ -877,7 +955,8 @@
             "de": "Die Tochter",
             "en": "The daughter",
             "es": ""
-        }
+        },
+        "uuid": "766edffd-1f3a-4973-8b9b-b178f92189cc"
     },
     {
         "type": "",
@@ -889,7 +968,8 @@
             "de": "Der Onkel",
             "en": "The uncle",
             "es": ""
-        }
+        },
+        "uuid": "2d1b66a4-5624-4643-bfa2-672cab41fb75"
     },
     {
         "type": "",
@@ -901,7 +981,8 @@
             "de": "Die Tante",
             "en": "The aunt",
             "es": ""
-        }
+        },
+        "uuid": "4107ff6f-7bc1-4d9f-a0e0-d7c609c3a6e2"
     },
     {
         "type": "",
@@ -913,7 +994,8 @@
             "de": "Der Pate",
             "en": "The godmother",
             "es": ""
-        }
+        },
+        "uuid": "f88bfa35-202e-463a-acee-ce444927aaab"
     },
     {
         "type": "",
@@ -925,7 +1007,8 @@
             "de": "Die Patin",
             "en": "The godfather",
             "es": ""
-        }
+        },
+        "uuid": "bc4d7c3e-6d37-4011-b576-01652146354a"
     },
     {
         "type": "",
@@ -937,7 +1020,8 @@
             "de": "Der Cousin",
             "en": "The cousin",
             "es": ""
-        }
+        },
+        "uuid": "522370a8-630d-457a-aad1-b5d51979627e"
     },
     {
         "type": "",
@@ -949,6 +1033,7 @@
             "de": "Die Cousine",
             "en": "The cousin",
             "es": ""
-        }
+        },
+        "uuid": "e5ea08a0-bab3-4283-b339-8c8940f27c70"
     }
 ]
