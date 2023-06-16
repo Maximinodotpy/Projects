@@ -26,6 +26,7 @@
         "Numbers",
         "Body",
         "Traveling",
+        "Colors",
     ];
     let autoSaveIntervalID = 0;
 

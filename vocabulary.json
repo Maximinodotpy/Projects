@@ -1039,48 +1039,56 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Hobbies"
+        ],
         "created": 1686905010563,
         "uuid": "215936f8-f061-42b6-be65-d58869f9b323",
         "translations": {
-            "de": "",
-            "en": "",
+            "de": "Das Buch",
+            "en": "The book",
             "es": ""
         }
     },
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Hobbies"
+        ],
         "created": 1686905011359,
         "uuid": "bbf4ebea-fa84-4938-a3c3-f840e2e835d2",
         "translations": {
-            "de": "",
-            "en": "",
+            "de": "Die Zeitung",
+            "en": "The newspaper",
             "es": ""
         }
     },
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Food"
+        ],
         "created": 1686905014048,
         "uuid": "d2b12acf-78e7-4c37-8a4b-3b0a98dda816",
         "translations": {
-            "de": "",
-            "en": "",
+            "de": "Das Fleisch",
+            "en": "The meat",
             "es": ""
         }
     },
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Food"
+        ],
         "created": 1686905014209,
         "uuid": "e24b48e6-679b-42ae-869d-def2fb73a0e5",
         "translations": {
-            "de": "",
-            "en": "",
+            "de": "Die Eier",
+            "en": "The eggs",
             "es": ""
         }
     },
@@ -1091,8 +1099,8 @@
         "created": 1686905014361,
         "uuid": "5e2590e4-55fc-46cb-9470-80603174bb29",
         "translations": {
-            "de": "",
-            "en": "",
+            "de": "krank",
+            "en": "sick",
             "es": ""
         }
     },
@@ -1103,8 +1111,8 @@
         "created": 1686905014532,
         "uuid": "835c1633-9bd2-49e3-81ef-3c58240509a7",
         "translations": {
-            "de": "",
-            "en": "",
+            "de": "gesund",
+            "en": "healthy",
             "es": ""
         }
     },
@@ -1115,8 +1123,8 @@
         "created": 1686905014672,
         "uuid": "8fe23e39-a2fa-461f-bccf-d6f0352236f8",
         "translations": {
-            "de": "",
-            "en": "",
+            "de": "gut",
+            "en": "good",
             "es": ""
         }
     },
@@ -1127,8 +1135,8 @@
         "created": 1686905014825,
         "uuid": "5aac1af2-88bc-432f-8cee-48ce592f9d43",
         "translations": {
-            "de": "",
-            "en": "",
+            "de": "schlecht",
+            "en": "bad",
             "es": ""
         }
     },
@@ -1139,8 +1147,8 @@
         "created": 1686905015004,
         "uuid": "bce03348-3086-433c-a69f-419037cdfa41",
         "translations": {
-            "de": "",
-            "en": "",
+            "de": "hässlich",
+            "en": "ugly",
             "es": ""
         }
     },
@@ -1150,6 +1158,90 @@
         "tags": [],
         "created": 1686905015176,
         "uuid": "84879d47-a950-4250-b598-7ca43e9ce279",
+        "translations": {
+            "de": "blau",
+            "en": "blue",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1686905315805,
+        "uuid": "528d031f-7bbe-4438-983b-3e973b27e67a",
+        "translations": {
+            "de": "grün",
+            "en": "green",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1686905316860,
+        "uuid": "b2647dbe-7ce3-40e2-af8f-95197d728cd0",
+        "translations": {
+            "de": "gelb",
+            "en": "",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1686905446740,
+        "uuid": "cc592b79-db63-4387-b73c-1141340214b1",
+        "translations": {
+            "de": "schwarz",
+            "en": "black",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1686905447732,
+        "uuid": "2b7cec46-5f84-4e05-8ccf-33ad6ec9e625",
+        "translations": {
+            "de": "weiss",
+            "en": "white",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1686905448724,
+        "uuid": "6bdb06b5-043a-4078-ac27-b216af102b95",
+        "translations": {
+            "de": "rot",
+            "en": "red",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1686905449560,
+        "uuid": "9ad18c0c-258d-4fac-a1f0-8a9c7e33e24e",
+        "translations": {
+            "de": "",
+            "en": "",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1686905450404,
+        "uuid": "c7a4aba9-4610-4324-b130-ee69215cb537",
         "translations": {
             "de": "",
             "en": "",
