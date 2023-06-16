@@ -5,6 +5,7 @@
         type: string;
         description: string;
         tags: string[];
+        created: number;
         translations: {
             [key: string]: string;
         };
@@ -23,6 +24,7 @@
             type: "",
             description: "",
             tags: [],
+            created: Date.now(),
             translations: {},
         };
         for (let i = 0; i < languages.length; i++) {

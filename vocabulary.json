@@ -14,7 +14,9 @@
     {
         "type": "N",
         "description": "",
-        "tags": [ "Numbers" ],
+        "tags": [
+            "Numbers"
+        ],
         "translations": {
             "de": "Der Baum",
             "en": "The tree",
@@ -24,7 +26,9 @@
     {
         "type": "N",
         "description": "",
-        "tags": [ "Numbers" ],
+        "tags": [
+            "Numbers"
+        ],
         "translations": {
             "de": "Das Haus",
             "en": "The house",
@@ -418,7 +422,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [ "Numbers" ],
+        "tags": [
+            "Numbers"
+        ],
         "translations": {
             "de": "Drei",
             "en": "Drei",
@@ -428,7 +434,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [ "Numbers" ],
+        "tags": [
+            "Numbers"
+        ],
         "translations": {
             "de": "Vier",
             "en": "Four",
@@ -438,7 +446,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [ "Numbers" ],
+        "tags": [
+            "Numbers"
+        ],
         "translations": {
             "de": "Fünf",
             "en": "Five",
@@ -448,7 +458,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [ "Numbers" ],
+        "tags": [
+            "Numbers"
+        ],
         "translations": {
             "de": "Sechs",
             "en": "Six",
@@ -458,7 +470,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [ "Numbers" ],
+        "tags": [
+            "Numbers"
+        ],
         "translations": {
             "de": "Sieben",
             "en": "Seven",
@@ -468,7 +482,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [ "Numbers" ],
+        "tags": [
+            "Numbers"
+        ],
         "translations": {
             "de": "Acht",
             "en": "Eight",
@@ -478,7 +494,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [ "Numbers" ],
+        "tags": [
+            "Numbers"
+        ],
         "translations": {
             "de": "Neun",
             "en": "Nine",
@@ -488,7 +506,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [ "Numbers" ],
+        "tags": [
+            "Numbers"
+        ],
         "translations": {
             "de": "Zehn",
             "en": "Ten",
@@ -498,7 +518,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [ "Numbers" ],
+        "tags": [
+            "Numbers"
+        ],
         "translations": {
             "de": "Elf",
             "en": "Eleven",
@@ -508,7 +530,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [ "Numbers" ],
+        "tags": [
+            "Numbers"
+        ],
         "translations": {
             "de": "Zwölf",
             "en": "Twelve",
@@ -518,7 +542,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [ "Numbers" ],
+        "tags": [
+            "Numbers"
+        ],
         "translations": {
             "de": "Dreizehn",
             "en": "Thirteen",
@@ -528,7 +554,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [ "Numbers" ],
+        "tags": [
+            "Numbers"
+        ],
         "translations": {
             "de": "Vierzehn",
             "en": "Fourteen",
@@ -538,7 +566,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [ "Numbers" ],
+        "tags": [
+            "Numbers"
+        ],
         "translations": {
             "de": "Fünfzehn",
             "en": "Fifteen",
@@ -548,7 +578,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [ "Numbers" ],
+        "tags": [
+            "Numbers"
+        ],
         "translations": {
             "de": "Sechszehn",
             "en": "Sixteen",
@@ -558,7 +590,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [ "Numbers" ],
+        "tags": [
+            "Numbers"
+        ],
         "translations": {
             "de": "Siebzehn",
             "en": "Seventeen",
@@ -568,7 +602,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [ "Numbers" ],
+        "tags": [
+            "Numbers"
+        ],
         "translations": {
             "de": "Achtzehn",
             "en": "Eightteen",
@@ -578,7 +614,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [ "Numbers" ],
+        "tags": [
+            "Numbers"
+        ],
         "translations": {
             "de": "Neunzehn",
             "en": "Nineteen",
@@ -588,7 +626,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [ "Numbers" ],
+        "tags": [
+            "Numbers"
+        ],
         "translations": {
             "de": "Zwanzig",
             "en": "Twenty",
@@ -598,7 +638,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [ "Numbers" ],
+        "tags": [
+            "Numbers"
+        ],
         "translations": {
             "de": "Einundzwanzig",
             "en": "Twenty-one",
@@ -608,7 +650,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [ "Numbers" ],
+        "tags": [
+            "Numbers"
+        ],
         "translations": {
             "de": "Zweiundzwanzig",
             "en": "Twenty-two",
@@ -618,7 +662,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [ "Numbers" ],
+        "tags": [
+            "Numbers"
+        ],
         "translations": {
             "de": "Dreissig",
             "en": "Thirty",
@@ -628,7 +674,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [ "Numbers" ],
+        "tags": [
+            "Numbers"
+        ],
         "translations": {
             "de": "Vierzig",
             "en": "Fourty",
@@ -638,7 +686,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [ "Numbers" ],
+        "tags": [
+            "Numbers"
+        ],
         "translations": {
             "de": "Fünfzig",
             "en": "Fifty",
@@ -648,7 +698,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [ "Numbers" ],
+        "tags": [
+            "Numbers"
+        ],
         "translations": {
             "de": "Sechszig",
             "en": "Sixty",
@@ -658,7 +710,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [ "Numbers" ],
+        "tags": [
+            "Numbers"
+        ],
         "translations": {
             "de": "Siebzig",
             "en": "Seventy",
@@ -668,7 +722,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [ "Numbers" ],
+        "tags": [
+            "Numbers"
+        ],
         "translations": {
             "de": "Achtzig",
             "en": "Eighty",
@@ -678,7 +734,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [ "Numbers" ],
+        "tags": [
+            "Numbers"
+        ],
         "translations": {
             "de": "Neunzig",
             "en": "Ninety",
@@ -688,7 +746,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [ "Numbers" ],
+        "tags": [
+            "Numbers"
+        ],
         "translations": {
             "de": "Hundert",
             "en": "Hundret",
@@ -698,7 +758,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [ "Numbers" ],
+        "tags": [
+            "Numbers"
+        ],
         "translations": {
             "de": "Zweihundert",
             "en": "Two-hundret",
@@ -708,7 +770,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [ "Numbers" ],
+        "tags": [
+            "Numbers"
+        ],
         "translations": {
             "de": "Tausend",
             "en": "Thousand",
@@ -737,6 +801,150 @@
             "de": "Der Markt",
             "en": "The market",
             "es": "El mercado"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [
+            "Family"
+        ],
+        "translations": {
+            "de": "Der Vater",
+            "en": "",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [
+            "Family"
+        ],
+        "translations": {
+            "de": "Die Mutter",
+            "en": "",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [
+            "Family"
+        ],
+        "translations": {
+            "de": "Der Bruder",
+            "en": "",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [
+            "Family"
+        ],
+        "translations": {
+            "de": "Die Schwester",
+            "en": "",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [
+            "Family"
+        ],
+        "translations": {
+            "de": "Der Sohn",
+            "en": "",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [
+            "Family"
+        ],
+        "translations": {
+            "de": "Die Tochter",
+            "en": "",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [
+            "Family"
+        ],
+        "translations": {
+            "de": "Der Onkel",
+            "en": "",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [
+            "Family"
+        ],
+        "translations": {
+            "de": "Die Tante",
+            "en": "",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [
+            "Family"
+        ],
+        "translations": {
+            "de": "Der Pate",
+            "en": "",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [
+            "Family"
+        ],
+        "translations": {
+            "de": "Die Patin",
+            "en": "",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [
+            "Family"
+        ],
+        "translations": {
+            "de": "Der Cousin",
+            "en": "",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [
+            "Family"
+        ],
+        "translations": {
+            "de": "Die Cousine",
+            "en": "",
+            "es": ""
         }
     }
 ]
