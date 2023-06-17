@@ -1047,7 +1047,7 @@
         "translations": {
             "de": "Das Buch",
             "en": "The book",
-            "es": ""
+            "es": "El libro"
         }
     },
     {
@@ -1061,7 +1061,7 @@
         "translations": {
             "de": "Die Zeitung",
             "en": "The newspaper",
-            "es": ""
+            "es": "El periodico"
         }
     },
     {
@@ -1075,7 +1075,7 @@
         "translations": {
             "de": "Das Fleisch",
             "en": "The meat",
-            "es": ""
+            "es": "La carne"
         }
     },
     {
@@ -1089,7 +1089,7 @@
         "translations": {
             "de": "Die Eier",
             "en": "The eggs",
-            "es": ""
+            "es": "Los huevos"
         }
     },
     {
@@ -1103,7 +1103,7 @@
         "translations": {
             "de": "krank",
             "en": "sick",
-            "es": ""
+            "es": "enfermo"
         }
     },
     {
@@ -1117,7 +1117,7 @@
         "translations": {
             "de": "gesund",
             "en": "healthy",
-            "es": ""
+            "es": "saludable"
         }
     },
     {
@@ -1131,7 +1131,7 @@
         "translations": {
             "de": "gut",
             "en": "good",
-            "es": ""
+            "es": "bien"
         }
     },
     {
@@ -1145,7 +1145,7 @@
         "translations": {
             "de": "schlecht",
             "en": "bad",
-            "es": ""
+            "es": "mal"
         }
     },
     {
@@ -1157,7 +1157,7 @@
         "translations": {
             "de": "hässlich",
             "en": "ugly",
-            "es": ""
+            "es": "feo"
         }
     },
     {
@@ -1169,7 +1169,7 @@
         "translations": {
             "de": "blau",
             "en": "blue",
-            "es": ""
+            "es": "azul"
         }
     },
     {
@@ -1181,7 +1181,7 @@
         "translations": {
             "de": "grün",
             "en": "green",
-            "es": ""
+            "es": "verde"
         }
     },
     {
@@ -1193,7 +1193,7 @@
         "translations": {
             "de": "gelb",
             "en": "yellow",
-            "es": ""
+            "es": "amarillo"
         }
     },
     {
@@ -1205,7 +1205,7 @@
         "translations": {
             "de": "schwarz",
             "en": "black",
-            "es": ""
+            "es": "negro"
         }
     },
     {
@@ -1217,7 +1217,7 @@
         "translations": {
             "de": "weiss",
             "en": "white",
-            "es": ""
+            "es": "blanco"
         }
     },
     {
@@ -1229,7 +1229,7 @@
         "translations": {
             "de": "rot",
             "en": "red",
-            "es": ""
+            "es": "rojo"
         }
     },
     {
@@ -1241,7 +1241,7 @@
         "translations": {
             "de": "dunkel",
             "en": "dark",
-            "es": ""
+            "es": "oscuro"
         }
     },
     {
@@ -1253,7 +1253,7 @@
         "translations": {
             "de": "hell",
             "en": "bright/light",
-            "es": ""
+            "es": "brillante"
         }
     },
     {
@@ -1265,7 +1265,7 @@
         "translations": {
             "de": "Der Brief",
             "en": "The letter",
-            "es": ""
+            "es": "La carta"
         }
     },
     {
@@ -1277,7 +1277,7 @@
         "translations": {
             "de": "Die Seite",
             "en": "The page",
-            "es": ""
+            "es": "La pagina"
         }
     },
     {
@@ -1289,7 +1289,7 @@
         "translations": {
             "de": "Die Meinung",
             "en": "The opinion",
-            "es": ""
+            "es": "El dictamen"
         }
     },
     {
@@ -1301,7 +1301,7 @@
         "translations": {
             "de": "Das Land",
             "en": "The country",
-            "es": ""
+            "es": "La tierra"
         }
     },
     {
@@ -1313,7 +1313,7 @@
         "translations": {
             "de": "Die Welt",
             "en": "The world",
-            "es": ""
+            "es": "El mundo"
         }
     },
     {
@@ -1325,7 +1325,7 @@
         "translations": {
             "de": "Der Krieg",
             "en": "The war",
-            "es": ""
+            "es": "La guerra"
         }
     },
     {
@@ -1337,7 +1337,7 @@
         "translations": {
             "de": "Der Frieden",
             "en": "the peace",
-            "es": ""
+            "es": "La paz"
         }
     },
     {
@@ -1349,7 +1349,7 @@
         "translations": {
             "de": "Die Firma",
             "en": "the company",
-            "es": ""
+            "es": "La empresa"
         }
     },
     {
@@ -1361,7 +1361,7 @@
         "translations": {
             "de": "erschaffen",
             "en": "create",
-            "es": ""
+            "es": "crear"
         }
     },
     {
@@ -1373,7 +1373,7 @@
         "translations": {
             "de": "zerstören",
             "en": "destroy",
-            "es": ""
+            "es": "destruir"
         }
     },
     {
@@ -1385,7 +1385,7 @@
         "translations": {
             "de": "Westen",
             "en": "west",
-            "es": ""
+            "es": "Oeste"
         }
     },
     {
@@ -1397,7 +1397,7 @@
         "translations": {
             "de": "Osten",
             "en": "east",
-            "es": ""
+            "es": "Este"
         }
     },
     {
@@ -1409,7 +1409,7 @@
         "translations": {
             "de": "Norden",
             "en": "north",
-            "es": ""
+            "es": "Norte"
         }
     },
     {
@@ -1421,7 +1421,7 @@
         "translations": {
             "de": "Süden",
             "en": "south",
-            "es": ""
+            "es": "Sur"
         }
     },
     {
@@ -1431,9 +1431,9 @@
         "created": 1686925171979,
         "uuid": "22d9b256-1e8e-4430-b479-d182d7edbfe0",
         "translations": {
-            "de": "",
-            "en": "",
-            "es": ""
+            "de": "Die Küche",
+            "en": "The kitchen",
+            "es": "La cocina"
         }
     },
     {
@@ -1443,9 +1443,9 @@
         "created": 1686925172131,
         "uuid": "9f5d7816-db05-4f96-9056-c5bfdeac527c",
         "translations": {
-            "de": "",
-            "en": "",
-            "es": ""
+            "de": "Der Garten",
+            "en": "The garden",
+            "es": "El jardin"
         }
     },
     {
@@ -1455,9 +1455,57 @@
         "created": 1686925172375,
         "uuid": "aafbbcb5-f2a5-482b-8af1-27ec4a873977",
         "translations": {
-            "de": "",
-            "en": "",
-            "es": ""
+            "de": "Die Garage",
+            "en": "The garage",
+            "es": "El garaje"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1686986549634,
+        "uuid": "d9d0e3d0-679d-44df-97a3-0c5644187396",
+        "translations": {
+            "de": "Das Wohnzimmer",
+            "en": "The living room",
+            "es": "La sala de estar"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1686986551175,
+        "uuid": "bdadc11d-c40f-4bf0-879b-272774dd610b",
+        "translations": {
+            "de": "Das Esszimmer",
+            "en": "The dining room",
+            "es": "El comedor"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687029341057,
+        "uuid": "412b28d3-d5e3-474f-91cd-1e5e932b346f",
+        "translations": {
+            "de": "Das Schlafzimmer",
+            "en": "The bedroom",
+            "es": "El dormitorio"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1686986617228,
+        "uuid": "b3bdcd6c-118b-482a-b842-82f2b965e8ff",
+        "translations": {
+            "de": "Die Ente",
+            "en": "The Duck",
+            "es": "El pato"
         }
     }
 ]
