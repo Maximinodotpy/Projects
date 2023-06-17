@@ -149,6 +149,7 @@
         <tr class="text-left">
             <th class="p-2 text-center"></th>
             <th class="p-2 text-center"></th>
+            <th class="p-2">Created</th>
             <th class="p-2 text-center">#</th>
             {#each languages as language}
                 <th class="p-2">{language}</th>
@@ -170,6 +171,7 @@
                         <button on:click={() => { moveDown(index) }}>⬇</button>
                     {/if}
                 </td>
+                <td>{ new Date(word.created ?? 0).toLocaleString() }</td>
                 <td class="p-2 text-center">{index + 1}</td>
                 {#each languages as lang}
                     <td>
@@ -189,7 +191,7 @@
                     <select
                         multiple
                         bind:value={word.tags}
-                        class="absolute top-0 invisible w-full h-full p-2 text-xs bg-transparent bg-white  group-focus-within:visible focus:outline-none focus:shadow-lg"
+                        class="absolute top-0 invisible w-full h-full p-2 text-xs bg-transparent bg-white group-focus-within:visible focus:outline-none focus:shadow-lg"
                     >
                         {#each tags as tag}
                             <option value={tag}>{tag}</option>

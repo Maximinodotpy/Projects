@@ -16,7 +16,7 @@
         "type": "N",
         "description": "",
         "tags": [
-            "Numbers"
+            "Other"
         ],
         "translations": {
             "de": "Das Haus",
@@ -29,7 +29,7 @@
         "type": "N",
         "description": "",
         "tags": [
-            "Numbers"
+            "Other"
         ],
         "translations": {
             "de": "Der Baum",
@@ -1506,6 +1506,126 @@
             "de": "Die Ente",
             "en": "The Duck",
             "es": "El pato"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687029822577,
+        "uuid": "908d9cdf-6dfb-476c-8622-cd84dd646035",
+        "translations": {
+            "de": "Der Hase",
+            "en": "The rabbit",
+            "es": "La liebre"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687029824528,
+        "uuid": "80573494-ff23-4552-8322-179acbedc2f7",
+        "translations": {
+            "de": "Der Elch",
+            "en": "The elk",
+            "es": "El alce"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687029825802,
+        "uuid": "67a41196-3274-4a35-8697-87fde5a77f0e",
+        "translations": {
+            "de": "Der Vogel",
+            "en": "The Bird",
+            "es": "El pajaro"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687029827124,
+        "uuid": "c30745cc-ab95-4766-95a6-e7b59d728d61",
+        "translations": {
+            "de": "Das Schwein",
+            "en": "The pig",
+            "es": "El cerdo"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687029828186,
+        "uuid": "2075dee3-303d-4fe5-9ae7-674364decac0",
+        "translations": {
+            "de": "Das Tier",
+            "en": "The animal",
+            "es": "El animal"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687029829623,
+        "uuid": "f89a135b-c671-41b6-a9b3-b531fd4afa36",
+        "translations": {
+            "de": "Das Boot",
+            "en": "The boat",
+            "es": "El barco"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687029831096,
+        "uuid": "6260a707-9be9-4632-8804-facf99a07b6b",
+        "translations": {
+            "de": "Das Fahrad",
+            "en": "The bicycle",
+            "es": "La bicicleta"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687029831902,
+        "uuid": "ad48c3ad-e713-48da-b109-cb503dc91b57",
+        "translations": {
+            "de": "Der Stuhl",
+            "en": "The chair",
+            "es": "La silla"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687029833113,
+        "uuid": "7d51dd7c-7025-400a-8080-1bd9bc577466",
+        "translations": {
+            "de": "Das Motorrad",
+            "en": "The motorbike",
+            "es": "La moto"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687029834118,
+        "uuid": "3a158420-07a7-41a4-908e-60fb19ce8620",
+        "translations": {
+            "de": "Der Roller",
+            "en": "The scooter",
+            "es": "El scooter"
         }
     }
 ]
