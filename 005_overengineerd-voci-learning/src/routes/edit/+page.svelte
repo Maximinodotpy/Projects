@@ -145,7 +145,7 @@
 </div>
 
 <table class="w-full mb-20">
-    <thead class="sticky top-0 bg-blue-100 shadow-lg z-50">
+    <thead class="sticky top-0 z-50 bg-blue-100 shadow-lg">
         <tr class="text-left">
             <th class="p-2 text-center"></th>
             <th class="p-2 text-center"></th>
@@ -160,24 +160,24 @@
     <tbody class="divide-y-2 divide-neutral-300">
         {#each words as word, index (word.uuid)}
             <tr class="group" animate:flip={{ duration: 200 }}>
-                <td class="text-center p-2 opacity-25 group-hover:opacity-100 transition-opacity">
+                <td class="p-2 text-center transition-opacity opacity-25 group-hover:opacity-100">
                     {#if index != 0}
                         <button on:click={() => { moveUp(index) }}>⬆</button>
                     {/if}
                 </td>
-                <td class="text-center p-2 opacity-25 group-hover:opacity-100 transition-opacity">
+                <td class="p-2 text-center transition-opacity opacity-25 group-hover:opacity-100">
                     {#if index < words.length - 1}
                         <button on:click={() => { moveDown(index) }}>⬇</button>
                     {/if}
                 </td>
-                <td class="text-center p-2">{index + 1}</td>
+                <td class="p-2 text-center">{index + 1}</td>
                 {#each languages as lang}
                     <td>
                         {#if lang in word.translations}
                             <input
                                 type="text"
                                 bind:value={word.translations[lang]}
-                                class="w-full bg-transparent focus:outline-none p-2"
+                                class="w-full p-2 bg-transparent focus:outline-none"
                             />
                         {/if}
                     </td>
@@ -189,10 +189,7 @@
                     <select
                         multiple
                         bind:value={word.tags}
-                        class="
-                        bg-transparent invisible top-0 w-full p-2 absolute h-full text-xs bg-white
-                        group-focus-within:visible
-                        focus:outline-none focus:shadow-lg"
+                        class="absolute top-0 invisible w-full h-full p-2 text-xs bg-transparent bg-white  group-focus-within:visible focus:outline-none focus:shadow-lg"
                     >
                         {#each tags as tag}
                             <option value={tag}>{tag}</option>
@@ -208,7 +205,7 @@
                     </div>
                 </td>
 
-                <td class="opacity-25 group-hover:opacity-100 transition-opacity"
+                <td class="transition-opacity opacity-25 group-hover:opacity-100"
                     ><button
                         on:click={() => {
                             removeWord(index);
