@@ -37,12 +37,12 @@
     <tbody class="divide-y-2 divide-neutral-300">
         {#each words as word, index (word.uuid)}
             <tr class="group" animate:flip={{ duration: 200 }}>
-                <td class="p-2 text-center transition-opacity opacity-25 group-hover:opacity-100">
+                <td class="p-2 text-center">
                     {#if index != 0}
                         <button on:click={() => { moveUp(index) }}>⬆</button>
                     {/if}
                 </td>
-                <td class="p-2 text-center transition-opacity opacity-25 group-hover:opacity-100">
+                <td class="p-2 text-center">
                     {#if index < words.length - 1}
                         <button on:click={() => { moveDown(index) }}>⬇</button>
                     {/if}
@@ -71,8 +71,7 @@
                     </div>
                 </td>
 
-                <td class="transition-opacity opacity-25 group-hover:opacity-100"
-                    ><button
+                <td><button
                         on:click={() => {
                             removeWord(index);
                         }}>❌</button

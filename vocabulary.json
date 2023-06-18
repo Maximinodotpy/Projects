@@ -6,19 +6,6 @@
             "Other"
         ],
         "translations": {
-            "de": "Hallo",
-            "en": "Hello",
-            "es": "Hola"
-        },
-        "uuid": "32c96068-3b37-432d-9285-575e64d135f2"
-    },
-    {
-        "type": "N",
-        "description": "",
-        "tags": [
-            "Other"
-        ],
-        "translations": {
             "de": "Das Haus",
             "en": "The house",
             "es": "La casa"
@@ -1809,6 +1796,138 @@
             "de": "Der Park",
             "en": "The parc",
             "es": "El parque"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687111058039,
+        "uuid": "ed61b209-12d1-4c32-a8bb-80f21b63bb55",
+        "translations": {
+            "de": "bearbeiten",
+            "en": "edit",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687111058244,
+        "uuid": "519cb7b0-4b2e-4dcc-a5a5-521866947bcc",
+        "translations": {
+            "de": "zeichnen",
+            "en": "draw",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687111058650,
+        "uuid": "967283ca-8135-43f5-8a79-9b2bc25de3fc",
+        "translations": {
+            "de": "gehen",
+            "en": "go",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687111059132,
+        "uuid": "7ecf2d9c-a325-4ede-ad8b-a14079d34b3c",
+        "translations": {
+            "de": "schliessen",
+            "en": "close",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687111059582,
+        "uuid": "f8d2a59b-d60a-464b-8cbd-ad9c5c9b3f57",
+        "translations": {
+            "de": "öffnen",
+            "en": "open",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687111060104,
+        "uuid": "40804888-86fc-4170-940c-1fb8c999e905",
+        "translations": {
+            "de": "verlassen",
+            "en": "leave",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687111060690,
+        "uuid": "74b1e3f9-7ace-451e-8f57-3c63c8d56c86",
+        "translations": {
+            "de": "eintreten",
+            "en": "enter",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687111061483,
+        "uuid": "94bd9f1f-e846-48d6-a559-b60177db6ccb",
+        "translations": {
+            "de": "umfallen",
+            "en": "fall over",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687111062364,
+        "uuid": "f95feba5-88d4-4913-9c96-0f3dee0cdfa8",
+        "translations": {
+            "de": "lernen",
+            "en": "learn",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687111063322,
+        "uuid": "40a3e163-4da4-4f60-9d9a-8bca9161855f",
+        "translations": {
+            "de": "speichern",
+            "en": "save",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687111064423,
+        "uuid": "40f6930c-4067-4472-b488-5d76c7c155f8",
+        "translations": {
+            "de": "datei",
+            "en": "file",
+            "es": ""
         }
     }
 ]
