@@ -1627,5 +1627,125 @@
             "en": "The scooter",
             "es": "El scooter"
         }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687071322259,
+        "uuid": "f0f725d3-a352-4d43-9883-9a7d99480773",
+        "translations": {
+            "de": "Der Computer",
+            "en": "the computer",
+            "es": "El ordenador"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687071325044,
+        "uuid": "785831a1-b9b8-42ea-8826-45a228642690",
+        "translations": {
+            "de": "Der Bildschirm",
+            "en": "The monitor",
+            "es": "La pantalla"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687071326892,
+        "uuid": "3ce10d74-cf21-41d2-92af-2530f5eab2ed",
+        "translations": {
+            "de": "Die Tastatur",
+            "en": "The keyboard",
+            "es": "El teclado"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687071328248,
+        "uuid": "3953482a-e649-452d-9616-625730c81913",
+        "translations": {
+            "de": "Die Kopfhörer",
+            "en": "The headphones",
+            "es": "Los auriculares"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687071329130,
+        "uuid": "6f39bf5b-f84e-4326-b2a3-c13f1d7a00d1",
+        "translations": {
+            "de": "Das Kabel",
+            "en": "The cable",
+            "es": "El cable"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687071335063,
+        "uuid": "af53bd26-f960-44da-bc5f-9efcc94dc18b",
+        "translations": {
+            "de": "Die maus",
+            "en": "The mouse",
+            "es": "El raton"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687071335771,
+        "uuid": "81a7987f-a1c3-4923-8b8f-d10ad2d7e364",
+        "translations": {
+            "de": "Das Quadrat",
+            "en": "The ",
+            "es": "El cuadrado"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687071337205,
+        "uuid": "203d82cf-228c-4e20-ab13-a17edb9f288c",
+        "translations": {
+            "de": "Das Dreieck",
+            "en": "The triangle",
+            "es": "El triangulo"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687071337952,
+        "uuid": "093cbe9f-53d5-4be4-84bf-bf53817acf42",
+        "translations": {
+            "de": "Der Kreis",
+            "en": "The circle",
+            "es": "El circulo"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687071339615,
+        "uuid": "682331d7-b10a-4185-864c-8f0daacfeff5",
+        "translations": {
+            "de": "Der Park",
+            "en": "The parc",
+            "es": "El parque"
+        }
     }
 ]
