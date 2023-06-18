@@ -1,5 +1,8 @@
 <script lang="ts">
     import { enhance } from '$app/forms';
+    import { goto } from '$app/navigation';
+
+    import  { base } from '$app/paths';
 </script>
 
 <div class="max-w-5xl p-5 mx-auto">
@@ -10,11 +13,7 @@
         <div class="p-4 border">
             <h2>Cards</h2>
 
-            <form action="learn/cards" use:enhance method="POST">
-                <input type="file" name="file" required accept=".json">
-
-                <button type="submit">Go</button>
-            </form>
+            <a href={`${base}/learn/cards`}>Go</a>
         </div>
 
     </div>
