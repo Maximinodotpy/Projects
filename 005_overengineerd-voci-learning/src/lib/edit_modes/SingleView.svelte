@@ -24,6 +24,8 @@
 
 <div class="max-w-5xl p-5 mx-auto">
     <h2 class="mb-5 text-2xl">Single View for <code>{ current_word + 1 }/{ words.length }</code></h2>
+
+    <p class="mb-5">Added on <code class="inline-block p-1 bg-neutral-100"> { new Date(words[current_word].created ?? 0).toLocaleString() } </code></p>
     
     <div class="grid grid-cols-2 gap-10 mb-5">
         {#each languages as lang}

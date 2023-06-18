@@ -9,6 +9,7 @@ export const languageNames : { [key: string]: string } = {
 export const tags = [
     "Other",
     "Food",
+    "Household",
     "Work",
     "Clothing",
     "Hobbies",
@@ -17,4 +18,7 @@ export const tags = [
     "Body",
     "Traveling",
     "Colors",
+    "Traffic",
+    "Mathematics",
+    "Animals",
 ]

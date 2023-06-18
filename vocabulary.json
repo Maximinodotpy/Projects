@@ -54,9 +54,7 @@
     {
         "type": "N",
         "description": "",
-        "tags": [
-            "Other"
-        ],
+        "tags": [],
         "translations": {
             "de": "Das Dorf",
             "en": "The village",
@@ -67,7 +65,9 @@
     {
         "type": "N",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Traffic"
+        ],
         "translations": {
             "de": "Die Strasse",
             "en": "The street",
@@ -78,7 +78,9 @@
     {
         "type": "N",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Traffic"
+        ],
         "translations": {
             "de": "Der Weg",
             "en": "The way",
@@ -89,7 +91,9 @@
     {
         "type": "N",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Other"
+        ],
         "translations": {
             "de": "Die Lampe",
             "en": "The lamp",
@@ -100,7 +104,9 @@
     {
         "type": "N",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Other"
+        ],
         "translations": {
             "de": "Das Wasser",
             "en": "The water",
@@ -111,7 +117,9 @@
     {
         "type": "N",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Clothing"
+        ],
         "translations": {
             "de": "Die Brille",
             "en": "The glasses",
@@ -122,7 +130,9 @@
     {
         "type": "N",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Other"
+        ],
         "translations": {
             "de": "Die Pflanze",
             "en": "The plant",
@@ -133,7 +143,9 @@
     {
         "type": "N",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Traffic"
+        ],
         "translations": {
             "de": "Das Auto",
             "en": "The car",
@@ -144,7 +156,9 @@
     {
         "type": "N",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Traveling"
+        ],
         "translations": {
             "de": "Der Rucksack",
             "en": "The backpack",
@@ -155,7 +169,9 @@
     {
         "type": "N",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Hobbies"
+        ],
         "translations": {
             "de": "Die Freizeit",
             "en": "The freetime",
@@ -166,7 +182,9 @@
     {
         "type": "N",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Other"
+        ],
         "translations": {
             "de": "Die Zeit",
             "en": "The time",
@@ -177,7 +195,9 @@
     {
         "type": "N",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Other"
+        ],
         "translations": {
             "de": "Frei",
             "en": "free",
@@ -188,7 +208,10 @@
     {
         "type": "N",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Other",
+            "Food"
+        ],
         "translations": {
             "de": "Die Flasche",
             "en": "The bottle",
@@ -199,7 +222,9 @@
     {
         "type": "N",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Other"
+        ],
         "translations": {
             "de": "Die Wahrheit",
             "en": "The truth",
@@ -210,7 +235,9 @@
     {
         "type": "N",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Work"
+        ],
         "translations": {
             "de": "Die Arbeit",
             "en": "The work",
@@ -221,7 +248,9 @@
     {
         "type": "N",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Other"
+        ],
         "translations": {
             "de": "Die Musik",
             "en": "The music",
@@ -243,7 +272,9 @@
     {
         "type": "N",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Clothing"
+        ],
         "translations": {
             "de": "Das Hemd",
             "en": "The shirt",
@@ -254,7 +285,9 @@
     {
         "type": "N",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Clothing"
+        ],
         "translations": {
             "de": "Die Hose",
             "en": "The pants",
@@ -265,7 +298,9 @@
     {
         "type": "N",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Clothing"
+        ],
         "translations": {
             "de": "Die Schuhe",
             "en": "The shoes",
@@ -276,7 +311,9 @@
     {
         "type": "N",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Clothing"
+        ],
         "translations": {
             "de": "Die Uhr",
             "en": "The clock",
@@ -287,7 +324,9 @@
     {
         "type": "N",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Body"
+        ],
         "translations": {
             "de": "Das Ohr",
             "en": "The ear",
@@ -298,7 +337,9 @@
     {
         "type": "N",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Body"
+        ],
         "translations": {
             "de": "Das Haar",
             "en": "The hair",
@@ -309,7 +350,9 @@
     {
         "type": "N",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Body"
+        ],
         "translations": {
             "de": "Die Hand",
             "en": "The hand",
@@ -320,7 +363,9 @@
     {
         "type": "N",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Body"
+        ],
         "translations": {
             "de": "Der Rücken",
             "en": "The back",
@@ -331,7 +376,9 @@
     {
         "type": "N",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Body"
+        ],
         "translations": {
             "de": "Der Fuss",
             "en": "The foot",
@@ -1571,7 +1618,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Traffic"
+        ],
         "created": 1687029829623,
         "uuid": "f89a135b-c671-41b6-a9b3-b531fd4afa36",
         "translations": {
@@ -1583,7 +1632,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Traffic"
+        ],
         "created": 1687029831096,
         "uuid": "6260a707-9be9-4632-8804-facf99a07b6b",
         "translations": {
@@ -1607,7 +1658,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Traffic"
+        ],
         "created": 1687029833113,
         "uuid": "7d51dd7c-7025-400a-8080-1bd9bc577466",
         "translations": {
@@ -1619,7 +1672,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Traffic"
+        ],
         "created": 1687029834118,
         "uuid": "3a158420-07a7-41a4-908e-60fb19ce8620",
         "translations": {
@@ -1631,7 +1686,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Work"
+        ],
         "created": 1687071322259,
         "uuid": "f0f725d3-a352-4d43-9883-9a7d99480773",
         "translations": {
@@ -1643,7 +1700,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Work"
+        ],
         "created": 1687071325044,
         "uuid": "785831a1-b9b8-42ea-8826-45a228642690",
         "translations": {
@@ -1667,7 +1726,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Clothing"
+        ],
         "created": 1687071328248,
         "uuid": "3953482a-e649-452d-9616-625730c81913",
         "translations": {
@@ -1739,7 +1800,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Hobbies"
+        ],
         "created": 1687071339615,
         "uuid": "682331d7-b10a-4185-864c-8f0daacfeff5",
         "translations": {

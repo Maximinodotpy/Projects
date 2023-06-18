@@ -13,7 +13,7 @@
     {#each tags as tag}
         <h2 class="mb-5 text-2xl">{tag}</h2>
         <table class="w-full mb-10 bg-neutral-100">
-            <thead>
+            <thead class="sticky top-0 shadow-md bg-neutral-100">
                 <tr>
                     <th class="p-2 text-left">#</th>
                     {#each languages as lang}

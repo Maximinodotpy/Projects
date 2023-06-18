@@ -8,6 +8,8 @@
     let words: Word[] = [];
     let lastSavedWords: Word[] = [];
 
+    $: has_unsaved_changes = JSON.stringify(words) == JSON.stringify(lastSavedWords);
+
     const view_modes = [
         ['List', ListView ],
         ['Single', SingleView ],
@@ -96,35 +98,22 @@
     }
 
     addWord();
+    lastSavedWords = JSON.parse(JSON.stringify(words));
 </script>
 
-<div class="flex justify-between bg-neutral-200">
-    <h1 class="p-4">Edit Vocabulary Chart</h1>
-
-    <div class="p-4 font-mono">
-        {fileHandle ? fileHandle.name : "Unsaved File"}
-
-        <span class="inline-block">
-            {JSON.stringify(words) == JSON.stringify(lastSavedWords)
-                ? "(Up To Date)"
-                : "(Unsaved Changes)"}
-        </span>
-    </div>
-</div>
-
-<div class="p-4">
+<div class="flex justify-between border-b-[1.5px] px-4 py-3 items-center">
     <div class="flex gap-5">
         <button on:click={openFile}>Open</button>
         <button on:click={saveFile}>Save</button>
 
         <button on:click={addWord}>Add New Word</button>
 
-        <div class="flex items-center gap-10">
+        <div class="flex items-center gap-5 ml-10">
             <div>View Modes</div>
 
             <div class="flex gap-3">
                 {#each view_modes as view_mode, index (view_mode[0])}
-                    <label class={`p-2 bg-blue-100 ${current_view_mode == index ? 'font-semibold' : ''}`}>
+                    <label class={`py-1 px-2 bg-blue-100 ${current_view_mode == index ? 'font-semibold' : ''}`}>
                         <input type="radio" bind:group={current_view_mode} name="view_mode" value={index} class="hidden">
                         {view_mode[0]}
                     </label>
@@ -132,9 +121,13 @@
             </div>
         </div>
     </div>
+    
+    <div class="font-mono">
+        <span class="font-bold text-red-600">{has_unsaved_changes? "": "*"}</span>{fileHandle ? fileHandle.name : "New File"}
+    </div>
 </div>
 
 <div>
-    <svelte:component this={view_modes[current_view_mode][1]} words={words} removeWord={removeWord} />
+    <svelte:component this={view_modes[current_view_mode][1]} bind:words={words} removeWord={removeWord} />
 </div>
 
