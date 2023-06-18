@@ -1,34 +1,22 @@
 <script lang="ts">
-    import { flip } from "svelte/animate";
-
-    interface Word {
-        type: string;
-        description: string;
-        tags: string[];
-        created: number;
-        uuid: string;
-        translations: {
-            [key: string]: string;
-        };
-    }
+    import type { Word } from "$lib/edit_modes/word_type";
+    import SingleView from "$lib/edit_modes/SingleView.svelte";
+    import ListView from "$lib/edit_modes/ListView.svelte";
+    import GroupedByTags from "$lib/edit_modes/GroupedByTags.svelte";
+    import { languages } from "$lib/edit_modes/variables";
 
     let words: Word[] = [];
     let lastSavedWords: Word[] = [];
 
-    let languages = ["de", "en", "es"];
-    let tags = [
-        "Other",
-        "Food",
-        "Work",
-        "Clothing",
-        "Hobbies",
-        "Family",
-        "Numbers",
-        "Body",
-        "Traveling",
-        "Colors",
-    ];
+    const view_modes = [
+        ['List', ListView ],
+        ['Single', SingleView ],
+        ['Grouped By Tags', GroupedByTags ],
+    ]
+    let current_view_mode = 0
     let autoSaveIntervalID = 0;
+
+    let fileHandle: FileSystemFileHandle | null = null;
 
     function addWord() {
         // Loop through languages and add empty word to each language
@@ -49,23 +37,12 @@
     }
 
     function removeWord(id: number) {
+        if (words.length == 1) return;
+        
         words.splice(id, 1);
 
         words = words;
     }
-
-    function moveDown(id: number) {
-        const temp = words[id + 1]
-        words[id + 1] = words[id]
-        words[id] = temp
-    }
-    function moveUp(id: number) {
-        const temp = words[id - 1]
-        words[id - 1] = words[id]
-        words[id] = temp
-    }
-
-    let fileHandle: FileSystemFileHandle | null = null;
 
     async function openFile() {
         // @ts-ignore
@@ -141,86 +118,23 @@
         <button on:click={saveFile}>Save</button>
 
         <button on:click={addWord}>Add New Word</button>
+
+        <div class="flex items-center gap-10">
+            <div>View Modes</div>
+
+            <div class="flex gap-3">
+                {#each view_modes as view_mode, index (view_mode[0])}
+                    <label class={`p-2 bg-blue-100 ${current_view_mode == index ? 'font-semibold' : ''}`}>
+                        <input type="radio" bind:group={current_view_mode} name="view_mode" value={index} class="hidden">
+                        {view_mode[0]}
+                    </label>
+                {/each}
+            </div>
+        </div>
     </div>
 </div>
 
-<table class="w-full mb-20">
-    <thead class="sticky top-0 z-50 bg-blue-100 shadow-lg">
-        <tr class="text-left">
-            <th class="p-2 text-center"></th>
-            <th class="p-2 text-center"></th>
-            <th class="p-2">Created</th>
-            <th class="p-2 text-center">#</th>
-            {#each languages as language}
-                <th class="p-2">{language}</th>
-            {/each}
-            <th>Tags</th>
-            <th class="p-0">🧨</th>
-        </tr>
-    </thead>
-    <tbody class="divide-y-2 divide-neutral-300">
-        {#each words as word, index (word.uuid)}
-            <tr class="group" animate:flip={{ duration: 200 }}>
-                <td class="p-2 text-center transition-opacity opacity-25 group-hover:opacity-100">
-                    {#if index != 0}
-                        <button on:click={() => { moveUp(index) }}>⬆</button>
-                    {/if}
-                </td>
-                <td class="p-2 text-center transition-opacity opacity-25 group-hover:opacity-100">
-                    {#if index < words.length - 1}
-                        <button on:click={() => { moveDown(index) }}>⬇</button>
-                    {/if}
-                </td>
-                <td>{ new Date(word.created ?? 0).toLocaleString() }</td>
-                <td class="p-2 text-center">{index + 1}</td>
-                {#each languages as lang}
-                    <td>
-                        {#if lang in word.translations}
-                            <input
-                                type="text"
-                                bind:value={word.translations[lang]}
-                                class="w-full p-2 bg-transparent focus:outline-none"
-                            />
-                        {/if}
-                    </td>
-                {/each}
+<div>
+    <svelte:component this={view_modes[current_view_mode][1]} words={words} removeWord={removeWord} />
+</div>
 
-                <td
-                    class="relative w-32 overflow-hidden group-hover:overflow-visible group-focus-within:overflow-visible"
-                >
-                    <select
-                        multiple
-                        bind:value={word.tags}
-                        class="absolute top-0 invisible w-full h-full p-2 text-xs bg-transparent bg-white group-focus-within:visible focus:outline-none focus:shadow-lg"
-                    >
-                        {#each tags as tag}
-                            <option value={tag}>{tag}</option>
-                        {/each}
-                    </select>
-
-                    <div class="">
-                        {#each word.tags as tag}
-                            <span class="text-xs">
-                                {tag}
-                            </span>
-                        {/each}
-                    </div>
-                </td>
-
-                <td class="transition-opacity opacity-25 group-hover:opacity-100"
-                    ><button
-                        on:click={() => {
-                            removeWord(index);
-                        }}>❌</button
-                    ></td
-                ><td /></tr
-            >
-        {/each}
-
-        <tr>
-            <td colspan={languages.length + 2}>
-                <button on:click={addWord} class="p-2">Add New</button>
-            </td>
-        </tr>
-    </tbody>
-</table>
