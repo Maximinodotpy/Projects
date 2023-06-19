@@ -38,6 +38,6 @@
 </div>
 
 <div>
-    <svelte:component this={view_modes[current_view_mode][1]} bind:words={$voci_file.words} removeWord={() => { $voci_file.removeWord(0)}} />
+    <svelte:component this={view_modes[current_view_mode][1]} bind:words={$voci_file.words}  />
 </div>
 

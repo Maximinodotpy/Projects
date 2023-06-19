@@ -13,6 +13,8 @@
         words: [],
         removeWord: (id: number) => {
             if ($voci_file.words.length == 1) return;
+
+            console.log("Removing word with id " + id);
             
             $voci_file.words.splice(id, 1);
 

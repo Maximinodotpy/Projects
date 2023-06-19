@@ -1,12 +1,14 @@
 <script lang="ts">
     import { flip } from "svelte/animate";
-    import type { Word } from "$lib/edit_modes/word_type";
+    import type { VociFile, Word } from "$lib/edit_modes/word_type";
     import { languages } from "$lib/edit_modes/variables";
-    import { tags } from "$lib/edit_modes/variables";
+    /* import { tags } from "$lib/edit_modes/variables"; */
     import { languageNames } from "$lib/edit_modes/variables";
+    import { getContext } from "svelte";
+    import type { Writable } from "svelte/store";
 
     export let words: Word[] = [];
-    export let removeWord: (id: number) => void;
+    const voci_file = getContext<Writable<VociFile>>("voci_file");
 
     function moveDown(id: number) {
         const temp = words[id + 1]
@@ -71,13 +73,10 @@
                     </div>
                 </td>
 
-                <td><button
-                        on:click={() => {
-                            removeWord(index);
-                        }}>❌</button
-                    ></td
-                ><td /></tr
-            >
+                <td>
+                    <button on:click={() => { $voci_file.removeWord(index) }}>❌</button> 
+                <td/>
+            </tr>
         {/each}
     </tbody>
 </table>
