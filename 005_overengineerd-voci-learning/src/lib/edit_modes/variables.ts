@@ -21,4 +21,6 @@ export const tags = [
     "Traffic",
     "Mathematics",
     "Animals",
+    "Emotions",
+    "Buildings",
 ]

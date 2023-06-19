@@ -43,6 +43,24 @@
                 newWord();
 
                 points++;
+
+                // @ts-ignore
+                (async () => {
+                    const canvas : HTMLElement | null = document.getElementById("bg-canvas");
+
+                    if (!canvas) return;
+                    // you should  only initialize a canvas once, so save this function
+                    // we'll save it to the canvas itself for the purpose of this demo
+                    // @ts-ignore
+                    canvas.confetti = canvas.confetti || (await confetti.create(canvas, { resize: true }));
+                    
+                    // @ts-ignore
+                    canvas.confetti({
+                        spread: 20,
+                        particleCount: 200,
+                        origin: { y: 1.2 },
+                    });
+                })();
             } else {
                 console.log("Wrong");
             }
@@ -67,6 +85,10 @@
         current_word_data = word_pool[current_word_id];
     }
 </script>
+
+<svelte:head>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-confetti@2.10.1/tsparticles.confetti.bundle.min.js"></script>
+</svelte:head>
 
 <div class="flex divide-x-[1.5px] h-full">
     <div class="w-[400px] px-4 py-2">
@@ -133,8 +155,11 @@
         {/if}
     </div>
     <div class="flex flex-col grow">
-        <div class="grid text-3xl grow place-content-center">
-            {current_word_data.translations[origin_language]}
+        <div class="relative text-3xl grow">
+            <div class="absolute flex items-center justify-center w-full h-full">
+                {current_word_data.translations[origin_language]}
+            </div>
+            <canvas id="bg-canvas" class="absolute w-full h-full"></canvas>
         </div>
         <div class="border-t-[1.5px] py-2 px-6 flex justify-between">
             <div>{ points } Points</div>

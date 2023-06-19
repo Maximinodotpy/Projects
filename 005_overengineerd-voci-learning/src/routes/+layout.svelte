@@ -46,8 +46,8 @@
 
     $voci_file.addWord();
     
-    $: has_unsaved_changes = JSON.stringify($voci_file.words) == JSON.stringify(lastSavedWords);
-    lastSavedWords = JSON.parse(JSON.stringify($voci_file.words));
+    /* $: has_unsaved_changes = JSON.stringify($voci_file.words) == JSON.stringify(lastSavedWords);
+    lastSavedWords = JSON.parse(JSON.stringify($voci_file.words)); */
 
     async function openFile() {
         // @ts-ignore
@@ -117,12 +117,12 @@
             <button on:click={saveFile}>Save</button>
 
             <div class="font-mono">
-                <span class="font-bold text-red-600">{has_unsaved_changes? "": "*"}</span>{$voci_file.file_handle ? $voci_file.file_handle.name : "New File"}
+                <!-- <span class="font-bold text-red-600">{has_unsaved_changes? "": "*"}</span> -->{$voci_file.file_handle ? $voci_file.file_handle.name : "New File"}
             </div>
         </div>
     </div>
     
-    <div class="overflow-auto grow">
+    <div class="flex flex-col overflow-auto grow">
         <slot></slot>
     </div>
 </div>

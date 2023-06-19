@@ -1187,7 +1187,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Other"
+        ],
         "created": 1686905015004,
         "uuid": "bce03348-3086-433c-a69f-419037cdfa41",
         "translations": {
@@ -1199,7 +1201,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Colors"
+        ],
         "created": 1686905015176,
         "uuid": "84879d47-a950-4250-b598-7ca43e9ce279",
         "translations": {
@@ -1211,7 +1215,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Colors"
+        ],
         "created": 1686905315805,
         "uuid": "528d031f-7bbe-4438-983b-3e973b27e67a",
         "translations": {
@@ -1223,7 +1229,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Colors"
+        ],
         "created": 1686905316860,
         "uuid": "b2647dbe-7ce3-40e2-af8f-95197d728cd0",
         "translations": {
@@ -1235,7 +1243,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Colors"
+        ],
         "created": 1686905446740,
         "uuid": "cc592b79-db63-4387-b73c-1141340214b1",
         "translations": {
@@ -1247,7 +1257,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Colors"
+        ],
         "created": 1686905447732,
         "uuid": "2b7cec46-5f84-4e05-8ccf-33ad6ec9e625",
         "translations": {
@@ -1259,7 +1271,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Colors"
+        ],
         "created": 1686905448724,
         "uuid": "6bdb06b5-043a-4078-ac27-b216af102b95",
         "translations": {
@@ -1271,7 +1285,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Colors"
+        ],
         "created": 1686905449560,
         "uuid": "9ad18c0c-258d-4fac-a1f0-8a9c7e33e24e",
         "translations": {
@@ -1283,7 +1299,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Colors"
+        ],
         "created": 1686905450404,
         "uuid": "c7a4aba9-4610-4324-b130-ee69215cb537",
         "translations": {
@@ -1295,7 +1313,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Work"
+        ],
         "created": 1686905855980,
         "uuid": "9c69e5c8-22f9-47a0-8a06-4ba55e3d1b2f",
         "translations": {
@@ -1307,7 +1327,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Work"
+        ],
         "created": 1686905857706,
         "uuid": "991a6d8c-403b-4d75-8554-3de9f99f6668",
         "translations": {
@@ -1319,7 +1341,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Other"
+        ],
         "created": 1686905856792,
         "uuid": "f6414155-6f13-43dd-a214-ee4749fe0fc2",
         "translations": {
@@ -1331,7 +1355,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Colors"
+        ],
         "created": 1686921191642,
         "uuid": "2cedf724-b8d0-4a6d-994e-5a735e3ca081",
         "translations": {
@@ -1343,7 +1369,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Other"
+        ],
         "created": 1686924588890,
         "uuid": "97b29db5-1c33-424f-ac8f-064a6d979092",
         "translations": {
@@ -1355,7 +1383,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Other"
+        ],
         "created": 1686924597433,
         "uuid": "7f673a49-0992-47e3-895b-7e8554434621",
         "translations": {
@@ -1367,7 +1397,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Other"
+        ],
         "created": 1686924618675,
         "uuid": "8b07b25f-29d5-49d1-95d0-009b049b2bb3",
         "translations": {
@@ -1379,7 +1411,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Work"
+        ],
         "created": 1686924627333,
         "uuid": "03509527-51b6-410f-b3fb-88756925fd08",
         "translations": {
@@ -1391,7 +1425,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Other"
+        ],
         "created": 1686924668323,
         "uuid": "bc2a03c4-472b-48ae-b663-133e901d6da6",
         "translations": {
@@ -1403,7 +1439,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Other"
+        ],
         "created": 1686924681754,
         "uuid": "1940b999-cde9-4296-874f-dd150026cb8d",
         "translations": {
@@ -1415,7 +1453,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Other"
+        ],
         "created": 1686925171127,
         "uuid": "b593b0f5-20fd-4c66-ae3e-0c7361c4af1f",
         "translations": {
@@ -1427,7 +1467,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Other"
+        ],
         "created": 1686925171383,
         "uuid": "52052e4c-0c58-4fa4-8566-82dbe94b33dd",
         "translations": {
@@ -1439,7 +1481,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Other"
+        ],
         "created": 1686925171530,
         "uuid": "75ba6d56-aa70-49d0-bd00-dd1c8225d5d6",
         "translations": {
@@ -1451,7 +1495,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Other"
+        ],
         "created": 1686925171792,
         "uuid": "258be3f9-7344-4781-bcff-2c1d9904c5d8",
         "translations": {
@@ -1463,7 +1509,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Household"
+        ],
         "created": 1686925171979,
         "uuid": "22d9b256-1e8e-4430-b479-d182d7edbfe0",
         "translations": {
@@ -1475,7 +1523,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Household"
+        ],
         "created": 1686925172131,
         "uuid": "9f5d7816-db05-4f96-9056-c5bfdeac527c",
         "translations": {
@@ -1487,7 +1537,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Household"
+        ],
         "created": 1686925172375,
         "uuid": "aafbbcb5-f2a5-482b-8af1-27ec4a873977",
         "translations": {
@@ -1499,7 +1551,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Household"
+        ],
         "created": 1686986549634,
         "uuid": "d9d0e3d0-679d-44df-97a3-0c5644187396",
         "translations": {
@@ -1511,7 +1565,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Household"
+        ],
         "created": 1686986551175,
         "uuid": "bdadc11d-c40f-4bf0-879b-272774dd610b",
         "translations": {
@@ -1523,7 +1579,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Household"
+        ],
         "created": 1687029341057,
         "uuid": "412b28d3-d5e3-474f-91cd-1e5e932b346f",
         "translations": {
@@ -1535,7 +1593,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Animals"
+        ],
         "created": 1686986617228,
         "uuid": "b3bdcd6c-118b-482a-b842-82f2b965e8ff",
         "translations": {
@@ -1547,7 +1607,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Animals"
+        ],
         "created": 1687029822577,
         "uuid": "908d9cdf-6dfb-476c-8622-cd84dd646035",
         "translations": {
@@ -1559,7 +1621,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Animals"
+        ],
         "created": 1687029824528,
         "uuid": "80573494-ff23-4552-8322-179acbedc2f7",
         "translations": {
@@ -1571,7 +1635,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Animals"
+        ],
         "created": 1687029825802,
         "uuid": "67a41196-3274-4a35-8697-87fde5a77f0e",
         "translations": {
@@ -1583,7 +1649,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Animals"
+        ],
         "created": 1687029827124,
         "uuid": "c30745cc-ab95-4766-95a6-e7b59d728d61",
         "translations": {
@@ -1595,7 +1663,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Animals"
+        ],
         "created": 1687029828186,
         "uuid": "2075dee3-303d-4fe5-9ae7-674364decac0",
         "translations": {
@@ -1635,7 +1705,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Household"
+        ],
         "created": 1687029831902,
         "uuid": "ad48c3ad-e713-48da-b109-cb503dc91b57",
         "translations": {
@@ -1703,7 +1775,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Work"
+        ],
         "created": 1687071326892,
         "uuid": "3ce10d74-cf21-41d2-92af-2530f5eab2ed",
         "translations": {
@@ -1729,7 +1803,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Work"
+        ],
         "created": 1687071329130,
         "uuid": "6f39bf5b-f84e-4326-b2a3-c13f1d7a00d1",
         "translations": {
@@ -1741,7 +1817,10 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Work",
+            "Animals"
+        ],
         "created": 1687071335063,
         "uuid": "af53bd26-f960-44da-bc5f-9efcc94dc18b",
         "translations": {
@@ -1753,7 +1832,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Mathematics"
+        ],
         "created": 1687071335771,
         "uuid": "81a7987f-a1c3-4923-8b8f-d10ad2d7e364",
         "translations": {
@@ -1765,7 +1846,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Mathematics"
+        ],
         "created": 1687071337205,
         "uuid": "203d82cf-228c-4e20-ab13-a17edb9f288c",
         "translations": {
@@ -1777,7 +1860,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Mathematics"
+        ],
         "created": 1687071337952,
         "uuid": "093cbe9f-53d5-4be4-84bf-bf53817acf42",
         "translations": {
@@ -1809,7 +1894,7 @@
         "translations": {
             "de": "bearbeiten",
             "en": "edit",
-            "es": ""
+            "es": "editar"
         }
     },
     {
@@ -1821,7 +1906,7 @@
         "translations": {
             "de": "zeichnen",
             "en": "draw",
-            "es": ""
+            "es": "dibujar"
         }
     },
     {
@@ -1833,7 +1918,7 @@
         "translations": {
             "de": "gehen",
             "en": "go",
-            "es": ""
+            "es": "vaya"
         }
     },
     {
@@ -1845,7 +1930,7 @@
         "translations": {
             "de": "schliessen",
             "en": "close",
-            "es": ""
+            "es": "cerrar"
         }
     },
     {
@@ -1857,7 +1942,7 @@
         "translations": {
             "de": "öffnen",
             "en": "open",
-            "es": ""
+            "es": "abra"
         }
     },
     {
@@ -1869,7 +1954,7 @@
         "translations": {
             "de": "verlassen",
             "en": "leave",
-            "es": ""
+            "es": "dejar"
         }
     },
     {
@@ -1881,7 +1966,7 @@
         "translations": {
             "de": "eintreten",
             "en": "enter",
-            "es": ""
+            "es": "entrar"
         }
     },
     {
@@ -1893,7 +1978,7 @@
         "translations": {
             "de": "umfallen",
             "en": "fall over",
-            "es": ""
+            "es": "caerse"
         }
     },
     {
@@ -1905,67 +1990,218 @@
         "translations": {
             "de": "lernen",
             "en": "learn",
-            "es": ""
+            "es": "aprender"
         }
     },
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Work"
+        ],
         "created": 1687111063322,
         "uuid": "40a3e163-4da4-4f60-9d9a-8bca9161855f",
         "translations": {
             "de": "speichern",
             "en": "save",
-            "es": ""
+            "es": "guardar"
         }
     },
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Work"
+        ],
         "created": 1687111064423,
         "uuid": "40f6930c-4067-4472-b488-5d76c7c155f8",
         "translations": {
             "de": "datei",
             "en": "file",
-            "es": ""
+            "es": "fichero"
         }
     },
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Body"
+        ],
         "created": 1687152254503,
         "uuid": "d6e8e838-d8e6-4d5b-b96c-74f24b247160",
         "translations": {
-            "de": "",
-            "en": "",
-            "es": ""
+            "de": "Das Blut",
+            "en": "The blood",
+            "es": "la sangre"
         }
     },
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Household",
+            "Buildings"
+        ],
         "created": 1687152254913,
         "uuid": "b58cd28f-693c-4d41-a0dd-9ab1c89f85f6",
         "translations": {
-            "de": "",
-            "en": "",
-            "es": ""
+            "de": "Die Treppe",
+            "en": "The stairs",
+            "es": "Les escaleras"
         }
     },
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Emotions"
+        ],
         "created": 1687152256019,
         "uuid": "5637ee06-ed38-4308-84c9-a0ea42f35da7",
         "translations": {
-            "de": "",
-            "en": "",
-            "es": ""
+            "de": "hungrig",
+            "en": "hungry",
+            "es": "hambriento"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [
+            "Emotions"
+        ],
+        "created": 1687200582201,
+        "uuid": "8deddacc-abfa-4c4c-bf39-af5725b9dfc6",
+        "translations": {
+            "de": "durstig",
+            "en": "thirsty",
+            "es": "sediento"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [
+            "Emotions"
+        ],
+        "created": 1687200583070,
+        "uuid": "d7334a72-c287-419d-ab52-9cb15bb5e7c6",
+        "translations": {
+            "de": "traurig",
+            "en": "sad",
+            "es": "triste"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [
+            "Emotions"
+        ],
+        "created": 1687200583848,
+        "uuid": "5b7ec0df-3958-4f51-9040-ef67e3ea2899",
+        "translations": {
+            "de": "glücklich",
+            "en": "happy",
+            "es": "feliz"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [
+            "Household"
+        ],
+        "created": 1687200805742,
+        "uuid": "fc6b655a-57c2-4509-90c0-b7fea1e71feb",
+        "translations": {
+            "de": "Das Hochhaus",
+            "en": "The Skyscraper",
+            "es": "El rascacielos"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [
+            "Other"
+        ],
+        "created": 1687200807730,
+        "uuid": "36477525-6f68-42ac-9d08-54567cea52cb",
+        "translations": {
+            "de": "links",
+            "en": "left",
+            "es": "izquierda"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [
+            "Other"
+        ],
+        "created": 1687200809467,
+        "uuid": "5fc07e5d-f718-4c3d-906b-319d3542c51d",
+        "translations": {
+            "de": "rechts",
+            "en": "right",
+            "es": "derecha"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [
+            "Other"
+        ],
+        "created": 1687200815068,
+        "uuid": "c07f2ac1-0e27-4c7f-98e9-08bbda15a20c",
+        "translations": {
+            "de": "oben",
+            "en": "top",
+            "es": "top"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [
+            "Other"
+        ],
+        "created": 1687200817113,
+        "uuid": "37704a68-f60b-42e1-afbb-e6c76d99d567",
+        "translations": {
+            "de": "unten",
+            "en": "below",
+            "es": "abajo"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [
+            "Other"
+        ],
+        "created": 1687200926111,
+        "uuid": "7154cc5f-070d-4edd-bcfb-cd96950efc1d",
+        "translations": {
+            "de": "davor",
+            "en": "bevor",
+            "es": "antes"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [
+            "Other"
+        ],
+        "created": 1687203351722,
+        "uuid": "9e0431ae-e2b2-467c-8077-ba6209b497d9",
+        "translations": {
+            "de": "dahinter",
+            "en": "behind",
+            "es": "detra de"
         }
     }
 ]

@@ -37,7 +37,7 @@
 
 </div>
 
-<div>
+<div class="overflow-auto grow">
     <svelte:component this={view_modes[current_view_mode][1]} bind:words={$voci_file.words}  />
 </div>
 
