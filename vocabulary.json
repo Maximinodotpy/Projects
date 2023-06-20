@@ -704,7 +704,7 @@
         "translations": {
             "de": "Achtzehn",
             "en": "Eightteen",
-            "es": "Diechiocho"
+            "es": "Dieciocho"
         },
         "uuid": "9ac069fe-8692-498f-8181-19e3f58bb73f"
     },
@@ -717,7 +717,7 @@
         "translations": {
             "de": "Neunzehn",
             "en": "Nineteen",
-            "es": "Diechiocho"
+            "es": "Diechinueve"
         },
         "uuid": "19a711d1-45b8-4fe8-8400-f85d54b31eee"
     },
@@ -1853,7 +1853,7 @@
         "uuid": "81a7987f-a1c3-4923-8b8f-d10ad2d7e364",
         "translations": {
             "de": "Das Quadrat",
-            "en": "The ",
+            "en": "The square",
             "es": "El cuadrado"
         }
     },
@@ -2211,9 +2211,9 @@
         "created": 1687234588480,
         "uuid": "90c2545a-ec0d-4fb5-8c9f-ffc63ccec74f",
         "translations": {
-            "de": "",
-            "en": "",
-            "es": ""
+            "de": "Der Zug",
+            "en": "The train",
+            "es": "El tren"
         }
     },
     {
@@ -2223,9 +2223,9 @@
         "created": 1687234590191,
         "uuid": "78afdac4-9826-40e6-8779-86f02f121a2f",
         "translations": {
-            "de": "",
-            "en": "",
-            "es": ""
+            "de": "Der Bus",
+            "en": "The bus",
+            "es": "El autobus"
         }
     },
     {
@@ -2235,9 +2235,9 @@
         "created": 1687234590805,
         "uuid": "01fb8427-5025-499d-8534-682aea58e8b1",
         "translations": {
-            "de": "",
-            "en": "",
-            "es": ""
+            "de": "Die Zigarette",
+            "en": "The cigarette",
+            "es": "El cigarillio"
         }
     },
     {
@@ -2247,9 +2247,9 @@
         "created": 1687234591200,
         "uuid": "ae1b402b-8b88-4ff5-9f28-666dbaa09c8a",
         "translations": {
-            "de": "",
-            "en": "",
-            "es": ""
+            "de": "Der Alkohol",
+            "en": "The alcohol",
+            "es": "El alcohol"
         }
     },
     {
@@ -2259,9 +2259,9 @@
         "created": 1687234591308,
         "uuid": "16961cc2-cdec-40bb-9f1d-fc522556b776",
         "translations": {
-            "de": "",
-            "en": "",
-            "es": ""
+            "de": "Die Wiese",
+            "en": "The meadow",
+            "es": "El prado"
         }
     },
     {
@@ -2271,9 +2271,9 @@
         "created": 1687234591458,
         "uuid": "3661d72b-d821-4378-90ea-34f9db6010df",
         "translations": {
-            "de": "",
-            "en": "",
-            "es": ""
+            "de": "Der Wald",
+            "en": "The Forest",
+            "es": "El bosque"
         }
     },
     {
@@ -2283,9 +2283,9 @@
         "created": 1687234591718,
         "uuid": "ed951fe2-14a0-4fd3-a69a-55273e948775",
         "translations": {
-            "de": "",
-            "en": "",
-            "es": ""
+            "de": "Der Hügel",
+            "en": "The Hill",
+            "es": "La colina"
         }
     },
     {
@@ -2295,9 +2295,9 @@
         "created": 1687234595195,
         "uuid": "f79346d9-26bf-4fe1-873f-d97174b3fdd6",
         "translations": {
-            "de": "",
-            "en": "",
-            "es": ""
+            "de": "Die Station",
+            "en": "The station",
+            "es": "El estacion"
         }
     },
     {
@@ -2307,9 +2307,9 @@
         "created": 1687234595860,
         "uuid": "c24e66d6-e216-4da4-bca8-35fea58464d4",
         "translations": {
-            "de": "",
-            "en": "",
-            "es": ""
+            "de": "Die liste",
+            "en": "The list",
+            "es": "lista"
         }
     },
     {
@@ -2319,9 +2319,225 @@
         "created": 1687234596641,
         "uuid": "56c0fa5f-2887-4571-a286-43baa4f4d6c4",
         "translations": {
-            "de": "",
-            "en": "",
-            "es": ""
+            "de": "Die Website",
+            "en": "The website",
+            "es": "El sitio web"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687254941851,
+        "uuid": "f2fa1e74-055c-4566-a2bb-544d06b94781",
+        "translations": {
+            "de": "programmieren",
+            "en": "program",
+            "es": "programar"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687254943164,
+        "uuid": "5cd3b731-bab7-4595-9c6c-bffabe1e04bf",
+        "translations": {
+            "de": "Der Stern",
+            "en": "The star",
+            "es": "el estrella"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687254945026,
+        "uuid": "34f267ff-55d5-471c-a42b-3e3fc1fb790a",
+        "translations": {
+            "de": "Der Nagel",
+            "en": "The nail",
+            "es": "el clavo"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687254946422,
+        "uuid": "ac307ca7-f94e-4262-b307-a5db9237ab0f",
+        "translations": {
+            "de": "Der Koffer",
+            "en": "The suitcase",
+            "es": "la maleta"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687254947452,
+        "uuid": "34ff119e-ea49-482f-9e31-a334570a34dd",
+        "translations": {
+            "de": "Datum",
+            "en": "The date",
+            "es": "La fecha"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687255007380,
+        "uuid": "11929d0c-42c3-48eb-b084-4154ae1e8752",
+        "translations": {
+            "de": "Die Aufgabe",
+            "en": "The task",
+            "es": "La tarea"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687255008494,
+        "uuid": "0cca7d96-6e7a-4c52-9d25-b8c23a144045",
+        "translations": {
+            "de": "Der Nepotismus",
+            "en": "nepotism",
+            "es": "nepotismo"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687255008675,
+        "uuid": "8aa1fac8-719c-44f7-aee0-c69cdcb223c9",
+        "translations": {
+            "de": "Die Absteige",
+            "en": "flophouse",
+            "es": "albergue"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687255008944,
+        "uuid": "9a5f470b-539f-4a2c-80fc-453df4d79a0e",
+        "translations": {
+            "de": "Monopol",
+            "en": "monopoly",
+            "es": "monopolioo"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687255009124,
+        "uuid": "99379326-9087-44bc-a623-0ac66787f541",
+        "translations": {
+            "de": "Kartell",
+            "en": "cartell",
+            "es": "cartel"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687255009306,
+        "uuid": "52de913e-6f74-47ef-803c-8a4387a03bb9",
+        "translations": {
+            "de": "Oligopol",
+            "en": "oligopoly",
+            "es": "oligopolio"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687255288265,
+        "uuid": "b8de4969-267a-400a-b160-ad8c77f6a2b2",
+        "translations": {
+            "de": "Nacht",
+            "en": "night",
+            "es": "La noche"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687255289312,
+        "uuid": "831f800a-d043-453a-a31e-b036037bd692",
+        "translations": {
+            "de": "Tag",
+            "en": "day",
+            "es": "El dia"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687255342592,
+        "uuid": "d4f12c60-50d1-4d73-b0bb-d49bfa53648e",
+        "translations": {
+            "de": "Der Morgen",
+            "en": "the morning",
+            "es": "La mañana"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687255343943,
+        "uuid": "2c373fbd-b57b-4dfd-b6c3-c4607d77d714",
+        "translations": {
+            "de": "Der Abend",
+            "en": "the evening",
+            "es": "La velada"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687255345438,
+        "uuid": "cc318968-cfff-436e-84af-1c0145204819",
+        "translations": {
+            "de": "Der Mittag",
+            "en": "the noon",
+            "es": "El mediodia"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687255346652,
+        "uuid": "acba915f-1110-42d0-9923-86ec070eca68",
+        "translations": {
+            "de": "Mann",
+            "en": "man",
+            "es": "hombre"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687255735776,
+        "uuid": "03896da3-bcf4-44b9-9a14-7f45a0a0b772",
+        "translations": {
+            "de": "Frau",
+            "en": "women",
+            "es": "mujer"
         }
     }
 ]
