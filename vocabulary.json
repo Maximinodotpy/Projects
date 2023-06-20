@@ -2429,7 +2429,7 @@
         "translations": {
             "de": "Monopol",
             "en": "monopoly",
-            "es": "monopolioo"
+            "es": "monopolio"
         }
     },
     {
@@ -2658,6 +2658,102 @@
             "de": "treffen",
             "en": "meet",
             "es": "conoce"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687290665977,
+        "uuid": "aeddd6b0-286d-4249-ae8a-90d1ed44bb23",
+        "translations": {
+            "de": "ich",
+            "en": "i",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687290666202,
+        "uuid": "8a8ddac5-e2e9-4141-b100-0b1005b866aa",
+        "translations": {
+            "de": "du",
+            "en": "you",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687290666379,
+        "uuid": "fd764d16-8e99-49e5-b9d9-2ced152007f7",
+        "translations": {
+            "de": "er",
+            "en": "he",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687290666591,
+        "uuid": "6c2d44c4-29c7-44c1-b2d2-a52647f5e576",
+        "translations": {
+            "de": "sie",
+            "en": "she",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687290666780,
+        "uuid": "d5045ca1-f90b-4172-842f-557bda800139",
+        "translations": {
+            "de": "es",
+            "en": "it",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687290666954,
+        "uuid": "823e1ad6-03ae-41f8-a354-b2867f29ccf5",
+        "translations": {
+            "de": "wir",
+            "en": "we",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687290667120,
+        "uuid": "91310f75-3bc7-4f7a-8e57-b7e135928ded",
+        "translations": {
+            "de": "ihr",
+            "en": "you",
+            "es": ""
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687290667301,
+        "uuid": "d14cec2d-f485-4b3e-9d34-ae6d804a8401",
+        "translations": {
+            "de": "sie",
+            "en": "they",
+            "es": ""
         }
     }
 ]
