@@ -127,7 +127,7 @@
 
             <div class="flex flex-wrap gap-2">
                 {#each tags as tag}
-                    <label for={tag} class="px-2 py-1 text-xs bg-blue-100 rounded-md">
+                    <label for={tag} class="flex items-center gap-1 px-2 py-1 text-xs bg-blue-100 rounded-md">
                         <input bind:group={allowed_tags} type="checkbox" value={tag} id={tag}>
                         {tag}
                     </label>

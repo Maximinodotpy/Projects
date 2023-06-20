@@ -1,9 +1,7 @@
 <script lang="ts">
-    import type { Word } from "$lib/edit_modes/word_type";
     import SingleView from "$lib/edit_modes/SingleView.svelte";
     import ListView from "$lib/edit_modes/ListView.svelte";
     import GroupedByTags from "$lib/edit_modes/GroupedByTags.svelte";
-    import { languages } from "$lib/edit_modes/variables";
     import { getContext } from "svelte";
     import type { VociFile } from '$lib/edit_modes/word_type';
     import type { Writable } from "svelte/store";
