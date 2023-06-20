@@ -15,6 +15,11 @@
     ]
     let current_view_mode = 0
     const voci_file = getContext<Writable<VociFile>>("voci_file");
+
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.has('uuid')) {
+        current_view_mode = 1
+    }
 </script>
 
 <div class="flex justify-between border-b-[1.5px] px-4 py-3 items-center">

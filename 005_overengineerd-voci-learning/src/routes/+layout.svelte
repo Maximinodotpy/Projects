@@ -36,7 +36,8 @@
             $voci_file.words.push(newWord);
 
             $voci_file.words = $voci_file.words;
-        }
+        },
+        openFile: openFile,
     });
     setContext("voci_file", voci_file);
 

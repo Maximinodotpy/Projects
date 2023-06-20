@@ -20,6 +20,16 @@
             current_word--;
         }
     }
+
+    // Check if the url has the uuid paramert and if yes search for the word with the uuid and set it to be the current word
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.has('uuid')) {
+        const uuid = urlParams.get('uuid');
+        const index = words.findIndex(word => word.uuid === uuid);
+        if (index !== -1) {
+            current_word = index;
+        }
+    }
 </script>
 
 <div class="max-w-5xl p-5 mx-auto">

@@ -13,5 +13,6 @@ export interface VociFile {
     file_handle: FileSystemHandle | null;
     addWord: () => void;
     removeWord: (id: number) => void;
+    openFile: () => void;
     words: Word[];
 }
