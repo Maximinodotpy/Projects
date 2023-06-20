@@ -2539,5 +2539,125 @@
             "en": "women",
             "es": "mujer"
         }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687289913841,
+        "uuid": "d4a27197-1b7a-4bb8-9ee7-29f6ef3b90a4",
+        "translations": {
+            "de": "ansehen",
+            "en": "view",
+            "es": "ver"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687289914019,
+        "uuid": "cca83d8d-59b0-48c5-99d0-ca09e927449e",
+        "translations": {
+            "de": "reden",
+            "en": "talk",
+            "es": "hablar"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687289914159,
+        "uuid": "270b8594-dfb6-418d-9ac2-9ed1c9d763f5",
+        "translations": {
+            "de": "können",
+            "en": "can",
+            "es": "puede"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687289914369,
+        "uuid": "6234fa32-2e69-48e3-b30c-bf8a96e38d16",
+        "translations": {
+            "de": "müssen",
+            "en": "must",
+            "es": "debe"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687289914539,
+        "uuid": "9160acac-33d2-4618-87bd-ab5f79c089d9",
+        "translations": {
+            "de": "dürfen",
+            "en": "can",
+            "es": "mayo"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687289914664,
+        "uuid": "54a5eb14-661e-4d4e-ac59-3ee26f04f583",
+        "translations": {
+            "de": "wollen",
+            "en": "want",
+            "es": "desea"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687289914786,
+        "uuid": "111996df-1272-4925-ad7c-9b2472e2747b",
+        "translations": {
+            "de": "sollen",
+            "en": "should",
+            "es": "debe"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687289915050,
+        "uuid": "4df62bc2-f6f6-4faa-943a-d05c4c6db99a",
+        "translations": {
+            "de": "lieben",
+            "en": "love",
+            "es": "amor"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687289918901,
+        "uuid": "b7dda116-1e06-4f6f-b7a9-69b96dd3d41e",
+        "translations": {
+            "de": "hassen",
+            "en": "hate",
+            "es": "odio"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687289919510,
+        "uuid": "14a7a44d-4757-4ff4-ad13-4d61b28d949f",
+        "translations": {
+            "de": "treffen",
+            "en": "meet",
+            "es": "conoce"
+        }
     }
 ]
