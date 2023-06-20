@@ -18,12 +18,15 @@
     let current_word_element : HTMLElement
     let show_solution = false
 
+    let text_to_speech = false;
+
     // Reget current word when options change
     $: {
         target_language = target_language
         origin_language = origin_language
         allowed_tags = allowed_tags
         $voci_file = $voci_file
+        text_to_speech = text_to_speech
         
         newWord();
     }
@@ -100,8 +103,6 @@
 
         current_word_id = Math.random() * word_pool.length | 0
 
-        console.log(current_word_id);
-
         current_word_data = word_pool[current_word_id];
     }
 </script>
@@ -111,7 +112,7 @@
 </svelte:head>
 
 <div class="flex divide-x-[1.5px] h-full overflow-x-hidden">
-    <div class="w-[400px] px-4 py-2">
+    <div class="w-[400px] px-4 py-2 overflow-auto">
         <h2 class="mb-5 text-2xl">Options</h2>
 
         <div class="mb-5">
@@ -163,7 +164,29 @@
                         {/each}
                     </select>
                 </label>
+                
+                {#if text_to_speech}
+                    <label for="ottsl" class="flex items-center gap-3">
+                        <span>Origin TTS Language</span>
+                        
+                        <select name="" class="max-w-[200px] px-2 py-1 bg-blue-100 rounded-md" id="ottsl">
+                            {#each speechSynthesis.getVoices() as voice}
+                                <option value={voice.lang}>{voice.name}</option>
+                            {/each}
+                        </select>
+                    </label>
+                {/if}
             </div>
+        </div>
+
+        
+        <div class="mb-3">
+            <h3 class="mb-3 text-xl">TTS</h3>
+
+            <label for="tts" class="flex items-center gap-2">
+                <input bind:checked={text_to_speech} type="checkbox" id="tts">
+                <span>Text to Speech</span>
+            </label>
         </div>
 
         <div>
@@ -172,11 +195,11 @@
     </div>
     <div class="flex flex-col overflow-hidden grow">
         <div class="relative text-5xl grow">
-            <div class="absolute flex items-center justify-center w-full h-full transition-colors" bind:this={current_word_element}>
-                {current_word_data.translations[origin_language]} 
+            <div class="absolute flex items-center justify-center w-full h-full gap-2 transition-colors" bind:this={current_word_element}>
+                <span class="font-semibold">{current_word_data.translations[origin_language]} </span>
                 
                 {#if show_solution}
-                    = {current_word_data.translations[target_language]}
+                    <span> = {current_word_data.translations[target_language]}</span>
                 {/if}
             </div>
             <canvas id="bg-canvas" class="absolute w-full h-full"></canvas>

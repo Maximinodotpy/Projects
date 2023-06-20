@@ -1028,7 +1028,7 @@
         ],
         "translations": {
             "de": "Der Pate",
-            "en": "The godmother",
+            "en": "The godfather",
             "es": "el padrino"
         },
         "uuid": "f88bfa35-202e-463a-acee-ce444927aaab"
@@ -1041,7 +1041,7 @@
         ],
         "translations": {
             "de": "Die Patin",
-            "en": "The godfather",
+            "en": "The godmother",
             "es": "La madrino"
         },
         "uuid": "bc4d7c3e-6d37-4011-b576-01652146354a"
@@ -1835,12 +1835,12 @@
         "tags": [
             "Mathematics"
         ],
-        "created": 1687071335771,
-        "uuid": "81a7987f-a1c3-4923-8b8f-d10ad2d7e364",
+        "created": 1687071337205,
+        "uuid": "203d82cf-228c-4e20-ab13-a17edb9f288c",
         "translations": {
-            "de": "Das Quadrat",
-            "en": "The ",
-            "es": "El cuadrado"
+            "de": "Das Dreieck",
+            "en": "The triangle",
+            "es": "El triangulo"
         }
     },
     {
@@ -1849,12 +1849,12 @@
         "tags": [
             "Mathematics"
         ],
-        "created": 1687071337205,
-        "uuid": "203d82cf-228c-4e20-ab13-a17edb9f288c",
+        "created": 1687071335771,
+        "uuid": "81a7987f-a1c3-4923-8b8f-d10ad2d7e364",
         "translations": {
-            "de": "Das Dreieck",
-            "en": "The triangle",
-            "es": "El triangulo"
+            "de": "Das Quadrat",
+            "en": "The ",
+            "es": "El cuadrado"
         }
     },
     {

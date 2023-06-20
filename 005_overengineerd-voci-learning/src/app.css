@@ -4,8 +4,8 @@
 
 @keyframes error_wiggle {
     0% { transform: rotate(0deg); }
-   5% { transform: rotate(20deg); }
-   15% { transform: rotate(-20deg); }
+   5% { transform: rotate(5deg); }
+   15% { transform: rotate(-5deg); }
    20% { transform: rotate(0deg); }
   100% { transform: rotate(0deg); }
 }
