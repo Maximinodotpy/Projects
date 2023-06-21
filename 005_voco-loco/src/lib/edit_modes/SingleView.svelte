@@ -1,17 +1,16 @@
 <script lang="ts">
-    import type { Word } from "$lib/edit_modes/word_type";
-    import { languages } from "$lib/edit_modes/variables";
     import { tags } from "$lib/edit_modes/variables";
-    import { languageNames } from "$lib/edit_modes/variables";
     import { onMount } from "svelte";
+    import type { Writable } from "svelte/store";
+    import { getContext } from "svelte";
+    import type { VociFile, Word } from "$lib/edit_modes/word_type";
 
-    export let words : Word[] = [];
-    export let removeWord: (id: number) => void;
+    const voci_file = getContext<Writable<VociFile>>("voci_file");
 
     let current_word = 0
 
     function nextWord() {
-        if (current_word < words.length - 1) {
+        if (current_word < $voci_file.words.length - 1) {
             current_word++;
         }        
     }
@@ -27,7 +26,7 @@
         const urlParams = new URLSearchParams(location.search);
         if (urlParams.has('uuid')) {
             const uuid = urlParams.get('uuid');
-            const index = words.findIndex(word => word.uuid === uuid);
+            const index = $voci_file.words.findIndex(word => word.uuid === uuid);
             if (index !== -1) {
                 current_word = index;
             }
@@ -38,24 +37,28 @@
 <div class="max-w-5xl p-5 mx-auto">
     <h2 class="mb-5 text-2xl">
         Single View for 
-        <code><input type="number" bind:value={current_word} min="0" max={words.length - 1} class="text-right">/{ words.length }</code>
+        <code><input type="number" bind:value={current_word} min="0" max={$voci_file.words.length - 1} class="text-right">/{ $voci_file.words.length }</code>
     </h2>
 
-    <p class="mb-5">Added on <code class="inline-block p-1 bg-neutral-100"> { new Date(words[current_word].created ?? 0).toLocaleString() } </code></p>
+    <p class="mb-5">Added on <code class="inline-block p-1 bg-neutral-100"> { new Date($voci_file.words[current_word].created ?? 0).toLocaleString() } </code></p>
     
     <div class="grid grid-cols-2 gap-10 mb-5">
-        {#each languages as lang}
+        {#each $voci_file.languages as lang}
             <div>
-                <h3 class="mb-3 font-bold">{languageNames[lang]}</h3>
-                <input type="text" bind:value={words[current_word].translations[lang]} class="w-full p-2 bg-neutral-100" />
+                <h3 class="mb-3 font-bold">{lang}</h3>
+                <input type="text" bind:value={$voci_file.words[current_word].translations[lang]} class="w-full p-2 bg-neutral-100" />
             </div>
         {/each}
+    </div>
+
+    <div class="my-8">
+        <textarea class="bg-neutral-100 p-2 w-full resize-none" cols="30" rows="10" bind:value={$voci_file.words[current_word].description} placeholder="Description"></textarea>
     </div>
 
     <div class="mb-10">
         {#each tags as tag}
             <label class="inline-flex items-center mr-5">
-                <input type="checkbox" bind:group={words[current_word].tags} value={tag} />
+                <input type="checkbox" bind:group={$voci_file.words[current_word].tags} value={tag} />
                 <span class="ml-2">{tag}</span>
             </label>
         {/each}
@@ -66,11 +69,11 @@
             <button on:click={() => { current_word = 0 }} class="p-2 bg-blue-200">First Word</button>
             <button on:click={previousWord} class="p-2 bg-blue-200">Previous Word</button>
             <button on:click={nextWord} class="p-2 bg-blue-200">Next Word</button>
-            <button on:click={() => { current_word = words.length - 1 }} class="p-2 bg-blue-200">Last Word</button>
+            <button on:click={() => { current_word = $voci_file.words.length - 1 }} class="p-2 bg-blue-200">Last Word</button>
         </div>
 
         <div>
-            <button on:click={() => { removeWord(current_word) }}>Remove</button>
+            <button on:click={() => { $voci_file.removeWord(current_word) }}>Remove</button>
         </div>
     </div>
     

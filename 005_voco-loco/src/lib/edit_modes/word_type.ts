@@ -15,4 +15,6 @@ export interface VociFile {
     removeWord: (id: number) => void;
     openFile: () => void;
     words: Word[];
+    languages: string[];
+    recompileLangauges: () => void;
 }

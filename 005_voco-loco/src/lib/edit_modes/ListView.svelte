@@ -1,22 +1,19 @@
 <script lang="ts">
     import type { VociFile, Word } from "$lib/edit_modes/word_type";
-    import { languages } from "$lib/edit_modes/variables";
-    import { languageNames } from "$lib/edit_modes/variables";
     import { getContext } from "svelte";
     import type { Writable } from "svelte/store";
 
-    export let words: Word[] = [];
     const voci_file = getContext<Writable<VociFile>>("voci_file");
 
     function moveDown(id: number) {
-        const temp = words[id + 1]
-        words[id + 1] = words[id]
-        words[id] = temp
+        const temp = $voci_file.words[id + 1]
+        $voci_file.words[id + 1] = $voci_file.words[id]
+        $voci_file.words[id] = temp
     }
     function moveUp(id: number) {
-        const temp = words[id - 1]
-        words[id - 1] = words[id]
-        words[id] = temp
+        const temp = $voci_file.words[id - 1]
+        $voci_file.words[id - 1] = $voci_file.words[id]
+        $voci_file.words[id] = temp
     }
 </script>
 
@@ -27,15 +24,15 @@
             <th class="p-2 text-center"></th>
             <th class="p-2">Created</th>
             <th class="p-2 text-center">#</th>
-            {#each languages as lang}
-                <th class="p-2">{languageNames[lang]}</th>
+            {#each $voci_file.languages as lang}
+                <th class="p-2">{lang}</th>
             {/each}
             <th>Tags</th>
             <th class="p-0">🧨</th>
         </tr>
     </thead>
     <tbody class="divide-y-2 divide-neutral-300">
-        {#each words as word, index (word.uuid)}
+        {#each $voci_file.words as word, index (word.uuid)}
             <tr>
                 <td class="p-2 text-center">
                     {#if index != 0}
@@ -43,13 +40,13 @@
                     {/if}
                 </td>
                 <td class="p-2 text-center">
-                    {#if index < words.length - 1}
+                    {#if index < $voci_file.words.length - 1}
                         <button on:click={() => { moveDown(index) }}>⬇</button>
                     {/if}
                 </td>
                 <td>{ new Date(word.created ?? 0).toLocaleString() }</td>
                 <td class="p-2 text-center">{index + 1}</td>
-                {#each languages as lang}
+                {#each $voci_file.languages as lang}
                     <td>
                         {#if lang in word.translations}
                             <input

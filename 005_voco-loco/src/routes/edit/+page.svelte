@@ -2,6 +2,7 @@
     import SingleView from "$lib/edit_modes/SingleView.svelte";
     import ListView from "$lib/edit_modes/ListView.svelte";
     import GroupedByTags from "$lib/edit_modes/GroupedByTags.svelte";
+    import LanguageManager from "$lib/edit_modes/LanguageManager.svelte";
     import { getContext } from "svelte";
     import type { VociFile } from '$lib/edit_modes/word_type';
     import type { Writable } from "svelte/store";
@@ -11,6 +12,7 @@
         ['List', ListView ],
         ['Single', SingleView ],
         ['Grouped By Tags', GroupedByTags ],
+        ['Languages', LanguageManager ],
     ]
     let current_view_mode = 0
     const voci_file = getContext<Writable<VociFile>>("voci_file");
@@ -44,6 +46,6 @@
 </div>
 
 <div class="overflow-auto grow">
-    <svelte:component this={view_modes[current_view_mode][1]} bind:words={$voci_file.words}  />
+    <svelte:component this={view_modes[current_view_mode][1]}  />
 </div>
 

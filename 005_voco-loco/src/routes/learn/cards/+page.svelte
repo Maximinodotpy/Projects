@@ -2,7 +2,7 @@
     import { getContext } from "svelte";
     import type { VociFile, Word } from '$lib/edit_modes/word_type';
     import type { Writable } from "svelte/store";
-    import { tags, languages, languageNames } from '$lib/edit_modes/variables';
+    import { tags } from '$lib/edit_modes/variables';
     import { base } from "$app/paths";
 
     const voci_file = getContext<Writable<VociFile>>("voci_file");
@@ -11,8 +11,8 @@
     let current_word_id = 0;
     let current_word_data : Word
 
-    let target_language = "en";
-    let origin_language = "de";
+    let target_language = "Deutsch";
+    let origin_language = "English";
     let allowed_tags : string[] = [];
     let inputContent = ''
     let current_word_element : HTMLElement
@@ -34,6 +34,7 @@
     newWord();
 
     let points = 0;
+    let asked_words = 0;
 
     function keydownCallback(event: KeyboardEvent) {
         console.log(event);
@@ -44,6 +45,8 @@
                 console.log("Correct");
 
                 inputContent = ''
+
+                asked_words++;
 
                 // @ts-ignore
                 if (!show_solution) {
@@ -85,6 +88,7 @@
             } else {
                 newWord();
                 show_solution = false;
+                asked_words++;
             }
         }
     }
@@ -144,9 +148,9 @@
                     <span>Target</span>
                     
                     <select bind:value={target_language} class="px-2 py-1 bg-blue-100 rounded-md">
-                        {#each languages as language}
+                        {#each $voci_file.languages as language}
                             {#if language != origin_language}
-                                <option value={language}>{languageNames[language]}</option>
+                                <option value={language}>{language}</option>
                             {/if}
                         {/each}
                     </select>
@@ -157,9 +161,9 @@
                     <span>Origin</span>
                     
                     <select bind:value={origin_language} class="px-2 py-1 bg-blue-100 rounded-md">
-                        {#each languages as language}
+                        {#each $voci_file.languages as language}
                             {#if language != target_language}
-                                <option value={language}>{languageNames[language]}</option>
+                                <option value={language}>{language}</option>
                             {/if}
                         {/each}
                     </select>
@@ -205,11 +209,11 @@
             <canvas id="bg-canvas" class="absolute w-full h-full"></canvas>
         </div>
         <div class="border-t-[1.5px] py-2 px-6 flex justify-between">
-            <div>{ points } Points</div>
+            <div>{ points }/{asked_words} Points</div>
             <div>
                 <a href="{base}/edit?uuid={current_word_data.uuid}">Edit this Word</a>
             </div>
         </div>
-        <input type="text" class="border-t-[1.5px] p-6 text-2xl focus:outline-none" placeholder={`Answer in ${languageNames[target_language]}`} on:keydown={keydownCallback} bind:value={inputContent}>
+        <input type="text" class="border-t-[1.5px] p-6 text-2xl focus:outline-none" placeholder={`Answer in ${target_language}`} on:keydown={keydownCallback} bind:value={inputContent}>
     </div>
 </div>

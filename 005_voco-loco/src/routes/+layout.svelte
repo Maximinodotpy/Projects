@@ -6,7 +6,7 @@
     import { setContext } from 'svelte';
     import type { VociFile } from '$lib/edit_modes/word_type';
     import type { Word } from '$lib/edit_modes/word_type';
-    import { languages } from "$lib/edit_modes/variables";
+    /* import { languages } from "$lib/edit_modes/variables"; */
 
     const voci_file = writable<VociFile>({
         file_handle: null,
@@ -30,25 +30,36 @@
                 uuid: crypto.randomUUID(),
                 translations: {},
             };
-            for (let i = 0; i < languages.length; i++) {
-                newWord.translations[languages[i]] = "";
+            
+            for (let i = 0; i < $voci_file.languages.length; i++) {
+                newWord.translations[$voci_file.languages[i]] = "";
             }
             $voci_file.words.push(newWord);
 
             $voci_file.words = $voci_file.words;
         },
         openFile: openFile,
+        languages: [ 'English', 'Deutsch' ],
+        recompileLangauges() {
+            // Ensure that every word has a translation for every language but dont delete anything or overwrite
+
+            for (let i = 0; i < $voci_file.words.length; i++) {
+                for (let j = 0; j < $voci_file.languages.length; j++) {
+                    if (!($voci_file.words[i].translations[$voci_file.languages[j]])) {
+                        $voci_file.words[i].translations[$voci_file.languages[j]] = "";
+                    }
+                }
+            }
+        },
     });
     setContext("voci_file", voci_file);
 
+
     let autoSaveIntervalID = 0;
-    let lastSavedWords: Word[] = [];
     $voci_file.words = []
 
     $voci_file.addWord();
-    
-    /* $: has_unsaved_changes = JSON.stringify($voci_file.words) == JSON.stringify(lastSavedWords);
-    lastSavedWords = JSON.parse(JSON.stringify($voci_file.words)); */
+
 
     async function openFile() {
         // @ts-ignore
@@ -65,14 +76,14 @@
                 $voci_file.words[i].uuid = crypto.randomUUID();
             }
         }
-        lastSavedWords = JSON.parse(JSON.stringify($voci_file.words));
+
+        // Getting all languages from this file assuming it has at least one word
+        $voci_file.languages = Object.keys($voci_file.words[0].translations);
 
         autoSaveIntervalID = setInterval(() => {
-            if (JSON.stringify($voci_file.words) != JSON.stringify(lastSavedWords)) {
-                console.log("Autosaving...");
+            console.log("Autosaving...");
 
-                saveFile();
-            }
+            saveFile();
         }, 1000 * 15);
     }
 
@@ -86,8 +97,6 @@
         const writable = await $voci_file.file_handle.createWritable();
         await writable.write(JSON.stringify($voci_file.words, null, 4));
         await writable.close();
-
-        lastSavedWords = JSON.parse(JSON.stringify($voci_file.words));
     }
 
     async function saveFileAs() {
@@ -98,8 +107,6 @@
         const writable = await $voci_file.file_handle.createWritable();
         await writable.write(JSON.stringify($voci_file.words, null, 4));
         await writable.close();
-
-        lastSavedWords = JSON.parse(JSON.stringify($voci_file.words));
     }
 </script>
 
