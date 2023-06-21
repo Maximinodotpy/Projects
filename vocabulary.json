@@ -6,9 +6,9 @@
             "Other"
         ],
         "translations": {
-            "de": "Das Haus",
-            "en": "The house",
-            "es": "La casa"
+            "Deutsch": "Das Haus",
+            "English": "The house",
+            "Espagnol": "La casa"
         },
         "uuid": "bcc85307-636f-45b6-8276-005f71c9c483"
     },
@@ -19,9 +19,9 @@
             "Other"
         ],
         "translations": {
-            "de": "Der Baum",
-            "en": "The tree",
-            "es": "El árbol"
+            "Deutsch": "Der Baum",
+            "English": "The tree",
+            "Espagnol": "El árbol"
         },
         "uuid": "65d87341-9bf3-4eb7-8bdf-dc808730ebf0"
     },
@@ -32,9 +32,9 @@
             "Other"
         ],
         "translations": {
-            "de": "Die Stadt",
-            "en": "The city",
-            "es": "La ciudad"
+            "Deutsch": "Die Stadt",
+            "English": "The city",
+            "Espagnol": "La ciudad"
         },
         "uuid": "c8fa0b1d-11a8-4389-b888-58aca5882c0e"
     },
@@ -43,9 +43,9 @@
         "description": "",
         "tags": [],
         "translations": {
-            "de": "Das Dorf",
-            "en": "The village",
-            "es": "El pueblo"
+            "Deutsch": "Das Dorf",
+            "English": "The village",
+            "Espagnol": "El pueblo"
         },
         "uuid": "bbb62de6-62c3-4eee-99f4-1928c3bd95d3"
     },
@@ -56,9 +56,9 @@
             "Traffic"
         ],
         "translations": {
-            "de": "Die Strasse",
-            "en": "The street",
-            "es": "La carretera"
+            "Deutsch": "Die Strasse",
+            "English": "The street",
+            "Espagnol": "La carretera"
         },
         "uuid": "70648b57-0c8b-4551-9825-107c5f0ab631"
     },
@@ -69,9 +69,9 @@
             "Traffic"
         ],
         "translations": {
-            "de": "Der Weg",
-            "en": "The way",
-            "es": "El camino"
+            "Deutsch": "Der Weg",
+            "English": "The way",
+            "Espagnol": "El camino"
         },
         "uuid": "ceb4c8cf-99ae-4783-8d56-107949b4f608"
     },
@@ -82,9 +82,9 @@
             "Other"
         ],
         "translations": {
-            "de": "Die Lampe",
-            "en": "The lamp",
-            "es": "Lámpara"
+            "Deutsch": "Die Lampe",
+            "English": "The lamp",
+            "Espagnol": "Lámpara"
         },
         "uuid": "8ee5918e-29e0-464f-a74c-eab90fbc2958"
     },
@@ -95,9 +95,9 @@
             "Other"
         ],
         "translations": {
-            "de": "Das Wasser",
-            "en": "The water",
-            "es": "El agua"
+            "Deutsch": "Das Wasser",
+            "English": "The water",
+            "Espagnol": "El agua"
         },
         "uuid": "864a04dd-7a1c-461a-bd45-270c08434bbf"
     },
@@ -108,9 +108,9 @@
             "Clothing"
         ],
         "translations": {
-            "de": "Die Brille",
-            "en": "The glasses",
-            "es": "Las gafas"
+            "Deutsch": "Die Brille",
+            "English": "The glasses",
+            "Espagnol": "Las gafas"
         },
         "uuid": "be2d52d2-e66c-4969-a792-237ca12756e1"
     },
@@ -121,9 +121,9 @@
             "Other"
         ],
         "translations": {
-            "de": "Die Pflanze",
-            "en": "The plant",
-            "es": "La planta"
+            "Deutsch": "Die Pflanze",
+            "English": "The plant",
+            "Espagnol": "La planta"
         },
         "uuid": "c26a37ff-31cf-4e2a-85cc-b305bf42e9b1"
     },
@@ -134,9 +134,9 @@
             "Traffic"
         ],
         "translations": {
-            "de": "Das Auto",
-            "en": "The car",
-            "es": "El automovil"
+            "Deutsch": "Das Auto",
+            "English": "The car",
+            "Espagnol": "El automovil"
         },
         "uuid": "6e3a5540-8b65-40d9-a8ab-d12dd9472a6b"
     },
@@ -147,9 +147,9 @@
             "Traveling"
         ],
         "translations": {
-            "de": "Der Rucksack",
-            "en": "The backpack",
-            "es": "La mochila"
+            "Deutsch": "Der Rucksack",
+            "English": "The backpack",
+            "Espagnol": "La mochila"
         },
         "uuid": "07c0064f-38a3-45f8-af4c-a50e9a6a85f5"
     },
@@ -160,9 +160,9 @@
             "Hobbies"
         ],
         "translations": {
-            "de": "Die Freizeit",
-            "en": "The freetime",
-            "es": "El tiempo libre"
+            "Deutsch": "Die Freizeit",
+            "English": "The freetime",
+            "Espagnol": "El tiempo libre"
         },
         "uuid": "74815db4-fe5d-4076-9ca5-b8898fd6ae80"
     },
@@ -173,9 +173,9 @@
             "Other"
         ],
         "translations": {
-            "de": "Die Zeit",
-            "en": "The time",
-            "es": "El tiempo"
+            "Deutsch": "Die Zeit",
+            "English": "The time",
+            "Espagnol": "El tiempo"
         },
         "uuid": "b4e863a5-6ee8-41da-9336-3778a787f592"
     },
@@ -186,9 +186,9 @@
             "Other"
         ],
         "translations": {
-            "de": "Frei",
-            "en": "free",
-            "es": "libre"
+            "Deutsch": "Frei",
+            "English": "free",
+            "Espagnol": "libre"
         },
         "uuid": "5df0fdd6-104a-4070-bda6-2016eaebb6f8"
     },
@@ -200,9 +200,9 @@
             "Food"
         ],
         "translations": {
-            "de": "Die Flasche",
-            "en": "The bottle",
-            "es": "La botella"
+            "Deutsch": "Die Flasche",
+            "English": "The bottle",
+            "Espagnol": "La botella"
         },
         "uuid": "fd35cc22-55ee-4c17-9563-7d890df0fd10"
     },
@@ -213,9 +213,9 @@
             "Other"
         ],
         "translations": {
-            "de": "Die Wahrheit",
-            "en": "The truth",
-            "es": "La verdad"
+            "Deutsch": "Die Wahrheit",
+            "English": "The truth",
+            "Espagnol": "La verdad"
         },
         "uuid": "981b12d2-5b63-45c9-9a20-006ddba18d3f"
     },
@@ -226,9 +226,9 @@
             "Work"
         ],
         "translations": {
-            "de": "Die Arbeit",
-            "en": "The work",
-            "es": "El trabajo"
+            "Deutsch": "Die Arbeit",
+            "English": "The work",
+            "Espagnol": "El trabajo"
         },
         "uuid": "cf7b5f00-1617-4809-9cc4-25b01ae0d4f2"
     },
@@ -239,9 +239,9 @@
             "Other"
         ],
         "translations": {
-            "de": "Die Musik",
-            "en": "The music",
-            "es": "La música"
+            "Deutsch": "Die Musik",
+            "English": "The music",
+            "Espagnol": "La música"
         },
         "uuid": "9bc4869e-70b2-4883-b42a-c03b50552b08"
     },
@@ -250,9 +250,9 @@
         "description": "",
         "tags": [],
         "translations": {
-            "de": "Das Fenster",
-            "en": "The window",
-            "es": "La ventana"
+            "Deutsch": "Das Fenster",
+            "English": "The window",
+            "Espagnol": "La ventana"
         },
         "uuid": "36918474-03d2-4896-8817-61a330e4cb7e"
     },
@@ -263,9 +263,9 @@
             "Clothing"
         ],
         "translations": {
-            "de": "Das Hemd",
-            "en": "The shirt",
-            "es": "La camisa"
+            "Deutsch": "Das Hemd",
+            "English": "The shirt",
+            "Espagnol": "La camisa"
         },
         "uuid": "878243cf-94b7-4e2a-9d72-c32475b324f4"
     },
@@ -276,9 +276,9 @@
             "Clothing"
         ],
         "translations": {
-            "de": "Die Hose",
-            "en": "The pants",
-            "es": "Los pantalones"
+            "Deutsch": "Die Hose",
+            "English": "The pants",
+            "Espagnol": "Los pantalones"
         },
         "uuid": "42b23ab3-f15f-43ac-90d0-ffc167c903b0"
     },
@@ -289,9 +289,9 @@
             "Clothing"
         ],
         "translations": {
-            "de": "Die Schuhe",
-            "en": "The shoes",
-            "es": "Los zapatos"
+            "Deutsch": "Die Schuhe",
+            "English": "The shoes",
+            "Espagnol": "Los zapatos"
         },
         "uuid": "edd3c7b9-1c2e-4dbc-baaa-1691fab16d5b"
     },
@@ -302,9 +302,9 @@
             "Clothing"
         ],
         "translations": {
-            "de": "Die Uhr",
-            "en": "The clock",
-            "es": "El reloj"
+            "Deutsch": "Die Uhr",
+            "English": "The clock",
+            "Espagnol": "El reloj"
         },
         "uuid": "024f1ffb-0e40-4a75-b6da-2f75a2c595eb"
     },
@@ -315,9 +315,9 @@
             "Body"
         ],
         "translations": {
-            "de": "Das Ohr",
-            "en": "The ear",
-            "es": "El oído"
+            "Deutsch": "Das Ohr",
+            "English": "The ear",
+            "Espagnol": "El oído"
         },
         "uuid": "0b35bb43-2eea-44c2-949d-7f4da8d3b4f6"
     },
@@ -328,9 +328,9 @@
             "Body"
         ],
         "translations": {
-            "de": "Das Haar",
-            "en": "The hair",
-            "es": "El pelo"
+            "Deutsch": "Das Haar",
+            "English": "The hair",
+            "Espagnol": "El pelo"
         },
         "uuid": "becee60e-c708-46f5-bc5a-233aae989203"
     },
@@ -341,9 +341,9 @@
             "Body"
         ],
         "translations": {
-            "de": "Die Hand",
-            "en": "The hand",
-            "es": "La mano"
+            "Deutsch": "Die Hand",
+            "English": "The hand",
+            "Espagnol": "La mano"
         },
         "uuid": "ba3a96ae-a1f2-449a-8ad5-201f3ef39003"
     },
@@ -354,9 +354,9 @@
             "Body"
         ],
         "translations": {
-            "de": "Der Rücken",
-            "en": "The back",
-            "es": "El reverso"
+            "Deutsch": "Der Rücken",
+            "English": "The back",
+            "Espagnol": "El reverso"
         },
         "uuid": "79b7240d-ba77-470f-be7c-ded466a35906"
     },
@@ -367,9 +367,9 @@
             "Body"
         ],
         "translations": {
-            "de": "Der Fuss",
-            "en": "The foot",
-            "es": "El pie"
+            "Deutsch": "Der Fuss",
+            "English": "The foot",
+            "Espagnol": "El pie"
         },
         "uuid": "db976fb3-f95a-40c4-8588-22f0bf24027f"
     },
@@ -378,9 +378,9 @@
         "description": "",
         "tags": [],
         "translations": {
-            "de": "Das Licht",
-            "en": "The light",
-            "es": "La luz"
+            "Deutsch": "Das Licht",
+            "English": "The light",
+            "Espagnol": "La luz"
         },
         "uuid": "aea45476-e936-415c-8442-05984f7dd8f7"
     },
@@ -389,9 +389,9 @@
         "description": "",
         "tags": [],
         "translations": {
-            "de": "Der Stein",
-            "en": "The stone",
-            "es": "La piedra"
+            "Deutsch": "Der Stein",
+            "English": "The stone",
+            "Espagnol": "La piedra"
         },
         "uuid": "959176fd-1c7c-4349-81fa-c3bb29ba19b5"
     },
@@ -400,9 +400,9 @@
         "description": "",
         "tags": [],
         "translations": {
-            "de": "Der Berg",
-            "en": "The mountain",
-            "es": "La montaña"
+            "Deutsch": "Der Berg",
+            "English": "The mountain",
+            "Espagnol": "La montaña"
         },
         "uuid": "8a38a8f4-6813-4fef-94f7-75ca92725bf6"
     },
@@ -413,9 +413,9 @@
             "Body"
         ],
         "translations": {
-            "de": "Das Herz",
-            "en": "The heart",
-            "es": "El corazón"
+            "Deutsch": "Das Herz",
+            "English": "The heart",
+            "Espagnol": "El corazón"
         },
         "uuid": "d02ee710-14f4-4352-9a43-ab07e6ab61a3"
     },
@@ -424,9 +424,9 @@
         "description": "",
         "tags": [],
         "translations": {
-            "de": "Der Hund",
-            "en": "The dog",
-            "es": "El perro"
+            "Deutsch": "Der Hund",
+            "English": "The dog",
+            "Espagnol": "El perro"
         },
         "uuid": "a4e3c7bc-4e0a-4c68-905c-1ac5ce45bd6d"
     },
@@ -435,9 +435,9 @@
         "description": "",
         "tags": [],
         "translations": {
-            "de": "Die Katze",
-            "en": "The cat",
-            "es": "El gato"
+            "Deutsch": "Die Katze",
+            "English": "The cat",
+            "Espagnol": "El gato"
         },
         "uuid": "5fb438cd-14fb-4bcc-9f88-038bce3ba06d"
     },
@@ -446,9 +446,9 @@
         "description": "",
         "tags": [],
         "translations": {
-            "de": "Die Tür",
-            "en": "The door",
-            "es": "La puerta"
+            "Deutsch": "Die Tür",
+            "English": "The door",
+            "Espagnol": "La puerta"
         },
         "uuid": "28c5143a-507d-421f-a7a7-51585c89c7c0"
     },
@@ -457,9 +457,9 @@
         "description": "",
         "tags": [],
         "translations": {
-            "de": "Der Gang",
-            "en": "The Hallway",
-            "es": "El pasillo"
+            "Deutsch": "Der Gang",
+            "English": "The Hallway",
+            "Espagnol": "El pasillo"
         },
         "uuid": "5105bbc6-4b34-46df-a8b6-88c94d39a642"
     },
@@ -468,9 +468,9 @@
         "description": "",
         "tags": [],
         "translations": {
-            "de": "Die Augen",
-            "en": "The eyes",
-            "es": "Les ojos"
+            "Deutsch": "Die Augen",
+            "English": "The eyes",
+            "Espagnol": "Les ojos"
         },
         "uuid": "c78e1995-87d5-4bb9-8cd1-10f146f699a5"
     },
@@ -481,9 +481,9 @@
             "Numbers"
         ],
         "translations": {
-            "de": "Eins",
-            "en": "One",
-            "es": "un"
+            "Deutsch": "Eins",
+            "English": "One",
+            "Espagnol": "un"
         },
         "uuid": "3fac4dff-baa2-4cbe-8c47-9dfee25970a3"
     },
@@ -494,9 +494,9 @@
             "Numbers"
         ],
         "translations": {
-            "de": "Zwei",
-            "en": "Two",
-            "es": "dos"
+            "Deutsch": "Zwei",
+            "English": "Two",
+            "Espagnol": "dos"
         },
         "uuid": "a9c2d4a8-eba6-4f32-ae5d-e7367dc55aef"
     },
@@ -507,9 +507,9 @@
             "Numbers"
         ],
         "translations": {
-            "de": "Drei",
-            "en": "three",
-            "es": "tres"
+            "Deutsch": "Drei",
+            "English": "three",
+            "Espagnol": "tres"
         },
         "uuid": "a5ae8dbc-3c04-4fdc-9e27-f2fedfb0ef6c"
     },
@@ -520,9 +520,9 @@
             "Numbers"
         ],
         "translations": {
-            "de": "Vier",
-            "en": "Four",
-            "es": "quatros"
+            "Deutsch": "Vier",
+            "English": "Four",
+            "Espagnol": "quatros"
         },
         "uuid": "dad91cc0-bfa5-4440-ac11-61dbb7f4b5ed"
     },
@@ -533,9 +533,9 @@
             "Numbers"
         ],
         "translations": {
-            "de": "Fünf",
-            "en": "Five",
-            "es": "cinqos"
+            "Deutsch": "Fünf",
+            "English": "Five",
+            "Espagnol": "cinqos"
         },
         "uuid": "c5ee6d9e-11c8-494c-af2d-999657c5b025"
     },
@@ -546,9 +546,9 @@
             "Numbers"
         ],
         "translations": {
-            "de": "Sechs",
-            "en": "Six",
-            "es": "seis"
+            "Deutsch": "Sechs",
+            "English": "Six",
+            "Espagnol": "seis"
         },
         "uuid": "e8698adc-c703-4917-bd64-328795a1d989"
     },
@@ -559,9 +559,9 @@
             "Numbers"
         ],
         "translations": {
-            "de": "Sieben",
-            "en": "Seven",
-            "es": "siete"
+            "Deutsch": "Sieben",
+            "English": "Seven",
+            "Espagnol": "siete"
         },
         "uuid": "59c961ff-8e0c-41b9-ac3b-b805ef70fc55"
     },
@@ -572,9 +572,9 @@
             "Numbers"
         ],
         "translations": {
-            "de": "Acht",
-            "en": "Eight",
-            "es": "ocho"
+            "Deutsch": "Acht",
+            "English": "Eight",
+            "Espagnol": "ocho"
         },
         "uuid": "3890d8db-3ec5-4a35-953e-27009a423151"
     },
@@ -585,9 +585,9 @@
             "Numbers"
         ],
         "translations": {
-            "de": "Neun",
-            "en": "Nine",
-            "es": "nueve"
+            "Deutsch": "Neun",
+            "English": "Nine",
+            "Espagnol": "nueve"
         },
         "uuid": "19c11160-ee5b-4c52-ac34-21e625963db9"
     },
@@ -598,9 +598,9 @@
             "Numbers"
         ],
         "translations": {
-            "de": "Zehn",
-            "en": "Ten",
-            "es": "diez"
+            "Deutsch": "Zehn",
+            "English": "Ten",
+            "Espagnol": "diez"
         },
         "uuid": "c53e7a38-d242-4a94-a081-ec9fb93fd4e4"
     },
@@ -611,9 +611,9 @@
             "Numbers"
         ],
         "translations": {
-            "de": "Elf",
-            "en": "Eleven",
-            "es": "once"
+            "Deutsch": "Elf",
+            "English": "Eleven",
+            "Espagnol": "once"
         },
         "uuid": "d3cf6619-8cf6-43eb-bb9d-44faefd406f1"
     },
@@ -624,9 +624,9 @@
             "Numbers"
         ],
         "translations": {
-            "de": "Zwölf",
-            "en": "Twelve",
-            "es": "doce"
+            "Deutsch": "Zwölf",
+            "English": "Twelve",
+            "Espagnol": "doce"
         },
         "uuid": "b8c9f064-9ebc-4056-b1d7-cc91aa5b1a78"
     },
@@ -637,9 +637,9 @@
             "Numbers"
         ],
         "translations": {
-            "de": "Dreizehn",
-            "en": "Thirteen",
-            "es": "trece"
+            "Deutsch": "Dreizehn",
+            "English": "Thirteen",
+            "Espagnol": "trece"
         },
         "uuid": "07ab513a-be42-45bb-9ddf-ea6214f0815a"
     },
@@ -650,9 +650,9 @@
             "Numbers"
         ],
         "translations": {
-            "de": "Vierzehn",
-            "en": "Fourteen",
-            "es": "catorce"
+            "Deutsch": "Vierzehn",
+            "English": "Fourteen",
+            "Espagnol": "catorce"
         },
         "uuid": "12469823-9e73-4781-8036-9b951ca027c4"
     },
@@ -663,9 +663,9 @@
             "Numbers"
         ],
         "translations": {
-            "de": "Fünfzehn",
-            "en": "Fifteen",
-            "es": "quince"
+            "Deutsch": "Fünfzehn",
+            "English": "Fifteen",
+            "Espagnol": "quince"
         },
         "uuid": "a89de747-12e3-4514-b617-7476a478737f"
     },
@@ -676,9 +676,9 @@
             "Numbers"
         ],
         "translations": {
-            "de": "Sechszehn",
-            "en": "Sixteen",
-            "es": "dieciséis"
+            "Deutsch": "Sechszehn",
+            "English": "Sixteen",
+            "Espagnol": "dieciséis"
         },
         "uuid": "1b36bc5e-8261-4b31-93c4-f8402d313eb2"
     },
@@ -689,9 +689,9 @@
             "Numbers"
         ],
         "translations": {
-            "de": "Siebzehn",
-            "en": "Seventeen",
-            "es": "diecisiete"
+            "Deutsch": "Siebzehn",
+            "English": "Seventeen",
+            "Espagnol": "diecisiete"
         },
         "uuid": "13a3e10f-a50f-4a2a-8cdb-dce7811fb8e0"
     },
@@ -702,9 +702,9 @@
             "Numbers"
         ],
         "translations": {
-            "de": "Achtzehn",
-            "en": "Eightteen",
-            "es": "Dieciocho"
+            "Deutsch": "Achtzehn",
+            "English": "Eightteen",
+            "Espagnol": "Dieciocho"
         },
         "uuid": "9ac069fe-8692-498f-8181-19e3f58bb73f"
     },
@@ -715,9 +715,9 @@
             "Numbers"
         ],
         "translations": {
-            "de": "Neunzehn",
-            "en": "Nineteen",
-            "es": "Diechinueve"
+            "Deutsch": "Neunzehn",
+            "English": "Nineteen",
+            "Espagnol": "Diechinueve"
         },
         "uuid": "19a711d1-45b8-4fe8-8400-f85d54b31eee"
     },
@@ -728,9 +728,9 @@
             "Numbers"
         ],
         "translations": {
-            "de": "Zwanzig",
-            "en": "Twenty",
-            "es": "veinte"
+            "Deutsch": "Zwanzig",
+            "English": "Twenty",
+            "Espagnol": "veinte"
         },
         "uuid": "808e9fea-1c1a-4374-9b72-5695dc1a725b"
     },
@@ -741,9 +741,9 @@
             "Numbers"
         ],
         "translations": {
-            "de": "Einundzwanzig",
-            "en": "Twenty-one",
-            "es": "veintiuno"
+            "Deutsch": "Einundzwanzig",
+            "English": "Twenty-one",
+            "Espagnol": "veintiuno"
         },
         "uuid": "eb7a5bba-00cd-4feb-bdde-deb5d897f9ba"
     },
@@ -754,9 +754,9 @@
             "Numbers"
         ],
         "translations": {
-            "de": "Zweiundzwanzig",
-            "en": "Twenty-two",
-            "es": "veintidos"
+            "Deutsch": "Zweiundzwanzig",
+            "English": "Twenty-two",
+            "Espagnol": "veintidos"
         },
         "uuid": "d9d7b34b-60fc-4db0-9a71-c91c766022ed"
     },
@@ -767,9 +767,9 @@
             "Numbers"
         ],
         "translations": {
-            "de": "Dreissig",
-            "en": "Thirty",
-            "es": "treinta"
+            "Deutsch": "Dreissig",
+            "English": "Thirty",
+            "Espagnol": "treinta"
         },
         "uuid": "b2e96984-e972-44d1-96db-6d84b8af6894"
     },
@@ -780,9 +780,9 @@
             "Numbers"
         ],
         "translations": {
-            "de": "Vierzig",
-            "en": "Fourty",
-            "es": "cuarenta"
+            "Deutsch": "Vierzig",
+            "English": "Fourty",
+            "Espagnol": "cuarenta"
         },
         "uuid": "04279634-bef8-4adc-82da-7dd6b0cd5ad6"
     },
@@ -793,9 +793,9 @@
             "Numbers"
         ],
         "translations": {
-            "de": "Fünfzig",
-            "en": "Fifty",
-            "es": "cincuenta"
+            "Deutsch": "Fünfzig",
+            "English": "Fifty",
+            "Espagnol": "cincuenta"
         },
         "uuid": "2344db2d-04f4-430b-98ae-a3881fe20c70"
     },
@@ -806,9 +806,9 @@
             "Numbers"
         ],
         "translations": {
-            "de": "Sechszig",
-            "en": "Sixty",
-            "es": "sesenta"
+            "Deutsch": "Sechszig",
+            "English": "Sixty",
+            "Espagnol": "sesenta"
         },
         "uuid": "31003851-5db2-4691-b390-782458e412d7"
     },
@@ -819,9 +819,9 @@
             "Numbers"
         ],
         "translations": {
-            "de": "Siebzig",
-            "en": "Seventy",
-            "es": "setenta"
+            "Deutsch": "Siebzig",
+            "English": "Seventy",
+            "Espagnol": "setenta"
         },
         "uuid": "1f5df551-46b6-4837-a77e-8bc12497a5a0"
     },
@@ -832,9 +832,9 @@
             "Numbers"
         ],
         "translations": {
-            "de": "Achtzig",
-            "en": "Eighty",
-            "es": "ochenta"
+            "Deutsch": "Achtzig",
+            "English": "Eighty",
+            "Espagnol": "ochenta"
         },
         "uuid": "f4e41a0a-1b21-45d6-a0af-4f5191df6a75"
     },
@@ -845,9 +845,9 @@
             "Numbers"
         ],
         "translations": {
-            "de": "Neunzig",
-            "en": "Ninety",
-            "es": "noventa"
+            "Deutsch": "Neunzig",
+            "English": "Ninety",
+            "Espagnol": "noventa"
         },
         "uuid": "a44748db-4df0-4641-8425-c1ae6f3ee0c1"
     },
@@ -858,9 +858,9 @@
             "Numbers"
         ],
         "translations": {
-            "de": "Hundert",
-            "en": "Hundret",
-            "es": "cient"
+            "Deutsch": "Hundert",
+            "English": "Hundret",
+            "Espagnol": "cient"
         },
         "uuid": "24eecc96-769f-4c04-b2ab-dd1439de0efc"
     },
@@ -871,9 +871,9 @@
             "Numbers"
         ],
         "translations": {
-            "de": "Zweihundert",
-            "en": "Two-hundret",
-            "es": "doscientas"
+            "Deutsch": "Zweihundert",
+            "English": "Two-hundret",
+            "Espagnol": "doscientas"
         },
         "uuid": "e4715542-6090-4fa3-85f2-e8cba2ccf566"
     },
@@ -884,9 +884,9 @@
             "Numbers"
         ],
         "translations": {
-            "de": "Tausend",
-            "en": "Thousand",
-            "es": "mil"
+            "Deutsch": "Tausend",
+            "English": "Thousand",
+            "Espagnol": "mil"
         },
         "uuid": "27c37c41-3755-4b21-8871-8e47ee25d607"
     },
@@ -897,9 +897,9 @@
             "Other"
         ],
         "translations": {
-            "de": "Verrückt",
-            "en": "crazy",
-            "es": "loco"
+            "Deutsch": "Verrückt",
+            "English": "crazy",
+            "Espagnol": "loco"
         },
         "uuid": "67cc4419-b20d-482e-9ba2-2a901a12c203"
     },
@@ -910,9 +910,9 @@
             "Food"
         ],
         "translations": {
-            "de": "Der Markt",
-            "en": "The market",
-            "es": "El mercado"
+            "Deutsch": "Der Markt",
+            "English": "The market",
+            "Espagnol": "El mercado"
         },
         "uuid": "129ef336-3888-42d9-8958-9f9f603931a7"
     },
@@ -923,9 +923,9 @@
             "Family"
         ],
         "translations": {
-            "de": "Der Vater",
-            "en": "The father",
-            "es": "El padre"
+            "Deutsch": "Der Vater",
+            "English": "The father",
+            "Espagnol": "El padre"
         },
         "uuid": "e9889ee6-7df9-4b01-b811-0babbc6488da"
     },
@@ -936,9 +936,9 @@
             "Family"
         ],
         "translations": {
-            "de": "Die Mutter",
-            "en": "The mother",
-            "es": "La madre"
+            "Deutsch": "Die Mutter",
+            "English": "The mother",
+            "Espagnol": "La madre"
         },
         "uuid": "fbc35d94-10b6-473a-b0db-0eb330b93f2f"
     },
@@ -949,9 +949,9 @@
             "Family"
         ],
         "translations": {
-            "de": "Der Bruder",
-            "en": "The brother",
-            "es": "El hermano"
+            "Deutsch": "Der Bruder",
+            "English": "The brother",
+            "Espagnol": "El hermano"
         },
         "uuid": "5c4e5516-f7ed-4a60-b1be-cfdfee82682d"
     },
@@ -962,9 +962,9 @@
             "Family"
         ],
         "translations": {
-            "de": "Die Schwester",
-            "en": "The sister",
-            "es": "La hermana"
+            "Deutsch": "Die Schwester",
+            "English": "The sister",
+            "Espagnol": "La hermana"
         },
         "uuid": "6910e40e-24a3-4c66-9c25-8359a7ab7852"
     },
@@ -975,9 +975,9 @@
             "Family"
         ],
         "translations": {
-            "de": "Der Sohn",
-            "en": "The son",
-            "es": "El hijo"
+            "Deutsch": "Der Sohn",
+            "English": "The son",
+            "Espagnol": "El hijo"
         },
         "uuid": "7af6307f-505f-48b9-a4bb-19bcee3e3699"
     },
@@ -988,9 +988,9 @@
             "Family"
         ],
         "translations": {
-            "de": "Die Tochter",
-            "en": "The daughter",
-            "es": "La hija"
+            "Deutsch": "Die Tochter",
+            "English": "The daughter",
+            "Espagnol": "La hija"
         },
         "uuid": "766edffd-1f3a-4973-8b9b-b178f92189cc"
     },
@@ -1001,9 +1001,9 @@
             "Family"
         ],
         "translations": {
-            "de": "Der Onkel",
-            "en": "The uncle",
-            "es": "el tio"
+            "Deutsch": "Der Onkel",
+            "English": "The uncle",
+            "Espagnol": "el tio"
         },
         "uuid": "2d1b66a4-5624-4643-bfa2-672cab41fb75"
     },
@@ -1014,9 +1014,9 @@
             "Family"
         ],
         "translations": {
-            "de": "Die Tante",
-            "en": "The aunt",
-            "es": "La tia"
+            "Deutsch": "Die Tante",
+            "English": "The aunt",
+            "Espagnol": "La tia"
         },
         "uuid": "4107ff6f-7bc1-4d9f-a0e0-d7c609c3a6e2"
     },
@@ -1027,9 +1027,9 @@
             "Family"
         ],
         "translations": {
-            "de": "Der Pate",
-            "en": "The godfather",
-            "es": "el padrino"
+            "Deutsch": "Der Pate",
+            "English": "The godfather",
+            "Espagnol": "el padrino"
         },
         "uuid": "f88bfa35-202e-463a-acee-ce444927aaab"
     },
@@ -1040,9 +1040,9 @@
             "Family"
         ],
         "translations": {
-            "de": "Die Patin",
-            "en": "The godmother",
-            "es": "La madrino"
+            "Deutsch": "Die Patin",
+            "English": "The godmother",
+            "Espagnol": "La madrino"
         },
         "uuid": "bc4d7c3e-6d37-4011-b576-01652146354a"
     },
@@ -1053,9 +1053,9 @@
             "Family"
         ],
         "translations": {
-            "de": "Der Cousin",
-            "en": "The cousin",
-            "es": "El primo"
+            "Deutsch": "Der Cousin",
+            "English": "The cousin",
+            "Espagnol": "El primo"
         },
         "uuid": "522370a8-630d-457a-aad1-b5d51979627e"
     },
@@ -1066,9 +1066,9 @@
             "Family"
         ],
         "translations": {
-            "de": "Die Cousine",
-            "en": "The cousin",
-            "es": "La prima"
+            "Deutsch": "Die Cousine",
+            "English": "The cousin",
+            "Espagnol": "La prima"
         },
         "uuid": "e5ea08a0-bab3-4283-b339-8c8940f27c70"
     },
@@ -1081,9 +1081,9 @@
         "created": 1686905010563,
         "uuid": "215936f8-f061-42b6-be65-d58869f9b323",
         "translations": {
-            "de": "Das Buch",
-            "en": "The book",
-            "es": "El libro"
+            "Deutsch": "Das Buch",
+            "English": "The book",
+            "Espagnol": "El libro"
         }
     },
     {
@@ -1095,9 +1095,9 @@
         "created": 1686905011359,
         "uuid": "bbf4ebea-fa84-4938-a3c3-f840e2e835d2",
         "translations": {
-            "de": "Die Zeitung",
-            "en": "The newspaper",
-            "es": "El periodico"
+            "Deutsch": "Die Zeitung",
+            "English": "The newspaper",
+            "Espagnol": "El periodico"
         }
     },
     {
@@ -1109,9 +1109,9 @@
         "created": 1686905014048,
         "uuid": "d2b12acf-78e7-4c37-8a4b-3b0a98dda816",
         "translations": {
-            "de": "Das Fleisch",
-            "en": "The meat",
-            "es": "La carne"
+            "Deutsch": "Das Fleisch",
+            "English": "The meat",
+            "Espagnol": "La carne"
         }
     },
     {
@@ -1123,9 +1123,9 @@
         "created": 1686905014209,
         "uuid": "e24b48e6-679b-42ae-869d-def2fb73a0e5",
         "translations": {
-            "de": "Die Eier",
-            "en": "The eggs",
-            "es": "Los huevos"
+            "Deutsch": "Die Eier",
+            "English": "The eggs",
+            "Espagnol": "Los huevos"
         }
     },
     {
@@ -1137,9 +1137,9 @@
         "created": 1686905014361,
         "uuid": "5e2590e4-55fc-46cb-9470-80603174bb29",
         "translations": {
-            "de": "krank",
-            "en": "sick",
-            "es": "enfermo"
+            "Deutsch": "krank",
+            "English": "sick",
+            "Espagnol": "enfermo"
         }
     },
     {
@@ -1151,9 +1151,9 @@
         "created": 1686905014532,
         "uuid": "835c1633-9bd2-49e3-81ef-3c58240509a7",
         "translations": {
-            "de": "gesund",
-            "en": "healthy",
-            "es": "saludable"
+            "Deutsch": "gesund",
+            "English": "healthy",
+            "Espagnol": "saludable"
         }
     },
     {
@@ -1165,9 +1165,9 @@
         "created": 1686905014672,
         "uuid": "8fe23e39-a2fa-461f-bccf-d6f0352236f8",
         "translations": {
-            "de": "gut",
-            "en": "good",
-            "es": "bien"
+            "Deutsch": "gut",
+            "English": "good",
+            "Espagnol": "bien"
         }
     },
     {
@@ -1179,9 +1179,9 @@
         "created": 1686905014825,
         "uuid": "5aac1af2-88bc-432f-8cee-48ce592f9d43",
         "translations": {
-            "de": "schlecht",
-            "en": "bad",
-            "es": "mal"
+            "Deutsch": "schlecht",
+            "English": "bad",
+            "Espagnol": "mal"
         }
     },
     {
@@ -1193,9 +1193,9 @@
         "created": 1686905015004,
         "uuid": "bce03348-3086-433c-a69f-419037cdfa41",
         "translations": {
-            "de": "hässlich",
-            "en": "ugly",
-            "es": "feo"
+            "Deutsch": "hässlich",
+            "English": "ugly",
+            "Espagnol": "feo"
         }
     },
     {
@@ -1207,9 +1207,9 @@
         "created": 1686905015176,
         "uuid": "84879d47-a950-4250-b598-7ca43e9ce279",
         "translations": {
-            "de": "blau",
-            "en": "blue",
-            "es": "azul"
+            "Deutsch": "blau",
+            "English": "blue",
+            "Espagnol": "azul"
         }
     },
     {
@@ -1221,9 +1221,9 @@
         "created": 1686905315805,
         "uuid": "528d031f-7bbe-4438-983b-3e973b27e67a",
         "translations": {
-            "de": "grün",
-            "en": "green",
-            "es": "verde"
+            "Deutsch": "grün",
+            "English": "green",
+            "Espagnol": "verde"
         }
     },
     {
@@ -1235,9 +1235,9 @@
         "created": 1686905316860,
         "uuid": "b2647dbe-7ce3-40e2-af8f-95197d728cd0",
         "translations": {
-            "de": "gelb",
-            "en": "yellow",
-            "es": "amarillo"
+            "Deutsch": "gelb",
+            "English": "yellow",
+            "Espagnol": "amarillo"
         }
     },
     {
@@ -1249,9 +1249,9 @@
         "created": 1686905446740,
         "uuid": "cc592b79-db63-4387-b73c-1141340214b1",
         "translations": {
-            "de": "schwarz",
-            "en": "black",
-            "es": "negro"
+            "Deutsch": "schwarz",
+            "English": "black",
+            "Espagnol": "negro"
         }
     },
     {
@@ -1263,9 +1263,9 @@
         "created": 1686905447732,
         "uuid": "2b7cec46-5f84-4e05-8ccf-33ad6ec9e625",
         "translations": {
-            "de": "weiss",
-            "en": "white",
-            "es": "blanco"
+            "Deutsch": "weiss",
+            "English": "white",
+            "Espagnol": "blanco"
         }
     },
     {
@@ -1277,9 +1277,9 @@
         "created": 1686905448724,
         "uuid": "6bdb06b5-043a-4078-ac27-b216af102b95",
         "translations": {
-            "de": "rot",
-            "en": "red",
-            "es": "rojo"
+            "Deutsch": "rot",
+            "English": "red",
+            "Espagnol": "rojo"
         }
     },
     {
@@ -1291,9 +1291,9 @@
         "created": 1686905449560,
         "uuid": "9ad18c0c-258d-4fac-a1f0-8a9c7e33e24e",
         "translations": {
-            "de": "dunkel",
-            "en": "dark",
-            "es": "oscuro"
+            "Deutsch": "dunkel",
+            "English": "dark",
+            "Espagnol": "oscuro"
         }
     },
     {
@@ -1305,9 +1305,9 @@
         "created": 1686905450404,
         "uuid": "c7a4aba9-4610-4324-b130-ee69215cb537",
         "translations": {
-            "de": "hell",
-            "en": "bright/light",
-            "es": "brillante"
+            "Deutsch": "hell",
+            "English": "bright/light",
+            "Espagnol": "brillante"
         }
     },
     {
@@ -1319,9 +1319,9 @@
         "created": 1686905855980,
         "uuid": "9c69e5c8-22f9-47a0-8a06-4ba55e3d1b2f",
         "translations": {
-            "de": "Der Brief",
-            "en": "The letter",
-            "es": "La carta"
+            "Deutsch": "Der Brief",
+            "English": "The letter",
+            "Espagnol": "La carta"
         }
     },
     {
@@ -1333,9 +1333,9 @@
         "created": 1686905857706,
         "uuid": "991a6d8c-403b-4d75-8554-3de9f99f6668",
         "translations": {
-            "de": "Die Seite",
-            "en": "The page",
-            "es": "La pagina"
+            "Deutsch": "Die Seite",
+            "English": "The page",
+            "Espagnol": "La pagina"
         }
     },
     {
@@ -1347,9 +1347,9 @@
         "created": 1686905856792,
         "uuid": "f6414155-6f13-43dd-a214-ee4749fe0fc2",
         "translations": {
-            "de": "Die Meinung",
-            "en": "The opinion",
-            "es": "El dictamen"
+            "Deutsch": "Die Meinung",
+            "English": "The opinion",
+            "Espagnol": "El dictamen"
         }
     },
     {
@@ -1361,9 +1361,9 @@
         "created": 1686921191642,
         "uuid": "2cedf724-b8d0-4a6d-994e-5a735e3ca081",
         "translations": {
-            "de": "Das Land",
-            "en": "The country",
-            "es": "La tierra"
+            "Deutsch": "Das Land",
+            "English": "The country",
+            "Espagnol": "La tierra"
         }
     },
     {
@@ -1375,9 +1375,9 @@
         "created": 1686924588890,
         "uuid": "97b29db5-1c33-424f-ac8f-064a6d979092",
         "translations": {
-            "de": "Die Welt",
-            "en": "The world",
-            "es": "El mundo"
+            "Deutsch": "Die Welt",
+            "English": "The world",
+            "Espagnol": "El mundo"
         }
     },
     {
@@ -1389,9 +1389,9 @@
         "created": 1686924597433,
         "uuid": "7f673a49-0992-47e3-895b-7e8554434621",
         "translations": {
-            "de": "Der Krieg",
-            "en": "The war",
-            "es": "La guerra"
+            "Deutsch": "Der Krieg",
+            "English": "The war",
+            "Espagnol": "La guerra"
         }
     },
     {
@@ -1403,9 +1403,9 @@
         "created": 1686924618675,
         "uuid": "8b07b25f-29d5-49d1-95d0-009b049b2bb3",
         "translations": {
-            "de": "Der Frieden",
-            "en": "the peace",
-            "es": "La paz"
+            "Deutsch": "Der Frieden",
+            "English": "the peace",
+            "Espagnol": "La paz"
         }
     },
     {
@@ -1417,9 +1417,9 @@
         "created": 1686924627333,
         "uuid": "03509527-51b6-410f-b3fb-88756925fd08",
         "translations": {
-            "de": "Die Firma",
-            "en": "the company",
-            "es": "La empresa"
+            "Deutsch": "Die Firma",
+            "English": "the company",
+            "Espagnol": "La empresa"
         }
     },
     {
@@ -1431,9 +1431,9 @@
         "created": 1686924668323,
         "uuid": "bc2a03c4-472b-48ae-b663-133e901d6da6",
         "translations": {
-            "de": "erschaffen",
-            "en": "create",
-            "es": "crear"
+            "Deutsch": "erschaffen",
+            "English": "create",
+            "Espagnol": "crear"
         }
     },
     {
@@ -1445,9 +1445,9 @@
         "created": 1686924681754,
         "uuid": "1940b999-cde9-4296-874f-dd150026cb8d",
         "translations": {
-            "de": "zerstören",
-            "en": "destroy",
-            "es": "destruir"
+            "Deutsch": "zerstören",
+            "English": "destroy",
+            "Espagnol": "destruir"
         }
     },
     {
@@ -1459,9 +1459,9 @@
         "created": 1686925171127,
         "uuid": "b593b0f5-20fd-4c66-ae3e-0c7361c4af1f",
         "translations": {
-            "de": "Westen",
-            "en": "west",
-            "es": "Oeste"
+            "Deutsch": "Westen",
+            "English": "west",
+            "Espagnol": "Oeste"
         }
     },
     {
@@ -1473,9 +1473,9 @@
         "created": 1686925171383,
         "uuid": "52052e4c-0c58-4fa4-8566-82dbe94b33dd",
         "translations": {
-            "de": "Osten",
-            "en": "east",
-            "es": "Este"
+            "Deutsch": "Osten",
+            "English": "east",
+            "Espagnol": "Este"
         }
     },
     {
@@ -1487,9 +1487,9 @@
         "created": 1686925171530,
         "uuid": "75ba6d56-aa70-49d0-bd00-dd1c8225d5d6",
         "translations": {
-            "de": "Norden",
-            "en": "north",
-            "es": "Norte"
+            "Deutsch": "Norden",
+            "English": "north",
+            "Espagnol": "Norte"
         }
     },
     {
@@ -1501,9 +1501,9 @@
         "created": 1686925171792,
         "uuid": "258be3f9-7344-4781-bcff-2c1d9904c5d8",
         "translations": {
-            "de": "Süden",
-            "en": "south",
-            "es": "Sur"
+            "Deutsch": "Süden",
+            "English": "south",
+            "Espagnol": "Sur"
         }
     },
     {
@@ -1515,9 +1515,9 @@
         "created": 1686925171979,
         "uuid": "22d9b256-1e8e-4430-b479-d182d7edbfe0",
         "translations": {
-            "de": "Die Küche",
-            "en": "The kitchen",
-            "es": "La cocina"
+            "Deutsch": "Die Küche",
+            "English": "The kitchen",
+            "Espagnol": "La cocina"
         }
     },
     {
@@ -1529,9 +1529,9 @@
         "created": 1686925172131,
         "uuid": "9f5d7816-db05-4f96-9056-c5bfdeac527c",
         "translations": {
-            "de": "Der Garten",
-            "en": "The garden",
-            "es": "El jardin"
+            "Deutsch": "Der Garten",
+            "English": "The garden",
+            "Espagnol": "El jardin"
         }
     },
     {
@@ -1543,9 +1543,9 @@
         "created": 1686925172375,
         "uuid": "aafbbcb5-f2a5-482b-8af1-27ec4a873977",
         "translations": {
-            "de": "Die Garage",
-            "en": "The garage",
-            "es": "El garaje"
+            "Deutsch": "Die Garage",
+            "English": "The garage",
+            "Espagnol": "El garaje"
         }
     },
     {
@@ -1557,9 +1557,9 @@
         "created": 1686986549634,
         "uuid": "d9d0e3d0-679d-44df-97a3-0c5644187396",
         "translations": {
-            "de": "Das Wohnzimmer",
-            "en": "The living room",
-            "es": "La sala de estar"
+            "Deutsch": "Das Wohnzimmer",
+            "English": "The living room",
+            "Espagnol": "La sala de estar"
         }
     },
     {
@@ -1571,9 +1571,9 @@
         "created": 1686986551175,
         "uuid": "bdadc11d-c40f-4bf0-879b-272774dd610b",
         "translations": {
-            "de": "Das Esszimmer",
-            "en": "The dining room",
-            "es": "El comedor"
+            "Deutsch": "Das Esszimmer",
+            "English": "The dining room",
+            "Espagnol": "El comedor"
         }
     },
     {
@@ -1585,9 +1585,9 @@
         "created": 1687029341057,
         "uuid": "412b28d3-d5e3-474f-91cd-1e5e932b346f",
         "translations": {
-            "de": "Das Schlafzimmer",
-            "en": "The bedroom",
-            "es": "El dormitorio"
+            "Deutsch": "Das Schlafzimmer",
+            "English": "The bedroom",
+            "Espagnol": "El dormitorio"
         }
     },
     {
@@ -1599,9 +1599,9 @@
         "created": 1686986617228,
         "uuid": "b3bdcd6c-118b-482a-b842-82f2b965e8ff",
         "translations": {
-            "de": "Die Ente",
-            "en": "The Duck",
-            "es": "El pato"
+            "Deutsch": "Die Ente",
+            "English": "The Duck",
+            "Espagnol": "El pato"
         }
     },
     {
@@ -1613,9 +1613,9 @@
         "created": 1687029822577,
         "uuid": "908d9cdf-6dfb-476c-8622-cd84dd646035",
         "translations": {
-            "de": "Der Hase",
-            "en": "The rabbit",
-            "es": "La liebre"
+            "Deutsch": "Der Hase",
+            "English": "The rabbit",
+            "Espagnol": "La liebre"
         }
     },
     {
@@ -1627,9 +1627,9 @@
         "created": 1687029824528,
         "uuid": "80573494-ff23-4552-8322-179acbedc2f7",
         "translations": {
-            "de": "Der Elch",
-            "en": "The elk",
-            "es": "El alce"
+            "Deutsch": "Der Elch",
+            "English": "The elk",
+            "Espagnol": "El alce"
         }
     },
     {
@@ -1641,9 +1641,9 @@
         "created": 1687029825802,
         "uuid": "67a41196-3274-4a35-8697-87fde5a77f0e",
         "translations": {
-            "de": "Der Vogel",
-            "en": "The Bird",
-            "es": "El pajaro"
+            "Deutsch": "Der Vogel",
+            "English": "The Bird",
+            "Espagnol": "El pajaro"
         }
     },
     {
@@ -1655,9 +1655,9 @@
         "created": 1687029827124,
         "uuid": "c30745cc-ab95-4766-95a6-e7b59d728d61",
         "translations": {
-            "de": "Das Schwein",
-            "en": "The pig",
-            "es": "El cerdo"
+            "Deutsch": "Das Schwein",
+            "English": "The pig",
+            "Espagnol": "El cerdo"
         }
     },
     {
@@ -1669,9 +1669,9 @@
         "created": 1687029828186,
         "uuid": "2075dee3-303d-4fe5-9ae7-674364decac0",
         "translations": {
-            "de": "Das Tier",
-            "en": "The animal",
-            "es": "El animal"
+            "Deutsch": "Das Tier",
+            "English": "The animal",
+            "Espagnol": "El animal"
         }
     },
     {
@@ -1683,9 +1683,9 @@
         "created": 1687029829623,
         "uuid": "f89a135b-c671-41b6-a9b3-b531fd4afa36",
         "translations": {
-            "de": "Das Boot",
-            "en": "The boat",
-            "es": "El barco"
+            "Deutsch": "Das Boot",
+            "English": "The boat",
+            "Espagnol": "El barco"
         }
     },
     {
@@ -1697,9 +1697,9 @@
         "created": 1687029831096,
         "uuid": "6260a707-9be9-4632-8804-facf99a07b6b",
         "translations": {
-            "de": "Das Fahrad",
-            "en": "The bicycle",
-            "es": "La bicicleta"
+            "Deutsch": "Das Fahrad",
+            "English": "The bicycle",
+            "Espagnol": "La bicicleta"
         }
     },
     {
@@ -1711,9 +1711,9 @@
         "created": 1687029831902,
         "uuid": "ad48c3ad-e713-48da-b109-cb503dc91b57",
         "translations": {
-            "de": "Der Stuhl",
-            "en": "The chair",
-            "es": "La silla"
+            "Deutsch": "Der Stuhl",
+            "English": "The chair",
+            "Espagnol": "La silla"
         }
     },
     {
@@ -1725,9 +1725,9 @@
         "created": 1687029833113,
         "uuid": "7d51dd7c-7025-400a-8080-1bd9bc577466",
         "translations": {
-            "de": "Das Motorrad",
-            "en": "The motorbike",
-            "es": "La moto"
+            "Deutsch": "Das Motorrad",
+            "English": "The motorbike",
+            "Espagnol": "La moto"
         }
     },
     {
@@ -1739,9 +1739,9 @@
         "created": 1687029834118,
         "uuid": "3a158420-07a7-41a4-908e-60fb19ce8620",
         "translations": {
-            "de": "Der Roller",
-            "en": "The scooter",
-            "es": "El scooter"
+            "Deutsch": "Der Roller",
+            "English": "The scooter",
+            "Espagnol": "El scooter"
         }
     },
     {
@@ -1753,9 +1753,9 @@
         "created": 1687071322259,
         "uuid": "f0f725d3-a352-4d43-9883-9a7d99480773",
         "translations": {
-            "de": "Der Computer",
-            "en": "the computer",
-            "es": "El ordenador"
+            "Deutsch": "Der Computer",
+            "English": "the computer",
+            "Espagnol": "El ordenador"
         }
     },
     {
@@ -1767,9 +1767,9 @@
         "created": 1687071325044,
         "uuid": "785831a1-b9b8-42ea-8826-45a228642690",
         "translations": {
-            "de": "Der Bildschirm",
-            "en": "The monitor",
-            "es": "La pantalla"
+            "Deutsch": "Der Bildschirm",
+            "English": "The monitor",
+            "Espagnol": "La pantalla"
         }
     },
     {
@@ -1781,9 +1781,9 @@
         "created": 1687071326892,
         "uuid": "3ce10d74-cf21-41d2-92af-2530f5eab2ed",
         "translations": {
-            "de": "Die Tastatur",
-            "en": "The keyboard",
-            "es": "El teclado"
+            "Deutsch": "Die Tastatur",
+            "English": "The keyboard",
+            "Espagnol": "El teclado"
         }
     },
     {
@@ -1795,9 +1795,9 @@
         "created": 1687071328248,
         "uuid": "3953482a-e649-452d-9616-625730c81913",
         "translations": {
-            "de": "Die Kopfhörer",
-            "en": "The headphones",
-            "es": "Los auriculares"
+            "Deutsch": "Die Kopfhörer",
+            "English": "The headphones",
+            "Espagnol": "Los auriculares"
         }
     },
     {
@@ -1809,9 +1809,9 @@
         "created": 1687071329130,
         "uuid": "6f39bf5b-f84e-4326-b2a3-c13f1d7a00d1",
         "translations": {
-            "de": "Das Kabel",
-            "en": "The cable",
-            "es": "El cable"
+            "Deutsch": "Das Kabel",
+            "English": "The cable",
+            "Espagnol": "El cable"
         }
     },
     {
@@ -1824,9 +1824,9 @@
         "created": 1687071335063,
         "uuid": "af53bd26-f960-44da-bc5f-9efcc94dc18b",
         "translations": {
-            "de": "Die maus",
-            "en": "The mouse",
-            "es": "El raton"
+            "Deutsch": "Die maus",
+            "English": "The mouse",
+            "Espagnol": "El raton"
         }
     },
     {
@@ -1838,9 +1838,9 @@
         "created": 1687071337205,
         "uuid": "203d82cf-228c-4e20-ab13-a17edb9f288c",
         "translations": {
-            "de": "Das Dreieck",
-            "en": "The triangle",
-            "es": "El triangulo"
+            "Deutsch": "Das Dreieck",
+            "English": "The triangle",
+            "Espagnol": "El triangulo"
         }
     },
     {
@@ -1852,9 +1852,9 @@
         "created": 1687071335771,
         "uuid": "81a7987f-a1c3-4923-8b8f-d10ad2d7e364",
         "translations": {
-            "de": "Das Quadrat",
-            "en": "The square",
-            "es": "El cuadrado"
+            "Deutsch": "Das Quadrat",
+            "English": "The square",
+            "Espagnol": "El cuadrado"
         }
     },
     {
@@ -1866,9 +1866,9 @@
         "created": 1687071337952,
         "uuid": "093cbe9f-53d5-4be4-84bf-bf53817acf42",
         "translations": {
-            "de": "Der Kreis",
-            "en": "The circle",
-            "es": "El circulo"
+            "Deutsch": "Der Kreis",
+            "English": "The circle",
+            "Espagnol": "El circulo"
         }
     },
     {
@@ -1880,9 +1880,9 @@
         "created": 1687071339615,
         "uuid": "682331d7-b10a-4185-864c-8f0daacfeff5",
         "translations": {
-            "de": "Der Park",
-            "en": "The parc",
-            "es": "El parque"
+            "Deutsch": "Der Park",
+            "English": "The parc",
+            "Espagnol": "El parque"
         }
     },
     {
@@ -1892,9 +1892,9 @@
         "created": 1687111058039,
         "uuid": "ed61b209-12d1-4c32-a8bb-80f21b63bb55",
         "translations": {
-            "de": "bearbeiten",
-            "en": "edit",
-            "es": "editar"
+            "Deutsch": "bearbeiten",
+            "English": "edit",
+            "Espagnol": "editar"
         }
     },
     {
@@ -1904,9 +1904,9 @@
         "created": 1687111058244,
         "uuid": "519cb7b0-4b2e-4dcc-a5a5-521866947bcc",
         "translations": {
-            "de": "zeichnen",
-            "en": "draw",
-            "es": "dibujar"
+            "Deutsch": "zeichnen",
+            "English": "draw",
+            "Espagnol": "dibujar"
         }
     },
     {
@@ -1916,9 +1916,9 @@
         "created": 1687111058650,
         "uuid": "967283ca-8135-43f5-8a79-9b2bc25de3fc",
         "translations": {
-            "de": "gehen",
-            "en": "go",
-            "es": "vaya"
+            "Deutsch": "gehen",
+            "English": "go",
+            "Espagnol": "vaya"
         }
     },
     {
@@ -1928,9 +1928,9 @@
         "created": 1687111059132,
         "uuid": "7ecf2d9c-a325-4ede-ad8b-a14079d34b3c",
         "translations": {
-            "de": "schliessen",
-            "en": "close",
-            "es": "cerrar"
+            "Deutsch": "schliessen",
+            "English": "close",
+            "Espagnol": "cerrar"
         }
     },
     {
@@ -1940,9 +1940,9 @@
         "created": 1687111059582,
         "uuid": "f8d2a59b-d60a-464b-8cbd-ad9c5c9b3f57",
         "translations": {
-            "de": "öffnen",
-            "en": "open",
-            "es": "abra"
+            "Deutsch": "öffnen",
+            "English": "open",
+            "Espagnol": "abra"
         }
     },
     {
@@ -1952,9 +1952,9 @@
         "created": 1687111060104,
         "uuid": "40804888-86fc-4170-940c-1fb8c999e905",
         "translations": {
-            "de": "verlassen",
-            "en": "leave",
-            "es": "dejar"
+            "Deutsch": "verlassen",
+            "English": "leave",
+            "Espagnol": "dejar"
         }
     },
     {
@@ -1964,9 +1964,9 @@
         "created": 1687111060690,
         "uuid": "74b1e3f9-7ace-451e-8f57-3c63c8d56c86",
         "translations": {
-            "de": "eintreten",
-            "en": "enter",
-            "es": "entrar"
+            "Deutsch": "eintreten",
+            "English": "enter",
+            "Espagnol": "entrar"
         }
     },
     {
@@ -1976,9 +1976,9 @@
         "created": 1687111061483,
         "uuid": "94bd9f1f-e846-48d6-a559-b60177db6ccb",
         "translations": {
-            "de": "umfallen",
-            "en": "fall over",
-            "es": "caerse"
+            "Deutsch": "umfallen",
+            "English": "fall over",
+            "Espagnol": "caerse"
         }
     },
     {
@@ -1988,9 +1988,9 @@
         "created": 1687111062364,
         "uuid": "f95feba5-88d4-4913-9c96-0f3dee0cdfa8",
         "translations": {
-            "de": "lernen",
-            "en": "learn",
-            "es": "aprender"
+            "Deutsch": "lernen",
+            "English": "learn",
+            "Espagnol": "aprender"
         }
     },
     {
@@ -2002,9 +2002,9 @@
         "created": 1687111063322,
         "uuid": "40a3e163-4da4-4f60-9d9a-8bca9161855f",
         "translations": {
-            "de": "speichern",
-            "en": "save",
-            "es": "guardar"
+            "Deutsch": "speichern",
+            "English": "save",
+            "Espagnol": "guardar"
         }
     },
     {
@@ -2016,9 +2016,9 @@
         "created": 1687111064423,
         "uuid": "40f6930c-4067-4472-b488-5d76c7c155f8",
         "translations": {
-            "de": "datei",
-            "en": "file",
-            "es": "fichero"
+            "Deutsch": "datei",
+            "English": "file",
+            "Espagnol": "fichero"
         }
     },
     {
@@ -2030,9 +2030,9 @@
         "created": 1687152254503,
         "uuid": "d6e8e838-d8e6-4d5b-b96c-74f24b247160",
         "translations": {
-            "de": "Das Blut",
-            "en": "The blood",
-            "es": "la sangre"
+            "Deutsch": "Das Blut",
+            "English": "The blood",
+            "Espagnol": "la sangre"
         }
     },
     {
@@ -2045,9 +2045,9 @@
         "created": 1687152254913,
         "uuid": "b58cd28f-693c-4d41-a0dd-9ab1c89f85f6",
         "translations": {
-            "de": "Die Treppe",
-            "en": "The stairs",
-            "es": "Les escaleras"
+            "Deutsch": "Die Treppe",
+            "English": "The stairs",
+            "Espagnol": "Les escaleras"
         }
     },
     {
@@ -2059,9 +2059,9 @@
         "created": 1687152256019,
         "uuid": "5637ee06-ed38-4308-84c9-a0ea42f35da7",
         "translations": {
-            "de": "hungrig",
-            "en": "hungry",
-            "es": "hambriento"
+            "Deutsch": "hungrig",
+            "English": "hungry",
+            "Espagnol": "hambriento"
         }
     },
     {
@@ -2073,9 +2073,9 @@
         "created": 1687200582201,
         "uuid": "8deddacc-abfa-4c4c-bf39-af5725b9dfc6",
         "translations": {
-            "de": "durstig",
-            "en": "thirsty",
-            "es": "sediento"
+            "Deutsch": "durstig",
+            "English": "thirsty",
+            "Espagnol": "sediento"
         }
     },
     {
@@ -2087,9 +2087,9 @@
         "created": 1687200583070,
         "uuid": "d7334a72-c287-419d-ab52-9cb15bb5e7c6",
         "translations": {
-            "de": "traurig",
-            "en": "sad",
-            "es": "triste"
+            "Deutsch": "traurig",
+            "English": "sad",
+            "Espagnol": "triste"
         }
     },
     {
@@ -2101,9 +2101,9 @@
         "created": 1687200583848,
         "uuid": "5b7ec0df-3958-4f51-9040-ef67e3ea2899",
         "translations": {
-            "de": "glücklich",
-            "en": "happy",
-            "es": "feliz"
+            "Deutsch": "glücklich",
+            "English": "happy",
+            "Espagnol": "feliz"
         }
     },
     {
@@ -2115,9 +2115,9 @@
         "created": 1687200805742,
         "uuid": "fc6b655a-57c2-4509-90c0-b7fea1e71feb",
         "translations": {
-            "de": "Das Hochhaus",
-            "en": "The Skyscraper",
-            "es": "El rascacielos"
+            "Deutsch": "Das Hochhaus",
+            "English": "The Skyscraper",
+            "Espagnol": "El rascacielos"
         }
     },
     {
@@ -2129,9 +2129,9 @@
         "created": 1687200807730,
         "uuid": "36477525-6f68-42ac-9d08-54567cea52cb",
         "translations": {
-            "de": "links",
-            "en": "left",
-            "es": "izquierda"
+            "Deutsch": "links",
+            "English": "left",
+            "Espagnol": "izquierda"
         }
     },
     {
@@ -2143,9 +2143,9 @@
         "created": 1687200809467,
         "uuid": "5fc07e5d-f718-4c3d-906b-319d3542c51d",
         "translations": {
-            "de": "rechts",
-            "en": "right",
-            "es": "derecha"
+            "Deutsch": "rechts",
+            "English": "right",
+            "Espagnol": "derecha"
         }
     },
     {
@@ -2157,9 +2157,9 @@
         "created": 1687200815068,
         "uuid": "c07f2ac1-0e27-4c7f-98e9-08bbda15a20c",
         "translations": {
-            "de": "oben",
-            "en": "top",
-            "es": "top"
+            "Deutsch": "oben",
+            "English": "top",
+            "Espagnol": "top"
         }
     },
     {
@@ -2171,9 +2171,9 @@
         "created": 1687200817113,
         "uuid": "37704a68-f60b-42e1-afbb-e6c76d99d567",
         "translations": {
-            "de": "unten",
-            "en": "below",
-            "es": "abajo"
+            "Deutsch": "unten",
+            "English": "below",
+            "Espagnol": "abajo"
         }
     },
     {
@@ -2185,9 +2185,9 @@
         "created": 1687200926111,
         "uuid": "7154cc5f-070d-4edd-bcfb-cd96950efc1d",
         "translations": {
-            "de": "davor",
-            "en": "bevor",
-            "es": "antes"
+            "Deutsch": "davor",
+            "English": "bevor",
+            "Espagnol": "antes"
         }
     },
     {
@@ -2199,9 +2199,9 @@
         "created": 1687203351722,
         "uuid": "9e0431ae-e2b2-467c-8077-ba6209b497d9",
         "translations": {
-            "de": "dahinter",
-            "en": "behind",
-            "es": "detra de"
+            "Deutsch": "dahinter",
+            "English": "behind",
+            "Espagnol": "detra de"
         }
     },
     {
@@ -2211,9 +2211,9 @@
         "created": 1687234588480,
         "uuid": "90c2545a-ec0d-4fb5-8c9f-ffc63ccec74f",
         "translations": {
-            "de": "Der Zug",
-            "en": "The train",
-            "es": "El tren"
+            "Deutsch": "Der Zug",
+            "English": "The train",
+            "Espagnol": "El tren"
         }
     },
     {
@@ -2223,9 +2223,9 @@
         "created": 1687234590191,
         "uuid": "78afdac4-9826-40e6-8779-86f02f121a2f",
         "translations": {
-            "de": "Der Bus",
-            "en": "The bus",
-            "es": "El autobus"
+            "Deutsch": "Der Bus",
+            "English": "The bus",
+            "Espagnol": "El autobus"
         }
     },
     {
@@ -2235,9 +2235,9 @@
         "created": 1687234590805,
         "uuid": "01fb8427-5025-499d-8534-682aea58e8b1",
         "translations": {
-            "de": "Die Zigarette",
-            "en": "The cigarette",
-            "es": "El cigarillio"
+            "Deutsch": "Die Zigarette",
+            "English": "The cigarette",
+            "Espagnol": "El cigarillio"
         }
     },
     {
@@ -2247,9 +2247,9 @@
         "created": 1687234591200,
         "uuid": "ae1b402b-8b88-4ff5-9f28-666dbaa09c8a",
         "translations": {
-            "de": "Der Alkohol",
-            "en": "The alcohol",
-            "es": "El alcohol"
+            "Deutsch": "Der Alkohol",
+            "English": "The alcohol",
+            "Espagnol": "El alcohol"
         }
     },
     {
@@ -2259,9 +2259,9 @@
         "created": 1687234591308,
         "uuid": "16961cc2-cdec-40bb-9f1d-fc522556b776",
         "translations": {
-            "de": "Die Wiese",
-            "en": "The meadow",
-            "es": "El prado"
+            "Deutsch": "Die Wiese",
+            "English": "The meadow",
+            "Espagnol": "El prado"
         }
     },
     {
@@ -2271,9 +2271,9 @@
         "created": 1687234591458,
         "uuid": "3661d72b-d821-4378-90ea-34f9db6010df",
         "translations": {
-            "de": "Der Wald",
-            "en": "The Forest",
-            "es": "El bosque"
+            "Deutsch": "Der Wald",
+            "English": "The Forest",
+            "Espagnol": "El bosque"
         }
     },
     {
@@ -2283,9 +2283,9 @@
         "created": 1687234591718,
         "uuid": "ed951fe2-14a0-4fd3-a69a-55273e948775",
         "translations": {
-            "de": "Der Hügel",
-            "en": "The Hill",
-            "es": "La colina"
+            "Deutsch": "Der Hügel",
+            "English": "The Hill",
+            "Espagnol": "La colina"
         }
     },
     {
@@ -2295,9 +2295,9 @@
         "created": 1687234595195,
         "uuid": "f79346d9-26bf-4fe1-873f-d97174b3fdd6",
         "translations": {
-            "de": "Die Station",
-            "en": "The station",
-            "es": "El estacion"
+            "Deutsch": "Die Station",
+            "English": "The station",
+            "Espagnol": "El estacion"
         }
     },
     {
@@ -2307,9 +2307,9 @@
         "created": 1687234595860,
         "uuid": "c24e66d6-e216-4da4-bca8-35fea58464d4",
         "translations": {
-            "de": "Die liste",
-            "en": "The list",
-            "es": "lista"
+            "Deutsch": "Die liste",
+            "English": "The list",
+            "Espagnol": "lista"
         }
     },
     {
@@ -2319,9 +2319,9 @@
         "created": 1687234596641,
         "uuid": "56c0fa5f-2887-4571-a286-43baa4f4d6c4",
         "translations": {
-            "de": "Die Website",
-            "en": "The website",
-            "es": "El sitio web"
+            "Deutsch": "Die Website",
+            "English": "The website",
+            "Espagnol": "El sitio web"
         }
     },
     {
@@ -2331,9 +2331,9 @@
         "created": 1687254941851,
         "uuid": "f2fa1e74-055c-4566-a2bb-544d06b94781",
         "translations": {
-            "de": "programmieren",
-            "en": "program",
-            "es": "programar"
+            "Deutsch": "programmieren",
+            "English": "program",
+            "Espagnol": "programar"
         }
     },
     {
@@ -2343,9 +2343,9 @@
         "created": 1687254943164,
         "uuid": "5cd3b731-bab7-4595-9c6c-bffabe1e04bf",
         "translations": {
-            "de": "Der Stern",
-            "en": "The star",
-            "es": "el estrella"
+            "Deutsch": "Der Stern",
+            "English": "The star",
+            "Espagnol": "el estrella"
         }
     },
     {
@@ -2355,9 +2355,9 @@
         "created": 1687254945026,
         "uuid": "34f267ff-55d5-471c-a42b-3e3fc1fb790a",
         "translations": {
-            "de": "Der Nagel",
-            "en": "The nail",
-            "es": "el clavo"
+            "Deutsch": "Der Nagel",
+            "English": "The nail",
+            "Espagnol": "el clavo"
         }
     },
     {
@@ -2367,9 +2367,9 @@
         "created": 1687254946422,
         "uuid": "ac307ca7-f94e-4262-b307-a5db9237ab0f",
         "translations": {
-            "de": "Der Koffer",
-            "en": "The suitcase",
-            "es": "la maleta"
+            "Deutsch": "Der Koffer",
+            "English": "The suitcase",
+            "Espagnol": "la maleta"
         }
     },
     {
@@ -2379,9 +2379,9 @@
         "created": 1687254947452,
         "uuid": "34ff119e-ea49-482f-9e31-a334570a34dd",
         "translations": {
-            "de": "Datum",
-            "en": "The date",
-            "es": "La fecha"
+            "Deutsch": "Datum",
+            "English": "The date",
+            "Espagnol": "La fecha"
         }
     },
     {
@@ -2391,9 +2391,9 @@
         "created": 1687255007380,
         "uuid": "11929d0c-42c3-48eb-b084-4154ae1e8752",
         "translations": {
-            "de": "Die Aufgabe",
-            "en": "The task",
-            "es": "La tarea"
+            "Deutsch": "Die Aufgabe",
+            "English": "The task",
+            "Espagnol": "La tarea"
         }
     },
     {
@@ -2403,9 +2403,9 @@
         "created": 1687255008494,
         "uuid": "0cca7d96-6e7a-4c52-9d25-b8c23a144045",
         "translations": {
-            "de": "Der Nepotismus",
-            "en": "nepotism",
-            "es": "nepotismo"
+            "Deutsch": "Der Nepotismus",
+            "English": "nepotism",
+            "Espagnol": "nepotismo"
         }
     },
     {
@@ -2415,9 +2415,9 @@
         "created": 1687255008675,
         "uuid": "8aa1fac8-719c-44f7-aee0-c69cdcb223c9",
         "translations": {
-            "de": "Die Absteige",
-            "en": "flophouse",
-            "es": "albergue"
+            "Deutsch": "Die Absteige",
+            "English": "flophouse",
+            "Espagnol": "albergue"
         }
     },
     {
@@ -2427,9 +2427,9 @@
         "created": 1687255008944,
         "uuid": "9a5f470b-539f-4a2c-80fc-453df4d79a0e",
         "translations": {
-            "de": "Monopol",
-            "en": "monopoly",
-            "es": "monopolio"
+            "Deutsch": "Monopol",
+            "English": "monopoly",
+            "Espagnol": "monopolio"
         }
     },
     {
@@ -2439,9 +2439,9 @@
         "created": 1687255009124,
         "uuid": "99379326-9087-44bc-a623-0ac66787f541",
         "translations": {
-            "de": "Kartell",
-            "en": "cartell",
-            "es": "cartel"
+            "Deutsch": "Kartell",
+            "English": "cartell",
+            "Espagnol": "cartel"
         }
     },
     {
@@ -2451,9 +2451,9 @@
         "created": 1687255009306,
         "uuid": "52de913e-6f74-47ef-803c-8a4387a03bb9",
         "translations": {
-            "de": "Oligopol",
-            "en": "oligopoly",
-            "es": "oligopolio"
+            "Deutsch": "Oligopol",
+            "English": "oligopoly",
+            "Espagnol": "oligopolio"
         }
     },
     {
@@ -2463,9 +2463,9 @@
         "created": 1687255288265,
         "uuid": "b8de4969-267a-400a-b160-ad8c77f6a2b2",
         "translations": {
-            "de": "Nacht",
-            "en": "night",
-            "es": "La noche"
+            "Deutsch": "Nacht",
+            "English": "night",
+            "Espagnol": "La noche"
         }
     },
     {
@@ -2475,9 +2475,9 @@
         "created": 1687255289312,
         "uuid": "831f800a-d043-453a-a31e-b036037bd692",
         "translations": {
-            "de": "Tag",
-            "en": "day",
-            "es": "El dia"
+            "Deutsch": "Tag",
+            "English": "day",
+            "Espagnol": "El dia"
         }
     },
     {
@@ -2487,9 +2487,9 @@
         "created": 1687255342592,
         "uuid": "d4f12c60-50d1-4d73-b0bb-d49bfa53648e",
         "translations": {
-            "de": "Der Morgen",
-            "en": "the morning",
-            "es": "La mañana"
+            "Deutsch": "Der Morgen",
+            "English": "the morning",
+            "Espagnol": "La mañana"
         }
     },
     {
@@ -2499,9 +2499,9 @@
         "created": 1687255343943,
         "uuid": "2c373fbd-b57b-4dfd-b6c3-c4607d77d714",
         "translations": {
-            "de": "Der Abend",
-            "en": "the evening",
-            "es": "La velada"
+            "Deutsch": "Der Abend",
+            "English": "the evening",
+            "Espagnol": "La velada"
         }
     },
     {
@@ -2511,9 +2511,9 @@
         "created": 1687255345438,
         "uuid": "cc318968-cfff-436e-84af-1c0145204819",
         "translations": {
-            "de": "Der Mittag",
-            "en": "the noon",
-            "es": "El mediodia"
+            "Deutsch": "Der Mittag",
+            "English": "the noon",
+            "Espagnol": "El mediodia"
         }
     },
     {
@@ -2523,9 +2523,9 @@
         "created": 1687255346652,
         "uuid": "acba915f-1110-42d0-9923-86ec070eca68",
         "translations": {
-            "de": "Mann",
-            "en": "man",
-            "es": "hombre"
+            "Deutsch": "Mann",
+            "English": "man",
+            "Espagnol": "hombre"
         }
     },
     {
@@ -2535,9 +2535,9 @@
         "created": 1687255735776,
         "uuid": "03896da3-bcf4-44b9-9a14-7f45a0a0b772",
         "translations": {
-            "de": "Frau",
-            "en": "women",
-            "es": "mujer"
+            "Deutsch": "Frau",
+            "English": "women",
+            "Espagnol": "mujer"
         }
     },
     {
@@ -2547,9 +2547,9 @@
         "created": 1687289913841,
         "uuid": "d4a27197-1b7a-4bb8-9ee7-29f6ef3b90a4",
         "translations": {
-            "de": "ansehen",
-            "en": "view",
-            "es": "ver"
+            "Deutsch": "ansehen",
+            "English": "view",
+            "Espagnol": "ver"
         }
     },
     {
@@ -2559,9 +2559,9 @@
         "created": 1687289914019,
         "uuid": "cca83d8d-59b0-48c5-99d0-ca09e927449e",
         "translations": {
-            "de": "reden",
-            "en": "talk",
-            "es": "hablar"
+            "Deutsch": "reden",
+            "English": "talk",
+            "Espagnol": "hablar"
         }
     },
     {
@@ -2571,9 +2571,9 @@
         "created": 1687289914159,
         "uuid": "270b8594-dfb6-418d-9ac2-9ed1c9d763f5",
         "translations": {
-            "de": "können",
-            "en": "can",
-            "es": "puede"
+            "Deutsch": "können",
+            "English": "can",
+            "Espagnol": "puede"
         }
     },
     {
@@ -2583,9 +2583,9 @@
         "created": 1687289914369,
         "uuid": "6234fa32-2e69-48e3-b30c-bf8a96e38d16",
         "translations": {
-            "de": "müssen",
-            "en": "must",
-            "es": "debe"
+            "Deutsch": "müssen",
+            "English": "must",
+            "Espagnol": "debe"
         }
     },
     {
@@ -2595,9 +2595,9 @@
         "created": 1687289914539,
         "uuid": "9160acac-33d2-4618-87bd-ab5f79c089d9",
         "translations": {
-            "de": "dürfen",
-            "en": "can",
-            "es": "mayo"
+            "Deutsch": "dürfen",
+            "English": "can",
+            "Espagnol": "mayo"
         }
     },
     {
@@ -2607,9 +2607,9 @@
         "created": 1687289914664,
         "uuid": "54a5eb14-661e-4d4e-ac59-3ee26f04f583",
         "translations": {
-            "de": "wollen",
-            "en": "want",
-            "es": "desea"
+            "Deutsch": "wollen",
+            "English": "want",
+            "Espagnol": "desea"
         }
     },
     {
@@ -2619,9 +2619,9 @@
         "created": 1687289914786,
         "uuid": "111996df-1272-4925-ad7c-9b2472e2747b",
         "translations": {
-            "de": "sollen",
-            "en": "should",
-            "es": "debe"
+            "Deutsch": "sollen",
+            "English": "should",
+            "Espagnol": "debe"
         }
     },
     {
@@ -2631,9 +2631,9 @@
         "created": 1687289915050,
         "uuid": "4df62bc2-f6f6-4faa-943a-d05c4c6db99a",
         "translations": {
-            "de": "lieben",
-            "en": "love",
-            "es": "amor"
+            "Deutsch": "lieben",
+            "English": "love",
+            "Espagnol": "amor"
         }
     },
     {
@@ -2643,9 +2643,9 @@
         "created": 1687289918901,
         "uuid": "b7dda116-1e06-4f6f-b7a9-69b96dd3d41e",
         "translations": {
-            "de": "hassen",
-            "en": "hate",
-            "es": "odio"
+            "Deutsch": "hassen",
+            "English": "hate",
+            "Espagnol": "odio"
         }
     },
     {
@@ -2655,9 +2655,9 @@
         "created": 1687289919510,
         "uuid": "14a7a44d-4757-4ff4-ad13-4d61b28d949f",
         "translations": {
-            "de": "treffen",
-            "en": "meet",
-            "es": "conoce"
+            "Deutsch": "treffen",
+            "English": "meet",
+            "Espagnol": "conoce"
         }
     },
     {
@@ -2667,9 +2667,9 @@
         "created": 1687290665977,
         "uuid": "aeddd6b0-286d-4249-ae8a-90d1ed44bb23",
         "translations": {
-            "de": "ich",
-            "en": "i",
-            "es": ""
+            "Deutsch": "ich",
+            "English": "i",
+            "Espagnol": ""
         }
     },
     {
@@ -2679,9 +2679,9 @@
         "created": 1687290666202,
         "uuid": "8a8ddac5-e2e9-4141-b100-0b1005b866aa",
         "translations": {
-            "de": "du",
-            "en": "you",
-            "es": ""
+            "Deutsch": "du",
+            "English": "you",
+            "Espagnol": ""
         }
     },
     {
@@ -2691,9 +2691,9 @@
         "created": 1687290666379,
         "uuid": "fd764d16-8e99-49e5-b9d9-2ced152007f7",
         "translations": {
-            "de": "er",
-            "en": "he",
-            "es": ""
+            "Deutsch": "er",
+            "English": "he",
+            "Espagnol": ""
         }
     },
     {
@@ -2703,9 +2703,9 @@
         "created": 1687290666591,
         "uuid": "6c2d44c4-29c7-44c1-b2d2-a52647f5e576",
         "translations": {
-            "de": "sie",
-            "en": "she",
-            "es": ""
+            "Deutsch": "sie",
+            "English": "she",
+            "Espagnol": ""
         }
     },
     {
@@ -2715,9 +2715,9 @@
         "created": 1687290666780,
         "uuid": "d5045ca1-f90b-4172-842f-557bda800139",
         "translations": {
-            "de": "es",
-            "en": "it",
-            "es": ""
+            "Deutsch": "es",
+            "English": "it",
+            "Espagnol": ""
         }
     },
     {
@@ -2727,9 +2727,9 @@
         "created": 1687290666954,
         "uuid": "823e1ad6-03ae-41f8-a354-b2867f29ccf5",
         "translations": {
-            "de": "wir",
-            "en": "we",
-            "es": ""
+            "Deutsch": "wir",
+            "English": "we",
+            "Espagnol": ""
         }
     },
     {
@@ -2739,9 +2739,9 @@
         "created": 1687290667120,
         "uuid": "91310f75-3bc7-4f7a-8e57-b7e135928ded",
         "translations": {
-            "de": "ihr",
-            "en": "you",
-            "es": ""
+            "Deutsch": "ihr",
+            "English": "you",
+            "Espagnol": ""
         }
     },
     {
@@ -2751,9 +2751,9 @@
         "created": 1687290667301,
         "uuid": "d14cec2d-f485-4b3e-9d34-ae6d804a8401",
         "translations": {
-            "de": "sie",
-            "en": "they",
-            "es": ""
+            "Deutsch": "sie",
+            "English": "they",
+            "Espagnol": ""
         }
     }
 ]

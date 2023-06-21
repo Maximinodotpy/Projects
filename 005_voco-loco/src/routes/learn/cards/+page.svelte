@@ -11,8 +11,8 @@
     let current_word_id = 0;
     let current_word_data : Word
 
-    let target_language = "Deutsch";
-    let origin_language = "English";
+    let target_language = $voci_file.languages[0];
+    let origin_language = $voci_file.languages[1];
     let allowed_tags : string[] = [];
     let inputContent = ''
     let current_word_element : HTMLElement
@@ -37,9 +37,6 @@
     let asked_words = 0;
 
     function keydownCallback(event: KeyboardEvent) {
-        console.log(event);
-        console.log(current_word_data.translations[target_language].toLowerCase());
-
         if (event.key == 'Enter' && !event.ctrlKey) {
             if (inputContent.toLowerCase() == current_word_data.translations[target_language].toLowerCase()) {
                 console.log("Correct");
@@ -109,6 +106,12 @@
 
         current_word_data = word_pool[current_word_id];
     }
+
+    function swapTargetAndOriginLangauge() {
+        const temp = target_language;
+        target_language = origin_language;
+        origin_language = temp;
+    }
 </script>
 
 <svelte:head>
@@ -146,7 +149,7 @@
             <div>
                 <label for="" class="flex items-center gap-3 mb-3">
                     <span>Target</span>
-                    
+
                     <select bind:value={target_language} class="px-2 py-1 bg-blue-100 rounded-md">
                         {#each $voci_file.languages as language}
                             {#if language != origin_language}
@@ -168,8 +171,10 @@
                         {/each}
                     </select>
                 </label>
+
+                <button on:click={ swapTargetAndOriginLangauge } class="mt-2">Swap Target and Origin</button>
                 
-                {#if text_to_speech}
+                <!-- {#if text_to_speech}
                     <label for="ottsl" class="flex items-center gap-3">
                         <span>Origin TTS Language</span>
                         
@@ -179,19 +184,19 @@
                             {/each}
                         </select>
                     </label>
-                {/if}
+                {/if} -->
             </div>
         </div>
 
         
-        <div class="mb-3">
+        <!-- <div class="mb-3">
             <h3 class="mb-3 text-xl">TTS</h3>
 
             <label for="tts" class="flex items-center gap-2">
                 <input bind:checked={text_to_speech} type="checkbox" id="tts">
                 <span>Text to Speech</span>
             </label>
-        </div>
+        </div> -->
 
         <div>
             Press <kbd>enter</kbd> to check the answer and <kbd>ctrl + enter</kbd> to view the solution.
