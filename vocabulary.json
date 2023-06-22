@@ -3317,7 +3317,7 @@
         "translations": {
             "Deutsch": "Die Zutaten",
             "English": "The ingredients",
-            "Espagnol": "Lost ingredientes"
+            "Espagnol": "Los ingredientes"
         }
     },
     {
@@ -3378,18 +3378,6 @@
             "Deutsch": "helfen",
             "English": "help",
             "Espagnol": "ayuda"
-        }
-    },
-    {
-        "type": "",
-        "description": "",
-        "tags": [],
-        "created": 1687417677610,
-        "uuid": "0141e29e-0e4b-446d-9b41-2cc31de326ff",
-        "translations": {
-            "Deutsch": "",
-            "English": "",
-            "Espagnol": ""
         }
     }
 ]
