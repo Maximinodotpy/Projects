@@ -2669,7 +2669,7 @@
         "translations": {
             "Deutsch": "ich",
             "English": "i",
-            "Espagnol": ""
+            "Espagnol": "yo"
         }
     },
     {
@@ -2681,7 +2681,7 @@
         "translations": {
             "Deutsch": "du",
             "English": "you",
-            "Espagnol": ""
+            "Espagnol": "tu"
         }
     },
     {
@@ -2693,7 +2693,7 @@
         "translations": {
             "Deutsch": "er",
             "English": "he",
-            "Espagnol": ""
+            "Espagnol": "el"
         }
     },
     {
@@ -2705,19 +2705,7 @@
         "translations": {
             "Deutsch": "sie",
             "English": "she",
-            "Espagnol": ""
-        }
-    },
-    {
-        "type": "",
-        "description": "",
-        "tags": [],
-        "created": 1687290666780,
-        "uuid": "d5045ca1-f90b-4172-842f-557bda800139",
-        "translations": {
-            "Deutsch": "es",
-            "English": "it",
-            "Espagnol": ""
+            "Espagnol": "ella"
         }
     },
     {
@@ -2729,7 +2717,7 @@
         "translations": {
             "Deutsch": "wir",
             "English": "we",
-            "Espagnol": ""
+            "Espagnol": "nosotros"
         }
     },
     {
@@ -2741,7 +2729,7 @@
         "translations": {
             "Deutsch": "ihr",
             "English": "you",
-            "Espagnol": ""
+            "Espagnol": "vosotros"
         }
     },
     {
@@ -2753,6 +2741,654 @@
         "translations": {
             "Deutsch": "sie",
             "English": "they",
+            "Espagnol": "ellos"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687341361546,
+        "uuid": "5d60fdd2-d156-4bda-87de-c43931d883f2",
+        "translations": {
+            "Deutsch": "nichts",
+            "English": "nothing",
+            "Espagnol": "nada"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687341362144,
+        "uuid": "903c4b55-f534-4d7d-8502-323183471b62",
+        "translations": {
+            "Deutsch": "alles",
+            "English": "alles",
+            "Espagnol": "todo"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687341362309,
+        "uuid": "24ac476b-ac37-4cb1-8cbe-575c00b2efc5",
+        "translations": {
+            "Deutsch": "gross",
+            "English": "big",
+            "Espagnol": "grande"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687341362552,
+        "uuid": "5c63e917-4504-45ca-9d81-59fb0ad4d049",
+        "translations": {
+            "Deutsch": "klein",
+            "English": "small",
+            "Espagnol": "pequeno"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687341362737,
+        "uuid": "d09202fa-8166-4d0d-a59f-b24df681b310",
+        "translations": {
+            "Deutsch": "Das Video",
+            "English": "the video",
+            "Espagnol": "el video"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687341362899,
+        "uuid": "d61d686d-527e-4339-9afa-fcfda18baccf",
+        "translations": {
+            "Deutsch": "willkommen",
+            "English": "welcome",
+            "Espagnol": "bienvenido"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687350970077,
+        "uuid": "5b75e02e-3817-49a1-9715-6d12a4a904bd",
+        "translations": {
+            "Deutsch": "Der Helm",
+            "English": "the helmet",
+            "Espagnol": "el casco"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687350970557,
+        "uuid": "831e49a4-ed3a-43b1-84a5-02d192c70aa5",
+        "translations": {
+            "Deutsch": "Wer",
+            "English": "who",
+            "Espagnol": "Quién"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687350970692,
+        "uuid": "22af3ede-3ad5-44e0-b03c-599ae4945a61",
+        "translations": {
+            "Deutsch": "Welcher",
+            "English": "which",
+            "Espagnol": "Cual"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687350970899,
+        "uuid": "dbca7d38-7078-470e-99ef-ad579b60e124",
+        "translations": {
+            "Deutsch": "Wo",
+            "English": "where",
+            "Espagnol": "donde"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687350971095,
+        "uuid": "e9f313d9-45e5-4016-8ec8-7ce84d588dd1",
+        "translations": {
+            "Deutsch": "Woher",
+            "English": "from where",
+            "Espagnol": "de donde"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687350971240,
+        "uuid": "4390f9ab-3006-4d66-864d-0f41720a7ccb",
+        "translations": {
+            "Deutsch": "Wohin",
+            "English": "where to",
+            "Espagnol": "a donde"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687350971398,
+        "uuid": "b7868a76-96b8-4da7-a084-d4368cc1c141",
+        "translations": {
+            "Deutsch": "Was",
+            "English": "what",
+            "Espagnol": "que"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687350974697,
+        "uuid": "c5b41e01-7c99-4455-b1aa-ca8caf6f1fb9",
+        "translations": {
+            "Deutsch": "Wie viel",
+            "English": "how much",
+            "Espagnol": "cuanto"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687350974925,
+        "uuid": "fdea0fb9-496a-4c55-8aa9-2608646cf0a1",
+        "translations": {
+            "Deutsch": "Wie",
+            "English": "how",
+            "Espagnol": "como"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687350975199,
+        "uuid": "6f2fe999-0cd8-40ff-b9c2-477a974cb6ee",
+        "translations": {
+            "Deutsch": "Warum",
+            "English": "why",
+            "Espagnol": "por que"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687350978888,
+        "uuid": "cfc801ea-14b5-4741-969e-9cf0e4c4546d",
+        "translations": {
+            "Deutsch": "Weil",
+            "English": "because",
+            "Espagnol": "porque"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687350979043,
+        "uuid": "ad370cb0-370a-4f9d-8d27-6b248382fea2",
+        "translations": {
+            "Deutsch": "wieviel uhr",
+            "English": "when",
+            "Espagnol": "A que hora"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687350979249,
+        "uuid": "03c4d6c1-50d1-45ea-8a08-a1a03b676678",
+        "translations": {
+            "Deutsch": "schreiben",
+            "English": "write",
+            "Espagnol": "escribir"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687350979401,
+        "uuid": "c8e1be5e-6004-4800-b7af-65b50803fc1e",
+        "translations": {
+            "Deutsch": "essen",
+            "English": "eat",
+            "Espagnol": "come"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687350979531,
+        "uuid": "e559356a-2e9e-4775-b27e-39dfa1f9aec7",
+        "translations": {
+            "Deutsch": "Das Kreuz",
+            "English": "The cross",
+            "Espagnol": "La cruz"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687350979771,
+        "uuid": "df4f3fb6-26d3-46ba-9443-5d26f5b35575",
+        "translations": {
+            "Deutsch": "Der Karton",
+            "English": "the cardboard",
+            "Espagnol": "El carton"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687350980581,
+        "uuid": "00d9d4aa-7050-4be7-a483-1ed9001c2a92",
+        "translations": {
+            "Deutsch": "hören",
+            "English": "listen",
+            "Espagnol": "escuche"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687350980754,
+        "uuid": "47517dc6-4264-4673-a6bf-15e25fa43763",
+        "translations": {
+            "Deutsch": "lesen",
+            "English": "read",
+            "Espagnol": "leer"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687350980916,
+        "uuid": "b2af1256-d639-46a9-8eec-98ef18a5b844",
+        "translations": {
+            "Deutsch": "schauen",
+            "English": "watch",
+            "Espagnol": "mira"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687350981177,
+        "uuid": "80a36953-b9e2-4d8c-ab60-d814cc61ba13",
+        "translations": {
+            "Deutsch": "Das Zebra",
+            "English": "the zebra",
+            "Espagnol": "La cebra"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687350983648,
+        "uuid": "c743a385-5f0a-4e84-aad2-b705271b1d88",
+        "translations": {
+            "Deutsch": "Der stoff",
+            "English": "the ",
+            "Espagnol": "El tejido"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687350983756,
+        "uuid": "46f5a521-e0a4-4231-b45c-96fb29dbc77f",
+        "translations": {
+            "Deutsch": "Die wolle",
+            "English": "the wool",
+            "Espagnol": "El deseo"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687350983973,
+        "uuid": "3249bc4f-132c-43ad-82ff-159a1482a0d6",
+        "translations": {
+            "Deutsch": "lügen",
+            "English": "lie",
+            "Espagnol": "mentira"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687350984147,
+        "uuid": "a78fcac2-fc29-4c7f-8e02-6d37ace79d4f",
+        "translations": {
+            "Deutsch": "versprechen",
+            "English": "promise",
+            "Espagnol": "promesa"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687350984310,
+        "uuid": "c8f60c57-ccc2-40fa-a62b-21201c410f00",
+        "translations": {
+            "Deutsch": "töten",
+            "English": "kill",
+            "Espagnol": "matar"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687350984522,
+        "uuid": "96fc65dd-5149-475c-bbdb-044280397ae6",
+        "translations": {
+            "Deutsch": "beenden",
+            "English": "finish",
+            "Espagnol": "fin"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687350986398,
+        "uuid": "b63e0f6f-b64a-4aaa-99b4-a8799d8d16e8",
+        "translations": {
+            "Deutsch": "einschalten",
+            "English": "turn on",
+            "Espagnol": "encender"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687350986558,
+        "uuid": "89f82e8c-3ee6-4ba6-873a-24a5f4f0b09a",
+        "translations": {
+            "Deutsch": "löschen",
+            "English": "delete",
+            "Espagnol": "borrar"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687350986769,
+        "uuid": "3c29b7a3-13bc-4dd8-8116-59a3e00ae23e",
+        "translations": {
+            "Deutsch": "verbieten",
+            "English": "prohibit",
+            "Espagnol": "prohibier"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687350987003,
+        "uuid": "c43a4883-4a25-462e-a093-919c16ed6a4c",
+        "translations": {
+            "Deutsch": "erlauben",
+            "English": "allow",
+            "Espagnol": "permitir"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687350988876,
+        "uuid": "0b23f46a-86df-41be-8b54-d0368ac36c50",
+        "translations": {
+            "Deutsch": "Abfall",
+            "English": "trash",
+            "Espagnol": "desechos"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687350989335,
+        "uuid": "6d5d938a-d5e8-4c34-b11b-26abdf052113",
+        "translations": {
+            "Deutsch": "entwickeln",
+            "English": "develop",
+            "Espagnol": "desarrollar"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687350991695,
+        "uuid": "5a647849-2cf5-4048-8b10-ad263f96876f",
+        "translations": {
+            "Deutsch": "Die Technik",
+            "English": "The technology",
+            "Espagnol": "La tecnologia"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687354961014,
+        "uuid": "146880ee-c243-4d4b-af6c-ee8cfa02efc4",
+        "translations": {
+            "Deutsch": "Das Pferd",
+            "English": "the horse",
+            "Espagnol": "el caballo"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687416885570,
+        "uuid": "75218042-03c4-49cc-a374-b2d3caa5202c",
+        "translations": {
+            "Deutsch": "erforschen",
+            "English": "explore",
+            "Espagnol": "explora"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687416885984,
+        "uuid": "3af017b8-e03e-456f-9837-7f8e2e9cc2db",
+        "translations": {
+            "Deutsch": "benachrichtigen",
+            "English": "notify",
+            "Espagnol": "notificar a"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687416886151,
+        "uuid": "2e5598e2-a647-4911-aed9-b37c4355ab5a",
+        "translations": {
+            "Deutsch": "Die Fehde",
+            "English": "The feud",
+            "Espagnol": "El feudo"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687416886282,
+        "uuid": "6428e656-9f27-4283-951a-a29b6f7db80e",
+        "translations": {
+            "Deutsch": "Die Kultur",
+            "English": "The culture",
+            "Espagnol": "La cultura"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687416950524,
+        "uuid": "3b3c0177-df7f-41d6-b6d0-7caac473fca5",
+        "translations": {
+            "Deutsch": "Die Kunst",
+            "English": "The art",
+            "Espagnol": "El arte"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687416950782,
+        "uuid": "f6e7ed1f-8ef2-404f-8024-35f0454b7c5c",
+        "translations": {
+            "Deutsch": "Das Labor",
+            "English": "The lab",
+            "Espagnol": "El laboratorio"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687416950855,
+        "uuid": "c37b519f-6692-4209-ac5f-430b12b089bc",
+        "translations": {
+            "Deutsch": "Die Region",
+            "English": "The region",
+            "Espagnol": "La region"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687417007753,
+        "uuid": "6ad344d5-dec0-4bd6-ada1-4a83343b6936",
+        "translations": {
+            "Deutsch": "Die Zutaten",
+            "English": "The ingredients",
+            "Espagnol": "Lost ingredientes"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687417008379,
+        "uuid": "adc344a1-1506-4609-abb8-31f3a2014d21",
+        "translations": {
+            "Deutsch": "Der Himmel",
+            "English": "The sky",
+            "Espagnol": "El cielo"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687417008634,
+        "uuid": "514f0bde-3613-41d4-9cfc-09e2217be235",
+        "translations": {
+            "Deutsch": "Die Wolken",
+            "English": "The clouds",
+            "Espagnol": "Las nubes"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687417008705,
+        "uuid": "449d4511-badb-4b5d-806c-bee6375cf2e5",
+        "translations": {
+            "Deutsch": "Der Regen",
+            "English": "The rain",
+            "Espagnol": "La lluvia"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687417315246,
+        "uuid": "a7b12aec-58f1-42d7-ae2e-98b780b7a958",
+        "translations": {
+            "Deutsch": "Der Sturm",
+            "English": "The storm",
+            "Espagnol": "La tormenta"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687417677401,
+        "uuid": "070d2372-0d84-4d62-ad68-22ec5ff78999",
+        "translations": {
+            "Deutsch": "helfen",
+            "English": "help",
+            "Espagnol": "ayuda"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [],
+        "created": 1687417677610,
+        "uuid": "0141e29e-0e4b-446d-9b41-2cc31de326ff",
+        "translations": {
+            "Deutsch": "",
+            "English": "",
             "Espagnol": ""
         }
     }
