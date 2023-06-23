@@ -24,9 +24,11 @@
     function handleSearchParams() {
         console.log('Handle search params');
         
-        const urlParams = new URLSearchParams(location.search);
-        if (urlParams.has('uuid')) {
-            current_view_mode = 1
+        if (typeof location !== 'undefined') {
+            const urlParams = new URLSearchParams(location.search);
+            if (urlParams.has('uuid')) {
+                current_view_mode = 1
+            }
         }
     }
 
@@ -35,11 +37,11 @@
     page.subscribe(handleSearchParams)
 </script>
 
-<div class="flex justify-between border-b-[1.5px] px-4 py-3 items-center">
-    <div class="flex gap-5">
+<div class="flex justify-between border-b-[1.5px] px-4 py-3 items-center overflow-auto shrink-0">
+    <div class="flex gap-5 md:gap-10 shrink-0">
         <button on:click={$voci_file.addWord}>Add New Word</button>
 
-        <div class="flex items-center gap-5 ml-10">
+        <div class="flex items-center gap-5">
             <div>View Modes</div>
 
             <div class="flex gap-3">
@@ -52,7 +54,6 @@
             </div>
         </div>
     </div>
-
 </div>
 
 <div class="overflow-auto grow">

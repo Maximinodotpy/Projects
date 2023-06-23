@@ -110,9 +110,9 @@
     }
 </script>
 
-<div class="flex flex-col h-screen overflow-hidden">
-    <div class="border-b-[1.5px] px-4 py-2 flex justify-between items-center">
-        <div>
+<div class="flex flex-col h-[100svh] overflow-hidden">
+    <div class="border-b-[1.5px] px-4 py-2 flex justify-between items-center whitespace-nowrap overflow-auto shrink-0">
+        <div class="shrink">
             <a class="inline-block mr-3 font-mono font-semibold" href={`${base}/`}>Loco Voco</a>
             |
             <a class={`inline-block p-2 italic ${$page.route.id == '/edit' ? 'underline': '' }`} href={`${base}/edit`}>Chart Editor</a>
@@ -120,7 +120,7 @@
             <a class={`inline-block p-2 italic ${$page.route.id == '/learn' ? 'underline': '' }`} href={`${base}/learn`}>Learn</a>
         </div>
 
-        <div class="flex items-center gap-4">
+        <div class="flex items-center gap-4 shrink">
             <button on:click={openFile}>Open</button>
             <button on:click={saveFile}>Save</button>
 

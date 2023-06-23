@@ -7,6 +7,8 @@ const config = {
 	// for more information about preprocessors
 	preprocess: vitePreprocess(),
 
+	handleHttpErrors: 'warn',
+
 	kit: {
 
 		paths: {
@@ -18,7 +20,11 @@ const config = {
 		adapter: adapter({
 			pages: 'dist',
 			assets: 'dist',
-		})
+		}),
+
+		prerender: {
+			handleHttpError: 'warn',
+		}
 	}
 };
 
