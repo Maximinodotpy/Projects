@@ -14,6 +14,7 @@
 
     $: {
         jaro_winkler_threshhold = jaro_winkler_threshhold;
+        comparison_language = comparison_language;
         getSimilarWords();
     }
 
