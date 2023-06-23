@@ -2,46 +2,27 @@
     import { getContext } from "svelte";
     import type { VociFile, Word } from '$lib/edit_modes/word_type';
     import type { Writable } from "svelte/store";
-    import { tags } from '$lib/edit_modes/variables';
     import { base } from "$app/paths";
-
-    const voci_file = getContext<Writable<VociFile>>("voci_file");
-
-    let word_pool : Word[] = []
+    import { option_values } from "../options";
+        
     let current_word_id = 0;
     let current_word_data : Word
 
-    let target_language = $voci_file.languages[0];
-    let origin_language = $voci_file.languages[1];
-    let allowed_tags : string[] = [];
     let inputContent = ''
     let current_word_element : HTMLElement
     let show_solution = false
-
-    let text_to_speech = false;
-
-    let options_visible = true;
-
-    let current_width = 0;
-
+    
     // Reget current word when options change
-    $: {
-        target_language = target_language
-        origin_language = origin_language
-        allowed_tags = allowed_tags
-        $voci_file = $voci_file
-        text_to_speech = text_to_speech
-        
+    option_values.subscribe(() => {
         newWord();
-    }
+    })
 
-    newWord();
 
     let points = 0;
     let asked_words = 0;
 
     function check() {
-        if (inputContent.toLowerCase() == current_word_data.translations[target_language].toLowerCase()) {
+        if (inputContent.toLowerCase() == current_word_data.translations[$option_values.target_language].toLowerCase()) {
             console.log("Correct");
 
             inputContent = ''
@@ -105,24 +86,10 @@
     function newWord() {
         show_solution = false;
         inputContent = ''
-        
-        word_pool = $voci_file.words.filter(word => {            
-            if (allowed_tags.length == 0) {
-                return true;
-            } else {
-                return word.tags.some(tag => allowed_tags.includes(tag));
-            }
-        })
 
-        current_word_id = Math.random() * word_pool.length | 0
+        current_word_id = Math.random() * $option_values.word_pool.length | 0
 
-        current_word_data = word_pool[current_word_id];
-    }
-
-    function swapTargetAndOriginLangauge() {
-        const temp = target_language;
-        target_language = origin_language;
-        origin_language = temp;
+        current_word_data = $option_values.word_pool[current_word_id];
     }
 </script>
 
@@ -130,124 +97,26 @@
     <script src="https://cdn.jsdelivr.net/npm/tsparticles-confetti@2.10.1/tsparticles.confetti.bundle.min.js"></script>
 </svelte:head>
 
-<div class="flex divide-x-[1.5px] h-full overflow-x-hidden" bind:clientWidth={current_width}>
-
-    {#if current_width <= 640}
-        <button class="grid px-3 place-content-center hover:cursor-pointer" style="writing-mode: vertical-lr; text-orientation: mixed;" on:click={ () => { options_visible = !options_visible } }>
-            <span class="inline-block rotate-180" >
-                {#if options_visible}
-                    Learn
-                {:else}
-                    Options
-                {/if}
-            </span>
-        </button>
-    {/if}
-
-    {#if options_visible || current_width >= 640}
-        <div class={`md:w-[400px] px-4 py-2 overflow-auto`}>
-            <h2 class="mb-5 text-2xl">Options</h2>
-
-            <div class="mb-5">
-                <h3 class="mb-3 text-xl">Tags</h3>
-
-                <div class="my-3 mb-5 text-xs">
-                    {word_pool.length} words in pool
-                </div>
-
-                <div class="flex flex-wrap gap-2">
-                    {#each tags as tag}
-                        <label for={tag} class="flex items-center gap-1 px-2 py-1 text-xs bg-blue-100 rounded-md">
-                            <input bind:group={allowed_tags} type="checkbox" value={tag} id={tag}>
-                            {tag}
-                        </label>
-                    {/each}
-                </div>
-            </div>
-
-            <div class="mb-7">
-                <h3 class="mb-3 text-xl">Target and Origin Language</h3>
-
-                <div>
-                    <label for="" class="flex items-center gap-3 mb-3">
-                        <span>Origin</span>
-                        
-                        <select bind:value={origin_language} class="px-2 py-1 bg-blue-100 rounded-md">
-                            {#each $voci_file.languages as language}
-                                {#if language != target_language}
-                                    <option value={language}>{language}</option>
-                                {/if}
-                            {/each}
-                        </select>
-                    </label>
-
-                    <label for="" class="flex items-center gap-3">
-                        <span>Target</span>
-
-                        <select bind:value={target_language} class="px-2 py-1 bg-blue-100 rounded-md">
-                            {#each $voci_file.languages as language}
-                                {#if language != origin_language}
-                                    <option value={language}>{language}</option>
-                                {/if}
-                            {/each}
-                        </select>
-                    </label>
-
-                    <button on:click={ swapTargetAndOriginLangauge } class="mt-2">Swap Target and Origin</button>
-                    
-                    <!-- {#if text_to_speech}
-                        <label for="ottsl" class="flex items-center gap-3">
-                            <span>Origin TTS Language</span>
-                            
-                            <select name="" class="max-w-[200px] px-2 py-1 bg-blue-100 rounded-md" id="ottsl">
-                                {#each speechSynthesis.getVoices() as voice}
-                                    <option value={voice.lang}>{voice.name}</option>
-                                {/each}
-                            </select>
-                        </label>
-                    {/if} -->
-                </div>
-            </div>
-
+<div class="flex flex-col overflow-hidden grow">
+    <div class="relative text-7xl grow">
+        <div class="absolute flex items-center justify-center w-full h-full gap-2 transition-colors" bind:this={current_word_element}>
+            <span class="font-semibold">{current_word_data.translations[$option_values.origin_language]} </span>
             
-            <!-- <div class="mb-3">
-                <h3 class="mb-3 text-xl">TTS</h3>
-
-                <label for="tts" class="flex items-center gap-2">
-                    <input bind:checked={text_to_speech} type="checkbox" id="tts">
-                    <span>Text to Speech</span>
-                </label>
-            </div> -->
-
-            <div>
-                Press <kbd>enter</kbd> to check the answer and <kbd>ctrl + enter</kbd> to view the solution.
-            </div>
+            {#if show_solution}
+                <span> = {current_word_data.translations[$option_values.target_language]}</span>
+            {/if}
         </div>
-    {/if}
-    
-    {#if !options_visible || current_width > 640}
-        <div class="flex flex-col overflow-hidden grow">
-            <div class="relative text-7xl grow">
-                <div class="absolute flex items-center justify-center w-full h-full gap-2 transition-colors" bind:this={current_word_element}>
-                    <span class="font-semibold">{current_word_data.translations[origin_language]} </span>
-                    
-                    {#if show_solution}
-                        <span> = {current_word_data.translations[target_language]}</span>
-                    {/if}
-                </div>
-                <canvas id="bg-canvas" class="absolute w-full h-full"></canvas>
-            </div>
-            <div class="border-t-[1.5px] py-2 px-2 md:px-6 flex justify-between">
-                <div>{ points }/{asked_words} Points</div>
-                <div>
-                    <a href="{base}/edit?uuid={current_word_data.uuid}">Edit this Word</a>
-                </div>
-            </div>
-            <div class="border-t-[1.5px] flex divide-x-[1.5px]">
-                <input type="text" class="p-6 text-2xl focus:outline-none w-[0] grow" placeholder={`Answer in ${target_language}`} on:keydown={keydownCallback} bind:value={inputContent}>
-                <button on:click={check}  class="px-2 py-6 md:p-6 md:text-2xl focus:outline-none">Check</button>
-                <button on:click={skip}  class="px-2 py-6 md:p-6 md:text-2xl focus:outline-none">Skip</button>
-            </div>
+        <canvas id="bg-canvas" class="absolute w-full h-full"></canvas>
+    </div>
+    <div class="border-t-[1.5px] py-2 px-2 md:px-6 flex justify-between">
+        <div>{ points }/{asked_words} Points</div>
+        <div>
+            <a href="{base}/edit?uuid={current_word_data.uuid}">Edit this Word</a>
         </div>
-    {/if}
+    </div>
+    <div class="border-t-[1.5px] flex divide-x-[1.5px]">
+        <input type="text" class="p-6 text-2xl focus:outline-none w-[0] grow" placeholder={`Answer in ${$option_values.target_language}`} on:keydown={keydownCallback} bind:value={inputContent}>
+        <button on:click={check}  class="px-2 py-6 md:p-6 md:text-2xl focus:outline-none">Check</button>
+        <button on:click={skip}  class="px-2 py-6 md:p-6 md:text-2xl focus:outline-none">Skip</button>
+    </div>
 </div>

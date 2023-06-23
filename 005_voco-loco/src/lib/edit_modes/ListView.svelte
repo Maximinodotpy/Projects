@@ -60,9 +60,7 @@
                             <input
                                 type="text"
                                 value={word.translations[lang]}
-                                on:click={(ev) => {
-                                    console.log('fasldkj');
-
+                                on:input={(ev) => {
                                     word.translations[lang] = ev.target.value
                                 }}
                                 class="w-full p-2 bg-transparent focus:outline-none"

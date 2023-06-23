@@ -19,6 +19,12 @@
         ['Deduplication', DeduplicationView ],
     ]
     let current_view_mode = 0
+    $: {
+        // @ts-ignore
+        document.getElementById(`view-${current_view_mode}`)?.scrollIntoView({
+            behavior: 'smooth',
+        });
+    }
     const voci_file = getContext<Writable<VociFile>>("voci_file");
 
     function handleSearchParams() {
@@ -36,15 +42,13 @@
 
     // Switch to next view mode on ctrl + tab
     window.addEventListener('keydown', (e) => {
-        console.log(e);
-        
-        if (e.ctrlKey && e.key == 'ArrowRight') {
+        if (e.altKey && e.ctrlKey && e.key == 'ArrowRight') {
             e.preventDefault()
             current_view_mode = (current_view_mode + 1) % view_modes.length
         } 
         
         // Switch to previous view mode on ctrl + shift + tab
-        if (e.ctrlKey && e.key == 'ArrowLeft') {
+        if (e.altKey && e.ctrlKey && e.key == 'ArrowLeft') {
             e.preventDefault()
             current_view_mode = (current_view_mode - 1 + view_modes.length) % view_modes.length
         }
@@ -56,9 +60,9 @@
         <button on:click={$voci_file.addWord} class="py-3">Add New Word</button>
 
         <div class="flex items-center gap-5 ml-auto">
-            <div class="flex h-full divide-x-[1.5px] items-center border-l-[1.5px]">
+            <div class="flex h-full divide-x-[1.5px] items-center border-l-[1.5px] scroll-smooth">
                 {#each view_modes as view_mode, index (view_mode[0])}
-                    <label class={`py-1 px-3 flex items-center border-b-2 h-full ${current_view_mode == index ? 'border-b-blue-500 bg-gradient-to-b  from-white from-50% to-blue-100' : 'border-b-transparent'}`}>
+                    <label class={`py-1 px-3 flex items-center border-b-2 h-full ${current_view_mode == index ? 'border-b-blue-500 bg-gradient-to-b  from-white from-50% to-blue-100' : 'border-b-transparent'}`} id={`view-${index}`}>
                         <input type="radio" bind:group={current_view_mode} name="view_mode" value={index} class="hidden">
                         {view_mode[0]}
                     </label>
