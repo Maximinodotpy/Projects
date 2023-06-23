@@ -59,7 +59,12 @@
                         {#if lang in word.translations}
                             <input
                                 type="text"
-                                bind:value={word.translations[lang]}
+                                value={word.translations[lang]}
+                                on:click={(ev) => {
+                                    console.log('fasldkj');
+
+                                    word.translations[lang] = ev.target.value
+                                }}
                                 class="w-full p-2 bg-transparent focus:outline-none"
                             />
                         {/if}

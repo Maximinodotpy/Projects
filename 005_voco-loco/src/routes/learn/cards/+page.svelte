@@ -132,7 +132,7 @@
 
 <div class="flex divide-x-[1.5px] h-full overflow-x-hidden" bind:clientWidth={current_width}>
 
-    {#if current_width < 640}
+    {#if current_width <= 640}
         <button class="grid px-3 place-content-center hover:cursor-pointer" style="writing-mode: vertical-lr; text-orientation: mixed;" on:click={ () => { options_visible = !options_visible } }>
             <span class="inline-block rotate-180" >
                 {#if options_visible}
@@ -144,8 +144,8 @@
         </button>
     {/if}
 
-    {#if options_visible || current_width > 640}
-        <div class={`w-[400px] px-4 py-2 overflow-auto`}>
+    {#if options_visible || current_width >= 640}
+        <div class={`md:w-[400px] px-4 py-2 overflow-auto`}>
             <h2 class="mb-5 text-2xl">Options</h2>
 
             <div class="mb-5">
