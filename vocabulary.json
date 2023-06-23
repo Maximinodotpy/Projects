@@ -1795,7 +1795,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Verbs"
+        ],
         "created": 1687289919510,
         "uuid": "14a7a44d-4757-4ff4-ad13-4d61b28d949f",
         "translations": {
@@ -1807,7 +1809,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Verbs"
+        ],
         "created": 1687289918901,
         "uuid": "b7dda116-1e06-4f6f-b7a9-69b96dd3d41e",
         "translations": {
@@ -1819,7 +1823,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Verbs"
+        ],
         "created": 1687289915050,
         "uuid": "4df62bc2-f6f6-4faa-943a-d05c4c6db99a",
         "translations": {
@@ -1831,7 +1837,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Verbs"
+        ],
         "created": 1687289914786,
         "uuid": "111996df-1272-4925-ad7c-9b2472e2747b",
         "translations": {
@@ -1843,7 +1851,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Verbs"
+        ],
         "created": 1687289914664,
         "uuid": "54a5eb14-661e-4d4e-ac59-3ee26f04f583",
         "translations": {
@@ -1855,7 +1865,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Verbs"
+        ],
         "created": 1687289914539,
         "uuid": "9160acac-33d2-4618-87bd-ab5f79c089d9",
         "translations": {
@@ -1867,7 +1879,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Verbs"
+        ],
         "created": 1687289914369,
         "uuid": "6234fa32-2e69-48e3-b30c-bf8a96e38d16",
         "translations": {
@@ -1879,7 +1893,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Verbs"
+        ],
         "created": 1687289914159,
         "uuid": "270b8594-dfb6-418d-9ac2-9ed1c9d763f5",
         "translations": {
@@ -1891,7 +1907,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Verbs"
+        ],
         "created": 1687289914019,
         "uuid": "cca83d8d-59b0-48c5-99d0-ca09e927449e",
         "translations": {
@@ -1903,7 +1921,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Verbs"
+        ],
         "created": 1687289913841,
         "uuid": "d4a27197-1b7a-4bb8-9ee7-29f6ef3b90a4",
         "translations": {
@@ -1915,7 +1935,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Other"
+        ],
         "created": 1687255735776,
         "uuid": "03896da3-bcf4-44b9-9a14-7f45a0a0b772",
         "translations": {
@@ -1927,7 +1949,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Other"
+        ],
         "created": 1687255346652,
         "uuid": "acba915f-1110-42d0-9923-86ec070eca68",
         "translations": {
@@ -1939,7 +1963,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Other"
+        ],
         "created": 1687255345438,
         "uuid": "cc318968-cfff-436e-84af-1c0145204819",
         "translations": {
@@ -1951,7 +1977,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Other"
+        ],
         "created": 1687255343943,
         "uuid": "2c373fbd-b57b-4dfd-b6c3-c4607d77d714",
         "translations": {
@@ -1963,7 +1991,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Other"
+        ],
         "created": 1687255342592,
         "uuid": "d4f12c60-50d1-4d73-b0bb-d49bfa53648e",
         "translations": {
@@ -1975,7 +2005,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Other"
+        ],
         "created": 1687255289312,
         "uuid": "831f800a-d043-453a-a31e-b036037bd692",
         "translations": {
@@ -1987,7 +2019,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Other"
+        ],
         "created": 1687255288265,
         "uuid": "b8de4969-267a-400a-b160-ad8c77f6a2b2",
         "translations": {
@@ -1999,7 +2033,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Work"
+        ],
         "created": 1687255009306,
         "uuid": "52de913e-6f74-47ef-803c-8a4387a03bb9",
         "translations": {
@@ -2011,7 +2047,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Work"
+        ],
         "created": 1687255009124,
         "uuid": "99379326-9087-44bc-a623-0ac66787f541",
         "translations": {
@@ -2023,7 +2061,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Work"
+        ],
         "created": 1687255008944,
         "uuid": "9a5f470b-539f-4a2c-80fc-453df4d79a0e",
         "translations": {
@@ -2035,7 +2075,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Other"
+        ],
         "created": 1687255008675,
         "uuid": "8aa1fac8-719c-44f7-aee0-c69cdcb223c9",
         "translations": {
@@ -2047,7 +2089,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Work"
+        ],
         "created": 1687255008494,
         "uuid": "0cca7d96-6e7a-4c52-9d25-b8c23a144045",
         "translations": {
@@ -2059,7 +2103,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Work"
+        ],
         "created": 1687255007380,
         "uuid": "11929d0c-42c3-48eb-b084-4154ae1e8752",
         "translations": {
@@ -2071,7 +2117,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Work"
+        ],
         "created": 1687254947452,
         "uuid": "34ff119e-ea49-482f-9e31-a334570a34dd",
         "translations": {
@@ -2083,7 +2131,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Work"
+        ],
         "created": 1687254946422,
         "uuid": "ac307ca7-f94e-4262-b307-a5db9237ab0f",
         "translations": {
@@ -2095,7 +2145,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Work"
+        ],
         "created": 1687254945026,
         "uuid": "34f267ff-55d5-471c-a42b-3e3fc1fb790a",
         "translations": {
@@ -2107,7 +2159,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Other"
+        ],
         "created": 1687254943164,
         "uuid": "5cd3b731-bab7-4595-9c6c-bffabe1e04bf",
         "translations": {
@@ -2131,7 +2185,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Work"
+        ],
         "created": 1687234596641,
         "uuid": "56c0fa5f-2887-4571-a286-43baa4f4d6c4",
         "translations": {
@@ -2143,7 +2199,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Other"
+        ],
         "created": 1687234595860,
         "uuid": "c24e66d6-e216-4da4-bca8-35fea58464d4",
         "translations": {
@@ -2155,7 +2213,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Traveling"
+        ],
         "created": 1687234595195,
         "uuid": "f79346d9-26bf-4fe1-873f-d97174b3fdd6",
         "translations": {
@@ -2167,7 +2227,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Other"
+        ],
         "created": 1687234591718,
         "uuid": "ed951fe2-14a0-4fd3-a69a-55273e948775",
         "translations": {
@@ -2179,7 +2241,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Other"
+        ],
         "created": 1687234591458,
         "uuid": "3661d72b-d821-4378-90ea-34f9db6010df",
         "translations": {
@@ -2191,7 +2255,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Other"
+        ],
         "created": 1687234591308,
         "uuid": "16961cc2-cdec-40bb-9f1d-fc522556b776",
         "translations": {
@@ -2203,7 +2269,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Other"
+        ],
         "created": 1687234591200,
         "uuid": "ae1b402b-8b88-4ff5-9f28-666dbaa09c8a",
         "translations": {
@@ -2215,7 +2283,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Other"
+        ],
         "created": 1687234590805,
         "uuid": "01fb8427-5025-499d-8534-682aea58e8b1",
         "translations": {
@@ -2227,7 +2297,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Traffic"
+        ],
         "created": 1687234590191,
         "uuid": "78afdac4-9826-40e6-8779-86f02f121a2f",
         "translations": {
@@ -2239,7 +2311,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Traveling"
+        ],
         "created": 1687234588480,
         "uuid": "90c2545a-ec0d-4fb5-8c9f-ffc63ccec74f",
         "translations": {
@@ -2449,7 +2523,8 @@
         "type": "",
         "description": "",
         "tags": [
-            "Work"
+            "Work",
+            "Verbs"
         ],
         "created": 1687111063322,
         "uuid": "40a3e163-4da4-4f60-9d9a-8bca9161855f",
@@ -2462,7 +2537,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Verbs"
+        ],
         "created": 1687111062364,
         "uuid": "f95feba5-88d4-4913-9c96-0f3dee0cdfa8",
         "translations": {
@@ -2474,7 +2551,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Verbs"
+        ],
         "created": 1687111061483,
         "uuid": "94bd9f1f-e846-48d6-a559-b60177db6ccb",
         "translations": {
@@ -2486,7 +2565,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Verbs"
+        ],
         "created": 1687111060690,
         "uuid": "74b1e3f9-7ace-451e-8f57-3c63c8d56c86",
         "translations": {
@@ -2498,7 +2579,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Verbs"
+        ],
         "created": 1687111060104,
         "uuid": "40804888-86fc-4170-940c-1fb8c999e905",
         "translations": {
@@ -2510,7 +2593,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Verbs"
+        ],
         "created": 1687111059582,
         "uuid": "f8d2a59b-d60a-464b-8cbd-ad9c5c9b3f57",
         "translations": {
@@ -2522,7 +2607,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Verbs"
+        ],
         "created": 1687111059132,
         "uuid": "7ecf2d9c-a325-4ede-ad8b-a14079d34b3c",
         "translations": {
@@ -2534,7 +2621,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Verbs"
+        ],
         "created": 1687111058650,
         "uuid": "967283ca-8135-43f5-8a79-9b2bc25de3fc",
         "translations": {
@@ -2546,7 +2635,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Verbs"
+        ],
         "created": 1687111058244,
         "uuid": "519cb7b0-4b2e-4dcc-a5a5-521866947bcc",
         "translations": {
@@ -2558,7 +2649,9 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Verbs"
+        ],
         "created": 1687111058039,
         "uuid": "ed61b209-12d1-4c32-a8bb-80f21b63bb55",
         "translations": {
@@ -3356,6 +3449,7 @@
         "type": "",
         "description": "",
         "tags": [
+            "Other",
             "Hobbies"
         ],
         "created": 1686905011359,
@@ -3370,6 +3464,7 @@
         "type": "",
         "description": "",
         "tags": [
+            "Other",
             "Hobbies"
         ],
         "created": 1686905010563,
@@ -3383,13 +3478,267 @@
     {
         "type": "",
         "description": "",
-        "tags": [],
+        "tags": [
+            "Animals"
+        ],
         "created": 1687503662564,
         "uuid": "e07e3021-3f25-48c3-952f-664a8a08bc90",
         "translations": {
-            "Deutsch": "",
-            "English": "",
-            "Espagnol": ""
+            "Deutsch": "Der Fisch",
+            "English": "the fish",
+            "Espagnol": "El pescado"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [
+            "Other"
+        ],
+        "created": 1687540684421,
+        "uuid": "79de0b58-53fc-469e-99f4-68f9cbaefaac",
+        "translations": {
+            "Deutsch": "Tölpel",
+            "English": "the clumsy",
+            "Espagnol": "El bobo"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [
+            "Verbs"
+        ],
+        "created": 1687540684636,
+        "uuid": "99b65fd4-26fd-4352-be9d-8cf3fe6a8a78",
+        "translations": {
+            "Deutsch": "sitzen",
+            "English": "sit",
+            "Espagnol": "sientese"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [
+            "Verbs"
+        ],
+        "created": 1687540684896,
+        "uuid": "ae48be2b-2164-4296-b976-3117f9c90f2a",
+        "translations": {
+            "Deutsch": "lachen",
+            "English": "laugh",
+            "Espagnol": "riete"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [
+            "Body"
+        ],
+        "created": 1687540685083,
+        "uuid": "56ffc98b-1e07-40e8-8062-9d7e0faba0ed",
+        "translations": {
+            "Deutsch": "Die Lippen",
+            "English": "the lips",
+            "Espagnol": "Los labios"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [
+            "Other"
+        ],
+        "created": 1687540685291,
+        "uuid": "58f87f6c-f0eb-4f28-a419-fce024802d09",
+        "translations": {
+            "Deutsch": "nähe",
+            "English": "near",
+            "Espagnol": "cerca de"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [
+            "Verbs"
+        ],
+        "created": 1687540685496,
+        "uuid": "c7603a9a-ddd0-47e9-b6a7-afb9a2378423",
+        "translations": {
+            "Deutsch": "üben",
+            "English": "excercise",
+            "Espagnol": "practica"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [
+            "Adjectives"
+        ],
+        "created": 1687540685929,
+        "uuid": "f23f195c-a844-4d39-97c0-631932273753",
+        "translations": {
+            "Deutsch": "entfremdet",
+            "English": "estranged",
+            "Espagnol": "alienado"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [
+            "Adjectives"
+        ],
+        "created": 1687540686465,
+        "uuid": "154b4940-7ba3-45a3-b6d3-21636ca967de",
+        "translations": {
+            "Deutsch": "komisch",
+            "English": "weird",
+            "Espagnol": "divertido"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [
+            "Adjectives"
+        ],
+        "created": 1687540686695,
+        "uuid": "34e048d7-592b-4f38-8be2-9475ad6d7f84",
+        "translations": {
+            "Deutsch": "normal",
+            "English": "normal",
+            "Espagnol": "normal"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [
+            "Work"
+        ],
+        "created": 1687540688691,
+        "uuid": "3b4739ca-b318-4db9-8f81-54079f23a73e",
+        "translations": {
+            "Deutsch": "Die Bank",
+            "English": "the bank",
+            "Espagnol": "el banco"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [
+            "Adjectives"
+        ],
+        "created": 1687540842080,
+        "uuid": "2b8b2ad3-4e38-404e-aacd-d3b83f3b8dee",
+        "translations": {
+            "Deutsch": "elegant",
+            "English": "elegant",
+            "Espagnol": "elegante"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [
+            "Adjectives"
+        ],
+        "created": 1687540843068,
+        "uuid": "37f56578-349f-4272-9439-10e467fe3e11",
+        "translations": {
+            "Deutsch": "tollpatschig",
+            "English": "clumsy",
+            "Espagnol": "torpe"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [
+            "Other"
+        ],
+        "created": 1687540843625,
+        "uuid": "c37ab149-2480-4135-823f-ca952cd66670",
+        "translations": {
+            "Deutsch": "Der König",
+            "English": "the king",
+            "Espagnol": "El rey"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [
+            "Other"
+        ],
+        "created": 1687540872156,
+        "uuid": "c89220f5-caa2-443e-946d-3abb0dce70ae",
+        "translations": {
+            "Deutsch": "Die Königin",
+            "English": "the queen",
+            "Espagnol": "La Reina"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [
+            "Other"
+        ],
+        "created": 1687540880577,
+        "uuid": "965db01a-2721-4411-9a25-4df1c9d73601",
+        "translations": {
+            "Deutsch": "Der Narre",
+            "English": "the fool",
+            "Espagnol": "El Loco"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [
+            "Other"
+        ],
+        "created": 1687540881379,
+        "uuid": "a6461d84-71ba-427e-b970-7e045442b7bc",
+        "translations": {
+            "Deutsch": "Das Schild",
+            "English": "the sign",
+            "Espagnol": "La placa"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [
+            "Adjectives"
+        ],
+        "created": 1687540904923,
+        "uuid": "58a58a83-5282-49c7-a8be-fde471671966",
+        "translations": {
+            "Deutsch": "tot",
+            "English": "dead",
+            "Espagnol": "muerto"
+        }
+    },
+    {
+        "type": "",
+        "description": "",
+        "tags": [
+            "Adjectives"
+        ],
+        "created": 1687540912182,
+        "uuid": "ecc82b0f-2915-4200-9c37-1ff54adb7a5a",
+        "translations": {
+            "Deutsch": "leben",
+            "English": "alive",
+            "Espagnol": "vivo"
         }
     }
 ]

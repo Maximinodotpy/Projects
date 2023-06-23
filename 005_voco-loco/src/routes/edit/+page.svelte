@@ -22,8 +22,6 @@
     const voci_file = getContext<Writable<VociFile>>("voci_file");
 
     function handleSearchParams() {
-        console.log('Handle search params');
-        
         if (typeof location !== 'undefined') {
             const urlParams = new URLSearchParams(location.search);
             if (urlParams.has('uuid')) {
@@ -35,18 +33,32 @@
     onMount(handleSearchParams)
 
     page.subscribe(handleSearchParams)
+
+    // Switch to next view mode on ctrl + tab
+    window.addEventListener('keydown', (e) => {
+        console.log(e);
+        
+        if (e.ctrlKey && e.key == 'ArrowRight') {
+            e.preventDefault()
+            current_view_mode = (current_view_mode + 1) % view_modes.length
+        } 
+        
+        // Switch to previous view mode on ctrl + shift + tab
+        if (e.ctrlKey && e.key == 'ArrowLeft') {
+            e.preventDefault()
+            current_view_mode = (current_view_mode - 1 + view_modes.length) % view_modes.length
+        }
+    })
 </script>
 
-<div class="flex justify-between border-b-[1.5px] px-4 py-3 items-center overflow-auto shrink-0">
-    <div class="flex gap-5 md:gap-10 shrink-0">
-        <button on:click={$voci_file.addWord}>Add New Word</button>
+<div class="flex justify-between border-b-[1.5px] pl-4 items-center overflow-auto shrink-0 whitespace-nowrap">
+    <div class="flex w-full gap-5 md:gap-10 shrink-0">
+        <button on:click={$voci_file.addWord} class="py-3">Add New Word</button>
 
-        <div class="flex items-center gap-5">
-            <div>View Modes</div>
-
-            <div class="flex gap-3">
+        <div class="flex items-center gap-5 ml-auto">
+            <div class="flex h-full divide-x-[1.5px] items-center border-l-[1.5px]">
                 {#each view_modes as view_mode, index (view_mode[0])}
-                    <label class={`py-1 px-2 bg-blue-100 ${current_view_mode == index ? 'font-semibold' : ''}`}>
+                    <label class={`py-1 px-3 flex items-center border-b-2 h-full ${current_view_mode == index ? 'border-b-blue-500' : 'border-b-transparent'}`}>
                         <input type="radio" bind:group={current_view_mode} name="view_mode" value={index} class="hidden">
                         {view_mode[0]}
                     </label>
