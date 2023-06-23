@@ -3,26 +3,36 @@
     import ListView from "$lib/edit_modes/ListView.svelte";
     import GroupedByTags from "$lib/edit_modes/GroupedByTags.svelte";
     import LanguageManager from "$lib/edit_modes/LanguageManager.svelte";
+    import DeduplicationView from "$lib/edit_modes/DeduplicationView.svelte";
+    
     import { getContext } from "svelte";
     import type { VociFile } from '$lib/edit_modes/word_type';
     import type { Writable } from "svelte/store";
     import { onMount } from 'svelte';
+    import { page } from '$app/stores' 
 
     const view_modes = [
         ['List', ListView ],
         ['Single', SingleView ],
         ['Grouped By Tags', GroupedByTags ],
         ['Languages', LanguageManager ],
+        ['Deduplication', DeduplicationView ],
     ]
     let current_view_mode = 0
     const voci_file = getContext<Writable<VociFile>>("voci_file");
 
-    onMount(() => {
+    function handleSearchParams() {
+        console.log('Handle search params');
+        
         const urlParams = new URLSearchParams(location.search);
         if (urlParams.has('uuid')) {
             current_view_mode = 1
         }
-    })
+    }
+
+    onMount(handleSearchParams)
+
+    page.subscribe(handleSearchParams)
 </script>
 
 <div class="flex justify-between border-b-[1.5px] px-4 py-3 items-center">

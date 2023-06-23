@@ -1,4 +1,5 @@
 <script lang="ts">
+    import SingleViewButton from './SingleViewButton.svelte';
     import type { VociFile, Word } from "$lib/edit_modes/word_type";
     import { getContext } from "svelte";
     import type { Writable } from "svelte/store";
@@ -15,6 +16,10 @@
         $voci_file.words[id - 1] = $voci_file.words[id]
         $voci_file.words[id] = temp
     }
+
+    /* function sortFunction(el1: Word, el2: Word)  { 
+        return el2.translations.English.localeCompare(el1.translations.English)
+    } */
 </script>
 
 <table class="w-full mb-5">
@@ -23,7 +28,7 @@
             <th class="p-2 text-center"></th>
             <th class="p-2 text-center"></th>
             <th class="p-2">Created</th>
-            <th class="p-2 text-center">#</th>
+            <th class="p-2 text-left">#</th>
             {#each $voci_file.languages as lang}
                 <th class="p-2">{lang}</th>
             {/each}
@@ -45,7 +50,10 @@
                     {/if}
                 </td>
                 <td>{ new Date(word.created ?? 0).toLocaleString() }</td>
-                <td class="p-2 text-center">{index + 1}</td>
+                <td class="p-2 text-left">
+                    {index + 1} 
+                    <SingleViewButton uuid={word.uuid}/>
+                </td>
                 {#each $voci_file.languages as lang}
                     <td>
                         {#if lang in word.translations}

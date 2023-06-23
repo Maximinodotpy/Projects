@@ -30,6 +30,9 @@
             if (index !== -1) {
                 current_word = index;
             }
+
+            // Remove UUID from URL
+            window.history.replaceState({}, document.title, location.pathname);
         }
     });
 </script>
@@ -37,7 +40,9 @@
 <div class="max-w-5xl p-5 mx-auto">
     <h2 class="mb-5 text-2xl">
         Single View for 
-        <code><input type="number" bind:value={current_word} min="0" max={$voci_file.words.length - 1} class="text-right">/{ $voci_file.words.length }</code>
+        <code><input type="number" value={current_word} min="0" max={$voci_file.words.length - 1} class="text-right" on:input={(ev) => {
+            current_word = Number(ev.target.value);
+         }}>/{ $voci_file.words.length }</code>
     </h2>
 
     <p class="mb-5">Added on <code class="inline-block p-1 bg-neutral-100"> { new Date($voci_file.words[current_word].created ?? 0).toLocaleString() } </code></p>
@@ -52,7 +57,7 @@
     </div>
 
     <div class="my-8">
-        <textarea class="bg-neutral-100 p-2 w-full resize-none" cols="30" rows="10" bind:value={$voci_file.words[current_word].description} placeholder="Description"></textarea>
+        <textarea class="w-full p-2 resize-none bg-neutral-100" cols="30" rows="10" bind:value={$voci_file.words[current_word].description} placeholder="Description"></textarea>
     </div>
 
     <div class="mb-10">
