@@ -152,10 +152,6 @@
                 <h3 class="mb-3 text-xl">Tags</h3>
 
                 <div class="my-3 mb-5 text-xs">
-                    <!-- <button class="px-2 py-1 rounded-md bg-neutral-100">Select All</button>
-                    <button class="px-2 py-1 rounded-md bg-neutral-100">Deselect All</button>
-                    <button class="px-2 py-1 rounded-md bg-neutral-100">Reverse Selection</button> -->
-
                     {word_pool.length} words in pool
                 </div>
 

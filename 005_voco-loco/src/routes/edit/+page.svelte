@@ -58,7 +58,7 @@
         <div class="flex items-center gap-5 ml-auto">
             <div class="flex h-full divide-x-[1.5px] items-center border-l-[1.5px]">
                 {#each view_modes as view_mode, index (view_mode[0])}
-                    <label class={`py-1 px-3 flex items-center border-b-2 h-full ${current_view_mode == index ? 'border-b-blue-500' : 'border-b-transparent'}`}>
+                    <label class={`py-1 px-3 flex items-center border-b-2 h-full ${current_view_mode == index ? 'border-b-blue-500 bg-gradient-to-b  from-white from-50% to-blue-100' : 'border-b-transparent'}`}>
                         <input type="radio" bind:group={current_view_mode} name="view_mode" value={index} class="hidden">
                         {view_mode[0]}
                     </label>

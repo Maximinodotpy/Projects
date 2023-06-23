@@ -1,8 +1,10 @@
 <script lang="ts">
-    import { enhance } from '$app/forms';
-    import { goto } from '$app/navigation';
-
     import  { base } from '$app/paths';
+
+    const games: Array<{ name: string, url: string }> = [
+        { name: 'Write', url: `${base}/learn/write` },
+        { name: 'Match', url: `${base}/learn/match` },
+    ];
 </script>
 
 <div class="max-w-5xl p-5 mx-auto">
@@ -10,7 +12,7 @@
 
     <div class="grid gap-10 md:grid-cols-2">
 
-        {#each Array(4) as i}
+        {#each games as game}
             <div class="border-[1.5px]">
                 <svg height="150" width="200" viewBox="0 0 200 100" class="aspect-[2/1] w-full stroke-neutral-300">
                     <rect class="rotate-[-15deg] translate-y-[30px]" x="0" width="100" height="100" rx="15" fill="white" />
@@ -19,9 +21,9 @@
                 </svg>
 
                 <div class="p-4 border-t-[1.5px] flex justify-between">
-                    <h2 class="text-2xl">Cards</h2>
+                    <h2 class="text-2xl">{ game.name }</h2>
         
-                    <a href={`${base}/learn/cards`} class="text-2xl text-neutral-500">Go</a>
+                    <a href={game.url} class="text-2xl text-neutral-500">Go</a>
                 </div>
             </div>
         {/each}

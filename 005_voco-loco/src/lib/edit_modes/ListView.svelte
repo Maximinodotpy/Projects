@@ -23,12 +23,12 @@
 </script>
 
 <table class="w-full mb-5 overflow-x-auto whitespace-nowrap">
-    <thead class="sticky top-0 z-50 bg-blue-100 shadow-lg">
+    <thead class="sticky top-0 z-50 bg-white shadow-lg">
         <tr class="text-left">
-            <th class="p-2 text-center"></th>
-            <th class="p-2 text-center"></th>
+            <th class="p-2"></th>
+            <th class="p-2"></th>
             <th class="p-2">Created</th>
-            <th class="p-2 text-left">#</th>
+            <th class="p-2">#</th>
             {#each $voci_file.languages as lang}
                 <th class="p-2">{lang}</th>
             {/each}
