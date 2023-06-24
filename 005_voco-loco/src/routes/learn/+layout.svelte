@@ -34,7 +34,7 @@
 </script>
 
 <div class="flex divide-x-[1.5px] h-full overflow-x-hidden" bind:clientWidth={current_width}>
-    {#if current_width <= 640}
+    {#if current_width < 640}
         <button class="grid px-3 place-content-center hover:cursor-pointer" style="writing-mode: vertical-lr; text-orientation: mixed;" on:click={ () => { options_visible = !options_visible } }>
             <span class="inline-block rotate-180" >
                 {#if options_visible}
@@ -47,7 +47,7 @@
     {/if}
 
     {#if options_visible || current_width >= 640}
-        <div class={`md:w-[400px] px-4 py-2 overflow-auto`}>
+        <div class={`px-4 py-2 overflow-auto`} style={`width: ${current_width < 640 ? '100%' : '320px' }`}>
             <h2 class="mb-5 text-2xl">Options</h2>
 
             <div class="mb-5">
@@ -57,7 +57,7 @@
                     {$option_values.word_pool.length} words in pool
                 </div>
 
-                <div class="gap-2 grid grid-cols-3">
+                <div class="grid grid-cols-3 gap-2">
                     {#each tags as tag}
                         <label for={tag} class="flex items-center gap-1 px-2 py-1 text-xs bg-blue-100 rounded-md">
                             <input bind:group={$option_values.allowed_tags} type="checkbox" value={tag} id={tag}>
@@ -123,7 +123,7 @@
         </div>
     {/if}
     
-    {#if !options_visible || current_width > 640}
+    {#if !options_visible || current_width >= 640}
         <div class="flex flex-col overflow-hidden grow">
             <slot></slot>
         </div>

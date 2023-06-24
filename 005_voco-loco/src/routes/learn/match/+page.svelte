@@ -4,6 +4,17 @@
     import { shuffle } from '$lib/utils';
 
     let first_selected : number | null = null;
+
+    let start_time = Date.now();
+
+    let milliseconds = 0;
+    let seconds = 0;
+    let isFinished = false;
+    $: {
+        if (gridData.every((el) => el.answered)) {
+            isFinished = true;
+        }
+    }
     
     const gridData : Array<{
         selected: bool,
@@ -36,6 +47,14 @@
         }
 
         shuffle(gridData);
+
+        isFinished = false;
+        start_time = Date.now();
+        setInterval(() => {
+            if (isFinished) return;
+            milliseconds = Math.floor((Date.now() - start_time));
+            seconds = Math.floor((Date.now() - start_time) / 1000);
+        }, 1);
     }
 
     function clickCallback(i: number) {
@@ -44,11 +63,6 @@
             first_selected = i;
             return;
         } else {
-
-/*             console.log('fasd');
-            console.log(gridData[first_selected].connection);
-            console.log(gridData[i].connection); */
-
             if (i == first_selected) {
                 first_selected = null;
                 return;
@@ -59,21 +73,35 @@
                 gridData[i].answered = true;
 
                 first_selected = null;
-            } 
+            } else  {
+                const query = '#word_container > button:nth-child(' + (i + 1) + ')';
+                const element = document.querySelector(query);
+
+                console.log(element);
+                
+                const classes = ['error_wiggle', 'border-red-300', 'bg-red-100'];
+
+                if (element) {
+                    element.classList.add(...classes);
+                    setTimeout(() => {
+                        element.classList.remove(...classes);
+                    }, 500);
+                }
+            }
         }
     }
 
-    option_values.subscribe(() => {
+    /* option_values.subscribe(() => {
         newWords();
     })
-    newWords();
+    newWords(); */
 
 </script>
 
-<div class="grow flex flex-col">
-    <div class="grid h-full grid-cols-2 gap-5 select-none sm:grid-cols-4 grow p-5">
+<div class="flex flex-col grow">
+    <div class="grid h-full grid-cols-2 gap-5 p-5 select-none sm:grid-cols-4 grow" id="word_container">
         {#each gridData as cell, i}
-            <button class={`flex font-semibold md:text-2xl items-center justify-center  border-2 ${ i == first_selected ? 'border-blue-300 bg-blue-100' : ''} ${cell.answered ? 'bg-green-100 border-green-300' : ''}`} 
+            <button class={`transition-all flex font-semibold md:text-2xl items-center justify-center  border-2 ${ i == first_selected ? 'border-blue-300 bg-blue-100' : ''} ${cell.answered ? 'bg-green-100 border-green-300' : ''}`} 
                 on:click={() => { cell.answered ? '' : clickCallback(i) }}>
                 <!-- { JSON.stringify(cell, null, 2) } -->
                 { cell.word }
@@ -81,7 +109,13 @@
         {/each}
     </div>
 
-    <div class="border-t-[1.5px]">
-        <button class="p-5" on:click={newWords}>Shuffle</button>
+    <div class="border-t-[1.5px] flex justify-between pb-10">
+        <div class="p-5 font-mono">
+            { seconds }:{ String(milliseconds).slice(-3) }
+        </div>
+
+        <button class="p-5" on:click={newWords}>
+            { isFinished ? 'Start' : 'Restart' }
+        </button>
     </div>
 </div>

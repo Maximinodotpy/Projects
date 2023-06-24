@@ -37,21 +37,21 @@
     });
 </script>
 
-<div class="flex flex-col overflow-hidden h-full">
-    <div class="flex justify-between border-b-[1.5px]">
-        <div class="flex divide-x-[1.5px]">
-            <button on:click={() => { current_word = 0 }} class="p-2 pl-4">First Word</button>
-            <button on:click={previousWord} class="p-2">Previous Word</button>
-            <button on:click={nextWord} class="p-2">Next Word</button>
-            <button on:click={() => { current_word = $voci_file.words.length - 1 }} class="p-2">Last Word</button>
-        </div>
-
+<div class="flex flex-col h-full overflow-hidden">
+    <div class="flex justify-between border-b-[1.5px] overflow-auto shrink-0">
         <div>
-            <button on:click={() => { $voci_file.removeWord(current_word) }} class=" p-2 pr-4">Remove</button>
+            <button on:click={() => { $voci_file.removeWord(current_word) }} class="p-3 pr-4 ">Remove</button>
+        </div>
+        
+        <div class="flex divide-x-[1.5px] shrink-0">
+            <button on:click={() => { current_word = 0 }} class="p-3 pl-4">⏮</button>
+            <button on:click={previousWord} class="p-3">⏪</button>
+            <button on:click={nextWord} class="p-3">⏩</button>
+            <button on:click={() => { current_word = $voci_file.words.length - 1 }} class="p-3">⏭</button>
         </div>
     </div>
 
-    <div class="grid grid-cols-2 gap-5 px-10 pt-4 grow overflow-auto">
+    <div class="grid gap-5 px-5 pt-4 overflow-auto md:px-10 md:grid-cols-2 grow">
         <div>
             <h2 class="mb-5 text-2xl">
                 Single View for 
@@ -73,7 +73,7 @@
         </div>
     
         <div>
-            <div class="mb-10 grid grid-cols-3">
+            <div class="grid grid-cols-2 mb-10 md:grid-cols-3">
                 {#each tags as tag}
                     <label class="inline-flex items-center mr-5">
                         <input type="checkbox" bind:group={$voci_file.words[current_word].tags} value={tag} />
