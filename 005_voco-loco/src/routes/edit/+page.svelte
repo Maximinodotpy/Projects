@@ -36,22 +36,22 @@
         }
     }
 
-    onMount(handleSearchParams)
-
-    page.subscribe(handleSearchParams)
-
-    // Switch to next view mode on ctrl + tab
-    window.addEventListener('keydown', (e) => {
-        if (e.altKey && e.ctrlKey && e.key == 'ArrowRight') {
-            e.preventDefault()
-            current_view_mode = (current_view_mode + 1) % view_modes.length
-        } 
+    onMount(() => {
+        handleSearchParams()
+        page.subscribe(handleSearchParams)
         
-        // Switch to previous view mode on ctrl + shift + tab
-        if (e.altKey && e.ctrlKey && e.key == 'ArrowLeft') {
-            e.preventDefault()
-            current_view_mode = (current_view_mode - 1 + view_modes.length) % view_modes.length
-        }
+        window.addEventListener('keydown', (e) => {
+            if (e.altKey && e.ctrlKey && e.key == 'ArrowRight') {
+                e.preventDefault()
+                current_view_mode = (current_view_mode + 1) % view_modes.length
+            } 
+            
+            // Switch to previous view mode on ctrl + shift + tab
+            if (e.altKey && e.ctrlKey && e.key == 'ArrowLeft') {
+                e.preventDefault()
+                current_view_mode = (current_view_mode - 1 + view_modes.length) % view_modes.length
+            }
+        })
     })
 </script>
 

@@ -23,7 +23,7 @@
 
     // Check if the url has the uuid paramert and if yes search for the word with the uuid and set it to be the current word
     onMount(() => {
-        const urlParams = new URLSearchParams(location.search);
+        const urlParams = new URLSearchParams(location?.search);
         if (urlParams.has('uuid')) {
             const uuid = urlParams.get('uuid');
             const index = $voci_file.words.findIndex(word => word.uuid === uuid);
@@ -32,7 +32,7 @@
             }
 
             // Remove UUID from URL
-            window.history.replaceState({}, document.title, location.pathname);
+            window?.history.replaceState({}, document?.title, location?.pathname);
         }
     });
 </script>

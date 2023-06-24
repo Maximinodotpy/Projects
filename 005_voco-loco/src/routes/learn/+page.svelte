@@ -7,7 +7,7 @@
     ];
 </script>
 
-<div class="max-w-5xl p-5 mx-auto">
+<div class="max-w-5xl p-5 mx-auto overflow-auto">
     <h1 class="mb-10 text-3xl">Learning</h1>
 
     <div class="grid gap-10 md:grid-cols-2">
