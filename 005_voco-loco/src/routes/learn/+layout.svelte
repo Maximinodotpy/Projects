@@ -57,7 +57,7 @@
                     {$option_values.word_pool.length} words in pool
                 </div>
 
-                <div class="flex flex-wrap gap-2">
+                <div class="gap-2 grid grid-cols-3">
                     {#each tags as tag}
                         <label for={tag} class="flex items-center gap-1 px-2 py-1 text-xs bg-blue-100 rounded-md">
                             <input bind:group={$option_values.allowed_tags} type="checkbox" value={tag} id={tag}>

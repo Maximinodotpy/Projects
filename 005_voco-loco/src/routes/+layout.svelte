@@ -6,7 +6,14 @@
     import { setContext } from 'svelte';
     import type { VociFile } from '$lib/edit_modes/word_type';
     import type { Word } from '$lib/edit_modes/word_type';
-    /* import { languages } from "$lib/edit_modes/variables"; */
+    import { onMount } from 'svelte';
+    
+    let file_handle_api_supported = false
+    onMount(() => {
+        if ('showOpenFilePicker' in window) {
+            file_handle_api_supported = true;
+        }
+    })
 
     const voci_file = writable<VociFile>({
         file_handle: null,
@@ -62,20 +69,16 @@
 
 
     async function openFile(ev) {
-        console.log(ev);
-
-        /* if (ev == PointerEvent) {} */
-        /* console.log(ev.target.files[0]);
-
-        const file = ev.target.files[0];
-        console.log(await file.text()); */
+        let file : Blob;
 
         // @ts-ignore
-        let [fh] = await window.showOpenFilePicker();
-        $voci_file.file_handle = fh;
-
-        // @ts-ignore
-        const file: Blob = await $voci_file.file_handle.getFile();
+        if (file_handle_api_supported) {
+            let [fh] = await window.showOpenFilePicker();
+            $voci_file.file_handle = fh;
+            file = await fh.getFile();
+        } else {
+            file = ev.target.files[0];
+        }
 
         $voci_file.words = await file.text().then(JSON.parse);
         // Loop over words and add a uuid to each word if it does not have one
@@ -88,11 +91,13 @@
         // Getting all languages from this file assuming it has at least one word
         $voci_file.languages = Object.keys($voci_file.words[0].translations);
 
-        autoSaveIntervalID = setInterval(() => {
-            console.log("Autosaving...");
-
-            saveFile();
-        }, 1000 * 15);
+        if (file_handle_api_supported) {
+            autoSaveIntervalID = setInterval(() => {
+                console.log("Autosaving...");
+    
+                saveFile();
+            }, 1000 * 15);
+        }
     }
 
     async function saveFile() {
@@ -116,6 +121,16 @@
         await writable.write(JSON.stringify($voci_file.words, null, 4));
         await writable.close();
     }
+
+    async function downloadFile() {
+        const blob = new Blob([JSON.stringify($voci_file.words, null, 4)], {type: 'application/json'});
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'voci_file.json';
+        a.click();
+        URL.revokeObjectURL(url);
+    }
 </script>
 
 <svelte:head>
@@ -125,8 +140,8 @@
 
 <div class="flex flex-col h-[100svh] overflow-hidden">
     <div class="border-b-[1.5px] px-4 py-2 flex justify-between items-center whitespace-nowrap overflow-auto shrink-0">
-        <div class="shrink flex items-center select-none">
-            <a class="inline-block mr-3 font-mono font-semibold" href={`${base}/`}>
+        <div class="shrink-0 flex items-center select-none">
+            <a class="inline-block mr-3 font-mono font-semibold shrink-0" href={`${base}/`}>
                 <img src="favicon.png" alt="Loco Voco Logo" class="w-10">
             </a>
             <span class="text-neutral-400">|</span>
@@ -135,10 +150,16 @@
             <a class={`inline-block p-2 italic ${$page.route.id == '/learn' ? 'underline': '' }`} href={`${base}/learn`}>Learn</a>
         </div>
 
-        <div class="flex items-center gap-4 shrink">
-            <button on:click={openFile}>Open</button>
+        <div class="flex items-center gap-4 shrink-0">
 
-            <button on:click={saveFile}>Save</button>
+            {#if file_handle_api_supported} 
+                <button on:click={openFile}>Open</button>
+                <button on:click={saveFile}>Save</button>
+            {:else}
+                <input type="file" on:input={openFile}>
+                <button on:click={downloadFile}>Download</button>
+            {/if}
+
 
             <div class="font-mono">
                 <!-- <span class="font-bold text-red-600">{has_unsaved_changes? "": "*"}</span> -->{$voci_file.file_handle ? $voci_file.file_handle.name : "New File"}
