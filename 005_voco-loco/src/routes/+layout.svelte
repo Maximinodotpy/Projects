@@ -61,7 +61,15 @@
     $voci_file.addWord();
 
 
-    async function openFile() {
+    async function openFile(ev) {
+        console.log(ev);
+
+        /* if (ev == PointerEvent) {} */
+        /* console.log(ev.target.files[0]);
+
+        const file = ev.target.files[0];
+        console.log(await file.text()); */
+
         // @ts-ignore
         let [fh] = await window.showOpenFilePicker();
         $voci_file.file_handle = fh;
@@ -110,11 +118,18 @@
     }
 </script>
 
+<svelte:head>
+    <title>Loco Voco</title>
+    <meta name="description" content="Loco Voco is a tool to learn vocabulary.">
+</svelte:head>
+
 <div class="flex flex-col h-[100svh] overflow-hidden">
     <div class="border-b-[1.5px] px-4 py-2 flex justify-between items-center whitespace-nowrap overflow-auto shrink-0">
-        <div class="shrink">
-            <a class="inline-block mr-3 font-mono font-semibold" href={`${base}/`}>Loco Voco</a>
-            |
+        <div class="shrink flex items-center select-none">
+            <a class="inline-block mr-3 font-mono font-semibold" href={`${base}/`}>
+                <img src="favicon.png" alt="Loco Voco Logo" class="w-10">
+            </a>
+            <span class="text-neutral-400">|</span>
             <a class={`inline-block p-2 italic ${$page.route.id == '/edit' ? 'underline': '' }`} href={`${base}/edit`}>Chart Editor</a>
             or
             <a class={`inline-block p-2 italic ${$page.route.id == '/learn' ? 'underline': '' }`} href={`${base}/learn`}>Learn</a>
@@ -122,6 +137,7 @@
 
         <div class="flex items-center gap-4 shrink">
             <button on:click={openFile}>Open</button>
+
             <button on:click={saveFile}>Save</button>
 
             <div class="font-mono">

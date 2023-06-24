@@ -73,7 +73,7 @@
 <div class="grow flex flex-col">
     <div class="grid h-full grid-cols-2 gap-5 select-none sm:grid-cols-4 grow p-5">
         {#each gridData as cell, i}
-            <button class={`flex font-semibold text-3xl items-center justify-center  border-2 ${ i == first_selected ? 'border-blue-300 bg-blue-100' : ''} ${cell.answered ? 'bg-green-100 border-green-300' : ''}`} 
+            <button class={`flex font-semibold md:text-2xl items-center justify-center  border-2 ${ i == first_selected ? 'border-blue-300 bg-blue-100' : ''} ${cell.answered ? 'bg-green-100 border-green-300' : ''}`} 
                 on:click={() => { cell.answered ? '' : clickCallback(i) }}>
                 <!-- { JSON.stringify(cell, null, 2) } -->
                 { cell.word }
