@@ -32,7 +32,7 @@
                     </td>
                     {#each $voci_file.languages as lang}
                         <td>
-                            <input type="text" bind:value={word.translations[lang]} class="w-full p-2 bg-neutral-100" />
+                            <input type="text" bind:value={word.translations[lang]} class="w-full p-2 " />
                         </td>
                     {/each}
                 </tr>

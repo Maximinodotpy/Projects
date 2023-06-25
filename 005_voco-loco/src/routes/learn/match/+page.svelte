@@ -4,6 +4,8 @@
 
     let first_selected : number | null = null;
 
+    const success_classes = ['border-green-300', 'bg-green-500', 'text-green-50']
+
     let start_time = Date.now();
 
     let milliseconds = 0;
@@ -24,6 +26,13 @@
 
     function newWords() {
         first_selected = null;
+
+        // Reset Classes for these elements
+        const query = `#word_container > button`;
+        const elements = document.querySelectorAll(query);
+        elements.forEach((el) => {
+            el.classList.remove(...success_classes, 'opacity-10', 'pointer-events-none');
+        })
 
         gridData.length = 0;
         for (let i = 0; i < 8; i++) {
@@ -71,14 +80,28 @@
                 gridData[first_selected].answered = true;
                 gridData[i].answered = true;
 
+                
+                // Both elements and add opacity-0 class
+                const query = `#cell-${i}, #cell-${first_selected}`;
+                const elements = document.querySelectorAll(query);
+                
+                elements.forEach((el) => {
+                    setTimeout(() => {
+                        el.classList.add(...success_classes, 'pointer-events-none');
+                    }, 1);
+
+                    setTimeout(() => {
+                        el.classList.remove(...success_classes);
+                        el.classList.add('opacity-10');
+                    }, 500);
+                })
+
                 first_selected = null;
             } else  {
                 const query = '#word_container > button:nth-child(' + (i + 1) + ')';
                 const element = document.querySelector(query);
-
-                console.log(element);
                 
-                const classes = ['error_wiggle', 'border-red-300', 'bg-red-100'];
+                const classes = ['error_wiggle', 'border-red-300', 'bg-red-500', 'text-red-200'];
 
                 if (element) {
                     element.classList.add(...classes);
@@ -106,8 +129,8 @@
     {:else}
         <div class="grid h-full grid-cols-2 gap-5 p-5 select-none sm:grid-cols-4 grow" id="word_container">
             {#each gridData as cell, i}
-                <button class={`transition-all flex font-semibold md:text-2xl items-center justify-center border-2 ${ i == first_selected ? 'border-blue-300 bg-blue-100' : ''} ${cell.answered ? 'bg-green-100 border-green-300' : ''}`} 
-                    on:click={() => { cell.answered ? '' : clickCallback(i) }}>
+                <button class={`transition-all flex font-semibold md:text-2xl items-center justify-center border-2 ${ i == first_selected ? 'border-blue-300 bg-blue-500 text-blue-200' : ''}`} 
+                    on:click={() => { cell.answered ? '' : clickCallback(i) }} id={`cell-${i}`}>
                     <!-- { JSON.stringify(cell, null, 2) } -->
                     { cell.word }
                 </button>

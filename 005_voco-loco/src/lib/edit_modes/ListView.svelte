@@ -35,7 +35,7 @@
             <th class="p-0">🧨</th>
         </tr>
     </thead>
-    <tbody class="divide-y-2 divide-neutral-300">
+    <tbody class="divide-y-normal ">
         {#each $voci_file.words as word, index (word.uuid)}
             <tr>
                 <td class="p-2 text-center">
