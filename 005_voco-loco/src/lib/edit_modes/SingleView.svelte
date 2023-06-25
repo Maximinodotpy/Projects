@@ -37,12 +37,12 @@
 </script>
 
 <div class="flex flex-col h-full overflow-hidden">
-    <div class="flex justify-between border-b-[1.5px] overflow-auto shrink-0">
+    <div class="flex justify-between overflow-auto border-b-normal shrink-0">
         <div>
             <button on:click={() => { $voci_file.removeWord(current_word) }} class="p-3 pr-4 ">Remove</button>
         </div>
         
-        <div class="flex divide-x-[1.5px] shrink-0">
+        <div class="flex divide-x-normal shrink-0">
             <button on:click={() => { current_word = 0 }} class="p-3 pl-4">⏮</button>
             <button on:click={previousWord} class="p-3">⏪</button>
             <button on:click={nextWord} class="p-3">⏩</button>
@@ -54,18 +54,16 @@
         <div>
             <h2 class="mb-5 text-2xl">
                 Single View for 
-                <code><input type="number" value={current_word} min="0" max={$voci_file.words.length - 1} class="text-right" on:input={(ev) => {
-                    current_word = Number(ev.target.value);
-                 }}>/{ $voci_file.words.length }</code>
+                <input type="number" value={current_word} min="0" max={$voci_file.words.length - 1} class="text-right" on:input={(ev) => { current_word = Number(ev.target.value);}}>/{ $voci_file.words.length }
             </h2>
         
-            <p class="mb-5">Added on <code class="inline-block p-1 bg-neutral-100"> { new Date($voci_file.words[current_word].created ?? 0).toLocaleString() } </code></p>
+            <p class="mb-5">Added on <code class="inline-block p-1"> { new Date($voci_file.words[current_word].created ?? 0).toLocaleString() } </code></p>
             
             <div class="grid grid-cols-2 gap-10 mb-5">
                 {#each $voci_file.languages as lang}
                     <div>
                         <h3 class="mb-3 font-bold">{lang}</h3>
-                        <input type="text" bind:value={$voci_file.words[current_word].translations[lang]} class="w-full p-2 bg-neutral-100" />
+                        <input type="text" bind:value={$voci_file.words[current_word].translations[lang]} class="w-full p-2 border-2 border-b-4 focus:outline-none" />
                     </div>
                 {/each}
             </div>
@@ -83,7 +81,7 @@
     
     
             <div class="my-8">
-                <textarea class="w-full p-2 resize-none bg-neutral-100" cols="30" rows="10" bind:value={$voci_file.words[current_word].description} placeholder="Description"></textarea>
+                <textarea class="w-full p-2 border-2 border-b-4 resize-none focus:outline-none" cols="30" rows="10" bind:value={$voci_file.words[current_word].description} placeholder="Description"></textarea>
             </div>
         </div>
     </div>

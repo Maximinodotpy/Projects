@@ -22,7 +22,7 @@
 </script>
 
 <table class="w-full mb-5 overflow-x-auto whitespace-nowrap">
-    <thead class="sticky top-0 z-50 bg-white shadow-lg">
+    <thead class="sticky top-0 z-50 shadow-lg bg-dark-100">
         <tr class="text-left">
             <th class="p-2"></th>
             <th class="p-2"></th>

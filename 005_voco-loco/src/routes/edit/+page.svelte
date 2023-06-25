@@ -54,14 +54,14 @@
     })
 </script>
 
-<div class="flex justify-between border-b-[1.5px] pl-4 items-center overflow-auto shrink-0 whitespace-nowrap">
+<div class="flex items-center justify-between pl-4 overflow-auto border-b-normal shrink-0 whitespace-nowrap">
     <div class="flex w-full gap-5 md:gap-10 shrink-0">
         <button on:click={$voci_file.addWord} class="py-3">Add New Word</button>
 
         <div class="flex items-center gap-5 ml-auto">
-            <div class="flex h-full divide-x-[1.5px] items-center border-l-[1.5px] scroll-smooth">
+            <div class="flex items-center h-full divide-x-normal border-l-normal scroll-smooth">
                 {#each view_modes as view_mode, index (view_mode[0])}
-                    <label class={`py-1 px-3 flex items-center border-b-2 h-full ${current_view_mode == index ? 'border-b-blue-500 bg-gradient-to-b  from-white from-50% to-blue-100' : 'border-b-transparent'}`} id={`view-${index}`}>
+                    <label class={`py-1 px-3 flex items-center border-b-2 h-full ${current_view_mode == index ? 'border-b-blue-500 bg-gradient-to-b from-transparent from-75% to-blue-800/50' : 'border-b-transparent'}`} id={`view-${index}`}>
                         <input type="radio" bind:group={current_view_mode} name="view_mode" value={index} class="hidden">
                         {view_mode[0]}
                     </label>

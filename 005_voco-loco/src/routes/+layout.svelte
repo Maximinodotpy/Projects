@@ -135,8 +135,8 @@
     <meta name="description" content="Loco Voco is a tool to learn vocabulary.">
 </svelte:head>
 
-<div class="flex flex-col h-[100svh] overflow-hidden">
-    <div class="border-b-[1.5px] px-4 py-2 flex justify-between items-center whitespace-nowrap overflow-auto shrink-0">
+<div class="flex flex-col h-[100svh] overflow-hidden bg-dark-100 text-neutral-400">
+    <div class="flex items-center justify-between px-4 py-2 overflow-auto border-b-normal whitespace-nowrap shrink-0">
         <div class="flex items-center select-none shrink-0">
             <a class="inline-block mr-3 font-mono font-semibold shrink-0" href={`${base}/`}>
                 <img src="favicon.png" alt="Loco Voco Logo" class="w-10">

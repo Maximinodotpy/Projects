@@ -14,3 +14,16 @@
   animation-name: error_wiggle;
   animation-duration: 1000ms;
 }
+
+* {
+  border-color: hsl(0, 0%, 20%);
+}
+
+input, textarea, code {
+  background-color: transparent;
+  color: inherit;
+}
+
+:root {
+  color-scheme: dark;
+}

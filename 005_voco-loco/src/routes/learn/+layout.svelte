@@ -39,7 +39,7 @@
     }
 </script>
 
-<div class="flex divide-x-[1.5px] h-full overflow-x-hidden" bind:clientWidth={current_width}>
+<div class="flex h-full overflow-x-hidden divide-x-normal" bind:clientWidth={current_width}>
     {#if current_width < 640}
         <button class="grid px-3 place-content-center hover:cursor-pointer" style="writing-mode: vertical-lr; text-orientation: mixed;" on:click={ () => { options_visible = !options_visible } }>
             <span class="inline-block rotate-180" >
@@ -53,7 +53,7 @@
     {/if}
 
     {#if options_visible || current_width >= 640}
-        <div class={`px-4 py-2 overflow-auto`} style={`width: ${current_width < 640 ? '100%' : '320px' }`}>
+        <div class={`px-4 py-2 overflow-auto`} style={`width: ${current_width < 640 ? '100%' : '350px' }`}>
             <h2 class="mb-5 text-2xl">Options</h2>
 
             <div class="mb-5">
@@ -65,7 +65,7 @@
 
                 <div class="grid grid-cols-3 gap-2">
                     {#each tags as tag}
-                        <label for={tag} class="flex items-center gap-1 px-2 py-1 text-xs bg-blue-100 rounded-md">
+                        <label for={tag} class="flex items-center gap-1 px-2 py-1 text-xs rounded-md bg-neutral-700 text-neutral-200">
                             <input bind:group={$option_values.allowed_tags} type="checkbox" value={tag} id={tag}>
                             {tag}
                         </label>
@@ -80,7 +80,7 @@
                     <label for="" class="flex items-center gap-3 mb-3">
                         <span>Origin</span>
                         
-                        <select bind:value={$option_values.origin_language} class="px-2 py-1 bg-blue-100 rounded-md">
+                        <select bind:value={$option_values.origin_language} class="px-2 py-1 rounded-md bg-neutral-700 text-neutral-200">
                             {#each $voci_file.languages as language}
                                 {#if language != $option_values.target_language}
                                     <option value={language}>{language}</option>
@@ -92,7 +92,7 @@
                     <label for="" class="flex items-center gap-3">
                         <span>Target</span>
 
-                        <select bind:value={$option_values.target_language} class="px-2 py-1 bg-blue-100 rounded-md">
+                        <select bind:value={$option_values.target_language} class="px-2 py-1 rounded-md bg-neutral-700 text-neutral-200">
                             {#each $voci_file.languages as language}
                                 {#if language != $option_values.origin_language}
                                     <option value={language}>{language}</option>
@@ -107,7 +107,7 @@
                         <label for="ottsl" class="flex items-center gap-3">
                             <span>Origin TTS Language</span>
                             
-                            <select name="" class="max-w-[200px] px-2 py-1 bg-blue-100 rounded-md" id="ottsl">
+                            <select name="" class="max-w-[200px] px-2 py-1 bg-neutral-700 text-neutral-200 rounded-md" id="ottsl">
                                 {#each speechSynthesis.getVoices() as voice}
                                     <option value={voice.lang}>{voice.name}</option>
                                 {/each}

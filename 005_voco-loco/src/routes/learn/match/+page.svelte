@@ -99,14 +99,14 @@
 
     {#if $option_values.word_pool.length < 8}
         <div class="flex items-center justify-center flex-grow">
-            <div class="text-2xl text-gray-400">
+            <div class="text-2xl">
                 Please add atleast 8 Words
             </div>
         </div>
     {:else}
         <div class="grid h-full grid-cols-2 gap-5 p-5 select-none sm:grid-cols-4 grow" id="word_container">
             {#each gridData as cell, i}
-                <button class={`transition-all flex font-semibold md:text-2xl items-center justify-center  border-2 ${ i == first_selected ? 'border-blue-300 bg-blue-100' : ''} ${cell.answered ? 'bg-green-100 border-green-300' : ''}`} 
+                <button class={`transition-all flex font-semibold md:text-2xl items-center justify-center border-2 ${ i == first_selected ? 'border-blue-300 bg-blue-100' : ''} ${cell.answered ? 'bg-green-100 border-green-300' : ''}`} 
                     on:click={() => { cell.answered ? '' : clickCallback(i) }}>
                     <!-- { JSON.stringify(cell, null, 2) } -->
                     { cell.word }
@@ -114,7 +114,7 @@
             {/each}
         </div>
 
-        <div class="border-t-[1.5px] flex justify-between pb-10">
+        <div class="flex justify-between pb-10 border-t-normal">
             <div class="p-5 font-mono">
                 { seconds }:{ String(milliseconds).slice(-3) }
             </div>

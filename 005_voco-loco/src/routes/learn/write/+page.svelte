@@ -1,11 +1,7 @@
 <script lang="ts">
-    import { getContext } from "svelte";
-    import type { VociFile, Word } from '$lib/edit_modes/word_type';
-    import type { Writable } from "svelte/store";
     import { base } from "$app/paths";
     import { option_values } from "../options";
-        
-    let current_word_id = 0;
+
     let current_word_data : Word
 
     let inputContent = ''
@@ -106,14 +102,14 @@
         </div>
         <canvas id="bg-canvas" class="absolute w-full h-full"></canvas>
     </div>
-    <div class="border-t-[1.5px] py-2 px-2 md:px-6 flex justify-between">
+    <div class="flex justify-between px-2 py-2 border-t-normal md:px-6">
         <div>{ points }/{asked_words} Points</div>
         <div>
             <a href="{base}/edit?uuid={current_word_data.uuid}">Edit this Word</a>
         </div>
     </div>
-    <div class="border-t-[1.5px] flex divide-x-[1.5px]">
-        <input type="text" class="p-6 text-2xl focus:outline-none w-[0] grow" placeholder={`Answer in ${$option_values.target_language}`} on:keydown={keydownCallback} bind:value={inputContent}>
+    <div class="flex border-t-normal divide-x-normal">
+        <input type="text" class="p-6 text-2xl focus:outline-none w-[0] grow placeholder:text-neutral-700" placeholder={`Answer in ${$option_values.target_language}`} on:keydown={keydownCallback} bind:value={inputContent}>
         <button on:click={check}  class="px-2 py-6 md:p-6 md:text-2xl focus:outline-none">Check</button>
         <button on:click={skip}  class="px-2 py-6 md:p-6 md:text-2xl focus:outline-none">Skip</button>
     </div>

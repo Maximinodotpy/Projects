@@ -42,7 +42,7 @@
 </script>
 
 <div class="flex flex-col h-full overflow-hidden">
-    <div class="px-4 py-4 border-b-[1.5px] flex gap-7 shrink-0">
+    <div class="px-4 py-4 border-b-normal flex gap-7 shrink-0">
         <div class="flex gap-4 shrink-0">
             Similiarity Threshhold
             <input type="number" bind:value={jaro_winkler_threshhold} class="w-20" max="1" min="0.85" step="0.05"> 

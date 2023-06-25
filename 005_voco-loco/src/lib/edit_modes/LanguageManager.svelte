@@ -85,7 +85,7 @@
     </table>
 
     <div class="mt-8">
-        <input type="text" placeholder="New Language" bind:value={current_new_language} class="p-2 bg-neutral-100">
+        <input type="text" placeholder="New Language" bind:value={current_new_language} class="p-2 border-2 border-b-4 placeholder:text-neutral-500">
         <button on:click={addNewLangauge} class="ml-4">Add</button>
     </div>
 </div>
