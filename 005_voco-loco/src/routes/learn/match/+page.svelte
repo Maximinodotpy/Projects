@@ -91,10 +91,10 @@
         }
     }
 
-    /* option_values.subscribe(() => {
+    option_values.subscribe(() => {
         newWords();
     })
-    newWords(); */
+    /* newWords(); */
 
 </script>
 
