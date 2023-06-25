@@ -3,9 +3,8 @@
     import { onMount } from "svelte";
     import type { Writable } from "svelte/store";
     import { getContext } from "svelte";
-    import type { VociFile, Word } from "$lib/edit_modes/word_type";
 
-    const voci_file = getContext<Writable<VociFile>>("voci_file");
+    const voci_file = getContext<Writable<VocabularyFile>>("voci_file");
 
     let current_word = 0
 

@@ -87,9 +87,7 @@
         show_solution = false;
         inputContent = ''
 
-        current_word_id = Math.random() * $option_values.word_pool.length | 0
-
-        current_word_data = $option_values.word_pool[current_word_id];
+        current_word_data = option_values.getNextWord();
     }
 </script>
 

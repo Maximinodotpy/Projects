@@ -1,11 +1,11 @@
 <script lang="ts">
     import { getContext } from "svelte";
-    import type { VociFile } from '$lib/edit_modes/word_type';
     import { tags } from '$lib/edit_modes/variables';
     import { option_values } from "./options";
     import type { Writable } from "svelte/store";
+    import { shuffle } from "$lib/utils";
 
-    const voci_file = getContext<Writable<VociFile>>("voci_file");
+    const voci_file = getContext<Writable<VocabularyFile>>("voci_file");
 
     $option_values.target_language = $voci_file.languages[0];
     $option_values.origin_language = $voci_file.languages[1];
@@ -21,7 +21,7 @@
     }
 
     $: {
-        let temp_pool = $voci_file.words.filter(word => {            
+        let temp_pool = $voci_file.words.filter((word: Word) => {            
             if ($option_values.allowed_tags.length == 0) {
                 return true;
             } else {
@@ -30,6 +30,12 @@
         })
 
         $option_values.word_pool = temp_pool.length == 0 ? $voci_file.words : temp_pool;
+        shuffle($option_values.word_pool);
+
+        console.log('Shuffled Wordpool');
+
+        $option_values.word_pool = $option_values.word_pool;
+        option_values.resetCurrentWord();
     }
 </script>
 

@@ -1,6 +1,5 @@
 <script lang="ts">
     import { option_values } from '../options';
-    import type { Word } from '$lib/edit_modes/word_types';
     import { shuffle } from '$lib/utils';
 
     let first_selected : number | null = null;
@@ -17,8 +16,8 @@
     }
     
     const gridData : Array<{
-        selected: bool,
-        answered: bool,
+        selected: Boolean,
+        answered: Boolean,
         word: Word,
         connection: string
     }> = []
@@ -29,20 +28,20 @@
         gridData.length = 0;
         for (let i = 0; i < 8; i++) {
 
-            const ran_id = Math.floor(Math.random() * $option_values.word_pool.length);
+            const word = option_values.getNextWord();
 
             gridData.push({
                 selected: false,
                 answered: false,
-                word: $option_values.word_pool[ran_id].translations[$option_values.target_language],
-                connection: $option_values.word_pool[ran_id].uuid
+                word: word.translations[$option_values.target_language],
+                connection: word.uuid
             })
             
             gridData.push({
                 selected: false,
                 answered: false,
-                word: $option_values.word_pool[ran_id].translations[$option_values.origin_language],
-                connection: $option_values.word_pool[ran_id].uuid
+                word: word.translations[$option_values.origin_language],
+                connection: word.uuid
             })
         }
 
@@ -94,28 +93,35 @@
     option_values.subscribe(() => {
         newWords();
     })
-    /* newWords(); */
-
 </script>
 
 <div class="flex flex-col grow">
-    <div class="grid h-full grid-cols-2 gap-5 p-5 select-none sm:grid-cols-4 grow" id="word_container">
-        {#each gridData as cell, i}
-            <button class={`transition-all flex font-semibold md:text-2xl items-center justify-center  border-2 ${ i == first_selected ? 'border-blue-300 bg-blue-100' : ''} ${cell.answered ? 'bg-green-100 border-green-300' : ''}`} 
-                on:click={() => { cell.answered ? '' : clickCallback(i) }}>
-                <!-- { JSON.stringify(cell, null, 2) } -->
-                { cell.word }
-            </button>
-        {/each}
-    </div>
 
-    <div class="border-t-[1.5px] flex justify-between pb-10">
-        <div class="p-5 font-mono">
-            { seconds }:{ String(milliseconds).slice(-3) }
+    {#if $option_values.word_pool.length < 8}
+        <div class="flex items-center justify-center flex-grow">
+            <div class="text-2xl text-gray-400">
+                Please add atleast 8 Words
+            </div>
+        </div>
+    {:else}
+        <div class="grid h-full grid-cols-2 gap-5 p-5 select-none sm:grid-cols-4 grow" id="word_container">
+            {#each gridData as cell, i}
+                <button class={`transition-all flex font-semibold md:text-2xl items-center justify-center  border-2 ${ i == first_selected ? 'border-blue-300 bg-blue-100' : ''} ${cell.answered ? 'bg-green-100 border-green-300' : ''}`} 
+                    on:click={() => { cell.answered ? '' : clickCallback(i) }}>
+                    <!-- { JSON.stringify(cell, null, 2) } -->
+                    { cell.word }
+                </button>
+            {/each}
         </div>
 
-        <button class="p-5" on:click={newWords}>
-            { isFinished ? 'Start' : 'Restart' }
-        </button>
-    </div>
+        <div class="border-t-[1.5px] flex justify-between pb-10">
+            <div class="p-5 font-mono">
+                { seconds }:{ String(milliseconds).slice(-3) }
+            </div>
+
+            <button class="p-5" on:click={newWords}>
+                { isFinished ? 'Start' : 'Restart' }
+            </button>
+        </div>
+    {/if}
 </div>

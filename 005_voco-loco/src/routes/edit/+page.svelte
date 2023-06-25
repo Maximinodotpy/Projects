@@ -6,7 +6,6 @@
     import DeduplicationView from "$lib/edit_modes/DeduplicationView.svelte";
     
     import { getContext } from "svelte";
-    import type { VociFile } from '$lib/edit_modes/word_type';
     import type { Writable } from "svelte/store";
     import { onMount } from 'svelte';
     import { page } from '$app/stores' 
@@ -25,7 +24,7 @@
             behavior: 'smooth',
         });
     }
-    const voci_file = getContext<Writable<VociFile>>("voci_file");
+    const voci_file = getContext<Writable<VocabularyFile>>("voci_file");
 
     function handleSearchParams() {
         if (typeof location !== 'undefined') {

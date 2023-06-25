@@ -4,8 +4,6 @@
     import { page } from '$app/stores';
     import { writable } from 'svelte/store';
     import { setContext } from 'svelte';
-    import type { VociFile } from '$lib/edit_modes/word_type';
-    import type { Word } from '$lib/edit_modes/word_type';
     import { onMount } from 'svelte';
     
     let file_handle_api_supported = false
@@ -15,7 +13,7 @@
         }
     })
 
-    const voci_file = writable<VociFile>({
+    const voci_file = writable<VocabularyFile>({
         file_handle: null,
         words: [],
         removeWord: (id: number) => {
@@ -30,7 +28,6 @@
         addWord() {
             // Loop through languages and add empty word to each language
             let newWord: Word = {
-                type: "",
                 description: "",
                 tags: [],
                 created: Date.now(),
@@ -68,7 +65,7 @@
     $voci_file.addWord();
 
 
-    async function openFile(ev) {
+    async function openFile(ev: Event | undefined) {
         let file : Blob;
 
         // @ts-ignore
@@ -140,7 +137,7 @@
 
 <div class="flex flex-col h-[100svh] overflow-hidden">
     <div class="border-b-[1.5px] px-4 py-2 flex justify-between items-center whitespace-nowrap overflow-auto shrink-0">
-        <div class="shrink-0 flex items-center select-none">
+        <div class="flex items-center select-none shrink-0">
             <a class="inline-block mr-3 font-mono font-semibold shrink-0" href={`${base}/`}>
                 <img src="favicon.png" alt="Loco Voco Logo" class="w-10">
             </a>

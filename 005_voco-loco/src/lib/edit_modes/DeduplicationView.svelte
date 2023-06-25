@@ -1,11 +1,10 @@
 <script lang="ts">
     import type { Writable } from "svelte/store";
     import { getContext } from "svelte";
-    import type { VociFile, Word } from "$lib/edit_modes/word_type";
     import calcJaroWincklerDistance from "./JaroWinkler";
     import SingleViewButton from "./SingleViewButton.svelte";
 
-    const voci_file = getContext<Writable<VociFile>>("voci_file");
+    const voci_file = getContext<Writable<VocabularyFile>>("voci_file");
 
     let similar_words: Array<{ right: Word, left: Word }> = [];
 
