@@ -3828,7 +3828,7 @@
         "translations": {
             "Deutsch": "Der bauer",
             "English": "the farmer",
-            "Espagnol": ""
+            "Espagnol": "El agricultor"
         }
     },
     {
@@ -3839,7 +3839,7 @@
         "translations": {
             "Deutsch": "Der Lehrer",
             "English": "the teacher",
-            "Espagnol": ""
+            "Espagnol": "El profesor"
         }
     },
     {
@@ -3850,7 +3850,7 @@
         "translations": {
             "Deutsch": "Der Buchhalter",
             "English": "the bookkeeper",
-            "Espagnol": ""
+            "Espagnol": "El contable"
         }
     },
     {
@@ -3861,7 +3861,7 @@
         "translations": {
             "Deutsch": "Der Chef",
             "English": "the boss",
-            "Espagnol": ""
+            "Espagnol": "El jefe"
         }
     },
     {
@@ -3872,7 +3872,7 @@
         "translations": {
             "Deutsch": "Der Mechaniker",
             "English": "the mechanic",
-            "Espagnol": ""
+            "Espagnol": "El mecanico"
         }
     },
     {
@@ -3883,7 +3883,7 @@
         "translations": {
             "Deutsch": "Der Händler",
             "English": "the merchant",
-            "Espagnol": ""
+            "Espagnol": "El comerciante"
         }
     },
     {
@@ -3894,7 +3894,7 @@
         "translations": {
             "Deutsch": "Der Psychologe",
             "English": "the psychologist",
-            "Espagnol": ""
+            "Espagnol": "El psicologe"
         }
     },
     {
@@ -3905,7 +3905,7 @@
         "translations": {
             "Deutsch": "Der Verkäufer",
             "English": "the vendor",
-            "Espagnol": ""
+            "Espagnol": "El vendedor"
         }
     },
     {
@@ -3916,7 +3916,7 @@
         "translations": {
             "Deutsch": "Der Arzt",
             "English": "the doctor",
-            "Espagnol": ""
+            "Espagnol": "El medico"
         }
     },
     {
@@ -3927,7 +3927,7 @@
         "translations": {
             "Deutsch": "Die Krankenschwester",
             "English": "the nurse",
-            "Espagnol": ""
+            "Espagnol": "La enferma"
         }
     },
     {
@@ -3938,7 +3938,7 @@
         "translations": {
             "Deutsch": "Der Chirurg",
             "English": "the surgeon",
-            "Espagnol": ""
+            "Espagnol": "El cirujano"
         }
     },
     {
@@ -3949,7 +3949,7 @@
         "translations": {
             "Deutsch": "Der Frisör",
             "English": "the barber",
-            "Espagnol": ""
+            "Espagnol": "El peluquoro"
         }
     },
     {
@@ -3960,7 +3960,7 @@
         "translations": {
             "Deutsch": "Der Architekt",
             "English": "the architect",
-            "Espagnol": ""
+            "Espagnol": "El arquitecto"
         }
     },
     {
@@ -3971,7 +3971,7 @@
         "translations": {
             "Deutsch": "Der Informatiker",
             "English": "the software engineer",
-            "Espagnol": ""
+            "Espagnol": "El informatico"
         }
     },
     {
@@ -3982,7 +3982,7 @@
         "translations": {
             "Deutsch": "Der Schauspieler",
             "English": "the actor",
-            "Espagnol": ""
+            "Espagnol": "El actor"
         }
     },
     {
@@ -3993,7 +3993,7 @@
         "translations": {
             "Deutsch": "Der Kellner",
             "English": "the waiter",
-            "Espagnol": ""
+            "Espagnol": "El camarero"
         }
     },
     {
@@ -4004,7 +4004,7 @@
         "translations": {
             "Deutsch": "Der Regisseur",
             "English": "the director",
-            "Espagnol": ""
+            "Espagnol": "El director"
         }
     },
     {
@@ -4015,7 +4015,7 @@
         "translations": {
             "Deutsch": "Der Professor",
             "English": "the professor",
-            "Espagnol": ""
+            "Espagnol": "el profesor"
         }
     },
     {
@@ -4026,29 +4026,7 @@
         "translations": {
             "Deutsch": "Der Chemiker",
             "English": "the chemist",
-            "Espagnol": ""
-        }
-    },
-    {
-        "description": "",
-        "tags": [],
-        "created": 1687701190195,
-        "uuid": "930609d7-9c96-4a57-8e3a-46089427ad5e",
-        "translations": {
-            "Deutsch": "",
-            "English": "",
-            "Espagnol": ""
-        }
-    },
-    {
-        "description": "",
-        "tags": [],
-        "created": 1687701190689,
-        "uuid": "948c25e2-8913-4b2e-b298-e00418acc954",
-        "translations": {
-            "Deutsch": "",
-            "English": "",
-            "Espagnol": ""
+            "Espagnol": "El quimico"
         }
     }
 ]

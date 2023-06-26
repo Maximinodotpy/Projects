@@ -9,6 +9,7 @@ export const tags = [
     "Numbers",
     "Body",
     "Traveling",
+    "Weather",
     "Colors",
     "Traffic",
     "Mathematics",
