@@ -16,6 +16,7 @@ export const tags = [
     "Animals",
     "Emotions",
     "Buildings",
+    "Countries",
 
     "Adjectives",
     "Verbs",

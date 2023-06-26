@@ -4070,7 +4070,7 @@
         "translations": {
             "Deutsch": "Deutschland",
             "English": "germany",
-            "Espagnol": ""
+            "Espagnol": "alemania"
         }
     },
     {
@@ -4081,7 +4081,7 @@
         "translations": {
             "Deutsch": "Frankreich",
             "English": "france",
-            "Espagnol": ""
+            "Espagnol": "francia"
         }
     },
     {
@@ -4092,7 +4092,7 @@
         "translations": {
             "Deutsch": "Vereinigte Staaten",
             "English": "united states",
-            "Espagnol": ""
+            "Espagnol": "estados unidos"
         }
     },
     {
@@ -4103,18 +4103,21 @@
         "translations": {
             "Deutsch": "Schweiz",
             "English": "switzerland",
-            "Espagnol": ""
+            "Espagnol": "suiza"
         }
     },
     {
         "description": "",
-        "tags": [],
+        "tags": [
+            "Work",
+            "Traveling"
+        ],
         "created": 1687766711703,
         "uuid": "7dd5c747-5623-4972-94de-a256ffd1660f",
         "translations": {
             "Deutsch": "Reisen",
             "English": "travel",
-            "Espagnol": ""
+            "Espagnol": "viajar"
         }
     },
     {
@@ -4125,7 +4128,7 @@
         "translations": {
             "Deutsch": "oder",
             "English": "or",
-            "Espagnol": ""
+            "Espagnol": "o"
         }
     },
     {
@@ -4136,7 +4139,7 @@
         "translations": {
             "Deutsch": "und",
             "English": "and",
-            "Espagnol": ""
+            "Espagnol": "y"
         }
     },
     {
@@ -4147,29 +4150,35 @@
         "translations": {
             "Deutsch": "aber",
             "English": "but",
-            "Espagnol": ""
+            "Espagnol": "pero"
         }
     },
     {
         "description": "",
-        "tags": [],
+        "tags": [
+            "Work"
+        ],
         "created": 1687767002469,
         "uuid": "1c269585-a969-407d-92e7-d03da9e2b5e0",
         "translations": {
             "Deutsch": "Die Karte",
             "English": "the map",
-            "Espagnol": ""
+            "Espagnol": "El mapa"
         }
     },
     {
         "description": "",
-        "tags": [],
+        "tags": [
+            "Work",
+            "Traveling",
+            "Verbs"
+        ],
         "created": 1687767023066,
         "uuid": "a6e31bf0-eb57-465c-910d-5a77357ba121",
         "translations": {
-            "Deutsch": "",
-            "English": "",
-            "Espagnol": ""
+            "Deutsch": "Übersetzen",
+            "English": "translate",
+            "Espagnol": "traducir"
         }
     },
     {
