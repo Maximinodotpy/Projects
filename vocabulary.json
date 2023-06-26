@@ -4028,5 +4028,159 @@
             "English": "the chemist",
             "Espagnol": "El quimico"
         }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1687766704780,
+        "uuid": "7ffc54c0-e5a4-43bf-8708-8dfab998e179",
+        "translations": {
+            "Deutsch": "Das Mädchen",
+            "English": "the girl",
+            "Espagnol": ""
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1687766705044,
+        "uuid": "85ab5255-6430-4007-a8e5-aeac131fd4fa",
+        "translations": {
+            "Deutsch": "Der Junge",
+            "English": "the boy",
+            "Espagnol": ""
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1687766705346,
+        "uuid": "95974d3d-748e-477a-9933-69fc85cc475b",
+        "translations": {
+            "Deutsch": "Das Flugzeug",
+            "English": "The airplane",
+            "Espagnol": ""
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1687766705547,
+        "uuid": "997115d0-620f-4eac-b795-bd958446900e",
+        "translations": {
+            "Deutsch": "Deutschland",
+            "English": "germany",
+            "Espagnol": ""
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1687766708243,
+        "uuid": "e405be5b-5956-4732-af87-e01f79fbae43",
+        "translations": {
+            "Deutsch": "Frankreich",
+            "English": "france",
+            "Espagnol": ""
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1687766709959,
+        "uuid": "9233ab2c-e20e-42ea-a5b5-48ddb95683d6",
+        "translations": {
+            "Deutsch": "Vereinigte Staaten",
+            "English": "united states",
+            "Espagnol": ""
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1687766710922,
+        "uuid": "e04c5024-e3eb-422e-b61d-86322cb0e060",
+        "translations": {
+            "Deutsch": "Schweiz",
+            "English": "switzerland",
+            "Espagnol": ""
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1687766711703,
+        "uuid": "7dd5c747-5623-4972-94de-a256ffd1660f",
+        "translations": {
+            "Deutsch": "Reisen",
+            "English": "travel",
+            "Espagnol": ""
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1687766717351,
+        "uuid": "36cbd32f-6385-4904-8737-9ae22a538c8c",
+        "translations": {
+            "Deutsch": "oder",
+            "English": "or",
+            "Espagnol": ""
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1687766718219,
+        "uuid": "3ee7112c-644e-4a94-8726-b02ec0fb4c2b",
+        "translations": {
+            "Deutsch": "und",
+            "English": "and",
+            "Espagnol": ""
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1687766719034,
+        "uuid": "e72ac888-4587-4ace-9f0e-210831007222",
+        "translations": {
+            "Deutsch": "aber",
+            "English": "but",
+            "Espagnol": ""
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1687767002469,
+        "uuid": "1c269585-a969-407d-92e7-d03da9e2b5e0",
+        "translations": {
+            "Deutsch": "Die Karte",
+            "English": "the map",
+            "Espagnol": ""
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1687767023066,
+        "uuid": "a6e31bf0-eb57-465c-910d-5a77357ba121",
+        "translations": {
+            "Deutsch": "",
+            "English": "",
+            "Espagnol": ""
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1687767023584,
+        "uuid": "d147ba1e-6e6a-49b7-840e-22960d3718d6",
+        "translations": {
+            "Deutsch": "",
+            "English": "",
+            "Espagnol": ""
+        }
     }
 ]
