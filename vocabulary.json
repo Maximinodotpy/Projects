@@ -4189,7 +4189,7 @@
         "translations": {
             "Deutsch": "Das drehbuch",
             "English": "the screenplay",
-            "Espagnol": ""
+            "Espagnol": "el guion"
         }
     },
     {
@@ -4198,9 +4198,9 @@
         "created": 1687846887575,
         "uuid": "63633eae-dd6a-473b-a2bd-4e0153ad5c71",
         "translations": {
-            "Deutsch": "",
-            "English": "",
-            "Espagnol": ""
+            "Deutsch": "ähnlich",
+            "English": "similar",
+            "Espagnol": "similar a"
         }
     },
     {
@@ -4209,9 +4209,9 @@
         "created": 1687846888216,
         "uuid": "bcf563cd-f85c-4999-b29b-f4cbc96356f3",
         "translations": {
-            "Deutsch": "",
-            "English": "",
-            "Espagnol": ""
+            "Deutsch": "Das Wort",
+            "English": "the word",
+            "Espagnol": "la palabra"
         }
     },
     {
@@ -4220,9 +4220,9 @@
         "created": 1687846888364,
         "uuid": "4e75b42a-cca7-465c-b22d-d2de4dc56a3c",
         "translations": {
-            "Deutsch": "",
-            "English": "",
-            "Espagnol": ""
+            "Deutsch": "Der Satz",
+            "English": "the sentence",
+            "Espagnol": "la sentencia"
         }
     },
     {
@@ -4231,9 +4231,9 @@
         "created": 1687846888533,
         "uuid": "bc1417e2-15bb-46cc-8fc0-b4b3f5a47800",
         "translations": {
-            "Deutsch": "",
-            "English": "",
-            "Espagnol": ""
+            "Deutsch": "Der Abschnitt",
+            "English": "the section",
+            "Espagnol": "la seccion"
         }
     },
     {
@@ -4242,9 +4242,9 @@
         "created": 1687846888684,
         "uuid": "20f21443-52eb-4fcd-a970-dba93f7d5b73",
         "translations": {
-            "Deutsch": "",
-            "English": "",
-            "Espagnol": ""
+            "Deutsch": "Der Mitarbeiter",
+            "English": "the coworker",
+            "Espagnol": "el empleado"
         }
     },
     {
@@ -4253,9 +4253,9 @@
         "created": 1687846888842,
         "uuid": "caa414e9-81b7-45c5-8dd9-6431cf3e2bde",
         "translations": {
-            "Deutsch": "",
-            "English": "",
-            "Espagnol": ""
+            "Deutsch": "Der Freund",
+            "English": "the friend",
+            "Espagnol": "el amistoso"
         }
     },
     {
@@ -4264,9 +4264,9 @@
         "created": 1687846888990,
         "uuid": "6112aec8-da27-43d8-a88b-e948d70ca6e8",
         "translations": {
-            "Deutsch": "",
-            "English": "",
-            "Espagnol": ""
+            "Deutsch": "Der Feind",
+            "English": "the enemy",
+            "Espagnol": "el enemigo"
         }
     },
     {
@@ -4275,9 +4275,9 @@
         "created": 1687846889131,
         "uuid": "940253d1-b552-41be-a704-84d54fc40985",
         "translations": {
-            "Deutsch": "",
-            "English": "",
-            "Espagnol": ""
+            "Deutsch": "Die Kirche",
+            "English": "the church",
+            "Espagnol": "la iglesia"
         }
     },
     {
@@ -4286,9 +4286,86 @@
         "created": 1687846889254,
         "uuid": "bb1bc650-eb7d-4391-bb77-5811d8c0abd9",
         "translations": {
-            "Deutsch": "",
-            "English": "",
-            "Espagnol": ""
+            "Deutsch": "Der Räuber",
+            "English": "the thief",
+            "Espagnol": "el ladron"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1687854113430,
+        "uuid": "98ffe7a3-1c32-4146-942d-15d14a09ba5c",
+        "translations": {
+            "Deutsch": "Der Busch",
+            "English": "the bush",
+            "Espagnol": "el arbusto"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1687854114291,
+        "uuid": "79bf2af2-4a4f-4653-9d51-34ae300aa4f1",
+        "translations": {
+            "Deutsch": "Die Zahl",
+            "English": "the number",
+            "Espagnol": "el numero"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1687854114456,
+        "uuid": "693d04b3-314b-49fc-a125-94250bf2d347",
+        "translations": {
+            "Deutsch": "Null",
+            "English": "zero",
+            "Espagnol": "cero"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1687854114619,
+        "uuid": "20a6f99a-4d3b-47f2-9eae-04116c87fd56",
+        "translations": {
+            "Deutsch": "Die Wohnung",
+            "English": "the appartment",
+            "Espagnol": "El piso"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1687854177327,
+        "uuid": "9ef3a5d4-88e2-4239-95b3-e6a97a5fa41a",
+        "translations": {
+            "Deutsch": "Die Schule",
+            "English": "the school",
+            "Espagnol": "la escuela"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1687854180143,
+        "uuid": "989146ab-d87a-4466-836c-9cdb82cbda24",
+        "translations": {
+            "Deutsch": "Die Fabrik",
+            "English": "the factory",
+            "Espagnol": "la fabrica"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1687854180748,
+        "uuid": "ad839009-b75a-4242-a7b7-8f2e04ed6807",
+        "translations": {
+            "Deutsch": "Der Zufall",
+            "English": "the coincidence",
+            "Espagnol": "la coincidencia"
         }
     }
 ]
