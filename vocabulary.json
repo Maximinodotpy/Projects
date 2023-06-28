@@ -4367,5 +4367,214 @@
             "English": "the coincidence",
             "Espagnol": "la coincidencia"
         }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1687945240349,
+        "uuid": "df22fa5e-7562-4f07-a2cd-82de2dc368e6",
+        "translations": {
+            "Deutsch": "Das Heft",
+            "English": "the magazine",
+            "Espagnol": "das revista"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1687945240813,
+        "uuid": "7eb3c531-bab4-415d-93ce-b89fbccc0fb0",
+        "translations": {
+            "Deutsch": "Die Beschreibung",
+            "English": "the description",
+            "Espagnol": "la descripcion"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1687945241001,
+        "uuid": "de2c2750-c096-4e50-ac8f-407b7f66dcb7",
+        "translations": {
+            "Deutsch": "Die Fernbedienung",
+            "English": "the remote control",
+            "Espagnol": "el mando a distancia"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1687945241161,
+        "uuid": "62b11c1c-61fc-4bc8-9d1b-0cd11fcb2770",
+        "translations": {
+            "Deutsch": "Die Person",
+            "English": "the person",
+            "Espagnol": "el individuo"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1687945241313,
+        "uuid": "d7d06e78-30b6-4805-8cde-75c2ed418912",
+        "translations": {
+            "Deutsch": "Das Wörterbuch",
+            "English": "the dictionary",
+            "Espagnol": "El diccionario"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1687945241487,
+        "uuid": "d1143d35-1229-40f1-9815-dee35ad68b19",
+        "translations": {
+            "Deutsch": "Die Rechnung",
+            "English": "the receipt",
+            "Espagnol": "La factura"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1687945241628,
+        "uuid": "9329c88d-e231-40e0-b4fa-79d5a72eb664",
+        "translations": {
+            "Deutsch": "Der Kohlenstoff",
+            "English": "the carbon",
+            "Espagnol": "El carbono"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1687945242055,
+        "uuid": "d575c6d4-9c9a-4052-a831-3708edfa82b2",
+        "translations": {
+            "Deutsch": "Der Sauerstoff",
+            "English": "the oxygen",
+            "Espagnol": "el oxigeno"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1687945242964,
+        "uuid": "26b57e87-bf03-405b-9bf1-5231843282d7",
+        "translations": {
+            "Deutsch": "Das Blei",
+            "English": "the lead",
+            "Espagnol": "El plomo"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1687945695472,
+        "uuid": "844cd945-6f9c-4f68-85ab-8817e5b98353",
+        "translations": {
+            "Deutsch": "Das Silber",
+            "English": "the silver",
+            "Espagnol": "La plata"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1687945696481,
+        "uuid": "cf606d80-3270-4b46-9e07-64fa5deee155",
+        "translations": {
+            "Deutsch": "Das Gold",
+            "English": "the gold",
+            "Espagnol": "El dorado"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1687945761561,
+        "uuid": "f74a5b58-0e4f-4b79-94be-4338ca766dd1",
+        "translations": {
+            "Deutsch": "kopieren",
+            "English": "copy",
+            "Espagnol": "copiar"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1687945763065,
+        "uuid": "e8e45774-d45a-4a5a-8a6c-ec1e53669842",
+        "translations": {
+            "Deutsch": "insertar",
+            "English": "insert",
+            "Espagnol": "insertar"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1687945763239,
+        "uuid": "a6db841b-2fd3-4fff-9460-449ac642b323",
+        "translations": {
+            "Deutsch": "",
+            "English": "",
+            "Espagnol": ""
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1687945763400,
+        "uuid": "9e9ec17f-5662-427d-a790-14d78a5a9c66",
+        "translations": {
+            "Deutsch": "",
+            "English": "",
+            "Espagnol": ""
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1687945763552,
+        "uuid": "86fdec1e-e2e7-4d78-962b-4693966a6fca",
+        "translations": {
+            "Deutsch": "",
+            "English": "",
+            "Espagnol": ""
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1687945763690,
+        "uuid": "6aa6faae-d980-49cf-9eae-fbe805373ab4",
+        "translations": {
+            "Deutsch": "",
+            "English": "",
+            "Espagnol": ""
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1687945763824,
+        "uuid": "d991d827-3ffa-4f4c-9f4b-fe0836e88d52",
+        "translations": {
+            "Deutsch": "",
+            "English": "",
+            "Espagnol": ""
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1687945764008,
+        "uuid": "43dd2a73-418f-43ed-947f-f745a5778206",
+        "translations": {
+            "Deutsch": "",
+            "English": "",
+            "Espagnol": ""
+        }
     }
 ]
