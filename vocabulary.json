@@ -4517,9 +4517,9 @@
         "created": 1687945763239,
         "uuid": "a6db841b-2fd3-4fff-9460-449ac642b323",
         "translations": {
-            "Deutsch": "",
-            "English": "",
-            "Espagnol": ""
+            "Deutsch": "Der Traum",
+            "English": "the dream",
+            "Espagnol": "el sueño"
         }
     },
     {
@@ -4528,9 +4528,9 @@
         "created": 1687945763400,
         "uuid": "9e9ec17f-5662-427d-a790-14d78a5a9c66",
         "translations": {
-            "Deutsch": "",
-            "English": "",
-            "Espagnol": ""
+            "Deutsch": "Der Albtraum",
+            "English": "the nightmare",
+            "Espagnol": "la pesadilla"
         }
     },
     {
@@ -4539,9 +4539,9 @@
         "created": 1687945763552,
         "uuid": "86fdec1e-e2e7-4d78-962b-4693966a6fca",
         "translations": {
-            "Deutsch": "",
-            "English": "",
-            "Espagnol": ""
+            "Deutsch": "Das Silo",
+            "English": "the silo",
+            "Espagnol": "el silo"
         }
     },
     {
@@ -4550,9 +4550,9 @@
         "created": 1687945763690,
         "uuid": "6aa6faae-d980-49cf-9eae-fbe805373ab4",
         "translations": {
-            "Deutsch": "",
-            "English": "",
-            "Espagnol": ""
+            "Deutsch": "Der Weizen",
+            "English": "the wheat",
+            "Espagnol": "el trigo"
         }
     },
     {
@@ -4560,6 +4560,423 @@
         "tags": [],
         "created": 1687945763824,
         "uuid": "d991d827-3ffa-4f4c-9f4b-fe0836e88d52",
+        "translations": {
+            "Deutsch": "Der Mais",
+            "English": "the corn",
+            "Espagnol": "el maiz"
+        }
+    },
+    {
+        "description": "",
+        "tags": [
+            "Buildings"
+        ],
+        "created": 1687945764008,
+        "uuid": "43dd2a73-418f-43ed-947f-f745a5778206",
+        "translations": {
+            "Deutsch": "Der Turm",
+            "English": "the tower",
+            "Espagnol": "el torre"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1688022634628,
+        "uuid": "ef2eb480-142f-4560-8f23-e2ed5f122907",
+        "translations": {
+            "Deutsch": "Die Landschaft",
+            "English": "the landscape",
+            "Espagnol": "el paisaje"
+        }
+    },
+    {
+        "description": "",
+        "tags": [
+            "Verbs"
+        ],
+        "created": 1688022634802,
+        "uuid": "ddf5b259-968b-4f7a-9f87-cf255aa12d0d",
+        "translations": {
+            "Deutsch": "leiten",
+            "English": "lead",
+            "Espagnol": "leiten"
+        }
+    },
+    {
+        "description": "",
+        "tags": [
+            "Work"
+        ],
+        "created": 1688022634965,
+        "uuid": "bfba0fbc-118a-4eed-b331-1eb427c7478e",
+        "translations": {
+            "Deutsch": "Das Feld",
+            "English": "the field",
+            "Espagnol": "el campo"
+        }
+    },
+    {
+        "description": "",
+        "tags": [
+            "Verbs"
+        ],
+        "created": 1688022635128,
+        "uuid": "93b9c3f7-2c42-467b-acd4-6d15525451d2",
+        "translations": {
+            "Deutsch": "fahren",
+            "English": "drive",
+            "Espagnol": "conducir"
+        }
+    },
+    {
+        "description": "",
+        "tags": [
+            "Verbs"
+        ],
+        "created": 1688022635259,
+        "uuid": "9980130e-3d0c-42ea-90de-226a230d81da",
+        "translations": {
+            "Deutsch": "stehlen",
+            "English": "steal",
+            "Espagnol": "robar"
+        }
+    },
+    {
+        "description": "",
+        "tags": [
+            "Verbs"
+        ],
+        "created": 1688022635496,
+        "uuid": "7f9158e6-d460-44d7-8033-1af577411353",
+        "translations": {
+            "Deutsch": "steigen",
+            "English": "rise",
+            "Espagnol": "subir"
+        }
+    },
+    {
+        "description": "",
+        "tags": [
+            "Verbs"
+        ],
+        "created": 1688022635670,
+        "uuid": "496d787c-2294-4ec9-9b05-e47645a9dc11",
+        "translations": {
+            "Deutsch": "sinken",
+            "English": "sink",
+            "Espagnol": "fregadero"
+        }
+    },
+    {
+        "description": "",
+        "tags": [
+            "Household"
+        ],
+        "created": 1688022635832,
+        "uuid": "7ced95e0-0a6f-482a-b721-30a59fb05820",
+        "translations": {
+            "Deutsch": "Der Einwohner",
+            "English": "the inhabitant",
+            "Espagnol": "el residente"
+        }
+    },
+    {
+        "description": "",
+        "tags": [
+            "Traveling"
+        ],
+        "created": 1688022635982,
+        "uuid": "dbcec832-90c7-41a8-9faa-bb2c1c5bc2bb",
+        "translations": {
+            "Deutsch": "Das Tal",
+            "English": "the valley",
+            "Espagnol": "el valle"
+        }
+    },
+    {
+        "description": "",
+        "tags": [
+            "Verbs"
+        ],
+        "created": 1688022636126,
+        "uuid": "e72032bd-4911-4713-b367-73c30e4bd9e0",
+        "translations": {
+            "Deutsch": "hinzufügen",
+            "English": "add",
+            "Espagnol": "añada"
+        }
+    },
+    {
+        "description": "",
+        "tags": [
+            "Verbs"
+        ],
+        "created": 1688022636267,
+        "uuid": "f34584b1-acaa-4f21-b551-2fe47bd21f65",
+        "translations": {
+            "Deutsch": "wegnehmen",
+            "English": "subtract",
+            "Espagnol": "quitar"
+        }
+    },
+    {
+        "description": "",
+        "tags": [
+            "Adjectives"
+        ],
+        "created": 1688022636401,
+        "uuid": "c1bde68f-f086-4393-8de6-62c313890c24",
+        "translations": {
+            "Deutsch": "Zufällig",
+            "English": "random",
+            "Espagnol": "al azar"
+        }
+    },
+    {
+        "description": "",
+        "tags": [
+            "Adjectives"
+        ],
+        "created": 1688022636516,
+        "uuid": "44fd9260-e1ef-47c3-ac9b-b8dfe03cc63e",
+        "translations": {
+            "Deutsch": "Genau",
+            "English": "exact",
+            "Espagnol": "preciso"
+        }
+    },
+    {
+        "description": "",
+        "tags": [
+            "Adjectives"
+        ],
+        "created": 1688022636638,
+        "uuid": "502b4280-4aaf-4f96-a5e6-62692c8b4681",
+        "translations": {
+            "Deutsch": "Willkürlich",
+            "English": "arbitrary",
+            "Espagnol": "arbitrario"
+        }
+    },
+    {
+        "description": "",
+        "tags": [
+            "Adjectives"
+        ],
+        "created": 1688022636768,
+        "uuid": "ec21bd24-21d7-4d20-a9d8-b8c9b2de0c5e",
+        "translations": {
+            "Deutsch": "Sehr",
+            "English": "very",
+            "Espagnol": "muy"
+        }
+    },
+    {
+        "description": "",
+        "tags": [
+            "Adjectives"
+        ],
+        "created": 1688022637028,
+        "uuid": "0c3d35d8-a681-43ee-9463-d426a31c67cf",
+        "translations": {
+            "Deutsch": "schnell",
+            "English": "fast",
+            "Espagnol": "rapido"
+        }
+    },
+    {
+        "description": "",
+        "tags": [
+            "Adjectives"
+        ],
+        "created": 1688022637132,
+        "uuid": "5e9be4cb-8baf-401d-a749-11696a664a7b",
+        "translations": {
+            "Deutsch": "langsam",
+            "English": "slow",
+            "Espagnol": "lento"
+        }
+    },
+    {
+        "description": "",
+        "tags": [
+            "Verbs"
+        ],
+        "created": 1688022897753,
+        "uuid": "a4704778-d139-4102-b8f4-c2b898129780",
+        "translations": {
+            "Deutsch": "brechen",
+            "English": "break",
+            "Espagnol": "romper"
+        }
+    },
+    {
+        "description": "",
+        "tags": [
+            "Household",
+            "Work",
+            "Traveling"
+        ],
+        "created": 1688022897891,
+        "uuid": "8aabbfe5-5ac6-4da3-8f88-bd918a7c8601",
+        "translations": {
+            "Deutsch": "Das Geld",
+            "English": "the money",
+            "Espagnol": "el dinero"
+        }
+    },
+    {
+        "description": "",
+        "tags": [
+            "Verbs"
+        ],
+        "created": 1688022898049,
+        "uuid": "df6a999c-311f-4e77-9d22-9dd6198835c5",
+        "translations": {
+            "Deutsch": "verdienen",
+            "English": "earn",
+            "Espagnol": "gane"
+        }
+    },
+    {
+        "description": "",
+        "tags": [
+            "Verbs"
+        ],
+        "created": 1688022898170,
+        "uuid": "fa50131d-94f7-4e8b-9bb8-d3e8acbb46ed",
+        "translations": {
+            "Deutsch": "verlieren",
+            "English": "lose",
+            "Espagnol": "perder"
+        }
+    },
+    {
+        "description": "",
+        "tags": [
+            "Verbs"
+        ],
+        "created": 1688022898308,
+        "uuid": "42294823-cad5-4a47-8f38-2ceb3a087603",
+        "translations": {
+            "Deutsch": "gewinnen",
+            "English": "win",
+            "Espagnol": "ganar"
+        }
+    },
+    {
+        "description": "",
+        "tags": [
+            "Hobbies",
+            "Body"
+        ],
+        "created": 1688022898526,
+        "uuid": "ee6f9f21-d241-46dd-a519-12ffdda0dc9b",
+        "translations": {
+            "Deutsch": "Die Liegestütze",
+            "English": "the pushups",
+            "Espagnol": "La flexion"
+        }
+    },
+    {
+        "description": "",
+        "tags": [
+            "Body"
+        ],
+        "created": 1688023010334,
+        "uuid": "42351710-26c1-475c-bfe0-23592e51f22c",
+        "translations": {
+            "Deutsch": "Der Zahn",
+            "English": "the tooth",
+            "Espagnol": "el diente"
+        }
+    },
+    {
+        "description": "",
+        "tags": [
+            "Verbs"
+        ],
+        "created": 1688023010527,
+        "uuid": "4efba14e-a9d7-4c8d-9fa6-fcae58ac4d91",
+        "translations": {
+            "Deutsch": "putzen",
+            "English": "clean",
+            "Espagnol": "limpiar"
+        }
+    },
+    {
+        "description": "",
+        "tags": [
+            "Verbs"
+        ],
+        "created": 1688023010721,
+        "uuid": "f7c04724-bb4d-49fa-bcba-42c2f4935e20",
+        "translations": {
+            "Deutsch": "machen",
+            "English": "make",
+            "Espagnol": "hacer"
+        }
+    },
+    {
+        "description": "",
+        "tags": [
+            "Traveling"
+        ],
+        "created": 1688023010903,
+        "uuid": "f214d872-ff9d-4ce2-b63b-19fe9d705a0c",
+        "translations": {
+            "Deutsch": "Die Insel",
+            "English": "the island",
+            "Espagnol": "La isla"
+        }
+    },
+    {
+        "description": "",
+        "tags": [
+            "Traveling",
+            "Traffic"
+        ],
+        "created": 1688023011064,
+        "uuid": "6a421dd2-7ee8-4f26-b809-1b75abc964a7",
+        "translations": {
+            "Deutsch": "Das Festland",
+            "English": "the main land",
+            "Espagnol": "El continente"
+        }
+    },
+    {
+        "description": "",
+        "tags": [
+            "Work",
+            "Traveling"
+        ],
+        "created": 1688023011211,
+        "uuid": "5ca5cbf8-c4f5-4448-b1d8-0b946d8553b2",
+        "translations": {
+            "Deutsch": "Die Ferien",
+            "English": "the vacation",
+            "Espagnol": "Los vacaciones"
+        }
+    },
+    {
+        "description": "",
+        "tags": [
+            "Buildings"
+        ],
+        "created": 1688023011363,
+        "uuid": "3f2e5f30-5cb9-4f28-b070-2ca40ca64c2e",
+        "translations": {
+            "Deutsch": "Das Gebäude",
+            "English": "the building",
+            "Espagnol": ""
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1688023011516,
+        "uuid": "97edffe6-a0d1-4d1a-8366-bc5aba4ea9af",
         "translations": {
             "Deutsch": "",
             "English": "",
@@ -4569,8 +4986,30 @@
     {
         "description": "",
         "tags": [],
-        "created": 1687945764008,
-        "uuid": "43dd2a73-418f-43ed-947f-f745a5778206",
+        "created": 1688023011690,
+        "uuid": "76acdb04-8e26-4d70-bfec-ef0dc4a881bc",
+        "translations": {
+            "Deutsch": "",
+            "English": "",
+            "Espagnol": ""
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1688023011860,
+        "uuid": "3e05e626-c9a7-4b45-ac51-bab0d9dc2f19",
+        "translations": {
+            "Deutsch": "",
+            "English": "",
+            "Espagnol": ""
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1688023012002,
+        "uuid": "13cf4443-d940-47cb-a584-0fa223c0679f",
         "translations": {
             "Deutsch": "",
             "English": "",
