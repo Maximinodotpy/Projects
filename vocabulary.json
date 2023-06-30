@@ -4969,18 +4969,21 @@
         "translations": {
             "Deutsch": "Das Gebäude",
             "English": "the building",
-            "Espagnol": ""
+            "Espagnol": "El edificio"
         }
     },
     {
         "description": "",
-        "tags": [],
+        "tags": [
+            "Work",
+            "Mathematics"
+        ],
         "created": 1688023011516,
         "uuid": "97edffe6-a0d1-4d1a-8366-bc5aba4ea9af",
         "translations": {
-            "Deutsch": "",
-            "English": "",
-            "Espagnol": ""
+            "Deutsch": "Der Massstab",
+            "English": "the ruler",
+            "Espagnol": "La balanza"
         }
     },
     {
@@ -4989,9 +4992,9 @@
         "created": 1688023011690,
         "uuid": "76acdb04-8e26-4d70-bfec-ef0dc4a881bc",
         "translations": {
-            "Deutsch": "",
-            "English": "",
-            "Espagnol": ""
+            "Deutsch": "Der Radierer",
+            "English": "the eraser",
+            "Espagnol": "El borrador"
         }
     },
     {
@@ -5000,9 +5003,9 @@
         "created": 1688023011860,
         "uuid": "3e05e626-c9a7-4b45-ac51-bab0d9dc2f19",
         "translations": {
-            "Deutsch": "",
-            "English": "",
-            "Espagnol": ""
+            "Deutsch": "Die Nachricht",
+            "English": "the message",
+            "Espagnol": "El mensaje"
         }
     },
     {
@@ -5011,9 +5014,132 @@
         "created": 1688023012002,
         "uuid": "13cf4443-d940-47cb-a584-0fa223c0679f",
         "translations": {
-            "Deutsch": "",
-            "English": "",
-            "Espagnol": ""
+            "Deutsch": "Das Telefon",
+            "English": "the telephone",
+            "Espagnol": "el telefono"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1688144536543,
+        "uuid": "27e26544-c916-456c-a375-c56865d06fd4",
+        "translations": {
+            "Deutsch": "Die Decke",
+            "English": "the blanket",
+            "Espagnol": "el techo"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1688144536890,
+        "uuid": "d231717f-a43e-4838-ace8-11820c3f1a26",
+        "translations": {
+            "Deutsch": "Das Bett",
+            "English": "the bed",
+            "Espagnol": "La cama"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1688144537214,
+        "uuid": "7502a4ad-b85b-42d3-a43c-13d120b683f9",
+        "translations": {
+            "Deutsch": "Das Kissen",
+            "English": "the pillow",
+            "Espagnol": "el cojin"
+        }
+    },
+    {
+        "description": "",
+        "tags": [
+            "Verbs"
+        ],
+        "created": 1688144537575,
+        "uuid": "0d589fa2-c79f-4a2b-99cf-827a9fb2744b",
+        "translations": {
+            "Deutsch": "teilen",
+            "English": "share",
+            "Espagnol": "comparta"
+        }
+    },
+    {
+        "description": "",
+        "tags": [
+            "Verbs"
+        ],
+        "created": 1688144537910,
+        "uuid": "e88980ce-95e2-40ef-a023-2aa00e4a239c",
+        "translations": {
+            "Deutsch": "färben",
+            "English": "color",
+            "Espagnol": "colorante"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1688144538290,
+        "uuid": "7365d709-57dd-43e3-bc6c-2a9ad0989b47",
+        "translations": {
+            "Deutsch": "Die Uhrzeit",
+            "English": "the time",
+            "Espagnol": "la hora"
+        }
+    },
+    {
+        "description": "",
+        "tags": [
+            "Verbs"
+        ],
+        "created": 1688144543109,
+        "uuid": "74f1b367-849d-4c01-b829-46a36b4ea7eb",
+        "translations": {
+            "Deutsch": "verabscheuen",
+            "English": "despise",
+            "Espagnol": "aboreccer"
+        }
+    },
+    {
+        "description": "",
+        "tags": [
+            "Household",
+            "Work"
+        ],
+        "created": 1688144544949,
+        "uuid": "90743e78-2016-46eb-9540-18ab56ec70d4",
+        "translations": {
+            "Deutsch": "Die Kamera",
+            "English": "the camera",
+            "Espagnol": "la camera"
+        }
+    },
+    {
+        "description": "",
+        "tags": [
+            "Emotions"
+        ],
+        "created": 1688144545416,
+        "uuid": "d402de36-2b60-4afd-adea-8db7ca0b3b3c",
+        "translations": {
+            "Deutsch": "Das Gefühl",
+            "English": "the feeling",
+            "Espagnol": "el sentimiento"
+        }
+    },
+    {
+        "description": "",
+        "tags": [
+            "Adjectives"
+        ],
+        "created": 1688144548267,
+        "uuid": "65725b77-fa30-451d-bb5f-ebcc59e6408c",
+        "translations": {
+            "Deutsch": "tief",
+            "English": "deepl",
+            "Espagnol": "produndo"
         }
     }
 ]
