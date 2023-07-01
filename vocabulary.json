@@ -5132,14 +5132,172 @@
     {
         "description": "",
         "tags": [
+            "Weather",
             "Adjectives"
         ],
-        "created": 1688144548267,
-        "uuid": "65725b77-fa30-451d-bb5f-ebcc59e6408c",
+        "created": 1688212685864,
+        "uuid": "39b658ad-b2c0-40ef-ba15-6bc1ed5318e5",
         "translations": {
-            "Deutsch": "tief",
-            "English": "deepl",
-            "Espagnol": "produndo"
+            "Deutsch": "heiss",
+            "English": "hot",
+            "Espagnol": "caliente"
+        }
+    },
+    {
+        "description": "",
+        "tags": [
+            "Weather",
+            "Adjectives"
+        ],
+        "created": 1688212686128,
+        "uuid": "7594567b-3b2d-464c-b929-2b2d13363439",
+        "translations": {
+            "Deutsch": "kalt",
+            "English": "cold",
+            "Espagnol": "frio"
+        }
+    },
+    {
+        "description": "",
+        "tags": [
+            "Work",
+            "Verbs"
+        ],
+        "created": 1688212745859,
+        "uuid": "4fd53592-9d8f-4d0d-8f77-1eccc9d6f5e9",
+        "translations": {
+            "Deutsch": "entfernen",
+            "English": "remove",
+            "Espagnol": "suprimir"
+        }
+    },
+    {
+        "description": "",
+        "tags": [
+            "Weather"
+        ],
+        "created": 1688212746163,
+        "uuid": "61e519fc-32c1-46a2-beff-b5dd730a742d",
+        "translations": {
+            "Deutsch": "Das Wetter",
+            "English": "the weather",
+            "Espagnol": "el tiempo"
+        }
+    },
+    {
+        "description": "",
+        "tags": [
+            "Work",
+            "Adjectives"
+        ],
+        "created": 1688212746729,
+        "uuid": "fa69a15a-d04d-407e-b1ce-c9ba8cc4d193",
+        "translations": {
+            "Deutsch": "kostenlos",
+            "English": "free",
+            "Espagnol": "gratis"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1688212747136,
+        "uuid": "a79fecc0-ea2c-414f-b55b-c634293ea7bc",
+        "translations": {
+            "Deutsch": "kostenpflichtig",
+            "English": "chargeable",
+            "Espagnol": "imputable"
+        }
+    },
+    {
+        "description": "",
+        "tags": [
+            "Adjectives"
+        ],
+        "created": 1688212747355,
+        "uuid": "b5d61f94-bcb6-4313-b654-2f2fde1cd9d4",
+        "translations": {
+            "Deutsch": "mehr",
+            "English": "more",
+            "Espagnol": "mas"
+        }
+    },
+    {
+        "description": "",
+        "tags": [
+            "Adjectives"
+        ],
+        "created": 1688212747574,
+        "uuid": "16403c60-ed19-4495-81dc-acb39c1f2b01",
+        "translations": {
+            "Deutsch": "weniger",
+            "English": "less",
+            "Espagnol": "menos"
+        }
+    },
+    {
+        "description": "",
+        "tags": [
+            "Verbs"
+        ],
+        "created": 1688212748529,
+        "uuid": "d415cb5b-99b7-447e-9a3a-ddd819c36be0",
+        "translations": {
+            "Deutsch": "anmelden",
+            "English": "login",
+            "Espagnol": "registro"
+        }
+    },
+    {
+        "description": "",
+        "tags": [
+            "Food"
+        ],
+        "created": 1688212749014,
+        "uuid": "4a8bf3f7-9ec9-4e5d-a88b-a49d6bb5e152",
+        "translations": {
+            "Deutsch": "Die Nahrung",
+            "English": "the food",
+            "Espagnol": "La comida"
+        }
+    },
+    {
+        "description": "",
+        "tags": [
+            "Work"
+        ],
+        "created": 1688212769721,
+        "uuid": "65306086-9dd9-43c3-9df7-62886fac6cd0",
+        "translations": {
+            "Deutsch": "Das Gesetz",
+            "English": "the law",
+            "Espagnol": "la ley"
+        }
+    },
+    {
+        "description": "",
+        "tags": [
+            "Work"
+        ],
+        "created": 1688213132065,
+        "uuid": "8dc08d20-1fd4-4294-9392-bf8beae78d2f",
+        "translations": {
+            "Deutsch": "Der Kriminelle",
+            "English": "the criminal",
+            "Espagnol": "el delincuente"
+        }
+    },
+    {
+        "description": "",
+        "tags": [
+            "Work"
+        ],
+        "created": 1688213157966,
+        "uuid": "d4ad8914-2df8-4cc5-aebd-cdbbd3a50995",
+        "translations": {
+            "Deutsch": "Der Anwalt",
+            "English": "the lawyer",
+            "Espagnol": "el abogado"
         }
     }
 ]
