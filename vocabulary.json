@@ -5299,5 +5299,513 @@
             "English": "the lawyer",
             "Espagnol": "el abogado"
         }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1688369586453,
+        "uuid": "d1d22c9c-d247-4b1d-8cb4-b2d1d23975a4",
+        "translations": {
+            "Deutsch": "Die Grenze",
+            "English": "the border",
+            "Espagnol": ""
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1688369586596,
+        "uuid": "8ac60d7b-ee0f-4269-9270-246c063fde9c",
+        "translations": {
+            "Deutsch": "Das Zoll",
+            "English": "the customs",
+            "Espagnol": "Las aduanes"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1688369586728,
+        "uuid": "d6f6f142-7543-4496-9a85-e18773284206",
+        "translations": {
+            "Deutsch": "einwandern",
+            "English": "immigrate",
+            "Espagnol": "imigrar"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1688369586860,
+        "uuid": "b15ae55e-a524-4b0d-a871-3dbba7dda98d",
+        "translations": {
+            "Deutsch": "auswandern",
+            "English": "emmigrate",
+            "Espagnol": "emigrar"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1688369586991,
+        "uuid": "8b72ac24-c9de-4a82-b42f-ad41419989c5",
+        "translations": {
+            "Deutsch": "fliehen",
+            "English": "flee",
+            "Espagnol": "huir"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1688369587135,
+        "uuid": "ef391c70-7eba-4557-a0bb-e007f17b9346",
+        "translations": {
+            "Deutsch": "bitte",
+            "English": "bitte",
+            "Espagnol": "por favor"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1688369587266,
+        "uuid": "a548fff8-db6e-4797-88c0-c47c2ddffb28",
+        "translations": {
+            "Deutsch": "danke",
+            "English": "thanks",
+            "Espagnol": "gracias"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1688369587398,
+        "uuid": "bc6202d3-2594-4f1a-be8f-80a540d60c1a",
+        "translations": {
+            "Deutsch": "Das Problem",
+            "English": "the problem",
+            "Espagnol": "el problema"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1688369587523,
+        "uuid": "6ce1616b-dbfa-4461-b36b-7ff99e212ed1",
+        "translations": {
+            "Deutsch": "Die Geschichte",
+            "English": "the history",
+            "Espagnol": "la historia"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1688369587661,
+        "uuid": "288f3436-ccdd-41f8-8af9-2f8b2b474401",
+        "translations": {
+            "Deutsch": "Die Infrastruktur",
+            "English": "the infrastructure",
+            "Espagnol": "La infraestructura"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1688369587827,
+        "uuid": "d8bd0e68-0b2c-482d-9cab-f6f9a8e6f10d",
+        "translations": {
+            "Deutsch": "Der Kampf",
+            "English": "the fight",
+            "Espagnol": "La lucha"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1688369587972,
+        "uuid": "ebd717f9-c3fd-435c-8782-24d4020e58bd",
+        "translations": {
+            "Deutsch": "Der Sumpf",
+            "English": "the swamp",
+            "Espagnol": "el pantano"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1688369588137,
+        "uuid": "e3a573fd-cfc3-468e-8662-ed039b8e0d61",
+        "translations": {
+            "Deutsch": "Die Wüste",
+            "English": "the desert",
+            "Espagnol": "El desierto"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1688369588297,
+        "uuid": "b661651d-1bfe-416f-9479-bf139a379b4f",
+        "translations": {
+            "Deutsch": "Die Schlucht",
+            "English": "the gorge",
+            "Espagnol": "el desfiladero"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1688369588545,
+        "uuid": "c2a85e1b-9630-4eb4-b996-36aec2df1c4d",
+        "translations": {
+            "Deutsch": "Die Kuh",
+            "English": "the cow",
+            "Espagnol": "La vaca"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1688369588779,
+        "uuid": "5de65d78-2271-4038-9f62-083a19e70fc6",
+        "translations": {
+            "Deutsch": "etwas",
+            "English": "something",
+            "Espagnol": "algo"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1688369589218,
+        "uuid": "fe452d37-bef4-474e-b193-08b54238de88",
+        "translations": {
+            "Deutsch": "sachen",
+            "English": "stuff",
+            "Espagnol": "cosas"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1688370236788,
+        "uuid": "a20495d8-65ea-4dfb-b466-1b8cefbf68f2",
+        "translations": {
+            "Deutsch": "Der Bauernhof",
+            "English": "the farm",
+            "Espagnol": "la granja"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1688370236956,
+        "uuid": "55eeb916-cbbc-4995-b550-5c69b4f31269",
+        "translations": {
+            "Deutsch": "vielleicht",
+            "English": "maybe",
+            "Espagnol": "tal vez"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1688370237118,
+        "uuid": "d90080b2-d561-45ce-afbc-e2f5aa859e9d",
+        "translations": {
+            "Deutsch": "Die Legende",
+            "English": "the legenda",
+            "Espagnol": "La leyenda"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1688370237279,
+        "uuid": "f8a1e660-1a88-4b16-899d-57052d7f5dac",
+        "translations": {
+            "Deutsch": "überspringen",
+            "English": "skip",
+            "Espagnol": "omitir"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1688370237424,
+        "uuid": "a71709e4-279e-43bf-9cbe-57247b51a2a5",
+        "translations": {
+            "Deutsch": "Die Maschine",
+            "English": "the machine",
+            "Espagnol": "La maquina"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1688370237543,
+        "uuid": "748e89e9-08c7-4890-88fe-f16879437a5a",
+        "translations": {
+            "Deutsch": "Jahr",
+            "English": "year",
+            "Espagnol": "Año"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1688370237674,
+        "uuid": "2d101b28-3227-4a63-8917-55f74e82f690",
+        "translations": {
+            "Deutsch": "Monat",
+            "English": "month",
+            "Espagnol": "mes"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1688370237795,
+        "uuid": "1f42e9a9-1737-4626-9139-7a3c92774d38",
+        "translations": {
+            "Deutsch": "jahrzehnt",
+            "English": "decade",
+            "Espagnol": "decada"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1688370237932,
+        "uuid": "468878ca-e558-4519-881d-1bd77c2b2b89",
+        "translations": {
+            "Deutsch": "Jahrhundert",
+            "English": "century",
+            "Espagnol": "centenario"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1688370238081,
+        "uuid": "d5e5da09-ae64-45f0-a61f-c89f6007f8a3",
+        "translations": {
+            "Deutsch": "erster",
+            "English": "first",
+            "Espagnol": "primero"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1688370238212,
+        "uuid": "296c521a-fe37-4d89-9452-057b9703aef7",
+        "translations": {
+            "Deutsch": "letzter",
+            "English": "last",
+            "Espagnol": "ultimo"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1688370238339,
+        "uuid": "60739482-9abf-470d-8fc3-7e9ba373a8ca",
+        "translations": {
+            "Deutsch": "Die Hexe",
+            "English": "the witch",
+            "Espagnol": "La bruja"
+        }
+    },
+    {
+        "description": "",
+        "tags": [
+            "Colors"
+        ],
+        "created": 1688370238462,
+        "uuid": "058a1f08-fd03-4a87-b3f8-6c1db4dce3b3",
+        "translations": {
+            "Deutsch": "Orange",
+            "English": "orange",
+            "Espagnol": "naranja"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1688370238596,
+        "uuid": "ec38ec11-0bc4-48d6-97be-68658410dcef",
+        "translations": {
+            "Deutsch": "denken",
+            "English": "think",
+            "Espagnol": "piense en"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1688370238739,
+        "uuid": "54761dd5-30c7-4b93-8404-e672acbf9605",
+        "translations": {
+            "Deutsch": "Der See",
+            "English": "the lake",
+            "Espagnol": "el lago"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1688370239323,
+        "uuid": "0597029d-cca8-4ae2-a749-18a60b717c7e",
+        "translations": {
+            "Deutsch": "Das Ufer",
+            "English": "the coast",
+            "Espagnol": "la costa"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1688370892026,
+        "uuid": "21f2f621-83b0-4103-80d7-82cda24843d2",
+        "translations": {
+            "Deutsch": "fliegen",
+            "English": "fly",
+            "Espagnol": "volar"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1688370892287,
+        "uuid": "2ec9764c-ed84-4531-bad7-db8330b374d9",
+        "translations": {
+            "Deutsch": "haben",
+            "English": "have",
+            "Espagnol": "tienen"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1688370892432,
+        "uuid": "cac708b6-e53a-42ca-9138-0476592446ad",
+        "translations": {
+            "Deutsch": "erzählen",
+            "English": "tell",
+            "Espagnol": "dile a"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1688370892584,
+        "uuid": "25be9515-ea0b-438f-ba32-ab8b0543a3dc",
+        "translations": {
+            "Deutsch": "warten",
+            "English": "wait",
+            "Espagnol": "espere"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1688370892736,
+        "uuid": "280cfad3-3277-4c64-b67f-801256621f45",
+        "translations": {
+            "Deutsch": "Die Zeichnung",
+            "English": "the drawing",
+            "Espagnol": "el dibujo"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1688370892888,
+        "uuid": "80b36a30-2dd3-4f9e-8828-22fee73f5e47",
+        "translations": {
+            "Deutsch": "suchen",
+            "English": "search",
+            "Espagnol": "busque"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1688370893068,
+        "uuid": "7c164bd5-a2e7-42ac-914e-a6f01839493b",
+        "translations": {
+            "Deutsch": "spielen",
+            "English": "play",
+            "Espagnol": "jugar"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1688371592145,
+        "uuid": "3901e493-b5b9-4c50-aa2a-3c4ed998d107",
+        "translations": {
+            "Deutsch": "weinen",
+            "English": "cry",
+            "Espagnol": "llorar"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1688371686783,
+        "uuid": "4f807177-f0e3-4907-bfc0-c21cbad56ca0",
+        "translations": {
+            "Deutsch": "vorbereitet",
+            "English": "prepared",
+            "Espagnol": "preparados"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1688371730028,
+        "uuid": "949316b7-6abf-40ba-a7d9-27db16d4c380",
+        "translations": {
+            "Deutsch": "lachen",
+            "English": "laugh",
+            "Espagnol": "reir"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1688371765409,
+        "uuid": "6cc454ab-7729-4108-a721-60bc616c09cd",
+        "translations": {
+            "Deutsch": "springen",
+            "English": "jump",
+            "Espagnol": "salatar"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1688371818994,
+        "uuid": "e0c53337-83cb-4c76-ad9f-7a4bcd902efe",
+        "translations": {
+            "Deutsch": "draussen",
+            "English": "outside",
+            "Espagnol": ""
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1688371867092,
+        "uuid": "e647399a-565c-46d7-9ca0-2fd44339d784",
+        "translations": {
+            "Deutsch": "bis später",
+            "English": "see you later",
+            "Espagnol": "hasta pronto"
+        }
     }
 ]
