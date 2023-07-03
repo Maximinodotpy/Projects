@@ -3278,19 +3278,6 @@
     {
         "description": "",
         "tags": [
-            "Verbs"
-        ],
-        "created": 1687540684896,
-        "uuid": "ae48be2b-2164-4296-b976-3117f9c90f2a",
-        "translations": {
-            "Deutsch": "lachen",
-            "English": "laugh",
-            "Espagnol": "riete"
-        }
-    },
-    {
-        "description": "",
-        "tags": [
             "Body"
         ],
         "created": 1687540685083,
@@ -5806,6 +5793,17 @@
             "Deutsch": "bis später",
             "English": "see you later",
             "Espagnol": "hasta pronto"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1688372033187,
+        "uuid": "648827a9-31a7-434f-8606-4018e6bde0f9",
+        "translations": {
+            "Deutsch": "Der Wein",
+            "English": "the wine",
+            "Espagnol": ""
         }
     }
 ]
