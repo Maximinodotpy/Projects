@@ -1,5 +1,7 @@
 [
     {
+        "uuid": "bcc85307-636f-45b6-8276-005f71c9c483",
+        "created": null,
         "description": "",
         "tags": [
             "Other"
@@ -8,10 +10,11 @@
             "Deutsch": "Das Haus",
             "English": "The house",
             "Espagnol": "La casa"
-        },
-        "uuid": "bcc85307-636f-45b6-8276-005f71c9c483"
+        }
     },
     {
+        "uuid": "65d87341-9bf3-4eb7-8bdf-dc808730ebf0",
+        "created": null,
         "description": "",
         "tags": [
             "Other"
@@ -20,10 +23,11 @@
             "Deutsch": "Der Baum",
             "English": "The tree",
             "Espagnol": "El árbol"
-        },
-        "uuid": "65d87341-9bf3-4eb7-8bdf-dc808730ebf0"
+        }
     },
     {
+        "uuid": "c8fa0b1d-11a8-4389-b888-58aca5882c0e",
+        "created": null,
         "description": "",
         "tags": [
             "Other"
@@ -32,20 +36,24 @@
             "Deutsch": "Die Stadt",
             "English": "The city",
             "Espagnol": "La ciudad"
-        },
-        "uuid": "c8fa0b1d-11a8-4389-b888-58aca5882c0e"
+        }
     },
     {
+        "uuid": "bbb62de6-62c3-4eee-99f4-1928c3bd95d3",
+        "created": null,
         "description": "",
-        "tags": [],
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Das Dorf",
             "English": "The village",
             "Espagnol": "El pueblo"
-        },
-        "uuid": "bbb62de6-62c3-4eee-99f4-1928c3bd95d3"
+        }
     },
     {
+        "uuid": "70648b57-0c8b-4551-9825-107c5f0ab631",
+        "created": null,
         "description": "",
         "tags": [
             "Traffic"
@@ -54,10 +62,11 @@
             "Deutsch": "Die Strasse",
             "English": "The street",
             "Espagnol": "La carretera"
-        },
-        "uuid": "70648b57-0c8b-4551-9825-107c5f0ab631"
+        }
     },
     {
+        "uuid": "ceb4c8cf-99ae-4783-8d56-107949b4f608",
+        "created": null,
         "description": "",
         "tags": [
             "Traffic"
@@ -66,10 +75,11 @@
             "Deutsch": "Der Weg",
             "English": "The way",
             "Espagnol": "El camino"
-        },
-        "uuid": "ceb4c8cf-99ae-4783-8d56-107949b4f608"
+        }
     },
     {
+        "uuid": "8ee5918e-29e0-464f-a74c-eab90fbc2958",
+        "created": null,
         "description": "",
         "tags": [
             "Other"
@@ -78,10 +88,11 @@
             "Deutsch": "Die Lampe",
             "English": "The lamp",
             "Espagnol": "Lámpara"
-        },
-        "uuid": "8ee5918e-29e0-464f-a74c-eab90fbc2958"
+        }
     },
     {
+        "uuid": "864a04dd-7a1c-461a-bd45-270c08434bbf",
+        "created": null,
         "description": "",
         "tags": [
             "Other"
@@ -90,10 +101,11 @@
             "Deutsch": "Das Wasser",
             "English": "The water",
             "Espagnol": "El agua"
-        },
-        "uuid": "864a04dd-7a1c-461a-bd45-270c08434bbf"
+        }
     },
     {
+        "uuid": "be2d52d2-e66c-4969-a792-237ca12756e1",
+        "created": null,
         "description": "",
         "tags": [
             "Clothing"
@@ -102,10 +114,11 @@
             "Deutsch": "Die Brille",
             "English": "The glasses",
             "Espagnol": "Las gafas"
-        },
-        "uuid": "be2d52d2-e66c-4969-a792-237ca12756e1"
+        }
     },
     {
+        "uuid": "c26a37ff-31cf-4e2a-85cc-b305bf42e9b1",
+        "created": null,
         "description": "",
         "tags": [
             "Other"
@@ -114,10 +127,11 @@
             "Deutsch": "Die Pflanze",
             "English": "The plant",
             "Espagnol": "La planta"
-        },
-        "uuid": "c26a37ff-31cf-4e2a-85cc-b305bf42e9b1"
+        }
     },
     {
+        "uuid": "6e3a5540-8b65-40d9-a8ab-d12dd9472a6b",
+        "created": null,
         "description": "",
         "tags": [
             "Traffic"
@@ -126,10 +140,11 @@
             "Deutsch": "Das Auto",
             "English": "The car",
             "Espagnol": "El automovil"
-        },
-        "uuid": "6e3a5540-8b65-40d9-a8ab-d12dd9472a6b"
+        }
     },
     {
+        "uuid": "07c0064f-38a3-45f8-af4c-a50e9a6a85f5",
+        "created": null,
         "description": "",
         "tags": [
             "Traveling"
@@ -138,10 +153,11 @@
             "Deutsch": "Der Rucksack",
             "English": "The backpack",
             "Espagnol": "La mochila"
-        },
-        "uuid": "07c0064f-38a3-45f8-af4c-a50e9a6a85f5"
+        }
     },
     {
+        "uuid": "74815db4-fe5d-4076-9ca5-b8898fd6ae80",
+        "created": null,
         "description": "",
         "tags": [
             "Hobbies"
@@ -150,10 +166,11 @@
             "Deutsch": "Die Freizeit",
             "English": "The freetime",
             "Espagnol": "El tiempo libre"
-        },
-        "uuid": "74815db4-fe5d-4076-9ca5-b8898fd6ae80"
+        }
     },
     {
+        "uuid": "b4e863a5-6ee8-41da-9336-3778a787f592",
+        "created": null,
         "description": "",
         "tags": [
             "Other"
@@ -162,10 +179,11 @@
             "Deutsch": "Die Zeit",
             "English": "The time",
             "Espagnol": "El tiempo"
-        },
-        "uuid": "b4e863a5-6ee8-41da-9336-3778a787f592"
+        }
     },
     {
+        "uuid": "5df0fdd6-104a-4070-bda6-2016eaebb6f8",
+        "created": null,
         "description": "",
         "tags": [
             "Other"
@@ -174,10 +192,11 @@
             "Deutsch": "Frei",
             "English": "free",
             "Espagnol": "libre"
-        },
-        "uuid": "5df0fdd6-104a-4070-bda6-2016eaebb6f8"
+        }
     },
     {
+        "uuid": "fd35cc22-55ee-4c17-9563-7d890df0fd10",
+        "created": null,
         "description": "",
         "tags": [
             "Other",
@@ -187,10 +206,11 @@
             "Deutsch": "Die Flasche",
             "English": "The bottle",
             "Espagnol": "La botella"
-        },
-        "uuid": "fd35cc22-55ee-4c17-9563-7d890df0fd10"
+        }
     },
     {
+        "uuid": "981b12d2-5b63-45c9-9a20-006ddba18d3f",
+        "created": null,
         "description": "",
         "tags": [
             "Other"
@@ -199,10 +219,11 @@
             "Deutsch": "Die Wahrheit",
             "English": "The truth",
             "Espagnol": "La verdad"
-        },
-        "uuid": "981b12d2-5b63-45c9-9a20-006ddba18d3f"
+        }
     },
     {
+        "uuid": "cf7b5f00-1617-4809-9cc4-25b01ae0d4f2",
+        "created": null,
         "description": "",
         "tags": [
             "Work"
@@ -211,10 +232,11 @@
             "Deutsch": "Die Arbeit",
             "English": "The work",
             "Espagnol": "El trabajo"
-        },
-        "uuid": "cf7b5f00-1617-4809-9cc4-25b01ae0d4f2"
+        }
     },
     {
+        "uuid": "9bc4869e-70b2-4883-b42a-c03b50552b08",
+        "created": null,
         "description": "",
         "tags": [
             "Other"
@@ -223,20 +245,24 @@
             "Deutsch": "Die Musik",
             "English": "The music",
             "Espagnol": "La música"
-        },
-        "uuid": "9bc4869e-70b2-4883-b42a-c03b50552b08"
+        }
     },
     {
+        "uuid": "36918474-03d2-4896-8817-61a330e4cb7e",
+        "created": null,
         "description": "",
-        "tags": [],
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Das Fenster",
             "English": "The window",
             "Espagnol": "La ventana"
-        },
-        "uuid": "36918474-03d2-4896-8817-61a330e4cb7e"
+        }
     },
     {
+        "uuid": "878243cf-94b7-4e2a-9d72-c32475b324f4",
+        "created": null,
         "description": "",
         "tags": [
             "Clothing"
@@ -245,10 +271,11 @@
             "Deutsch": "Das Hemd",
             "English": "The shirt",
             "Espagnol": "La camisa"
-        },
-        "uuid": "878243cf-94b7-4e2a-9d72-c32475b324f4"
+        }
     },
     {
+        "uuid": "42b23ab3-f15f-43ac-90d0-ffc167c903b0",
+        "created": null,
         "description": "",
         "tags": [
             "Clothing"
@@ -257,10 +284,11 @@
             "Deutsch": "Die Hose",
             "English": "The pants",
             "Espagnol": "Los pantalones"
-        },
-        "uuid": "42b23ab3-f15f-43ac-90d0-ffc167c903b0"
+        }
     },
     {
+        "uuid": "edd3c7b9-1c2e-4dbc-baaa-1691fab16d5b",
+        "created": null,
         "description": "",
         "tags": [
             "Clothing"
@@ -269,10 +297,11 @@
             "Deutsch": "Die Schuhe",
             "English": "The shoes",
             "Espagnol": "Los zapatos"
-        },
-        "uuid": "edd3c7b9-1c2e-4dbc-baaa-1691fab16d5b"
+        }
     },
     {
+        "uuid": "024f1ffb-0e40-4a75-b6da-2f75a2c595eb",
+        "created": null,
         "description": "",
         "tags": [
             "Clothing"
@@ -281,10 +310,11 @@
             "Deutsch": "Die Uhr",
             "English": "The clock",
             "Espagnol": "El reloj"
-        },
-        "uuid": "024f1ffb-0e40-4a75-b6da-2f75a2c595eb"
+        }
     },
     {
+        "uuid": "0b35bb43-2eea-44c2-949d-7f4da8d3b4f6",
+        "created": null,
         "description": "",
         "tags": [
             "Body"
@@ -293,10 +323,11 @@
             "Deutsch": "Das Ohr",
             "English": "The ear",
             "Espagnol": "El oído"
-        },
-        "uuid": "0b35bb43-2eea-44c2-949d-7f4da8d3b4f6"
+        }
     },
     {
+        "uuid": "becee60e-c708-46f5-bc5a-233aae989203",
+        "created": null,
         "description": "",
         "tags": [
             "Body"
@@ -305,10 +336,11 @@
             "Deutsch": "Das Haar",
             "English": "The hair",
             "Espagnol": "El pelo"
-        },
-        "uuid": "becee60e-c708-46f5-bc5a-233aae989203"
+        }
     },
     {
+        "uuid": "ba3a96ae-a1f2-449a-8ad5-201f3ef39003",
+        "created": null,
         "description": "",
         "tags": [
             "Body"
@@ -317,10 +349,11 @@
             "Deutsch": "Die Hand",
             "English": "The hand",
             "Espagnol": "La mano"
-        },
-        "uuid": "ba3a96ae-a1f2-449a-8ad5-201f3ef39003"
+        }
     },
     {
+        "uuid": "79b7240d-ba77-470f-be7c-ded466a35906",
+        "created": null,
         "description": "",
         "tags": [
             "Body"
@@ -329,10 +362,11 @@
             "Deutsch": "Der Rücken",
             "English": "The back",
             "Espagnol": "El reverso"
-        },
-        "uuid": "79b7240d-ba77-470f-be7c-ded466a35906"
+        }
     },
     {
+        "uuid": "db976fb3-f95a-40c4-8588-22f0bf24027f",
+        "created": null,
         "description": "",
         "tags": [
             "Body"
@@ -341,40 +375,50 @@
             "Deutsch": "Der Fuss",
             "English": "The foot",
             "Espagnol": "El pie"
-        },
-        "uuid": "db976fb3-f95a-40c4-8588-22f0bf24027f"
+        }
     },
     {
+        "uuid": "aea45476-e936-415c-8442-05984f7dd8f7",
+        "created": null,
         "description": "",
-        "tags": [],
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Das Licht",
             "English": "The light",
             "Espagnol": "La luz"
-        },
-        "uuid": "aea45476-e936-415c-8442-05984f7dd8f7"
+        }
     },
     {
+        "uuid": "959176fd-1c7c-4349-81fa-c3bb29ba19b5",
+        "created": null,
         "description": "",
-        "tags": [],
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Der Stein",
             "English": "The stone",
             "Espagnol": "La piedra"
-        },
-        "uuid": "959176fd-1c7c-4349-81fa-c3bb29ba19b5"
+        }
     },
     {
+        "uuid": "8a38a8f4-6813-4fef-94f7-75ca92725bf6",
+        "created": null,
         "description": "",
-        "tags": [],
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Der Berg",
             "English": "The mountain",
             "Espagnol": "La montaña"
-        },
-        "uuid": "8a38a8f4-6813-4fef-94f7-75ca92725bf6"
+        }
     },
     {
+        "uuid": "d02ee710-14f4-4352-9a43-ab07e6ab61a3",
+        "created": null,
         "description": "",
         "tags": [
             "Body"
@@ -383,60 +427,76 @@
             "Deutsch": "Das Herz",
             "English": "The heart",
             "Espagnol": "El corazón"
-        },
-        "uuid": "d02ee710-14f4-4352-9a43-ab07e6ab61a3"
+        }
     },
     {
+        "uuid": "a4e3c7bc-4e0a-4c68-905c-1ac5ce45bd6d",
+        "created": null,
         "description": "",
-        "tags": [],
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Der Hund",
             "English": "The dog",
             "Espagnol": "El perro"
-        },
-        "uuid": "a4e3c7bc-4e0a-4c68-905c-1ac5ce45bd6d"
+        }
     },
     {
+        "uuid": "5fb438cd-14fb-4bcc-9f88-038bce3ba06d",
+        "created": null,
         "description": "",
-        "tags": [],
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Die Katze",
             "English": "The cat",
             "Espagnol": "El gato"
-        },
-        "uuid": "5fb438cd-14fb-4bcc-9f88-038bce3ba06d"
+        }
     },
     {
+        "uuid": "28c5143a-507d-421f-a7a7-51585c89c7c0",
+        "created": null,
         "description": "",
-        "tags": [],
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Die Tür",
             "English": "The door",
             "Espagnol": "La puerta"
-        },
-        "uuid": "28c5143a-507d-421f-a7a7-51585c89c7c0"
+        }
     },
     {
+        "uuid": "5105bbc6-4b34-46df-a8b6-88c94d39a642",
+        "created": null,
         "description": "",
-        "tags": [],
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Der Gang",
             "English": "The Hallway",
             "Espagnol": "El pasillo"
-        },
-        "uuid": "5105bbc6-4b34-46df-a8b6-88c94d39a642"
+        }
     },
     {
+        "uuid": "c78e1995-87d5-4bb9-8cd1-10f146f699a5",
+        "created": null,
         "description": "",
-        "tags": [],
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Die Augen",
             "English": "The eyes",
             "Espagnol": "Les ojos"
-        },
-        "uuid": "c78e1995-87d5-4bb9-8cd1-10f146f699a5"
+        }
     },
     {
+        "uuid": "3fac4dff-baa2-4cbe-8c47-9dfee25970a3",
+        "created": null,
         "description": "",
         "tags": [
             "Numbers"
@@ -445,10 +505,11 @@
             "Deutsch": "Eins",
             "English": "One",
             "Espagnol": "un"
-        },
-        "uuid": "3fac4dff-baa2-4cbe-8c47-9dfee25970a3"
+        }
     },
     {
+        "uuid": "a9c2d4a8-eba6-4f32-ae5d-e7367dc55aef",
+        "created": null,
         "description": "",
         "tags": [
             "Numbers"
@@ -457,10 +518,11 @@
             "Deutsch": "Zwei",
             "English": "Two",
             "Espagnol": "dos"
-        },
-        "uuid": "a9c2d4a8-eba6-4f32-ae5d-e7367dc55aef"
+        }
     },
     {
+        "uuid": "a5ae8dbc-3c04-4fdc-9e27-f2fedfb0ef6c",
+        "created": null,
         "description": "",
         "tags": [
             "Numbers"
@@ -469,10 +531,11 @@
             "Deutsch": "Drei",
             "English": "three",
             "Espagnol": "tres"
-        },
-        "uuid": "a5ae8dbc-3c04-4fdc-9e27-f2fedfb0ef6c"
+        }
     },
     {
+        "uuid": "dad91cc0-bfa5-4440-ac11-61dbb7f4b5ed",
+        "created": null,
         "description": "",
         "tags": [
             "Numbers"
@@ -481,10 +544,11 @@
             "Deutsch": "Vier",
             "English": "Four",
             "Espagnol": "quatros"
-        },
-        "uuid": "dad91cc0-bfa5-4440-ac11-61dbb7f4b5ed"
+        }
     },
     {
+        "uuid": "c5ee6d9e-11c8-494c-af2d-999657c5b025",
+        "created": null,
         "description": "",
         "tags": [
             "Numbers"
@@ -493,10 +557,11 @@
             "Deutsch": "Fünf",
             "English": "Five",
             "Espagnol": "cinqos"
-        },
-        "uuid": "c5ee6d9e-11c8-494c-af2d-999657c5b025"
+        }
     },
     {
+        "uuid": "e8698adc-c703-4917-bd64-328795a1d989",
+        "created": null,
         "description": "",
         "tags": [
             "Numbers"
@@ -505,10 +570,11 @@
             "Deutsch": "Sechs",
             "English": "Six",
             "Espagnol": "seis"
-        },
-        "uuid": "e8698adc-c703-4917-bd64-328795a1d989"
+        }
     },
     {
+        "uuid": "59c961ff-8e0c-41b9-ac3b-b805ef70fc55",
+        "created": null,
         "description": "",
         "tags": [
             "Numbers"
@@ -517,10 +583,11 @@
             "Deutsch": "Sieben",
             "English": "Seven",
             "Espagnol": "siete"
-        },
-        "uuid": "59c961ff-8e0c-41b9-ac3b-b805ef70fc55"
+        }
     },
     {
+        "uuid": "3890d8db-3ec5-4a35-953e-27009a423151",
+        "created": null,
         "description": "",
         "tags": [
             "Numbers"
@@ -529,10 +596,11 @@
             "Deutsch": "Acht",
             "English": "Eight",
             "Espagnol": "ocho"
-        },
-        "uuid": "3890d8db-3ec5-4a35-953e-27009a423151"
+        }
     },
     {
+        "uuid": "19c11160-ee5b-4c52-ac34-21e625963db9",
+        "created": null,
         "description": "",
         "tags": [
             "Numbers"
@@ -541,10 +609,11 @@
             "Deutsch": "Neun",
             "English": "Nine",
             "Espagnol": "nueve"
-        },
-        "uuid": "19c11160-ee5b-4c52-ac34-21e625963db9"
+        }
     },
     {
+        "uuid": "c53e7a38-d242-4a94-a081-ec9fb93fd4e4",
+        "created": null,
         "description": "",
         "tags": [
             "Numbers"
@@ -553,10 +622,11 @@
             "Deutsch": "Zehn",
             "English": "Ten",
             "Espagnol": "diez"
-        },
-        "uuid": "c53e7a38-d242-4a94-a081-ec9fb93fd4e4"
+        }
     },
     {
+        "uuid": "d3cf6619-8cf6-43eb-bb9d-44faefd406f1",
+        "created": null,
         "description": "",
         "tags": [
             "Numbers"
@@ -565,10 +635,11 @@
             "Deutsch": "Elf",
             "English": "Eleven",
             "Espagnol": "once"
-        },
-        "uuid": "d3cf6619-8cf6-43eb-bb9d-44faefd406f1"
+        }
     },
     {
+        "uuid": "b8c9f064-9ebc-4056-b1d7-cc91aa5b1a78",
+        "created": null,
         "description": "",
         "tags": [
             "Numbers"
@@ -577,10 +648,11 @@
             "Deutsch": "Zwölf",
             "English": "Twelve",
             "Espagnol": "doce"
-        },
-        "uuid": "b8c9f064-9ebc-4056-b1d7-cc91aa5b1a78"
+        }
     },
     {
+        "uuid": "07ab513a-be42-45bb-9ddf-ea6214f0815a",
+        "created": null,
         "description": "",
         "tags": [
             "Numbers"
@@ -589,10 +661,11 @@
             "Deutsch": "Dreizehn",
             "English": "Thirteen",
             "Espagnol": "trece"
-        },
-        "uuid": "07ab513a-be42-45bb-9ddf-ea6214f0815a"
+        }
     },
     {
+        "uuid": "12469823-9e73-4781-8036-9b951ca027c4",
+        "created": null,
         "description": "",
         "tags": [
             "Numbers"
@@ -601,10 +674,11 @@
             "Deutsch": "Vierzehn",
             "English": "Fourteen",
             "Espagnol": "catorce"
-        },
-        "uuid": "12469823-9e73-4781-8036-9b951ca027c4"
+        }
     },
     {
+        "uuid": "a89de747-12e3-4514-b617-7476a478737f",
+        "created": null,
         "description": "",
         "tags": [
             "Numbers"
@@ -613,10 +687,11 @@
             "Deutsch": "Fünfzehn",
             "English": "Fifteen",
             "Espagnol": "quince"
-        },
-        "uuid": "a89de747-12e3-4514-b617-7476a478737f"
+        }
     },
     {
+        "uuid": "1b36bc5e-8261-4b31-93c4-f8402d313eb2",
+        "created": null,
         "description": "",
         "tags": [
             "Numbers"
@@ -625,10 +700,11 @@
             "Deutsch": "Sechszehn",
             "English": "Sixteen",
             "Espagnol": "dieciséis"
-        },
-        "uuid": "1b36bc5e-8261-4b31-93c4-f8402d313eb2"
+        }
     },
     {
+        "uuid": "13a3e10f-a50f-4a2a-8cdb-dce7811fb8e0",
+        "created": null,
         "description": "",
         "tags": [
             "Numbers"
@@ -637,10 +713,11 @@
             "Deutsch": "Siebzehn",
             "English": "Seventeen",
             "Espagnol": "diecisiete"
-        },
-        "uuid": "13a3e10f-a50f-4a2a-8cdb-dce7811fb8e0"
+        }
     },
     {
+        "uuid": "9ac069fe-8692-498f-8181-19e3f58bb73f",
+        "created": null,
         "description": "",
         "tags": [
             "Numbers"
@@ -649,10 +726,11 @@
             "Deutsch": "Achtzehn",
             "English": "Eightteen",
             "Espagnol": "Dieciocho"
-        },
-        "uuid": "9ac069fe-8692-498f-8181-19e3f58bb73f"
+        }
     },
     {
+        "uuid": "19a711d1-45b8-4fe8-8400-f85d54b31eee",
+        "created": null,
         "description": "",
         "tags": [
             "Numbers"
@@ -661,10 +739,11 @@
             "Deutsch": "Neunzehn",
             "English": "Nineteen",
             "Espagnol": "Diechinueve"
-        },
-        "uuid": "19a711d1-45b8-4fe8-8400-f85d54b31eee"
+        }
     },
     {
+        "uuid": "808e9fea-1c1a-4374-9b72-5695dc1a725b",
+        "created": null,
         "description": "",
         "tags": [
             "Numbers"
@@ -673,10 +752,11 @@
             "Deutsch": "Zwanzig",
             "English": "Twenty",
             "Espagnol": "veinte"
-        },
-        "uuid": "808e9fea-1c1a-4374-9b72-5695dc1a725b"
+        }
     },
     {
+        "uuid": "eb7a5bba-00cd-4feb-bdde-deb5d897f9ba",
+        "created": null,
         "description": "",
         "tags": [
             "Numbers"
@@ -685,10 +765,11 @@
             "Deutsch": "Einundzwanzig",
             "English": "Twenty-one",
             "Espagnol": "veintiuno"
-        },
-        "uuid": "eb7a5bba-00cd-4feb-bdde-deb5d897f9ba"
+        }
     },
     {
+        "uuid": "d9d7b34b-60fc-4db0-9a71-c91c766022ed",
+        "created": null,
         "description": "",
         "tags": [
             "Numbers"
@@ -697,10 +778,11 @@
             "Deutsch": "Zweiundzwanzig",
             "English": "Twenty-two",
             "Espagnol": "veintidos"
-        },
-        "uuid": "d9d7b34b-60fc-4db0-9a71-c91c766022ed"
+        }
     },
     {
+        "uuid": "b2e96984-e972-44d1-96db-6d84b8af6894",
+        "created": null,
         "description": "",
         "tags": [
             "Numbers"
@@ -709,10 +791,11 @@
             "Deutsch": "Dreissig",
             "English": "Thirty",
             "Espagnol": "treinta"
-        },
-        "uuid": "b2e96984-e972-44d1-96db-6d84b8af6894"
+        }
     },
     {
+        "uuid": "04279634-bef8-4adc-82da-7dd6b0cd5ad6",
+        "created": null,
         "description": "",
         "tags": [
             "Numbers"
@@ -721,10 +804,11 @@
             "Deutsch": "Vierzig",
             "English": "Fourty",
             "Espagnol": "cuarenta"
-        },
-        "uuid": "04279634-bef8-4adc-82da-7dd6b0cd5ad6"
+        }
     },
     {
+        "uuid": "2344db2d-04f4-430b-98ae-a3881fe20c70",
+        "created": null,
         "description": "",
         "tags": [
             "Numbers"
@@ -733,10 +817,11 @@
             "Deutsch": "Fünfzig",
             "English": "Fifty",
             "Espagnol": "cincuenta"
-        },
-        "uuid": "2344db2d-04f4-430b-98ae-a3881fe20c70"
+        }
     },
     {
+        "uuid": "31003851-5db2-4691-b390-782458e412d7",
+        "created": null,
         "description": "",
         "tags": [
             "Numbers"
@@ -745,10 +830,11 @@
             "Deutsch": "Sechszig",
             "English": "Sixty",
             "Espagnol": "sesenta"
-        },
-        "uuid": "31003851-5db2-4691-b390-782458e412d7"
+        }
     },
     {
+        "uuid": "1f5df551-46b6-4837-a77e-8bc12497a5a0",
+        "created": null,
         "description": "",
         "tags": [
             "Numbers"
@@ -757,10 +843,11 @@
             "Deutsch": "Siebzig",
             "English": "Seventy",
             "Espagnol": "setenta"
-        },
-        "uuid": "1f5df551-46b6-4837-a77e-8bc12497a5a0"
+        }
     },
     {
+        "uuid": "f4e41a0a-1b21-45d6-a0af-4f5191df6a75",
+        "created": null,
         "description": "",
         "tags": [
             "Numbers"
@@ -769,10 +856,11 @@
             "Deutsch": "Achtzig",
             "English": "Eighty",
             "Espagnol": "ochenta"
-        },
-        "uuid": "f4e41a0a-1b21-45d6-a0af-4f5191df6a75"
+        }
     },
     {
+        "uuid": "a44748db-4df0-4641-8425-c1ae6f3ee0c1",
+        "created": null,
         "description": "",
         "tags": [
             "Numbers"
@@ -781,10 +869,11 @@
             "Deutsch": "Neunzig",
             "English": "Ninety",
             "Espagnol": "noventa"
-        },
-        "uuid": "a44748db-4df0-4641-8425-c1ae6f3ee0c1"
+        }
     },
     {
+        "uuid": "24eecc96-769f-4c04-b2ab-dd1439de0efc",
+        "created": null,
         "description": "",
         "tags": [
             "Numbers"
@@ -793,10 +882,11 @@
             "Deutsch": "Hundert",
             "English": "Hundret",
             "Espagnol": "cient"
-        },
-        "uuid": "24eecc96-769f-4c04-b2ab-dd1439de0efc"
+        }
     },
     {
+        "uuid": "e4715542-6090-4fa3-85f2-e8cba2ccf566",
+        "created": null,
         "description": "",
         "tags": [
             "Numbers"
@@ -805,10 +895,11 @@
             "Deutsch": "Zweihundert",
             "English": "Two-hundret",
             "Espagnol": "doscientas"
-        },
-        "uuid": "e4715542-6090-4fa3-85f2-e8cba2ccf566"
+        }
     },
     {
+        "uuid": "27c37c41-3755-4b21-8871-8e47ee25d607",
+        "created": null,
         "description": "",
         "tags": [
             "Numbers"
@@ -817,10 +908,11 @@
             "Deutsch": "Tausend",
             "English": "Thousand",
             "Espagnol": "mil"
-        },
-        "uuid": "27c37c41-3755-4b21-8871-8e47ee25d607"
+        }
     },
     {
+        "uuid": "67cc4419-b20d-482e-9ba2-2a901a12c203",
+        "created": null,
         "description": "",
         "tags": [
             "Other"
@@ -829,10 +921,11 @@
             "Deutsch": "Verrückt",
             "English": "crazy",
             "Espagnol": "loco"
-        },
-        "uuid": "67cc4419-b20d-482e-9ba2-2a901a12c203"
+        }
     },
     {
+        "uuid": "129ef336-3888-42d9-8958-9f9f603931a7",
+        "created": null,
         "description": "",
         "tags": [
             "Food"
@@ -841,10 +934,11 @@
             "Deutsch": "Der Markt",
             "English": "The market",
             "Espagnol": "El mercado"
-        },
-        "uuid": "129ef336-3888-42d9-8958-9f9f603931a7"
+        }
     },
     {
+        "uuid": "e9889ee6-7df9-4b01-b811-0babbc6488da",
+        "created": null,
         "description": "",
         "tags": [
             "Family"
@@ -853,10 +947,11 @@
             "Deutsch": "Der Vater",
             "English": "The father",
             "Espagnol": "El padre"
-        },
-        "uuid": "e9889ee6-7df9-4b01-b811-0babbc6488da"
+        }
     },
     {
+        "uuid": "fbc35d94-10b6-473a-b0db-0eb330b93f2f",
+        "created": null,
         "description": "",
         "tags": [
             "Family"
@@ -865,10 +960,11 @@
             "Deutsch": "Die Mutter",
             "English": "The mother",
             "Espagnol": "La madre"
-        },
-        "uuid": "fbc35d94-10b6-473a-b0db-0eb330b93f2f"
+        }
     },
     {
+        "uuid": "5c4e5516-f7ed-4a60-b1be-cfdfee82682d",
+        "created": null,
         "description": "",
         "tags": [
             "Family"
@@ -877,10 +973,11 @@
             "Deutsch": "Der Bruder",
             "English": "The brother",
             "Espagnol": "El hermano"
-        },
-        "uuid": "5c4e5516-f7ed-4a60-b1be-cfdfee82682d"
+        }
     },
     {
+        "uuid": "6910e40e-24a3-4c66-9c25-8359a7ab7852",
+        "created": null,
         "description": "",
         "tags": [
             "Family"
@@ -889,10 +986,11 @@
             "Deutsch": "Die Schwester",
             "English": "The sister",
             "Espagnol": "La hermana"
-        },
-        "uuid": "6910e40e-24a3-4c66-9c25-8359a7ab7852"
+        }
     },
     {
+        "uuid": "7af6307f-505f-48b9-a4bb-19bcee3e3699",
+        "created": null,
         "description": "",
         "tags": [
             "Family"
@@ -901,10 +999,11 @@
             "Deutsch": "Der Sohn",
             "English": "The son",
             "Espagnol": "El hijo"
-        },
-        "uuid": "7af6307f-505f-48b9-a4bb-19bcee3e3699"
+        }
     },
     {
+        "uuid": "766edffd-1f3a-4973-8b9b-b178f92189cc",
+        "created": null,
         "description": "",
         "tags": [
             "Family"
@@ -913,10 +1012,11 @@
             "Deutsch": "Die Tochter",
             "English": "The daughter",
             "Espagnol": "La hija"
-        },
-        "uuid": "766edffd-1f3a-4973-8b9b-b178f92189cc"
+        }
     },
     {
+        "uuid": "2d1b66a4-5624-4643-bfa2-672cab41fb75",
+        "created": null,
         "description": "",
         "tags": [
             "Family"
@@ -925,10 +1025,11 @@
             "Deutsch": "Der Onkel",
             "English": "The uncle",
             "Espagnol": "el tio"
-        },
-        "uuid": "2d1b66a4-5624-4643-bfa2-672cab41fb75"
+        }
     },
     {
+        "uuid": "4107ff6f-7bc1-4d9f-a0e0-d7c609c3a6e2",
+        "created": null,
         "description": "",
         "tags": [
             "Family"
@@ -937,10 +1038,11 @@
             "Deutsch": "Die Tante",
             "English": "The aunt",
             "Espagnol": "La tia"
-        },
-        "uuid": "4107ff6f-7bc1-4d9f-a0e0-d7c609c3a6e2"
+        }
     },
     {
+        "uuid": "f88bfa35-202e-463a-acee-ce444927aaab",
+        "created": null,
         "description": "",
         "tags": [
             "Family"
@@ -949,10 +1051,11 @@
             "Deutsch": "Der Pate",
             "English": "The godfather",
             "Espagnol": "el padrino"
-        },
-        "uuid": "f88bfa35-202e-463a-acee-ce444927aaab"
+        }
     },
     {
+        "uuid": "bc4d7c3e-6d37-4011-b576-01652146354a",
+        "created": null,
         "description": "",
         "tags": [
             "Family"
@@ -961,10 +1064,11 @@
             "Deutsch": "Die Patin",
             "English": "The godmother",
             "Espagnol": "La madrino"
-        },
-        "uuid": "bc4d7c3e-6d37-4011-b576-01652146354a"
+        }
     },
     {
+        "uuid": "522370a8-630d-457a-aad1-b5d51979627e",
+        "created": null,
         "description": "",
         "tags": [
             "Family"
@@ -973,10 +1077,11 @@
             "Deutsch": "Der Cousin",
             "English": "The cousin",
             "Espagnol": "El primo"
-        },
-        "uuid": "522370a8-630d-457a-aad1-b5d51979627e"
+        }
     },
     {
+        "uuid": "e5ea08a0-bab3-4283-b339-8c8940f27c70",
+        "created": null,
         "description": "",
         "tags": [
             "Family"
@@ -985,14 +1090,15 @@
             "Deutsch": "Die Cousine",
             "English": "The cousin",
             "Espagnol": "La prima"
-        },
-        "uuid": "e5ea08a0-bab3-4283-b339-8c8940f27c70"
+        }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687417677401,
         "uuid": "070d2372-0d84-4d62-ad68-22ec5ff78999",
+        "created": 1687417677401,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "helfen",
             "English": "help",
@@ -1000,10 +1106,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687417315246,
         "uuid": "a7b12aec-58f1-42d7-ae2e-98b780b7a958",
+        "created": 1687417315246,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Der Sturm",
             "English": "The storm",
@@ -1011,10 +1119,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687417008705,
         "uuid": "449d4511-badb-4b5d-806c-bee6375cf2e5",
+        "created": 1687417008705,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Der Regen",
             "English": "The rain",
@@ -1022,10 +1132,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687417008634,
         "uuid": "514f0bde-3613-41d4-9cfc-09e2217be235",
+        "created": 1687417008634,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Die Wolken",
             "English": "The clouds",
@@ -1033,10 +1145,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687417008379,
         "uuid": "adc344a1-1506-4609-abb8-31f3a2014d21",
+        "created": 1687417008379,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Der Himmel",
             "English": "The sky",
@@ -1044,10 +1158,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687417007753,
         "uuid": "6ad344d5-dec0-4bd6-ada1-4a83343b6936",
+        "created": 1687417007753,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Die Zutaten",
             "English": "The ingredients",
@@ -1055,10 +1171,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687416950855,
         "uuid": "c37b519f-6692-4209-ac5f-430b12b089bc",
+        "created": 1687416950855,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Die Region",
             "English": "The region",
@@ -1066,10 +1184,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687416950782,
         "uuid": "f6e7ed1f-8ef2-404f-8024-35f0454b7c5c",
+        "created": 1687416950782,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Das Labor",
             "English": "The lab",
@@ -1077,10 +1197,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687416950524,
         "uuid": "3b3c0177-df7f-41d6-b6d0-7caac473fca5",
+        "created": 1687416950524,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Die Kunst",
             "English": "The art",
@@ -1088,10 +1210,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687416886282,
         "uuid": "6428e656-9f27-4283-951a-a29b6f7db80e",
+        "created": 1687416886282,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Die Kultur",
             "English": "The culture",
@@ -1099,10 +1223,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687416886151,
         "uuid": "2e5598e2-a647-4911-aed9-b37c4355ab5a",
+        "created": 1687416886151,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Die Fehde",
             "English": "The feud",
@@ -1110,10 +1236,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687416885984,
         "uuid": "3af017b8-e03e-456f-9837-7f8e2e9cc2db",
+        "created": 1687416885984,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "benachrichtigen",
             "English": "notify",
@@ -1121,10 +1249,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687416885570,
         "uuid": "75218042-03c4-49cc-a374-b2d3caa5202c",
+        "created": 1687416885570,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "erforschen",
             "English": "explore",
@@ -1132,10 +1262,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687354961014,
         "uuid": "146880ee-c243-4d4b-af6c-ee8cfa02efc4",
+        "created": 1687354961014,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Das Pferd",
             "English": "the horse",
@@ -1143,10 +1275,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687350991695,
         "uuid": "5a647849-2cf5-4048-8b10-ad263f96876f",
+        "created": 1687350991695,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Die Technik",
             "English": "The technology",
@@ -1154,10 +1288,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687350989335,
         "uuid": "6d5d938a-d5e8-4c34-b11b-26abdf052113",
+        "created": 1687350989335,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "entwickeln",
             "English": "develop",
@@ -1165,10 +1301,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687350988876,
         "uuid": "0b23f46a-86df-41be-8b54-d0368ac36c50",
+        "created": 1687350988876,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Abfall",
             "English": "trash",
@@ -1176,10 +1314,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687350987003,
         "uuid": "c43a4883-4a25-462e-a093-919c16ed6a4c",
+        "created": 1687350987003,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "erlauben",
             "English": "allow",
@@ -1187,10 +1327,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687350986769,
         "uuid": "3c29b7a3-13bc-4dd8-8116-59a3e00ae23e",
+        "created": 1687350986769,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "verbieten",
             "English": "prohibit",
@@ -1198,10 +1340,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687350986558,
         "uuid": "89f82e8c-3ee6-4ba6-873a-24a5f4f0b09a",
+        "created": 1687350986558,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "löschen",
             "English": "delete",
@@ -1209,10 +1353,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687350986398,
         "uuid": "b63e0f6f-b64a-4aaa-99b4-a8799d8d16e8",
+        "created": 1687350986398,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "einschalten",
             "English": "turn on",
@@ -1220,10 +1366,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687350984522,
         "uuid": "96fc65dd-5149-475c-bbdb-044280397ae6",
+        "created": 1687350984522,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "beenden",
             "English": "finish",
@@ -1231,10 +1379,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687350984310,
         "uuid": "c8f60c57-ccc2-40fa-a62b-21201c410f00",
+        "created": 1687350984310,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "töten",
             "English": "kill",
@@ -1242,10 +1392,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687350984147,
         "uuid": "a78fcac2-fc29-4c7f-8e02-6d37ace79d4f",
+        "created": 1687350984147,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "versprechen",
             "English": "promise",
@@ -1253,10 +1405,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687350983973,
         "uuid": "3249bc4f-132c-43ad-82ff-159a1482a0d6",
+        "created": 1687350983973,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "lügen",
             "English": "lie",
@@ -1264,10 +1418,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687350983756,
         "uuid": "46f5a521-e0a4-4231-b45c-96fb29dbc77f",
+        "created": 1687350983756,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Die wolle",
             "English": "the wool",
@@ -1275,10 +1431,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687350983648,
         "uuid": "c743a385-5f0a-4e84-aad2-b705271b1d88",
+        "created": 1687350983648,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Der stoff",
             "English": "the ",
@@ -1286,10 +1444,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687350981177,
         "uuid": "80a36953-b9e2-4d8c-ab60-d814cc61ba13",
+        "created": 1687350981177,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Das Zebra",
             "English": "the zebra",
@@ -1297,10 +1457,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687350980916,
         "uuid": "b2af1256-d639-46a9-8eec-98ef18a5b844",
+        "created": 1687350980916,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "schauen",
             "English": "watch",
@@ -1308,10 +1470,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687350980754,
         "uuid": "47517dc6-4264-4673-a6bf-15e25fa43763",
+        "created": 1687350980754,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "lesen",
             "English": "read",
@@ -1319,10 +1483,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687350980581,
         "uuid": "00d9d4aa-7050-4be7-a483-1ed9001c2a92",
+        "created": 1687350980581,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "hören",
             "English": "listen",
@@ -1330,10 +1496,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687350979771,
         "uuid": "df4f3fb6-26d3-46ba-9443-5d26f5b35575",
+        "created": 1687350979771,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Der Karton",
             "English": "the cardboard",
@@ -1341,10 +1509,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687350979531,
         "uuid": "e559356a-2e9e-4775-b27e-39dfa1f9aec7",
+        "created": 1687350979531,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Das Kreuz",
             "English": "The cross",
@@ -1352,10 +1522,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687350979401,
         "uuid": "c8e1be5e-6004-4800-b7af-65b50803fc1e",
+        "created": 1687350979401,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "essen",
             "English": "eat",
@@ -1363,10 +1535,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687350979249,
         "uuid": "03c4d6c1-50d1-45ea-8a08-a1a03b676678",
+        "created": 1687350979249,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "schreiben",
             "English": "write",
@@ -1374,10 +1548,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687350979043,
         "uuid": "ad370cb0-370a-4f9d-8d27-6b248382fea2",
+        "created": 1687350979043,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "wieviel uhr",
             "English": "when",
@@ -1385,10 +1561,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687350978888,
         "uuid": "cfc801ea-14b5-4741-969e-9cf0e4c4546d",
+        "created": 1687350978888,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Weil",
             "English": "because",
@@ -1396,10 +1574,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687350975199,
         "uuid": "6f2fe999-0cd8-40ff-b9c2-477a974cb6ee",
+        "created": 1687350975199,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Warum",
             "English": "why",
@@ -1407,10 +1587,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687350974925,
         "uuid": "fdea0fb9-496a-4c55-8aa9-2608646cf0a1",
+        "created": 1687350974925,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Wie",
             "English": "how",
@@ -1418,10 +1600,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687350974697,
         "uuid": "c5b41e01-7c99-4455-b1aa-ca8caf6f1fb9",
+        "created": 1687350974697,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Wie viel",
             "English": "how much",
@@ -1429,10 +1613,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687350971398,
         "uuid": "b7868a76-96b8-4da7-a084-d4368cc1c141",
+        "created": 1687350971398,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Was",
             "English": "what",
@@ -1440,10 +1626,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687350971240,
         "uuid": "4390f9ab-3006-4d66-864d-0f41720a7ccb",
+        "created": 1687350971240,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Wohin",
             "English": "where to",
@@ -1451,10 +1639,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687350971095,
         "uuid": "e9f313d9-45e5-4016-8ec8-7ce84d588dd1",
+        "created": 1687350971095,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Woher",
             "English": "from where",
@@ -1462,10 +1652,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687350970899,
         "uuid": "dbca7d38-7078-470e-99ef-ad579b60e124",
+        "created": 1687350970899,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Wo",
             "English": "where",
@@ -1473,10 +1665,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687350970692,
         "uuid": "22af3ede-3ad5-44e0-b03c-599ae4945a61",
+        "created": 1687350970692,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Welcher",
             "English": "which",
@@ -1484,10 +1678,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687350970557,
         "uuid": "831e49a4-ed3a-43b1-84a5-02d192c70aa5",
+        "created": 1687350970557,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Wer",
             "English": "who",
@@ -1495,13 +1691,13 @@
         }
     },
     {
+        "uuid": "5b75e02e-3817-49a1-9715-6d12a4a904bd",
+        "created": 1687350970077,
         "description": "",
         "tags": [
             "Work",
             "Traffic"
         ],
-        "created": 1687350970077,
-        "uuid": "5b75e02e-3817-49a1-9715-6d12a4a904bd",
         "translations": {
             "Deutsch": "Der Helm",
             "English": "the helmet",
@@ -1509,10 +1705,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687341362899,
         "uuid": "d61d686d-527e-4339-9afa-fcfda18baccf",
+        "created": 1687341362899,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "willkommen",
             "English": "welcome",
@@ -1520,12 +1718,12 @@
         }
     },
     {
+        "uuid": "d09202fa-8166-4d0d-a59f-b24df681b310",
+        "created": 1687341362737,
         "description": "",
         "tags": [
             "Work"
         ],
-        "created": 1687341362737,
-        "uuid": "d09202fa-8166-4d0d-a59f-b24df681b310",
         "translations": {
             "Deutsch": "Das Video",
             "English": "the video",
@@ -1533,12 +1731,12 @@
         }
     },
     {
+        "uuid": "5c63e917-4504-45ca-9d81-59fb0ad4d049",
+        "created": 1687341362552,
         "description": "",
         "tags": [
             "Adjectives"
         ],
-        "created": 1687341362552,
-        "uuid": "5c63e917-4504-45ca-9d81-59fb0ad4d049",
         "translations": {
             "Deutsch": "klein",
             "English": "small",
@@ -1546,12 +1744,12 @@
         }
     },
     {
+        "uuid": "24ac476b-ac37-4cb1-8cbe-575c00b2efc5",
+        "created": 1687341362309,
         "description": "",
         "tags": [
             "Adjectives"
         ],
-        "created": 1687341362309,
-        "uuid": "24ac476b-ac37-4cb1-8cbe-575c00b2efc5",
         "translations": {
             "Deutsch": "gross",
             "English": "big",
@@ -1559,12 +1757,12 @@
         }
     },
     {
+        "uuid": "903c4b55-f534-4d7d-8502-323183471b62",
+        "created": 1687341362144,
         "description": "",
         "tags": [
             "Adjectives"
         ],
-        "created": 1687341362144,
-        "uuid": "903c4b55-f534-4d7d-8502-323183471b62",
         "translations": {
             "Deutsch": "alles",
             "English": "alles",
@@ -1572,10 +1770,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687341361546,
         "uuid": "5d60fdd2-d156-4bda-87de-c43931d883f2",
+        "created": 1687341361546,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "nichts",
             "English": "nothing",
@@ -1583,12 +1783,12 @@
         }
     },
     {
+        "uuid": "d14cec2d-f485-4b3e-9d34-ae6d804a8401",
+        "created": 1687290667301,
         "description": "",
         "tags": [
             "Other"
         ],
-        "created": 1687290667301,
-        "uuid": "d14cec2d-f485-4b3e-9d34-ae6d804a8401",
         "translations": {
             "Deutsch": "sie",
             "English": "they",
@@ -1596,12 +1796,12 @@
         }
     },
     {
+        "uuid": "91310f75-3bc7-4f7a-8e57-b7e135928ded",
+        "created": 1687290667120,
         "description": "",
         "tags": [
             "Other"
         ],
-        "created": 1687290667120,
-        "uuid": "91310f75-3bc7-4f7a-8e57-b7e135928ded",
         "translations": {
             "Deutsch": "ihr",
             "English": "you",
@@ -1609,12 +1809,12 @@
         }
     },
     {
+        "uuid": "823e1ad6-03ae-41f8-a354-b2867f29ccf5",
+        "created": 1687290666954,
         "description": "",
         "tags": [
             "Other"
         ],
-        "created": 1687290666954,
-        "uuid": "823e1ad6-03ae-41f8-a354-b2867f29ccf5",
         "translations": {
             "Deutsch": "wir",
             "English": "we",
@@ -1622,12 +1822,12 @@
         }
     },
     {
+        "uuid": "6c2d44c4-29c7-44c1-b2d2-a52647f5e576",
+        "created": 1687290666591,
         "description": "",
         "tags": [
             "Other"
         ],
-        "created": 1687290666591,
-        "uuid": "6c2d44c4-29c7-44c1-b2d2-a52647f5e576",
         "translations": {
             "Deutsch": "sie",
             "English": "she",
@@ -1635,12 +1835,12 @@
         }
     },
     {
+        "uuid": "fd764d16-8e99-49e5-b9d9-2ced152007f7",
+        "created": 1687290666379,
         "description": "",
         "tags": [
             "Other"
         ],
-        "created": 1687290666379,
-        "uuid": "fd764d16-8e99-49e5-b9d9-2ced152007f7",
         "translations": {
             "Deutsch": "er",
             "English": "he",
@@ -1648,12 +1848,12 @@
         }
     },
     {
+        "uuid": "8a8ddac5-e2e9-4141-b100-0b1005b866aa",
+        "created": 1687290666202,
         "description": "",
         "tags": [
             "Other"
         ],
-        "created": 1687290666202,
-        "uuid": "8a8ddac5-e2e9-4141-b100-0b1005b866aa",
         "translations": {
             "Deutsch": "du",
             "English": "you",
@@ -1661,12 +1861,12 @@
         }
     },
     {
+        "uuid": "aeddd6b0-286d-4249-ae8a-90d1ed44bb23",
+        "created": 1687290665977,
         "description": "",
         "tags": [
             "Other"
         ],
-        "created": 1687290665977,
-        "uuid": "aeddd6b0-286d-4249-ae8a-90d1ed44bb23",
         "translations": {
             "Deutsch": "ich",
             "English": "i",
@@ -1674,12 +1874,12 @@
         }
     },
     {
+        "uuid": "14a7a44d-4757-4ff4-ad13-4d61b28d949f",
+        "created": 1687289919510,
         "description": "",
         "tags": [
             "Verbs"
         ],
-        "created": 1687289919510,
-        "uuid": "14a7a44d-4757-4ff4-ad13-4d61b28d949f",
         "translations": {
             "Deutsch": "treffen",
             "English": "meet",
@@ -1687,12 +1887,12 @@
         }
     },
     {
+        "uuid": "b7dda116-1e06-4f6f-b7a9-69b96dd3d41e",
+        "created": 1687289918901,
         "description": "",
         "tags": [
             "Verbs"
         ],
-        "created": 1687289918901,
-        "uuid": "b7dda116-1e06-4f6f-b7a9-69b96dd3d41e",
         "translations": {
             "Deutsch": "hassen",
             "English": "hate",
@@ -1700,12 +1900,12 @@
         }
     },
     {
+        "uuid": "4df62bc2-f6f6-4faa-943a-d05c4c6db99a",
+        "created": 1687289915050,
         "description": "",
         "tags": [
             "Verbs"
         ],
-        "created": 1687289915050,
-        "uuid": "4df62bc2-f6f6-4faa-943a-d05c4c6db99a",
         "translations": {
             "Deutsch": "lieben",
             "English": "love",
@@ -1713,12 +1913,12 @@
         }
     },
     {
+        "uuid": "111996df-1272-4925-ad7c-9b2472e2747b",
+        "created": 1687289914786,
         "description": "",
         "tags": [
             "Verbs"
         ],
-        "created": 1687289914786,
-        "uuid": "111996df-1272-4925-ad7c-9b2472e2747b",
         "translations": {
             "Deutsch": "sollen",
             "English": "should",
@@ -1726,12 +1926,12 @@
         }
     },
     {
+        "uuid": "54a5eb14-661e-4d4e-ac59-3ee26f04f583",
+        "created": 1687289914664,
         "description": "",
         "tags": [
             "Verbs"
         ],
-        "created": 1687289914664,
-        "uuid": "54a5eb14-661e-4d4e-ac59-3ee26f04f583",
         "translations": {
             "Deutsch": "wollen",
             "English": "want",
@@ -1739,12 +1939,12 @@
         }
     },
     {
+        "uuid": "9160acac-33d2-4618-87bd-ab5f79c089d9",
+        "created": 1687289914539,
         "description": "",
         "tags": [
             "Verbs"
         ],
-        "created": 1687289914539,
-        "uuid": "9160acac-33d2-4618-87bd-ab5f79c089d9",
         "translations": {
             "Deutsch": "dürfen",
             "English": "can",
@@ -1752,12 +1952,12 @@
         }
     },
     {
+        "uuid": "6234fa32-2e69-48e3-b30c-bf8a96e38d16",
+        "created": 1687289914369,
         "description": "",
         "tags": [
             "Verbs"
         ],
-        "created": 1687289914369,
-        "uuid": "6234fa32-2e69-48e3-b30c-bf8a96e38d16",
         "translations": {
             "Deutsch": "müssen",
             "English": "must",
@@ -1765,12 +1965,12 @@
         }
     },
     {
+        "uuid": "270b8594-dfb6-418d-9ac2-9ed1c9d763f5",
+        "created": 1687289914159,
         "description": "",
         "tags": [
             "Verbs"
         ],
-        "created": 1687289914159,
-        "uuid": "270b8594-dfb6-418d-9ac2-9ed1c9d763f5",
         "translations": {
             "Deutsch": "können",
             "English": "can",
@@ -1778,12 +1978,12 @@
         }
     },
     {
+        "uuid": "cca83d8d-59b0-48c5-99d0-ca09e927449e",
+        "created": 1687289914019,
         "description": "",
         "tags": [
             "Verbs"
         ],
-        "created": 1687289914019,
-        "uuid": "cca83d8d-59b0-48c5-99d0-ca09e927449e",
         "translations": {
             "Deutsch": "reden",
             "English": "talk",
@@ -1791,12 +1991,12 @@
         }
     },
     {
+        "uuid": "d4a27197-1b7a-4bb8-9ee7-29f6ef3b90a4",
+        "created": 1687289913841,
         "description": "",
         "tags": [
             "Verbs"
         ],
-        "created": 1687289913841,
-        "uuid": "d4a27197-1b7a-4bb8-9ee7-29f6ef3b90a4",
         "translations": {
             "Deutsch": "ansehen",
             "English": "view",
@@ -1804,12 +2004,12 @@
         }
     },
     {
+        "uuid": "03896da3-bcf4-44b9-9a14-7f45a0a0b772",
+        "created": 1687255735776,
         "description": "",
         "tags": [
             "Other"
         ],
-        "created": 1687255735776,
-        "uuid": "03896da3-bcf4-44b9-9a14-7f45a0a0b772",
         "translations": {
             "Deutsch": "Frau",
             "English": "women",
@@ -1817,12 +2017,12 @@
         }
     },
     {
+        "uuid": "acba915f-1110-42d0-9923-86ec070eca68",
+        "created": 1687255346652,
         "description": "",
         "tags": [
             "Other"
         ],
-        "created": 1687255346652,
-        "uuid": "acba915f-1110-42d0-9923-86ec070eca68",
         "translations": {
             "Deutsch": "Mann",
             "English": "man",
@@ -1830,12 +2030,12 @@
         }
     },
     {
+        "uuid": "cc318968-cfff-436e-84af-1c0145204819",
+        "created": 1687255345438,
         "description": "",
         "tags": [
             "Other"
         ],
-        "created": 1687255345438,
-        "uuid": "cc318968-cfff-436e-84af-1c0145204819",
         "translations": {
             "Deutsch": "Der Mittag",
             "English": "the noon",
@@ -1843,12 +2043,12 @@
         }
     },
     {
+        "uuid": "2c373fbd-b57b-4dfd-b6c3-c4607d77d714",
+        "created": 1687255343943,
         "description": "",
         "tags": [
             "Other"
         ],
-        "created": 1687255343943,
-        "uuid": "2c373fbd-b57b-4dfd-b6c3-c4607d77d714",
         "translations": {
             "Deutsch": "Der Abend",
             "English": "the evening",
@@ -1856,12 +2056,12 @@
         }
     },
     {
+        "uuid": "d4f12c60-50d1-4d73-b0bb-d49bfa53648e",
+        "created": 1687255342592,
         "description": "",
         "tags": [
             "Other"
         ],
-        "created": 1687255342592,
-        "uuid": "d4f12c60-50d1-4d73-b0bb-d49bfa53648e",
         "translations": {
             "Deutsch": "Der Morgen",
             "English": "the morning",
@@ -1869,12 +2069,12 @@
         }
     },
     {
+        "uuid": "831f800a-d043-453a-a31e-b036037bd692",
+        "created": 1687255289312,
         "description": "",
         "tags": [
             "Other"
         ],
-        "created": 1687255289312,
-        "uuid": "831f800a-d043-453a-a31e-b036037bd692",
         "translations": {
             "Deutsch": "Tag",
             "English": "day",
@@ -1882,12 +2082,12 @@
         }
     },
     {
+        "uuid": "b8de4969-267a-400a-b160-ad8c77f6a2b2",
+        "created": 1687255288265,
         "description": "",
         "tags": [
             "Other"
         ],
-        "created": 1687255288265,
-        "uuid": "b8de4969-267a-400a-b160-ad8c77f6a2b2",
         "translations": {
             "Deutsch": "Nacht",
             "English": "night",
@@ -1895,12 +2095,12 @@
         }
     },
     {
+        "uuid": "52de913e-6f74-47ef-803c-8a4387a03bb9",
+        "created": 1687255009306,
         "description": "",
         "tags": [
             "Work"
         ],
-        "created": 1687255009306,
-        "uuid": "52de913e-6f74-47ef-803c-8a4387a03bb9",
         "translations": {
             "Deutsch": "Oligopol",
             "English": "oligopoly",
@@ -1908,12 +2108,12 @@
         }
     },
     {
+        "uuid": "99379326-9087-44bc-a623-0ac66787f541",
+        "created": 1687255009124,
         "description": "",
         "tags": [
             "Work"
         ],
-        "created": 1687255009124,
-        "uuid": "99379326-9087-44bc-a623-0ac66787f541",
         "translations": {
             "Deutsch": "Kartell",
             "English": "cartell",
@@ -1921,12 +2121,12 @@
         }
     },
     {
+        "uuid": "9a5f470b-539f-4a2c-80fc-453df4d79a0e",
+        "created": 1687255008944,
         "description": "",
         "tags": [
             "Work"
         ],
-        "created": 1687255008944,
-        "uuid": "9a5f470b-539f-4a2c-80fc-453df4d79a0e",
         "translations": {
             "Deutsch": "Monopol",
             "English": "monopoly",
@@ -1934,12 +2134,12 @@
         }
     },
     {
+        "uuid": "8aa1fac8-719c-44f7-aee0-c69cdcb223c9",
+        "created": 1687255008675,
         "description": "",
         "tags": [
             "Other"
         ],
-        "created": 1687255008675,
-        "uuid": "8aa1fac8-719c-44f7-aee0-c69cdcb223c9",
         "translations": {
             "Deutsch": "Die Absteige",
             "English": "flophouse",
@@ -1947,12 +2147,12 @@
         }
     },
     {
+        "uuid": "0cca7d96-6e7a-4c52-9d25-b8c23a144045",
+        "created": 1687255008494,
         "description": "",
         "tags": [
             "Work"
         ],
-        "created": 1687255008494,
-        "uuid": "0cca7d96-6e7a-4c52-9d25-b8c23a144045",
         "translations": {
             "Deutsch": "Der Nepotismus",
             "English": "nepotism",
@@ -1960,12 +2160,12 @@
         }
     },
     {
+        "uuid": "11929d0c-42c3-48eb-b084-4154ae1e8752",
+        "created": 1687255007380,
         "description": "",
         "tags": [
             "Work"
         ],
-        "created": 1687255007380,
-        "uuid": "11929d0c-42c3-48eb-b084-4154ae1e8752",
         "translations": {
             "Deutsch": "Die Aufgabe",
             "English": "The task",
@@ -1973,12 +2173,12 @@
         }
     },
     {
+        "uuid": "34ff119e-ea49-482f-9e31-a334570a34dd",
+        "created": 1687254947452,
         "description": "",
         "tags": [
             "Work"
         ],
-        "created": 1687254947452,
-        "uuid": "34ff119e-ea49-482f-9e31-a334570a34dd",
         "translations": {
             "Deutsch": "Datum",
             "English": "The date",
@@ -1986,12 +2186,12 @@
         }
     },
     {
+        "uuid": "ac307ca7-f94e-4262-b307-a5db9237ab0f",
+        "created": 1687254946422,
         "description": "",
         "tags": [
             "Work"
         ],
-        "created": 1687254946422,
-        "uuid": "ac307ca7-f94e-4262-b307-a5db9237ab0f",
         "translations": {
             "Deutsch": "Der Koffer",
             "English": "The suitcase",
@@ -1999,12 +2199,12 @@
         }
     },
     {
+        "uuid": "34f267ff-55d5-471c-a42b-3e3fc1fb790a",
+        "created": 1687254945026,
         "description": "",
         "tags": [
             "Work"
         ],
-        "created": 1687254945026,
-        "uuid": "34f267ff-55d5-471c-a42b-3e3fc1fb790a",
         "translations": {
             "Deutsch": "Der Nagel",
             "English": "The nail",
@@ -2012,12 +2212,12 @@
         }
     },
     {
+        "uuid": "5cd3b731-bab7-4595-9c6c-bffabe1e04bf",
+        "created": 1687254943164,
         "description": "",
         "tags": [
             "Other"
         ],
-        "created": 1687254943164,
-        "uuid": "5cd3b731-bab7-4595-9c6c-bffabe1e04bf",
         "translations": {
             "Deutsch": "Der Stern",
             "English": "The star",
@@ -2025,10 +2225,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687254941851,
         "uuid": "f2fa1e74-055c-4566-a2bb-544d06b94781",
+        "created": 1687254941851,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "programmieren",
             "English": "program",
@@ -2036,12 +2238,12 @@
         }
     },
     {
+        "uuid": "56c0fa5f-2887-4571-a286-43baa4f4d6c4",
+        "created": 1687234596641,
         "description": "",
         "tags": [
             "Work"
         ],
-        "created": 1687234596641,
-        "uuid": "56c0fa5f-2887-4571-a286-43baa4f4d6c4",
         "translations": {
             "Deutsch": "Die Website",
             "English": "The website",
@@ -2049,12 +2251,12 @@
         }
     },
     {
+        "uuid": "c24e66d6-e216-4da4-bca8-35fea58464d4",
+        "created": 1687234595860,
         "description": "",
         "tags": [
             "Other"
         ],
-        "created": 1687234595860,
-        "uuid": "c24e66d6-e216-4da4-bca8-35fea58464d4",
         "translations": {
             "Deutsch": "Die liste",
             "English": "The list",
@@ -2062,12 +2264,12 @@
         }
     },
     {
+        "uuid": "f79346d9-26bf-4fe1-873f-d97174b3fdd6",
+        "created": 1687234595195,
         "description": "",
         "tags": [
             "Traveling"
         ],
-        "created": 1687234595195,
-        "uuid": "f79346d9-26bf-4fe1-873f-d97174b3fdd6",
         "translations": {
             "Deutsch": "Die Station",
             "English": "The station",
@@ -2075,12 +2277,12 @@
         }
     },
     {
+        "uuid": "ed951fe2-14a0-4fd3-a69a-55273e948775",
+        "created": 1687234591718,
         "description": "",
         "tags": [
             "Other"
         ],
-        "created": 1687234591718,
-        "uuid": "ed951fe2-14a0-4fd3-a69a-55273e948775",
         "translations": {
             "Deutsch": "Der Hügel",
             "English": "The Hill",
@@ -2088,12 +2290,12 @@
         }
     },
     {
+        "uuid": "3661d72b-d821-4378-90ea-34f9db6010df",
+        "created": 1687234591458,
         "description": "",
         "tags": [
             "Other"
         ],
-        "created": 1687234591458,
-        "uuid": "3661d72b-d821-4378-90ea-34f9db6010df",
         "translations": {
             "Deutsch": "Der Wald",
             "English": "The Forest",
@@ -2101,12 +2303,12 @@
         }
     },
     {
+        "uuid": "16961cc2-cdec-40bb-9f1d-fc522556b776",
+        "created": 1687234591308,
         "description": "",
         "tags": [
             "Other"
         ],
-        "created": 1687234591308,
-        "uuid": "16961cc2-cdec-40bb-9f1d-fc522556b776",
         "translations": {
             "Deutsch": "Die Wiese",
             "English": "The meadow",
@@ -2114,12 +2316,12 @@
         }
     },
     {
+        "uuid": "ae1b402b-8b88-4ff5-9f28-666dbaa09c8a",
+        "created": 1687234591200,
         "description": "",
         "tags": [
             "Other"
         ],
-        "created": 1687234591200,
-        "uuid": "ae1b402b-8b88-4ff5-9f28-666dbaa09c8a",
         "translations": {
             "Deutsch": "Der Alkohol",
             "English": "The alcohol",
@@ -2127,12 +2329,12 @@
         }
     },
     {
+        "uuid": "01fb8427-5025-499d-8534-682aea58e8b1",
+        "created": 1687234590805,
         "description": "",
         "tags": [
             "Other"
         ],
-        "created": 1687234590805,
-        "uuid": "01fb8427-5025-499d-8534-682aea58e8b1",
         "translations": {
             "Deutsch": "Die Zigarette",
             "English": "The cigarette",
@@ -2140,12 +2342,12 @@
         }
     },
     {
+        "uuid": "78afdac4-9826-40e6-8779-86f02f121a2f",
+        "created": 1687234590191,
         "description": "",
         "tags": [
             "Traffic"
         ],
-        "created": 1687234590191,
-        "uuid": "78afdac4-9826-40e6-8779-86f02f121a2f",
         "translations": {
             "Deutsch": "Der Bus",
             "English": "The bus",
@@ -2153,12 +2355,12 @@
         }
     },
     {
+        "uuid": "90c2545a-ec0d-4fb5-8c9f-ffc63ccec74f",
+        "created": 1687234588480,
         "description": "",
         "tags": [
             "Traveling"
         ],
-        "created": 1687234588480,
-        "uuid": "90c2545a-ec0d-4fb5-8c9f-ffc63ccec74f",
         "translations": {
             "Deutsch": "Der Zug",
             "English": "The train",
@@ -2166,12 +2368,12 @@
         }
     },
     {
+        "uuid": "9e0431ae-e2b2-467c-8077-ba6209b497d9",
+        "created": 1687203351722,
         "description": "",
         "tags": [
             "Other"
         ],
-        "created": 1687203351722,
-        "uuid": "9e0431ae-e2b2-467c-8077-ba6209b497d9",
         "translations": {
             "Deutsch": "dahinter",
             "English": "behind",
@@ -2179,12 +2381,12 @@
         }
     },
     {
+        "uuid": "7154cc5f-070d-4edd-bcfb-cd96950efc1d",
+        "created": 1687200926111,
         "description": "",
         "tags": [
             "Other"
         ],
-        "created": 1687200926111,
-        "uuid": "7154cc5f-070d-4edd-bcfb-cd96950efc1d",
         "translations": {
             "Deutsch": "davor",
             "English": "bevor",
@@ -2192,12 +2394,12 @@
         }
     },
     {
+        "uuid": "37704a68-f60b-42e1-afbb-e6c76d99d567",
+        "created": 1687200817113,
         "description": "",
         "tags": [
             "Other"
         ],
-        "created": 1687200817113,
-        "uuid": "37704a68-f60b-42e1-afbb-e6c76d99d567",
         "translations": {
             "Deutsch": "unten",
             "English": "below",
@@ -2205,12 +2407,12 @@
         }
     },
     {
+        "uuid": "c07f2ac1-0e27-4c7f-98e9-08bbda15a20c",
+        "created": 1687200815068,
         "description": "",
         "tags": [
             "Other"
         ],
-        "created": 1687200815068,
-        "uuid": "c07f2ac1-0e27-4c7f-98e9-08bbda15a20c",
         "translations": {
             "Deutsch": "oben",
             "English": "top",
@@ -2218,12 +2420,12 @@
         }
     },
     {
+        "uuid": "5fc07e5d-f718-4c3d-906b-319d3542c51d",
+        "created": 1687200809467,
         "description": "",
         "tags": [
             "Other"
         ],
-        "created": 1687200809467,
-        "uuid": "5fc07e5d-f718-4c3d-906b-319d3542c51d",
         "translations": {
             "Deutsch": "rechts",
             "English": "right",
@@ -2231,12 +2433,12 @@
         }
     },
     {
+        "uuid": "36477525-6f68-42ac-9d08-54567cea52cb",
+        "created": 1687200807730,
         "description": "",
         "tags": [
             "Other"
         ],
-        "created": 1687200807730,
-        "uuid": "36477525-6f68-42ac-9d08-54567cea52cb",
         "translations": {
             "Deutsch": "links",
             "English": "left",
@@ -2244,12 +2446,12 @@
         }
     },
     {
+        "uuid": "fc6b655a-57c2-4509-90c0-b7fea1e71feb",
+        "created": 1687200805742,
         "description": "",
         "tags": [
             "Household"
         ],
-        "created": 1687200805742,
-        "uuid": "fc6b655a-57c2-4509-90c0-b7fea1e71feb",
         "translations": {
             "Deutsch": "Das Hochhaus",
             "English": "The Skyscraper",
@@ -2257,12 +2459,12 @@
         }
     },
     {
+        "uuid": "5b7ec0df-3958-4f51-9040-ef67e3ea2899",
+        "created": 1687200583848,
         "description": "",
         "tags": [
             "Emotions"
         ],
-        "created": 1687200583848,
-        "uuid": "5b7ec0df-3958-4f51-9040-ef67e3ea2899",
         "translations": {
             "Deutsch": "glücklich",
             "English": "happy",
@@ -2270,12 +2472,12 @@
         }
     },
     {
+        "uuid": "d7334a72-c287-419d-ab52-9cb15bb5e7c6",
+        "created": 1687200583070,
         "description": "",
         "tags": [
             "Emotions"
         ],
-        "created": 1687200583070,
-        "uuid": "d7334a72-c287-419d-ab52-9cb15bb5e7c6",
         "translations": {
             "Deutsch": "traurig",
             "English": "sad",
@@ -2283,12 +2485,12 @@
         }
     },
     {
+        "uuid": "8deddacc-abfa-4c4c-bf39-af5725b9dfc6",
+        "created": 1687200582201,
         "description": "",
         "tags": [
             "Emotions"
         ],
-        "created": 1687200582201,
-        "uuid": "8deddacc-abfa-4c4c-bf39-af5725b9dfc6",
         "translations": {
             "Deutsch": "durstig",
             "English": "thirsty",
@@ -2296,12 +2498,12 @@
         }
     },
     {
+        "uuid": "5637ee06-ed38-4308-84c9-a0ea42f35da7",
+        "created": 1687152256019,
         "description": "",
         "tags": [
             "Emotions"
         ],
-        "created": 1687152256019,
-        "uuid": "5637ee06-ed38-4308-84c9-a0ea42f35da7",
         "translations": {
             "Deutsch": "hungrig",
             "English": "hungry",
@@ -2309,13 +2511,13 @@
         }
     },
     {
+        "uuid": "b58cd28f-693c-4d41-a0dd-9ab1c89f85f6",
+        "created": 1687152254913,
         "description": "",
         "tags": [
             "Household",
             "Buildings"
         ],
-        "created": 1687152254913,
-        "uuid": "b58cd28f-693c-4d41-a0dd-9ab1c89f85f6",
         "translations": {
             "Deutsch": "Die Treppe",
             "English": "The stairs",
@@ -2323,12 +2525,12 @@
         }
     },
     {
+        "uuid": "d6e8e838-d8e6-4d5b-b96c-74f24b247160",
+        "created": 1687152254503,
         "description": "",
         "tags": [
             "Body"
         ],
-        "created": 1687152254503,
-        "uuid": "d6e8e838-d8e6-4d5b-b96c-74f24b247160",
         "translations": {
             "Deutsch": "Das Blut",
             "English": "The blood",
@@ -2336,12 +2538,12 @@
         }
     },
     {
+        "uuid": "40f6930c-4067-4472-b488-5d76c7c155f8",
+        "created": 1687111064423,
         "description": "",
         "tags": [
             "Work"
         ],
-        "created": 1687111064423,
-        "uuid": "40f6930c-4067-4472-b488-5d76c7c155f8",
         "translations": {
             "Deutsch": "datei",
             "English": "file",
@@ -2349,13 +2551,13 @@
         }
     },
     {
+        "uuid": "40a3e163-4da4-4f60-9d9a-8bca9161855f",
+        "created": 1687111063322,
         "description": "",
         "tags": [
             "Work",
             "Verbs"
         ],
-        "created": 1687111063322,
-        "uuid": "40a3e163-4da4-4f60-9d9a-8bca9161855f",
         "translations": {
             "Deutsch": "speichern",
             "English": "save",
@@ -2363,12 +2565,12 @@
         }
     },
     {
+        "uuid": "f95feba5-88d4-4913-9c96-0f3dee0cdfa8",
+        "created": 1687111062364,
         "description": "",
         "tags": [
             "Verbs"
         ],
-        "created": 1687111062364,
-        "uuid": "f95feba5-88d4-4913-9c96-0f3dee0cdfa8",
         "translations": {
             "Deutsch": "lernen",
             "English": "learn",
@@ -2376,12 +2578,12 @@
         }
     },
     {
+        "uuid": "94bd9f1f-e846-48d6-a559-b60177db6ccb",
+        "created": 1687111061483,
         "description": "",
         "tags": [
             "Verbs"
         ],
-        "created": 1687111061483,
-        "uuid": "94bd9f1f-e846-48d6-a559-b60177db6ccb",
         "translations": {
             "Deutsch": "umfallen",
             "English": "fall over",
@@ -2389,12 +2591,12 @@
         }
     },
     {
+        "uuid": "74b1e3f9-7ace-451e-8f57-3c63c8d56c86",
+        "created": 1687111060690,
         "description": "",
         "tags": [
             "Verbs"
         ],
-        "created": 1687111060690,
-        "uuid": "74b1e3f9-7ace-451e-8f57-3c63c8d56c86",
         "translations": {
             "Deutsch": "eintreten",
             "English": "enter",
@@ -2402,12 +2604,12 @@
         }
     },
     {
+        "uuid": "40804888-86fc-4170-940c-1fb8c999e905",
+        "created": 1687111060104,
         "description": "",
         "tags": [
             "Verbs"
         ],
-        "created": 1687111060104,
-        "uuid": "40804888-86fc-4170-940c-1fb8c999e905",
         "translations": {
             "Deutsch": "verlassen",
             "English": "leave",
@@ -2415,12 +2617,12 @@
         }
     },
     {
+        "uuid": "f8d2a59b-d60a-464b-8cbd-ad9c5c9b3f57",
+        "created": 1687111059582,
         "description": "",
         "tags": [
             "Verbs"
         ],
-        "created": 1687111059582,
-        "uuid": "f8d2a59b-d60a-464b-8cbd-ad9c5c9b3f57",
         "translations": {
             "Deutsch": "öffnen",
             "English": "open",
@@ -2428,12 +2630,12 @@
         }
     },
     {
+        "uuid": "7ecf2d9c-a325-4ede-ad8b-a14079d34b3c",
+        "created": 1687111059132,
         "description": "",
         "tags": [
             "Verbs"
         ],
-        "created": 1687111059132,
-        "uuid": "7ecf2d9c-a325-4ede-ad8b-a14079d34b3c",
         "translations": {
             "Deutsch": "schliessen",
             "English": "close",
@@ -2441,12 +2643,12 @@
         }
     },
     {
+        "uuid": "967283ca-8135-43f5-8a79-9b2bc25de3fc",
+        "created": 1687111058650,
         "description": "",
         "tags": [
             "Verbs"
         ],
-        "created": 1687111058650,
-        "uuid": "967283ca-8135-43f5-8a79-9b2bc25de3fc",
         "translations": {
             "Deutsch": "gehen",
             "English": "go",
@@ -2454,12 +2656,12 @@
         }
     },
     {
+        "uuid": "519cb7b0-4b2e-4dcc-a5a5-521866947bcc",
+        "created": 1687111058244,
         "description": "",
         "tags": [
             "Verbs"
         ],
-        "created": 1687111058244,
-        "uuid": "519cb7b0-4b2e-4dcc-a5a5-521866947bcc",
         "translations": {
             "Deutsch": "zeichnen",
             "English": "draw",
@@ -2467,12 +2669,12 @@
         }
     },
     {
+        "uuid": "ed61b209-12d1-4c32-a8bb-80f21b63bb55",
+        "created": 1687111058039,
         "description": "",
         "tags": [
             "Verbs"
         ],
-        "created": 1687111058039,
-        "uuid": "ed61b209-12d1-4c32-a8bb-80f21b63bb55",
         "translations": {
             "Deutsch": "bearbeiten",
             "English": "edit",
@@ -2480,12 +2682,12 @@
         }
     },
     {
+        "uuid": "682331d7-b10a-4185-864c-8f0daacfeff5",
+        "created": 1687071339615,
         "description": "",
         "tags": [
             "Hobbies"
         ],
-        "created": 1687071339615,
-        "uuid": "682331d7-b10a-4185-864c-8f0daacfeff5",
         "translations": {
             "Deutsch": "Der Park",
             "English": "The parc",
@@ -2493,12 +2695,12 @@
         }
     },
     {
+        "uuid": "093cbe9f-53d5-4be4-84bf-bf53817acf42",
+        "created": 1687071337952,
         "description": "",
         "tags": [
             "Mathematics"
         ],
-        "created": 1687071337952,
-        "uuid": "093cbe9f-53d5-4be4-84bf-bf53817acf42",
         "translations": {
             "Deutsch": "Der Kreis",
             "English": "The circle",
@@ -2506,12 +2708,12 @@
         }
     },
     {
+        "uuid": "203d82cf-228c-4e20-ab13-a17edb9f288c",
+        "created": 1687071337205,
         "description": "",
         "tags": [
             "Mathematics"
         ],
-        "created": 1687071337205,
-        "uuid": "203d82cf-228c-4e20-ab13-a17edb9f288c",
         "translations": {
             "Deutsch": "Das Dreieck",
             "English": "The triangle",
@@ -2519,12 +2721,12 @@
         }
     },
     {
+        "uuid": "81a7987f-a1c3-4923-8b8f-d10ad2d7e364",
+        "created": 1687071335771,
         "description": "",
         "tags": [
             "Mathematics"
         ],
-        "created": 1687071335771,
-        "uuid": "81a7987f-a1c3-4923-8b8f-d10ad2d7e364",
         "translations": {
             "Deutsch": "Das Quadrat",
             "English": "The square",
@@ -2532,13 +2734,13 @@
         }
     },
     {
+        "uuid": "af53bd26-f960-44da-bc5f-9efcc94dc18b",
+        "created": 1687071335063,
         "description": "",
         "tags": [
             "Work",
             "Animals"
         ],
-        "created": 1687071335063,
-        "uuid": "af53bd26-f960-44da-bc5f-9efcc94dc18b",
         "translations": {
             "Deutsch": "Die maus",
             "English": "The mouse",
@@ -2546,12 +2748,12 @@
         }
     },
     {
+        "uuid": "6f39bf5b-f84e-4326-b2a3-c13f1d7a00d1",
+        "created": 1687071329130,
         "description": "",
         "tags": [
             "Work"
         ],
-        "created": 1687071329130,
-        "uuid": "6f39bf5b-f84e-4326-b2a3-c13f1d7a00d1",
         "translations": {
             "Deutsch": "Das Kabel",
             "English": "The cable",
@@ -2559,12 +2761,12 @@
         }
     },
     {
+        "uuid": "3953482a-e649-452d-9616-625730c81913",
+        "created": 1687071328248,
         "description": "",
         "tags": [
             "Clothing"
         ],
-        "created": 1687071328248,
-        "uuid": "3953482a-e649-452d-9616-625730c81913",
         "translations": {
             "Deutsch": "Die Kopfhörer",
             "English": "The headphones",
@@ -2572,12 +2774,12 @@
         }
     },
     {
+        "uuid": "3ce10d74-cf21-41d2-92af-2530f5eab2ed",
+        "created": 1687071326892,
         "description": "",
         "tags": [
             "Work"
         ],
-        "created": 1687071326892,
-        "uuid": "3ce10d74-cf21-41d2-92af-2530f5eab2ed",
         "translations": {
             "Deutsch": "Die Tastatur",
             "English": "The keyboard",
@@ -2585,12 +2787,12 @@
         }
     },
     {
+        "uuid": "785831a1-b9b8-42ea-8826-45a228642690",
+        "created": 1687071325044,
         "description": "",
         "tags": [
             "Work"
         ],
-        "created": 1687071325044,
-        "uuid": "785831a1-b9b8-42ea-8826-45a228642690",
         "translations": {
             "Deutsch": "Der Bildschirm",
             "English": "The monitor",
@@ -2598,12 +2800,12 @@
         }
     },
     {
+        "uuid": "f0f725d3-a352-4d43-9883-9a7d99480773",
+        "created": 1687071322259,
         "description": "",
         "tags": [
             "Work"
         ],
-        "created": 1687071322259,
-        "uuid": "f0f725d3-a352-4d43-9883-9a7d99480773",
         "translations": {
             "Deutsch": "Der Computer",
             "English": "the computer",
@@ -2611,12 +2813,12 @@
         }
     },
     {
+        "uuid": "3a158420-07a7-41a4-908e-60fb19ce8620",
+        "created": 1687029834118,
         "description": "",
         "tags": [
             "Traffic"
         ],
-        "created": 1687029834118,
-        "uuid": "3a158420-07a7-41a4-908e-60fb19ce8620",
         "translations": {
             "Deutsch": "Der Roller",
             "English": "The scooter",
@@ -2624,12 +2826,12 @@
         }
     },
     {
+        "uuid": "7d51dd7c-7025-400a-8080-1bd9bc577466",
+        "created": 1687029833113,
         "description": "",
         "tags": [
             "Traffic"
         ],
-        "created": 1687029833113,
-        "uuid": "7d51dd7c-7025-400a-8080-1bd9bc577466",
         "translations": {
             "Deutsch": "Das Motorrad",
             "English": "The motorbike",
@@ -2637,12 +2839,12 @@
         }
     },
     {
+        "uuid": "ad48c3ad-e713-48da-b109-cb503dc91b57",
+        "created": 1687029831902,
         "description": "",
         "tags": [
             "Household"
         ],
-        "created": 1687029831902,
-        "uuid": "ad48c3ad-e713-48da-b109-cb503dc91b57",
         "translations": {
             "Deutsch": "Der Stuhl",
             "English": "The chair",
@@ -2650,12 +2852,12 @@
         }
     },
     {
+        "uuid": "6260a707-9be9-4632-8804-facf99a07b6b",
+        "created": 1687029831096,
         "description": "",
         "tags": [
             "Traffic"
         ],
-        "created": 1687029831096,
-        "uuid": "6260a707-9be9-4632-8804-facf99a07b6b",
         "translations": {
             "Deutsch": "Das Fahrad",
             "English": "The bicycle",
@@ -2663,12 +2865,12 @@
         }
     },
     {
+        "uuid": "f89a135b-c671-41b6-a9b3-b531fd4afa36",
+        "created": 1687029829623,
         "description": "",
         "tags": [
             "Traffic"
         ],
-        "created": 1687029829623,
-        "uuid": "f89a135b-c671-41b6-a9b3-b531fd4afa36",
         "translations": {
             "Deutsch": "Das Boot",
             "English": "The boat",
@@ -2676,12 +2878,12 @@
         }
     },
     {
+        "uuid": "2075dee3-303d-4fe5-9ae7-674364decac0",
+        "created": 1687029828186,
         "description": "",
         "tags": [
             "Animals"
         ],
-        "created": 1687029828186,
-        "uuid": "2075dee3-303d-4fe5-9ae7-674364decac0",
         "translations": {
             "Deutsch": "Das Tier",
             "English": "The animal",
@@ -2689,12 +2891,12 @@
         }
     },
     {
+        "uuid": "c30745cc-ab95-4766-95a6-e7b59d728d61",
+        "created": 1687029827124,
         "description": "",
         "tags": [
             "Animals"
         ],
-        "created": 1687029827124,
-        "uuid": "c30745cc-ab95-4766-95a6-e7b59d728d61",
         "translations": {
             "Deutsch": "Das Schwein",
             "English": "The pig",
@@ -2702,12 +2904,12 @@
         }
     },
     {
+        "uuid": "67a41196-3274-4a35-8697-87fde5a77f0e",
+        "created": 1687029825802,
         "description": "",
         "tags": [
             "Animals"
         ],
-        "created": 1687029825802,
-        "uuid": "67a41196-3274-4a35-8697-87fde5a77f0e",
         "translations": {
             "Deutsch": "Der Vogel",
             "English": "The Bird",
@@ -2715,12 +2917,12 @@
         }
     },
     {
+        "uuid": "80573494-ff23-4552-8322-179acbedc2f7",
+        "created": 1687029824528,
         "description": "",
         "tags": [
             "Animals"
         ],
-        "created": 1687029824528,
-        "uuid": "80573494-ff23-4552-8322-179acbedc2f7",
         "translations": {
             "Deutsch": "Der Elch",
             "English": "The elk",
@@ -2728,12 +2930,12 @@
         }
     },
     {
+        "uuid": "908d9cdf-6dfb-476c-8622-cd84dd646035",
+        "created": 1687029822577,
         "description": "",
         "tags": [
             "Animals"
         ],
-        "created": 1687029822577,
-        "uuid": "908d9cdf-6dfb-476c-8622-cd84dd646035",
         "translations": {
             "Deutsch": "Der Hase",
             "English": "The rabbit",
@@ -2741,12 +2943,12 @@
         }
     },
     {
+        "uuid": "412b28d3-d5e3-474f-91cd-1e5e932b346f",
+        "created": 1687029341057,
         "description": "",
         "tags": [
             "Household"
         ],
-        "created": 1687029341057,
-        "uuid": "412b28d3-d5e3-474f-91cd-1e5e932b346f",
         "translations": {
             "Deutsch": "Das Schlafzimmer",
             "English": "The bedroom",
@@ -2754,12 +2956,12 @@
         }
     },
     {
+        "uuid": "b3bdcd6c-118b-482a-b842-82f2b965e8ff",
+        "created": 1686986617228,
         "description": "",
         "tags": [
             "Animals"
         ],
-        "created": 1686986617228,
-        "uuid": "b3bdcd6c-118b-482a-b842-82f2b965e8ff",
         "translations": {
             "Deutsch": "Die Ente",
             "English": "The Duck",
@@ -2767,12 +2969,12 @@
         }
     },
     {
+        "uuid": "bdadc11d-c40f-4bf0-879b-272774dd610b",
+        "created": 1686986551175,
         "description": "",
         "tags": [
             "Household"
         ],
-        "created": 1686986551175,
-        "uuid": "bdadc11d-c40f-4bf0-879b-272774dd610b",
         "translations": {
             "Deutsch": "Das Esszimmer",
             "English": "The dining room",
@@ -2780,12 +2982,12 @@
         }
     },
     {
+        "uuid": "d9d0e3d0-679d-44df-97a3-0c5644187396",
+        "created": 1686986549634,
         "description": "",
         "tags": [
             "Household"
         ],
-        "created": 1686986549634,
-        "uuid": "d9d0e3d0-679d-44df-97a3-0c5644187396",
         "translations": {
             "Deutsch": "Das Wohnzimmer",
             "English": "The living room",
@@ -2793,12 +2995,12 @@
         }
     },
     {
+        "uuid": "aafbbcb5-f2a5-482b-8af1-27ec4a873977",
+        "created": 1686925172375,
         "description": "",
         "tags": [
             "Household"
         ],
-        "created": 1686925172375,
-        "uuid": "aafbbcb5-f2a5-482b-8af1-27ec4a873977",
         "translations": {
             "Deutsch": "Die Garage",
             "English": "The garage",
@@ -2806,12 +3008,12 @@
         }
     },
     {
+        "uuid": "9f5d7816-db05-4f96-9056-c5bfdeac527c",
+        "created": 1686925172131,
         "description": "",
         "tags": [
             "Household"
         ],
-        "created": 1686925172131,
-        "uuid": "9f5d7816-db05-4f96-9056-c5bfdeac527c",
         "translations": {
             "Deutsch": "Der Garten",
             "English": "The garden",
@@ -2819,12 +3021,12 @@
         }
     },
     {
+        "uuid": "22d9b256-1e8e-4430-b479-d182d7edbfe0",
+        "created": 1686925171979,
         "description": "",
         "tags": [
             "Household"
         ],
-        "created": 1686925171979,
-        "uuid": "22d9b256-1e8e-4430-b479-d182d7edbfe0",
         "translations": {
             "Deutsch": "Die Küche",
             "English": "The kitchen",
@@ -2832,12 +3034,12 @@
         }
     },
     {
+        "uuid": "258be3f9-7344-4781-bcff-2c1d9904c5d8",
+        "created": 1686925171792,
         "description": "",
         "tags": [
             "Other"
         ],
-        "created": 1686925171792,
-        "uuid": "258be3f9-7344-4781-bcff-2c1d9904c5d8",
         "translations": {
             "Deutsch": "Süden",
             "English": "south",
@@ -2845,12 +3047,12 @@
         }
     },
     {
+        "uuid": "75ba6d56-aa70-49d0-bd00-dd1c8225d5d6",
+        "created": 1686925171530,
         "description": "",
         "tags": [
             "Other"
         ],
-        "created": 1686925171530,
-        "uuid": "75ba6d56-aa70-49d0-bd00-dd1c8225d5d6",
         "translations": {
             "Deutsch": "Norden",
             "English": "north",
@@ -2858,12 +3060,12 @@
         }
     },
     {
+        "uuid": "52052e4c-0c58-4fa4-8566-82dbe94b33dd",
+        "created": 1686925171383,
         "description": "",
         "tags": [
             "Other"
         ],
-        "created": 1686925171383,
-        "uuid": "52052e4c-0c58-4fa4-8566-82dbe94b33dd",
         "translations": {
             "Deutsch": "Osten",
             "English": "east",
@@ -2871,12 +3073,12 @@
         }
     },
     {
+        "uuid": "b593b0f5-20fd-4c66-ae3e-0c7361c4af1f",
+        "created": 1686925171127,
         "description": "",
         "tags": [
             "Other"
         ],
-        "created": 1686925171127,
-        "uuid": "b593b0f5-20fd-4c66-ae3e-0c7361c4af1f",
         "translations": {
             "Deutsch": "Westen",
             "English": "west",
@@ -2884,12 +3086,12 @@
         }
     },
     {
+        "uuid": "1940b999-cde9-4296-874f-dd150026cb8d",
+        "created": 1686924681754,
         "description": "",
         "tags": [
             "Other"
         ],
-        "created": 1686924681754,
-        "uuid": "1940b999-cde9-4296-874f-dd150026cb8d",
         "translations": {
             "Deutsch": "zerstören",
             "English": "destroy",
@@ -2897,12 +3099,12 @@
         }
     },
     {
+        "uuid": "bc2a03c4-472b-48ae-b663-133e901d6da6",
+        "created": 1686924668323,
         "description": "",
         "tags": [
             "Other"
         ],
-        "created": 1686924668323,
-        "uuid": "bc2a03c4-472b-48ae-b663-133e901d6da6",
         "translations": {
             "Deutsch": "erschaffen",
             "English": "create",
@@ -2910,12 +3112,12 @@
         }
     },
     {
+        "uuid": "03509527-51b6-410f-b3fb-88756925fd08",
+        "created": 1686924627333,
         "description": "",
         "tags": [
             "Work"
         ],
-        "created": 1686924627333,
-        "uuid": "03509527-51b6-410f-b3fb-88756925fd08",
         "translations": {
             "Deutsch": "Die Firma",
             "English": "the company",
@@ -2923,12 +3125,12 @@
         }
     },
     {
+        "uuid": "8b07b25f-29d5-49d1-95d0-009b049b2bb3",
+        "created": 1686924618675,
         "description": "",
         "tags": [
             "Other"
         ],
-        "created": 1686924618675,
-        "uuid": "8b07b25f-29d5-49d1-95d0-009b049b2bb3",
         "translations": {
             "Deutsch": "Der Frieden",
             "English": "the peace",
@@ -2936,12 +3138,12 @@
         }
     },
     {
+        "uuid": "7f673a49-0992-47e3-895b-7e8554434621",
+        "created": 1686924597433,
         "description": "",
         "tags": [
             "Other"
         ],
-        "created": 1686924597433,
-        "uuid": "7f673a49-0992-47e3-895b-7e8554434621",
         "translations": {
             "Deutsch": "Der Krieg",
             "English": "The war",
@@ -2949,12 +3151,12 @@
         }
     },
     {
+        "uuid": "97b29db5-1c33-424f-ac8f-064a6d979092",
+        "created": 1686924588890,
         "description": "",
         "tags": [
             "Other"
         ],
-        "created": 1686924588890,
-        "uuid": "97b29db5-1c33-424f-ac8f-064a6d979092",
         "translations": {
             "Deutsch": "Die Welt",
             "English": "The world",
@@ -2962,12 +3164,12 @@
         }
     },
     {
+        "uuid": "2cedf724-b8d0-4a6d-994e-5a735e3ca081",
+        "created": 1686921191642,
         "description": "",
         "tags": [
             "Colors"
         ],
-        "created": 1686921191642,
-        "uuid": "2cedf724-b8d0-4a6d-994e-5a735e3ca081",
         "translations": {
             "Deutsch": "Das Land",
             "English": "The country",
@@ -2975,12 +3177,12 @@
         }
     },
     {
+        "uuid": "991a6d8c-403b-4d75-8554-3de9f99f6668",
+        "created": 1686905857706,
         "description": "",
         "tags": [
             "Work"
         ],
-        "created": 1686905857706,
-        "uuid": "991a6d8c-403b-4d75-8554-3de9f99f6668",
         "translations": {
             "Deutsch": "Die Seite",
             "English": "The page",
@@ -2988,12 +3190,12 @@
         }
     },
     {
+        "uuid": "f6414155-6f13-43dd-a214-ee4749fe0fc2",
+        "created": 1686905856792,
         "description": "",
         "tags": [
             "Other"
         ],
-        "created": 1686905856792,
-        "uuid": "f6414155-6f13-43dd-a214-ee4749fe0fc2",
         "translations": {
             "Deutsch": "Die Meinung",
             "English": "The opinion",
@@ -3001,12 +3203,12 @@
         }
     },
     {
+        "uuid": "9c69e5c8-22f9-47a0-8a06-4ba55e3d1b2f",
+        "created": 1686905855980,
         "description": "",
         "tags": [
             "Work"
         ],
-        "created": 1686905855980,
-        "uuid": "9c69e5c8-22f9-47a0-8a06-4ba55e3d1b2f",
         "translations": {
             "Deutsch": "Der Brief",
             "English": "The letter",
@@ -3014,12 +3216,12 @@
         }
     },
     {
+        "uuid": "c7a4aba9-4610-4324-b130-ee69215cb537",
+        "created": 1686905450404,
         "description": "",
         "tags": [
             "Colors"
         ],
-        "created": 1686905450404,
-        "uuid": "c7a4aba9-4610-4324-b130-ee69215cb537",
         "translations": {
             "Deutsch": "hell",
             "English": "bright/light",
@@ -3027,12 +3229,12 @@
         }
     },
     {
+        "uuid": "9ad18c0c-258d-4fac-a1f0-8a9c7e33e24e",
+        "created": 1686905449560,
         "description": "",
         "tags": [
             "Colors"
         ],
-        "created": 1686905449560,
-        "uuid": "9ad18c0c-258d-4fac-a1f0-8a9c7e33e24e",
         "translations": {
             "Deutsch": "dunkel",
             "English": "dark",
@@ -3040,12 +3242,12 @@
         }
     },
     {
+        "uuid": "6bdb06b5-043a-4078-ac27-b216af102b95",
+        "created": 1686905448724,
         "description": "",
         "tags": [
             "Colors"
         ],
-        "created": 1686905448724,
-        "uuid": "6bdb06b5-043a-4078-ac27-b216af102b95",
         "translations": {
             "Deutsch": "rot",
             "English": "red",
@@ -3053,12 +3255,12 @@
         }
     },
     {
+        "uuid": "2b7cec46-5f84-4e05-8ccf-33ad6ec9e625",
+        "created": 1686905447732,
         "description": "",
         "tags": [
             "Colors"
         ],
-        "created": 1686905447732,
-        "uuid": "2b7cec46-5f84-4e05-8ccf-33ad6ec9e625",
         "translations": {
             "Deutsch": "weiss",
             "English": "white",
@@ -3066,12 +3268,12 @@
         }
     },
     {
+        "uuid": "cc592b79-db63-4387-b73c-1141340214b1",
+        "created": 1686905446740,
         "description": "",
         "tags": [
             "Colors"
         ],
-        "created": 1686905446740,
-        "uuid": "cc592b79-db63-4387-b73c-1141340214b1",
         "translations": {
             "Deutsch": "schwarz",
             "English": "black",
@@ -3079,12 +3281,12 @@
         }
     },
     {
+        "uuid": "b2647dbe-7ce3-40e2-af8f-95197d728cd0",
+        "created": 1686905316860,
         "description": "",
         "tags": [
             "Colors"
         ],
-        "created": 1686905316860,
-        "uuid": "b2647dbe-7ce3-40e2-af8f-95197d728cd0",
         "translations": {
             "Deutsch": "gelb",
             "English": "yellow",
@@ -3092,12 +3294,12 @@
         }
     },
     {
+        "uuid": "528d031f-7bbe-4438-983b-3e973b27e67a",
+        "created": 1686905315805,
         "description": "",
         "tags": [
             "Colors"
         ],
-        "created": 1686905315805,
-        "uuid": "528d031f-7bbe-4438-983b-3e973b27e67a",
         "translations": {
             "Deutsch": "grün",
             "English": "green",
@@ -3105,12 +3307,12 @@
         }
     },
     {
+        "uuid": "84879d47-a950-4250-b598-7ca43e9ce279",
+        "created": 1686905015176,
         "description": "",
         "tags": [
             "Colors"
         ],
-        "created": 1686905015176,
-        "uuid": "84879d47-a950-4250-b598-7ca43e9ce279",
         "translations": {
             "Deutsch": "blau",
             "English": "blue",
@@ -3118,12 +3320,12 @@
         }
     },
     {
+        "uuid": "bce03348-3086-433c-a69f-419037cdfa41",
+        "created": 1686905015004,
         "description": "",
         "tags": [
             "Other"
         ],
-        "created": 1686905015004,
-        "uuid": "bce03348-3086-433c-a69f-419037cdfa41",
         "translations": {
             "Deutsch": "hässlich",
             "English": "ugly",
@@ -3131,12 +3333,12 @@
         }
     },
     {
+        "uuid": "5aac1af2-88bc-432f-8cee-48ce592f9d43",
+        "created": 1686905014825,
         "description": "",
         "tags": [
             "Other"
         ],
-        "created": 1686905014825,
-        "uuid": "5aac1af2-88bc-432f-8cee-48ce592f9d43",
         "translations": {
             "Deutsch": "schlecht",
             "English": "bad",
@@ -3144,12 +3346,12 @@
         }
     },
     {
+        "uuid": "8fe23e39-a2fa-461f-bccf-d6f0352236f8",
+        "created": 1686905014672,
         "description": "",
         "tags": [
             "Other"
         ],
-        "created": 1686905014672,
-        "uuid": "8fe23e39-a2fa-461f-bccf-d6f0352236f8",
         "translations": {
             "Deutsch": "gut",
             "English": "good",
@@ -3157,12 +3359,12 @@
         }
     },
     {
+        "uuid": "835c1633-9bd2-49e3-81ef-3c58240509a7",
+        "created": 1686905014532,
         "description": "",
         "tags": [
             "Colors"
         ],
-        "created": 1686905014532,
-        "uuid": "835c1633-9bd2-49e3-81ef-3c58240509a7",
         "translations": {
             "Deutsch": "gesund",
             "English": "healthy",
@@ -3170,12 +3372,12 @@
         }
     },
     {
+        "uuid": "5e2590e4-55fc-46cb-9470-80603174bb29",
+        "created": 1686905014361,
         "description": "",
         "tags": [
             "Colors"
         ],
-        "created": 1686905014361,
-        "uuid": "5e2590e4-55fc-46cb-9470-80603174bb29",
         "translations": {
             "Deutsch": "krank",
             "English": "sick",
@@ -3183,12 +3385,12 @@
         }
     },
     {
+        "uuid": "e24b48e6-679b-42ae-869d-def2fb73a0e5",
+        "created": 1686905014209,
         "description": "",
         "tags": [
             "Food"
         ],
-        "created": 1686905014209,
-        "uuid": "e24b48e6-679b-42ae-869d-def2fb73a0e5",
         "translations": {
             "Deutsch": "Die Eier",
             "English": "The eggs",
@@ -3196,12 +3398,12 @@
         }
     },
     {
+        "uuid": "d2b12acf-78e7-4c37-8a4b-3b0a98dda816",
+        "created": 1686905014048,
         "description": "",
         "tags": [
             "Food"
         ],
-        "created": 1686905014048,
-        "uuid": "d2b12acf-78e7-4c37-8a4b-3b0a98dda816",
         "translations": {
             "Deutsch": "Das Fleisch",
             "English": "The meat",
@@ -3209,13 +3411,13 @@
         }
     },
     {
+        "uuid": "bbf4ebea-fa84-4938-a3c3-f840e2e835d2",
+        "created": 1686905011359,
         "description": "",
         "tags": [
             "Other",
             "Hobbies"
         ],
-        "created": 1686905011359,
-        "uuid": "bbf4ebea-fa84-4938-a3c3-f840e2e835d2",
         "translations": {
             "Deutsch": "Die Zeitung",
             "English": "The newspaper",
@@ -3223,13 +3425,13 @@
         }
     },
     {
+        "uuid": "215936f8-f061-42b6-be65-d58869f9b323",
+        "created": 1686905010563,
         "description": "",
         "tags": [
             "Other",
             "Hobbies"
         ],
-        "created": 1686905010563,
-        "uuid": "215936f8-f061-42b6-be65-d58869f9b323",
         "translations": {
             "Deutsch": "Das Buch",
             "English": "The book",
@@ -3237,12 +3439,12 @@
         }
     },
     {
+        "uuid": "e07e3021-3f25-48c3-952f-664a8a08bc90",
+        "created": 1687503662564,
         "description": "",
         "tags": [
             "Animals"
         ],
-        "created": 1687503662564,
-        "uuid": "e07e3021-3f25-48c3-952f-664a8a08bc90",
         "translations": {
             "Deutsch": "Der Fisch",
             "English": "the fish",
@@ -3250,12 +3452,12 @@
         }
     },
     {
+        "uuid": "79de0b58-53fc-469e-99f4-68f9cbaefaac",
+        "created": 1687540684421,
         "description": "",
         "tags": [
             "Other"
         ],
-        "created": 1687540684421,
-        "uuid": "79de0b58-53fc-469e-99f4-68f9cbaefaac",
         "translations": {
             "Deutsch": "Tölpel",
             "English": "the clumsy",
@@ -3263,12 +3465,12 @@
         }
     },
     {
+        "uuid": "99b65fd4-26fd-4352-be9d-8cf3fe6a8a78",
+        "created": 1687540684636,
         "description": "",
         "tags": [
             "Verbs"
         ],
-        "created": 1687540684636,
-        "uuid": "99b65fd4-26fd-4352-be9d-8cf3fe6a8a78",
         "translations": {
             "Deutsch": "sitzen",
             "English": "sit",
@@ -3276,12 +3478,12 @@
         }
     },
     {
+        "uuid": "56ffc98b-1e07-40e8-8062-9d7e0faba0ed",
+        "created": 1687540685083,
         "description": "",
         "tags": [
             "Body"
         ],
-        "created": 1687540685083,
-        "uuid": "56ffc98b-1e07-40e8-8062-9d7e0faba0ed",
         "translations": {
             "Deutsch": "Die Lippen",
             "English": "the lips",
@@ -3289,12 +3491,12 @@
         }
     },
     {
+        "uuid": "58f87f6c-f0eb-4f28-a419-fce024802d09",
+        "created": 1687540685291,
         "description": "",
         "tags": [
             "Other"
         ],
-        "created": 1687540685291,
-        "uuid": "58f87f6c-f0eb-4f28-a419-fce024802d09",
         "translations": {
             "Deutsch": "nähe",
             "English": "near",
@@ -3302,12 +3504,12 @@
         }
     },
     {
+        "uuid": "c7603a9a-ddd0-47e9-b6a7-afb9a2378423",
+        "created": 1687540685496,
         "description": "",
         "tags": [
             "Verbs"
         ],
-        "created": 1687540685496,
-        "uuid": "c7603a9a-ddd0-47e9-b6a7-afb9a2378423",
         "translations": {
             "Deutsch": "üben",
             "English": "excercise",
@@ -3315,12 +3517,12 @@
         }
     },
     {
+        "uuid": "f23f195c-a844-4d39-97c0-631932273753",
+        "created": 1687540685929,
         "description": "",
         "tags": [
             "Adjectives"
         ],
-        "created": 1687540685929,
-        "uuid": "f23f195c-a844-4d39-97c0-631932273753",
         "translations": {
             "Deutsch": "entfremdet",
             "English": "estranged",
@@ -3328,12 +3530,12 @@
         }
     },
     {
+        "uuid": "154b4940-7ba3-45a3-b6d3-21636ca967de",
+        "created": 1687540686465,
         "description": "",
         "tags": [
             "Adjectives"
         ],
-        "created": 1687540686465,
-        "uuid": "154b4940-7ba3-45a3-b6d3-21636ca967de",
         "translations": {
             "Deutsch": "komisch",
             "English": "weird",
@@ -3341,12 +3543,12 @@
         }
     },
     {
+        "uuid": "34e048d7-592b-4f38-8be2-9475ad6d7f84",
+        "created": 1687540686695,
         "description": "",
         "tags": [
             "Adjectives"
         ],
-        "created": 1687540686695,
-        "uuid": "34e048d7-592b-4f38-8be2-9475ad6d7f84",
         "translations": {
             "Deutsch": "normal",
             "English": "normal",
@@ -3354,12 +3556,12 @@
         }
     },
     {
+        "uuid": "3b4739ca-b318-4db9-8f81-54079f23a73e",
+        "created": 1687540688691,
         "description": "",
         "tags": [
             "Work"
         ],
-        "created": 1687540688691,
-        "uuid": "3b4739ca-b318-4db9-8f81-54079f23a73e",
         "translations": {
             "Deutsch": "Die Bank",
             "English": "the bank",
@@ -3367,12 +3569,12 @@
         }
     },
     {
+        "uuid": "2b8b2ad3-4e38-404e-aacd-d3b83f3b8dee",
+        "created": 1687540842080,
         "description": "",
         "tags": [
             "Adjectives"
         ],
-        "created": 1687540842080,
-        "uuid": "2b8b2ad3-4e38-404e-aacd-d3b83f3b8dee",
         "translations": {
             "Deutsch": "elegant",
             "English": "elegant",
@@ -3380,12 +3582,12 @@
         }
     },
     {
+        "uuid": "37f56578-349f-4272-9439-10e467fe3e11",
+        "created": 1687540843068,
         "description": "",
         "tags": [
             "Adjectives"
         ],
-        "created": 1687540843068,
-        "uuid": "37f56578-349f-4272-9439-10e467fe3e11",
         "translations": {
             "Deutsch": "tollpatschig",
             "English": "clumsy",
@@ -3393,12 +3595,12 @@
         }
     },
     {
+        "uuid": "c37ab149-2480-4135-823f-ca952cd66670",
+        "created": 1687540843625,
         "description": "",
         "tags": [
             "Other"
         ],
-        "created": 1687540843625,
-        "uuid": "c37ab149-2480-4135-823f-ca952cd66670",
         "translations": {
             "Deutsch": "Der König",
             "English": "the king",
@@ -3406,12 +3608,12 @@
         }
     },
     {
+        "uuid": "c89220f5-caa2-443e-946d-3abb0dce70ae",
+        "created": 1687540872156,
         "description": "",
         "tags": [
             "Other"
         ],
-        "created": 1687540872156,
-        "uuid": "c89220f5-caa2-443e-946d-3abb0dce70ae",
         "translations": {
             "Deutsch": "Die Königin",
             "English": "the queen",
@@ -3419,12 +3621,12 @@
         }
     },
     {
+        "uuid": "965db01a-2721-4411-9a25-4df1c9d73601",
+        "created": 1687540880577,
         "description": "",
         "tags": [
             "Other"
         ],
-        "created": 1687540880577,
-        "uuid": "965db01a-2721-4411-9a25-4df1c9d73601",
         "translations": {
             "Deutsch": "Der Narre",
             "English": "the fool",
@@ -3432,12 +3634,12 @@
         }
     },
     {
+        "uuid": "a6461d84-71ba-427e-b970-7e045442b7bc",
+        "created": 1687540881379,
         "description": "",
         "tags": [
             "Other"
         ],
-        "created": 1687540881379,
-        "uuid": "a6461d84-71ba-427e-b970-7e045442b7bc",
         "translations": {
             "Deutsch": "Das Schild",
             "English": "the sign",
@@ -3445,12 +3647,12 @@
         }
     },
     {
+        "uuid": "58a58a83-5282-49c7-a8be-fde471671966",
+        "created": 1687540904923,
         "description": "",
         "tags": [
             "Adjectives"
         ],
-        "created": 1687540904923,
-        "uuid": "58a58a83-5282-49c7-a8be-fde471671966",
         "translations": {
             "Deutsch": "tot",
             "English": "dead",
@@ -3458,12 +3660,12 @@
         }
     },
     {
+        "uuid": "ecc82b0f-2915-4200-9c37-1ff54adb7a5a",
+        "created": 1687540912182,
         "description": "",
         "tags": [
             "Adjectives"
         ],
-        "created": 1687540912182,
-        "uuid": "ecc82b0f-2915-4200-9c37-1ff54adb7a5a",
         "translations": {
             "Deutsch": "leben",
             "English": "alive",
@@ -3471,12 +3673,12 @@
         }
     },
     {
+        "uuid": "09ab605f-6dc0-4dab-ad20-f4f2d1032c4e",
+        "created": 1687592865784,
         "description": "",
         "tags": [
             "Other"
         ],
-        "created": 1687592865784,
-        "uuid": "09ab605f-6dc0-4dab-ad20-f4f2d1032c4e",
         "translations": {
             "Deutsch": "Die Sprache",
             "English": "language",
@@ -3484,12 +3686,12 @@
         }
     },
     {
+        "uuid": "858df8cd-3ce5-4611-b097-64e66867bf5b",
+        "created": 1687592888434,
         "description": "",
         "tags": [
             "Work"
         ],
-        "created": 1687592888434,
-        "uuid": "858df8cd-3ce5-4611-b097-64e66867bf5b",
         "translations": {
             "Deutsch": "Der Stift",
             "English": "the pen",
@@ -3497,12 +3699,12 @@
         }
     },
     {
+        "uuid": "6b987ccf-df23-41aa-a0e8-e0f1f70fa640",
+        "created": 1687592888970,
         "description": "",
         "tags": [
             "Work"
         ],
-        "created": 1687592888970,
-        "uuid": "6b987ccf-df23-41aa-a0e8-e0f1f70fa640",
         "translations": {
             "Deutsch": "Die Klammer",
             "English": "the clip",
@@ -3510,12 +3712,12 @@
         }
     },
     {
+        "uuid": "3b220f37-d207-47b0-be52-3887200e4ff7",
+        "created": 1687592955436,
         "description": "",
         "tags": [
             "Work"
         ],
-        "created": 1687592955436,
-        "uuid": "3b220f37-d207-47b0-be52-3887200e4ff7",
         "translations": {
             "Deutsch": "Das Papier",
             "English": "the paper",
@@ -3523,12 +3725,12 @@
         }
     },
     {
+        "uuid": "07153de9-28e1-425d-8aa2-6446f8de319e",
+        "created": 1687592955975,
         "description": "",
         "tags": [
             "Work"
         ],
-        "created": 1687592955975,
-        "uuid": "07153de9-28e1-425d-8aa2-6446f8de319e",
         "translations": {
             "Deutsch": "Das Formular",
             "English": "the form",
@@ -3536,12 +3738,12 @@
         }
     },
     {
+        "uuid": "56799ed8-d3c4-42bc-bcbb-c58bd641db32",
+        "created": 1687592956382,
         "description": "",
         "tags": [
             "Work"
         ],
-        "created": 1687592956382,
-        "uuid": "56799ed8-d3c4-42bc-bcbb-c58bd641db32",
         "translations": {
             "Deutsch": "Die Lupe",
             "English": "The magnifier",
@@ -3549,12 +3751,12 @@
         }
     },
     {
+        "uuid": "9a503b93-7b26-479e-ace3-dcdea4b98eb6",
+        "created": 1687598231346,
         "description": "",
         "tags": [
             "Work"
         ],
-        "created": 1687598231346,
-        "uuid": "9a503b93-7b26-479e-ace3-dcdea4b98eb6",
         "translations": {
             "Deutsch": "Der Hammer",
             "English": "the hammer",
@@ -3562,12 +3764,12 @@
         }
     },
     {
+        "uuid": "82ed1718-8c64-4300-8e83-091beb3067f4",
+        "created": 1687598231552,
         "description": "",
         "tags": [
             "Work"
         ],
-        "created": 1687598231552,
-        "uuid": "82ed1718-8c64-4300-8e83-091beb3067f4",
         "translations": {
             "Deutsch": "Der Anzug",
             "English": "the suit",
@@ -3575,12 +3777,12 @@
         }
     },
     {
+        "uuid": "49ed41be-8037-4b2d-8fee-4b3ba231c78b",
+        "created": 1687598231705,
         "description": "",
         "tags": [
             "Food"
         ],
-        "created": 1687598231705,
-        "uuid": "49ed41be-8037-4b2d-8fee-4b3ba231c78b",
         "translations": {
             "Deutsch": "Die Tasse",
             "English": "the mug",
@@ -3588,10 +3790,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687598231901,
         "uuid": "67230335-7665-4ec9-87a0-2a77bf5d3925",
+        "created": 1687598231901,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Das thermometer",
             "English": "the thermostat",
@@ -3599,12 +3803,12 @@
         }
     },
     {
+        "uuid": "09ff1009-111e-429a-a0cd-d866985486ec",
+        "created": 1687598232028,
         "description": "",
         "tags": [
             "Work"
         ],
-        "created": 1687598232028,
-        "uuid": "09ff1009-111e-429a-a0cd-d866985486ec",
         "translations": {
             "Deutsch": "Das Bild",
             "English": "the image",
@@ -3612,12 +3816,12 @@
         }
     },
     {
+        "uuid": "15466860-c6a0-49a7-9581-f7d730948611",
+        "created": 1687598743273,
         "description": "",
         "tags": [
             "Body"
         ],
-        "created": 1687598743273,
-        "uuid": "15466860-c6a0-49a7-9581-f7d730948611",
         "translations": {
             "Deutsch": "Der Finger",
             "English": "the finger",
@@ -3625,12 +3829,12 @@
         }
     },
     {
+        "uuid": "1c663ffd-f1ef-40c8-8a77-9497a0ee589e",
+        "created": 1687676063354,
         "description": "",
         "tags": [
             "Work"
         ],
-        "created": 1687676063354,
-        "uuid": "1c663ffd-f1ef-40c8-8a77-9497a0ee589e",
         "translations": {
             "Deutsch": "Der Strom",
             "English": "the electricity",
@@ -3638,12 +3842,12 @@
         }
     },
     {
+        "uuid": "725442b6-5bd3-414e-97d2-0cbca741376e",
+        "created": 1687676064007,
         "description": "",
         "tags": [
             "Verbs"
         ],
-        "created": 1687676064007,
-        "uuid": "725442b6-5bd3-414e-97d2-0cbca741376e",
         "translations": {
             "Deutsch": "liegen",
             "English": "lay",
@@ -3651,12 +3855,12 @@
         }
     },
     {
+        "uuid": "0a4d386d-d302-44a0-a876-de6c65102eee",
+        "created": 1687676064220,
         "description": "",
         "tags": [
             "Verbs"
         ],
-        "created": 1687676064220,
-        "uuid": "0a4d386d-d302-44a0-a876-de6c65102eee",
         "translations": {
             "Deutsch": "stehen",
             "English": "stand",
@@ -3664,12 +3868,12 @@
         }
     },
     {
+        "uuid": "52b8abc1-fc42-4d21-b5c5-26cc026d5691",
+        "created": 1687676064380,
         "description": "",
         "tags": [
             "Animals"
         ],
-        "created": 1687676064380,
-        "uuid": "52b8abc1-fc42-4d21-b5c5-26cc026d5691",
         "translations": {
             "Deutsch": "Die Giraffe",
             "English": "the giraffe",
@@ -3677,13 +3881,13 @@
         }
     },
     {
+        "uuid": "f62c1b60-a69a-416a-b510-f151587c4bfc",
+        "created": 1687676064638,
         "description": "",
         "tags": [
             "Household",
             "Clothing"
         ],
-        "created": 1687676064638,
-        "uuid": "f62c1b60-a69a-416a-b510-f151587c4bfc",
         "translations": {
             "Deutsch": "Die Kommode",
             "English": "The dresser",
@@ -3691,12 +3895,12 @@
         }
     },
     {
+        "uuid": "a040a5a4-83d5-4bf4-a6c1-b47838ea561a",
+        "created": 1687676064852,
         "description": "",
         "tags": [
             "Buildings"
         ],
-        "created": 1687676064852,
-        "uuid": "a040a5a4-83d5-4bf4-a6c1-b47838ea561a",
         "translations": {
             "Deutsch": "Die Wand",
             "English": "the wall",
@@ -3704,12 +3908,12 @@
         }
     },
     {
+        "uuid": "1f6d1cab-176b-4f16-af53-ae31c4c533ac",
+        "created": 1687676065006,
         "description": "",
         "tags": [
             "Household"
         ],
-        "created": 1687676065006,
-        "uuid": "1f6d1cab-176b-4f16-af53-ae31c4c533ac",
         "translations": {
             "Deutsch": "Der Vorhang",
             "English": "the blinds",
@@ -3717,12 +3921,12 @@
         }
     },
     {
+        "uuid": "76497e45-9f56-4df7-831e-825df6033d75",
+        "created": 1687676622574,
         "description": "",
         "tags": [
             "Food"
         ],
-        "created": 1687676622574,
-        "uuid": "76497e45-9f56-4df7-831e-825df6033d75",
         "translations": {
             "Deutsch": "Die Butter",
             "English": "the butter",
@@ -3730,12 +3934,12 @@
         }
     },
     {
+        "uuid": "382e806e-af46-4e52-bf74-d6ab9a426d7c",
+        "created": 1687676622845,
         "description": "",
         "tags": [
             "Food"
         ],
-        "created": 1687676622845,
-        "uuid": "382e806e-af46-4e52-bf74-d6ab9a426d7c",
         "translations": {
             "Deutsch": "Das Messer",
             "English": "the knive",
@@ -3743,12 +3947,12 @@
         }
     },
     {
+        "uuid": "ffdac019-d3ab-411b-96c4-741006d09acc",
+        "created": 1687676623085,
         "description": "",
         "tags": [
             "Food"
         ],
-        "created": 1687676623085,
-        "uuid": "ffdac019-d3ab-411b-96c4-741006d09acc",
         "translations": {
             "Deutsch": "Der Löffel",
             "English": "the spoon",
@@ -3756,12 +3960,12 @@
         }
     },
     {
+        "uuid": "13594960-4774-4746-81c8-76c21146594d",
+        "created": 1687676623323,
         "description": "",
         "tags": [
             "Food"
         ],
-        "created": 1687676623323,
-        "uuid": "13594960-4774-4746-81c8-76c21146594d",
         "translations": {
             "Deutsch": "Die Gabel",
             "English": "the fork",
@@ -3769,12 +3973,12 @@
         }
     },
     {
+        "uuid": "f79576cc-04ac-403a-b3cd-0bab02073c23",
+        "created": 1687676623549,
         "description": "",
         "tags": [
             "Food"
         ],
-        "created": 1687676623549,
-        "uuid": "f79576cc-04ac-403a-b3cd-0bab02073c23",
         "translations": {
             "Deutsch": "Der Teller",
             "English": "the plate",
@@ -3782,12 +3986,12 @@
         }
     },
     {
+        "uuid": "4dc0b7f7-22f6-47a7-ace1-76c353595709",
+        "created": 1687676623771,
         "description": "",
         "tags": [
             "Adjectives"
         ],
-        "created": 1687676623771,
-        "uuid": "4dc0b7f7-22f6-47a7-ace1-76c353595709",
         "translations": {
             "Deutsch": "jung",
             "English": "young",
@@ -3795,12 +3999,12 @@
         }
     },
     {
+        "uuid": "e29f7d94-defd-4ee8-9678-a0f4a6be27df",
+        "created": 1687676623997,
         "description": "",
         "tags": [
             "Adjectives"
         ],
-        "created": 1687676623997,
-        "uuid": "e29f7d94-defd-4ee8-9678-a0f4a6be27df",
         "translations": {
             "Deutsch": "alt",
             "English": "old",
@@ -3808,10 +4012,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687700606625,
         "uuid": "08d76443-90c2-4489-9c6f-0482d5b25981",
+        "created": 1687700606625,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Der bauer",
             "English": "the farmer",
@@ -3819,10 +4025,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687700619932,
         "uuid": "0ff056e5-f542-4e17-ba8d-4b9e5b84b4a9",
+        "created": 1687700619932,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Der Lehrer",
             "English": "the teacher",
@@ -3830,10 +4038,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687700620482,
         "uuid": "a76277e6-0f29-4021-b31e-a97cc9e47398",
+        "created": 1687700620482,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Der Buchhalter",
             "English": "the bookkeeper",
@@ -3841,10 +4051,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687700644243,
         "uuid": "f3fc1666-4e1d-4ac4-8471-e67329aa34f3",
+        "created": 1687700644243,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Der Chef",
             "English": "the boss",
@@ -3852,10 +4064,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687700644763,
         "uuid": "407f46f3-9556-4c21-833b-aab97a0d6ef8",
+        "created": 1687700644763,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Der Mechaniker",
             "English": "the mechanic",
@@ -3863,10 +4077,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687700854443,
         "uuid": "3bbac108-f214-4de4-b420-cb53f4192038",
+        "created": 1687700854443,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Der Händler",
             "English": "the merchant",
@@ -3874,10 +4090,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687700855027,
         "uuid": "ecee8aa1-f732-4a31-8ddf-1d24bfd954ab",
+        "created": 1687700855027,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Der Psychologe",
             "English": "the psychologist",
@@ -3885,10 +4103,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687700963117,
         "uuid": "976d53db-c3f6-4d7f-8bfe-44831e906e93",
+        "created": 1687700963117,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Der Verkäufer",
             "English": "the vendor",
@@ -3896,10 +4116,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687700963804,
         "uuid": "b6743911-6b63-42c4-b098-a0c121a5848a",
+        "created": 1687700963804,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Der Arzt",
             "English": "the doctor",
@@ -3907,10 +4129,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687700964035,
         "uuid": "cb8ce8b1-8dfe-49cf-918c-a599b035942d",
+        "created": 1687700964035,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Die Krankenschwester",
             "English": "the nurse",
@@ -3918,10 +4142,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687700964311,
         "uuid": "306b94fd-0989-4cd3-a823-54eb0244e000",
+        "created": 1687700964311,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Der Chirurg",
             "English": "the surgeon",
@@ -3929,10 +4155,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687700964572,
         "uuid": "582336af-6701-48bd-a11c-79d80b870332",
+        "created": 1687700964572,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Der Frisör",
             "English": "the barber",
@@ -3940,10 +4168,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687701090866,
         "uuid": "a6e578ab-30c5-43b6-97d9-81ca36b29b71",
+        "created": 1687701090866,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Der Architekt",
             "English": "the architect",
@@ -3951,10 +4181,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687701110168,
         "uuid": "b76d3c03-d357-4862-bf32-9905edacf962",
+        "created": 1687701110168,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Der Informatiker",
             "English": "the software engineer",
@@ -3962,10 +4194,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687701134379,
         "uuid": "704ae31d-cce8-4b54-ba17-f7ef5f006937",
+        "created": 1687701134379,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Der Schauspieler",
             "English": "the actor",
@@ -3973,10 +4207,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687701134891,
         "uuid": "4447a959-27b7-43e7-b30d-9c2bc30acf1d",
+        "created": 1687701134891,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Der Kellner",
             "English": "the waiter",
@@ -3984,10 +4220,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687701135361,
         "uuid": "b275db2b-70a7-4f98-a8c8-b80aae215589",
+        "created": 1687701135361,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Der Regisseur",
             "English": "the director",
@@ -3995,10 +4233,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687701135836,
         "uuid": "a4d4d15a-2cb0-4ddc-84a8-e10cdb2b372b",
+        "created": 1687701135836,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Der Professor",
             "English": "the professor",
@@ -4006,10 +4246,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687701189591,
         "uuid": "62a81b47-3a67-4619-b454-000035eae239",
+        "created": 1687701189591,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Der Chemiker",
             "English": "the chemist",
@@ -4017,10 +4259,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687766704780,
         "uuid": "7ffc54c0-e5a4-43bf-8708-8dfab998e179",
+        "created": 1687766704780,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Das Mädchen",
             "English": "the girl",
@@ -4028,10 +4272,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687766705044,
         "uuid": "85ab5255-6430-4007-a8e5-aeac131fd4fa",
+        "created": 1687766705044,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Der Junge",
             "English": "the boy",
@@ -4039,10 +4285,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687766705346,
         "uuid": "95974d3d-748e-477a-9933-69fc85cc475b",
+        "created": 1687766705346,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Das Flugzeug",
             "English": "The airplane",
@@ -4050,10 +4298,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687766705547,
         "uuid": "997115d0-620f-4eac-b795-bd958446900e",
+        "created": 1687766705547,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Deutschland",
             "English": "germany",
@@ -4061,10 +4311,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687766708243,
         "uuid": "e405be5b-5956-4732-af87-e01f79fbae43",
+        "created": 1687766708243,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Frankreich",
             "English": "france",
@@ -4072,10 +4324,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687766709959,
         "uuid": "9233ab2c-e20e-42ea-a5b5-48ddb95683d6",
+        "created": 1687766709959,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Vereinigte Staaten",
             "English": "united states",
@@ -4083,10 +4337,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687766710922,
         "uuid": "e04c5024-e3eb-422e-b61d-86322cb0e060",
+        "created": 1687766710922,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Schweiz",
             "English": "switzerland",
@@ -4094,13 +4350,13 @@
         }
     },
     {
+        "uuid": "7dd5c747-5623-4972-94de-a256ffd1660f",
+        "created": 1687766711703,
         "description": "",
         "tags": [
             "Work",
             "Traveling"
         ],
-        "created": 1687766711703,
-        "uuid": "7dd5c747-5623-4972-94de-a256ffd1660f",
         "translations": {
             "Deutsch": "Reisen",
             "English": "travel",
@@ -4108,10 +4364,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687766717351,
         "uuid": "36cbd32f-6385-4904-8737-9ae22a538c8c",
+        "created": 1687766717351,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "oder",
             "English": "or",
@@ -4119,10 +4377,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687766718219,
         "uuid": "3ee7112c-644e-4a94-8726-b02ec0fb4c2b",
+        "created": 1687766718219,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "und",
             "English": "and",
@@ -4130,10 +4390,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687766719034,
         "uuid": "e72ac888-4587-4ace-9f0e-210831007222",
+        "created": 1687766719034,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "aber",
             "English": "but",
@@ -4141,12 +4403,12 @@
         }
     },
     {
+        "uuid": "1c269585-a969-407d-92e7-d03da9e2b5e0",
+        "created": 1687767002469,
         "description": "",
         "tags": [
             "Work"
         ],
-        "created": 1687767002469,
-        "uuid": "1c269585-a969-407d-92e7-d03da9e2b5e0",
         "translations": {
             "Deutsch": "Die Karte",
             "English": "the map",
@@ -4154,14 +4416,14 @@
         }
     },
     {
+        "uuid": "a6e31bf0-eb57-465c-910d-5a77357ba121",
+        "created": 1687767023066,
         "description": "",
         "tags": [
             "Work",
             "Traveling",
             "Verbs"
         ],
-        "created": 1687767023066,
-        "uuid": "a6e31bf0-eb57-465c-910d-5a77357ba121",
         "translations": {
             "Deutsch": "Übersetzen",
             "English": "translate",
@@ -4169,10 +4431,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687805622664,
         "uuid": "839965ed-3c08-45c1-864a-3602593d24fe",
+        "created": 1687805622664,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Das drehbuch",
             "English": "the screenplay",
@@ -4180,10 +4444,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687846887575,
         "uuid": "63633eae-dd6a-473b-a2bd-4e0153ad5c71",
+        "created": 1687846887575,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "ähnlich",
             "English": "similar",
@@ -4191,10 +4457,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687846888216,
         "uuid": "bcf563cd-f85c-4999-b29b-f4cbc96356f3",
+        "created": 1687846888216,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Das Wort",
             "English": "the word",
@@ -4202,10 +4470,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687846888364,
         "uuid": "4e75b42a-cca7-465c-b22d-d2de4dc56a3c",
+        "created": 1687846888364,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Der Satz",
             "English": "the sentence",
@@ -4213,10 +4483,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687846888533,
         "uuid": "bc1417e2-15bb-46cc-8fc0-b4b3f5a47800",
+        "created": 1687846888533,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Der Abschnitt",
             "English": "the section",
@@ -4224,10 +4496,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687846888684,
         "uuid": "20f21443-52eb-4fcd-a970-dba93f7d5b73",
+        "created": 1687846888684,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Der Mitarbeiter",
             "English": "the coworker",
@@ -4235,10 +4509,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687846888842,
         "uuid": "caa414e9-81b7-45c5-8dd9-6431cf3e2bde",
+        "created": 1687846888842,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Der Freund",
             "English": "the friend",
@@ -4246,10 +4522,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687846888990,
         "uuid": "6112aec8-da27-43d8-a88b-e948d70ca6e8",
+        "created": 1687846888990,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Der Feind",
             "English": "the enemy",
@@ -4257,10 +4535,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687846889131,
         "uuid": "940253d1-b552-41be-a704-84d54fc40985",
+        "created": 1687846889131,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Die Kirche",
             "English": "the church",
@@ -4268,10 +4548,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687846889254,
         "uuid": "bb1bc650-eb7d-4391-bb77-5811d8c0abd9",
+        "created": 1687846889254,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Der Räuber",
             "English": "the thief",
@@ -4279,10 +4561,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687854113430,
         "uuid": "98ffe7a3-1c32-4146-942d-15d14a09ba5c",
+        "created": 1687854113430,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Der Busch",
             "English": "the bush",
@@ -4290,10 +4574,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687854114291,
         "uuid": "79bf2af2-4a4f-4653-9d51-34ae300aa4f1",
+        "created": 1687854114291,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Die Zahl",
             "English": "the number",
@@ -4301,10 +4587,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687854114456,
         "uuid": "693d04b3-314b-49fc-a125-94250bf2d347",
+        "created": 1687854114456,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Null",
             "English": "zero",
@@ -4312,10 +4600,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687854114619,
         "uuid": "20a6f99a-4d3b-47f2-9eae-04116c87fd56",
+        "created": 1687854114619,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Die Wohnung",
             "English": "the appartment",
@@ -4323,10 +4613,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687854177327,
         "uuid": "9ef3a5d4-88e2-4239-95b3-e6a97a5fa41a",
+        "created": 1687854177327,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Die Schule",
             "English": "the school",
@@ -4334,10 +4626,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687854180143,
         "uuid": "989146ab-d87a-4466-836c-9cdb82cbda24",
+        "created": 1687854180143,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Die Fabrik",
             "English": "the factory",
@@ -4345,10 +4639,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687854180748,
         "uuid": "ad839009-b75a-4242-a7b7-8f2e04ed6807",
+        "created": 1687854180748,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Der Zufall",
             "English": "the coincidence",
@@ -4356,10 +4652,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687945240349,
         "uuid": "df22fa5e-7562-4f07-a2cd-82de2dc368e6",
+        "created": 1687945240349,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Das Heft",
             "English": "the magazine",
@@ -4367,10 +4665,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687945240813,
         "uuid": "7eb3c531-bab4-415d-93ce-b89fbccc0fb0",
+        "created": 1687945240813,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Die Beschreibung",
             "English": "the description",
@@ -4378,10 +4678,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687945241001,
         "uuid": "de2c2750-c096-4e50-ac8f-407b7f66dcb7",
+        "created": 1687945241001,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Die Fernbedienung",
             "English": "the remote control",
@@ -4389,10 +4691,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687945241161,
         "uuid": "62b11c1c-61fc-4bc8-9d1b-0cd11fcb2770",
+        "created": 1687945241161,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Die Person",
             "English": "the person",
@@ -4400,10 +4704,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687945241313,
         "uuid": "d7d06e78-30b6-4805-8cde-75c2ed418912",
+        "created": 1687945241313,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Das Wörterbuch",
             "English": "the dictionary",
@@ -4411,10 +4717,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687945241487,
         "uuid": "d1143d35-1229-40f1-9815-dee35ad68b19",
+        "created": 1687945241487,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Die Rechnung",
             "English": "the receipt",
@@ -4422,10 +4730,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687945241628,
         "uuid": "9329c88d-e231-40e0-b4fa-79d5a72eb664",
+        "created": 1687945241628,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Der Kohlenstoff",
             "English": "the carbon",
@@ -4433,10 +4743,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687945242055,
         "uuid": "d575c6d4-9c9a-4052-a831-3708edfa82b2",
+        "created": 1687945242055,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Der Sauerstoff",
             "English": "the oxygen",
@@ -4444,10 +4756,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687945242964,
         "uuid": "26b57e87-bf03-405b-9bf1-5231843282d7",
+        "created": 1687945242964,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Das Blei",
             "English": "the lead",
@@ -4455,10 +4769,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687945695472,
         "uuid": "844cd945-6f9c-4f68-85ab-8817e5b98353",
+        "created": 1687945695472,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Das Silber",
             "English": "the silver",
@@ -4466,10 +4782,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687945696481,
         "uuid": "cf606d80-3270-4b46-9e07-64fa5deee155",
+        "created": 1687945696481,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Das Gold",
             "English": "the gold",
@@ -4477,10 +4795,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687945761561,
         "uuid": "f74a5b58-0e4f-4b79-94be-4338ca766dd1",
+        "created": 1687945761561,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "kopieren",
             "English": "copy",
@@ -4488,10 +4808,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687945763065,
         "uuid": "e8e45774-d45a-4a5a-8a6c-ec1e53669842",
+        "created": 1687945763065,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "insertar",
             "English": "insert",
@@ -4499,10 +4821,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687945763239,
         "uuid": "a6db841b-2fd3-4fff-9460-449ac642b323",
+        "created": 1687945763239,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Der Traum",
             "English": "the dream",
@@ -4510,10 +4834,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687945763400,
         "uuid": "9e9ec17f-5662-427d-a790-14d78a5a9c66",
+        "created": 1687945763400,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Der Albtraum",
             "English": "the nightmare",
@@ -4521,10 +4847,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687945763552,
         "uuid": "86fdec1e-e2e7-4d78-962b-4693966a6fca",
+        "created": 1687945763552,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Das Silo",
             "English": "the silo",
@@ -4532,10 +4860,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687945763690,
         "uuid": "6aa6faae-d980-49cf-9eae-fbe805373ab4",
+        "created": 1687945763690,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Der Weizen",
             "English": "the wheat",
@@ -4543,10 +4873,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1687945763824,
         "uuid": "d991d827-3ffa-4f4c-9f4b-fe0836e88d52",
+        "created": 1687945763824,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Der Mais",
             "English": "the corn",
@@ -4554,12 +4886,12 @@
         }
     },
     {
+        "uuid": "43dd2a73-418f-43ed-947f-f745a5778206",
+        "created": 1687945764008,
         "description": "",
         "tags": [
             "Buildings"
         ],
-        "created": 1687945764008,
-        "uuid": "43dd2a73-418f-43ed-947f-f745a5778206",
         "translations": {
             "Deutsch": "Der Turm",
             "English": "the tower",
@@ -4567,10 +4899,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1688022634628,
         "uuid": "ef2eb480-142f-4560-8f23-e2ed5f122907",
+        "created": 1688022634628,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Die Landschaft",
             "English": "the landscape",
@@ -4578,12 +4912,12 @@
         }
     },
     {
+        "uuid": "ddf5b259-968b-4f7a-9f87-cf255aa12d0d",
+        "created": 1688022634802,
         "description": "",
         "tags": [
             "Verbs"
         ],
-        "created": 1688022634802,
-        "uuid": "ddf5b259-968b-4f7a-9f87-cf255aa12d0d",
         "translations": {
             "Deutsch": "leiten",
             "English": "lead",
@@ -4591,12 +4925,12 @@
         }
     },
     {
+        "uuid": "bfba0fbc-118a-4eed-b331-1eb427c7478e",
+        "created": 1688022634965,
         "description": "",
         "tags": [
             "Work"
         ],
-        "created": 1688022634965,
-        "uuid": "bfba0fbc-118a-4eed-b331-1eb427c7478e",
         "translations": {
             "Deutsch": "Das Feld",
             "English": "the field",
@@ -4604,12 +4938,12 @@
         }
     },
     {
+        "uuid": "93b9c3f7-2c42-467b-acd4-6d15525451d2",
+        "created": 1688022635128,
         "description": "",
         "tags": [
             "Verbs"
         ],
-        "created": 1688022635128,
-        "uuid": "93b9c3f7-2c42-467b-acd4-6d15525451d2",
         "translations": {
             "Deutsch": "fahren",
             "English": "drive",
@@ -4617,12 +4951,12 @@
         }
     },
     {
+        "uuid": "9980130e-3d0c-42ea-90de-226a230d81da",
+        "created": 1688022635259,
         "description": "",
         "tags": [
             "Verbs"
         ],
-        "created": 1688022635259,
-        "uuid": "9980130e-3d0c-42ea-90de-226a230d81da",
         "translations": {
             "Deutsch": "stehlen",
             "English": "steal",
@@ -4630,12 +4964,12 @@
         }
     },
     {
+        "uuid": "7f9158e6-d460-44d7-8033-1af577411353",
+        "created": 1688022635496,
         "description": "",
         "tags": [
             "Verbs"
         ],
-        "created": 1688022635496,
-        "uuid": "7f9158e6-d460-44d7-8033-1af577411353",
         "translations": {
             "Deutsch": "steigen",
             "English": "rise",
@@ -4643,12 +4977,12 @@
         }
     },
     {
+        "uuid": "496d787c-2294-4ec9-9b05-e47645a9dc11",
+        "created": 1688022635670,
         "description": "",
         "tags": [
             "Verbs"
         ],
-        "created": 1688022635670,
-        "uuid": "496d787c-2294-4ec9-9b05-e47645a9dc11",
         "translations": {
             "Deutsch": "sinken",
             "English": "sink",
@@ -4656,12 +4990,12 @@
         }
     },
     {
+        "uuid": "7ced95e0-0a6f-482a-b721-30a59fb05820",
+        "created": 1688022635832,
         "description": "",
         "tags": [
             "Household"
         ],
-        "created": 1688022635832,
-        "uuid": "7ced95e0-0a6f-482a-b721-30a59fb05820",
         "translations": {
             "Deutsch": "Der Einwohner",
             "English": "the inhabitant",
@@ -4669,12 +5003,12 @@
         }
     },
     {
+        "uuid": "dbcec832-90c7-41a8-9faa-bb2c1c5bc2bb",
+        "created": 1688022635982,
         "description": "",
         "tags": [
             "Traveling"
         ],
-        "created": 1688022635982,
-        "uuid": "dbcec832-90c7-41a8-9faa-bb2c1c5bc2bb",
         "translations": {
             "Deutsch": "Das Tal",
             "English": "the valley",
@@ -4682,12 +5016,12 @@
         }
     },
     {
+        "uuid": "e72032bd-4911-4713-b367-73c30e4bd9e0",
+        "created": 1688022636126,
         "description": "",
         "tags": [
             "Verbs"
         ],
-        "created": 1688022636126,
-        "uuid": "e72032bd-4911-4713-b367-73c30e4bd9e0",
         "translations": {
             "Deutsch": "hinzufügen",
             "English": "add",
@@ -4695,12 +5029,12 @@
         }
     },
     {
+        "uuid": "f34584b1-acaa-4f21-b551-2fe47bd21f65",
+        "created": 1688022636267,
         "description": "",
         "tags": [
             "Verbs"
         ],
-        "created": 1688022636267,
-        "uuid": "f34584b1-acaa-4f21-b551-2fe47bd21f65",
         "translations": {
             "Deutsch": "wegnehmen",
             "English": "subtract",
@@ -4708,12 +5042,12 @@
         }
     },
     {
+        "uuid": "c1bde68f-f086-4393-8de6-62c313890c24",
+        "created": 1688022636401,
         "description": "",
         "tags": [
             "Adjectives"
         ],
-        "created": 1688022636401,
-        "uuid": "c1bde68f-f086-4393-8de6-62c313890c24",
         "translations": {
             "Deutsch": "Zufällig",
             "English": "random",
@@ -4721,12 +5055,12 @@
         }
     },
     {
+        "uuid": "44fd9260-e1ef-47c3-ac9b-b8dfe03cc63e",
+        "created": 1688022636516,
         "description": "",
         "tags": [
             "Adjectives"
         ],
-        "created": 1688022636516,
-        "uuid": "44fd9260-e1ef-47c3-ac9b-b8dfe03cc63e",
         "translations": {
             "Deutsch": "Genau",
             "English": "exact",
@@ -4734,12 +5068,12 @@
         }
     },
     {
+        "uuid": "502b4280-4aaf-4f96-a5e6-62692c8b4681",
+        "created": 1688022636638,
         "description": "",
         "tags": [
             "Adjectives"
         ],
-        "created": 1688022636638,
-        "uuid": "502b4280-4aaf-4f96-a5e6-62692c8b4681",
         "translations": {
             "Deutsch": "Willkürlich",
             "English": "arbitrary",
@@ -4747,12 +5081,12 @@
         }
     },
     {
+        "uuid": "ec21bd24-21d7-4d20-a9d8-b8c9b2de0c5e",
+        "created": 1688022636768,
         "description": "",
         "tags": [
             "Adjectives"
         ],
-        "created": 1688022636768,
-        "uuid": "ec21bd24-21d7-4d20-a9d8-b8c9b2de0c5e",
         "translations": {
             "Deutsch": "Sehr",
             "English": "very",
@@ -4760,12 +5094,12 @@
         }
     },
     {
+        "uuid": "0c3d35d8-a681-43ee-9463-d426a31c67cf",
+        "created": 1688022637028,
         "description": "",
         "tags": [
             "Adjectives"
         ],
-        "created": 1688022637028,
-        "uuid": "0c3d35d8-a681-43ee-9463-d426a31c67cf",
         "translations": {
             "Deutsch": "schnell",
             "English": "fast",
@@ -4773,12 +5107,12 @@
         }
     },
     {
+        "uuid": "5e9be4cb-8baf-401d-a749-11696a664a7b",
+        "created": 1688022637132,
         "description": "",
         "tags": [
             "Adjectives"
         ],
-        "created": 1688022637132,
-        "uuid": "5e9be4cb-8baf-401d-a749-11696a664a7b",
         "translations": {
             "Deutsch": "langsam",
             "English": "slow",
@@ -4786,12 +5120,12 @@
         }
     },
     {
+        "uuid": "a4704778-d139-4102-b8f4-c2b898129780",
+        "created": 1688022897753,
         "description": "",
         "tags": [
             "Verbs"
         ],
-        "created": 1688022897753,
-        "uuid": "a4704778-d139-4102-b8f4-c2b898129780",
         "translations": {
             "Deutsch": "brechen",
             "English": "break",
@@ -4799,14 +5133,14 @@
         }
     },
     {
+        "uuid": "8aabbfe5-5ac6-4da3-8f88-bd918a7c8601",
+        "created": 1688022897891,
         "description": "",
         "tags": [
             "Household",
             "Work",
             "Traveling"
         ],
-        "created": 1688022897891,
-        "uuid": "8aabbfe5-5ac6-4da3-8f88-bd918a7c8601",
         "translations": {
             "Deutsch": "Das Geld",
             "English": "the money",
@@ -4814,12 +5148,12 @@
         }
     },
     {
+        "uuid": "df6a999c-311f-4e77-9d22-9dd6198835c5",
+        "created": 1688022898049,
         "description": "",
         "tags": [
             "Verbs"
         ],
-        "created": 1688022898049,
-        "uuid": "df6a999c-311f-4e77-9d22-9dd6198835c5",
         "translations": {
             "Deutsch": "verdienen",
             "English": "earn",
@@ -4827,12 +5161,12 @@
         }
     },
     {
+        "uuid": "fa50131d-94f7-4e8b-9bb8-d3e8acbb46ed",
+        "created": 1688022898170,
         "description": "",
         "tags": [
             "Verbs"
         ],
-        "created": 1688022898170,
-        "uuid": "fa50131d-94f7-4e8b-9bb8-d3e8acbb46ed",
         "translations": {
             "Deutsch": "verlieren",
             "English": "lose",
@@ -4840,12 +5174,12 @@
         }
     },
     {
+        "uuid": "42294823-cad5-4a47-8f38-2ceb3a087603",
+        "created": 1688022898308,
         "description": "",
         "tags": [
             "Verbs"
         ],
-        "created": 1688022898308,
-        "uuid": "42294823-cad5-4a47-8f38-2ceb3a087603",
         "translations": {
             "Deutsch": "gewinnen",
             "English": "win",
@@ -4853,13 +5187,13 @@
         }
     },
     {
+        "uuid": "ee6f9f21-d241-46dd-a519-12ffdda0dc9b",
+        "created": 1688022898526,
         "description": "",
         "tags": [
             "Hobbies",
             "Body"
         ],
-        "created": 1688022898526,
-        "uuid": "ee6f9f21-d241-46dd-a519-12ffdda0dc9b",
         "translations": {
             "Deutsch": "Die Liegestütze",
             "English": "the pushups",
@@ -4867,12 +5201,12 @@
         }
     },
     {
+        "uuid": "42351710-26c1-475c-bfe0-23592e51f22c",
+        "created": 1688023010334,
         "description": "",
         "tags": [
             "Body"
         ],
-        "created": 1688023010334,
-        "uuid": "42351710-26c1-475c-bfe0-23592e51f22c",
         "translations": {
             "Deutsch": "Der Zahn",
             "English": "the tooth",
@@ -4880,12 +5214,12 @@
         }
     },
     {
+        "uuid": "4efba14e-a9d7-4c8d-9fa6-fcae58ac4d91",
+        "created": 1688023010527,
         "description": "",
         "tags": [
             "Verbs"
         ],
-        "created": 1688023010527,
-        "uuid": "4efba14e-a9d7-4c8d-9fa6-fcae58ac4d91",
         "translations": {
             "Deutsch": "putzen",
             "English": "clean",
@@ -4893,12 +5227,12 @@
         }
     },
     {
+        "uuid": "f7c04724-bb4d-49fa-bcba-42c2f4935e20",
+        "created": 1688023010721,
         "description": "",
         "tags": [
             "Verbs"
         ],
-        "created": 1688023010721,
-        "uuid": "f7c04724-bb4d-49fa-bcba-42c2f4935e20",
         "translations": {
             "Deutsch": "machen",
             "English": "make",
@@ -4906,12 +5240,12 @@
         }
     },
     {
+        "uuid": "f214d872-ff9d-4ce2-b63b-19fe9d705a0c",
+        "created": 1688023010903,
         "description": "",
         "tags": [
             "Traveling"
         ],
-        "created": 1688023010903,
-        "uuid": "f214d872-ff9d-4ce2-b63b-19fe9d705a0c",
         "translations": {
             "Deutsch": "Die Insel",
             "English": "the island",
@@ -4919,13 +5253,13 @@
         }
     },
     {
+        "uuid": "6a421dd2-7ee8-4f26-b809-1b75abc964a7",
+        "created": 1688023011064,
         "description": "",
         "tags": [
             "Traveling",
             "Traffic"
         ],
-        "created": 1688023011064,
-        "uuid": "6a421dd2-7ee8-4f26-b809-1b75abc964a7",
         "translations": {
             "Deutsch": "Das Festland",
             "English": "the main land",
@@ -4933,13 +5267,13 @@
         }
     },
     {
+        "uuid": "5ca5cbf8-c4f5-4448-b1d8-0b946d8553b2",
+        "created": 1688023011211,
         "description": "",
         "tags": [
             "Work",
             "Traveling"
         ],
-        "created": 1688023011211,
-        "uuid": "5ca5cbf8-c4f5-4448-b1d8-0b946d8553b2",
         "translations": {
             "Deutsch": "Die Ferien",
             "English": "the vacation",
@@ -4947,12 +5281,12 @@
         }
     },
     {
+        "uuid": "3f2e5f30-5cb9-4f28-b070-2ca40ca64c2e",
+        "created": 1688023011363,
         "description": "",
         "tags": [
             "Buildings"
         ],
-        "created": 1688023011363,
-        "uuid": "3f2e5f30-5cb9-4f28-b070-2ca40ca64c2e",
         "translations": {
             "Deutsch": "Das Gebäude",
             "English": "the building",
@@ -4960,13 +5294,13 @@
         }
     },
     {
+        "uuid": "97edffe6-a0d1-4d1a-8366-bc5aba4ea9af",
+        "created": 1688023011516,
         "description": "",
         "tags": [
             "Work",
             "Mathematics"
         ],
-        "created": 1688023011516,
-        "uuid": "97edffe6-a0d1-4d1a-8366-bc5aba4ea9af",
         "translations": {
             "Deutsch": "Der Massstab",
             "English": "the ruler",
@@ -4974,10 +5308,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1688023011690,
         "uuid": "76acdb04-8e26-4d70-bfec-ef0dc4a881bc",
+        "created": 1688023011690,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Der Radierer",
             "English": "the eraser",
@@ -4985,10 +5321,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1688023011860,
         "uuid": "3e05e626-c9a7-4b45-ac51-bab0d9dc2f19",
+        "created": 1688023011860,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Die Nachricht",
             "English": "the message",
@@ -4996,10 +5334,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1688023012002,
         "uuid": "13cf4443-d940-47cb-a584-0fa223c0679f",
+        "created": 1688023012002,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Das Telefon",
             "English": "the telephone",
@@ -5007,10 +5347,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1688144536543,
         "uuid": "27e26544-c916-456c-a375-c56865d06fd4",
+        "created": 1688144536543,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Die Decke",
             "English": "the blanket",
@@ -5018,10 +5360,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1688144536890,
         "uuid": "d231717f-a43e-4838-ace8-11820c3f1a26",
+        "created": 1688144536890,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Das Bett",
             "English": "the bed",
@@ -5029,10 +5373,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1688144537214,
         "uuid": "7502a4ad-b85b-42d3-a43c-13d120b683f9",
+        "created": 1688144537214,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Das Kissen",
             "English": "the pillow",
@@ -5040,12 +5386,12 @@
         }
     },
     {
+        "uuid": "0d589fa2-c79f-4a2b-99cf-827a9fb2744b",
+        "created": 1688144537575,
         "description": "",
         "tags": [
             "Verbs"
         ],
-        "created": 1688144537575,
-        "uuid": "0d589fa2-c79f-4a2b-99cf-827a9fb2744b",
         "translations": {
             "Deutsch": "teilen",
             "English": "share",
@@ -5053,12 +5399,12 @@
         }
     },
     {
+        "uuid": "e88980ce-95e2-40ef-a023-2aa00e4a239c",
+        "created": 1688144537910,
         "description": "",
         "tags": [
             "Verbs"
         ],
-        "created": 1688144537910,
-        "uuid": "e88980ce-95e2-40ef-a023-2aa00e4a239c",
         "translations": {
             "Deutsch": "färben",
             "English": "color",
@@ -5066,10 +5412,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1688144538290,
         "uuid": "7365d709-57dd-43e3-bc6c-2a9ad0989b47",
+        "created": 1688144538290,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Die Uhrzeit",
             "English": "the time",
@@ -5077,12 +5425,12 @@
         }
     },
     {
+        "uuid": "74f1b367-849d-4c01-b829-46a36b4ea7eb",
+        "created": 1688144543109,
         "description": "",
         "tags": [
             "Verbs"
         ],
-        "created": 1688144543109,
-        "uuid": "74f1b367-849d-4c01-b829-46a36b4ea7eb",
         "translations": {
             "Deutsch": "verabscheuen",
             "English": "despise",
@@ -5090,13 +5438,13 @@
         }
     },
     {
+        "uuid": "90743e78-2016-46eb-9540-18ab56ec70d4",
+        "created": 1688144544949,
         "description": "",
         "tags": [
             "Household",
             "Work"
         ],
-        "created": 1688144544949,
-        "uuid": "90743e78-2016-46eb-9540-18ab56ec70d4",
         "translations": {
             "Deutsch": "Die Kamera",
             "English": "the camera",
@@ -5104,12 +5452,12 @@
         }
     },
     {
+        "uuid": "d402de36-2b60-4afd-adea-8db7ca0b3b3c",
+        "created": 1688144545416,
         "description": "",
         "tags": [
             "Emotions"
         ],
-        "created": 1688144545416,
-        "uuid": "d402de36-2b60-4afd-adea-8db7ca0b3b3c",
         "translations": {
             "Deutsch": "Das Gefühl",
             "English": "the feeling",
@@ -5117,13 +5465,13 @@
         }
     },
     {
+        "uuid": "39b658ad-b2c0-40ef-ba15-6bc1ed5318e5",
+        "created": 1688212685864,
         "description": "",
         "tags": [
             "Weather",
             "Adjectives"
         ],
-        "created": 1688212685864,
-        "uuid": "39b658ad-b2c0-40ef-ba15-6bc1ed5318e5",
         "translations": {
             "Deutsch": "heiss",
             "English": "hot",
@@ -5131,13 +5479,13 @@
         }
     },
     {
+        "uuid": "7594567b-3b2d-464c-b929-2b2d13363439",
+        "created": 1688212686128,
         "description": "",
         "tags": [
             "Weather",
             "Adjectives"
         ],
-        "created": 1688212686128,
-        "uuid": "7594567b-3b2d-464c-b929-2b2d13363439",
         "translations": {
             "Deutsch": "kalt",
             "English": "cold",
@@ -5145,13 +5493,13 @@
         }
     },
     {
+        "uuid": "4fd53592-9d8f-4d0d-8f77-1eccc9d6f5e9",
+        "created": 1688212745859,
         "description": "",
         "tags": [
             "Work",
             "Verbs"
         ],
-        "created": 1688212745859,
-        "uuid": "4fd53592-9d8f-4d0d-8f77-1eccc9d6f5e9",
         "translations": {
             "Deutsch": "entfernen",
             "English": "remove",
@@ -5159,12 +5507,12 @@
         }
     },
     {
+        "uuid": "61e519fc-32c1-46a2-beff-b5dd730a742d",
+        "created": 1688212746163,
         "description": "",
         "tags": [
             "Weather"
         ],
-        "created": 1688212746163,
-        "uuid": "61e519fc-32c1-46a2-beff-b5dd730a742d",
         "translations": {
             "Deutsch": "Das Wetter",
             "English": "the weather",
@@ -5172,13 +5520,13 @@
         }
     },
     {
+        "uuid": "fa69a15a-d04d-407e-b1ce-c9ba8cc4d193",
+        "created": 1688212746729,
         "description": "",
         "tags": [
             "Work",
             "Adjectives"
         ],
-        "created": 1688212746729,
-        "uuid": "fa69a15a-d04d-407e-b1ce-c9ba8cc4d193",
         "translations": {
             "Deutsch": "kostenlos",
             "English": "free",
@@ -5186,10 +5534,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1688212747136,
         "uuid": "a79fecc0-ea2c-414f-b55b-c634293ea7bc",
+        "created": 1688212747136,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "kostenpflichtig",
             "English": "chargeable",
@@ -5197,12 +5547,12 @@
         }
     },
     {
+        "uuid": "b5d61f94-bcb6-4313-b654-2f2fde1cd9d4",
+        "created": 1688212747355,
         "description": "",
         "tags": [
             "Adjectives"
         ],
-        "created": 1688212747355,
-        "uuid": "b5d61f94-bcb6-4313-b654-2f2fde1cd9d4",
         "translations": {
             "Deutsch": "mehr",
             "English": "more",
@@ -5210,12 +5560,12 @@
         }
     },
     {
+        "uuid": "16403c60-ed19-4495-81dc-acb39c1f2b01",
+        "created": 1688212747574,
         "description": "",
         "tags": [
             "Adjectives"
         ],
-        "created": 1688212747574,
-        "uuid": "16403c60-ed19-4495-81dc-acb39c1f2b01",
         "translations": {
             "Deutsch": "weniger",
             "English": "less",
@@ -5223,12 +5573,12 @@
         }
     },
     {
+        "uuid": "d415cb5b-99b7-447e-9a3a-ddd819c36be0",
+        "created": 1688212748529,
         "description": "",
         "tags": [
             "Verbs"
         ],
-        "created": 1688212748529,
-        "uuid": "d415cb5b-99b7-447e-9a3a-ddd819c36be0",
         "translations": {
             "Deutsch": "anmelden",
             "English": "login",
@@ -5236,12 +5586,12 @@
         }
     },
     {
+        "uuid": "4a8bf3f7-9ec9-4e5d-a88b-a49d6bb5e152",
+        "created": 1688212749014,
         "description": "",
         "tags": [
             "Food"
         ],
-        "created": 1688212749014,
-        "uuid": "4a8bf3f7-9ec9-4e5d-a88b-a49d6bb5e152",
         "translations": {
             "Deutsch": "Die Nahrung",
             "English": "the food",
@@ -5249,12 +5599,12 @@
         }
     },
     {
+        "uuid": "65306086-9dd9-43c3-9df7-62886fac6cd0",
+        "created": 1688212769721,
         "description": "",
         "tags": [
             "Work"
         ],
-        "created": 1688212769721,
-        "uuid": "65306086-9dd9-43c3-9df7-62886fac6cd0",
         "translations": {
             "Deutsch": "Das Gesetz",
             "English": "the law",
@@ -5262,12 +5612,12 @@
         }
     },
     {
+        "uuid": "8dc08d20-1fd4-4294-9392-bf8beae78d2f",
+        "created": 1688213132065,
         "description": "",
         "tags": [
             "Work"
         ],
-        "created": 1688213132065,
-        "uuid": "8dc08d20-1fd4-4294-9392-bf8beae78d2f",
         "translations": {
             "Deutsch": "Der Kriminelle",
             "English": "the criminal",
@@ -5275,12 +5625,12 @@
         }
     },
     {
+        "uuid": "d4ad8914-2df8-4cc5-aebd-cdbbd3a50995",
+        "created": 1688213157966,
         "description": "",
         "tags": [
             "Work"
         ],
-        "created": 1688213157966,
-        "uuid": "d4ad8914-2df8-4cc5-aebd-cdbbd3a50995",
         "translations": {
             "Deutsch": "Der Anwalt",
             "English": "the lawyer",
@@ -5288,10 +5638,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1688369586453,
         "uuid": "d1d22c9c-d247-4b1d-8cb4-b2d1d23975a4",
+        "created": 1688369586453,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Die Grenze",
             "English": "the border",
@@ -5299,10 +5651,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1688369586596,
         "uuid": "8ac60d7b-ee0f-4269-9270-246c063fde9c",
+        "created": 1688369586596,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Das Zoll",
             "English": "the customs",
@@ -5310,10 +5664,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1688369586728,
         "uuid": "d6f6f142-7543-4496-9a85-e18773284206",
+        "created": 1688369586728,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "einwandern",
             "English": "immigrate",
@@ -5321,10 +5677,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1688369586860,
         "uuid": "b15ae55e-a524-4b0d-a871-3dbba7dda98d",
+        "created": 1688369586860,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "auswandern",
             "English": "emmigrate",
@@ -5332,10 +5690,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1688369586991,
         "uuid": "8b72ac24-c9de-4a82-b42f-ad41419989c5",
+        "created": 1688369586991,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "fliehen",
             "English": "flee",
@@ -5343,10 +5703,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1688369587135,
         "uuid": "ef391c70-7eba-4557-a0bb-e007f17b9346",
+        "created": 1688369587135,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "bitte",
             "English": "bitte",
@@ -5354,10 +5716,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1688369587266,
         "uuid": "a548fff8-db6e-4797-88c0-c47c2ddffb28",
+        "created": 1688369587266,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "danke",
             "English": "thanks",
@@ -5365,10 +5729,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1688369587398,
         "uuid": "bc6202d3-2594-4f1a-be8f-80a540d60c1a",
+        "created": 1688369587398,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Das Problem",
             "English": "the problem",
@@ -5376,10 +5742,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1688369587523,
         "uuid": "6ce1616b-dbfa-4461-b36b-7ff99e212ed1",
+        "created": 1688369587523,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Die Geschichte",
             "English": "the history",
@@ -5387,10 +5755,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1688369587661,
         "uuid": "288f3436-ccdd-41f8-8af9-2f8b2b474401",
+        "created": 1688369587661,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Die Infrastruktur",
             "English": "the infrastructure",
@@ -5398,10 +5768,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1688369587827,
         "uuid": "d8bd0e68-0b2c-482d-9cab-f6f9a8e6f10d",
+        "created": 1688369587827,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Der Kampf",
             "English": "the fight",
@@ -5409,10 +5781,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1688369587972,
         "uuid": "ebd717f9-c3fd-435c-8782-24d4020e58bd",
+        "created": 1688369587972,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Der Sumpf",
             "English": "the swamp",
@@ -5420,10 +5794,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1688369588137,
         "uuid": "e3a573fd-cfc3-468e-8662-ed039b8e0d61",
+        "created": 1688369588137,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Die Wüste",
             "English": "the desert",
@@ -5431,10 +5807,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1688369588297,
         "uuid": "b661651d-1bfe-416f-9479-bf139a379b4f",
+        "created": 1688369588297,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Die Schlucht",
             "English": "the gorge",
@@ -5442,10 +5820,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1688369588545,
         "uuid": "c2a85e1b-9630-4eb4-b996-36aec2df1c4d",
+        "created": 1688369588545,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Die Kuh",
             "English": "the cow",
@@ -5453,10 +5833,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1688369588779,
         "uuid": "5de65d78-2271-4038-9f62-083a19e70fc6",
+        "created": 1688369588779,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "etwas",
             "English": "something",
@@ -5464,10 +5846,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1688369589218,
         "uuid": "fe452d37-bef4-474e-b193-08b54238de88",
+        "created": 1688369589218,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "sachen",
             "English": "stuff",
@@ -5475,10 +5859,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1688370236788,
         "uuid": "a20495d8-65ea-4dfb-b466-1b8cefbf68f2",
+        "created": 1688370236788,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Der Bauernhof",
             "English": "the farm",
@@ -5486,10 +5872,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1688370236956,
         "uuid": "55eeb916-cbbc-4995-b550-5c69b4f31269",
+        "created": 1688370236956,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "vielleicht",
             "English": "maybe",
@@ -5497,10 +5885,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1688370237118,
         "uuid": "d90080b2-d561-45ce-afbc-e2f5aa859e9d",
+        "created": 1688370237118,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Die Legende",
             "English": "the legenda",
@@ -5508,10 +5898,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1688370237279,
         "uuid": "f8a1e660-1a88-4b16-899d-57052d7f5dac",
+        "created": 1688370237279,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "überspringen",
             "English": "skip",
@@ -5519,10 +5911,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1688370237424,
         "uuid": "a71709e4-279e-43bf-9cbe-57247b51a2a5",
+        "created": 1688370237424,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Die Maschine",
             "English": "the machine",
@@ -5530,10 +5924,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1688370237543,
         "uuid": "748e89e9-08c7-4890-88fe-f16879437a5a",
+        "created": 1688370237543,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Jahr",
             "English": "year",
@@ -5541,10 +5937,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1688370237674,
         "uuid": "2d101b28-3227-4a63-8917-55f74e82f690",
+        "created": 1688370237674,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Monat",
             "English": "month",
@@ -5552,10 +5950,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1688370237795,
         "uuid": "1f42e9a9-1737-4626-9139-7a3c92774d38",
+        "created": 1688370237795,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "jahrzehnt",
             "English": "decade",
@@ -5563,10 +5963,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1688370237932,
         "uuid": "468878ca-e558-4519-881d-1bd77c2b2b89",
+        "created": 1688370237932,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Jahrhundert",
             "English": "century",
@@ -5574,10 +5976,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1688370238081,
         "uuid": "d5e5da09-ae64-45f0-a61f-c89f6007f8a3",
+        "created": 1688370238081,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "erster",
             "English": "first",
@@ -5585,10 +5989,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1688370238212,
         "uuid": "296c521a-fe37-4d89-9452-057b9703aef7",
+        "created": 1688370238212,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "letzter",
             "English": "last",
@@ -5596,10 +6002,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1688370238339,
         "uuid": "60739482-9abf-470d-8fc3-7e9ba373a8ca",
+        "created": 1688370238339,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Die Hexe",
             "English": "the witch",
@@ -5607,12 +6015,12 @@
         }
     },
     {
+        "uuid": "058a1f08-fd03-4a87-b3f8-6c1db4dce3b3",
+        "created": 1688370238462,
         "description": "",
         "tags": [
             "Colors"
         ],
-        "created": 1688370238462,
-        "uuid": "058a1f08-fd03-4a87-b3f8-6c1db4dce3b3",
         "translations": {
             "Deutsch": "Orange",
             "English": "orange",
@@ -5620,10 +6028,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1688370238596,
         "uuid": "ec38ec11-0bc4-48d6-97be-68658410dcef",
+        "created": 1688370238596,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "denken",
             "English": "think",
@@ -5631,10 +6041,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1688370238739,
         "uuid": "54761dd5-30c7-4b93-8404-e672acbf9605",
+        "created": 1688370238739,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Der See",
             "English": "the lake",
@@ -5642,10 +6054,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1688370239323,
         "uuid": "0597029d-cca8-4ae2-a749-18a60b717c7e",
+        "created": 1688370239323,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Das Ufer",
             "English": "the coast",
@@ -5653,10 +6067,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1688370892026,
         "uuid": "21f2f621-83b0-4103-80d7-82cda24843d2",
+        "created": 1688370892026,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "fliegen",
             "English": "fly",
@@ -5664,10 +6080,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1688370892287,
         "uuid": "2ec9764c-ed84-4531-bad7-db8330b374d9",
+        "created": 1688370892287,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "haben",
             "English": "have",
@@ -5675,10 +6093,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1688370892432,
         "uuid": "cac708b6-e53a-42ca-9138-0476592446ad",
+        "created": 1688370892432,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "erzählen",
             "English": "tell",
@@ -5686,10 +6106,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1688370892584,
         "uuid": "25be9515-ea0b-438f-ba32-ab8b0543a3dc",
+        "created": 1688370892584,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "warten",
             "English": "wait",
@@ -5697,10 +6119,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1688370892736,
         "uuid": "280cfad3-3277-4c64-b67f-801256621f45",
+        "created": 1688370892736,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Die Zeichnung",
             "English": "the drawing",
@@ -5708,10 +6132,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1688370892888,
         "uuid": "80b36a30-2dd3-4f9e-8828-22fee73f5e47",
+        "created": 1688370892888,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "suchen",
             "English": "search",
@@ -5719,10 +6145,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1688370893068,
         "uuid": "7c164bd5-a2e7-42ac-914e-a6f01839493b",
+        "created": 1688370893068,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "spielen",
             "English": "play",
@@ -5730,10 +6158,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1688371592145,
         "uuid": "3901e493-b5b9-4c50-aa2a-3c4ed998d107",
+        "created": 1688371592145,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "weinen",
             "English": "cry",
@@ -5741,10 +6171,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1688371686783,
         "uuid": "4f807177-f0e3-4907-bfc0-c21cbad56ca0",
+        "created": 1688371686783,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "vorbereitet",
             "English": "prepared",
@@ -5752,10 +6184,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1688371730028,
         "uuid": "949316b7-6abf-40ba-a7d9-27db16d4c380",
+        "created": 1688371730028,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "lachen",
             "English": "laugh",
@@ -5763,10 +6197,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1688371765409,
         "uuid": "6cc454ab-7729-4108-a721-60bc616c09cd",
+        "created": 1688371765409,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "springen",
             "English": "jump",
@@ -5774,10 +6210,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1688371818994,
         "uuid": "e0c53337-83cb-4c76-ad9f-7a4bcd902efe",
+        "created": 1688371818994,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "draussen",
             "English": "outside",
@@ -5785,10 +6223,12 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1688371867092,
         "uuid": "e647399a-565c-46d7-9ca0-2fd44339d784",
+        "created": 1688371867092,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "bis später",
             "English": "see you later",
@@ -5796,13 +6236,67 @@
         }
     },
     {
-        "description": "",
-        "tags": [],
-        "created": 1688372033187,
         "uuid": "648827a9-31a7-434f-8606-4018e6bde0f9",
+        "created": 1688372033187,
+        "description": "",
+        "tags": [
+            ""
+        ],
         "translations": {
             "Deutsch": "Der Wein",
             "English": "the wine",
+            "Espagnol": ""
+        }
+    },
+    {
+        "uuid": "b2d0560a",
+        "created": 1688414405629,
+        "description": "",
+        "tags": [
+            ""
+        ],
+        "translations": {
+            "Deutsch": "",
+            "English": "",
+            "Espagnol": ""
+        }
+    },
+    {
+        "uuid": "b07e723a",
+        "created": 1688414406642,
+        "description": "",
+        "tags": [
+            ""
+        ],
+        "translations": {
+            "Deutsch": "",
+            "English": "",
+            "Espagnol": ""
+        }
+    },
+    {
+        "uuid": "0d18178e",
+        "created": 1688414794238,
+        "description": "",
+        "tags": [
+            ""
+        ],
+        "translations": {
+            "Deutsch": "",
+            "English": "",
+            "Espagnol": ""
+        }
+    },
+    {
+        "uuid": "88e898c8",
+        "created": 1688414802916,
+        "description": "",
+        "tags": [
+            ""
+        ],
+        "translations": {
+            "Deutsch": "",
+            "English": "",
             "Espagnol": ""
         }
     }
