@@ -31,7 +31,7 @@
                 description: "",
                 tags: [],
                 created: Date.now(),
-                uuid: crypto.randomUUID(),
+                uuid: crypto.randomUUID().split('-')[0],
                 translations: {},
             };
             

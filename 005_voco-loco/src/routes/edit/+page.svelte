@@ -4,7 +4,7 @@
     import GroupedByTags from "$lib/edit_modes/GroupedByTags.svelte";
     import LanguageManager from "$lib/edit_modes/LanguageManager.svelte";
     import DeduplicationView from "$lib/edit_modes/DeduplicationView.svelte";
-    
+    import CSVView from "$lib/edit_modes/CSVView.svelte";
     import { getContext } from "svelte";
     import type { Writable } from "svelte/store";
     import { onMount } from 'svelte';
@@ -14,6 +14,7 @@
         ['List', ListView ],
         ['Single', SingleView ],
         ['Grouped By Tags', GroupedByTags ],
+        ['CSV', CSVView],
         ['Languages', LanguageManager ],
         ['Deduplication', DeduplicationView ],
     ]

@@ -23,5 +23,7 @@
 		"vite": "^4.3.0"
 	},
 	"type": "module",
-	"dependencies": {}
+	"dependencies": {
+		"monaco-editor": "^0.39.0"
+	}
 }
