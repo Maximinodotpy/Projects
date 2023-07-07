@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input,
+textarea,
+select,
+button {
+    background-color: transparent;
+    color: inherit;
+}
+
+@layer base {
+
+    :root {
+        color-scheme: dark;
+    }
+
+    input,
+    textarea,
+    select,
+    button,
+    a {
+        @apply outline-0 transition-all rounded-lg outline-sky-500 focus:outline-offset-8 outline-offset-0 focus:outline-4 outline;
+    }
+
+    body {
+        text-shadow: 1px 1px 2px black;
+    }
+}
