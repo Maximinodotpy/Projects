@@ -6219,7 +6219,7 @@
         "translations": {
             "Deutsch": "draussen",
             "English": "outside",
-            "Espagnol": ""
+            "Espagnol": "fuera de"
         }
     },
     {
@@ -6245,7 +6245,7 @@
         "translations": {
             "Deutsch": "Der Wein",
             "English": "the wine",
-            "Espagnol": ""
+            "Espagnol": "El vino"
         }
     },
     {
@@ -6258,7 +6258,7 @@
         "translations": {
             "Deutsch": "Etwas",
             "English": "something",
-            "Espagnol": ""
+            "Espagnol": "algo"
         }
     },
     {
@@ -6271,7 +6271,7 @@
         "translations": {
             "Deutsch": "erschrecken",
             "English": "scare",
-            "Espagnol": ""
+            "Espagnol": "asustar"
         }
     },
     {
@@ -6297,7 +6297,7 @@
         "translations": {
             "Deutsch": "Das Notizbuch",
             "English": "the notebook",
-            "Espagnol": ""
+            "Espagnol": "El cuaderno"
         }
     },
     {
@@ -6310,7 +6310,7 @@
         "translations": {
             "Deutsch": "sorgen",
             "English": "worry",
-            "Espagnol": ""
+            "Espagnol": "proporcianar"
         }
     },
     {
@@ -6323,7 +6323,7 @@
         "translations": {
             "Deutsch": "übrigens",
             "English": "by the way",
-            "Espagnol": ""
+            "Espagnol": "por cierto"
         }
     },
     {
@@ -6336,7 +6336,7 @@
         "translations": {
             "Deutsch": "hoch",
             "English": "tall",
-            "Espagnol": ""
+            "Espagnol": "alta"
         }
     },
     {
@@ -6349,7 +6349,7 @@
         "translations": {
             "Deutsch": "nett",
             "English": "nice",
-            "Espagnol": ""
+            "Espagnol": "bonito"
         }
     },
     {
@@ -6362,7 +6362,7 @@
         "translations": {
             "Deutsch": "hier",
             "English": "here",
-            "Espagnol": ""
+            "Espagnol": "aqui"
         }
     },
     {
@@ -6375,7 +6375,7 @@
         "translations": {
             "Deutsch": "Die Kutsche",
             "English": "the coach",
-            "Espagnol": ""
+            "Espagnol": "el vagon"
         }
     },
     {
@@ -6388,7 +6388,7 @@
         "translations": {
             "Deutsch": "gestern",
             "English": "yesterday",
-            "Espagnol": ""
+            "Espagnol": "ayer"
         }
     },
     {
@@ -6401,7 +6401,7 @@
         "translations": {
             "Deutsch": "heute",
             "English": "today",
-            "Espagnol": ""
+            "Espagnol": "hoy"
         }
     },
     {
@@ -6414,7 +6414,7 @@
         "translations": {
             "Deutsch": "morgen",
             "English": "tomorrow",
-            "Espagnol": ""
+            "Espagnol": "manana"
         }
     },
     {
@@ -6426,6 +6426,105 @@
         ],
         "translations": {
             "Deutsch": "müde",
+            "English": "tired",
+            "Espagnol": "cansando"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1688893585225,
+        "uuid": "b183a6d0",
+        "translations": {
+            "Deutsch": "Das Bier",
+            "English": "the beer",
+            "Espagnol": "la cerveza"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1688893586672,
+        "uuid": "1b3b26ae",
+        "translations": {
+            "Deutsch": "Das Zelt",
+            "English": "the tent",
+            "Espagnol": "La tienda"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1688893587269,
+        "uuid": "f63e3b46",
+        "translations": {
+            "Deutsch": "Das Fest",
+            "English": "the party",
+            "Espagnol": "La fiesta"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1688893588031,
+        "uuid": "bc8c4101",
+        "translations": {
+            "Deutsch": "Der Ballon",
+            "English": "the ballon",
+            "Espagnol": "el globo"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1688893588553,
+        "uuid": "58c5a4e5",
+        "translations": {
+            "Deutsch": "",
+            "English": "",
+            "Espagnol": ""
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1688893589138,
+        "uuid": "634d06e4",
+        "translations": {
+            "Deutsch": "",
+            "English": "",
+            "Espagnol": ""
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1688893589713,
+        "uuid": "88414a1f",
+        "translations": {
+            "Deutsch": "",
+            "English": "",
+            "Espagnol": ""
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1688893590492,
+        "uuid": "d17705c1",
+        "translations": {
+            "Deutsch": "",
+            "English": "",
+            "Espagnol": ""
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1688893591144,
+        "uuid": "debcf60c",
+        "translations": {
+            "Deutsch": "",
             "English": "",
             "Espagnol": ""
         }
