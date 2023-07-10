@@ -6481,52 +6481,159 @@
         "uuid": "58c5a4e5",
         "translations": {
             "Deutsch": "Die Kamera",
-            "English": "",
-            "Espagnol": ""
+            "English": "the camera",
+            "Espagnol": "La camera"
         }
     },
     {
         "description": "",
-        "tags": [],
+        "tags": [
+            "Verbs"
+        ],
         "created": 1688893589138,
         "uuid": "634d06e4",
         "translations": {
-            "Deutsch": "",
-            "English": "",
-            "Espagnol": ""
+            "Deutsch": "schwimmen",
+            "English": "swim",
+            "Espagnol": "nadar"
         }
     },
     {
         "description": "",
-        "tags": [],
+        "tags": [
+            "Household"
+        ],
         "created": 1688893589713,
         "uuid": "88414a1f",
         "translations": {
-            "Deutsch": "",
-            "English": "",
-            "Espagnol": ""
+            "Deutsch": "Der Spiegel",
+            "English": "the mirror",
+            "Espagnol": "el espejo"
         }
     },
     {
         "description": "",
-        "tags": [],
+        "tags": [
+            "Buildings"
+        ],
         "created": 1688893590492,
         "uuid": "d17705c1",
         "translations": {
-            "Deutsch": "",
-            "English": "",
-            "Espagnol": ""
+            "Deutsch": "Die Solaranlage",
+            "English": "the solar panel",
+            "Espagnol": "el sistema solar"
+        }
+    },
+    {
+        "description": "",
+        "tags": [
+            "Work",
+            "Traveling"
+        ],
+        "created": 1688893591144,
+        "uuid": "debcf60c",
+        "translations": {
+            "Deutsch": "Lastwagen",
+            "English": "the truck",
+            "Espagnol": "el camion"
         }
     },
     {
         "description": "",
         "tags": [],
-        "created": 1688893591144,
-        "uuid": "debcf60c",
+        "created": 1689015814554,
+        "uuid": "9e84c9b2",
         "translations": {
-            "Deutsch": "",
-            "English": "",
-            "Espagnol": ""
+            "Deutsch": "Die Beschriftung",
+            "English": "the label",
+            "Espagnol": "La inscription"
+        }
+    },
+    {
+        "description": "",
+        "tags": [
+            "Traveling"
+        ],
+        "created": 1689015815079,
+        "uuid": "64233a01",
+        "translations": {
+            "Deutsch": "Die Autobahn",
+            "English": "The highway",
+            "Espagnol": "La autopista"
+        }
+    },
+    {
+        "description": "",
+        "tags": [
+            "Food"
+        ],
+        "created": 1689015815420,
+        "uuid": "9a6a802f",
+        "translations": {
+            "Deutsch": "Das Getränk",
+            "English": "the beverage",
+            "Espagnol": "La bebida"
+        }
+    },
+    {
+        "description": "",
+        "tags": [
+            "Food"
+        ],
+        "created": 1689015815818,
+        "uuid": "a8fa2f2f",
+        "translations": {
+            "Deutsch": "Das Brot",
+            "English": "the bread",
+            "Espagnol": "el pan"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1689015815995,
+        "uuid": "354d3a70",
+        "translations": {
+            "Deutsch": "Die Zukunft",
+            "English": "the future",
+            "Espagnol": "el futuro"
+        }
+    },
+    {
+        "description": "",
+        "tags": [],
+        "created": 1689015816401,
+        "uuid": "90f092f7",
+        "translations": {
+            "Deutsch": "Die Vergangenheit",
+            "English": "the past",
+            "Espagnol": "El pasado"
+        }
+    },
+    {
+        "description": "",
+        "tags": [
+            "Adjectives"
+        ],
+        "created": 1689015936431,
+        "uuid": "6a417e10",
+        "translations": {
+            "Deutsch": "Gesetzlos",
+            "English": "lawless",
+            "Espagnol": "sin ley"
+        }
+    },
+    {
+        "description": "",
+        "tags": [
+            "Traveling"
+        ],
+        "created": 1689015937320,
+        "uuid": "bd1bbd91",
+        "translations": {
+            "Deutsch": "Die Aussicht",
+            "English": "the view",
+            "Espagnol": "La vista"
         }
     }
 ]
