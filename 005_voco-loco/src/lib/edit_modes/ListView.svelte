@@ -28,7 +28,7 @@
         
             <div style={grid_template_class} class="grid items-center w-full border-b-normal">
                 <div class="px-2">{new Date(item.created ?? 0).toLocaleString()}</div>
-                <div class="p-2 text-left">
+                <div class="py-2 text-left">
                     {index + 1}
                     <SingleViewButton uuid={item.uuid} />
                 </div>
@@ -41,7 +41,7 @@
                                 on:input={(ev) => {
                                     item.translations[lang] = ev.target.value;
                                 }}
-                                class="w-full p-2 bg-transparent focus:outline-none"
+                                class="w-full py-2 bg-transparent focus:outline-none"
                             />
                         {/if}
                     </div>

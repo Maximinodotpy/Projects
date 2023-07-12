@@ -62,7 +62,10 @@
         <div class="flex items-center gap-5 ml-auto">
             <div class="flex items-center h-full divide-x-normal border-l-normal scroll-smooth">
                 {#each view_modes as view_mode, index (view_mode[0])}
-                    <label class={`py-1 px-3 flex items-center border-b-2 h-full ${current_view_mode == index ? 'border-b-blue-500 bg-gradient-to-b from-transparent from-75% to-blue-800/50' : 'border-b-transparent'}`} id={`view-${index}`}>
+                    <label class={`py-1 px-3 flex items-center border-b-2 h-full ${current_view_mode == index ? 
+                    'border-b-blue-500 bg-gradient-to-b from-transparent from-75% to-blue-800/50' 
+                    : 
+                    'border-b-transparent hover:border-b-blue-500/50'}`} id={`view-${index}`}>
                         <input type="radio" bind:group={current_view_mode} name="view_mode" value={index} class="hidden">
                         {view_mode[0]}
                     </label>
