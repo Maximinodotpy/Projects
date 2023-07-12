@@ -1,89 +1,69 @@
 <script lang="ts">
-    import SingleViewButton from './SingleViewButton.svelte';
+    import SingleViewButton from "./SingleViewButton.svelte";
     import { getContext } from "svelte";
     import type { Writable } from "svelte/store";
+    import VirtualList from "@sveltejs/svelte-virtual-list";
 
     const voci_file = getContext<Writable<VocabularyFile>>("voci_file");
 
-    function moveDown(id: number) {
-        const temp = $voci_file.words[id + 1]
-        $voci_file.words[id + 1] = $voci_file.words[id]
-        $voci_file.words[id] = temp
-    }
-    function moveUp(id: number) {
-        const temp = $voci_file.words[id - 1]
-        $voci_file.words[id - 1] = $voci_file.words[id]
-        $voci_file.words[id] = temp
-    }
-
-    /* function sortFunction(el1: Word, el2: Word)  { 
-        return el2.translations.English.localeCompare(el1.translations.English)
-    } */
+    $: grid_template_class = `grid-template-columns: repeat(${4 + $voci_file.languages.length}, minmax(0, 1fr));`;
 </script>
 
-<table class="w-full mb-5 overflow-x-auto whitespace-nowrap">
-    <thead class="sticky top-0 z-50 shadow-lg bg-dark-100">
-        <tr class="text-left">
-            <th class="p-2"></th>
-            <th class="p-2"></th>
-            <th class="p-2">Created</th>
-            <th class="p-2">#</th>
-            {#each $voci_file.languages as lang}
-                <th class="p-2">{lang}</th>
-            {/each}
-            <th>Tags</th>
-            <th class="p-0">🧨</th>
-        </tr>
-    </thead>
-    <tbody class="divide-y-normal ">
-        {#each $voci_file.words as word, index (word.uuid)}
-            <tr>
-                <td class="p-2 text-center">
-                    {#if index != 0}
-                        <button on:click={() => { moveUp(index) }}>⬆</button>
-                    {/if}
-                </td>
-                <td class="p-2 text-center">
-                    {#if index < $voci_file.words.length - 1}
-                        <button on:click={() => { moveDown(index) }}>⬇</button>
-                    {/if}
-                </td>
-                <td>{ new Date(word.created ?? 0).toLocaleString() }</td>
-                <td class="p-2 text-left">
-                    {index + 1} 
-                    <SingleViewButton uuid={word.uuid}/>
-                </td>
+
+<div class="flex flex-col h-full overflow-hidden grow">
+    <div style={grid_template_class} class="grid items-center border-b-normal">
+        <div class="p-2">Created</div>
+        <div class="py-2">#</div>
+        {#each $voci_file.languages as lang}
+            <div class="py-2">{lang}</div>
+        {/each}
+        <div>Tags</div>
+        <div class="p-0">🧨</div>
+    </div>
+    
+    <div class="overflow-auto grow">
+        <VirtualList items={$voci_file.words} let:item>
+            <!-- this will be rendered for each currently visible item -->
+            {@const index = $voci_file.words.indexOf(item)}
+        
+            <div style={grid_template_class} class="grid items-center w-full border-b-normal">
+                <div class="px-2">{new Date(item.created ?? 0).toLocaleString()}</div>
+                <div class="p-2 text-left">
+                    {index + 1}
+                    <SingleViewButton uuid={item.uuid} />
+                </div>
                 {#each $voci_file.languages as lang}
-                    <td>
-                        {#if lang in word.translations}
+                    <div>
+                        {#if lang in item.translations}
                             <input
                                 type="text"
-                                value={word.translations[lang]}
+                                value={item.translations[lang]}
                                 on:input={(ev) => {
-                                    word.translations[lang] = ev.target.value
+                                    item.translations[lang] = ev.target.value;
                                 }}
                                 class="w-full p-2 bg-transparent focus:outline-none"
                             />
                         {/if}
-                    </td>
+                    </div>
                 {/each}
-
-                <td>
-                    {#each word.tags as tag}
+        
+                <div>
+                    {#each item.tags as tag}
                         <span class="text-xs">
                             {tag}
                         </span>
                     {/each}
-                </td>
-
-                <td>
-                    <button on:click={() => { $voci_file.removeWord(index) }}>❌</button> 
-                <td/>
-            </tr>
-        {/each}
-    </tbody>
-</table>
-
-<div class="p-4 mb-20">
-    <button on:click={$voci_file.addWord}>Add Word</button>
+                </div>
+        
+                <div>
+                    <button
+                        on:click={() => {
+                            $voci_file.removeWord(index);
+                        }}>❌</button
+                    >
+                </div>
+            </div>
+        </VirtualList>
+        <!-- {$voci_file.words.length} -->
+    </div>
 </div>
