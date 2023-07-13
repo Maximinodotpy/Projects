@@ -1,8 +1,18 @@
 <script lang="ts">
+    import { goto } from "$app/navigation";
     import { base } from "$app/paths";
 
     export let uuid: string;
+
+    async function goToSingleView() {
+        console.log('Single View for: ' + uuid);
+        
+        goto(`${base}/`)
+            .then(() => {                
+                goto(`${base}/edit?uuid=${uuid}`);
+            });
+    }
 </script>
 
-<a href="{base}/edit?uuid={uuid}">🔍</a>
+<button on:click={goToSingleView}>🔍</button>
 

@@ -3,6 +3,9 @@
     import { onMount } from "svelte";
     import type { Writable } from "svelte/store";
     import { getContext } from "svelte";
+    import calcJaroWincklerDistance from "./JaroWinkler";
+    import SingleViewButton from "./SingleViewButton.svelte";
+    import { page } from "$app/stores";
 
     const voci_file = getContext<Writable<VocabularyFile>>("voci_file");
 
@@ -20,8 +23,7 @@
         }
     }
 
-    // Check if the url has the uuid paramert and if yes search for the word with the uuid and set it to be the current word
-    onMount(() => {
+    function goToSearchedWord() {
         const urlParams = new URLSearchParams(location?.search);
         if (urlParams.has('uuid')) {
             const uuid = urlParams.get('uuid');
@@ -29,10 +31,15 @@
             if (index !== -1) {
                 current_word = index;
             }
-
+    
             // Remove UUID from URL
             window?.history.replaceState({}, document?.title, location?.pathname);
         }
+    }
+    
+    // Check if the url has the uuid paramert and if yes search for the word with the uuid and set it to be the current word
+    onMount(() => {        
+        goToSearchedWord();
     });
 </script>
 
@@ -59,11 +66,27 @@
         
             <p class="mb-5">Added on <code class="inline-block p-1"> { new Date($voci_file.words[current_word].created ?? 0).toLocaleString() } </code></p>
             
-            <div class="grid grid-cols-2 gap-10 mb-5">
+            <div class="flex flex-wrap gap-[10%] mb-5">
                 {#each $voci_file.languages as lang}
-                    <div>
-                        <h3 class="mb-3 font-bold">{lang}</h3>
-                        <input type="text" bind:value={$voci_file.words[current_word].translations[lang]} class="w-full p-2 border-2 border-b-4 focus:outline-none" />
+                    <div class="w-[45%]">
+                        <div>
+                            <h3 class="mb-3 font-bold">{lang}</h3>
+                            <input type="text" bind:value={$voci_file.words[current_word].translations[lang]} class="w-full p-2 border-2 border-b-4 focus:outline-none" />
+                        </div>
+
+                        <div class="p-2 text-sm border">
+                            <!-- Compare this word in this language to all other words in this language and find similiarities -->
+                            <h3 class="mb-3 text-base">Similar words</h3>
+                            {#each $voci_file.words.filter(word => word.uuid !== $voci_file.words[current_word].uuid) as similar_word}
+                            {@const distance = calcJaroWincklerDistance(similar_word.translations[lang], $voci_file.words[current_word].translations[lang])}
+                                {#if distance > 0.90}
+                                    <div class="flex justify-between">
+                                        <p class="mb-2 italic">"{similar_word.translations[lang]}" <SingleViewButton uuid={similar_word.uuid}/></p>
+                                        <p class="text-gray-500">Similarity: {Math.round(distance * 100)}</p>
+                                    </div>
+                                {/if}
+                            {/each}
+                        </div>
                     </div>
                 {/each}
             </div>
