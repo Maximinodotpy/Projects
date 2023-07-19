@@ -1,5 +1,13 @@
 <script context="module" lang="ts">
     let id = 0;
+
+    interface IMenuItem {
+        label: string;
+        action: () => void;
+        close_on_click?: boolean;
+    }
+
+    type Items = Array<IMenuItem | "divider">;
 </script>
 
 <script lang="ts">
@@ -9,14 +17,8 @@
 
     const my_id = id++;
 
-    interface IMenuItem {
-        label: string;
-        action: () => void;
-        close_on_click?: boolean;
-    }
-
     export let title: string = "Menu";
-    export let items: Array<IMenuItem | "divider"> = [];
+    export let items: Items = [];
 
     let menuPanel: HTMLElement
     let menuButton: HTMLElement
@@ -95,7 +97,11 @@
             {#if item == 'divider'}
                 <div class="divider"></div>
             {:else}
-                <button on:click={() => { item?.action(); item?.close_on_click ?? true ? togglePanel(false) : '' }}>{ item.label }</button>
+                {#if 'action' in item}
+                    <button on:click={() => { item?.action(); item?.close_on_click ?? true ? togglePanel(false) : '' }}>{ item.label }</button>
+                {:else}
+                    <div class="group_title">{ item.label }</div>
+                {/if}
             {/if}
         {/each}
     </div>
@@ -116,7 +122,7 @@
         flex-direction: column;
     }
 
-    .menu-panel button {
+    .menu-panel :is(button, .group_title) {
         padding: var(--panel-button-padding, 7px 15px);
         border: none;
         background-color: transparent;
@@ -127,11 +133,15 @@
         box-sizing: border-box;
     }
 
-    .menu-panel button:first-child {
+    .menu-panel :is(button:first-child, .group_title:first-child) {
         margin-top: 10px;
     }
-    .menu-panel button:last-child {
+    .menu-panel :is(button:last-child, .group_title:last-child) {
         margin-bottom: 10px;
+    }
+
+    .group_title {
+        font-weight: bold;
     }
 
 

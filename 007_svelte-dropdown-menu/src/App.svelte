@@ -18,13 +18,16 @@
         },
         'divider',
         {
-            label: "Save",
+            label: "Export As ...",
+        },
+        {
+            label: "PDF",
             action: () => {
                 console.log("Save");
             },
         },
         {
-            label: "Close",
+            label: "SVG",
             action: () => {
                 console.log("Close");
             },
