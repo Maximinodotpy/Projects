@@ -19,12 +19,12 @@
         ['Deduplication', DeduplicationView ],
     ]
     let current_view_mode = 0
-    $: {
+    /* $: {
         // @ts-ignore
         document.getElementById(`view-${current_view_mode}`)?.scrollIntoView({
             behavior: 'smooth',
         });
-    }
+    } */
     const voci_file = getContext<Writable<VocabularyFile>>("voci_file");
 
     function handleSearchParams() {

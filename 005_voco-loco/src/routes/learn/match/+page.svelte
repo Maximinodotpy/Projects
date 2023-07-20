@@ -1,6 +1,7 @@
 <script lang="ts">
     import { option_values } from '../options';
     import { shuffle } from '$lib/utils';
+    import { onMount } from 'svelte';
 
     let first_selected : number | null = null;
 
@@ -113,8 +114,10 @@
         }
     }
 
-    option_values.subscribe(() => {
-        newWords();
+    onMount(() => {
+        option_values.subscribe(() => {
+            newWords();
+        })
     })
 </script>
 

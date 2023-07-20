@@ -1,6 +1,9 @@
 <script lang="ts">
     import { goto } from "$app/navigation";
     import { base } from "$app/paths";
+    import { onMount } from "svelte";
 
-    goto(base + "/edit");
+    onMount(() => {
+        goto(base + "/edit");
+    })
 </script>

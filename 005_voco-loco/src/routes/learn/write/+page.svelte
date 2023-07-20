@@ -109,7 +109,7 @@
         </div>
     </div>
     <div class="flex border-t-normal divide-x-normal">
-        <input autofocus type="text" class="p-6 text-2xl focus:outline-none w-[0] grow placeholder:text-neutral-700" placeholder={`Answer in ${$option_values.target_language}`} on:keydown={keydownCallback} bind:value={inputContent}>
+        <input type="text" class="p-6 text-2xl focus:outline-none w-[0] grow placeholder:text-neutral-700" placeholder={`Answer in ${$option_values.target_language}`} on:keydown={keydownCallback} bind:value={inputContent}>
         <button on:click={check}  class="px-2 py-6 md:p-6 md:text-2xl focus:outline-none">Check</button>
         <button on:click={skip}  class="px-2 py-6 md:p-6 md:text-2xl focus:outline-none">Skip</button>
     </div>
