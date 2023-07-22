@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    color-scheme: dark;
+}
+
+input {
+    color: inherit;
+    font: inherit;
+    background-color: transparent;
+}
