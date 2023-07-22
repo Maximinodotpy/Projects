@@ -2,7 +2,8 @@
     import { onMount } from "svelte";
     import panzoom from "panzoom";
     import type { PanZoom } from "panzoom";
-    import SavedGrids from "./SavedGrids.svelte";
+    import SavedGrids from "./savedGrids/SavedGrids.svelte";
+    import savedGrids from "./savedGrids/savedGrids";
 
     enum GameState {
         Running,
@@ -12,16 +13,12 @@
 
     let game_state: GameState = GameState.Editing;
 
-    // Alive Cells
-    
-
     let gridSize = 30;
     let tickTime = 1000;
 
     let panable: SVGElement;
     let panableBox: DOMRect;
     let panInstance: PanZoom;
-    let isPanning = false;
 
     // The grid is a list of alive cells
     let grid: ICell[] = [{ x: 0, y: 2 }];
@@ -31,6 +28,7 @@
         const isAlive = grid.some((cell) => cell.x == x && cell.y == y);
         return isAlive;
     }
+    
     function toggleCell(x: number, y: number, force: boolean | undefined = undefined) {
         let target = force == undefined ? isCellAlive(x, y) : !force;
 
@@ -76,22 +74,10 @@
             smoothScroll: false,
         });
 
-        panInstance.on("panstart", (e) => {
-            isPanning = true;
-        });
-        panInstance.on("panend", (e) => {
-            isPanning = false;
-        });
-
         panInstance.on("transform", (e) => {
             panInstance = panInstance;
         });
     });
-
-    // Function that snaps a number to certain steps like 20
-    function numberStep(value: number, step: number) {
-        return Math.round(value / step) * step;
-    }
 
     function startGame() {
         game_state = GameState.Running;
@@ -152,6 +138,21 @@
         
         if (game_state == GameState.Running) setTimeout(tick, tickTime);
     }
+
+    function saveCurrentGrid() {
+        $savedGrids.push({
+            name: "New Grid",
+            created: Date.now(),
+            grid: grid,
+        });
+
+        $savedGrids = $savedGrids;
+    }
+
+    // Function that snaps a number to certain steps like 20
+    function numberStep(value: number, step: number) {
+        return Math.round(value / step) * step;
+    }
 </script>
 
 <div class="flex flex-col h-screen overflow-hidden bg-neutral-800 text-neutral-200">
@@ -159,7 +160,7 @@
         <div class="px-3 py-2">Conway's Game of Life</div>
         <div class="px-3 py-2">
             Made By 
-            <a href="https://maximmaeder.com/">Maxim Mäder</a>
+            <a href="https://maximmaeder.com/" target="_blank">Maxim Mäder</a>
         </div>
     </div>
     
@@ -212,20 +213,32 @@
         </svg>
 
         <div class="min-w-[300px] bg-neutral-900 flex flex-col h-full">
-            <div class="flex gap-4 px-6 mb-3">
-                <button class="block w-full py-2 mt-3 rounded-md bg-neutral-800" on:click={startGame}>Run</button>
-                <button class="block w-full py-2 mt-3 rounded-md bg-neutral-800" on:click={pauseGame}>Reset</button>
-                <button class="block w-full py-2 mt-3 rounded-md bg-neutral-800"on:click={() => { panInstance.moveTo(0, 0); }}>Reset Position</button>
+            <div class="px-6 mt-3 mb-3">
+                {#if game_state == GameState.Editing}
+                    <button class="block w-full py-2 rounded-md bg-neutral-800" on:click={startGame}>Start</button>
+                {:else}
+                    <button class="block w-full py-2 rounded-md bg-neutral-800" on:click={() => { pauseGame(); }}>Stop</button>
+                {/if}
             </div>
             
             <div class="px-6 mb-4">
-                <input type="text" class="w-full px-3 py-2 rounded-md bg-neutral-800" bind:value={tickTime} disabled={game_state != GameState.Editing}>
+
+                <label for="tick_time" class="block my-3">
+                    <div class="mb-2">Tick Time [ms]</div>
+                    <input type="text" class="w-full px-3 py-2 rounded-md bg-neutral-800" bind:value={tickTime} disabled={game_state != GameState.Editing} id="tick_time">
+                </label>
+                
+                <div class="flex gap-3">
+                    <button class="block py-2 mt-3 text-xs rounded-md grow bg-neutral-800"on:click={() => { panInstance.moveTo(0, 0); }}>Reset Position</button>
+                    <button class="block py-2 mt-3 text-xs rounded-md grow bg-neutral-800"on:click={() => { pauseGame(); grid = []; }}>Clear</button>
+                    <button class="block py-2 mt-3 text-xs rounded-md grow bg-neutral-800"on:click={saveCurrentGrid}>Save Current Grid</button>
+                </div>
             </div>
+
 
             <SavedGrids on:load_saved={(e) => {
                 pauseGame();
                 grid = e.detail.grid;
-                console.log("load saved", grid);
                 panInstance = panInstance;
             }}/>
         </div>
