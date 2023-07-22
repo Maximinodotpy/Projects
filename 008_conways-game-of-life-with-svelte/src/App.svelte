@@ -140,10 +140,12 @@
     }
 
     function saveCurrentGrid() {
+        if (grid.length == 0) return;
+
         $savedGrids.push({
             name: "New Grid",
             created: Date.now(),
-            grid: grid,
+            grid: [...grid],
         });
 
         $savedGrids = $savedGrids;
@@ -238,7 +240,7 @@
 
             <SavedGrids on:load_saved={(e) => {
                 pauseGame();
-                grid = e.detail.grid;
+                grid = [...e.detail.grid];
                 panInstance = panInstance;
             }}/>
         </div>
