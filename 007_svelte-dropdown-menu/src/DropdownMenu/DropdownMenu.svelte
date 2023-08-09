@@ -1,59 +1,66 @@
 <script context="module" lang="ts">
-    let id = 0;
-
-    interface IMenuItem {
+    interface IMenuItemBase {
         label: string;
-        action: () => void;
         close_on_click?: boolean;
     }
 
-    type Items = Array<IMenuItem | "divider">;
+    interface IMenuItemAction extends IMenuItemBase {
+        label: string;
+        action?: () => void;
+        close_on_click?: boolean;
+    }
+
+    interface ISubMenuItem extends IMenuItemBase {
+        items: Items;
+    }
+
+    export type Items = Array<
+        ISubMenuItem | Array<IMenuItemAction|ISubMenuItem> | IMenuItemAction
+    >;
 </script>
 
 <script lang="ts">
-    import { getContext } from "svelte";
+    import { getContext, onMount } from "svelte";
     import type { Writable } from "svelte/store";
-    import { onMount } from "svelte";
+    import { autoUpdate, computePosition, offset, shift, type Placement, flip } from '@floating-ui/dom'
+    import type { IMenuGroupInfo } from "./DropdownMenuGroup.svelte";
+    import DropdownMenuGroup from "./DropdownMenuGroup.svelte";
 
-    const my_id = id++;
+    const my_id = crypto.randomUUID();
 
     export let title: string = "Menu";
+    export let menu_placement: Placement = "bottom-start";
+    export let is_sub_menu = false;
     export let items: Items = [];
+    let groups: (IMenuItemAction|ISubMenuItem)[][] = [];
+    $: {
+        groups = items.map((item) => {
+            if (Array.isArray(item)) {
+                return item;
+            } else {
+                return [item];
+            }
+        });
+    }
 
     let menuPanel: HTMLElement
     let menuButton: HTMLElement
     let showPanel = false;
 
-    let window_width = 0;
+    let MenuGroupInfo = getContext<Writable<IMenuGroupInfo>>("MenuGroupInfo");
 
-    let current_menu = getContext<Writable<number>>("current_menu");
+    if (MenuGroupInfo && !is_sub_menu) {
 
-    if (current_menu) {
-        current_menu.subscribe((value) => {
+        console.log(title);
+        console.log(MenuGroupInfo);
+        console.log($MenuGroupInfo);
+        console.log('-----');
+        
+        $MenuGroupInfo.menus.push(my_id);
+
+        MenuGroupInfo.subscribe((value) => {
             if (value !== my_id) {
                 showPanel = false;
-            }
-        });
-    }
-
-    onMount(() => {
-        window.addEventListener('resize', ensurePosition)
-    })
-
-    function ensurePosition() {
-        window.requestAnimationFrame(() => {
-            if (!showPanel) return;
-            if (!menuPanel) return;
-
-            const menuButtonRect = menuButton.getBoundingClientRect();
-            const menuPanelRect = menuPanel.getBoundingClientRect();
-
-            let x_offset = window_width - (menuButtonRect.x + menuPanelRect.width);
-
-            if (x_offset < 0) {
-                menuPanel.style.translate = `${x_offset}px`;
-            } else {
-                menuPanel.style.translate = ``;
             }
         });
     }
@@ -65,61 +72,91 @@
             showPanel = !showPanel;
         }
 
-        if (showPanel) {
-            ensurePosition();
-        }
-
-        if (current_menu) {
+        /* if (current_menu) {
             showPanel ? current_menu.set(my_id) : current_menu.set(-1);
-        }
+        } */
     }
 
     function buttonHover() {
-        if (current_menu) {
+        /* if (current_menu) {
             if ($current_menu != -1) {
                 togglePanel(true);
             }
-        }
+        } */
     }
 
+    onMount(() => {
+        // Stop this in case the menu panel does not exist onDestroy
+        autoUpdate(menuButton, menuPanel, () => {
+            computePosition(
+                menuButton,
+                menuPanel,
+                {
+                    placement: menu_placement,
+                    middleware: [
+                        offset(15),
+                        shift(),
+                        flip(),
+                    ],
+                },
+            ).then(({ x, y }) => {
+                Object.assign(menuPanel.style, {
+                    left: `${x}px`,
+                    top: `${y}px`,
+                });
+            })
+        })
+    })
 </script>
 
 <svelte:body on:click={() => { togglePanel(false) }}/>
-<svelte:window bind:innerWidth={window_width} />
+
+<button on:click|stopPropagation={() => { togglePanel() }} on:pointermove={() => { buttonHover() }} bind:this={menuButton} class:submenu_button={is_sub_menu}>
+    { title }
+
+    {#if is_sub_menu}
+        <span class="arrow">▶</span>
+    {/if}
+</button>
 
 <!-- svelte-ignore a11y-no-static-element-interactions -->
 <!-- svelte-ignore a11y-click-events-have-key-events -->
-<div on:click|stopPropagation={() => {}}>
-    <button on:click={() => { togglePanel() }} on:pointermove={() => { buttonHover() }} bind:this={menuButton}>{ title }</button>
-
-    <div bind:this={menuPanel} class="menu-panel" style="display: {showPanel ? 'flex': 'none'}">
-        {#each items as item}
-            {#if item == 'divider'}
-                <div class="divider"></div>
-            {:else}
-                {#if 'action' in item}
-                    <button on:click={() => { item?.action(); item?.close_on_click ?? true ? togglePanel(false) : '' }}>{ item.label }</button>
+<div bind:this={menuPanel} class="menu-panel" class:hidden={!showPanel} on:click|stopPropagation={() => {}}>
+    <DropdownMenuGroup>
+        {#each groups as group, i}
+            {#each group as button}
+                {#if 'items' in button}
+                    <svelte:self items={button.items} title={button.label} is_sub_menu={true} menu_placement="right-start" />
                 {:else}
-                    <div class="group_title">{ item.label }</div>
+                    <button>{ button.label }</button>
                 {/if}
+            {/each}
+    
+            {#if groups.length != i + 1}
+                <div class="divider"></div>
             {/if}
         {/each}
-    </div>
+    </DropdownMenuGroup>
 </div>
 
 <style>
     .menu-panel {
+        width: max-content;
         position: absolute;
+        top: 0;
+        left: 0;
+        min-width: 120px;
         background-color: var(--bg-color, #222);
-        max-width: 100%;
-        min-width: var(--panel-width, 200px);
         border: var(--panel-border, 1px solid #444);
         border-radius: var(--panel-radius, 10px);
-        /* padding: var(--panel-padding, 5px); */
-        overflow: hidden;
         box-shadow: 0 3px 10px hsl(0, 0%, 0%);
         display: flex;
         flex-direction: column;
+    }
+
+    .menu-panel.hidden {
+        pointer-events: none;
+        opacity: 0;
     }
 
     .menu-panel :is(button, .group_title) {
@@ -140,11 +177,6 @@
         margin-bottom: 10px;
     }
 
-    .group_title {
-        font-weight: bold;
-    }
-
-
     .menu-panel .divider {
         width: 100%;
         border-bottom: 1px solid #444;
@@ -153,5 +185,11 @@
     
     .menu-panel button:hover {
         background-color: var(--panel-button-hover-color, #333);
+    }
+
+    .submenu_button {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
     }
 </style>
