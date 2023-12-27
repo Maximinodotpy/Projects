@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://clqu6oqn6ym2y"]
+
+[node name="Control" type="Window"]
+title = "fasd"
+initial_position = 1
+size = Vector2i(200, 200)

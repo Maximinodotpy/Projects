@@ -1,0 +1,35 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Gaint"
+run/main_scene="res://editor.tscn"
+config/features=PackedStringArray("4.2", "GL Compatibility")
+config/icon="res://Icons/pen.png"
+
+[autoload]
+
+History="*res://Global Scripts/History.gd"
+Helpers="*res://Global Scripts/Helpers.gd"
+Layers="*res://Global Scripts/Layers.gd"
+UserInterface="*res://Global Scripts/UserInterface.gd"
+ToolManager="*res://Global Scripts/ToolManager.gd"
+Selection="*res://Global Scripts/Selection.gd"
+FileManager="*res://Global Scripts/FileManager.gd"
+
+[gui]
+
+theme/custom="res://Theme/Theme.tres"
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"

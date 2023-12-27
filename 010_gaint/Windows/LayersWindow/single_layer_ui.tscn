@@ -1,0 +1,111 @@
+[gd_scene load_steps=6 format=3 uid="uid://cicedaqm7bd41"]
+
+[ext_resource type="Texture2D" uid="uid://3lsfl5iijons" path="res://icon.svg" id="1_po0ps"]
+[ext_resource type="Texture2D" uid="uid://dgw8vd1o6goj5" path="res://Icons/trash-2.png" id="2_8bq03"]
+[ext_resource type="Texture2D" uid="uid://cesoah5x1nmpk" path="res://Icons/pen.png" id="2_stkqg"]
+[ext_resource type="Texture2D" uid="uid://oxe5480t36qf" path="res://Icons/eye.png" id="4_ankbt"]
+
+[sub_resource type="GDScript" id="GDScript_afv2f"]
+script/source = "extends HBoxContainer
+
+var my_layer_data: ImageLayer = ImageLayer.new()
+
+@onready var draw_on_button = $actions/draw_on_button
+@onready var delete_button = $actions/delete_button
+@onready var toggle_visibility_button = $actions/toggle_visibility_button
+
+const EYE = preload(\"res://Icons/eye.png\")
+const EYE_OFF = preload(\"res://Icons/eye-off.png\")
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	$LayerInfo/Label.text = my_layer_data.layer_name
+	$AspectRatioContainer/LayerPreview.texture = my_layer_data.layer_texture
+
+	var removed_cb = func(layer: ImageLayer):
+		if my_layer_data == layer:
+			queue_free()
+
+	Layers.removed_layer.connect(removed_cb)
+
+	draw_on_button.pressed.connect(draw_on_cb)
+
+	delete_button.pressed.connect( func(): Layers.remove_layer(my_layer_data) )
+
+	toggle_visibility_button.pressed.connect(func():
+		my_layer_data.visible = not my_layer_data.visible
+	)
+
+func draw_on_cb():
+	Layers.switch_to_layer(my_layer_data)
+
+func _process(delta):
+	delete_button.visible = Layers.get_layer_data().size() > 1
+
+	toggle_visibility_button.texture_normal = EYE if my_layer_data.visible else EYE_OFF
+
+	var is_curent_layer = Layers.am_i_the_current_layer(my_layer_data)
+	draw_on_button.modulate = Color(1, 1, 1, 1) if is_curent_layer else Color(1, 1, 1, 0.3)
+	draw_on_button.disabled = is_curent_layer
+"
+
+[node name="SingleLayerUI" type="HBoxContainer"]
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -25.0
+offset_bottom = 25.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 17
+alignment = 1
+script = SubResource("GDScript_afv2f")
+
+[node name="AspectRatioContainer" type="AspectRatioContainer" parent="."]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+size_flags_vertical = 4
+stretch_mode = 0
+
+[node name="ColorRect" type="ColorRect" parent="AspectRatioContainer"]
+layout_mode = 2
+
+[node name="LayerPreview" type="TextureRect" parent="AspectRatioContainer"]
+texture_filter = 1
+layout_mode = 2
+texture = ExtResource("1_po0ps")
+expand_mode = 1
+
+[node name="LayerInfo" type="VBoxContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+alignment = 1
+
+[node name="Label" type="Label" parent="LayerInfo"]
+layout_mode = 2
+text = "LayerName"
+
+[node name="actions" type="HBoxContainer" parent="."]
+layout_mode = 2
+theme_override_constants/separation = 10
+alignment = 1
+
+[node name="draw_on_button" type="TextureButton" parent="actions"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+size_flags_vertical = 4
+texture_normal = ExtResource("2_stkqg")
+stretch_mode = 5
+
+[node name="toggle_visibility_button" type="TextureButton" parent="actions"]
+layout_mode = 2
+size_flags_vertical = 4
+texture_normal = ExtResource("4_ankbt")
+
+[node name="delete_button" type="TextureButton" parent="actions"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+size_flags_vertical = 4
+texture_normal = ExtResource("2_8bq03")
+stretch_mode = 5

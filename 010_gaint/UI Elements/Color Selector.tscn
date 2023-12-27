@@ -1,0 +1,102 @@
+[gd_scene load_steps=4 format=3 uid="uid://bgb08uiskmycq"]
+
+[ext_resource type="Texture2D" uid="uid://buql20o1yq40" path="res://Icons/arrow-left-right.png" id="1_5m1sk"]
+
+[sub_resource type="GDScript" id="GDScript_d0cuk"]
+resource_name = "Color Selector"
+script/source = "extends AspectRatioContainer
+
+@onready var primary_color = $Control/primary_color
+@onready var secondary_color = $Control/secondary_color
+@onready var swap_colors_button = $Control/swap_colors_button
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	primary_color.color_changed.connect(primary_color_changed_cb)
+	UserInterface.primary_color_changed.connect(primary_color_set_cb)
+
+	secondary_color.color_changed.connect(secondary_color_changed_cb)
+	UserInterface.secondary_color_changed.connect(secondary_color_set_cb)
+
+	primary_color.color = UserInterface.get_primary_color()
+	secondary_color.color = UserInterface.get_secondary_color()
+
+	swap_colors_button.pressed.connect(request_swap_color)
+
+func primary_color_changed_cb(new: Color):
+	UserInterface.set_primary_color(new)
+
+func primary_color_set_cb(new: Color):
+	primary_color.color = new
+
+func secondary_color_changed_cb(new: Color):
+	UserInterface.set_secondary_color(new)
+
+func secondary_color_set_cb(new: Color):
+	secondary_color.color = new
+
+func request_swap_color():
+	swap_colors_button.flip_v = not swap_colors_button.flip_v
+	UserInterface.swap_colors()
+"
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_voo67"]
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.5, 0.5, 0.5, 1)
+
+[node name="Color Picker" type="AspectRatioContainer"]
+custom_minimum_size = Vector2(50, 50)
+stretch_mode = 0
+alignment_horizontal = 2
+alignment_vertical = 0
+script = SubResource("GDScript_d0cuk")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 2
+
+[node name="secondary_color" type="ColorPickerButton" parent="Control"]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.4
+anchor_top = 0.4
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_voo67")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_voo67")
+theme_override_styles/hover = SubResource("StyleBoxFlat_voo67")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_voo67")
+theme_override_styles/focus = SubResource("StyleBoxFlat_voo67")
+
+[node name="primary_color" type="ColorPickerButton" parent="Control"]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.6
+anchor_bottom = 0.6
+theme_override_styles/normal = SubResource("StyleBoxFlat_voo67")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_voo67")
+theme_override_styles/hover = SubResource("StyleBoxFlat_voo67")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_voo67")
+theme_override_styles/focus = SubResource("StyleBoxFlat_voo67")
+color = Color(1, 1, 1, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="swap_colors_button" type="TextureButton" parent="Control"]
+modulate = Color(0.501961, 0.501961, 0.501961, 1)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.08
+anchor_top = 0.66
+anchor_right = 0.34
+anchor_bottom = 0.92
+texture_normal = ExtResource("1_5m1sk")
+ignore_texture_size = true
+stretch_mode = 0
+metadata/_edit_use_anchors_ = true

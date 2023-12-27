@@ -1,0 +1,60 @@
+[gd_scene load_steps=3 format=3 uid="uid://ci6knjlc235s"]
+
+[ext_resource type="PackedScene" uid="uid://bgb08uiskmycq" path="res://UI Elements/Color Selector.tscn" id="1_q2k6d"]
+
+[sub_resource type="GDScript" id="GDScript_6ir00"]
+resource_name = "ToolsContainer"
+script/source = "extends HFlowContainer
+
+const active_color = Color.WHITE
+const inactive_color = Color(0.5, 0.5, 0.5)
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+
+	var i = 0
+
+	for tool in ToolManager.tools:
+		var button = TextureButton.new()
+
+		button.texture_normal = tool.icon
+		button.tooltip_text = tool.tool_name
+
+		button.modulate = inactive_color
+
+		var clicked_cb = func():
+			for child in get_children():
+				child.modulate = inactive_color
+			button.modulate = active_color
+			ToolManager.switch_to_tool(i)
+
+		button.pressed.connect(clicked_cb)
+		add_child(button)
+
+		i += 1
+"
+
+[node name="Control" type="MarginContainer"]
+custom_minimum_size = Vector2(100, 0)
+offset_right = 100.0
+offset_bottom = 600.0
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="v" type="VBoxContainer" parent="."]
+layout_mode = 2
+theme_override_constants/separation = 40
+
+[node name="CenterContainer" type="CenterContainer" parent="v"]
+layout_mode = 2
+
+[node name="Tools" type="HFlowContainer" parent="v/CenterContainer"]
+layout_mode = 2
+theme_override_constants/h_separation = 10
+theme_override_constants/v_separation = 10
+script = SubResource("GDScript_6ir00")
+
+[node name="Color Selector" parent="v" instance=ExtResource("1_q2k6d")]
+layout_mode = 2

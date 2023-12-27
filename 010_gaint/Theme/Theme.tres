@@ -1,0 +1,6 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://5sru25nuon5c"]
+
+[ext_resource type="FontFile" uid="uid://us7578ie3agu" path="res://Theme/Font/seguisb.ttf" id="1_nxh00"]
+
+[resource]
+default_font = ExtResource("1_nxh00")

@@ -1,0 +1,43 @@
+[gd_scene load_steps=2 format=3 uid="uid://bxg052igwxdw7"]
+
+[sub_resource type="GDScript" id="GDScript_nw3po"]
+resource_name = "History Panel"
+script/source = "extends MarginContainer
+
+@onready var v_box_container = $ScrollContainer/VBoxContainer
+
+func _process(delta):
+	for child in v_box_container.get_children():
+		child.queue_free()
+
+	var hist = History.history.duplicate()
+	hist.reverse()
+
+	var i = 0
+	for history_item in hist:
+		var button = Button.new()
+
+		button.alignment = HORIZONTAL_ALIGNMENT_LEFT
+
+		if i == History.offset:
+			button.disabled = true
+
+		button.text = history_item.text
+
+		v_box_container.add_child(button)
+
+		i += 1
+"
+
+[node name="History" type="MarginContainer"]
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+script = SubResource("GDScript_nw3po")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
+layout_mode = 2
