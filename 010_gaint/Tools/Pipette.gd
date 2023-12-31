@@ -6,6 +6,7 @@ var label_settings: LabelSettings = preload("res://Tools/pipette_label_settings.
 func _init():
 	icon = load("res://Icons/pipette.png")
 	tool_name = 'Pipette'
+	tool_shortcut = Helpers.createShortcut(KEY_P, true)
 
 func tool_selected():
 	print('Pipette')

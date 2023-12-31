@@ -46,6 +46,9 @@ func warn_file_unsaved_changes():
 func warn_file_format():
 	pass
 
+func request_new_file():
+	pass
+
 func create_window():
 	var window = FileDialog.new()
 	window.initial_position = Window.WINDOW_INITIAL_POSITION_CENTER_MAIN_WINDOW_SCREEN
@@ -61,7 +64,6 @@ func create_window():
 	return window
 
 func request_open_file():
-	print(is_modified)
 	if is_modified:
 		print('Because is Modified ask')
 		if await warn_file_unsaved_changes(): return
@@ -70,27 +72,34 @@ func request_open_file():
 
 	var selected_file = await window.file_selected
 
-	var compressed_texture: CompressedTexture2D = load(selected_file)
+	open_file(selected_file)
 
-	if not compressed_texture:
-		return
+func open_file(path: String):
+	History.stop_tracking()
 
-	var image = compressed_texture.get_image()
-	var dimensions = compressed_texture.get_size()
+	var img = Image.load_from_file(path)
+
+	var image = img
+	var dimensions = img.get_size()
 
 	Layers.image_dimensions = dimensions
-
-	for layer in Layers.get_layer_data():
-		Layers.remove_layer(layer)
 
 	var default_layer: ImageLayer = Layers.add_canvas_layer()
 	default_layer.layer_texture.set_image(image)
 
-	current_file = selected_file
+	current_file = path
 	update_current_file_label()
+
+	History.clear_history()
+
+	Layers.clear_layer_data()
 
 	var t = create_tween()
 	t.tween_callback(UserInterface.fit_view).set_delay(0.01)
+
+	push_recent_files(current_file)
+
+	History.continue_tracking()
 
 func request_save_file_as():
 	var window = create_window()
@@ -101,6 +110,8 @@ func request_save_file_as():
 	update_current_file_label()
 	request_save_file()
 
+	push_recent_files(current_file)
+
 func request_save_file():
 	if current_file == new_file_name:
 		request_save_file_as()
@@ -110,3 +121,22 @@ func request_save_file():
 		image.save_png(current_file)
 		is_modified = false
 		update_current_file_label()
+
+func push_recent_files(path):
+	var recent_files = load_recent_files()
+
+	if path in recent_files:
+		return
+
+	recent_files.append(current_file)
+	recent_files = recent_files.slice(0, 10)
+	var f = FileAccess.open('user://recents.json', FileAccess.WRITE)
+	f.store_string(JSON.stringify(recent_files))
+
+func load_recent_files():
+	var path = 'user://recents.json'
+	if FileAccess.file_exists(path):
+		var f = FileAccess.open(path, FileAccess.READ)
+		return JSON.parse_string(f.get_as_text())
+	else:
+		return []

@@ -1,0 +1,85 @@
+[gd_scene load_steps=2 format=3 uid="uid://bdoxsx3hg4ey0"]
+
+[ext_resource type="Texture2D" uid="uid://3lsfl5iijons" path="res://icon.svg" id="1_iuu0i"]
+
+[node name="ConfirmationDialog" type="ConfirmationDialog"]
+title = "Creating new file ..."
+initial_position = 2
+size = Vector2i(400, 300)
+visible = true
+transient = false
+ok_button_text = "Create"
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 392.0
+offset_bottom = 251.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control/MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="Control/MarginContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("1_iuu0i")
+expand_mode = 4
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/MarginContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+theme_override_constants/separation = 10
+
+[node name="width" type="HBoxContainer" parent="Control/MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Control/MarginContainer/HBoxContainer/VBoxContainer/width"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Width"
+
+[node name="width_spin_box" type="SpinBox" parent="Control/MarginContainer/HBoxContainer/VBoxContainer/width"]
+layout_mode = 2
+size_flags_horizontal = 3
+min_value = 1.0
+max_value = 9999.0
+value = 100.0
+suffix = "px"
+
+[node name="height" type="HBoxContainer" parent="Control/MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Control/MarginContainer/HBoxContainer/VBoxContainer/height"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Height"
+
+[node name="height_spin_box" type="SpinBox" parent="Control/MarginContainer/HBoxContainer/VBoxContainer/height"]
+layout_mode = 2
+size_flags_horizontal = 3
+min_value = 1.0
+max_value = 9999.0
+value = 100.0
+suffix = "px"

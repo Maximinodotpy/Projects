@@ -11,6 +11,8 @@ var secondary_color = Color.BLACK
 
 var transparent_bg = false
 
+var previous_tool = 0
+
 # Nodes
 @onready var bottom_h_box: HBoxContainer = get_tree().root.get_children()[-1].find_child('Bottom HBox')
 @onready var canvas_container: Control = get_tree().root.get_children()[-1].find_child('Canvas Container')
@@ -20,12 +22,6 @@ var transparent_bg = false
 @onready var current_file_label: Label = get_tree().root.get_children()[-1].find_child('Current File Label')
 
 func _ready():
-	History.bind_info(
-		'primary_color',
-		func(): return get_primary_color(),
-		func(color): set_primary_color(color)
-	)
-
 	reset_colors()
 
 	var t = create_tween()
@@ -40,6 +36,12 @@ func _ready():
 
 	canvas_container.gui_input.connect(canvas_container_input_cb)
 
+func _process(delta):
+	if Input.is_action_just_pressed('space'):
+		previous_tool = ToolManager.current_tool
+		ToolManager.switch_to_tool(4)
+	if Input.is_action_just_released("space"):
+		ToolManager.switch_to_tool(previous_tool)
 
 func reset_colors():
 	set_primary_color(Color.BLACK)
@@ -52,7 +54,7 @@ func set_primary_color(color: Color):
 	primary_color = color
 	primary_color_changed.emit(color)
 
-	History.create_snapshot('Set primary color')
+	#History.create_snapshot('Set primary color')
 
 func get_secondary_color() -> Color:
 	return secondary_color
@@ -77,6 +79,9 @@ func reset_view():
 	center_view()
 
 	zoomed.emit()
+
+func pan_view_by(by: Vector2):
+	pass
 
 func center_view():
 	var x = (canvas_container.size.x / 2) - ((canvas_texture.size.x * canvas_texture.scale.x) / 2)

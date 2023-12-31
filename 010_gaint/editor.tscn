@@ -1,9 +1,11 @@
-[gd_scene load_steps=13 format=3 uid="uid://cv4n06irlrld8"]
+[gd_scene load_steps=15 format=3 uid="uid://cv4n06irlrld8"]
 
 [ext_resource type="Script" path="res://MenuBar.gd" id="1_202ru"]
 [ext_resource type="PackedScene" uid="uid://yyinre165ruo" path="res://Windows/Layers.tscn" id="2_e1rt3"]
+[ext_resource type="PackedScene" uid="uid://cu1vnr3s7lo65" path="res://Windows/WindowTabContainers.tscn" id="3_83sol"]
 [ext_resource type="PackedScene" uid="uid://ci6knjlc235s" path="res://Windows/Tools.tscn" id="3_lw7ne"]
 [ext_resource type="PackedScene" uid="uid://bxg052igwxdw7" path="res://Windows/History.tscn" id="4_mgnxg"]
+[ext_resource type="PackedScene" uid="uid://c1sik162s4gy6" path="res://Windows/ImageInfo.tscn" id="6_yutrm"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1tyfi"]
 bg_color = Color(0.6, 0.6, 0.6, 0)
@@ -12,6 +14,9 @@ bg_color = Color(0.6, 0.6, 0.6, 0)
 script/source = "extends TextureRect
 
 var canvas = []
+
+func get_dashed_overlay():
+	pass
 
 func _draw():
 	# Draw White Background
@@ -24,6 +29,36 @@ func _draw():
 	for layer in Layers.get_layer_data():
 		if layer.visible:
 			draw_texture(layer.layer_texture, Vector2.ZERO)
+
+	var step_options: Dictionary = {
+		0: 1000,
+		1: 100,
+		2: 25,
+		10: 5,
+		41: 1,
+	}
+
+	var steps = 100
+
+	for current_zoom in step_options.keys():
+		var current_index = step_options.keys().find(current_zoom)
+
+		var next_zoom = 0
+
+		if current_index == step_options.keys().size() - 1:
+			next_zoom = INF
+		else:
+			next_zoom = step_options.keys()[current_index + 1]
+
+		if scale.x > current_zoom and scale.x < next_zoom:
+			steps = step_options[current_zoom]
+
+
+	for x in range(steps, Layers.image_dimensions.x, steps):
+		draw_line(Vector2(x, 0), Vector2(x, Layers.image_dimensions.y), Color.GRAY, 0.05 * steps / 2)
+
+	for y in range(steps, Layers.image_dimensions.y, steps):
+		draw_line(Vector2(0, y), Vector2(Layers.image_dimensions.x, y), Color.GRAY, 0.05 * steps / 2)
 
 func _process(delta):
 	size = Layers.get_image_rect().size
@@ -98,16 +133,19 @@ script/source = "extends HBoxContainer
 var zoom_label: Label
 var mouse_pos_label: Label
 var fps_label: Label
+var other_label: Label
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	zoom_label = Label.new()
 	mouse_pos_label = Label.new()
 	fps_label = Label.new()
+	other_label = Label.new()
 
 	add_child(zoom_label)
 	add_child(mouse_pos_label)
 	add_child(fps_label)
+	add_child(other_label)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -125,8 +163,9 @@ func _process(delta):
 	else:
 		mouse_pos_label.modulate = Color.WHITE
 
-
 	fps_label.text = '%s FPS' % Engine.get_frames_per_second()
+
+	other_label.text = 'Layers: %s' % [Layers.get_layer_data().size()]
 "
 
 [node name="Control" type="VBoxContainer"]
@@ -264,15 +303,28 @@ layout_mode = 2
 [node name="Tools" parent="Main/vbox/v-split/Aside/HBox" instance=ExtResource("3_lw7ne")]
 layout_mode = 2
 
-[node name="Tabs" type="TabContainer" parent="Main/vbox/v-split/Aside/HBox"]
+[node name="HBoxContainer" type="HBoxContainer" parent="Main/vbox/v-split/Aside/HBox"]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="Layers" parent="Main/vbox/v-split/Aside/HBox/Tabs" instance=ExtResource("2_e1rt3")]
+[node name="VBoxContainer" type="VBoxContainer" parent="Main/vbox/v-split/Aside/HBox/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="tabs" parent="Main/vbox/v-split/Aside/HBox/HBoxContainer/VBoxContainer" instance=ExtResource("3_83sol")]
 layout_mode = 2
 
-[node name="History" parent="Main/vbox/v-split/Aside/HBox/Tabs" instance=ExtResource("4_mgnxg")]
+[node name="Layers" parent="Main/vbox/v-split/Aside/HBox/HBoxContainer/VBoxContainer/tabs" instance=ExtResource("2_e1rt3")]
+layout_mode = 2
+
+[node name="History" parent="Main/vbox/v-split/Aside/HBox/HBoxContainer/VBoxContainer/tabs" instance=ExtResource("4_mgnxg")]
 visible = false
+layout_mode = 2
+
+[node name="tabs2" parent="Main/vbox/v-split/Aside/HBox/HBoxContainer/VBoxContainer" instance=ExtResource("3_83sol")]
+layout_mode = 2
+
+[node name="ImageInfo" parent="Main/vbox/v-split/Aside/HBox/HBoxContainer/VBoxContainer/tabs2" instance=ExtResource("6_yutrm")]
 layout_mode = 2
 
 [node name="p" type="PanelContainer" parent="Main/vbox"]

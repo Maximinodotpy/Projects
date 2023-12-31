@@ -15,14 +15,35 @@ var image_dimensions = Vector2(200, 200)
 func _init():
 	History.bind_info(
 		'layer_data',
-		func(): return get_layer_data(),
+		func(): return get_layer_data_copy(),
 		func(data): set_layer_data(data)
 	)
 
+	History.stop_tracking()
 	add_canvas_layer()
+	History.continue_tracking()
+
+	History.clear_history()
 
 func get_layer_data() -> Array[ImageLayer]:
 	return layer_data
+
+func get_layer_data_copy() -> Array[ImageLayer]:
+	var new_arr: Array[ImageLayer] = []
+
+	for layer in get_layer_data():
+		# The image has to be exctracted and reinserted
+		var new_layer: ImageLayer = layer.duplicate()
+		new_layer.layer_texture.set_image(layer.layer_texture.get_image())
+		new_layer.visible = layer.visible
+		new_layer.layer_name = layer.layer_name
+		new_arr.append(new_layer)
+
+	return new_arr
+
+func clear_layer_data():
+	for layer in Layers.get_layer_data():
+		Layers.remove_layer(layer)
 
 func add_canvas_layer() -> ImageLayer:
 	print('Adding Layer')
@@ -59,8 +80,6 @@ func switch_to_layer(layer: ImageLayer):
 	current_layer = layer_data.find(layer)
 	current_layer_changed.emit(old_index, current_layer)
 
-	History.create_snapshot('Switched active layer')
-
 func get_image_rect() -> Rect2:
 	return Rect2(Vector2(0, 0), Layers.image_dimensions)
 
@@ -77,6 +96,14 @@ func draw_line(start: Vector2, end: Vector2, color: Color):
 
 func get_pixel_color_at(position: Vector2):
 	return get_merged_image().get_pixelv(position)
+
+func toggle_layer_visibility(layer: ImageLayer, force = null):
+	if force == null:
+		layer.visible = not layer.visible
+	else:
+		layer.visible = force
+
+	History.create_snapshot('Toggled layer visibility')
 
 func get_merged_image() -> Image:
 	var composition = Image.create(image_dimensions.x, image_dimensions.y, true, Image.FORMAT_RGBA8)
@@ -95,16 +122,53 @@ func remove_selected_pixels_in_current_layer():
 
 	get_current_layer_data().layer_texture.set_image(img)
 
+	History.create_snapshot('Removed selected pixels')
+
 func get_current_layer_data() -> ImageLayer:
+	# Ensure that the current layer cannot be more than the amount of layers
+	current_layer = min(current_layer, layer_data.size() - 1)
+
 	return layer_data[current_layer]
 
 func set_layer_data(new_layer_data: Array[ImageLayer]):
-	for old_layer in get_layer_data():
-		if not new_layer_data.has(old_layer):
-			layer_data.erase(old_layer)
-			removed_layer.emit(old_layer)
+	History.stop_tracking()
 
-	for new_layer in layer_data:
-		if not new_layer in layer_data:
-			layer_data.append(new_layer)
-			added_layer.emit(new_layer)
+	for old_layer in get_layer_data().duplicate():
+		remove_layer(old_layer)
+
+	for new_layer in new_layer_data:
+		var layer = add_canvas_layer()
+		layer.layer_name = new_layer.layer_name
+		layer.layer_texture.set_image(new_layer.layer_texture.get_image())
+		layer.visible = new_layer.visible
+
+	History.continue_tracking()
+
+func get_fillable_pixels(from: Vector2, image: Image, tolerance = 0):
+	pass
+
+func invert_colors_in_current_layer():
+	var img = get_current_layer_data().layer_texture.get_image()
+
+	for y in range(image_dimensions.y):
+		for x in range(image_dimensions.x):
+			var color = img.get_pixel(x, y)
+			color.inverted()
+			img.set_pixel(x, y, color.inverted())
+
+	get_current_layer_data().layer_texture.set_image(img)
+
+	History.create_snapshot('Inverted colors in current layer')
+
+func black_and_white_current_layer():
+	var img = get_current_layer_data().layer_texture.get_image()
+
+	for y in range(image_dimensions.y):
+		for x in range(image_dimensions.x):
+			var color = img.get_pixel(x, y)
+			color.s = 0
+			img.set_pixel(x, y, color)
+
+	get_current_layer_data().layer_texture.set_image(img)
+
+	History.create_snapshot('Black and white current layer')

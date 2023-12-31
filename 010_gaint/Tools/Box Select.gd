@@ -6,6 +6,7 @@ var style_box = preload("res://Tools/box_select_style_box.tres")
 func _init():
 	icon = load("res://Icons/box-select.png")
 	tool_name = 'Box Select'
+	tool_shortcut = Helpers.createShortcut(KEY_M, true)
 
 func tool_selected():
 	indicator_box = Panel.new()

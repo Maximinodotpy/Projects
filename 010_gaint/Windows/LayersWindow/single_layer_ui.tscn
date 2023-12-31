@@ -33,7 +33,7 @@ func _ready():
 	delete_button.pressed.connect( func(): Layers.remove_layer(my_layer_data) )
 
 	toggle_visibility_button.pressed.connect(func():
-		my_layer_data.visible = not my_layer_data.visible
+		Layers.toggle_layer_visibility(my_layer_data)
 	)
 
 func draw_on_cb():

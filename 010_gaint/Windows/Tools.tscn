@@ -18,20 +18,36 @@ func _ready():
 		var button = TextureButton.new()
 
 		button.texture_normal = tool.icon
-		button.tooltip_text = tool.tool_name
+
+		if tool.tool_shortcut:
+			button.tooltip_text = '%s (%s)' % [tool.tool_name, tool.tool_shortcut.get_as_text()]
+		else:
+			button.tooltip_text = tool.tool_name
 
 		button.modulate = inactive_color
 
+		tool.root_node = get_tree().root.get_children()[-1]
+
 		var clicked_cb = func():
-			for child in get_children():
-				child.modulate = inactive_color
-			button.modulate = active_color
 			ToolManager.switch_to_tool(i)
 
 		button.pressed.connect(clicked_cb)
 		add_child(button)
 
 		i += 1
+
+	ToolManager.tool_changed.connect(
+		func():
+			print('Setting active tool modulate')
+			for child in get_children():
+				if ToolManager.current_tool == child.get_index():
+					child.modulate = active_color
+				else:
+					child.modulate = inactive_color
+	)
+
+	get_children()[0].emit_signal('pressed')
+
 "
 
 [node name="Control" type="MarginContainer"]
@@ -47,13 +63,11 @@ theme_override_constants/margin_bottom = 10
 layout_mode = 2
 theme_override_constants/separation = 40
 
-[node name="CenterContainer" type="CenterContainer" parent="v"]
-layout_mode = 2
-
-[node name="Tools" type="HFlowContainer" parent="v/CenterContainer"]
+[node name="Tools" type="HFlowContainer" parent="v"]
 layout_mode = 2
 theme_override_constants/h_separation = 10
 theme_override_constants/v_separation = 10
+alignment = 1
 script = SubResource("GDScript_6ir00")
 
 [node name="Color Selector" parent="v" instance=ExtResource("1_q2k6d")]

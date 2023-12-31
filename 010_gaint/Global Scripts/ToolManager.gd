@@ -1,23 +1,22 @@
 extends Node
 
+signal tool_changed
+
 var tools: Array[ToolScript] = [
 	preload("res://Tools/Pen.gd").new(),
 	preload("res://Tools/Pipette.gd").new(),
 	preload("res://Tools/Box Select.gd").new(),
+	preload("res://Tools/Bucket.gd").new(),
+	preload("res://Tools/Pan.gd").new(),
 ]
 
 var current_tool = 0
-
 
 var is_dragging = false
 var drag_start_pos = Vector2.ZERO
 var drag_last_pos = Vector2.ZERO
 
 func _ready():
-	print('Tools:', tools)
-	for tool in tools:
-		print(tool.icon)
-
 	UserInterface.canvas_container.gui_input.connect(gui_input_callback)
 
 func get_current_tool() -> ToolScript:
@@ -27,12 +26,11 @@ func switch_to_tool(index):
 	get_current_tool().tool_deselected()
 	current_tool = index
 	get_current_tool().tool_selected()
+	tool_changed.emit()
 
 func gui_input_callback(event):
 	#print(event)
 	var canvas_mouse_pos = UserInterface.canvas_texture.get_local_mouse_position().floor()
-
-
 
 	if event is InputEventMouseButton:
 
@@ -70,5 +68,6 @@ func gui_input_callback(event):
 			else: get_current_tool().drag_end_right(drag_start_pos, canvas_mouse_pos)
 
 			get_current_tool().dragging(drag_start_pos, canvas_mouse_pos, canvas_mouse_pos - drag_last_pos)
+			get_current_tool().dragging_container(event.relative)
 
 			drag_last_pos = canvas_mouse_pos
