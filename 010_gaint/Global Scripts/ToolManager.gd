@@ -3,7 +3,7 @@ extends Node
 signal tool_changed
 
 var tools: Array[ToolScript] = [
-	preload("res://Tools/Pen.gd").new(),
+	await preload("res://Tools/Pen.gd").new(),
 	preload("res://Tools/Pipette.gd").new(),
 	preload("res://Tools/Box Select.gd").new(),
 	preload("res://Tools/Bucket.gd").new(),

@@ -1,4 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://yyinre165ruo"]
+[gd_scene load_steps=8 format=3 uid="uid://yyinre165ruo"]
+
+[ext_resource type="Texture2D" uid="uid://dgw8vd1o6goj5" path="res://Icons/trash-2.png" id="1_7mwx6"]
+[ext_resource type="Texture2D" uid="uid://d21i0v5m40dnr" path="res://Icons/plus-circle.png" id="1_u3w4d"]
+[ext_resource type="Texture2D" uid="uid://oo0xbdtlml06" path="res://Icons/copy.png" id="1_y8hkv"]
 
 [sub_resource type="GDScript" id="GDScript_blfd2"]
 script/source = "extends VBoxContainer
@@ -7,10 +11,15 @@ var single_layer_ui = preload(\"res://Windows/LayersWindow/single_layer_ui.tscn\
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	render()
+	Layers.added_layer.connect(render)
+
+func render(_l = null):
+	for child in get_children():
+		child.queue_free()
+
 	for i in Layers.get_layer_data():
 		add_layer(i)
-
-	Layers.added_layer.connect(add_layer)
 
 func add_layer(layer: ImageLayer):
 	var single_layer_ui_instance = single_layer_ui.instantiate()
@@ -19,17 +28,26 @@ func add_layer(layer: ImageLayer):
 "
 
 [sub_resource type="GDScript" id="GDScript_fb3f5"]
-script/source = "extends Button
-
+script/source = "extends TextureButton
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pressed.connect(Layers.add_canvas_layer)
 "
 
+[sub_resource type="GDScript" id="GDScript_pdqyo"]
+resource_name = "Duplicate Layer Inline Button"
+script/source = "extends TextureButton
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pressed.connect(func(): Layers.duplicate_layer(Layers.get_current_layer_data()))
+"
+
 [sub_resource type="GDScript" id="GDScript_eeajd"]
 resource_name = "Delete Layer Inline Button"
-script/source = "extends Button
+script/source = "extends TextureButton
 
 
 # Called when the node enters the scene tree for the first time.
@@ -37,7 +55,9 @@ func _ready():
 	pressed.connect(func(): Layers.remove_layer(Layers.get_current_layer_data()))
 
 func _process(delta):
+	modulate = Color(1, 1, 1, 0.5) if Layers.get_layer_data().size() <= 1 else Color(1,1,1,1)
 	disabled = Layers.get_layer_data().size() <= 1
+
 "
 
 [node name="Layers" type="MarginContainer"]
@@ -67,17 +87,24 @@ script = SubResource("GDScript_blfd2")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
 layout_mode = 2
+theme_override_constants/separation = 10
 
-[node name="add_layer_button" type="Button" parent="VBoxContainer/HBoxContainer"]
+[node name="add_layer_button" type="TextureButton" parent="VBoxContainer/HBoxContainer"]
 layout_mode = 2
-text = "Add Layer"
+texture_normal = ExtResource("1_u3w4d")
 script = SubResource("GDScript_fb3f5")
+
+[node name="TextureButton" type="TextureButton" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("1_y8hkv")
+script = SubResource("GDScript_pdqyo")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 10
+theme_override_constants/separation = 10
 
-[node name="Delete Layers" type="Button" parent="VBoxContainer/HBoxContainer/HBoxContainer"]
+[node name="Delete Layers" type="TextureButton" parent="VBoxContainer/HBoxContainer/HBoxContainer"]
 layout_mode = 2
-text = "Delete current layer"
+texture_normal = ExtResource("1_7mwx6")
 script = SubResource("GDScript_eeajd")

@@ -53,9 +53,23 @@ var menuItems = {
 		'Layers': {
 			'children': {
 				'Add Layer': {
-					'callback': func(_args = {}):
-						Layers.add_canvas_layer(),
-				}
+					'callback': func(_args = {}): Layers.add_canvas_layer(),
+				},
+				'Duplicate current layer': {
+					'callback': func(_args = {}): Layers.duplicate_layer(Layers.get_current_layer_data())
+				},
+				'Delete current layer': {
+					'callback': func(_args = {}): Layers.remove_layer(Layers.get_current_layer_data()),
+					'add_seperator': true,
+				},
+				'Move current layer to top': {},
+				'Move current layer up': {},
+				'Move current layer down': {},
+				'Move current layer to bottom': {
+					'add_seperator': true,
+				},
+				'Mirror layer vertically': {},
+				'Mirror layer horizontally': {},
 			}
 		},
 		'Layer corrections': {
@@ -107,10 +121,6 @@ var menuItems = {
 			'callback': func(_args = {}): UserInterface.cover_view(),
 			'shortcut': Helpers.createShortcut(KEY_1, true),
 		},
-		'Background Transparent': {
-			'callback': func(_args = {}): UserInterface.toggle_transparent_bg(),
-			'shortcut': Helpers.createShortcut(KEY_B, true, true),
-		},
 		'Reset View': {
 			'callback': func(_args = {}): UserInterface.reset_view(),
 			'shortcut': Helpers.createShortcut(KEY_2, true),
@@ -118,6 +128,15 @@ var menuItems = {
 		'Center Canvas': {
 			'callback': func(_args = {}): UserInterface.center_view(),
 			'shortcut': Helpers.createShortcut(KEY_F),
+			'add_seperator': true,
+		},
+		'Background Transparent': {
+			'callback': func(_args = {}): UserInterface.toggle_transparent_bg(),
+			'shortcut': Helpers.createShortcut(KEY_B, true, true),
+		},
+		'Gridline background': {
+			'callback': func(_args = {}): UserInterface.toggle_gridline_bg(),
+			'shortcut': Helpers.createShortcut(KEY_G, true),
 		},
 	},
 }

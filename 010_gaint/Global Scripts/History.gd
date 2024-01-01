@@ -44,10 +44,10 @@ func create_snapshot(text, force: bool = false):
 		new_snapshot['infos'][i.name] = value
 
 	if not force:
-		if history[0] == new_snapshot:
-			print('Nothing new ...')
-
-			return
+		if history.size() != 0:
+			if history[0] == new_snapshot:
+				print('Nothing new ...')
+				return
 
 	print('Adding new snapshot ... ')
 	print(JSON.stringify(new_snapshot, '    '))

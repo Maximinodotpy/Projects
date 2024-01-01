@@ -47,7 +47,6 @@ func move_window_up(_args = {}):
 		get_parent().add_child(top_tab)
 		get_parent().move_child(top_tab, 0)
 	else:
-		print('there is a tab above')
 		top_tab = get_parent().get_children()[get_index() - 1]
 
 	get_current_tab_control().reparent(top_tab)

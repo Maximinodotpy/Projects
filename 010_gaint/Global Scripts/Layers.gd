@@ -147,6 +147,14 @@ func set_layer_data(new_layer_data: Array[ImageLayer]):
 func get_fillable_pixels(from: Vector2, image: Image, tolerance = 0):
 	pass
 
+func duplicate_layer(layer: ImageLayer):
+	var index = get_layer_data().find(layer)
+	var new_layer = layer.copy()
+	layer_data.insert(index + 1, new_layer)
+
+	added_layer.emit(new_layer)
+	History.create_snapshot('Duplicated layer')
+
 func invert_colors_in_current_layer():
 	var img = get_current_layer_data().layer_texture.get_image()
 

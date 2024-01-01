@@ -10,8 +10,18 @@ var primary_color = Color.WHITE
 var secondary_color = Color.BLACK
 
 var transparent_bg = false
+var gridline_bg = true
 
+# Used for the pan tool which can be temporarly chosen when holding space
 var previous_tool = 0
+
+enum ViewModes {
+	ANY,
+	RESET,
+	FITTED,
+	COVERED
+}
+var current_view_mode: ViewModes = ViewModes.FITTED
 
 # Nodes
 @onready var bottom_h_box: HBoxContainer = get_tree().root.get_children()[-1].find_child('Bottom HBox')
@@ -20,6 +30,7 @@ var previous_tool = 0
 @onready var preview_container: TextureRect = get_tree().root.get_children()[-1].find_child('Preview Texture')
 @onready var selection_container: TextureRect = get_tree().root.get_children()[-1].find_child('Selection Texture')
 @onready var current_file_label: Label = get_tree().root.get_children()[-1].find_child('Current File Label')
+@onready var main_h_split: HSplitContainer = get_tree().root.get_children()[-1].find_child('Main H Split')
 
 func _ready():
 	reset_colors()
@@ -35,6 +46,10 @@ func _ready():
 					UserInterface.zoom(scroll)
 
 	canvas_container.gui_input.connect(canvas_container_input_cb)
+
+	get_tree().root.size_changed.connect(preserve_view_mode)
+	main_h_split.dragged.connect(preserve_view_mode)
+
 
 func _process(delta):
 	if Input.is_action_just_pressed('space'):
@@ -77,11 +92,11 @@ func swap_colors():
 func reset_view():
 	canvas_texture.scale = Vector2.ONE
 	center_view()
-
+	current_view_mode = ViewModes.RESET
 	zoomed.emit()
 
 func pan_view_by(by: Vector2):
-	pass
+	current_view_mode = ViewModes.ANY
 
 func center_view():
 	var x = (canvas_container.size.x / 2) - ((canvas_texture.size.x * canvas_texture.scale.x) / 2)
@@ -93,9 +108,8 @@ func center_view():
 	zoomed.emit()
 
 func cover_view():
-	print('Cover View ...')
-
 	reset_view()
+	current_view_mode = ViewModes.COVERED
 
 	var ratio := 0.0;
 
@@ -110,9 +124,8 @@ func cover_view():
 	zoomed.emit()
 
 func fit_view():
-	print('Fit View ...')
-
 	reset_view()
+	current_view_mode = ViewModes.FITTED
 
 	var ratio := 0.0;
 
@@ -129,7 +142,27 @@ func fit_view():
 func toggle_transparent_bg():
 	transparent_bg = not transparent_bg
 
+func toggle_gridline_bg():
+	gridline_bg = not gridline_bg
+
+func preserve_view_mode(_a = null):
+	var window_size = get_tree().root.size
+
+	print(ViewModes.find_key(current_view_mode), window_size)
+
+	await get_tree().create_timer(.01).timeout
+
+	match current_view_mode:
+		ViewModes.RESET:
+			reset_view()
+		ViewModes.FITTED:
+			fit_view()
+		ViewModes.COVERED:
+			cover_view()
+
 func zoom(scroll, global_mouse: Vector2 = canvas_texture.get_global_mouse_position()):
+	current_view_mode = ViewModes.ANY
+
 	var loc_mouse: Vector2 = global_mouse - canvas_texture.global_position
 	var pixel: Vector2 = loc_mouse / canvas_texture.scale.x
 

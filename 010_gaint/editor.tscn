@@ -53,12 +53,12 @@ func _draw():
 		if scale.x > current_zoom and scale.x < next_zoom:
 			steps = step_options[current_zoom]
 
+	if UserInterface.gridline_bg:
+		for x in range(steps, Layers.image_dimensions.x, steps):
+			draw_line(Vector2(x, 0), Vector2(x, Layers.image_dimensions.y), Color.GRAY, 0.05 * steps / 2)
 
-	for x in range(steps, Layers.image_dimensions.x, steps):
-		draw_line(Vector2(x, 0), Vector2(x, Layers.image_dimensions.y), Color.GRAY, 0.05 * steps / 2)
-
-	for y in range(steps, Layers.image_dimensions.y, steps):
-		draw_line(Vector2(0, y), Vector2(Layers.image_dimensions.x, y), Color.GRAY, 0.05 * steps / 2)
+		for y in range(steps, Layers.image_dimensions.y, steps):
+			draw_line(Vector2(0, y), Vector2(Layers.image_dimensions.x, y), Color.GRAY, 0.05 * steps / 2)
 
 func _process(delta):
 	size = Layers.get_image_rect().size
@@ -215,21 +215,56 @@ size_flags_vertical = 3
 [node name="vbox" type="VBoxContainer" parent="Main"]
 layout_mode = 2
 
-[node name="v-split" type="HSplitContainer" parent="Main/vbox"]
+[node name="Main H Split" type="HSplitContainer" parent="Main/vbox"]
+layout_direction = 3
 layout_mode = 2
 size_flags_vertical = 3
 split_offset = 700
 
-[node name="container" type="SubViewportContainer" parent="Main/vbox/v-split"]
+[node name="Aside" type="PanelContainer" parent="Main/vbox/Main H Split"]
+layout_direction = 2
+layout_mode = 2
+
+[node name="HBox" type="HBoxContainer" parent="Main/vbox/Main H Split/Aside"]
+layout_mode = 2
+
+[node name="Tools" parent="Main/vbox/Main H Split/Aside/HBox" instance=ExtResource("3_lw7ne")]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Main/vbox/Main H Split/Aside/HBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Main/vbox/Main H Split/Aside/HBox/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="tabs" parent="Main/vbox/Main H Split/Aside/HBox/HBoxContainer/VBoxContainer" instance=ExtResource("3_83sol")]
+layout_mode = 2
+
+[node name="Layers" parent="Main/vbox/Main H Split/Aside/HBox/HBoxContainer/VBoxContainer/tabs" instance=ExtResource("2_e1rt3")]
+layout_mode = 2
+
+[node name="History" parent="Main/vbox/Main H Split/Aside/HBox/HBoxContainer/VBoxContainer/tabs" instance=ExtResource("4_mgnxg")]
+visible = false
+layout_mode = 2
+
+[node name="tabs2" parent="Main/vbox/Main H Split/Aside/HBox/HBoxContainer/VBoxContainer" instance=ExtResource("3_83sol")]
+layout_mode = 2
+
+[node name="ImageInfo" parent="Main/vbox/Main H Split/Aside/HBox/HBoxContainer/VBoxContainer/tabs2" instance=ExtResource("6_yutrm")]
+layout_mode = 2
+
+[node name="container" type="SubViewportContainer" parent="Main/vbox/Main H Split"]
 layout_mode = 2
 stretch = true
 
-[node name="SubViewport" type="SubViewport" parent="Main/vbox/v-split/container"]
+[node name="SubViewport" type="SubViewport" parent="Main/vbox/Main H Split/container"]
 handle_input_locally = false
-size = Vector2i(700, 606)
+size = Vector2i(440, 606)
 render_target_update_mode = 4
 
-[node name="Canvas Container" type="Control" parent="Main/vbox/v-split/container/SubViewport"]
+[node name="Canvas Container" type="Control" parent="Main/vbox/Main H Split/container/SubViewport"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -237,7 +272,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Canvas Texture" type="TextureRect" parent="Main/vbox/v-split/container/SubViewport/Canvas Container"]
+[node name="Canvas Texture" type="TextureRect" parent="Main/vbox/Main H Split/container/SubViewport/Canvas Container"]
 texture_filter = 1
 layout_mode = 1
 anchors_preset = -1
@@ -251,20 +286,20 @@ stretch_mode = 2
 script = SubResource("GDScript_im2u8")
 metadata/_edit_use_anchors_ = true
 
-[node name="Preview Texture" type="TextureRect" parent="Main/vbox/v-split/container/SubViewport/Canvas Container/Canvas Texture"]
+[node name="Preview Texture" type="TextureRect" parent="Main/vbox/Main H Split/container/SubViewport/Canvas Container/Canvas Texture"]
+modulate = Color(1, 1, 1, 0.588235)
 texture_filter = 1
 layout_mode = 1
-anchors_preset = -1
-anchor_right = 0.182857
-anchor_bottom = 0.197531
-offset_right = 120.686
-offset_bottom = 120.099
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 stretch_mode = 2
 metadata/_edit_use_anchors_ = true
 
-[node name="Selection Texture" type="TextureRect" parent="Main/vbox/v-split/container/SubViewport/Canvas Container/Canvas Texture"]
+[node name="Selection Texture" type="TextureRect" parent="Main/vbox/Main H Split/container/SubViewport/Canvas Container/Canvas Texture"]
 texture_filter = 1
 layout_mode = 1
 anchors_preset = -1
@@ -278,13 +313,13 @@ stretch_mode = 2
 script = SubResource("GDScript_ugi2l")
 metadata/_edit_use_anchors_ = true
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Main/vbox/v-split/container/SubViewport/Canvas Container/Canvas Texture/Selection Texture"]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Main/vbox/Main H Split/container/SubViewport/Canvas Container/Canvas Texture/Selection Texture"]
 libraries = {
 "": SubResource("AnimationLibrary_e5wkp")
 }
 autoplay = "wubble"
 
-[node name="CanvasOutline" type="Panel" parent="Main/vbox/v-split/container/SubViewport/Canvas Container/Canvas Texture"]
+[node name="CanvasOutline" type="Panel" parent="Main/vbox/Main H Split/container/SubViewport/Canvas Container/Canvas Texture"]
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 1.0
@@ -293,39 +328,6 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_x1dpa")
-
-[node name="Aside" type="PanelContainer" parent="Main/vbox/v-split"]
-layout_mode = 2
-
-[node name="HBox" type="HBoxContainer" parent="Main/vbox/v-split/Aside"]
-layout_mode = 2
-
-[node name="Tools" parent="Main/vbox/v-split/Aside/HBox" instance=ExtResource("3_lw7ne")]
-layout_mode = 2
-
-[node name="HBoxContainer" type="HBoxContainer" parent="Main/vbox/v-split/Aside/HBox"]
-layout_mode = 2
-size_flags_horizontal = 3
-
-[node name="VBoxContainer" type="VBoxContainer" parent="Main/vbox/v-split/Aside/HBox/HBoxContainer"]
-layout_mode = 2
-size_flags_horizontal = 3
-
-[node name="tabs" parent="Main/vbox/v-split/Aside/HBox/HBoxContainer/VBoxContainer" instance=ExtResource("3_83sol")]
-layout_mode = 2
-
-[node name="Layers" parent="Main/vbox/v-split/Aside/HBox/HBoxContainer/VBoxContainer/tabs" instance=ExtResource("2_e1rt3")]
-layout_mode = 2
-
-[node name="History" parent="Main/vbox/v-split/Aside/HBox/HBoxContainer/VBoxContainer/tabs" instance=ExtResource("4_mgnxg")]
-visible = false
-layout_mode = 2
-
-[node name="tabs2" parent="Main/vbox/v-split/Aside/HBox/HBoxContainer/VBoxContainer" instance=ExtResource("3_83sol")]
-layout_mode = 2
-
-[node name="ImageInfo" parent="Main/vbox/v-split/Aside/HBox/HBoxContainer/VBoxContainer/tabs2" instance=ExtResource("6_yutrm")]
-layout_mode = 2
 
 [node name="p" type="PanelContainer" parent="Main/vbox"]
 layout_mode = 2
