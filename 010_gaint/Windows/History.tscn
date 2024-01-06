@@ -4,7 +4,7 @@
 resource_name = "History Panel"
 script/source = "extends MarginContainer
 
-@onready var v_box_container = $ScrollContainer/VBoxContainer
+@onready var item_list = $ScrollContainer/ItemList
 
 func _ready():
 	History.history_changed.connect(render)
@@ -13,27 +13,25 @@ func _ready():
 func render():
 	print('Rendering history')
 
-	for child in v_box_container.get_children():
-		child.queue_free()
+	item_list.clear()
 
-	var i = 0
 	for history_item in History.history:
-		var button = Button.new()
-		button.alignment = HORIZONTAL_ALIGNMENT_LEFT
-		button.text = history_item.text
+		print('indexflaksdj')
+		var index = item_list.add_item(history_item.text)
 
-		if i == History.offset:
-			button.disabled = true
+		if index == History.offset:
+			item_list.set_item_disabled(index, true)
 
-		v_box_container.add_child(button)
-
-		button.pressed.connect(func(): History.go_to_snapshot(i))
-
-		i += 1
+		item_list.item_activated.connect(
+			func(i):
+				print(i)
+				History.go_to_snapshot(i)
+		)
 
 "
 
 [node name="History" type="MarginContainer"]
+custom_minimum_size = Vector2(30, 0)
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_constants/margin_left = 10
@@ -43,9 +41,15 @@ theme_override_constants/margin_bottom = 10
 script = SubResource("GDScript_nw3po")
 
 [node name="ScrollContainer" type="ScrollContainer" parent="."]
+custom_minimum_size = Vector2(30, 0)
 layout_mode = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
+[node name="ItemList" type="ItemList" parent="ScrollContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_vertical = 3
+auto_height = true
+item_count = 4
+item_0/text = "flkasdjflkasjd"
+item_1/text = "fasdfas"
+item_2/text = "fasdfas"
+item_3/text = "fasd"

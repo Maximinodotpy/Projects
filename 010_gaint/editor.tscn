@@ -186,6 +186,7 @@ layout_mode = 2
 
 [node name="MenuBar" type="MenuBar" parent="Header/HBoxContainer"]
 layout_mode = 2
+flat = true
 script = ExtResource("1_202ru")
 
 [node name="Current File Label" type="Label" parent="Header/HBoxContainer"]
