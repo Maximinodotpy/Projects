@@ -166,29 +166,3 @@ func resize_image(new_size: Vector2, interpolation: Image.Interpolation = Image.
 		layer.layer_texture.set_image(img)
 
 	History.create_snapshot('Resized image')
-
-func invert_colors_in_current_layer():
-	var img = get_current_layer_data().layer_texture.get_image()
-
-	for y in range(image_dimensions.y):
-		for x in range(image_dimensions.x):
-			var color = img.get_pixel(x, y)
-			color.inverted()
-			img.set_pixel(x, y, color.inverted())
-
-	get_current_layer_data().layer_texture.set_image(img)
-
-	History.create_snapshot('Inverted colors in current layer')
-
-func black_and_white_current_layer():
-	var img = get_current_layer_data().layer_texture.get_image()
-
-	for y in range(image_dimensions.y):
-		for x in range(image_dimensions.x):
-			var color = img.get_pixel(x, y)
-			color.s = 0
-			img.set_pixel(x, y, color)
-
-	get_current_layer_data().layer_texture.set_image(img)
-
-	History.create_snapshot('Black and white current layer')

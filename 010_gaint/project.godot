@@ -24,6 +24,7 @@ UserInterface="*res://Global Scripts/UserInterface.gd"
 ToolManager="*res://Global Scripts/ToolManager.gd"
 Selection="*res://Global Scripts/Selection.gd"
 FileManager="*res://Global Scripts/FileManager.gd"
+LayerModifications="*res://Global Scripts/LayerModifications.gd"
 
 [gui]
 

@@ -65,21 +65,38 @@ var menuItems = {
 				'Move current layer to top': {},
 				'Move current layer up': {},
 				'Move current layer down': {},
-				'Move current layer to bottom': {
-					'add_seperator': true,
-				},
-				'Mirror layer vertically': {},
-				'Mirror layer horizontally': {},
+				'Move current layer to bottom': {},
 			}
 		},
 		'Layer corrections': {
 			'children': {
 				'Invert colors': {
-					'callback': func(_args = {}): Layers.invert_colors_in_current_layer(),
+					'callback': func(_a = {}): LayerModifications.invert_layers(),
 					'shortcut': Helpers.createShortcut(KEY_I, false, false, true)
 				},
 				'Black and white': {
-					'callback': func(_args = {}): Layers.black_and_white_current_layer(),
+					'callback': func(_a = {}): LayerModifications.black_and_white(),
+					'add_seperator': true,
+				},
+				'Mirror vertically': {
+					'callback': func(_a = {}): LayerModifications.mirror_vertically(),
+					'shortcut': Helpers.createShortcut(KEY_V, false, false, true)
+				},
+				'Mirror horizontally': {
+					'callback': func(_a = {}): LayerModifications.mirror_horizontally(),
+					'shortcut': Helpers.createShortcut(KEY_H, false, false, true),
+					'add_seperator': true,
+				},
+				'Rotate 90deg left': {
+					'callback': func(_a = {}): LayerModifications.rotate_left_90(),
+					'shortcut': Helpers.createShortcut(KEY_L, false, false, true),
+				},
+				'Rotate 90deg right': {
+					'callback': func(_a = {}): LayerModifications.rotate_right_90(),
+					'shortcut': Helpers.createShortcut(KEY_R, false, false, true),
+				},
+				'Rotate 180deg': {
+					'callback': func(_a = {}): LayerModifications.rotate_180(),
 				},
 			},
 			'add_seperator': true,
@@ -98,16 +115,16 @@ var menuItems = {
 		}
 	},
 	'Image': {
-		'Mirror vertically': {},
-		'Mirror horizontally': {
-			'add_seperator': true
-		},
+		#'Mirror vertically': {},
+		#'Mirror horizontally': {
+			#'add_seperator': true
+		#},
 		'Resize image': {
 			'callback': func(_args = {}): UserInterface.request_image_resize_popup()
 		},
-		'Resize canvas': {
-			'add_seperator': true
-		},
+		#'Resize canvas': {
+			#'add_seperator': true
+		#},
 	},
 	'Selection': {
 		'Select All': {
@@ -119,7 +136,7 @@ var menuItems = {
 			'shortcut': Helpers.createShortcut(KEY_D, true)
 		},
 		'Inverse Selection': {
-			'add_seperator': true,
+			#'add_seperator': true,
 			'callback': func(_args = {}): Selection.inverse_selection(),
 			'shortcut': Helpers.createShortcut(KEY_I, true, true)
 		},
