@@ -6,6 +6,7 @@ var tools: Array[ToolScript] = [
 	await preload("res://Tools/Pen.gd").new(),
 	preload("res://Tools/Pipette.gd").new(),
 	preload("res://Tools/Box Select.gd").new(),
+	preload("res://Tools/Flood Fill Selection.gd").new(),
 	preload("res://Tools/Bucket.gd").new(),
 	preload("res://Tools/Pan.gd").new(),
 ]
@@ -19,6 +20,9 @@ var drag_last_pos = Vector2.ZERO
 func _ready():
 	UserInterface.canvas_container.gui_input.connect(gui_input_callback)
 
+	UserInterface.canvas_texture.mouse_entered.connect(func(): get_current_tool().canvas_entered())
+	UserInterface.canvas_texture.mouse_exited.connect(func(): get_current_tool().canvas_left())
+
 func get_current_tool() -> ToolScript:
 	return tools[current_tool]
 
@@ -29,7 +33,6 @@ func switch_to_tool(index):
 	tool_changed.emit()
 
 func gui_input_callback(event):
-	#print(event)
 	var canvas_mouse_pos = UserInterface.canvas_texture.get_local_mouse_position().floor()
 
 	if event is InputEventMouseButton:
@@ -56,14 +59,22 @@ func gui_input_callback(event):
 			get_current_tool().drag_end(drag_start_pos, canvas_mouse_pos)
 
 		if right_or_left_pressed:
-			if Layers.get_image_rect().has_point(canvas_mouse_pos):
-				get_current_tool().canvas_clicked(canvas_mouse_pos)
+			if not event.pressed:
+				if Layers.get_image_rect().has_point(canvas_mouse_pos):
+					get_current_tool().canvas_clicked(canvas_mouse_pos)
 
 	if event is InputEventMouseMotion:
 		if Layers.get_image_rect().has_point(canvas_mouse_pos):
 			get_current_tool().canvas_mouse_move(canvas_mouse_pos)
 
 		if is_dragging:
+			if Input.is_key_pressed(KEY_SHIFT):
+				var diff = (drag_start_pos - canvas_mouse_pos).abs()
+				if diff.x > diff.y:
+					canvas_mouse_pos.y = drag_start_pos.y
+				else:
+					canvas_mouse_pos.x = drag_start_pos.x
+
 			if event.button_mask == MOUSE_BUTTON_LEFT: get_current_tool().drag_end_left(drag_start_pos, canvas_mouse_pos)
 			else: get_current_tool().drag_end_right(drag_start_pos, canvas_mouse_pos)
 

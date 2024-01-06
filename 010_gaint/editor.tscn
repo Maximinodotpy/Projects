@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://cv4n06irlrld8"]
+[gd_scene load_steps=16 format=3 uid="uid://cv4n06irlrld8"]
 
 [ext_resource type="Script" path="res://MenuBar.gd" id="1_202ru"]
 [ext_resource type="PackedScene" uid="uid://yyinre165ruo" path="res://Windows/Layers.tscn" id="2_e1rt3"]
@@ -15,9 +15,6 @@ script/source = "extends TextureRect
 
 var canvas = []
 
-func get_dashed_overlay():
-	pass
-
 func _draw():
 	# Draw White Background
 	if not UserInterface.transparent_bg:
@@ -29,36 +26,6 @@ func _draw():
 	for layer in Layers.get_layer_data():
 		if layer.visible:
 			draw_texture(layer.layer_texture, Vector2.ZERO)
-
-	var step_options: Dictionary = {
-		0: 1000,
-		1: 100,
-		2: 25,
-		10: 5,
-		41: 1,
-	}
-
-	var steps = 100
-
-	for current_zoom in step_options.keys():
-		var current_index = step_options.keys().find(current_zoom)
-
-		var next_zoom = 0
-
-		if current_index == step_options.keys().size() - 1:
-			next_zoom = INF
-		else:
-			next_zoom = step_options.keys()[current_index + 1]
-
-		if scale.x > current_zoom and scale.x < next_zoom:
-			steps = step_options[current_zoom]
-
-	if UserInterface.gridline_bg:
-		for x in range(steps, Layers.image_dimensions.x, steps):
-			draw_line(Vector2(x, 0), Vector2(x, Layers.image_dimensions.y), Color.GRAY, 0.05 * steps / 2)
-
-		for y in range(steps, Layers.image_dimensions.y, steps):
-			draw_line(Vector2(0, y), Vector2(Layers.image_dimensions.x, y), Color.GRAY, 0.05 * steps / 2)
 
 func _process(delta):
 	size = Layers.get_image_rect().size
@@ -73,8 +40,9 @@ func _ready():
 	Selection.selection_changed.connect(queue_redraw)
 
 func _draw():
+	print('Redrawing selection')
 	for i in Selection.get_selection():
-		draw_rect(Rect2(i, Vector2.ONE), Color(1, 0, 0, 0.3))
+		draw_rect(Rect2(i, Vector2.ONE), Color(0, 0, 1, 0.3))
 "
 
 [sub_resource type="Animation" id="Animation_u2k1v"]
@@ -114,6 +82,45 @@ _data = {
 "wubble": SubResource("Animation_6ot04")
 }
 
+[sub_resource type="GDScript" id="GDScript_wkwy4"]
+resource_name = "BG Gridlines"
+script/source = "extends TextureRect
+
+func _draw():
+	var step_options: Dictionary = {
+		0: 1000,
+		1: 100,
+		2: 25,
+		10: 5,
+		37: 1,
+	}
+
+	var steps = 100
+
+	for current_zoom in step_options.keys():
+		var current_index = step_options.keys().find(current_zoom)
+
+		var next_zoom = 0
+
+		if current_index == step_options.keys().size() - 1:
+			next_zoom = INF
+		else:
+			next_zoom = step_options.keys()[current_index + 1]
+
+		if get_parent().scale.x > current_zoom and get_parent().scale.x < next_zoom:
+			steps = step_options[current_zoom]
+
+	if UserInterface.gridline_bg:
+		for x in range(steps, Layers.image_dimensions.x, steps):
+			draw_line(Vector2(x, 0), Vector2(x, Layers.image_dimensions.y), Color.GRAY, 0.05 * steps / 2)
+
+		for y in range(steps, Layers.image_dimensions.y, steps):
+			draw_line(Vector2(0, y), Vector2(Layers.image_dimensions.x, y), Color.GRAY, 0.05 * steps / 2)
+
+func _process(delta):
+	queue_redraw()
+"
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x1dpa"]
 draw_center = false
 border_width_left = 1
@@ -133,19 +140,16 @@ script/source = "extends HBoxContainer
 var zoom_label: Label
 var mouse_pos_label: Label
 var fps_label: Label
-var other_label: Label
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	zoom_label = Label.new()
 	mouse_pos_label = Label.new()
 	fps_label = Label.new()
-	other_label = Label.new()
 
 	add_child(zoom_label)
 	add_child(mouse_pos_label)
 	add_child(fps_label)
-	add_child(other_label)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -164,8 +168,6 @@ func _process(delta):
 		mouse_pos_label.modulate = Color.WHITE
 
 	fps_label.text = '%s FPS' % Engine.get_frames_per_second()
-
-	other_label.text = 'Layers: %s' % [Layers.get_layer_data().size()]
 "
 
 [node name="Control" type="VBoxContainer"]
@@ -302,11 +304,9 @@ metadata/_edit_use_anchors_ = true
 [node name="Selection Texture" type="TextureRect" parent="Main/vbox/Main H Split/container/SubViewport/Canvas Container/Canvas Texture"]
 texture_filter = 1
 layout_mode = 1
-anchors_preset = -1
-anchor_right = 0.182857
-anchor_bottom = 0.197531
-offset_right = 120.686
-offset_bottom = 120.099
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 stretch_mode = 2
@@ -318,6 +318,20 @@ libraries = {
 "": SubResource("AnimationLibrary_e5wkp")
 }
 autoplay = "wubble"
+
+[node name="Background Gridlines" type="TextureRect" parent="Main/vbox/Main H Split/container/SubViewport/Canvas Container/Canvas Texture"]
+modulate = Color(1, 1, 1, 0.588235)
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+stretch_mode = 2
+script = SubResource("GDScript_wkwy4")
+metadata/_edit_use_anchors_ = true
 
 [node name="CanvasOutline" type="Panel" parent="Main/vbox/Main H Split/container/SubViewport/Canvas Container/Canvas Texture"]
 layout_mode = 1

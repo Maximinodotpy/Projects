@@ -10,9 +10,14 @@ signal current_layer_changed(old: int, new: int)
 var layer_data: Array[ImageLayer] = []
 var current_layer = 0
 
-var image_dimensions = Vector2(200, 200)
+var image_dimensions = Vector2(25, 25)
 
 func _init():
+	History.bind_info(
+		'image_size',
+		func(): return image_dimensions,
+		func(data): resize_image(data)
+	)
 	History.bind_info(
 		'layer_data',
 		func(): return get_layer_data_copy(),
@@ -21,8 +26,8 @@ func _init():
 
 	History.stop_tracking()
 	add_canvas_layer()
+	resize_image(image_dimensions)
 	History.continue_tracking()
-
 	History.clear_history()
 
 func get_layer_data() -> Array[ImageLayer]:
@@ -84,10 +89,11 @@ func get_image_rect() -> Rect2:
 	return Rect2(Vector2(0, 0), Layers.image_dimensions)
 
 func draw_pixel(where: Vector2, color: Color):
-	var image = get_current_layer_data().layer_texture.get_image()
-	image.set_pixelv(where, color)
-	get_current_layer_data().layer_texture.set_image(image)
-	pixel_modified.emit()
+	if get_image_rect().has_point(where):
+		var image = get_current_layer_data().layer_texture.get_image()
+		image.set_pixelv(where, color)
+		get_current_layer_data().layer_texture.set_image(image)
+		pixel_modified.emit()
 
 func draw_line(start: Vector2, end: Vector2, color: Color):
 	for pos in Helpers.getIntegerVectorLine(start, end):
@@ -125,7 +131,6 @@ func remove_selected_pixels_in_current_layer():
 	History.create_snapshot('Removed selected pixels')
 
 func get_current_layer_data() -> ImageLayer:
-	# Ensure that the current layer cannot be more than the amount of layers
 	current_layer = min(current_layer, layer_data.size() - 1)
 
 	return layer_data[current_layer]
@@ -144,9 +149,6 @@ func set_layer_data(new_layer_data: Array[ImageLayer]):
 
 	History.continue_tracking()
 
-func get_fillable_pixels(from: Vector2, image: Image, tolerance = 0):
-	pass
-
 func duplicate_layer(layer: ImageLayer):
 	var index = get_layer_data().find(layer)
 	var new_layer = layer.copy()
@@ -154,6 +156,16 @@ func duplicate_layer(layer: ImageLayer):
 
 	added_layer.emit(new_layer)
 	History.create_snapshot('Duplicated layer')
+
+func resize_image(new_size: Vector2, interpolation: Image.Interpolation = Image.INTERPOLATE_BILINEAR):
+	image_dimensions = new_size
+
+	for layer in get_layer_data():
+		var img = layer.layer_texture.get_image()
+		img.resize(image_dimensions.x, image_dimensions.y, interpolation)
+		layer.layer_texture.set_image(img)
+
+	History.create_snapshot('Resized image')
 
 func invert_colors_in_current_layer():
 	var img = get_current_layer_data().layer_texture.get_image()

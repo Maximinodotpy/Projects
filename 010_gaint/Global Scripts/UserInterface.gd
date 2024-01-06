@@ -54,7 +54,7 @@ func _ready():
 func _process(delta):
 	if Input.is_action_just_pressed('space'):
 		previous_tool = ToolManager.current_tool
-		ToolManager.switch_to_tool(4)
+		ToolManager.switch_to_tool(5)
 	if Input.is_action_just_released("space"):
 		ToolManager.switch_to_tool(previous_tool)
 
@@ -129,7 +129,7 @@ func fit_view():
 
 	var ratio := 0.0;
 
-	if canvas_container.size.y < canvas_container.size.x:
+	if canvas_container.size.y < canvas_container.size.x and canvas_texture.size.x <= canvas_texture.size.y:
 		# Find Ratio between canvas height and container height
 		ratio = canvas_container.size.y / (canvas_texture.size.y * canvas_texture.scale.y)
 	else:
@@ -160,6 +160,10 @@ func preserve_view_mode(_a = null):
 		ViewModes.COVERED:
 			cover_view()
 
+func request_image_resize_popup():
+	var popup = load("res://UI Elements/Resize Image Dialogue.tscn").instantiate()
+	get_tree().root.get_children()[-1].add_child(popup)
+
 func zoom(scroll, global_mouse: Vector2 = canvas_texture.get_global_mouse_position()):
 	current_view_mode = ViewModes.ANY
 
@@ -170,3 +174,9 @@ func zoom(scroll, global_mouse: Vector2 = canvas_texture.get_global_mouse_positi
 	canvas_texture.global_position = -(pixel*canvas_texture.scale.x - global_mouse)
 
 	zoomed.emit()
+
+func zoom_in():
+	zoom(1, canvas_container.size / 2)
+
+func zoom_out():
+	zoom(-1, canvas_container.size / 2)

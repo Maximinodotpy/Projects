@@ -117,3 +117,41 @@ func createShortcut(letter: Key, ctrl: bool = false, shift: bool = false, alt: b
 	shortcut.events = [ input_event ]
 
 	return shortcut
+
+enum FloodFillMode {
+	FOUR,
+	EIGHT,
+}
+
+func getFloodFillPixels(image: Image, from: Vector2, color: Color, mode = FloodFillMode.FOUR):
+	var filled_pixels = []
+	var unfilled_pixels = []
+	var image_size = image.get_size()
+	var image_rect = Rect2(Vector2.ZERO, image_size)
+
+	var stack = [from]
+
+	while stack.size() > 0:
+		var where = stack.pop_back()
+
+		if unfilled_pixels.has(where) or filled_pixels.has(where):
+			continue
+
+		if image_rect.has_point(where) and image.get_pixelv(where) == color:
+			filled_pixels.append(where)
+		else:
+			unfilled_pixels.append(where)
+			continue
+
+		var neighbors = []
+		if mode == FloodFillMode.FOUR:
+			neighbors = [Vector2(0, 1), Vector2(0, -1), Vector2(1, 0), Vector2(-1, 0)]
+		elif mode == FloodFillMode.EIGHT:
+			neighbors = [Vector2(0, 1), Vector2(0, -1), Vector2(1, 0), Vector2(-1, 0), Vector2(1, 1), Vector2(-1, 1), Vector2(1, -1), Vector2(-1, -1)]
+
+		for neighbor in neighbors:
+			var next_pixel = where + neighbor
+			if image_rect.has_point(next_pixel):
+				stack.append(next_pixel)
+
+	return filled_pixels

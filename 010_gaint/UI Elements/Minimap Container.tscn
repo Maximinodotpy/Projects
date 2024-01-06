@@ -1,0 +1,36 @@
+[gd_scene load_steps=2 format=3 uid="uid://4ea1j63wgk21"]
+
+[sub_resource type="GDScript" id="GDScript_76buf"]
+resource_name = "Minimap"
+script/source = "extends PanelContainer
+
+@onready var minimap_canvas = $minimap_canvas
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	var container_size_ratio = UserInterface.canvas_container.size.aspect()
+	custom_minimum_size.y = size.x / container_size_ratio
+
+	var minimap_to_container_ratio = size.x / UserInterface.canvas_container.size.x
+
+	minimap_canvas.position = UserInterface.canvas_texture.position * minimap_to_container_ratio
+	minimap_canvas.size = UserInterface.canvas_texture.size*UserInterface.canvas_texture.scale * minimap_to_container_ratio
+"
+
+[node name="minimap_container" type="PanelContainer"]
+clip_children = 1
+custom_minimum_size = Vector2(0, 10)
+script = SubResource("GDScript_76buf")
+
+[node name="bg" type="ColorRect" parent="."]
+layout_mode = 2
+color = Color(0.164706, 0.164706, 0.164706, 1)
+
+[node name="minimap_canvas" type="ColorRect" parent="."]
+layout_mode = 2
+color = Color(0.27451, 0.27451, 0.27451, 1)

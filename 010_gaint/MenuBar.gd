@@ -97,6 +97,18 @@ var menuItems = {
 			}
 		}
 	},
+	'Image': {
+		'Mirror vertically': {},
+		'Mirror horizontally': {
+			'add_seperator': true
+		},
+		'Resize image': {
+			'callback': func(_args = {}): UserInterface.request_image_resize_popup()
+		},
+		'Resize canvas': {
+			'add_seperator': true
+		},
+	},
 	'Selection': {
 		'Select All': {
 			'callback': func(_args = {}): Selection.select_all(),
@@ -121,10 +133,6 @@ var menuItems = {
 			'callback': func(_args = {}): UserInterface.cover_view(),
 			'shortcut': Helpers.createShortcut(KEY_1, true),
 		},
-		'Reset View': {
-			'callback': func(_args = {}): UserInterface.reset_view(),
-			'shortcut': Helpers.createShortcut(KEY_2, true),
-		},
 		'Center Canvas': {
 			'callback': func(_args = {}): UserInterface.center_view(),
 			'shortcut': Helpers.createShortcut(KEY_F),
@@ -137,6 +145,19 @@ var menuItems = {
 		'Gridline background': {
 			'callback': func(_args = {}): UserInterface.toggle_gridline_bg(),
 			'shortcut': Helpers.createShortcut(KEY_G, true),
+			'add_seperator': true,
+		},
+		'Zoom in': {
+			'callback': func(_a = {}): UserInterface.zoom_in(),
+			'shortcut': Helpers.createShortcut(KEY_1, true, true)
+		},
+		'Zoom out': {
+			'callback': func(_a = {}): UserInterface.zoom_out(),
+			'shortcut': Helpers.createShortcut(KEY_2, true, true)
+		},
+		'Reset View': {
+			'callback': func(_a = {}): UserInterface.reset_view(),
+			'shortcut': Helpers.createShortcut(KEY_2, true),
 		},
 	},
 }

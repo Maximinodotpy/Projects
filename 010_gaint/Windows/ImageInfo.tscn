@@ -1,12 +1,29 @@
-[gd_scene format=3 uid="uid://c1sik162s4gy6"]
+[gd_scene load_steps=2 format=3 uid="uid://c1sik162s4gy6"]
+
+[sub_resource type="GDScript" id="GDScript_vnaay"]
+resource_name = "ImageInfoWindow"
+script/source = "extends MarginContainer
+
+@onready var dimensions_label = %dimensions_label
+@onready var layers_label = %layers_label
+@onready var saved_history_steps = %saved_history_steps
+@onready var last_modification = %last_modification
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	dimensions_label.text = str(Layers.image_dimensions)
+	layers_label.text = str(Layers.get_layer_data().size())
+	saved_history_steps.text = str(History.history.size())
+	last_modification.text = History.history[0].text
+"
 
 [node name="ImageInfo" type="Control"]
 layout_mode = 3
-anchor_right = 0.188368
+anchors_preset = 15
+anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-metadata/_edit_use_anchors_ = true
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
@@ -19,46 +36,81 @@ theme_override_constants/margin_left = 10
 theme_override_constants/margin_top = 10
 theme_override_constants/margin_right = 10
 theme_override_constants/margin_bottom = 10
+script = SubResource("GDScript_vnaay")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
-layout_mode = 2
-theme_override_constants/separation = 5
-
-[node name="VBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+[node name="ScrollContainer" type="ScrollContainer" parent="MarginContainer"]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/VBoxContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 15
+
+[node name="v1" type="HBoxContainer" parent="MarginContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/ScrollContainer/VBoxContainer/v1"]
 layout_mode = 2
 size_flags_horizontal = 3
 text = "Dimensions"
 
-[node name="dimensions" type="Label" parent="MarginContainer/VBoxContainer/VBoxContainer"]
+[node name="dimensions_label" type="Label" parent="MarginContainer/ScrollContainer/VBoxContainer/v1"]
+unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 text = "100/100"
 
-[node name="VBoxContainer2" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+[node name="v2" type="HBoxContainer" parent="MarginContainer/ScrollContainer/VBoxContainer"]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/VBoxContainer2"]
-layout_mode = 2
-size_flags_horizontal = 3
-text = "File Type"
-
-[node name="file_type" type="Label" parent="MarginContainer/VBoxContainer/VBoxContainer2"]
-layout_mode = 2
-size_flags_horizontal = 3
-text = "png"
-
-[node name="VBoxContainer3" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
-layout_mode = 2
-
-[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/VBoxContainer3"]
+[node name="Label" type="Label" parent="MarginContainer/ScrollContainer/VBoxContainer/v2"]
 layout_mode = 2
 size_flags_horizontal = 3
 text = "Layers"
 
-[node name="file_type" type="Label" parent="MarginContainer/VBoxContainer/VBoxContainer3"]
+[node name="layers_label" type="Label" parent="MarginContainer/ScrollContainer/VBoxContainer/v2"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "png"
+
+[node name="v3" type="HBoxContainer" parent="MarginContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/ScrollContainer/VBoxContainer/v3"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "History Steps"
+
+[node name="saved_history_steps" type="Label" parent="MarginContainer/ScrollContainer/VBoxContainer/v3"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "png"
+
+[node name="v4" type="HBoxContainer" parent="MarginContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/ScrollContainer/VBoxContainer/v4"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Last Modification"
+
+[node name="last_modification" type="Label" parent="MarginContainer/ScrollContainer/VBoxContainer/v4"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "png"
+
+[node name="v5" type="HBoxContainer" parent="MarginContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/ScrollContainer/VBoxContainer/v5"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Last Modification"
+
+[node name="current_history_step" type="Label" parent="MarginContainer/ScrollContainer/VBoxContainer/v5"]
 layout_mode = 2
 size_flags_horizontal = 3
 text = "png"

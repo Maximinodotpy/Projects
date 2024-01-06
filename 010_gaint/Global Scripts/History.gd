@@ -23,11 +23,11 @@ func clear_history():
 
 func create_snapshot(text, force: bool = false):
 	if is_reinserting_state:
-		print('Not saving state because inserting is ongoing')
+		#print('Not saving state because inserting is ongoing')
 		return
 
-	print('----------------------')
-	print('Pushing history state: ', text)
+	#print('----------------------')
+	#print('Pushing history state: ', text)
 
 	# Reset array so states that come after this one are deleted
 	history = history.slice(offset)
@@ -49,8 +49,9 @@ func create_snapshot(text, force: bool = false):
 				print('Nothing new ...')
 				return
 
-	print('Adding new snapshot ... ')
-	print(JSON.stringify(new_snapshot, '    '))
+	#print('Adding new snapshot ... ')
+	#print(JSON.stringify(new_snapshot, '    '))
+
 	history.push_front(new_snapshot)
 	history_changed.emit()
 
@@ -72,6 +73,11 @@ func go_to_snapshot(new_offset):
 	insert_snapshot(targeted_snapshot)
 
 func insert_snapshot(targeted_snapshot):
+	#print('-------------------------')
+	#print('Inserting history state')
+	#print(JSON.stringify(targeted_snapshot))
+	#print('-------------------------')
+
 	History.stop_tracking()
 	for i in bound_infos:
 		if i.name in targeted_snapshot['infos']:

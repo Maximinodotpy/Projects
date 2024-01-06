@@ -13,23 +13,22 @@ func tool_selected():
 
 	UserInterface.preview_container.add_child(color_rect_preview)
 
+func canvas_entered(): color_rect_preview.show()
+func canvas_left(): color_rect_preview.hide()
+
 func tool_deselected():
 	if color_rect_preview:
 		color_rect_preview.queue_free()
 
 func canvas_mouse_move(where: Vector2):
-	#if not color_rect_preview.is_inside_tree():
-
+	print(where)
 	color_rect_preview.position = where
 	color_rect_preview.color = UserInterface.get_primary_color()
 
-func canvas_clicked(where: Vector2):
-	if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
-		Layers.draw_pixel(where, UserInterface.get_primary_color())
-	elif Input.is_mouse_button_pressed(MOUSE_BUTTON_RIGHT):
-		Layers.draw_pixel(where, UserInterface.get_secondary_color())
+func drag_start(where: Vector2): draw_with_pen(where, where, Vector2.ZERO)
+func dragging(start, current, relative): draw_with_pen(start, current, relative)
 
-func dragging(start, current, relative):
+func draw_with_pen(start, current, relative):
 	if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
 		Layers.draw_line(current - relative, current, UserInterface.get_primary_color())
 	elif Input.is_mouse_button_pressed(MOUSE_BUTTON_RIGHT):

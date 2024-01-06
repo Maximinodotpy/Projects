@@ -53,3 +53,8 @@ func remove_rect_from_selection(rect: Rect2):
 				selected_pixels.erase(pos)
 
 	selection_changed.emit()
+
+func add_pixel_to_selection(where: Vector2):
+	if not selected_pixels.has(where):
+		selected_pixels.append(where)
+		selection_changed.emit()

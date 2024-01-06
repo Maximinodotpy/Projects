@@ -13,6 +13,9 @@ func tool_deselected(): pass
 func canvas_clicked(where: Vector2): pass
 func canvas_mouse_move(where: Vector2): pass
 
+func canvas_entered(): pass
+func canvas_left(): pass
+
 func drag_start(position: Vector2): pass
 func dragging(start_position: Vector2, current_position: Vector2, relative: Vector2): pass
 func drag_end(start_position: Vector2, end_position: Vector2): pass

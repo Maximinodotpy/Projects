@@ -1,0 +1,101 @@
+[gd_scene load_steps=2 format=3 uid="uid://crxqy1xfarby2"]
+
+[sub_resource type="GDScript" id="GDScript_s0qa6"]
+resource_name = "Resize Image Dialogue"
+script/source = "extends AcceptDialog
+
+
+@onready var width_spinbox = $\"m/v/h-width/width-spinbox\"
+@onready var height_spinbox = $\"m/v/h-height/height-spinbox\"
+@onready var interpolation_option_button = $\"m/v/h-interpolation/interpolation-option-button\"
+
+
+func _ready():
+	print('Resize image dialogue ...')
+	show()
+
+	width_spinbox.value = Layers.image_dimensions.x
+	height_spinbox.value = Layers.image_dimensions.y
+	interpolation_option_button.selected = 0
+
+	confirmed.connect(accept)
+
+func accept():
+	Layers.resize_image(
+		Vector2(width_spinbox.value, height_spinbox.value),
+		interpolation_option_button.selected
+	)
+"
+
+[node name="Window" type="AcceptDialog"]
+title = "Resize image"
+initial_position = 1
+size = Vector2i(300, 210)
+visible = true
+script = SubResource("GDScript_s0qa6")
+
+[node name="m" type="MarginContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1.0
+offset_top = 1.0
+offset_right = 299.0
+offset_bottom = 168.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="v" type="VBoxContainer" parent="m"]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="h-width" type="HBoxContainer" parent="m/v"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="m/v/h-width"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Width"
+
+[node name="width-spinbox" type="SpinBox" parent="m/v/h-width"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="h-height" type="HBoxContainer" parent="m/v"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="m/v/h-height"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Height"
+
+[node name="height-spinbox" type="SpinBox" parent="m/v/h-height"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="h-interpolation" type="HBoxContainer" parent="m/v"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="m/v/h-interpolation"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Height"
+
+[node name="interpolation-option-button" type="OptionButton" parent="m/v/h-interpolation"]
+layout_mode = 2
+size_flags_horizontal = 3
+item_count = 5
+popup/item_0/text = "Nearest"
+popup/item_0/id = 0
+popup/item_1/text = "Bilinear"
+popup/item_1/id = 1
+popup/item_2/text = "Cubic"
+popup/item_2/id = 2
+popup/item_3/text = "Trilinear"
+popup/item_3/id = 3
+popup/item_4/text = "Lanczos"
+popup/item_4/id = 4
