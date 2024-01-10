@@ -122,6 +122,33 @@ var menuItems = {
 		'Resize image': {
 			'callback': func(_args = {}): UserInterface.request_image_resize_popup()
 		},
+		'Image corrections': {
+			'children': {
+				'Invert colors': {
+					'callback': func(_a = {}): LayerModifications.invert_layers(Layers.get_layer_data()),
+				},
+				'Black and white': {
+					'callback': func(_a = {}): LayerModifications.black_and_white(Layers.get_layer_data()),
+					'add_seperator': true,
+				},
+				'Mirror vertically': {
+					'callback': func(_a = {}): LayerModifications.mirror_vertically(Layers.get_layer_data()),
+				},
+				'Mirror horizontally': {
+					'callback': func(_a = {}): LayerModifications.mirror_horizontally(Layers.get_layer_data()),
+					'add_seperator': true,
+				},
+				'Rotate 90deg left': {
+					'callback': func(_a = {}): LayerModifications.rotate_left_90(Layers.get_layer_data()),
+				},
+				'Rotate 90deg right': {
+					'callback': func(_a = {}): LayerModifications.rotate_right_90(Layers.get_layer_data()),
+				},
+				'Rotate 180deg': {
+					'callback': func(_a = {}): LayerModifications.rotate_180(Layers.get_layer_data()),
+				},
+			}
+		}
 		#'Resize canvas': {
 			#'add_seperator': true
 		#},
@@ -196,7 +223,6 @@ func _ready():
 			'shortcut': tool.tool_shortcut
 		}
 		i += 1
-		print()
 
 	for menu in menuItems:
 		add_child(Helpers.createSubmenu(menu, menuItems[menu]))

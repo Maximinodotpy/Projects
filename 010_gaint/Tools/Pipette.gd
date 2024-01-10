@@ -9,8 +9,6 @@ func _init():
 	tool_shortcut = Helpers.createShortcut(KEY_P, true)
 
 func tool_selected():
-	print('Pipette')
-
 	label = Label.new()
 	label.label_settings = label_settings
 

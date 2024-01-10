@@ -11,23 +11,15 @@ func _ready():
 	render()
 
 func render():
-	print('Rendering history')
-
 	item_list.clear()
 
 	for history_item in History.history:
-		print('indexflaksdj')
 		var index = item_list.add_item(history_item.text)
 
 		if index == History.offset:
 			item_list.set_item_disabled(index, true)
 
-		item_list.item_activated.connect(
-			func(i):
-				print(i)
-				History.go_to_snapshot(i)
-		)
-
+		item_list.item_clicked.connect( func(i, _v, _m): History.go_to_snapshot(i) )
 "
 
 [node name="History" type="MarginContainer"]

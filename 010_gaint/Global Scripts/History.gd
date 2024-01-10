@@ -68,15 +68,18 @@ func go_forward():
 	insert_snapshot(targeted_snapshot)
 
 func go_to_snapshot(new_offset):
+	if new_offset == offset:
+		return
+
 	offset = new_offset
 	var targeted_snapshot = history[offset]
 	insert_snapshot(targeted_snapshot)
 
 func insert_snapshot(targeted_snapshot):
-	#print('-------------------------')
-	#print('Inserting history state')
-	#print(JSON.stringify(targeted_snapshot))
-	#print('-------------------------')
+	print('-------------------------')
+	print('Inserting history state')
+	print(JSON.stringify(targeted_snapshot))
+	print('-------------------------')
 
 	History.stop_tracking()
 	for i in bound_infos:

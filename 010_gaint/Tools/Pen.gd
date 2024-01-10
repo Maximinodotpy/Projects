@@ -21,7 +21,6 @@ func tool_deselected():
 		color_rect_preview.queue_free()
 
 func canvas_mouse_move(where: Vector2):
-	print(where)
 	color_rect_preview.position = where
 	color_rect_preview.color = UserInterface.get_primary_color()
 

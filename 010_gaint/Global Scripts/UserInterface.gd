@@ -148,8 +148,6 @@ func toggle_gridline_bg():
 func preserve_view_mode(_a = null):
 	var window_size = get_tree().root.size
 
-	print(ViewModes.find_key(current_view_mode), window_size)
-
 	await get_tree().create_timer(.01).timeout
 
 	match current_view_mode:

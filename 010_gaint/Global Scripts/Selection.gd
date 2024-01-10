@@ -33,8 +33,6 @@ func inverse_selection():
 	selection_changed.emit()
 
 func add_rect_to_selection(rect: Rect2):
-	print('lfkajsdölfkjasöldjk', rect)
-
 	for y in range(rect.position.y, rect.position.y + rect.size.y):
 		for x in range(rect.position.x, rect.position.x + rect.size.x):
 			var pos = Vector2(x, y)

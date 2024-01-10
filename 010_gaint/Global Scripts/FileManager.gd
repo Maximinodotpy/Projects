@@ -41,8 +41,6 @@ func warn_file_unsaved_changes():
 
 	var h = await dialogue.confirmed
 
-	print('POPUP', h)
-
 func warn_file_format():
 	pass
 
