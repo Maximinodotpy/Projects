@@ -127,7 +127,15 @@
 
     <div class="absolute flex flex-col w-full h-full pt-12">
       <DayLengthRange label="Target dayrange in local time" sunrise={sunrise} sunset={sunset}></DayLengthRange>
-      <DayLengthRange label="Target dayrange in my time"></DayLengthRange>
+
+      {#if moment().format('hh:mm') != target_region_time.format('hh:mm')}
+        <DayLengthRange 
+          label="Target dayrange in my time"
+          sunrise={sunrise.clone().add(target_region_time.utcOffset() - moment().utcOffset(), 'minutes')}
+          sunset={sunset.clone().add(target_region_time.utcOffset() - moment().utcOffset(), 'minutes')}
+          >
+        </DayLengthRange>
+      {/if}
     </div>
 
     <!-- Show lines indicating the hours using a loop -->
