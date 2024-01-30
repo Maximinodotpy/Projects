@@ -125,7 +125,7 @@
 
   <div class="relative h-32 transition-all hover:h-40 bg-neutral-900">
 
-    <div class="absolute flex flex-col h-full pt-6">
+    <div class="absolute flex flex-col w-full h-full pt-12">
       <DayLengthRange label="Target dayrange in local time" sunrise={sunrise} sunset={sunset}></DayLengthRange>
       <DayLengthRange label="Target dayrange in my time"></DayLengthRange>
     </div>
@@ -137,7 +137,7 @@
       </div>
     {/each}
 
-    <div class="absolute top-0 w-[2px] h-full bg-green-500" style="left: calc({getDayProgress(target_region_time) * 100}vw - 1px)" title="This is the time at the target location">
+    <div class="pt-5 absolute top-0 w-[2px] h-full bg-green-500" style="left: calc({getDayProgress(target_region_time) * 100}vw - 1px)" title="This is the time at the target location">
       <div class="flex gap-2 pl-2">
         <div>{ target_region_time.format('hh:mm') }</div>
         <div class="font-mono opacity-50">{ target_region_time.tz() }</div>
@@ -145,7 +145,7 @@
     </div>
     
     {#if moment().format('hh:mm') != target_region_time.format('hh:mm')}
-      <div class="absolute top-0 w-[2px] h-full bg-red-500" style="left: calc({secondsSinceMidnight  / secondsInADay * 100}vw - 1px)" title="This is the time at your location">
+      <div class="pt-5 absolute top-0 w-[2px] h-full bg-red-500" style="left: calc({secondsSinceMidnight  / secondsInADay * 100}vw - 1px)" title="This is the time at your location">
         <div class="pl-2">{ moment().format('hh:mm') }</div>
       </div>
     {/if}
