@@ -148,7 +148,7 @@
       </div>
     {/each}
 
-    <div class="pt-5 absolute top-0 w-[2px] h-full bg-green-500" style="left: calc({getDayProgress(target_region_time) * 100}vw - 1px)" title="This is the time at the target location">
+    <div class="transition-all duration-1000 pt-5 absolute top-0 w-[2px] h-full bg-green-500" style="left: calc({getDayProgress(target_region_time) * 100}vw - 1px)" title="This is the time at the target location">
       <div class="flex gap-2 pl-2">
         <div>{ target_region_time.format('hh:mm') }</div>
         <div class="font-mono opacity-50">{ target_region_time.tz() }</div>

@@ -9,10 +9,17 @@
 </script>
 
 
-<div class="relative flex items-center justify-between transition-all grow bg-neutral-700" style="margin-left: {getDayProgress(sunrise) * 100}vw; width: { sunset.diff(sunrise, 'seconds') / SECONDS_IN_DAY * 100 }vw">
-    <div class="p-1 pl-2 font-mono opacity-50">Sunrise: { sunrise.format('hh:mm') }</div>
-    <div class="p-1 pl-2 font-mono opacity-50">{ sunset.diff(sunrise, 'minute') } Minutes</div>
-    <div class="p-1 pr-2 font-mono opacity-50">Sunset: { sunset.format('hh:mm') }</div>
-
-    <div class="absolute pl-2 left-full whitespace-nowrap">{ label }</div>
+<div class="relative grow">
+    {#each Array.from({ length: 3 }) as _, i}  
+        <div class="absolute flex items-center justify-between h-full transition-all duration-1000 bg-neutral-700" style="margin-left: {getDayProgress(sunrise) * 100 + ((i -1 ) * 100)}vw; width: { sunset.diff(sunrise, 'seconds') / SECONDS_IN_DAY * 100 }vw">
+            <div class="p-1 pl-2 font-mono opacity-50">Sunrise: { sunrise.format('hh:mm') }</div>
+            <div class="p-1 pl-2 font-mono opacity-50">{ sunset.diff(sunrise, 'minute') } Minutes</div>
+            <div class="p-1 pr-2 font-mono opacity-50">Sunset: { sunset.format('hh:mm') }</div>
+        
+            {#if i == 1}
+                <div class="absolute pl-2 left-full whitespace-nowrap">{ label }</div>
+            {/if}
+        </div>
+    {/each}
 </div>
+
