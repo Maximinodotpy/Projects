@@ -1,4 +1,6 @@
 <script lang="ts">
+  import TimelineMarker from './TimelineMarker.svelte';
+
   import moment, { type Moment } from "moment-timezone";
   import { onMount } from "svelte";
   import { SECONDS_IN_DAY, getDayProgress, getSecondsSinceMidnight, TIME_FORMAT } from "./Global";
@@ -86,10 +88,30 @@
   }
 </script>
 
+<div class="absolute z-[1100] flex items-center justify-center w-screen h-screen bg-neutral-800/80 text-white" id="intro-panel">
+  <div class="flex flex-col items-center">
+    <h1 class="mb-3 font-mono text-5xl">Daytime Viewer</h1>
+    
+    <p class="mb-4 text-xl">Find out what the time is like in other places and when the sun rises and sets.</p>
+    
+    <p class="mb-2">
+      Special thanks go to <a class="underline" href="https://sunrise-sunset.org/api">sunrise-sunset.org</a> for providing the sunrise and sunset data.
+    </p>
+    <p>
+      Special thanks go to <a class="underline" href="https://worldtimeapi.org/">worldtimeapi.org</a> for providing the timezone data.
+    </p>
+
+    <!-- A button which hides this panel and reveals the app saying lets start -->
+    <button class="px-4 py-2 mt-4 font-mono text-xl text-green-900 bg-green-500 rounded-md" on:click={() => {
+      document.getElementById('intro-panel')?.classList.add('hidden');
+    }}>Let's start</button>
+  </div>
+</div>
+
 <div class="flex flex-col justify-center min-h-screen gap-0 overflow-hidden text-white bg-neutral-800">
-  <div>
-    <div>{ my_current_time.format() }</div>
-    <div>{ target_region_time.format() }</div>
+  <div class="flex justify-between">
+      <div>Daytime Viewer</div>
+      <div>made by <a href="https://maximmaeder.com/">Maxim Maeder</a></div>
   </div>
 
   <Map on:map-moved={map_moved_handler}/>
@@ -116,17 +138,10 @@
       </div>
     {/each}
 
-    <div class="transition-all duration-1000 pt-5 absolute top-0 w-[2px] h-full bg-green-500" style="left: calc({getDayProgress(target_region_time) * 100}vw - 1px)" title="This is the time at the target location">
-      <div class="flex gap-2 pl-2">
-        <div>{ target_region_time.format(TIME_FORMAT) }</div>
-        <div class="font-mono opacity-50">{ target_region_time.tz() }</div>
-      </div>
-    </div>
+    <TimelineMarker classes="bg-green-500" date={target_region_time}></TimelineMarker>
     
     {#if my_current_time.format(TIME_FORMAT) != target_region_time.format(TIME_FORMAT)}
-      <div class="pt-5 absolute top-0 w-[2px] h-full bg-red-500" style="left: calc({getDayProgress(my_current_time) * 100}vw - 1px)" title="This is the time at your location">
-        <div class="pl-2">{ moment().format('HH:mm') }</div>
-      </div>
+      <TimelineMarker classes="bg-red-500" date={my_current_time}></TimelineMarker>
     {/if}
   </div>
 </div>
