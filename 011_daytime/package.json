@@ -22,6 +22,8 @@
     "vite": "^5.0.8"
   },
   "dependencies": {
+    "browser-geo-tz": "^0.0.7",
+    "geo-tz": "^8.0.1",
     "moment": "^2.30.1",
     "moment-timezone": "^0.5.44"
   }

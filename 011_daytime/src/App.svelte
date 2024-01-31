@@ -1,36 +1,56 @@
 <script lang="ts">
   import moment, { type Moment } from "moment-timezone";
   import { onMount } from "svelte";
-  import { getDayProgress, getSecondsSinceMidnight } from "./Global";
+  import { SECONDS_IN_DAY, getDayProgress, getSecondsSinceMidnight } from "./Global";
   import DayLengthRange from "./DayLengthRange.svelte";
+  import Map from "./Map.svelte";
 
-  // How many seconds are in a day
-  const secondsInADay = 24 * 60 * 60;
+  async function refreshTargetTime(lat, lng) {
+    // Limit the coordinates wrapping them around the globe
+    if (lng > 180) {
+      lng = lng - 360;
+    } else if (lng < -180) {
+      lng = lng + 360;
+    }
 
-  // Find out how many seconds have passed since midnight
-  var secondsSinceMidnight = 0
+    // @ts-ignore This is imported from a cdn in index.html
+    var timezone = await GeoTZ.find(lat, lng);
+    var timezone = timezone[0];
 
-  function updateTimeVariables() {
-    secondsSinceMidnight = moment().diff(moment().startOf("day"), "seconds");
+    console.log(timezone);
+
+    // Refresh the target time
+    var url = `http://worldtimeapi.org/api/timezone/${timezone}`
+
+    fetch(url, /* opts */)
+      .then(response => response.json())
+      .then(data => {
+        target_region_time = moment(data.datetime);
+        target_region_time.tz(timezone);
+      })
+      .catch(err => {
+        console.log(err);
+      });
   }
 
   var target_region_time = moment();
-  
-  updateTimeVariables();
+  var my_current_time = moment();
 
   // Update the time variables every second
-  setInterval(updateTimeVariables, 1000);
+  setInterval(() => {
+    console.log("Updating time ...");
+    
+    target_region_time.add(1, "seconds");
+    target_region_time = target_region_time;
+
+    my_current_time = my_current_time.add(1, "seconds");
+    my_current_time = moment();
+  }, 1000);
 
   // Sunrise
   var sunrise = moment().startOf("day").add(6, "hours").add(30, "minutes");
-  $: sunriseSeconds = sunrise.diff(moment().startOf("day"), "seconds");
-
   // Sunset
   var sunset = moment().startOf("day").add(18, "hours").add(30, "minutes");
-  $: sunsetSeconds = sunset.diff(moment().startOf("day"), "seconds");
-
-  // Day length
-  $: dayLength = sunset.diff(sunrise, "seconds");
 
   var fetch_res = null;
 
@@ -50,85 +70,27 @@
     .then(response => response.json())
     .then(data => {
       sunrise = moment(data.results.date + ' ' + data.results.sunrise);
-      sunset = moment(data.results.date + ' ' + data.results.sunset);
-
-      /* console.log(data); */
-
-      /* console.log(moment().utcOffset(data.results.utc_offset).format('hh:mm')); */
-
-      
-      target_region_time = moment().add(data.results.utc_offset - moment().utcOffset(), 'minutes');
-      console.log('-------------');
-      
-      console.log(target_region_time.tz(data.results.timezone).zoneAbbr());
-
-      console.log(`Target UTC: ${data.results.timezone}`);
-
-      console.log(`Target UTC Offset: ${data.results.utc_offset}`);
-      console.log(`Target time: ${target_region_time.format('hh:mm')}`);
-      console.log(`Target time fraction of day: ${getDayProgress(target_region_time)}`);
-      
-      
-      console.log(`Local UTC Offset: ${moment().utcOffset()}`);
-      console.log(`Local time: ${moment().format('hh:mm')}`);
-      console.log(`Local time fraction of day: ${getDayProgress(moment())}`);
-
-      // PRint target time difference to midnight
-      /* console.log(`Target time difference to midnight: ${target_region_time.diff(moment().startOf('day'), "seconds")}`); */
-      /* console.log(target_region_time); */
-      
-      console.log('-------------');
-      
-      
+      sunset = moment(data.results.date + ' ' + data.results.sunset);      
     })
     .catch(err => {
       console.log(err);
     });
   }
 
-  fetch_sunrise_and_sunset_data(47.50737, 19.04611)
-
-  onMount(() => {
-    // Where you want to render the map.
-    var element = document.getElementById('osm-map');
-
-    // Create Leaflet map on map element.
-    var map = L.map(element);
-
-    map.on('moveend', function() {
-      var center = map.getCenter();
-      /* console.log(center.lat, center.lng); */
-
-      fetch_sunrise_and_sunset_data(center.lat, center.lng)      
-    });
-
-    // Add OSM tile layer to the Leaflet map.
-    /* L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-    }).addTo(map); */
-
-    L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}.png', {
-        attribution: 'https://stadiamaps.com/'
-    }).addTo(map);
-
-    // Target's GPS coordinates.
-    var target = L.latLng('47.50737', '25.04611');
-
-    // Set map's center to target with zoom 14.
-    map.setView(target, 14);
-
-    // Place a marker on the same location.
-    L.marker(target).addTo(map);
-  })
-  
+  fetch_sunrise_and_sunset_data(47.50737, 19.04611);
 </script>
 
 <div class="flex flex-col justify-center min-h-screen gap-0 overflow-hidden text-white bg-neutral-800">
-  <div id="osm-map" class="grow"></div>
+  <div>
+    <div>{ my_current_time.format() }</div>
+    <div>{ target_region_time.format() }</div>
+  </div>
+
+  <Map on:map-moved={(d) => { refreshTargetTime(d.detail.lat, d.detail.lng) }}/>
 
   <div class="relative h-32 transition-all hover:h-40 bg-neutral-900">
 
-    <div class="absolute flex flex-col w-full h-full pt-12">
+    <!-- <div class="absolute flex flex-col w-full h-full pt-12">
       <DayLengthRange label="Target dayrange in local time" sunrise={sunrise} sunset={sunset}></DayLengthRange>
 
       {#if moment().format('hh:mm') != target_region_time.format('hh:mm')}
@@ -139,7 +101,7 @@
           >
         </DayLengthRange>
       {/if}
-    </div>
+    </div> -->
 
     <!-- Show lines indicating the hours using a loop -->
     {#each Array.from({ length: 23 }) as _, i}
@@ -155,8 +117,8 @@
       </div>
     </div>
     
-    {#if moment().format('hh:mm') != target_region_time.format('hh:mm')}
-      <div class="pt-5 absolute top-0 w-[2px] h-full bg-red-500" style="left: calc({secondsSinceMidnight  / secondsInADay * 100}vw - 1px)" title="This is the time at your location">
+    {#if my_current_time.format('hh:mm') != target_region_time.format('hh:mm')}
+      <div class="pt-5 absolute top-0 w-[2px] h-full bg-red-500" style="left: calc({getDayProgress(my_current_time) * 100}vw - 1px)" title="This is the time at your location">
         <div class="pl-2">{ moment().format('hh:mm') }</div>
       </div>
     {/if}
