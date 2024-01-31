@@ -15,7 +15,7 @@
     console.log(timezone);
 
     // Refresh the target time
-    var url = `http://worldtimeapi.org/api/timezone/${timezone}`
+    var url = `https://worldtimeapi.org/api/timezone/${timezone}`
 
     fetch(url, /* opts */)
       .then(response => response.json())
