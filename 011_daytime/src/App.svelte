@@ -77,10 +77,13 @@
     var lat = e.detail.lat;
 
     // Limit the coordinates wrapping them around the globe
-    if (lng > 180) {
-      lng = lng - 360;
-    } else if (lng < -180) {
-      lng = lng + 360;
+    
+    while (lng > 180 || lng < -180) {
+      if (lng > 180) {
+        lng = lng - 360;
+      } else if (lng < -180) {
+        lng = lng + 360;
+      }
     }
 
     refreshTargetTime(lat, lng);
@@ -109,9 +112,13 @@
 </div>
 
 <div class="flex flex-col justify-center min-h-screen gap-0 overflow-hidden text-white bg-neutral-800">
+  
   <div class="flex justify-between">
-      <div>Daytime Viewer</div>
-      <div>made by <a href="https://maximmaeder.com/">Maxim Maeder</a></div>
+      <div class="p-2 font-mono font-bold">Daytime Viewer</div>
+      <div class="flex">
+        <div class="p-2">made by</div>
+        <a class="p-2 transition-all hover:bg-neutral-700" href="https://maximmaeder.com/">Maxim Maeder</a>
+      </div>
   </div>
 
   <Map on:map-moved={map_moved_handler}/>
