@@ -13,15 +13,6 @@
         // Create Leaflet map on map element.
         var map = L.map(element);
 
-        /* map.on('moveend', function() {
-            var center = map.getCenter();
-
-            dispatch('map-moved', {
-                lat: center.lat,
-                lng: center.lng
-            });
-        }); */
-
         map.on('click', function(e) {
             var lat = e.latlng.lat;
             var lng = e.latlng.lng;
