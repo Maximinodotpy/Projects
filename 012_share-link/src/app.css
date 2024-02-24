@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 /* Reset all kinds of inputs */
-input, textarea, select, button {
+input:not([type="checkbox"]), textarea, select {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
@@ -14,4 +14,9 @@ input, textarea, select, button {
 
 :root {
     color-scheme: dark;
+}
+
+
+.button {
+  @apply px-4 py-2 text-white border bg-neutral-800 border-neutral-700 focus:outline-none;
 }

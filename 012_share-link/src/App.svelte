@@ -1,129 +1,117 @@
 <script lang="ts">
   import { Tabs, Tab, TabList, TabPanel } from 'svelte-tabs';
+  import { share_links } from './stores';
+  import HtmlCode from './ViewTypes/HTML-Code.svelte';
+  import TextInput from './Text-Input.svelte';
+  import { createPersistentStore } from './stores';
+  import { onMount } from 'svelte';
+  import CopyButton from './Copy-Button.svelte';
 
-  let title = 'My message';
-  let url = 'https://www.example.com';
-  let encode_urls = false;
+  let title = createPersistentStore('title', 'My message');
+  let url = createPersistentStore('url', 'https://example.com');
+  let encode_urls = createPersistentStore('encode_urls', false);
+  let add_url_to_title_text = createPersistentStore('add_url_to_title_text', false);
 
-  let share_links = [
-    {
-      name: 'Facebook',
-      url: 'https://threema.id/compose?text={title}',
-      composed_url: '',
-      color: '#1877F2',
-    },
-    {
-      name: 'Threema',
-      url: 'https://t.me/share/url?url={url}&text={title}',
-      composed_url: '',
-      color: '#05A63F',
-    },
-    {
-      name: 'WhatsApp',
-      url: 'https://api.whatsapp.com/send?text={title}',
-      composed_url: '',
-      color: '#25D366',
-    },
-    {
-      name: 'Twitter',
-      url: 'https://twitter.com/intent/tweet?text={title}&url={url}',
-      composed_url: '',
-      color: '#1DA1F2',
-    },
-    {
-      name: 'LinkedIn',
-      url: 'https://www.linkedin.com/shareArticle?mini=true&url={url}&title={title}',
-      composed_url: '',
-      color: '#0A66C2',
-    },
-    {
-      name: 'Pinterest',
-      url: 'https://pinterest.com/pin/create/button/?url={url}&description={title}',
-      composed_url: '',
-      color: '#E60023',
-    },
-    {
-      name: 'Reddit',
-      url: 'https://www.reddit.com/submit?url={url}&title={title}',
-      composed_url: '',
-      color: '#FF4500',
-    },
-    {
-      name: 'Viber',
-      url: 'viber://forward?text={title}',
-      composed_url: '',
-      color: '#665CAC',
-    },
-    {
-      name: 'Email',
-      url: 'mailto:?subject={title}&body={url}',
-      composed_url: '',
-    },
-  ];
+  let current_tab = createPersistentStore('current_tab', 1);
+  let tabs_component: Tabs;
+
+  onMount(() => {
+    console.log(tabs_component.$$.after_update);
+
+    tabs_component.$$.after_update.push(() => {
+      const all_tabs_nl = document.querySelectorAll('.svelte-tabs__tab');
+      const current_tab_node = document.querySelector('.svelte-tabs__selected');
+
+      console.log('all_tabs', all_tabs_nl);
+      console.log('current_tab', current_tab_node);
+
+      const all_tabs_arr = Array.from(all_tabs_nl);
+
+      // @ts-ignore
+      $current_tab = all_tabs_arr.indexOf(current_tab_node);
+    });
+  });
 
   $: {
-    share_links.forEach((SoMe) => {
+    $share_links.forEach((SoMe) => {
       SoMe.composed_url = SoMe.url;
 
-      SoMe.composed_url = SoMe.url.replace('{title}', title);
-      SoMe.composed_url = SoMe.composed_url.replace('{url}', url);
+      if ($add_url_to_title_text && !SoMe.url.includes('{url}')) {
+        SoMe.composed_url = SoMe.url.replace('{title}', `${$title}: ${$url}`);
+      } else {
+        SoMe.composed_url = SoMe.url.replace('{title}', $title);
+      }
+
+      SoMe.composed_url = SoMe.composed_url.replace('{url}', $url);
+
+      if ($encode_urls) SoMe.composed_url = encodeURI(SoMe.composed_url);
     });
 
-    share_links = share_links;
+    $share_links = $share_links;
   }
 </script>
 
-<div class="bg-neutral-900 min-h-screen text-neutral-300">
-    <div class="max-w-4xl mx-auto border-x min-h-screen border-neutral-600">
+<div class="h-screen overflow-hidden bg-neutral-900 text-neutral-300">
+    <div class="flex flex-col h-screen max-w-4xl mx-auto overflow-hidden border-x border-neutral-600">
 
-      <div class="p-4 border-b border-b-neutral-600 grid grid-cols-2 gap-8">
-        
-        <div>
-          <label for="title" class="mb-3 block font-bold text-xl">Title text</label>
-          <input type="text" id="title" bind:value={title} class="bg-neutral-800 p-2" />
-        </div>
+      <div class="grid grid-cols-2 px-4 pb-2 border-b gap-x-2 gap-y-2 border-b-neutral-600">
 
-        <div>
-          <label for="url" class="mb-3 block font-bold text-xl">URL text</label>
-          <input type="text" id="url" bind:value={url} class="bg-neutral-800 p-2" />
-        </div>
+        <TextInput id='title' bind:text={ $title } label="Title text" />
+
+        <TextInput id='url' bind:text={ $url } label="URL" />
         
-        <div class="flex items-center w-full justify-between">
-          <label for="url" class="block font-bold whitespace-nowrap">Encode URL</label>
-          <input type="checkbox" id="encode_urls" bind:checked={encode_urls} class="bg-neutral-800 p-2" />
-        </div>
+        <label for="encode_urls" class="flex justify-between whitespace-nowrap button">
+          <div>Encode URL</div>
+          <input type="checkbox" id="encode_urls" bind:checked={$encode_urls} class="p-2 bg-neutral-800" />
+        </label>
+        
+        <label for="add_url_to_title_text" class="flex justify-between whitespace-nowrap button" title="if there is not dedicated field for the url, for example in WhatsApp.">
+          <div>
+            <div>Add URL to Title text</div>
+          </div>
+          <input type="checkbox" id="add_url_to_title_text" bind:checked={$add_url_to_title_text} class="p-2 bg-neutral-800" />
+        </label>
 
       </div>
 
-      <Tabs>
-        <TabList>
-          <Tab>Single Links</Tab>
-          <Tab>Simple text</Tab>
-        </TabList>
-      
-        <TabPanel>
-          <div class="divide-y divide-neutral-800">
-            {#each share_links as SoMe}
-              <a href={SoMe.composed_url} class="flex justify-between p-4" target="_blank">
-                <div class="flex gap-4 items-center">
-                  <div class="w-5 h-5" style="background-color: {SoMe?.color ?? '#000'};"></div>
-                  <div>{ SoMe.name }</div>
+      <div class="overflow-auto grow">
+        <Tabs initialSelectedIndex={$current_tab} bind:this={ tabs_component }>
+          <TabList>
+            <Tab>Single Links</Tab>
+            <Tab>Simple text</Tab>
+            <Tab>HTML Links</Tab>
+          </TabList>
+        
+          <TabPanel>
+            <div class="divide-y divide-neutral-800">
+              {#each $share_links as SoMe}
+                <div class="flex w-full px-4 pt-2">
+                  <a href={SoMe.composed_url} class="flex items-center grow" target="_blank">
+                    <div class="flex items-center gap-4 min-w-60">
+                      <div class="w-5 h-5" style="background-color: {SoMe?.color ?? '#000'};"></div>
+                      <div>{ SoMe.name }</div>
+                    </div>
+                  </a>
+                  
+                  <CopyButton text={SoMe.composed_url} />
                 </div>
-    
-                <div class="max-w-[80%] overflow-hidden whitespace-nowrap text-ellipsis opacity-30">{ SoMe.composed_url }</div>
-              </a>
-            {/each}
-          </div>
-        </TabPanel>
-      
-        <TabPanel>
-          <div class="p-4 font-mono">
-            {#each share_links as SoMe}
-              <div>{SoMe.composed_url}</div>
-            {/each}
-          </div>
-        </TabPanel>
-      </Tabs>
+
+                <div class="px-4 pb-2 overflow-hidden text-xs whitespace-nowrap text-ellipsis opacity-30 max-w-[100%]">{ SoMe.composed_url }</div>
+              {/each}
+            </div>
+          </TabPanel>
+        
+          <TabPanel>
+            <pre class="p-4 font-mono text-xs whitespace-nowrap">
+              {#each $share_links as SoMe}
+                <div>{SoMe.composed_url}</div>
+              {/each}
+            </pre>
+          </TabPanel>
+          
+          <TabPanel> <HtmlCode/> </TabPanel>
+        </Tabs>
+      </div>
 
     </div>
 </div>
@@ -139,5 +127,9 @@
   :global(.svelte-tabs li.svelte-tabs__selected) {
     color: inherit;
     border-bottom: 2px solid #fff !important;
+  }
+
+  :global(.svelte-tabs__tab-panel) {
+    margin: 0;
   }
 </style>
