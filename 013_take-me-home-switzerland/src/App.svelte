@@ -28,7 +28,7 @@
   }
   
   function search() {
-    fetch(`http://transport.opendata.ch/v1/connections?from=${$from}&to=${$to}`)
+    fetch(`https://transport.opendata.ch/v1/connections?from=${$from}&to=${$to}`)
       .then(re => re.json())
       .then(data => {
         console.log(data);
