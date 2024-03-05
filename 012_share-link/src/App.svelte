@@ -12,6 +12,8 @@
   let encode_urls = createPersistentStore('encode_urls', false);
   let add_url_to_title_text = createPersistentStore('add_url_to_title_text', false);
 
+  let full_width = createPersistentStore('full_width', false);
+
   let current_tab = createPersistentStore('current_tab', 1);
   let tabs_component: Tabs;
 
@@ -52,7 +54,18 @@
 </script>
 
 <div class="h-screen overflow-hidden bg-neutral-900 text-neutral-300">
-    <div class="flex flex-col h-screen max-w-4xl mx-auto overflow-hidden border-x border-neutral-600">
+    <div class="flex gap-4 px-4 py-2 text-xs">
+      <div>
+        App Settings
+      </div>
+
+      <label for="full_width" class="flex items-center gap-1">
+        <input type="checkbox" id="full_width" bind:checked={$full_width} class="p-2 bg-neutral-800" />
+        Full width
+      </label>
+    </div>
+    
+    <div class="flex flex-col h-screen mx-auto overflow-hidden {$full_width ? '': 'max-w-5xl border border-neutral-600'}">
 
       <div class="grid grid-cols-2 px-4 pb-2 border-b gap-x-2 gap-y-2 border-b-neutral-600">
 
