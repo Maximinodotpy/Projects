@@ -48,6 +48,7 @@ export const share_links = writable<IShareLink[]>([
         url: 'https://pinterest.com/pin/create/button/?url={url}&description={title}',
         composed_url: '',
         color: '#E60023',
+        logo: 'https://cdn-icons-png.flaticon.com/512/220/220214.png'
     },
     {
         name: 'Reddit',
@@ -61,11 +62,13 @@ export const share_links = writable<IShareLink[]>([
         url: 'viber://forward?text={title}',
         composed_url: '',
         color: '#665CAC',
+        logo: 'https://cdn-icons-png.flaticon.com/512/3670/3670059.png'
     },
     {
         name: 'Email',
         url: 'mailto:?subject={title}&body={url}',
         composed_url: '',
+        logo: 'https://cdn-icons-png.flaticon.com/512/3178/3178158.png'
     },
 ])
 

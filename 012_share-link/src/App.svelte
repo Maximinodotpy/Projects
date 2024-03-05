@@ -53,7 +53,7 @@
   }
 </script>
 
-<div class="h-screen overflow-hidden bg-neutral-900 text-neutral-300">
+<div class="flex flex-col h-screen overflow-hidden bg-neutral-900 text-neutral-300">
     <div class="flex gap-4 px-4 py-2 text-xs">
       <div>
         App Settings
@@ -65,7 +65,7 @@
       </label>
     </div>
     
-    <div class="flex flex-col h-screen mx-auto overflow-hidden {$full_width ? '': 'max-w-5xl border border-neutral-600'}">
+    <div class="flex flex-col mx-auto overflow-hidden {$full_width ? 'w-full': 'max-w-5xl border border-neutral-600'}">
 
       <div class="grid grid-cols-2 px-4 pb-2 border-b gap-x-2 gap-y-2 border-b-neutral-600">
 

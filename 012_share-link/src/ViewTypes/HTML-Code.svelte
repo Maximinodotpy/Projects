@@ -51,17 +51,21 @@
             <input type="checkbox" id="target_new" class="p-2 bg-neutral-800" bind:checked={$add_target_blank} />
         </label>
 
-        <label for="incorporate_color" class="flex items-center gap-4 whitespace-nowrap button shrink-0">
-            <div>In Corporate color</div>
+        {#if !$add_image}    
+            <label for="incorporate_color" class="flex items-center gap-4 whitespace-nowrap button shrink-0">
+                <div>In Corporate color</div>
 
-            <input type="checkbox" id="incorporate_color" class="p-2 bg-neutral-800" bind:checked={$in_corporate_color} />
-        </label>
+                <input type="checkbox" id="incorporate_color" class="p-2 bg-neutral-800" bind:checked={$in_corporate_color} />
+            </label>
+        {/if}
 
-        <label for="add_image" class="flex items-center gap-4 whitespace-nowrap button shrink-0">
-            <div>Add <code>{@html hljs.highlightAuto('<img>').value }</code> with logo</div>
+        {#if !$in_corporate_color}
+            <label for="add_image" class="flex items-center gap-4 whitespace-nowrap button shrink-0">
+                <div>Add <code>{@html hljs.highlightAuto('<img>').value }</code> with logo</div>
 
-            <input type="checkbox" id="add_image" class="p-2 bg-neutral-800" bind:checked={$add_image} />
-        </label>
+                <input type="checkbox" id="add_image" class="p-2 bg-neutral-800" bind:checked={$add_image} />
+            </label>
+        {/if}
 
         {#if $add_image}
             <label for="image_size" class="flex items-center gap-2 whitespace-nowrap button shrink-0">
