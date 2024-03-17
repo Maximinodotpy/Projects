@@ -317,4 +317,16 @@ export const people: Person[] = [
         ],
         actor_pictures: []
     },
+    // Ernest Lawrence
+    {
+        first_name: "Ernest",
+        last_name: "Lawrence",
+        birth_date: "1901-08-08",
+        death_date: "1958-08-27",
+        real_pictures: [
+            { url: "https://upload.wikimedia.org/wikipedia/commons/6/6a/Ernest_Lawrence.jpg", alt: "Ernest Lawrence (1939)" },
+            { url: "https://upload.wikimedia.org/wikipedia/commons/d/de/Oppenheimer_Fermi_Lawrence.jpeg", alt: "Oppenheimer, Fermi und Lawrence (from left)" }
+        ],
+        actor_pictures: []
+    },
 ]

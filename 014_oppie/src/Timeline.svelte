@@ -6,6 +6,7 @@
     import "vis-timeline/styles/vis-timeline-graph2d.css";
     import { data/* , groups */ } from "./history-data";
     import { createPersistentStore } from "./stores";
+    import moment from "moment";
     // You may import from other packages like Vis Network or Vis Graph3D here.
     // You can optionally include locales for Moment if you need any.
     
@@ -25,7 +26,7 @@
 
     let timeline: Timeline;
 
-    let currentSelection = [];
+    let currentSelection: number[] = [];
 
     $: {
       if (timeline) {
@@ -65,6 +66,57 @@
         });
       });
     });
+
+    function getTimeDifferenceBeetwenEvents(first: number, second: number) {
+      const firstEvent = data.get(first);
+      const secondEvent = data.get(second);
+
+      console.log(firstEvent, secondEvent);
+      
+
+      // @ts-ignore
+      const firstDate = moment(firstEvent.start);
+      // @ts-ignore
+      const secondDate = moment(secondEvent.start);
+
+      // Create a duration which shows depending the length years days hours minuts or seconds in combination
+        const duration = moment.duration(secondDate.diff(firstDate));
+
+        const years = Math.abs(duration.years());
+        const months = Math.abs(duration.months());
+        const days = Math.abs(duration.days());
+        const hours = Math.abs(duration.hours());
+        const minutes = Math.abs(duration.minutes());
+        const seconds = Math.abs(duration.seconds());
+
+        let output = [];
+
+        if (years > 0) {
+            output.push(`${years} years`);
+        }
+
+        if (months > 0) {
+            output.push(`${months} months`);
+        }
+
+        if (days > 0) {
+            output.push(`${days} days`);
+        }
+
+        if (hours > 0) {
+            output.push(`${hours} hours`);
+        }
+
+        if (minutes > 0) {
+            output.push(`${minutes} minutes`);
+        }
+
+        if (seconds > 0) {
+            output.push(`${seconds} secon`);
+        }
+
+        return output.join(", ");
+    }
 </script>
 
 <div class="bg-neutral-900 pt-20">
@@ -74,7 +126,7 @@
     </div>
 
     <div class="h-screen flex flex-col">
-      <div class=" px-6 py-3">
+      <div class="px-6 py-3 flex gap-3 items-center">
         <button class="btn-dark" on:pointerdown={() => { timeline.fit({ animation: true }) }}>Fit all events</button>
     
         <button class="btn-dark transition-opacity {currentSelection.length == 0 ? 'opacity-50': ''}" disabled={currentSelection.length == 0} on:pointerdown={() => {
@@ -85,8 +137,6 @@
         }}>Focus selected</button>
     
     
-        <!-- { currentSelection.length } -->
-    
         <label class="inline-flex items-center btn-dark">
           <input type="checkbox" bind:checked={$shouldCluster} />
           <span class="ml-2">Cluster</span>
@@ -96,6 +146,14 @@
           <input type="checkbox" bind:checked={$multipleSelection} />
           <span class="ml-2">Multiple selection</span>
         </label>
+
+        <div>
+            {#if currentSelection.length == 2}
+                { getTimeDifferenceBeetwenEvents(currentSelection[0], currentSelection[1]) } Difference
+            {:else if currentSelection.length == 1}
+                { moment(data.get(currentSelection[0]).start).format("D.M.YYYY hh:mm:ss") }
+            {/if}
+        </div>
       </div>
     
       <div id="timeline" class="grow"></div>

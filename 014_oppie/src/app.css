@@ -47,7 +47,7 @@ h1, h2, h3, h4, .font-metro {
 }
 
 h2 {
-  @apply text-3xl font-bold;
+  @apply text-3xl font-bold mb-4;
 }
 
 h3 {
@@ -58,19 +58,10 @@ h3 {
   @apply mx-auto px-4 max-w-6xl;
 }
 
-
 /* Vis timeline */
 .vis-timeline {
   border: none !important;
 }
-
-/* .vis-odd {
-  border: 1px solid hsl(0, 0%, 10%) !important;
-}
-
-.vis-even {
-  border: 1px solid hsl(0, 0%, 0.1%) !important;
-} */
 
 .vis-time-axis .vis-grid.vis-vertical {
   border: 0.5px solid hsl(0, 0%, 20%) !important;
