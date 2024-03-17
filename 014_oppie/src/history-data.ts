@@ -6,10 +6,6 @@ export const groups = new DataSet([
     { id: 3, content: "History" },
 ]);
 
-const TEACHER_ID = 1;
-const POLITICIAN_ID = 2;
-const HISTORY_ID = 3;
-
 // A lot of Data About the life of J. Robert Oppenheimer
 export const data = new DataSet([
     { id: 1, selectable: true, content: "Oppenheimer is born", start: "1904-04-22", className: 'oppenheimer'},
@@ -83,7 +79,30 @@ export const data = new DataSet([
 
     // Three Mile Island accident
     { id: 32, selectable: true, content: "Three Mile Island accident", start: "1979-03-28", className: "consequences"},
-    /* { id: 32, selectable: true, content: createDetailsHTML('flaksjd', 'fasdfa'), start: "1979-03-28", className: "consequences" }, */
+    
+    // First Nuclear Power Plant
+    { id: 33, selectable: true, content: "First Nuclear Power Plant", start: "1954-06-27", className: "consequences"},
+
+    // Last nuclear test in the US
+    { id: 34, selectable: true, content: "Last nuclear test in the US", start: "1992-09-23", className: "consequences"},
+
+    // Jean Tatlock commits suicide
+    { id: 35, selectable: true, content: "Jean Tatlock commits suicide", start: '1944-01-4', className: 'oppenheimer' },
+    
+    // Oppenheimer resignes his post post
+    { id: 36, selectable: true, content: "Oppenheimer resignes his post post", start: '1945-10-01', className: 'oppenheimer' },
+    
+    // Oppenheimer serves as chairman of the GAC
+    { id: 37, selectable: true, content: "Oppenheimer serves as chairman of the GAC", start: '1947-06-01', end: '1952-01-01', className: 'oppenheimer' },
+
+    // Kenneth Nichols sends J. R. Oppenheimer a letter of 
+    { id: 38, selectable: true, content: "https://atomicarchive.com/resources/documents/oppenheimer/nichols.html", start: '1953-12-23', className: 'oppenheimer document' },
+
+    // J. R. Oppenheimer to K. D. Nichols
+    { id: 39, selectable: true, content: "https://atomicarchive.com/resources/documents/oppenheimer/oppenheimer-response.html", start: '1954-03-04', className: 'oppenheimer document' },
+    
+    // USA unrevokes Oppenheimers security clearance
+    { id: 40, selectable: true, content: createDetailsHTML('USA unrevokes Oppenheimers security clearance', 'https://atomicarchive.com/resources/documents/oppenheimer/doe-2022.html'), start: '2022-12-16', className: 'consequences document' },
 ]);
 
 function createDetailsHTML(title: string, content: string) {
