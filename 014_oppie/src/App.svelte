@@ -1,0 +1,41 @@
+<script lang="ts">
+  import Timeline from "./Timeline.svelte";
+  import People from "./People.svelte";
+
+  import { scrollProgress } from "./stores";
+</script>
+
+
+<div class="">
+  
+  
+  <div>
+    <div class="fixed px-4 py-2 backdrop-blur-md bg-neutral-800/50 text-white z-10 w-full transition-all { $scrollProgress.stuck && !($scrollProgress.progress == 1) ? 'translate-y-0': '-translate-y-full' }" id="s ">
+      <div class="text-xl flex justify-between max-w-6xl mx-auto">
+        <h1 class="">OPPENHEIMER</h1>
+
+        <div class="flex gap-4">
+          <a href="#people">People</a>
+          <a href="#timeline">Timeline</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="h-screen relative">
+      <img src="https://thebulletin.org/wp-content/uploads/2023/07/oppenheimer-gadget-silhouette.png" alt="" class="w-full h-full overflow-hidden object-cover">
+
+      <div class="absolute top-0 right-0 w-full h-full bg-gradient-to-b from-transparent to-neutral-900"></div>
+
+      <div class="absolute bottom-[13%] w-full right-0 text-white flex justify-center">
+        <div class="flex flex-col items-center">
+          <h1 class="text-6xl font-bold">OPPENHEIMER</h1>
+          <p class="italic text-2xl">1904 - 1967</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <People />
+
+  <Timeline />
+</div>

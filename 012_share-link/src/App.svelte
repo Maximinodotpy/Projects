@@ -65,7 +65,7 @@
       </label>
     </div>
     
-    <div class="flex flex-col mx-auto overflow-hidden w-full {$full_width ? '': 'max-w-5xl border border-neutral-600'}">
+    <div class="flex flex-col mx-auto overflow-hidden w-full grow {$full_width ? '': 'max-w-5xl border border-neutral-600'}">
 
       <div class="grid grid-cols-2 px-4 pb-2 border-b gap-x-2 gap-y-2 border-b-neutral-600">
 
@@ -87,16 +87,17 @@
 
       </div>
 
-      <div class="overflow-auto grow">
+      <div class="overflow-hidden grow">
         <Tabs initialSelectedIndex={$current_tab} bind:this={ tabs_component }>
           <TabList>
             <Tab>Single Links</Tab>
             <Tab>Simple text</Tab>
             <Tab>HTML Links</Tab>
+            <Tab>Apps</Tab>
           </TabList>
         
           <TabPanel>
-            <div class="divide-y divide-neutral-800">
+            <div class="h-full overflow-auto divide-y divide-neutral-800">
               {#each $share_links as SoMe}
                 <div class="flex w-full px-4 pt-2">
                   <a href={SoMe.composed_url} class="flex items-center grow" target="_blank">
@@ -115,7 +116,7 @@
           </TabPanel>
         
           <TabPanel>
-            <pre class="p-4 font-mono text-xs whitespace-nowrap">
+            <pre class="h-full p-4 overflow-auto font-mono text-xs whitespace-nowrap">
               {#each $share_links as SoMe}
                 <div>{SoMe.composed_url}</div>
               {/each}
@@ -123,6 +124,40 @@
           </TabPanel>
           
           <TabPanel> <HtmlCode/> </TabPanel>
+
+          <TabPanel>
+            <div class="h-full p-4">
+              <!-- Render apps as table -->
+
+              <table class="w-full text-sm border border-collapse border-neutral-800">
+                <thead>
+                  <tr>
+                    <th class="p-2 text-left"></th>
+                    <th class="p-2 text-left">App</th>
+                    <th class="p-2 text-left">URL</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {#each $share_links as SoMe}
+                    <tr>
+                      <td class="relative">
+                        <!-- A checkbox wether this should be added to the rooster -->
+                        <!-- <input type="checkbox" class="block w-full h-full" id="enabled" /> -->
+                        <label class="absolute top-0 left-0 flex justify-center w-full h-full" for="enabled-{SoMe.name}">
+                          <input type="checkbox" id="enabled-{SoMe.name}" bind:checked={SoMe.enabled} />
+                        </label>
+                      </td>
+                      <td class="flex items-center gap-2 p-2 border border-neutral-700">
+                        <div class="w-4 h-4 border border-neutral-700" style="background-color: {SoMe.color};"></div>
+                        {SoMe.name}
+                      </td>
+                      <td class="p-2 border border-neutral-700">{SoMe.url}</td>
+                    </tr>
+                  {/each}
+                </tbody>
+              </table>
+            </div>
+          </TabPanel>
         </Tabs>
       </div>
 
@@ -144,5 +179,18 @@
 
   :global(.svelte-tabs__tab-panel) {
     margin: 0;
+    margin-top: 0 !important;
+  }
+  
+  :global(.svelte-tabs__tab-panel:not(:empty)) {
+    flex-grow: 1;
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  :global(.svelte-tabs) {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
   }
 </style>

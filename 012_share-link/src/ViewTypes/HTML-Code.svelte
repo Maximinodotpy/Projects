@@ -77,8 +77,8 @@
         {/if}
     </div>
 
-    <div class="px-4 pb-4 text-xs grow">
-        <pre>{@html hljs.highlight(
+    <div class="px-4 pb-4 overflow-auto text-xs grow">
+        <pre class="whitespace-pre-wrap">{@html hljs.highlight(
             generated_html,
             { language: 'html' }
         ).value }</pre>

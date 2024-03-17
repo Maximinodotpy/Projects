@@ -1,6 +1,7 @@
 import { writable } from 'svelte/store';
 
 interface IShareLink {
+    enabled?: boolean,
     name: string,
     url: string,
     composed_url: string,
@@ -9,12 +10,6 @@ interface IShareLink {
 }
 
 export const share_links = writable<IShareLink[]>([
-    /* {
-        name: 'Facebook',
-        url: 'https://threema.id/compose?text={title}',
-        composed_url: '',
-        color: '#1877F2',
-    }, */
     {
         name: 'Threema',
         url: 'https://t.me/share/url?url={url}&text={title}',

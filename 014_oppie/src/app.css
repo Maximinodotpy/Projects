@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import the font metropolis-chris-simpson it is located in the public folder no google fonts*/
+@font-face {
+  font-family: 'metropolis-chris-simpson';
+  src: url('/metropolis-chris-simpson/Metropolis-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+/* Set it to the body */
+h1, h2, h3, h4, .font-metro {
+  font-family: 'metropolis-chris-simpson', sans-serif;
+}
+
+/* .btn {
+  @apply border-[0.5px] bg-gradient-to-b from-neutral-100 to-neutral-300 px-3 py-1 rounded-md border-neutral-400;
+} */
+
+.btn-dark {
+  @apply border-[0.5px] bg-gradient-to-b from-neutral-800 to-neutral-900 px-3 py-1 rounded-md border-neutral-700;
+}
+.btn-dark * {
+  color-scheme: dark;
+}
+
+.consequences {
+  @apply text-neutral-300 bg-neutral-900 border-neutral-600/50 !important;
+}
+
+.history {
+  @apply text-blue-300 bg-blue-900 border-blue-600/50 !important;
+}
+
+.oppenheimer {
+  @apply text-red-300 bg-red-900 border-red-600/50 !important;
+}
+
+.vis-selected {
+  @apply outline outline-1 outline-white !important;
+}
+
+h2 {
+  @apply text-3xl font-bold;
+}
+
+h3 {
+  @apply text-2xl font-bold;
+}
+
+.container {
+  @apply mx-auto px-4 max-w-6xl;
+}
+
+
+/* Vis timeline */
+.vis-timeline {
+  border: none !important;
+}
+
+/* .vis-odd {
+  border: 1px solid hsl(0, 0%, 10%) !important;
+}
+
+.vis-even {
+  border: 1px solid hsl(0, 0%, 0.1%) !important;
+} */
+
+.vis-time-axis .vis-grid.vis-vertical {
+  border: 0.5px solid hsl(0, 0%, 20%) !important;
+}
+
+.vis-item.vis-background {
+  background-color: hsla(0, 0%, 13%, 50%) !important;
+  color: white !important;
+}
+
+.vis-panel.vis-center, .vis-panel.vis-left, .vis-panel.vis-right, .vis-panel.vis-top, .vis-panel.vis-bottom {
+  border: 0.5px solid hsl(0, 0%, 20%) !important;
+}
