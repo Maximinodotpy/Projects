@@ -20,6 +20,26 @@
         {
             url: 'https://upload.wikimedia.org/wikipedia/commons/f/f4/TrinityFireballGif.gif',
             alt: 'Trinity 100ton Test'
+        },
+        {
+            url: 'https://cms.outrider.org/sites/default/files/styles/fixed_width_sm/public/2018-09/Fat%20Man.jpg?itok=zZVKe6kS',
+            alt: 'Fat Man being readied for its drop on Nagasaki. Los Alamos National Laboratory.',
+        },
+        {
+            url: 'https://cms.outrider.org/sites/default/files/styles/fixed_height_portrait/public/2018-09/crew%20of%20the%20Enola%20Gay.jpg?itok=FWD4WFRI',
+            alt: 'Colonel Paul Tibbets and the crew of the Enola Gay. Los Alamos National Laboratory',
+        },
+        {
+            url: 'https://cms.outrider.org/sites/default/files/styles/fixed_height_portrait/public/2018-09/Tibbets%20and%20Enola%20Gay.JPG?itok=pT_ecsdf',
+            alt: 'Colonel Paul Tibbets, pilot of the Enola Gay, poses in front of the plane. U.S. Air Force',
+        },
+        {
+            url: 'https://cms.outrider.org/sites/default/files/styles/fixed_height_portrait/public/2018-09/Little_Boy_2.jpg?itok=XG8emZiN',
+            alt: 'Little Boy awaits loading onto the Enola Gay. National Archives photo no. 77-BT-115'
+        },
+        {
+            url: 'https://cms.outrider.org/sites/default/files/2018-09/Bomber%20clips2_0.mp4',
+            alt: 'Bomber clips2_0.mp4'
         }
     ];
 
@@ -75,18 +95,18 @@
 
     <!-- Lightbox -->
     <div class="fixed top-0 left-0 w-full h-screen overflow-hidden bg-neutral-900/50 flex flex-col z-[1000] backdrop-blur-md transition-all {isOpen ? 'opacity-100': 'opacity-0 pointer-events-none'}">
-        <div class="flex justify-between bg-neutral-950/50 p-2 items-center">
+        <div class="flex items-center justify-between p-2 bg-neutral-950/50">
             <div>[{$currenPicture + 1}/{pictureList.length}] {pictureList[$currenPicture].alt || pictureList[$currenPicture].url}</div>
             <div>
                 <button class="btn-dark" on:click={() => { isOpen = false }}>Close</button>
             </div>
         </div>
 
-        <div class="grow overflow-hidden flex">
-            <div class="min-h-full w-72 bg-neutral-950/50 overflow-auto shrink-0">
+        <div class="flex overflow-hidden grow">
+            <div class="min-h-full overflow-auto w-72 bg-neutral-950/50 shrink-0">
                 <div class="p-2">Images</div>
 
-                <div class="flex justify-between p-2 gap-2 sticky top-0">
+                <div class="sticky top-0 flex justify-between gap-2 p-2">
                     <button class="btn-dark" on:pointerdown={() => { $currenPicture -= 1 }}>Previous</button>
                     <button class="btn-dark" on:pointerdown={() => { $currenPicture += 1 }}>Next</button>
                 </div>

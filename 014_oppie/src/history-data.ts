@@ -12,7 +12,7 @@ export const data = new DataSet([
     { id: 2, selectable: true, content: "Oppenheimer marries", start: "1940-11-01", className: 'oppenheimer'},
     { id: 3, selectable: true, content: "Oppenheimer becomes director of Los Alamos Laboratory", start: "1943-09-01", className: 'oppenheimer'},
     { id: 4, selectable: true, content: "Oppenheimer becomes chairman of the General Advisory Committee of the Atomic Energy Commission", start: "1947-06-01", className: 'oppenheimer'},
-    { id: 5, selectable: true, content: "Oppenheimer is stripped of his security clearance", start: "1954-12-01", className: 'oppenheimer'},
+    { id: 5, selectable: true, content: "Oppenheimer is stripped of his security clearance", start: "1954-05-27", className: 'oppenheimer'},
     { id: 6, selectable: true, content: "Oppenheimer dies", start: "1967-02-18", className: 'oppenheimer'},
 
     // Historic Epochs like the "Cold War" and "World War II"  as background areas
@@ -103,6 +103,48 @@ export const data = new DataSet([
     
     // USA unrevokes Oppenheimers security clearance
     { id: 40, selectable: true, content: createDetailsHTML('USA unrevokes Oppenheimers security clearance', 'https://atomicarchive.com/resources/documents/oppenheimer/doe-2022.html'), start: '2022-12-16', className: 'consequences document' },
+
+    // Oppenheimer security clearance hearing
+    { id: 41, selectable: true, content: 'Oppenheimer security clearance hearing', start: '1954-04-12', end: '1954-05-06', className: 'oppenheimer document' },
+
+    // Lewis Strauss is denied the cabinet post
+    { id: 42, selectable: true, content: 'Lewis Strauss is denied the cabinet post as minister of commerce', start: '1959-06-19', className: 'consequences' },
+
+    // Japan bombs Pearl Harbor
+    { id: 43, selectable: true, content: 'Japan bombs Pearl Harbor', start: '1941-12-07', className: 'history' },
+
+    // USA enters WW2
+    { id: 44, selectable: true, content: 'USA enters WW2', start: '1941-12-08', className: 'history' },
+
+    // Manhattan Project scientists petition President Truman not to use the bomb
+    { id: 45, selectable: true, content: 'Manhattan Project scientists petition President Truman not to use the bomb', start: '1945-07-17', className: 'history' },
+
+    // The Soviets declare war on Japan and invade Japanese-occupied territory in China.
+    { id: 46, selectable: true, content: 'The Soviets declare war on Japan and invade Japanese-occupied territory in China.', start: '1945-08-09', className: 'history' },
+
+    // The Castle Bravo Test
+    { id: 47, selectable: true, content: 'The Castle Bravo Test', start: '1954-03-01', className: 'history' },
+
+    // France’s First Nuclear Test
+    { id: 48, selectable: true, content: 'France’s First Nuclear Test', start: '1960-02-13', className: 'history' },
+
+    // Britain’s First Nuclear Test
+    { id: 49, selectable: true, content: 'Britain’s First Nuclear Test', start: '1952-10-03', className: 'history' },
+
+    // The U.S.S.R. detonates ‘Tsar Bomba’
+    { id: 50, selectable: true, content: 'The U.S.S.R. detonates ‘Tsar Bomba’', start: '1961-10-30', className: 'history' },
+
+    // North Korea’s First Nuclear Test
+    { id: 51, selectable: true, content: 'North Korea’s First Nuclear Test', start: '2006-10-09', className: 'history' },
+
+    // Hawaiians receive a false warning of an incoming missile
+    { id: 52, selectable: true, content: 'Hawaiians receive a false warning of an incoming missile', start: '2018-01-13', className: 'consequences' },
+
+    // Nato is founded
+    { id: 53, selectable: true, content: 'Nato is founded', start: '1949-04-04', className: 'history' },
+
+    // Sweden and Finland apply for NATO membership
+    { id: 54, selectable: true, content: 'Sweden and Finland apply for NATO membership', start: '2022-05-18', className: 'consequences' },
 ]);
 
 function createDetailsHTML(title: string, content: string) {

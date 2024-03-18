@@ -119,14 +119,14 @@
     }
 </script>
 
-<div class="bg-neutral-900 pt-20">
-    <div class="mb-6 container">
+<div class="pt-20 bg-neutral-900">
+    <div class="container mb-6">
         <h2>Timeline</h2>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore autem nihil, quam vitae libero inventore adipisci harum error qui animi at? Sit voluptatibus obcaecati facilis asperiores perferendis minima laudantium sapiente?</p>
     </div>
 
-    <div class="h-screen flex flex-col">
-      <div class="px-6 py-3 flex gap-3 items-center">
+    <div class="flex flex-col h-screen">
+      <div class="flex items-center gap-3 px-6 py-3">
         <button class="btn-dark" on:pointerdown={() => { timeline.fit({ animation: true }) }}>Fit all events</button>
     
         <button class="btn-dark transition-opacity {currentSelection.length == 0 ? 'opacity-50': ''}" disabled={currentSelection.length == 0} on:pointerdown={() => {
@@ -151,7 +151,12 @@
             {#if currentSelection.length == 2}
                 { getTimeDifferenceBeetwenEvents(currentSelection[0], currentSelection[1]) } Difference
             {:else if currentSelection.length == 1}
-                { moment(data.get(currentSelection[0]).start).format("D.M.YYYY hh:mm:ss") }
+                { moment(data.get(currentSelection[0]).start).format("D.M.YYYY") }
+
+                <!-- Render end if there is one -->
+                {#if data.get(currentSelection[0]).end}
+                    - { moment(data.get(currentSelection[0]).end).format("D.M.YYYY") }
+                {/if}
             {/if}
         </div>
       </div>

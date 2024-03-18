@@ -25,6 +25,7 @@ export const people: Person[] = [
         roles: [R_SCIENTIST, R_LEADER],
         real_pictures: [
             { url: "https://upload.wikimedia.org/wikipedia/commons/0/03/JROppenheimer-LosAlamos.jpg", alt: "J. Robert Oppenheimer at Los Alamos" },
+            { url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/HD.3C.022_%2810579507263%29.jpg/1280px-HD.3C.022_%2810579507263%29.jpg', alt: 'Katherine Oppenheimer (6. von links) 1963 bei der Verleihung des Fermi-Preises an ihren Mann' }
         ],
         actor_pictures: [
             
@@ -48,9 +49,9 @@ export const people: Person[] = [
         last_name: "Oppenheimer",
         birth_date: "1910-11-22",
         death_date: "1972-07-02",
-        roles: [R_AFFAIRS],
+        roles: [],
         real_pictures: [
-            { url: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Kitty_Oppenheimer.jpg/220px-Kitty_Oppenheimer.jpg", alt: "Katherine Oppenheimer" }
+            { url: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Katherine_%28Kitty%29_Oppenheimer_ID_badge_photo.jpg/330px-Katherine_%28Kitty%29_Oppenheimer_ID_badge_photo.jpg", alt: "Foto für Katherine Oppenheimers Mitarbeiterausweis im Los-Alamos-Labor, ca. 1944" }
         ],
         actor_pictures: []
     },
@@ -98,10 +99,10 @@ export const people: Person[] = [
         birth_date: "1918-05-11",
         death_date: "1988-02-15",
         real_pictures: [
-            { url: "https://upload.wikimedia.org/wikipedia/commons/9/91/Richard_Feynman_Nobel.jpg",
-                alt: "Richard Feynman (1965)" },
-            { url: "https://upload.wikimedia.org/wikipedia/commons/4/42/Feynman_at_Los_Alamos.jpg",
-                alt: "Richard Feynman at Los Alamos" }
+            { url: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/RichardFeynman-PaineMansionWoods1984_copyrightTamikoThiel_bw.jpg/330px-RichardFeynman-PaineMansionWoods1984_copyrightTamikoThiel_bw.jpg",
+                alt: "Richard Feynman, 1984" },
+            { url: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Feynman-richard_p.jpg/330px-Feynman-richard_p.jpg",
+                alt: "Richard Feynman (Los-Alamos-Dienstausweis während des Zweiten Weltkriegs)" }
         ],
         actor_pictures: []
     },
@@ -112,7 +113,8 @@ export const people: Person[] = [
         birth_date: "1906-07-02",
         death_date: "2005-03-06",
         real_pictures: [
-            { url: "https://upload.wikimedia.org/wikipedia/commons/9/9b/Hans_Bethe.jpg", alt: "Hans Bethe" }
+            { url: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Hans_Bethe.jpg/330px-Hans_Bethe.jpg", alt: "Hans Bethe" },
+            { url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Hans_Bethe_ID_badge.png/330px-Hans_Bethe_ID_badge.png', alt: 'Hans Bethe Foto des Los-Alamos-Dienstausweises während des Zweiten Weltkriegs' }
         ],
         actor_pictures: []
     },
@@ -123,7 +125,7 @@ export const people: Person[] = [
         birth_date: "1908-01-15",
         death_date: "2003-09-09",
         real_pictures: [
-            { url: "https://upload.wikimedia.org/wikipedia/commons/4/4e/Edward_Teller.jpg", alt: "Edward Teller" }
+            { url: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/EdwardTeller1958.jpg/800px-EdwardTeller1958.jpg", alt: "Edward Teller (1958)" }
         ],
         actor_pictures: []
     },
@@ -134,7 +136,7 @@ export const people: Person[] = [
         birth_date: "1898-02-11",
         death_date: "1964-05-30",
         real_pictures: [
-            { url: "https://upload.wikimedia.org/wikipedia/commons/1/1e/Leo_Szilard.jpg", alt: "Leo Szilard" }
+            { url: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Leo_Szilard.jpg/800px-Leo_Szilard.jpg", alt: "Leó Szilárd (1960) Unterschrift von Leo Szilard, unter der Szilard Petition 1945" }
         ],
         actor_pictures: []
     },
@@ -145,7 +147,7 @@ export const people: Person[] = [
         birth_date: "1903-12-28",
         death_date: "1957-02-08",
         real_pictures: [
-            { url: "https://upload.wikimedia.org/wikipedia/commons/5/5e/JohnvonNeumann-LosAlamos.jpg", alt: "John von Neumann" }
+            { url: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/JohnvonNeumann-LosAlamos.gif/330px-JohnvonNeumann-LosAlamos.gif", alt: "John von Neumann (um 1940)" }
         ],
         actor_pictures: []
     },
@@ -156,7 +158,7 @@ export const people: Person[] = [
         birth_date: "1909-04-13",
         death_date: "1984-05-13",
         real_pictures: [
-            { url: "https://upload.wikimedia.org/wikipedia/commons/6/6f/Stanislaw_Ulam.jpg", alt: "Stanislaw Ulam" }
+            { url: "https://upload.wikimedia.org/wikipedia/commons/b/be/Stanislaw_Ulam_ID_badge.png", alt: "Stanisław Ulam (Foto auf seinem Los-Alamos-Dienstausweis während des Zweiten Weltkriegs)" }
         ],
         actor_pictures: []
     },
@@ -167,7 +169,7 @@ export const people: Person[] = [
         birth_date: "1911-12-29",
         death_date: "1988-01-28",
         real_pictures: [
-            { url: "https://upload.wikimedia.org/wikipedia/commons/0/0f/Klaus_Fuchs.jpg", alt: "Klaus Fuchs" }
+            { url: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/U.S._vs._Julius_%26_Ethel_Rosenberg_and_Martin_Sobell%2C_Government_Exhibit_12%2C_Photograph_of_Klaus_Fuchs_-_NARA_-_278757.jpg/800px-U.S._vs._Julius_%26_Ethel_Rosenberg_and_Martin_Sobell%2C_Government_Exhibit_12%2C_Photograph_of_Klaus_Fuchs_-_NARA_-_278757.jpg", alt: "Klaus Fuchs, 1951" }
         ],
         actor_pictures: []
     },
@@ -178,7 +180,7 @@ export const people: Person[] = [
         birth_date: "1896-12-03",
         death_date: "1969-12-29",
         real_pictures: [
-            { url: "https://upload.wikimedia.org/wikipedia/commons/4/4f/Ruth_Tolman.jpg", alt: "Ruth Tolman" }
+            /* { url: "https://upload.wikimedia.org/wikipedia/commons/4/4f/Ruth_Tolman.jpg", alt: "Ruth Tolman" } */
         ],
         actor_pictures: []
     },
@@ -189,7 +191,7 @@ export const people: Person[] = [
         birth_date: "1896-08-17",
         death_date: "1970-07-13",
         real_pictures: [
-            { url: "https://upload.wikimedia.org/wikipedia/commons/6/6f/Leslie_Groves.jpg", alt: "Leslie Groves" }
+            { url: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/LTG_Leslie_R._Groves_%28cropped%29.jpg/330px-LTG_Leslie_R._Groves_%28cropped%29.jpg", alt: "Groves in 1948" }
         ],
         actor_pictures: []
     },
@@ -200,7 +202,8 @@ export const people: Person[] = [
         birth_date: "1884-05-08",
         death_date: "1972-12-26",
         real_pictures: [
-            { url: "https://upload.wikimedia.org/wikipedia/commons/4/47/Harry-truman.jpg", alt: "Harry S. Truman" }
+            { url: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/TRUMAN_58-766-06_%28cropped%29.jpg/330px-TRUMAN_58-766-06_%28cropped%29.jpg", alt: "Harry S. Truman (circa 1947)" },
+            { url: 'https://upload.wikimedia.org/wikipedia/commons/6/6d/Roosevelt_Truman_Wallace.jpg', alt: 'Im November 1944 nach der gewonnenen Präsidentschaftswahl: Präsident Franklin D. Roosevelt (links hinten), Harry S. Truman als gewählter Vizepräsident (mittig) und der scheidende Vizepräsident Henry A. Wallace (rechts)' }
         ],
         actor_pictures: []
     },
@@ -223,7 +226,7 @@ export const people: Person[] = [
         birth_date: "1867-09-21",
         death_date: "1950-10-20",
         real_pictures: [
-            { url: "https://upload.wikimedia.org/wikipedia/commons/7/7f/Henry_L._Stimson%2C_official_portrait.jpg", alt: "Henry L. Stimson" }
+            { url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Henry_Stimson%2C_Harris_%26_Ewing_bw_photo_portrait%2C_1929.jpg/330px-Henry_Stimson%2C_Harris_%26_Ewing_bw_photo_portrait%2C_1929.jpg", alt: "Henry L. Stimson als Außenminister (1929)" }
         ],
         actor_pictures: []
     },
@@ -234,7 +237,7 @@ export const people: Person[] = [
         birth_date: "1900-06-20",
         death_date: "1995-05-11",
         real_pictures: [
-            { url: "https://upload.wikimedia.org/wikipedia/commons/3/3e/Boris_Pash.jpg", alt: "Boris Pash" }
+            { url: "https://upload.wikimedia.org/wikipedia/commons/0/04/Boris_Pash.jpg", alt: "Boris Pash (1945)" }
         ],
         actor_pictures: []
     },
@@ -313,7 +316,7 @@ export const people: Person[] = [
         death_date: "1974-06-28",
         roles: [R_SCIENTIST],
         real_pictures: [
-            { url: "https://upload.wikimedia.org/wikipedia/commons/0/0d/Vannevar_Bush_portrait.jpg", alt: "Vannevar Bush" }
+            { url: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Vannevar_Bush_portrait.jpg/330px-Vannevar_Bush_portrait.jpg", alt: "Vannevar Bush" }
         ],
         actor_pictures: []
     },
