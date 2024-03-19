@@ -96,7 +96,7 @@
     <!-- Lightbox -->
     <div class="fixed top-0 left-0 w-full h-screen overflow-hidden bg-neutral-900/50 flex flex-col z-[1000] backdrop-blur-md transition-all {isOpen ? 'opacity-100': 'opacity-0 pointer-events-none'}">
         <div class="flex items-center justify-between p-2 bg-neutral-950/50">
-            <div>[{$currenPicture + 1}/{pictureList.length}] {pictureList[$currenPicture].alt || pictureList[$currenPicture].url}</div>
+            <div class="overflow-hidden whitespace-nowrap text-ellipsis">[{$currenPicture + 1}/{pictureList.length}] {pictureList[$currenPicture].alt || pictureList[$currenPicture].url}</div>
             <div>
                 <button class="btn-dark" on:click={() => { isOpen = false }}>Close</button>
             </div>
@@ -112,10 +112,21 @@
                 </div>
 
                 {#each pictureList as picture, i}
-                    <img src={picture.url} alt={picture.alt} class="w-full object-cover h-24 hover:h-48 transition-all border-blue-500 {$currenPicture == i ? 'border-l-8': ''}" on:click={() => { $currenPicture = i }} />
+                    <!-- Check if the url is a vidoe -->
+                    {#if picture.url.includes('.mp4')}
+                        <video src={picture.url} autoplay loop class="w-full object-cover h-24 hover:h-48 transition-all border-blue-500 {$currenPicture == i ? 'border-l-8': ''}" on:click={() => { $currenPicture = i }}></video>
+                    {:else}
+                        <img src={picture.url} alt={picture.alt} class="w-full object-cover h-24 hover:h-48 transition-all border-blue-500 {$currenPicture == i ? 'border-l-8': ''}" on:click={() => { $currenPicture = i }} />
+                    {/if}
                 {/each}
             </div>
-            <img src="{pictureList[$currenPicture].url}" alt="" class="object-contain w-full h-full grow" bind:this={picture_el}>
+
+            <!-- Check if the url is a video -->
+            {#if pictureList[$currenPicture].url.includes('.mp4')}
+                <video src={pictureList[$currenPicture].url} autoplay loop class="object-contain w-full h-full grow"></video>
+            {:else}
+                <img src="{pictureList[$currenPicture].url}" alt="" class="object-contain w-full h-full grow" bind:this={picture_el}>
+            {/if}
         </div>
 
     </div>
