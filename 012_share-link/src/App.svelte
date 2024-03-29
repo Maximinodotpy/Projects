@@ -6,11 +6,9 @@
   import { createPersistentStore } from './stores';
   import { onMount } from 'svelte';
   import CopyButton from './Copy-Button.svelte';
-
-  let title = createPersistentStore('title', 'My message');
-  let url = createPersistentStore('url', 'https://example.com');
-  let encode_urls = createPersistentStore('encode_urls', false);
-  let add_url_to_title_text = createPersistentStore('add_url_to_title_text', false);
+  import AppsView from './ViewTypes/Apps-View.svelte';
+  import { title, add_url_to_title_text, encode_urls, url } from './stores';
+  import { all_share_links } from './stores';
 
   let full_width = createPersistentStore('full_width', false);
 
@@ -33,24 +31,6 @@
       $current_tab = all_tabs_arr.indexOf(current_tab_node);
     });
   });
-
-  $: {
-    $share_links.forEach((SoMe) => {
-      SoMe.composed_url = SoMe.url;
-
-      if ($add_url_to_title_text && !SoMe.url.includes('{url}')) {
-        SoMe.composed_url = SoMe.url.replace('{title}', `${$title}: ${$url}`);
-      } else {
-        SoMe.composed_url = SoMe.url.replace('{title}', $title);
-      }
-
-      SoMe.composed_url = SoMe.composed_url.replace('{url}', $url);
-
-      if ($encode_urls) SoMe.composed_url = encodeURI(SoMe.composed_url);
-    });
-
-    $share_links = $share_links;
-  }
 </script>
 
 <div class="flex flex-col h-screen overflow-hidden bg-neutral-900 text-neutral-300">
@@ -98,7 +78,7 @@
         
           <TabPanel>
             <div class="h-full overflow-auto divide-y divide-neutral-800">
-              {#each $share_links as SoMe}
+              {#each $all_share_links as SoMe}
                 <div class="flex w-full px-4 pt-2">
                   <a href={SoMe.composed_url} class="flex items-center grow" target="_blank">
                     <div class="flex items-center gap-4 min-w-60">
@@ -117,7 +97,7 @@
         
           <TabPanel>
             <pre class="h-full p-4 overflow-auto font-mono text-xs whitespace-nowrap">
-              {#each $share_links as SoMe}
+              {#each $all_share_links as SoMe}
                 <div>{SoMe.composed_url}</div>
               {/each}
             </pre>
@@ -125,39 +105,7 @@
           
           <TabPanel> <HtmlCode/> </TabPanel>
 
-          <TabPanel>
-            <div class="h-full p-4">
-              <!-- Render apps as table -->
-
-              <table class="w-full text-sm border border-collapse border-neutral-800">
-                <thead>
-                  <tr>
-                    <th class="p-2 text-left"></th>
-                    <th class="p-2 text-left">App</th>
-                    <th class="p-2 text-left">URL</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {#each $share_links as SoMe}
-                    <tr>
-                      <td class="relative">
-                        <!-- A checkbox wether this should be added to the rooster -->
-                        <!-- <input type="checkbox" class="block w-full h-full" id="enabled" /> -->
-                        <label class="absolute top-0 left-0 flex justify-center w-full h-full" for="enabled-{SoMe.name}">
-                          <input type="checkbox" id="enabled-{SoMe.name}" bind:checked={SoMe.enabled} />
-                        </label>
-                      </td>
-                      <td class="flex items-center gap-2 p-2 border border-neutral-700">
-                        <div class="w-4 h-4 border border-neutral-700" style="background-color: {SoMe.color};"></div>
-                        {SoMe.name}
-                      </td>
-                      <td class="p-2 border border-neutral-700">{SoMe.url}</td>
-                    </tr>
-                  {/each}
-                </tbody>
-              </table>
-            </div>
-          </TabPanel>
+          <TabPanel> <AppsView/> </TabPanel>
         </Tabs>
       </div>
 

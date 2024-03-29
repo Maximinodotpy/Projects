@@ -12,6 +12,7 @@
     let pictureList: {
         url: string;
         alt: string;
+        source?: string;
     }[] = [
         {
             url: 'https://upload.wikimedia.org/wikipedia/commons/0/07/Trinity_100ton_Test.gif',
@@ -40,7 +41,62 @@
         {
             url: 'https://cms.outrider.org/sites/default/files/2018-09/Bomber%20clips2_0.mp4',
             alt: 'Bomber clips2_0.mp4'
-        }
+        },
+        {
+            url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Atomic_cloud_over_Hiroshima_-_NARA_542192_-_Edit.jpg/800px-Atomic_cloud_over_Hiroshima_-_NARA_542192_-_Edit.jpg',
+            alt: 'Atompilz von „Little Boy“ über Hiroshima (6. August 1945)',
+        },
+        {
+            url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Nagasakibomb.jpg/800px-Nagasakibomb.jpg',
+            alt: 'Atompilz von „Fat Man“ über Nagasaki (9. August 1945)',
+        },
+        {
+            url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Trinity_Test_-_Oppenheimer_and_Groves_at_Ground_Zero_002.jpg/800px-Trinity_Test_-_Oppenheimer_and_Groves_at_Ground_Zero_002.jpg',
+            alt: 'Robert Oppenheimer und Leslie Groves begutachten Überreste des Bombenturms des Trinity-Tests, der ersten Zündung einer Atombombe.',
+        },
+        {
+            url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Bundesarchiv_Bild_183-29645-0001%2C_Potsdamer_Konferenz%2C_Stalin%2C_Truman%2C_Churchill.jpg/1280px-Bundesarchiv_Bild_183-29645-0001%2C_Potsdamer_Konferenz%2C_Stalin%2C_Truman%2C_Churchill.jpg',
+            alt: 'Josef Stalin (zweiter von links), Harry S. Truman (Mitte) und Winston Churchill während der Potsdamer Konferenz, Juli 1945',
+        },
+        {
+            url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Letter_received_from_General_Thomas_Handy_to_General_Carl_Spaatz_authorizing_the_dropping_of_the_first_atomic_bomb_-_NARA_-_542193.tif/lossy-page1-800px-Letter_received_from_General_Thomas_Handy_to_General_Carl_Spaatz_authorizing_the_dropping_of_the_first_atomic_bomb_-_NARA_-_542193.tif.jpg',
+            alt: 'Der Einsatzbefehl vom 25. Juli 1945',
+        },
+        {
+            url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/77-BT-116_%2820709498048%29.jpg/1280px-77-BT-116_%2820709498048%29.jpg',
+            alt: '„Little Boy“ wird in den Bombenschacht der Enola Gay gehoben',
+        },
+        {
+            url: 'https://upload.wikimedia.org/wikipedia/commons/6/66/Enola_Gay_%28plane%29.jpg',
+            alt: 'The Enola Gay',
+        },
+        {
+            url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/AtomicEffects-Hiroshima.jpg/1024px-AtomicEffects-Hiroshima.jpg',
+            alt: 'Blick auf die zerstörte Stadt vom Krankenhaus aus nordwestlich',
+        },
+        {
+            url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Fat_Man_Assembled_Tinian_1945.jpg/1280px-Fat_Man_Assembled_Tinian_1945.jpg',
+            alt: 'Die Fat-Man-Bombe wird für den Angriff vorbereitet',
+        },
+        {
+            url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Atomic_cloud_over_Nagasaki_from_Koyagi-jima.jpeg/1280px-Atomic_cloud_over_Nagasaki_from_Koyagi-jima.jpeg',
+            alt: 'Die aufsteigende Wolke kurz nach der Explosion, fotografiert von Matsuda Hiromichi in einem Außenbezirk der Stadt (9. August 1945)',
+        },
+        {
+            url: 'https://www.atomicarchive.com/media/videos/media/hiroshima.mp4',
+            alt: 'The Atomic Bombing of Hiroshima',
+            source: 'https://www.atomicarchive.com/media/videos/hiroshima.html'
+        },
+        {
+            url: 'https://archive.org/download/realfootageatomicbombhiroshimaandnagasaki_202003/Real%20Footage%20-%20Atomic%20Bomb-%20Hiroshima%20and%20Nagasaki.mp4',
+            alt: 'Real Footage - Atomic Bomb- Hiroshima and Nagasaki',
+            source: 'https://archive.org/details/realfootageatomicbombhiroshimaandnagasaki_202003'
+        },
+        {
+            url: 'https://upload.wikimedia.org/wikipedia/commons/transcoded/6/6d/Hiroshima_Aftermath_1946_USAF_Film.ogv/Hiroshima_Aftermath_1946_USAF_Film.ogv.360p.vp9.webm',
+            alt: 'Filmaufnahmen der US-Armee von Hiroshima, 1946.',
+            source: 'https://de.wikipedia.org/wiki/Atombombenabw%C3%BCrfe_auf_Hiroshima_und_Nagasaki'
+        },
     ];
 
     // Add all the images from the poeple data
@@ -123,7 +179,7 @@
 
             <!-- Check if the url is a video -->
             {#if pictureList[$currenPicture].url.includes('.mp4')}
-                <video src={pictureList[$currenPicture].url} autoplay loop class="object-contain w-full h-full grow"></video>
+                <video src={pictureList[$currenPicture].url} autoplay controls loop class="object-contain w-full h-full grow"></video>
             {:else}
                 <img src="{pictureList[$currenPicture].url}" alt="" class="object-contain w-full h-full grow" bind:this={picture_el}>
             {/if}

@@ -1,6 +1,6 @@
 <script lang="ts">
     import hljs from 'highlight.js';
-    import { share_links } from '../stores';
+    import { all_share_links } from '../stores';
     import CopyButton from '../Copy-Button.svelte';
     import { createPersistentStore } from '../stores';
     import { onMount } from 'svelte';
@@ -14,7 +14,7 @@
 
     $: {
         generated_html = '';
-        $share_links.forEach((SoMe) => {
+        $all_share_links.forEach((SoMe) => {
             let content = $add_image && SoMe.logo ? `
     <img src="${SoMe.logo}" width="${$image_size}" alt="${SoMe.name}" />
 ` : SoMe.name;
