@@ -13,7 +13,7 @@ interface IShareLink {
     enabled?: boolean,
     name: string,
     url: string,
-    composed_url: string,
+    composed_url?: string,
     color?: string,
     logo?: string,
 }

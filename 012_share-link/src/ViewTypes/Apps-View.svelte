@@ -16,7 +16,7 @@
         $custom_share_links = [...$custom_share_links, { ...NEW_APP }];
     }
 
-    function remove_custom_share_link(index) {
+    function remove_custom_share_link(index: number) {
         $custom_share_links = $custom_share_links.filter((_, i) => i !== index);
     }
 
@@ -28,7 +28,7 @@
     }
 
     // A function that will ask the user to either give a url to a image or to upload one
-    function ask_for_image_url(index) {
+    function ask_for_image_url(index: number) {
         const url = prompt('Please enter the URL of the image');
 
         if (url) {
