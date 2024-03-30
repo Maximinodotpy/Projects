@@ -2,6 +2,8 @@
 
     import { share_links } from '../stores';
     import { custom_share_links } from '../stores';
+    import { flip } from 'svelte/animate';
+    import { quintOut } from 'svelte/easing';
 
     const NEW_APP = {
         name: 'Custom App',
@@ -38,10 +40,10 @@
 
 </script>
 
-<div class="h-full p-4">
+<div class="h-full p-4 overflow-auto" >
     <!-- Render apps as table -->
 
-    <table class="w-full text-sm ">
+    <table class="w-full">
         <thead>
         <tr>
             <th class="p-2 text-center">
@@ -84,8 +86,8 @@
         </tr>
 
         <!-- Loop over all the custom share links -->
-        {#each $custom_share_links as SoMe, index}
-            <tr>
+        {#each $custom_share_links as SoMe, index (SoMe)}
+            <tr animate:flip={{ delay: 250, duration: 250, easing: quintOut }}>
                 <td class="relative">
                     <label class="absolute top-0 left-0 flex justify-center w-full h-full" for="enabled-{SoMe.name}">
                         <input type="checkbox" id="enabled-{SoMe.name}" bind:checked={SoMe.enabled} />

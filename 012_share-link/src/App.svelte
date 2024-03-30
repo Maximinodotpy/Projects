@@ -33,8 +33,8 @@
   });
 </script>
 
-<div class="flex flex-col h-screen overflow-hidden bg-neutral-900 text-neutral-300">
-    <div class="flex gap-4 px-4 py-2 text-xs">
+<div class="flex flex-col h-screen overflow-hidden bg-neutral-900 text-neutral-300 text-xs md:text-base">
+    <div class="gap-4 px-4 py-2 text-xs hidden lg:flex ">
       <div>
         App Settings
       </div>
@@ -45,7 +45,7 @@
       </label>
     </div>
     
-    <div class="flex flex-col mx-auto overflow-hidden w-full grow {$full_width ? '': 'max-w-5xl border border-neutral-600'}">
+    <div class="flex flex-col mx-auto overflow-hidden w-full grow {$full_width ? '': 'max-w-5xl border border-neutral-600 border-b-0'}">
 
       <div class="grid grid-cols-2 px-4 pb-2 border-b gap-x-2 gap-y-2 border-b-neutral-600">
 
@@ -90,7 +90,7 @@
                   <CopyButton text={SoMe.composed_url} />
                 </div>
 
-                <div class="px-4 pb-2 overflow-hidden text-xs whitespace-nowrap text-ellipsis opacity-30 max-w-[100%]">{ SoMe.composed_url }</div>
+                <div class="px-4 pb-2 overflow-hidden text-xs whitespace-nowrap text-ellipsis opacity-30 max-w-[100%] select-all">{ SoMe.composed_url }</div>
               {/each}
             </div>
           </TabPanel>
