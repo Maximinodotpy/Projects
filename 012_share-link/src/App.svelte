@@ -1,6 +1,5 @@
 <script lang="ts">
   import { Tabs, Tab, TabList, TabPanel } from 'svelte-tabs';
-  import { share_links } from './stores';
   import HtmlCode from './ViewTypes/HTML-Code.svelte';
   import TextInput from './Text-Input.svelte';
   import { createPersistentStore } from './stores';

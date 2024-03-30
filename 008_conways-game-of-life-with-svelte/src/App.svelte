@@ -74,9 +74,23 @@
             smoothScroll: false,
         });
 
+        /* let i = 0;
+        const REDRAW_INTERVAL = 20;
+
         panInstance.on("transform", (e) => {
+            
+            if (i % REDRAW_INTERVAL == 0) {
+                panInstance = panInstance;
+                console.log("transform", e);
+            }
+            
+            i++;
+        }); */
+
+        // Also redraw every 500ms
+        setInterval(() => {
             panInstance = panInstance;
-        });
+        }, 500);
     });
 
     function startGame() {
@@ -162,7 +176,7 @@
         <div class="px-3 py-2">Conway's Game of Life</div>
         <div class="px-3 py-2">
             Made By 
-            <a href="https://maximmaeder.com/" target="_blank">Maxim Mäder</a>
+            <a href="https://maximmaeder.com/" target="_blank" class="underline">Maxim Mäder</a>
         </div>
     </div>
     

@@ -87,7 +87,7 @@
 
         <!-- Loop over all the custom share links -->
         {#each $custom_share_links as SoMe, index (SoMe)}
-            <tr animate:flip={{ delay: 250, duration: 250, easing: quintOut }}>
+            <tr animate:flip={{ duration: 250, easing: quintOut }}>
                 <td class="relative">
                     <label class="absolute top-0 left-0 flex justify-center w-full h-full" for="enabled-{SoMe.name}">
                         <input type="checkbox" id="enabled-{SoMe.name}" bind:checked={SoMe.enabled} />
