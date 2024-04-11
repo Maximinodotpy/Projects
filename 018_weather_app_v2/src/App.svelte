@@ -31,7 +31,7 @@
 </script>
 
 <div class="relative w-screen h-screen">
-  <img src="/wc/wc{curr_d?.current?.weatherCode}.jpg" alt="" class="absolute top-0 left-0 object-cover w-full h-full brightness-75">
+  <img src="wc/wc{curr_d?.current?.weatherCode}.jpg" alt="" class="absolute top-0 left-0 object-cover w-full h-full brightness-75">
 
   <div class="absolute flex w-full h-full text-white gradient">
     
