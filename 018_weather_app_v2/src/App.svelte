@@ -30,20 +30,20 @@
 
 </script>
 
-<div class="h-screen w-screen relative">
-  <img src="/wc/{curr_d?.current?.weatherCode}.jpg" alt="" class="absolute top-0 left-0 w-full h-full brightness-75 object-cover">
+<div class="relative w-screen h-screen">
+  <img src="/wc/wc{curr_d?.current?.weatherCode}.jpg" alt="" class="absolute top-0 left-0 object-cover w-full h-full brightness-75">
 
-  <div class="absolute flex h-full w-full gradient text-white">
+  <div class="absolute flex w-full h-full text-white gradient">
     
-    <div class="grow p-8 flex text-white items-center">
+    <div class="flex items-center p-8 text-white grow">
       <div>
-        <div class="text-6xl font-bold uppercase mb-6">
+        <div class="mb-6 text-6xl font-bold uppercase">
           { current_location.name }
           {#if curr_d.current}
             {curr_d.current.isDay ? '🌞' : '🌙'}
           {/if}
         </div>
-        <div class="text-3xl flex gap-4">
+        <div class="flex gap-4 text-3xl">
           { moment(curr_d?.current?.time).format('hh:mm') }
           <span class="text-neutral-400">-</span>
           { Math.round(curr_d?.current?.temperature) }°
@@ -53,7 +53,7 @@
       </div>
     </div>
 
-    <div class="w-1/3 backdrop-blur-sm p-4 shadow-xl border-l-2 border-l-neutral-900/20">
+    <div class="w-1/3 p-4 border-l-2 shadow-xl backdrop-blur-sm border-l-neutral-900/20">
       <GeoSearchComponent bind:chosen_location={current_location} />
 
       <div class="p-2 overflow-auto">
@@ -63,7 +63,7 @@
         <div class="grid gap-1">
           {#if curr_d?.hourly?.time}
             {#each curr_d?.hourly?.time.slice(0, 6) as hour, i}
-              <div class="px-1 bg-neutral-900/20 rounded-lg flex justify-between">
+              <div class="flex justify-between px-1 rounded-lg bg-neutral-900/20">
                 <div class="">{ moment(hour).format('hh:mm') }</div>
                 <div class="">{ Math.round(curr_d?.hourly?.temperature[i]) }°</div>
                 <!-- <div class="text-sm">{ getWeatherCodeName(hour) }</div> -->
