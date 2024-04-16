@@ -97,6 +97,21 @@
             alt: 'Filmaufnahmen der US-Armee von Hiroshima, 1946.',
             source: 'https://de.wikipedia.org/wiki/Atombombenabw%C3%BCrfe_auf_Hiroshima_und_Nagasaki'
         },
+        {
+            url: 'https://beyondnuclearinternational.org/wp-content/uploads/2018/06/demo.jpg',
+            alt: 'Trinity Downwinders continue to demand recognition and compensation. (Photo: Concerned Citizens for Nuclear Safety)',
+            source: 'https://beyondnuclearinternational.org/2018/07/16/dancing-in-the-dust-of-death/'
+        },
+        {
+            url: 'https://i.guim.co.uk/img/media/789ff1f5db9a131ef6064f3eaca90ea070dddcd6/0_0_2940_1969/master/2940.jpg?width=620&dpr=2&s=none',
+            alt: 'The base camp at the Trinity nuclear test site. Photograph: Corbis via Getty Images',
+            source: 'https://www.theguardian.com/us-news/2024/mar/10/new-mexico-oppenheimer-atomic-bomb-nuclear',
+        },
+        {
+            url: 'https://i.guim.co.uk/img/media/d66faf5530efe66a89cf42ed08c60f2aae0c62df/0_0_3760_2507/master/3760.jpg?width=620&dpr=2&s=none',
+            alt: 'The test tower. Photograph: Corbis via Getty Images',
+            source: 'https://www.theguardian.com/us-news/2024/mar/10/new-mexico-oppenheimer-atomic-bomb-nuclear',
+        }
     ];
 
     // Add all the images from the poeple data
