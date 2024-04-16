@@ -14,6 +14,9 @@
     'https://outrider.org/',
     'https://outrider.org/nuclear-weapons/timelines/nuclear-history-world-war-ii',
     'https://www.history.navy.mil/content/history/museums/nmusn/search.html?q=nuclear&ts=false',
+    'https://www.vice.com/en/article/gqkgp9/the-forgotten-victims-of-the-first-atomic-bomb',
+    'https://beyondnuclearinternational.org/2018/07/16/dancing-in-the-dust-of-death/',
+    'https://www.history.com/news/atomic-bomb-test-victims-new-mexico-downwinders',
   ]
 
 </script>
