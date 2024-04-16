@@ -52,12 +52,15 @@
 </script>
 
 <div class="flex flex-col relative">
+
+    <!-- svelte-ignore a11y-accesskey -->
     <input
         type="text"
-        class="p-2 border-b-2 border-neutral-200 w-full block text-xl bg-neutral-900/10 focus:outline-none placeholder:text-neutral-600"
+        class="p-2 border-b-2 border-neutral-200 w-full block text-xl bg-neutral-900/10 focus:outline-none placeholder:text-neutral-900"
         placeholder="Search"
         bind:value={current_search_location}
         bind:this={inputElement}
+        accesskey="s"
     />
 
     <div

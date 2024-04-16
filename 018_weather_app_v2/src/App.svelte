@@ -30,20 +30,20 @@
 
 </script>
 
-<div class="relative w-screen h-screen">
+<div class="relative w-screen h-screen overflow-hidden">
   <img src="wc/wc{curr_d?.current?.weatherCode}.jpg" alt="" class="absolute top-0 left-0 object-cover w-full h-full brightness-75">
 
-  <div class="absolute flex w-full h-full text-white gradient">
+  <div class="flex w-full h-full text-white gradient relative">
     
-    <div class="flex items-center p-8 text-white grow">
+    <div class="flex items-end p-8 text-white grow">
       <div>
-        <div class="mb-6 text-6xl font-bold uppercase">
+        <div class="mb-6 text-7xl font-bold uppercase">
           { current_location.name }
           {#if curr_d.current}
             {curr_d.current.isDay ? '🌞' : '🌙'}
           {/if}
         </div>
-        <div class="flex gap-4 text-3xl">
+        <div class="flex gap-4 text-4xl">
           { moment(curr_d?.current?.time).format('hh:mm') }
           <span class="text-neutral-400">-</span>
           { Math.round(curr_d?.current?.temperature) }°
@@ -53,13 +53,11 @@
       </div>
     </div>
 
-    <div class="w-1/3 p-4 border-l-2 shadow-xl backdrop-blur-sm border-l-neutral-900/20">
+    <!-- svelte-ignore a11y-no-noninteractive-tabindex -->
+    <div class="w-1/3 p-4 border-l-2 shadow-xl backdrop-blur-sm border-l-neutral-900/20 absolute hover:right-0 h-full -right-[30%] transition-all duration-300 focus-within:right-0" tabindex="0">
       <GeoSearchComponent bind:chosen_location={current_location} />
 
       <div class="p-2 overflow-auto">
-        <!-- <pre>{ JSON.stringify(curr_d, null, 4) }</pre> -->
-
-        <!-- Show the next 12 hours in weather -->
         <div class="grid gap-1">
           {#if curr_d?.hourly?.time}
             {#each curr_d?.hourly?.time.slice(0, 6) as hour, i}
