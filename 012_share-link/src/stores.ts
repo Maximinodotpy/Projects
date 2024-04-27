@@ -21,7 +21,7 @@ interface IShareLink {
 export const share_links = writable<IShareLink[]>([
     {
         name: 'Threema',
-        url: 'https://t.me/share/url?url={url}&text={title}',
+        url: 'https://threema.id/compose?text={title}',
         composed_url: '',
         color: '#05A63F',
         logo: 'https://upload.wikimedia.org/wikipedia/commons/4/42/Threema.png',
