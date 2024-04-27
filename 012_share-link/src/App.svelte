@@ -47,8 +47,7 @@
     <div class="flex flex-col mx-auto overflow-hidden w-full grow {$full_width ? '': 'max-w-5xl border border-neutral-600 border-b-0'}">
 
       <div class="grid grid-cols-2 px-4 pb-2 border-b gap-x-2 gap-y-2 border-b-neutral-600">
-
-        <TextInput id='title' bind:text={ $title } label="Title text" />
+        <TextInput id='title' bind:text={ $title } label="Title text" row_count={3} />
 
         <TextInput id='url' bind:text={ $url } label="URL" />
         
@@ -86,7 +85,11 @@
                     </div>
                   </a>
                   
-                  <CopyButton text={SoMe.composed_url} />
+                  <div class="flex items-center gap-2">
+                    <CopyButton text={SoMe.composed_url} />
+                    <!-- Copy button for the color -->
+                    <CopyButton text={SoMe.color} label="Copy Color" />
+                  </div>
                 </div>
 
                 <div class="px-4 pb-2 overflow-hidden text-xs whitespace-nowrap text-ellipsis opacity-30 max-w-[100%] select-all">{ SoMe.composed_url }</div>

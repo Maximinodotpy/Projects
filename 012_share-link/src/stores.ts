@@ -6,7 +6,7 @@ const VERSION = '1';
 
 export const title = createPersistentStore(`title_v${VERSION}`, 'My message');
 export const url = createPersistentStore(`url_v${VERSION}`, 'https://example.com');
-export const encode_urls = createPersistentStore(`encode_urls_v${VERSION}`, false);
+export const encode_urls = createPersistentStore(`encode_urls_v${VERSION}`, true);
 export const add_url_to_title_text = createPersistentStore(`add_url_to_title_text_v${VERSION}`, false);
 
 interface IShareLink {
@@ -25,6 +25,14 @@ export const share_links = writable<IShareLink[]>([
         composed_url: '',
         color: '#05A63F',
         logo: 'https://upload.wikimedia.org/wikipedia/commons/4/42/Threema.png',
+        enabled: true,
+    },
+    {
+        name: 'Telegram',
+        url: 'https://t.me/share/url?url={url}&text={title}',
+        composed_url: '',
+        color: '#0088cc',
+        logo: 'https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg',
         enabled: true,
     },
     {
