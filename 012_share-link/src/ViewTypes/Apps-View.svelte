@@ -81,7 +81,7 @@
         <tr>
             <td colspan="5" class="p-2">
                 <h2 class="mb-1 font-bold">Custom Apps</h2>
-                <p class="text-neutral-200/50">Here you can add custom share links, use the <code>{'{url}'}</code> and <code>{'{title}'}</code> placeholders</p>
+                <p class="text-neutral-200/50">Here you can add custom share links, use the <code>{'{url}'}</code> and <code>{'{title}'}</code> placeholders. You can even create fully custom Placeholders that will then show up for this App.</p>
             </td>
         </tr>
 

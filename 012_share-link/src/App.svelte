@@ -6,7 +6,7 @@
   import { onMount } from 'svelte';
   import CopyButton from './Copy-Button.svelte';
   import AppsView from './ViewTypes/Apps-View.svelte';
-  import { title, add_url_to_title_text, encode_urls, url } from './stores';
+  import { title, add_url_to_title_text, encode_urls, url, custom_share_link_values } from './stores';
   import { all_share_links } from './stores';
 
   let full_width = createPersistentStore('full_width', false);
@@ -21,15 +21,24 @@
       const all_tabs_nl = document.querySelectorAll('.svelte-tabs__tab');
       const current_tab_node = document.querySelector('.svelte-tabs__selected');
 
-      console.log('all_tabs', all_tabs_nl);
-      console.log('current_tab', current_tab_node);
-
       const all_tabs_arr = Array.from(all_tabs_nl);
 
       // @ts-ignore
       $current_tab = all_tabs_arr.indexOf(current_tab_node);
     });
   });
+
+  custom_share_link_values.subscribe((value) => {
+    console.log('custom_share_link_values t', value);
+  });
+
+  console.log('custom_share_link_values', $custom_share_link_values);
+
+  function hasLinkCustomValues(link: string) {
+    // Check if the link has custom placerholders in the link so not title or url using regex
+    // {title} or {url} dont count
+    return link.match(/\{(?!title|url)[^}]+\}/g);
+  }
 </script>
 
 <div class="flex flex-col h-screen overflow-hidden bg-neutral-900 text-neutral-300 text-xs md:text-base">
@@ -87,12 +96,28 @@
                   
                   <div class="flex items-center gap-2">
                     <CopyButton text={SoMe.composed_url} />
+
                     <!-- Copy button for the color -->
                     <CopyButton text={SoMe.color} label="Copy Color" />
                   </div>
                 </div>
 
                 <div class="px-4 pb-2 overflow-hidden text-xs whitespace-nowrap text-ellipsis opacity-30 max-w-[100%] select-all">{ SoMe.composed_url }</div>
+
+                {#if hasLinkCustomValues(SoMe.url)}
+                  <div class="px-4 py-2">
+                    <div class="font-semibold mb-2">App specific values</div>
+
+                    <div>
+                      {#each Object.keys($custom_share_link_values) as key}
+                        <div class="flex gap-2">
+                          <div>{ key }</div>
+                          <textarea placeholder="Custom value here, you can also use placeholders like {`{title}`} and {`{url}`}" rows="3" class="p-2 bg-neutral-800" bind:value={$custom_share_link_values[key]}></textarea>
+                        </div>
+                      {/each}
+                    </div>
+                  </div>
+                {/if}
               {/each}
             </div>
           </TabPanel>

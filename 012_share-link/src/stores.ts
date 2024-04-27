@@ -85,7 +85,7 @@ export const share_links = writable<IShareLink[]>([
     },
     {
         name: 'Email',
-        url: 'mailto:?subject={title}&body={url}',
+        url: 'mailto:?subject={title}&body={email_body}',
         composed_url: '',
         logo: 'https://cdn-icons-png.flaticon.com/512/3178/3178158.png',
         enabled: true,
@@ -94,6 +94,10 @@ export const share_links = writable<IShareLink[]>([
 
 export const custom_share_links = createPersistentStore<IShareLink[]>('custom_share_links', []);
 
+export const custom_share_link_values = createPersistentStore<{
+    [key: string]: string,
+}>('custom_share_link_values', {});
+
 // Create derived shore which combines the default and custom share links
 export const all_share_links = derived([
     share_links,
@@ -101,14 +105,16 @@ export const all_share_links = derived([
     title,
     url,
     encode_urls,
-    add_url_to_title_text
+    add_url_to_title_text,
+    custom_share_link_values,
 ], ([
     $share_links,
     $custom_share_links,
     $title,
     $url,
     $encode_urls,
-    $add_url_to_title_text
+    $add_url_to_title_text,
+    $custom_share_link_values,
 ]) => {
     let combined_share_links = [...$share_links, ...$custom_share_links];
 
@@ -116,13 +122,43 @@ export const all_share_links = derived([
     combined_share_links.forEach((SoMe) => {
         SoMe.composed_url = SoMe.url;
 
-        if ($add_url_to_title_text && !SoMe.url.includes('{url}')) {
-            SoMe.composed_url = SoMe.url.replace('{title}', `${$title}: ${$url}`);
-        } else {
-            SoMe.composed_url = SoMe.url.replace('{title}', $title);
+        function replaceBuiltInPlaceholders(str: string) {
+            if ($add_url_to_title_text && !str.includes('{url}')) {
+                str = str.replace('{title}', `${$title}: ${$url}`);
+            } else {
+                str = str.replace('{title}', $title);
+            }
+    
+            str = str.replace('{url}', $url);
+
+            return str;
         }
 
-        SoMe.composed_url = SoMe.composed_url.replace('{url}', $url);
+        SoMe.composed_url = replaceBuiltInPlaceholders(SoMe.composed_url);
+
+        // Check if there is some string like this {some text} in the composed url
+        // If so add whats in side this as a custom_share_link_values
+        let matches = SoMe.composed_url.match(/\{(.*?)\}/g);
+
+        if (matches) {
+            matches.forEach((match) => {
+                if (['title', 'url'].includes(match)) return;
+                
+                let name = match.replace('{', '').replace('}', '') as string;
+                
+                console.log('Custom value placeholder recognized:', name);
+
+                if (name in $custom_share_link_values) {
+                    SoMe.composed_url = SoMe.composed_url.replace(match, $custom_share_link_values[name]);
+                } else {
+                    $custom_share_link_values[name] = '';
+                    custom_share_link_values.set($custom_share_link_values);
+                }
+            });
+        }
+
+        SoMe.composed_url = replaceBuiltInPlaceholders(SoMe.composed_url);
+        
 
         if ($encode_urls) SoMe.composed_url = encodeURI(SoMe.composed_url);
     })
