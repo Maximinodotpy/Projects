@@ -91,7 +91,6 @@
   function getImageFromEvent(event) {
     // Loop over all pages and return the first one wie a valid image
 
-
     for (const iterator of event?.pages ?? []) {
       if (iterator.thumbnail) {
         // get this image in case its landscape oriented
@@ -140,28 +139,5 @@
     <button on:click={() => current_event_index++} class="{current_event_index == data.selected.length-1 ? 'invisible': ''} shrink-0 opacity-50 hover:opacity-100 transition-all">
       <img src="/caret-left-solid.svg" alt="" width="30" class="rotate-180">
     </button>
-    <!-- {#each data.selected as event}
-      <div class="flex items-center">
-        <img
-          class="w-20 h-20 object-cover shrink-0 border"
-          src={event.pages[0]?.thumbnail?.source}
-          alt=""
-        />
-
-        <div class="grid p-4 gap-3">
-          <div>
-            <bold class="font-bold">{ event.year }</bold>
-            {event.text}
-          </div>
-          <div class="flex gap-2 flex-wrap text-xs">
-            {#each event?.pages as page}
-              <a target="_blank" href="https://en.wikipedia.org/wiki/{page.title}" class="bg-neutral-200 px-2 py-1 rounded-md">{ page?.normalizedtitle }</a>
-            {/each}
-          </div>
-        </div>
-      </div>
-    {/each} -->
   </div>
 </div>
-
-<img src={image} alt="" />
