@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://MenuBar.gd" id="1_202ru"]
 [ext_resource type="PackedScene" uid="uid://yyinre165ruo" path="res://Windows/Layers.tscn" id="2_e1rt3"]
-[ext_resource type="PackedScene" uid="uid://cu1vnr3s7lo65" path="res://Windows/WindowTabContainers.tscn" id="3_83sol"]
+[ext_resource type="PackedScene" uid="uid://cu1vnr3s7lo65" path="res://Windows/TabContainer/WindowTabContainers.tscn" id="3_83sol"]
 [ext_resource type="PackedScene" uid="uid://ci6knjlc235s" path="res://Windows/Tools.tscn" id="3_lw7ne"]
 [ext_resource type="PackedScene" uid="uid://bxg052igwxdw7" path="res://Windows/History.tscn" id="4_mgnxg"]
 [ext_resource type="PackedScene" uid="uid://c1sik162s4gy6" path="res://Windows/ImageInfo.tscn" id="6_yutrm"]

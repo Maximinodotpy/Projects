@@ -8,7 +8,7 @@ func _ready():
 
 	print('Creating window tab container ... bombo')
 
-	var popup: PopupMenu = Helpers.createSubmenu('Pablo', {
+	var popup: PopupMenu = Helpers.createSubmenu('Windows', {
 		'Close window': {
 			'callback': func(_args = {}):
 				get_current_tab_control().queue_free(),

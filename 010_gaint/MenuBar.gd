@@ -115,10 +115,6 @@ var menuItems = {
 		}
 	},
 	'Image': {
-		#'Mirror vertically': {},
-		#'Mirror horizontally': {
-			#'add_seperator': true
-		#},
 		'Resize image': {
 			'callback': func(_args = {}): UserInterface.request_image_resize_popup()
 		},
@@ -149,9 +145,6 @@ var menuItems = {
 				},
 			}
 		}
-		#'Resize canvas': {
-			#'add_seperator': true
-		#},
 	},
 	'Selection': {
 		'Select All': {
@@ -204,6 +197,9 @@ var menuItems = {
 			'shortcut': Helpers.createShortcut(KEY_2, true),
 		},
 	},
+	'Windows': {
+		
+	},
 }
 
 func _ready():
@@ -226,5 +222,3 @@ func _ready():
 
 	for menu in menuItems:
 		add_child(Helpers.createSubmenu(menu, menuItems[menu]))
-
-

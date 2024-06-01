@@ -69,8 +69,6 @@ func set_primary_color(color: Color):
 	primary_color = color
 	primary_color_changed.emit(color)
 
-	#History.create_snapshot('Set primary color')
-
 func get_secondary_color() -> Color:
 	return secondary_color
 
