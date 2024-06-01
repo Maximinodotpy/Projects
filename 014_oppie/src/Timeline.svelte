@@ -4,7 +4,7 @@
     import { Timeline } from "vis-timeline/peer";
     import type { TimelineOptions } from "vis-timeline/peer";
     import "vis-timeline/styles/vis-timeline-graph2d.css";
-    import { data/* , groups */ } from "./history-data";
+    import { data } from "./history-data";
     import { createPersistentStore } from "./stores";
     import moment from "moment";
     // You may import from other packages like Vis Network or Vis Graph3D here.

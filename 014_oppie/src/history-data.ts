@@ -145,6 +145,9 @@ export const data = new DataSet([
 
     // Sweden and Finland apply for NATO membership
     { id: 54, selectable: true, content: 'Sweden and Finland apply for NATO membership', start: '2022-05-18', className: 'consequences' },
+
+    // Radiation Exposoure Compensation Act
+    { id: 55, selectable: true, content: 'Radiation Exposoure Compensation Act', start: '1990-10-15', className: 'consequences' },
 ]);
 
 function createDetailsHTML(title: string, content: string) {
