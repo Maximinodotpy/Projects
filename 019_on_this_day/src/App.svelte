@@ -120,7 +120,7 @@
 
   <div class="flex mx-auto px-4 grow w-full { is_loading ? 'animate-pulse': '' }">
     <button on:click={() => current_event_index--} class="{current_event_index == 0 ? 'invisible': ''} shrink-0 opacity-50 hover:opacity-100 transition-all">
-      <img src="/caret-left-solid.svg" alt="" width="30">
+      Zurück
     </button>
     
     <div class="h-full grow flex flex-col bg-neutral-100 py-4 overflow-hidden">
@@ -137,7 +137,7 @@
     </div>
     
     <button on:click={() => current_event_index++} class="{current_event_index == data.selected.length-1 ? 'invisible': ''} shrink-0 opacity-50 hover:opacity-100 transition-all">
-      <img src="/caret-left-solid.svg" alt="" width="30" class="rotate-180">
+      Weiter
     </button>
   </div>
 </div>
