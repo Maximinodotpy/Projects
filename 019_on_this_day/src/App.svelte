@@ -11,14 +11,14 @@
     events: [],
   };
   let image = "";
-  let is_loading = false;
   let current_date = Date.now();
   let current_event_index = 0;
-  const KEY = 'AIzaSyCuilqVytCXEv4iokKypvDO7GH7X958vSk'
+
+  let event_types = ["selected", "births", "deaths", "events"];
+  let event_type = "selected";
 
   function refreshData() {
     console.log("Refreshing data ...");
-    is_loading = true;
 
     current_event_index = 0;
 
@@ -37,22 +37,7 @@
     fetch(url)
       .then((response) => response.json())
       .then(async (to_be_translated) => {
-
         data = to_be_translated;
-
-        console.log("Looping over events ...");
-        for (const event of data.selected) {
-          event.text = await translateText(event.text);
-
-          for (const page of event.pages) {
-            page.normalizedtitle = await translateText(page.normalizedtitle);
-          }
-        }
-        console.log("Done translating ...");
-
-        data = data;
-
-        is_loading = false;
       })
       .catch((error) => console.error(error));
   }
@@ -68,19 +53,7 @@
     refreshData();
 
     console.log("Translating text ...");
-    console.log(translateText("Hello World"));
   });
-
-  async function translateText(text, target = "de") {
-    const url = `https://translation.googleapis.com/language/translate/v2?key=${KEY}&q=${text}&target=${target}`;
-
-    const res = await fetch(url)
-    const data = await res.json()
-
-    const translatedText = data.data.translations[0].translatedText;
-    
-    return translatedText;  
-  }  
 
   function dateChanged() {
     console.log("Date changed ...");
@@ -108,17 +81,44 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </svelte:head>
 
-<div class="h-screen overflow-y-hidden flex flex-col w-full">
-  <div class="p-3 bg-neutral-200 text-3xl font-bold text-center w-full">
-    On this day
+<div class="flex flex-col w-full">
+  <div class="p-3 bg-neutral-200 flex w-full items-center gap-3">
+    <div class="font-bold grow text-3xl">On this day</div>
+
+    <div>
+      <input type="date" id="date" class="border border-2 w-full px-4 py-2" on:change={dateChanged} />
+    </div>
+
+    <div class="flex gap-2">
+      {#each event_types as type}
+        <button class="px-2 py-1 rounded-md text-white { type == event_type ? 'bg-neutral-600': 'bg-neutral-400' }" on:click={() => event_type = type}>{ type }</button>
+      {/each}
+    </div>
+  </div>
+  
+
+  <div class="max-w-4xl mx-auto">
+    <!-- Loop over all selected events -->
+    {#each data[event_type] as event, index}
+      <div class="flex p-8 items-center gap-4">
+        <div class="flex w-40 shrink-0 border">
+          <img src="{ getImageFromEvent(event) }" alt="" class="object-contain max-h-full mx-auto max-w-full">
+        </div>
+        
+        <div class="grow grid gap-3">
+          <div><bold class="font-bold">{ event?.year }</bold> { event?.text }</div>
+
+          <div class="flex gap-2 flex-wrap text-xs">
+            {#each event?.pages || [] as page}
+              <a target="_blank" href="https://en.wikipedia.org/wiki/{page.title}" class="bg-neutral-300 px-2 py-1 rounded-md">{ page?.normalizedtitle }</a>
+            {/each}
+          </div>
+        </div>
+      </div>
+    {/each}  
   </div>
 
-  <div class="max-w-4xl mx-auto pt-8 w-full">
-    <input type="date" id="date" class="border border-2 w-full px-4 py-2" on:change={dateChanged} />
-    <div class="p-2">Es wurden { data.selected.length } Ereignisse an diesem Datum gefunden. Du bist momentan auf dem {current_event_index} Ereignis vom {moment(current_date).format('DD.MM')}.</div>
-  </div>
-
-  <div class="flex mx-auto px-4 grow w-full { is_loading ? 'animate-pulse': '' }">
+  <!-- <div class="flex mx-auto px-4 grow w-full">
     <button on:click={() => current_event_index--} class="{current_event_index == 0 ? 'invisible': ''} shrink-0 opacity-50 hover:opacity-100 transition-all">
       Zurück
     </button>
@@ -139,5 +139,5 @@
     <button on:click={() => current_event_index++} class="{current_event_index == data.selected.length-1 ? 'invisible': ''} shrink-0 opacity-50 hover:opacity-100 transition-all">
       Weiter
     </button>
-  </div>
+  </div> -->
 </div>
