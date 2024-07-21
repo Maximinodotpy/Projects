@@ -1,41 +1,51 @@
 <script lang="ts">
     import "../app.css";
-    import { Label, Select } from "flowbite-svelte";
+    import { Label, Select } from 'flowbite-svelte';
     import { page } from "$app/stores";
     import type { Data, GroupData } from "$lib/index";
     import { globalData, selectedDate, dates } from "$lib/index";
     import moment from "moment";
     import { browser } from "$app/environment";
+
     let data: Data = {};
-    moment.locale("de");
-    
+
+    moment.locale('de');
     let days = dates.map(date => {
         return {
             value: date,
-            name: moment(date).locale("de").format("DD. MMMM YYYY")
-        };
+            name: moment(date).locale('de').format("DD. MMMM YYYY"),
+        }
     });
     
     async function loadDataFromDay(day: string) {
         globalData.set({});
+
         console.log($page.url.origin);
+        
+
         const url = `${$page.url.origin}\\Data\\Daten_${day}.xlsx`;
+
         console.log("Loading data from", url);
+
         const file = await fetch(url);
+        
         console.log("File", file);
-        const array_buffer = await file.arrayBuffer();
+
+        const array_buffer = await (file).arrayBuffer();
+
         console.log("File", array_buffer);
     
         // @ts-ignore
         const workbook = XLSX.read(array_buffer);
-    
+
         console.log("Workbook", workbook);
-        console.log("Sheet names", workbook.SheetNames);
+
+        console.log("Sheet names", workbook.SheetNames);    
     
         // Fill in data
         workbook.SheetNames.forEach((sheetName: string) => {
             const worksheet = workbook.Sheets[sheetName];
-    
+            
             // Skip sheet named "Vorlage"
             if (sheetName == "Vorlage") {
                 return;
@@ -69,26 +79,26 @@
                     tasks: row[4],
                     since: row[5],
                     image: row[6],
-                    gender: row[7]
+                    gender: row[7],
                 });
             }
     
-            globalData.update(data => {
+            globalData.update((data) => {
                 data[sheetName] = new_data;
                 return data;
             });
         });
-    
+
         console.log("Data loaded", data);
     }
-    
-    $:
-    {
+
+    $: {
         if (browser) {
             console.log("Selected day changed", $selectedDate);
+            
             loadDataFromDay($selectedDate);
-        }
-    }
+        }        
+    };
 </script>
 
 <svelte:head>
@@ -97,7 +107,7 @@
 
 <div class="p-4 mx-auto max-w-5xl flex justify-between items-center">
     <div class="flex gap-2 items-center">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Wappen_Schaffhausen_matt.svg" alt="" class="h-14" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Wappen_Schaffhausen_matt.svg" alt="" class="h-14">
 
         <div>
             <a href="/" class="tracking-widest text-2xl no-underline">Politiklandschaft von Schaffhausen</a>
@@ -108,7 +118,7 @@
     <div>
         <Label>
             <div>Stichtag</div>
-            <Select class="mt-1" items="{days}" bind:value="{$selectedDate}"></Select>
+            <Select class="mt-1" items={days} bind:value={$selectedDate} />
         </Label>
     </div>
 </div>
