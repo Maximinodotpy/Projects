@@ -70,8 +70,8 @@
                     lastname: row[1],
                     party: row[2],
                     birthyear: birthyear,
-                    tasks: row[4],
-                    since: row[5],
+                    since: row[4],
+                    tasks: row[5],
                     image: row[6],
                     gender: row[7]
                 });

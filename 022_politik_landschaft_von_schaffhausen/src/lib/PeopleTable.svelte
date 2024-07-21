@@ -13,6 +13,9 @@
         return person.firstname.toLowerCase().includes(searchTerm.toLowerCase()) || person.lastname.toLowerCase().includes(searchTerm.toLowerCase());
     });
 
+    export let hideParty: boolean = false;
+    export let hidePlace: boolean = true;
+
     function getFemaletoMaleRatio(data: PersonData[]) {
         let male = data.filter(person => person.gender == 'M').length
         let female = data.filter(person => person.gender == 'F').length
@@ -38,7 +41,7 @@
     <TableHead>
         <TableHeadCell>Vorname</TableHeadCell>
         <TableHeadCell>Nachname</TableHeadCell>
-        <TableHeadCell>Partei</TableHeadCell>
+        <TableHeadCell class="{hideParty ? 'hidden': ''}">Partei</TableHeadCell>
         <TableHeadCell>Geburtsjahr</TableHeadCell>
         <TableHeadCell>Aufgaben</TableHeadCell>
         <TableHeadCell>Seit</TableHeadCell>
@@ -50,7 +53,7 @@
             <TableBodyRow>
                 <TableBodyCell>{person.firstname ?? ''}</TableBodyCell>
                 <TableBodyCell>{person.lastname ?? ''}</TableBodyCell>
-                <TableBodyCell>
+                <TableBodyCell class="{hideParty ? 'hidden': ''}">
                     <a href="{person.party}">{person.party ?? ''}</a>
                 </TableBodyCell>
                 <TableBodyCell>{person.birthyear ?? ''}</TableBodyCell>
