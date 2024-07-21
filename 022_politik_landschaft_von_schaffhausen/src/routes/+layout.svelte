@@ -6,6 +6,7 @@
     import { globalData, selectedDate, dates } from "$lib/index";
     import moment from "moment";
     import { browser } from "$app/environment";
+    import { goto } from "$app/navigation";
     let data: Data = {};
 
     moment.locale("de");
@@ -84,6 +85,13 @@
         });
     
         console.log("Data loaded", data);
+
+        console.log($page.url.pathname);
+        
+        // Go to home page in case where not there
+        if ($page.url.pathname != "/d/politik_landschaft_von_schaffhausen/") {
+            goto("/");
+        }
     }
     
     $:

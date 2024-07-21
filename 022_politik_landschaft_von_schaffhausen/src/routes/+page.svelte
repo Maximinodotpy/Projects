@@ -27,7 +27,7 @@
         <!-- Loop over all Groups and create a link -->
         <div class="flex flex-col items-start">
             {#each Object.values($gemeindenlistData) as gemeinde}
-                <a href="gemeinde/{gemeinde}">{gemeinde}</a>
+                <a href="gemeinde?g={gemeinde}">{gemeinde}</a>
             {/each}
         </div>
     </div>
@@ -55,7 +55,7 @@
         <!-- Loop over all Groups and create a link -->
         <div class="flex flex-col items-start">
             {#each $legislativenlistData as legislative}
-                <a href="gruppierung/{legislative}">{legislative}</a>
+                <a href="gruppierung?g={legislative}">{legislative}</a>
             {/each}
         </div>
     </div>
@@ -66,7 +66,7 @@
         <!-- Loop over all Groups and create a link -->
         <div class="flex flex-col items-start">
             {#each $exikutivenlistData as exekutive}
-                <a href="gruppierung/{exekutive}">{exekutive}</a>
+                <a href="gruppierung?g={exekutive}">{exekutive}</a>
             {/each}
         </div>
     </div>

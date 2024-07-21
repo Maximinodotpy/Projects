@@ -10,7 +10,7 @@
 
 <h2 class="uppercase tracking-widest mb-8">
     <a href="{data.source}">{data.name}</a>
-    ({data.type} auf {data.layer} Ebene) ({data.people.length} Personen)
+    ({data?.type} auf {data?.layer} Ebene) ({data?.people?.length} Personen)
 </h2>
 
-<PeopleTable data={data.people} />
+<PeopleTable data={data?.people} />

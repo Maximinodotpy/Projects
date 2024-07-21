@@ -16,6 +16,8 @@
     export let hideParty: boolean = false;
     export let hidePlace: boolean = true;
 
+    console.log(hideParty, hidePlace);
+
     function getFemaletoMaleRatio(data: PersonData[]) {
         let male = data.filter(person => person.gender == 'M').length
         let female = data.filter(person => person.gender == 'F').length
@@ -29,7 +31,7 @@
 
 <TableSearch placeholder="Suchen" hoverable={true} bind:inputValue={searchTerm} divClass="border">
     <caption class="px-5 pb-5 text-lg font-semibold text-left text-gray-900 bg-white dark:text-white dark:bg-gray-800">
-        Infos
+        Infos zu dieser Tabelle
         <div class="mt-1 text-sm font-normal text-gray-500 dark:text-gray-400">
             <ul class="grid grid-cols-6">
                 <li>{femaleToMaleRatio.male} Männer</li>
@@ -54,7 +56,7 @@
                 <TableBodyCell>{person.firstname ?? ''}</TableBodyCell>
                 <TableBodyCell>{person.lastname ?? ''}</TableBodyCell>
                 <TableBodyCell class="{hideParty ? 'hidden': ''}">
-                    <a href="{person.party}">{person.party ?? ''}</a>
+                    <a href="partei?p={person.party}">{person.party ?? ''}</a>
                 </TableBodyCell>
                 <TableBodyCell>{person.birthyear ?? ''}</TableBodyCell>
                 <TableBodyCell>{person.tasks ?? ''}</TableBodyCell>
