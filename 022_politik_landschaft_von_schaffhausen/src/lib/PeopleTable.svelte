@@ -5,6 +5,8 @@
 
     export let data: PersonData[];
 
+    $: femaleToMaleRatio = getFemaletoMaleRatio(data);
+
     export let searchTerm: string = '';
 
     $: filteredData = data.filter(person => {
@@ -23,10 +25,16 @@
 </script>
 
 <TableSearch placeholder="Suchen" hoverable={true} bind:inputValue={searchTerm} divClass="border">
-    <!-- <caption class="px-5 pb-5 text-lg font-semibold text-left text-gray-900 bg-white dark:text-white dark:bg-gray-800">
-        Our products
-        <p class="mt-1 text-sm font-normal text-gray-500 dark:text-gray-400">Browse a list of Flowbite products designed to help you work and play, stay organized, get answers, keep in touch, grow your business, and more.</p>
-    </caption> -->
+    <caption class="px-5 pb-5 text-lg font-semibold text-left text-gray-900 bg-white dark:text-white dark:bg-gray-800">
+        Infos
+        <div class="mt-1 text-sm font-normal text-gray-500 dark:text-gray-400">
+            <ul class="grid grid-cols-6">
+                <li>{femaleToMaleRatio.male} Männer</li>
+                <li>{femaleToMaleRatio.female} Frauen</li>
+                <li>{Math.round(femaleToMaleRatio.female/femaleToMaleRatio.count*100)}% Frauen</li>
+            </ul>
+        </div>
+    </caption>
     <TableHead>
         <TableHeadCell>Vorname</TableHeadCell>
         <TableHeadCell>Nachname</TableHeadCell>

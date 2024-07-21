@@ -11,6 +11,10 @@ const config = {
 	
 
 	kit: {
+		paths: {
+			base: '/d/politik_landschaft_von_schaffhausen',
+		},
+
 		adapter: adapter({
 			pages: 'dist',
 			assets: 'dist',

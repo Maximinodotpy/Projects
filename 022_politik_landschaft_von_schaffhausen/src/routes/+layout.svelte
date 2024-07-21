@@ -7,6 +7,7 @@
     import moment from "moment";
     import { browser } from "$app/environment";
     let data: Data = {};
+
     moment.locale("de");
     
     let days = dates.map(date => {
@@ -19,10 +20,13 @@
     async function loadDataFromDay(day: string) {
         globalData.set({});
         console.log($page.url.origin);
-        const url = `${$page.url.origin}\\Data\\Daten_${day}.xlsx`;
+        
+        const url = `${$page.url.origin}\\d\\politik_landschaft_von_schaffhausen\\Data\\Daten_${day}.xlsx`;
         console.log("Loading data from", url);
+        
         const file = await fetch(url);
         console.log("File", file);
+        
         const array_buffer = await file.arrayBuffer();
         console.log("File", array_buffer);
     
