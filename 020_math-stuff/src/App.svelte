@@ -1,7 +1,6 @@
 <script lang="ts">
   import panzoom, { type PanZoom } from "panzoom";
   import { onMount } from "svelte";
-  import Victor from "Victor";
 
   let svg: SVGElement;
   let panZoom: PanZoom;
