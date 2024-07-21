@@ -15,6 +15,7 @@
         <ul class="list-disc list-inside">
             <li>Stichtag der Daten ist der { moment($selectedDate).format('DD. MMMM YYYY') }. Man kann aber oben rechts auch einen anderen Tag auswählen.</li>
             <li>Die Bilder wurden nur entnommen wenn sie nicht als Data URL eingebettet waren.</li>
+            <li>Die Daten entstammen den Websiten der Gemeinden und es wurde nur das Geschlecht der jeweiligen Personen angenommen. Falls keine Partei genannt wurde, findet man diese Info auch nicht hier.</li>
         </ul>
     </div>
 </div>
@@ -85,7 +86,7 @@
 </div>
 
 <div class="mt-20">
-    <div class="text-xl">
+    <div class="text-xl text-center">
         <div class="inline font-bold">{ $allPeople.length }</div> Personen in <div class="inline font-bold">{$gemeindenlistData.length}</div> Gemeinden und <div class="inline font-bold">{$partieslistData.length}</div> Parteien.
         
         Davon sind <div class="inline font-bold">{$allPeople.filter(person => person.gender == 'M').length}</div> Männlich und <div class="inline font-bold">{$allPeople.filter(person => person.gender == 'F').length}</div> Weiblich.
