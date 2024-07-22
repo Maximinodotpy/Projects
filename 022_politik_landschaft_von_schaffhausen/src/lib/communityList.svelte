@@ -8,5 +8,7 @@
         <li>
             <a href="{base}/gemeinde?g={community}">{community}</a>
         </li>
+    {:else}
+        <li>Keine Gemeinden gefunden</li>
     {/each}
 </ul>

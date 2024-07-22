@@ -73,27 +73,16 @@
             {/each}
         </div>
     </div>
-
-    <!-- Loop over all parties and then show all people within -->
-    <!-- {#each Object.keys($allPeopleGroupedByParty) as partyName}
-        <div>
-            <h2 class="font-bold">{partyName}</h2>
-
-            <div class="flex flex-col items-start">
-                {#each $allPeopleGroupedByParty[partyName] as person}
-                    <a href="person/{person.firstname}{person.lastname}">{person.firstname} {person.lastname}</a>
-                {/each}
-            </div>
-        </div>
-    {/each} -->
 </div>
 
 <div class="mt-20">
-    <div class="text-xl text-center">
+    <a class="text-xl text-center block bg-blue-100 hover:bg-blue-50 transition-all py-10 no-underline" href="{base}/analyse">
         <div class="inline font-bold">{ $allPeople.length }</div> Personen in <div class="inline font-bold">{$gemeindenlistData.length}</div> Gemeinden und <div class="inline font-bold">{$partieslistData.length}</div> Parteien.
         
         Davon sind <div class="inline font-bold">{$allPeople.filter(person => person.gender == 'M').length}</div> Männlich und <div class="inline font-bold">{$allPeople.filter(person => person.gender == 'F').length}</div> Weiblich.
-    </div>
+
+        <div class="font-bold mt-4">Zur Analyse -></div>
+    </a>
 
     <div class="my-20">
         <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Karte_Gemeinden_des_Kantons_Schaffhausen_farbig_2013.png" alt="">

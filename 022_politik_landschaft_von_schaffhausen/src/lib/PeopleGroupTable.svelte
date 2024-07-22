@@ -9,7 +9,7 @@
 </script>
 
 <h2 class="uppercase tracking-widest mb-8">
-    <a href="{data.source}">{data.name}</a>
+    <a href="{data.source}" target="_blank">{data.name}</a>
     ({data?.type} auf {data?.layer} Ebene) ({data?.people?.length} Personen)
 </h2>
 
