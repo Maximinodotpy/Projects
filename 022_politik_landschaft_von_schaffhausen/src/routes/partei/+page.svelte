@@ -6,13 +6,13 @@
 
     import PeopleTable from "$lib/PeopleTable.svelte";
     import CommunityList from "$lib/communityList.svelte";
+    import PageTitle from "$lib/PageTitle.svelte";
 
     let partyName = $page.url.searchParams.get("p") as string;
     let thisParty = $allPeopleGroupedByParty[partyName];    
 </script>
 
-<div>Partei</div>
-<h1 class="uppercase tracking-widest text-4xl mb-8">{partyName}</h1>
+<PageTitle title={partyName} category="Partei" />
 
 <div class="mb-20">
     <h2 class="tracking-widest text-2xl mb-4">Alle Personen in dieser Partei ({thisParty.length})</h2>

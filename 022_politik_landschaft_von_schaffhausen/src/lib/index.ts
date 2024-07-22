@@ -31,6 +31,7 @@ export const dates = [
     '2024-07-19',
     '2024-07-20',
     '2024-07-21',
+    '2024-07-22',
 ]
 
 export const selectedDate = writable(dates[dates.length - 1]);

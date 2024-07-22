@@ -8,6 +8,8 @@
     import PeopleTable from "$lib/PeopleGroupTable.svelte";
     import { onMount } from "svelte";
 
+    import PageTitle from "$lib/PageTitle.svelte";
+
     // Get all groups in this gemeinde¨
     let groups: GroupData[] = []
 
@@ -25,7 +27,7 @@
     console.log($page);
 </script>
 
-<h1 class="uppercase tracking-widest text-4xl mb-8">{gemeindeName}</h1>
+<PageTitle title={gemeindeName} category="Gemeinde" />
 
 {#each groups as group}
     <div class="mb-20">

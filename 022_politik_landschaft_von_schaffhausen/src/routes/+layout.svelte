@@ -100,6 +100,9 @@
             console.log("Selected day changed", $selectedDate);
             loadDataFromDay($selectedDate);
         }
+
+        console.log('Root', $page.url.origin + $page.url.pathname);
+        
     }
 </script>
 
@@ -112,7 +115,7 @@
         <img src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Wappen_Schaffhausen_matt.svg" alt="" class="h-14" />
 
         <div>
-            <a href="/" class="tracking-widest text-2xl no-underline">Politiklandschaft von Schaffhausen</a>
+            <a href="{$page.url.origin + $page.url.pathname}" class="tracking-widest text-2xl no-underline">Politiklandschaft von Schaffhausen</a>
             <div class="opacity-50">Anmerkungen an <a href="mailto:info@maximmaeder.com" class="underline">info@maximmaeder.com</a></div>
         </div>
     </div>

@@ -98,7 +98,7 @@
 </div>
 
 <div class="mt-20 mb-80">
-    <h3 class="text-xl tracking-widest mb-8">Fehlende Informationen</h3>
+    <h3 class="text-xl tracking-widest mb-8">Informationsstatus</h3>
 
     <Table divClass="border">
         <TableHead>
@@ -108,23 +108,53 @@
         <TableBody tableBodyClass="divide-y">
             <TableBodyRow>
                 <TableBodyCell>Parteien</TableBodyCell>
-                <TableBodyCell>{$allPeople.filter(person => !person.party).length}</TableBodyCell>
+                <TableBodyCell>
+                    {$allPeople.filter(person => person.party).length}
+                    <div class="opacity-50 inline-block">
+                        von
+                        {$allPeople.length}
+                    </div>
+                </TableBodyCell>
             </TableBodyRow>
             <TableBodyRow>
                 <TableBodyCell>Geburtsjahre</TableBodyCell>
-                <TableBodyCell>{$allPeople.filter(person => !person.birthyear).length}</TableBodyCell>
+                <TableBodyCell>
+                    {$allPeople.filter(person => person.birthyear).length}
+                    <div class="opacity-50 inline-block">
+                        von
+                        {$allPeople.length}
+                    </div>
+                </TableBodyCell>
             </TableBodyRow>
             <TableBodyRow>
                 <TableBodyCell>Seit Angaben</TableBodyCell>
-                <TableBodyCell>{$allPeople.filter(person => !person.since).length}</TableBodyCell>
+                <TableBodyCell>
+                    {$allPeople.filter(person => person.since).length}
+                    <div class="opacity-50 inline-block">
+                        von
+                        {$allPeople.length}
+                    </div>
+                </TableBodyCell>
             </TableBodyRow>
             <TableBodyRow>
                 <TableBodyCell>Geschlechts Angaben</TableBodyCell>
-                <TableBodyCell>{$allPeople.filter(person => !person.gender).length}</TableBodyCell>
+                <TableBodyCell>
+                    {$allPeople.filter(person => person.gender).length}
+                    <div class="opacity-50 inline-block">
+                        von
+                        {$allPeople.length}
+                    </div>
+                </TableBodyCell>
             </TableBodyRow>
             <TableBodyRow>
                 <TableBodyCell>Bilder</TableBodyCell>
-                <TableBodyCell>{$allPeople.filter(person => !person.image).length}</TableBodyCell>
+                <TableBodyCell>
+                    {$allPeople.filter(person => person.image).length}
+                    <div class="opacity-50 inline-block">
+                        von
+                        {$allPeople.length}
+                    </div>
+                </TableBodyCell>
             </TableBodyRow>
         </TableBody>
     </Table>
