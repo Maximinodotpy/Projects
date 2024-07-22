@@ -1,22 +1,24 @@
 <script lang="ts">
     import type { PersonData } from "$lib";
-
-    import { Table, TableBody, TableBodyCell, TableBodyRow, TableHead, TableHeadCell, Checkbox, TableSearch } from 'flowbite-svelte';
+    import  { base } from '$app/paths';
+    import {
+        TableBody,
+        TableBodyCell,
+        TableBodyRow,
+        TableHead,
+        TableHeadCell,
+        TableSearch
+    } from 'flowbite-svelte';
 
     export let data: PersonData[];
-
-    $: femaleToMaleRatio = getFemaletoMaleRatio(data);
-
     export let searchTerm: string = '';
-
+    export let hideParty: boolean = false;
+    export let hidePlace: boolean = true;
+    
+    $: femaleToMaleRatio = getFemaletoMaleRatio(data);
     $: filteredData = data.filter(person => {
         return person.firstname.toLowerCase().includes(searchTerm.toLowerCase()) || person.lastname.toLowerCase().includes(searchTerm.toLowerCase());
     });
-
-    export let hideParty: boolean = false;
-    export let hidePlace: boolean = true;
-
-    console.log(hideParty, hidePlace);
 
     function getFemaletoMaleRatio(data: PersonData[]) {
         let male = data.filter(person => person.gender == 'M').length
@@ -56,7 +58,7 @@
                 <TableBodyCell>{person.firstname ?? ''}</TableBodyCell>
                 <TableBodyCell>{person.lastname ?? ''}</TableBodyCell>
                 <TableBodyCell class="{hideParty ? 'hidden': ''}">
-                    <a href="partei?p={person.party}">{person.party ?? ''}</a>
+                    <a href="{base}/partei?p={person.party}">{person.party ?? ''}</a>
                 </TableBodyCell>
                 <TableBodyCell>{person.birthyear ?? ''}</TableBodyCell>
                 <TableBodyCell>{person.tasks ?? ''}</TableBodyCell>

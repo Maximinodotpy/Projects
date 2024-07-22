@@ -3,6 +3,8 @@
 
     import { Table, TableBody, TableBodyCell, TableBodyRow, TableHead, TableHeadCell, Checkbox, TableSearch } from 'flowbite-svelte';
 
+    import CommunityList from "$lib/CommunityList.svelte";
+
     import PartyList from "$lib/PartyList.svelte";
     import moment from "moment";
 </script>
@@ -25,11 +27,7 @@
         <h2 class="font-bold">Gemeinden</h2>
 
         <!-- Loop over all Groups and create a link -->
-        <div class="flex flex-col items-start">
-            {#each Object.values($gemeindenlistData) as gemeinde}
-                <a href="gemeinde?g={gemeinde}">{gemeinde}</a>
-            {/each}
-        </div>
+        <CommunityList communities={Object.values($gemeindenlistData)} />
     </div>
     
     <div>

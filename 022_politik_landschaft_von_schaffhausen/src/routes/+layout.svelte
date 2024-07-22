@@ -6,9 +6,7 @@
     import { globalData, selectedDate, dates } from "$lib/index";
     import moment from "moment";
     import { browser } from "$app/environment";
-    let data: Data = {};
-
-    let base_url = "/d/politik_landschaft_von_schaffhausen/";
+    import  { base } from '$app/paths';
 
     moment.locale("de");
     
@@ -23,7 +21,7 @@
         globalData.set({});
         console.log($page.url.origin);
         
-        const url = `${$page.url.origin}\\d\\politik_landschaft_von_schaffhausen\\Data\\Daten_${day}.xlsx`;
+        const url = `${base}\\Data\\Daten_${day}.xlsx`;
         console.log("Loading data from", url);
         
         const file = await fetch(url);
@@ -84,10 +82,6 @@
                 return data;
             });
         });
-    
-        console.log("Data loaded", data);
-
-        console.log($page.url.pathname);
     }
     
     $:
@@ -97,8 +91,8 @@
             loadDataFromDay($selectedDate);
         }
 
-        console.log('Root', $page.url.origin + $page.url.pathname);
-        
+        console.log('$page.url', $page.url.pathname);
+        console.log('base', base);
     }
 </script>
 
@@ -111,12 +105,12 @@
         <img src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Wappen_Schaffhausen_matt.svg" alt="" class="h-14" />
 
         <div>
-            <a href="{$page.url.origin + base_url}" class="tracking-widest text-2xl no-underline">Politiklandschaft von Schaffhausen</a>
+            <a href="{base}" class="tracking-widest text-2xl no-underline">Politiklandschaft von Schaffhausen</a>
             <div class="opacity-50">Anmerkungen an <a href="mailto:info@maximmaeder.com" class="underline">info@maximmaeder.com</a></div>
         </div>
     </div>
 
-    <div>
+    <div class="{base + "/" == $page.url.pathname ? '': 'hidden'}">
         <Label>
             <div>Stichtag</div>
             <Select class="mt-1" items="{days}" bind:value="{$selectedDate}"></Select>

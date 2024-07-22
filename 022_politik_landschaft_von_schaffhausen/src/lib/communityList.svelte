@@ -1,11 +1,12 @@
 <script lang="ts">
     export let communities: string[] = [];
+    import  { base } from '$app/paths';
 </script>
 
 <ul>
     {#each communities as community}
         <li>
-            <a href="/gemeinde/{community}">{community}</a>
+            <a href="{base}/gemeinde?g={community}">{community}</a>
         </li>
     {/each}
 </ul>

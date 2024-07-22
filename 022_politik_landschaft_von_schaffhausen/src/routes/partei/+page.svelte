@@ -1,9 +1,12 @@
 <script lang="ts">
     // Get the name of the gemeinde which is in the url
     import { page } from "$app/stores";
-
-    import { allPeopleGroupedByParty, partiesMatchedWithWhereTheyAreRepresentedLegaslitativaly, partiesMatchedWithWhereTheyAreRepresentedExekutivaly } from "$lib/index";
-
+    import  { base } from '$app/paths';
+    import {
+        allPeopleGroupedByParty,
+        partiesMatchedWithWhereTheyAreRepresentedLegaslitativaly,
+        partiesMatchedWithWhereTheyAreRepresentedExekutivaly
+    } from "$lib/index";
     import PeopleTable from "$lib/PeopleTable.svelte";
     import CommunityList from "$lib/CommunityList.svelte";
     import PageTitle from "$lib/PageTitle.svelte";
@@ -15,11 +18,11 @@
 
 <PageTitle title={partyName} category="Partei" />
 
-{#if !(partyName in $allPeopleGroupedByParty) || thisParty.length == 0}
+{#if !(partyName in $allPeopleGroupedByParty) || thisParty?.length == 0}
     <p>Daten werden geladen ...</p>
 {:else}
     <div class="mb-20">
-        <h2 class="tracking-widest text-2xl mb-4">Alle Personen in dieser Partei ({thisParty.length})</h2>
+        <h2 class="tracking-widest text-2xl mb-4">Alle Personen in dieser Partei ({thisParty?.length})</h2>
 
         <PeopleTable data={thisParty} hideParty={true} />
     </div>
