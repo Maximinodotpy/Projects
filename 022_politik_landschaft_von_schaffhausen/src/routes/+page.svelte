@@ -1,13 +1,28 @@
 <script lang="ts">
-    import { gemeindenlistData, exikutivenlistData, legislativenlistData, allPeopleGroupedByParty, allPeople, partieslistData, selectedDate } from "$lib";
-
-    import { Table, TableBody, TableBodyCell, TableBodyRow, TableHead, TableHeadCell, Checkbox, TableSearch } from 'flowbite-svelte';
-
+    import {
+        gemeindenlistData,
+        exikutivenlistData,
+        legislativenlistData,
+        allPeople,
+        partieslistData,
+        selectedDate
+    } from "$lib";
+    import { base } from "$app/paths";
+    import {
+        Table,
+        TableBody,
+        TableBodyCell,
+        TableBodyRow,
+        TableHead,
+        TableHeadCell,
+    } from 'flowbite-svelte';
     import CommunityList from "$lib/CommunityList.svelte";
-
     import PartyList from "$lib/PartyList.svelte";
     import moment from "moment";
+    import PageTitle from "$lib/PageTitle.svelte";
 </script>
+
+<PageTitle title="Politiklandschaft von Schaffhausen" />
 
 <div class="mb-8">
     <p class="mb-4">Auf dieser Website finden sie Informationen zu den Mandatsträgerinnen und Trägern der Kommunal und Kantonal Ebenen in der Exekutive und Legislative im Kanton Schaffhausen. Die Daten sind von den Websiten der Gemeinden und werden hier gebündelt in dieser <a href="/Data/Daten_{$selectedDate}.xlsx" target="_blank">Excel Datei</a>.</p>
@@ -36,16 +51,6 @@
         <!-- Show a list of all parties -->
         <PartyList />
     </div>
-
-    <!-- <div>
-        <h2 class="font-bold">Gruppierungen</h2>
-
-        <div class="flex flex-col items-start">
-            {#each Object.values($globalData) as group}
-                <a href="gruppierung/{group.name}">{group.name}</a>
-            {/each}
-        </div>
-    </div> -->
     
     <div>
         <h2 class="font-bold">Legislativen</h2>
@@ -53,7 +58,7 @@
         <!-- Loop over all Groups and create a link -->
         <div class="flex flex-col items-start">
             {#each $legislativenlistData as legislative}
-                <a href="gruppierung?g={legislative}">{legislative}</a>
+                <a href="{base}/gruppierung?g={legislative}">{legislative}</a>
             {/each}
         </div>
     </div>
@@ -64,7 +69,7 @@
         <!-- Loop over all Groups and create a link -->
         <div class="flex flex-col items-start">
             {#each $exikutivenlistData as exekutive}
-                <a href="gruppierung?g={exekutive}">{exekutive}</a>
+                <a href="{base}/gruppierung?g={exekutive}">{exekutive}</a>
             {/each}
         </div>
     </div>

@@ -15,3 +15,7 @@ a {
 .badge {
     @apply inline-block px-2 py-1 text-xs font-semibold leading-none text-blue-100 bg-blue-600 rounded-full;
 }
+
+body {
+    @apply min-h-[110vh]
+}
