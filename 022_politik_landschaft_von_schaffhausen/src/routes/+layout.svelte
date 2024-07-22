@@ -6,8 +6,9 @@
     import { globalData, selectedDate, dates } from "$lib/index";
     import moment from "moment";
     import { browser } from "$app/environment";
-    import { goto } from "$app/navigation";
     let data: Data = {};
+
+    let base_url = "/d/politik_landschaft_von_schaffhausen/";
 
     moment.locale("de");
     
@@ -87,11 +88,6 @@
         console.log("Data loaded", data);
 
         console.log($page.url.pathname);
-        
-        // Go to home page in case where not there
-        if ($page.url.pathname != "/d/politik_landschaft_von_schaffhausen/") {
-            goto("/");
-        }
     }
     
     $:
@@ -115,7 +111,7 @@
         <img src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Wappen_Schaffhausen_matt.svg" alt="" class="h-14" />
 
         <div>
-            <a href="{$page.url.origin + $page.url.pathname}" class="tracking-widest text-2xl no-underline">Politiklandschaft von Schaffhausen</a>
+            <a href="{$page.url.origin + base_url}" class="tracking-widest text-2xl no-underline">Politiklandschaft von Schaffhausen</a>
             <div class="opacity-50">Anmerkungen an <a href="mailto:info@maximmaeder.com" class="underline">info@maximmaeder.com</a></div>
         </div>
     </div>
