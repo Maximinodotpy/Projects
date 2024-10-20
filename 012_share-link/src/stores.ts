@@ -1,7 +1,7 @@
 import { writable } from 'svelte/store';
 import { derived } from 'svelte/store';
 
-const VERSION = '1';
+const VERSION = '100';
 
 
 export const title = createPersistentStore(`title_v${VERSION}`, 'My message');
@@ -28,6 +28,14 @@ export const share_links = writable<IShareLink[]>([
         enabled: true,
     },
     {
+        name: 'Facebook',
+        url: 'https://www.facebook.com/sharer.php?u={url}',
+        composed_url: '',
+        color: '#0266FF',
+        logo: 'https://upload.wikimedia.org/wikipedia/commons/b/b9/2023_Facebook_icon.svg',
+        enabled: true,
+    },
+    {
         name: 'Telegram',
         url: 'https://t.me/share/url?url={url}&text={title}',
         composed_url: '',
@@ -45,7 +53,7 @@ export const share_links = writable<IShareLink[]>([
     },
     {
         name: 'Twitter',
-        url: 'https://twitter.com/intent/tweet?text={title}&url={url}',
+        url: 'https://twitter.com/intent/tweet?text={title}',
         composed_url: '',
         color: '#1DA1F2',
         logo: 'https://upload.wikimedia.org/wikipedia/commons/6/6f/Logo_of_Twitter.svg',
@@ -53,7 +61,7 @@ export const share_links = writable<IShareLink[]>([
     },
     {
         name: 'LinkedIn',
-        url: 'https://www.linkedin.com/shareArticle?mini=true&url={url}&title={title}',
+        url: 'https://www.linkedin.com/shareArticle?mini=true&url={url}',
         composed_url: '',
         color: '#0A66C2',
         logo: 'https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png',
@@ -85,18 +93,18 @@ export const share_links = writable<IShareLink[]>([
     },
     {
         name: 'Email',
-        url: 'mailto:?subject={title}&body={email_body}',
+        url: 'mailto:?subject={subject}&body={title}',
         composed_url: '',
         logo: 'https://cdn-icons-png.flaticon.com/512/3178/3178158.png',
         enabled: true,
     },
 ])
 
-export const custom_share_links = createPersistentStore<IShareLink[]>('custom_share_links', []);
+export const custom_share_links = createPersistentStore<IShareLink[]>(`custom_share_link_V${VERSION}`, []);
 
 export const custom_share_link_values = createPersistentStore<{
     [key: string]: string,
-}>('custom_share_link_values', {});
+}>(`custom_share_link_values_V${VERSION}`, {});
 
 // Create derived shore which combines the default and custom share links
 export const all_share_links = derived([
@@ -122,14 +130,17 @@ export const all_share_links = derived([
     combined_share_links.forEach((SoMe) => {
         SoMe.composed_url = SoMe.url;
 
+        let used_title = $encode_urls ? encodeURIComponent($title) : $title;
+        let used_url = $encode_urls ? encodeURIComponent($url) : $url;
+
         function replaceBuiltInPlaceholders(str: string) {
             if ($add_url_to_title_text && !str.includes('{url}')) {
-                str = str.replace('{title}', `${$title}: ${$url}`);
+                str = str.replace('{title}', `${used_title}: ${used_url}`);
             } else {
-                str = str.replace('{title}', $title);
+                str = str.replace('{title}', used_title);
             }
     
-            str = str.replace('{url}', $url);
+            str = str.replace('{url}', used_url);
 
             return str;
         }
@@ -149,7 +160,9 @@ export const all_share_links = derived([
                 console.log('Custom value placeholder recognized:', name);
 
                 if (name in $custom_share_link_values) {
-                    SoMe.composed_url = SoMe.composed_url.replace(match, $custom_share_link_values[name]);
+                    let custom_share_link_value = $encode_urls ? encodeURIComponent($custom_share_link_values[name]) : $custom_share_link_values[name];
+
+                    SoMe.composed_url = SoMe.composed_url.replace(match, custom_share_link_value);
                 } else {
                     $custom_share_link_values[name] = '';
                     custom_share_link_values.set($custom_share_link_values);
@@ -157,10 +170,8 @@ export const all_share_links = derived([
             });
         }
 
+        // do it again to replace the custom values
         SoMe.composed_url = replaceBuiltInPlaceholders(SoMe.composed_url);
-        
-
-        if ($encode_urls) SoMe.composed_url = encodeURI(SoMe.composed_url);
     })
 
     // Remove disabled share links
