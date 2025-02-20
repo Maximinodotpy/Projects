@@ -92,6 +92,22 @@ export const share_links = writable<IShareLink[]>([
         enabled: true,
     },
     {
+        name: 'Bluesky',
+        url: 'https://bluesky.im/intent/compose?text={title}',
+        composed_url: '',
+        color: '#1DA1F2',
+        logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Bluesky_Logo.svg/1200px-Bluesky_Logo.svg.png',
+        enabled: true,
+    },
+    {
+        name: 'Mastodon',
+        url: 'https://mastodon.social/share?text={url}&title={title}',
+        composed_url: '',
+        color: '#3088D4',
+        logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Mastodon_wordmark_light_2022.svg/1920px-Mastodon_wordmark_light_2022.svg.png',
+        enabled: true,
+    },
+    {
         name: 'Email',
         url: 'mailto:?subject={subject}&body={title}',
         composed_url: '',
